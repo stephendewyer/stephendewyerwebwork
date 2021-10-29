@@ -1,16 +1,118 @@
 html,
 body {
+  background-color: #FFE9C0;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "CenturyGothic";
+  height: 100%;
+  color: #514C64;
+  font-size: 18px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "CenturyGothic";
+  src: url(/fonts/century_gothic/CenturyGothic.ttf);
+}
+
+a:link {
+	color: #FF8D61;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #806B64;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #6A7B6C;
+}
+
+a:active {
+	text-decoration: none;
+	color: #908FB2;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  top: 0;
+  left: 0; 
+  right: 0;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin-top: 170px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #514C64;
+  text-align: center;
+}
+
+.header_02 {
+  font-size: 18px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  color: #A298C8;
+  text-align: center;
+}
+
+.paragraphs_container {
+  height: auto;
+  width: 100%;
+  position: relative;
+  float: none;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.paragraphs {
+  position: relative;
+  margin: auto;
+  width: 50%;
+  max-width: 600px;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  color: #514C64;
+}
+
+@media screen and (max-width: 750px){
+
+  .header {
+    font-size: 18px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+  }
+
+  .header_02 {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .paragraphs {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .body {
+    font-size: 16px;
+  }
 }

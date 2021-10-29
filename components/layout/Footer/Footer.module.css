@@ -1,0 +1,38 @@
+.footer {
+    position: relative;
+    float: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.grid_container_footer {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0;
+}
+
+.grid_item_footer {
+    position: relative;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px){
+    .footer {
+        font-size: 16px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+}
