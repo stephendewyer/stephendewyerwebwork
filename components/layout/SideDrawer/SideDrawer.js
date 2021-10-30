@@ -88,13 +88,13 @@ const sideDrawer = props => {
        <nav className={(props.show) ? styles.side_drawer_open : styles.side_drawer}>
             <div className={styles.grid_container}>
                 <div className={styles.grid_item} >
-                    <AboutLink onClick={props.click} />
+                    <AboutLink />
                 </div>
                 <div className={styles.grid_item} >
-                    <CaseStudiesLink onClick={props.click} />
+                    <CaseStudiesLink />
                 </div>
                 <div className={styles.grid_item} >
-                    <ContactLink onClick={props.click} />
+                    <ContactLink />
                 </div>
             </div>
         </nav> 
