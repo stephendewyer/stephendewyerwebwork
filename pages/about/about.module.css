@@ -27,8 +27,8 @@
 @media screen and (max-width: 750px) {
     .profile_image {
         width: 100%;
-        max-width: none;
-        min-width: none;
+        max-width: 100%;
+        min-width: 100%;
         height: auto;
         margin-left: 0;
         margin-right: 0;
@@ -36,12 +36,14 @@
     }
 
     .profile_paragraphs {
-        margin-left: 20px;
-        margin-right: 20px;
-        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
         height: auto;
-        max-width: auto;
-        min-width: auto;
         margin-bottom: 40px;
     }
 }
