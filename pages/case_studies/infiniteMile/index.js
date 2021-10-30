@@ -45,13 +45,13 @@ const InfiniteMile = () => {
                         </ul>
                     </div>        
                 </div>
-                <div className={classes.visit_link}>
-                    <Link href="https://www.infinitemiledetroit.com/" passHref={true} >
+                <Link href="https://www.infinitemiledetroit.com/" passHref={true} >
+                    <div className={classes.visit_link}>
                         <Button>
                             visit
                         </Button>
-                    </Link>
-                </div>
+                    </div>
+                </Link>
                 <div className={classes.case_studies_nav}>
                     <Link href="/case_studies/publicArtsCommission" passHref={true} >
                         <div className={classes.prev_case_study}>

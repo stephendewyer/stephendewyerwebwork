@@ -54,13 +54,13 @@ const PublicArtsCommission = () => {
                             </ul>
                     </div>
                 </div>
-                <div className={classes.visit_link}>
-                    <Link href="https://publicartscommission.org/" passHref={true} >
+                <Link href="https://publicartscommission.org/" passHref={true} >
+                    <div className={classes.visit_link}>
                         <Button>
                             visit
                         </Button>
-                    </Link>
-                </div>
+                    </div>
+                </Link>
                 <div className={classes.case_studies_nav}>
                     <Link href="/case_studies/artInTechServices" passHref={true} >
                         <div className={classes.prev_case_study}>
