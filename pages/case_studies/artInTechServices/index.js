@@ -44,7 +44,7 @@ const ArtinTechServices = () => {
                 </div>
                 <Link href="https://www.artintechservices.com/" passHref={true} >
                     <div className={classes.visit_link}>
-                        <Button>
+                        <Button passHref={true}>
                             visit
                         </Button>
                     </div>
@@ -52,14 +52,14 @@ const ArtinTechServices = () => {
                 <div className={classes.case_studies_nav}>
                     <Link href="/case_studies/infiniteMile" passHref={true} >
                         <div className={classes.prev_case_study}>
-                            <Button>
+                            <Button passHref={true}>
                                 previous
                             </Button>
                         </div>
                     </Link>
                     <Link href="/case_studies/publicArtsCommission" passHref={true} >
                         <div className={classes.next_case_study}>
-                            <Button>
+                            <Button passHref={true}>
                                 next
                             </Button>
                         </div>

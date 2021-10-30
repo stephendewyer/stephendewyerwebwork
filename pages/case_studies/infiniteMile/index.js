@@ -47,7 +47,7 @@ const InfiniteMile = () => {
                 </div>
                 <Link href="https://www.infinitemiledetroit.com/" passHref={true} >
                     <div className={classes.visit_link}>
-                        <Button>
+                        <Button passHref={true}>
                             visit
                         </Button>
                     </div>
@@ -55,14 +55,14 @@ const InfiniteMile = () => {
                 <div className={classes.case_studies_nav}>
                     <Link href="/case_studies/publicArtsCommission" passHref={true} >
                         <div className={classes.prev_case_study}>
-                            <Button>
+                            <Button passHref={true}>
                                 previous
                             </Button>
                         </div>
                     </Link>
                     <Link href="/case_studies/artInTechServices" passHref={true} >
                         <div className={classes.next_case_study}>
-                            <Button>
+                            <Button passHref={true}>
                                 next
                             </Button>
                         </div>
