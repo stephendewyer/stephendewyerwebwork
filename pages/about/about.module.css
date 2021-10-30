@@ -27,6 +27,7 @@
 @media screen and (max-width: 750px) {
     .profile_image {
         width: 100%;
+        min-width: 100%;
         height: auto;
         margin-left: 0;
         margin-right: 0;
