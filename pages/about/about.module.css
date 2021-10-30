@@ -8,8 +8,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    left: 0;
-    right: 0;
+    position: relative;
 }
 
 .profile_paragraphs {
@@ -22,6 +21,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+    position: relative;
 }
 
 @media screen and (max-width: 750px) {
