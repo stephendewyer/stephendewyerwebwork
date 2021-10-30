@@ -54,9 +54,9 @@ const PublicArtsCommission = () => {
                             </ul>
                     </div>
                 </div>
-                <Link href="https://publicartscommission.org/" passHref={true} >
-                    <div className={classes.visit_link}>
-                        <Button>
+                <Link href="https://www.publicartscommission.org/" passHref={true} >
+                    <div className={classes.visit_link} >
+                        <Button passHref={true}>
                             visit
                         </Button>
                     </div>
@@ -64,14 +64,14 @@ const PublicArtsCommission = () => {
                 <div className={classes.case_studies_nav}>
                     <Link href="/case_studies/artInTechServices" passHref={true} >
                         <div className={classes.prev_case_study}>
-                            <Button>
+                            <Button passHref={true}>
                                 previous
                             </Button>
                         </div>
                     </Link>
                     <Link href="/case_studies/infiniteMile" passHref={true} >
                         <div className={classes.next_case_study}>
-                            <Button>
+                            <Button passHref={true}>
                                 next
                             </Button>
                         </div>

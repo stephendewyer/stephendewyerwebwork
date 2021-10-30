@@ -42,7 +42,7 @@ const ArtinTechServices = () => {
                         </ul>
                     </div>        
                 </div>
-                <Link href="https://artintechservices.com/" passHref={true} >
+                <Link href="https://www.artintechservices.com/" passHref={true} >
                     <div className={classes.visit_link}>
                         <Button>
                             visit
