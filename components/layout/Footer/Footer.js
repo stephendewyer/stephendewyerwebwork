@@ -13,6 +13,9 @@ function Footer() {
                     <Link href="https://www.linkedin.com/in/stephen-dewyer-a15539a5" passHref={true}>LinkedIn</Link>
                 </div>
                 <div className={styles.grid_item_footer}>
+                    <Link href="https://www.github.com/stephendewyer" passHref={true}>GitHub</Link>
+                </div>
+                <div className={styles.grid_item_footer}>
                     <Link href="mailto:sdewyer@artintechservices.com" passHref={true}>email</Link>
                 </div>
             </div> 
