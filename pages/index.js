@@ -38,7 +38,8 @@ const IndexPage = () => {
       <Head>
         <title>stephen dewyer web design and development</title>
         <meta name="description" content="portfolio of web design and development by stephen garrett dewyer" />
-
+        <meta property="og:image" content="/videos/imagine_echo/imagine_echo_still_02.jpg" />
+        <meta property="og:url" content="https://www.stephendewyerwebwork.com" />
       </Head>
       <div className="container">
         <div className="header">
