@@ -26,7 +26,7 @@ const CaseStudiesPage = () => {
                 <div className={classes.grid_container}>
                     <div className={classes.grid_item}>
                         <div className={classes.case_study_image}>
-                            <Image src={artinTechServicesScreengrab} layout="responsive"/>
+                            <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services Inc screenshot" />
                         </div>
                     </div> 
                     <div className={classes.grid_item}>
@@ -45,7 +45,7 @@ const CaseStudiesPage = () => {
                 <div className={classes.grid_container}>
                     <div className={classes.grid_item}>
                         <div className={classes.case_study_image}>
-                            <Image src={publicArtsCommissionScreengrab} layout="responsive"/>  
+                            <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission screenshot" />  
                         </div>
                     </div> 
                     <div className={classes.grid_item}>
@@ -64,7 +64,7 @@ const CaseStudiesPage = () => {
                 <div className={classes.grid_container}>
                     <div className={classes.grid_item}>
                         <div className={classes.case_study_image}>
-                            <Image src={infiniteMileScreengrab} layout="responsive"/>
+                            <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile screenshot" />
                         </div>
                     </div> 
                     <div className={classes.grid_item}>

@@ -24,9 +24,9 @@ const NextArrow = () => {
           onMouseLeave={onMouseLeave}
       >
         {isHovering ? (
-          <Image src={green_right_arrow} /> 
+          <Image src={green_right_arrow} alt="green right arrow" /> 
           ) : (
-          <Image src={orange_right_arrow} />
+          <Image src={orange_right_arrow} alt="orange right arrow" />
         )}    
     </div>
   );
@@ -43,9 +43,9 @@ const PrevArrow = () => {
           onMouseLeave={onMouseLeave}
       >
         {isHovering ? (
-          <Image src={green_left_arrow} /> 
+          <Image src={green_left_arrow} alt="green left arrow" /> 
           ) : (
-          <Image src={orange_left_arrow} />
+          <Image src={orange_left_arrow} alt="orange left arrow" />
         )}    
     </div>
   );
@@ -78,16 +78,16 @@ export default class InfiniteMileSlideCarousel extends Component {
       <div className={classes.slide_carousel}>
         <Slider ref={c => (this.slider = c)} {...settings}>
           <div key={1}>
-            <Image src={slide_01} />
+            <Image src={slide_01} alt="Infinite Mile slide 1" />
           </div>
           <div key={2}>
-            <Image src={slide_02} />
+            <Image src={slide_02} alt="Infinite Mile slide 2" />
           </div>
           <div key={3}>
-            <Image src={slide_03} />
+            <Image src={slide_03} alt="Infinite Mile slide 3" />
           </div>
           <div key={4}>
-            <Image src={slide_04} />
+            <Image src={slide_04} alt="Infinite Mile slide 4" />
           </div>
         </Slider>
         <div className={classes.arrows}>

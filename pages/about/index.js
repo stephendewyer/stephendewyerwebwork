@@ -16,7 +16,7 @@ const AboutPage = () => {
                     about
                 </div>
                 <div className={classes.profile_image}>
-                    <Image src={stephen_dewyer_profile} layout="responsive" />
+                    <Image src={stephen_dewyer_profile} layout="responsive" alt="stephen dewyer profile image" />
                 </div>
                 <div className={classes.profile_paragraphs}>
                     <p>stephen garrett dewyer is a <span style={{fontWeight: "bold"}} >full-stack web developer</span>, <span style={{fontWeight: "bold"}} >U.I./U.X. designer</span>, <span style={{fontWeight: "bold"}} >award-winning artist</span> and <span style={{fontWeight: "bold"}} >organizer</span> with experience designing web programs for creative organizations.
@@ -58,7 +58,8 @@ const AboutPage = () => {
                 </div>
                 <div className={classes.profile_paragraphs}>
                     2021, Certificate in React, Udemy<br/>
-                    <span style={{fontWeight: "bold"}} >React - The Complete Guide (incl Hooks, React Router, Redux)</span><br/><br/>
+                    <span style={{fontWeight: "bold"}} >React - The Complete Guide (incl Hooks, React Router, Redux)</span><br/>
+                    <span style={{fontWeight: "bold"}} >Web Accessibility Training Course - WCAG 2.1 Compliance</span><br/><br/>
 
                     2020-2021, Certificates in Building Web Applications, University of Michigan – Coursera<br/>
                     <span style={{fontWeight: "bold"}} >JavaScript, jQuery, and JSON</span><br/>
