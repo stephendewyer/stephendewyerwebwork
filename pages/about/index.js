@@ -95,7 +95,6 @@ const AboutPage = () => {
                             Building Web Applications in PHP
                         </li>
                     </ul><br/>
-
                     2021, <span style={{fontWeight: "bold"}} >Certificates in Database Design, University of Michigan – Coursera</span>
                     <ul>
                         <li>

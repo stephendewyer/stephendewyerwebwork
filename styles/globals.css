@@ -50,12 +50,12 @@ a:active {
 }
 
 .header {
-  margin-top: 170px;
+  margin-top: 250px;
   margin-bottom: 50px;
   padding-left: 25px;
   padding-right: 25px;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
   color: #514C64;
   text-align: center;
 }
