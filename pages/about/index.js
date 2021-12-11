@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import classes from './about.module.css';
 import Image from 'next/image';
 import stephen_dewyer_profile from '../../public/images/profile/stephen_dewyer_17_August_2021_02.jpg';
@@ -57,33 +57,119 @@ const AboutPage = () => {
                     technical training
                 </div>
                 <div className={classes.profile_paragraphs}>
-                    2021, Certificate in React, Udemy<br/>
-                    <span style={{fontWeight: "bold"}} >React - The Complete Guide (incl Hooks, React Router, Redux)</span><br/>
-                    <span style={{fontWeight: "bold"}} >Web Accessibility Training Course - WCAG 2.1 Compliance</span><br/><br/>
+                    2021, <span style={{fontWeight: "bold"}} >Certificates in React and web accessibility, Udemy</span>
+                    <ul>
+                        <li>
+                            React - The Complete Guide (incl Hooks, React Router, Redux)
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Web Accessibility Training Course - WCAG 2.1 Compliance
+                        </li>
+                    </ul><br/>
+                   
+                    2020-2021, <span style={{fontWeight: "bold"}} >Certificates in Building Web Applications, University of Michigan – Coursera</span>
+                    <ul>
+                        <li>
+                            JavaScript, jQuery, and JSON
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Interactivity with JavaScript
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Building Database Applications in PHP
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Introduction to Structured Query Language (SQL)
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Building Web Applications in PHP
+                        </li>
+                    </ul><br/>
 
-                    2020-2021, Certificates in Building Web Applications, University of Michigan – Coursera<br/>
-                    <span style={{fontWeight: "bold"}} >JavaScript, jQuery, and JSON</span><br/>
-                    <span style={{fontWeight: "bold"}} >Interactivity with JavaScript</span><br/>
-                    <span style={{fontWeight: "bold"}} >Building Database Applications in PHP</span><br/>
-                    <span style={{fontWeight: "bold"}} >Introduction to Structured Query Language (SQL)</span><br/>
-                    <span style={{fontWeight: "bold"}} >Building Web Applications in PHP</span><br/><br/>
+                    2021, <span style={{fontWeight: "bold"}} >Certificates in Database Design, University of Michigan – Coursera</span>
+                    <ul>
+                        <li>
+                            Intermediate PostgreSQL
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Database Design and Basic SQL in PostgreSQL
+                        </li>
+                    </ul><br/>
 
-                    2021, Certificate in Database Design, University of Michigan – Coursera<br/>
-                    <span style={{fontWeight: "bold"}} >Intermediate PostgreSQL</span><br/>
-                    <span style={{fontWeight: "bold"}} >Database Design and Basic SQL in PostgreSQL</span><br/><br/>
+                    2020, <span style={{fontWeight: "bold"}} >Certificates in Python Programming, University of Michigan – Coursera</span>
+                    <ul>
+                        <li>
+                            Python Data Structures
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Python for Everybody
+                        </li>
+                    </ul><br/>
 
-                    2020, Certificates in Python Programming, University of Michigan – Coursera<br/> 
-                    <span style={{fontWeight: "bold"}} >Python Data Structures</span><br/>
-                    <span style={{fontWeight: "bold"}} >Python for Everybody</span><br/><br/>
+                    2020, <span style={{fontWeight: "bold"}} >Certificates in U.X. Design, Interaction Design Foundation</span> 
+                    <ul>
+                        <li>
+                            UI Design Patterns for Successful Software
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Mobile User Experience (UX) Design
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Become a UX Designer from Scratch
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Human-Computer Interaction
+                        </li>
+                    </ul><br/>
 
-                    2020, Certificates in U.X. Design, Interaction Design Foundation<br/>
-                    <span style={{fontWeight: "bold"}} >UI Design Patterns for Successful Software</span><br/>
-                    <span style={{fontWeight: "bold"}} >Mobile User Experience (UX) Design</span><br/>
-                    <span style={{fontWeight: "bold"}} >Become a UX Designer from Scratch</span><br/>
-                    <span style={{fontWeight: "bold"}} >Human-Computer Interaction</span><br/><br/>
-
-                    2021, Certificate in Leadership, University of Michigan – Coursera<br/>
-                    <span style={{fontWeight: "bold"}} >Inspiring and Motivating Individuals</span><br/><br/>
+                    2021, <span style={{fontWeight: "bold"}} >Certificate in Leadership, University of Michigan – Coursera</span>
+                    <ul>
+                        <li>
+                            Inspiring and Motivating Individuals
+                        </li>
+                    </ul><br/>
+                </div>
+                <div className="header_02" >
+                    awards and grants
+                </div>
+                <div className={classes.profile_paragraphs}>
+                    2014-2016, <span style={{fontWeight: "bold"}} >Knight Arts Challenge Detroit matching $20,000 grant<br />
+                    John S. and James L. Knight Foundation</span><br />
+                    Miami, Florida
+                    <ul>
+                        <li>
+                            Project: ∞ mile
+                        </li>
+                    </ul>
+                    <br />
+                    2014, <span style={{fontWeight: "bold"}} >Detroit Chapter June 2014 $1,000 grant<br />
+                    Awesome Foundation</span><br />
+                    Boston, Massachusetts
+                    <ul>
+                        <li>
+                            Project: ∞ mile
+                        </li>
+                    </ul>
                 </div>
             </div>
         </Fragment>
