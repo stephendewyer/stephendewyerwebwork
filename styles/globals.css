@@ -110,6 +110,7 @@ a:active {
     margin-bottom: 50px;
     padding-left: 25px;
     padding-right: 25px;
+    min-width: 0;
   }
 
   .paragraphs {
