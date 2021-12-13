@@ -21,7 +21,7 @@ const CaseStudiesPage = () => {
                     case studies
                 </h1>
                 <h2 className='header_02'>
-                    <p>client: Art in Tech Services Inc<br/>2021-present</p>
+                    client: Art in Tech Services Inc<br/>2021-present
                 </h2>
                 <div className={classes.grid_container}>
                     <div className={classes.grid_item}>
@@ -40,7 +40,7 @@ const CaseStudiesPage = () => {
                     </div>
                 </div>
                 <h2 className='header_02'>
-                    <p>client: Public Arts Commission<br/>2017-present</p>
+                    client: Public Arts Commission<br/>2017-present
                 </h2>
                 <div className={classes.grid_container}>
                     <div className={classes.grid_item}>
@@ -59,7 +59,7 @@ const CaseStudiesPage = () => {
                     </div>
                 </div>
                 <h2 className='header_02'>
-                    <p>client: Infinite Mile LLC<br/>2013-2017</p>
+                    client: Infinite Mile LLC<br/>2013-2017
                 </h2>
                 <div className={classes.grid_container}>
                     <div className={classes.grid_item}>
