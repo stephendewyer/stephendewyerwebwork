@@ -15,10 +15,10 @@ const ArtinTechServices = () => {
                 <meta name="description" content="details of web design and development for Art in Tech Services Inc by stephen dewyer" />
             </Head>
             <div className="container">
-                <div className="header">
+                <h1 className="header">
                     client: Art in Tech Services Inc<br/>
                     2021-present
-                </div>
+                </h1>
                 <div className={classes.slider_case_study}>
                     <ArtinTechServicesSlideCarousel />
                 </div>

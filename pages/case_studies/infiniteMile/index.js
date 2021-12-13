@@ -15,10 +15,10 @@ const InfiniteMile = () => {
                 <meta name="description" content="details of web design and development for Infinite Mile by stephen dewyer" />
             </Head>
             <div className="container">
-                <div className="header">
+                <h1 className="header">
                     client: Infinite Mile (∞ mile)<br />
                     2013-2017
-                </div>
+                </h1>
                 <div className={classes.slider_case_study}>
                     <InfiniteMileSlideCarousel />
                 </div>

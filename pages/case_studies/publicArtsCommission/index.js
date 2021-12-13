@@ -15,10 +15,10 @@ const PublicArtsCommission = () => {
                 <meta name="description" content="details of web design and development for Public Arts Commission by stephen dewyer" />
             </Head>
             <div className="container">
-                <div className="header">
+                <h1 className="header">
                     client: Public Arts Commission<br/>
                     2017-present
-                </div>
+                </h1>
                 <div className={classes.slider_case_study}>
                     <PublicArtsCommissionSlideCarousel />
                 </div>
