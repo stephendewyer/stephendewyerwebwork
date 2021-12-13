@@ -12,9 +12,9 @@ const AboutPage = () => {
                 <meta name="description" content="stephen dewyer résumé and profile" />
             </Head>
             <div className="container">
-                <div className="header">
+                <h1 className="header">
                     about
-                </div>
+                </h1>
                 <div className={classes.profile_image}>
                     <Image src={stephen_dewyer_profile} layout="responsive" alt="stephen dewyer profile image" />
                 </div>

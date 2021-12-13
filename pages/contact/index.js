@@ -12,12 +12,12 @@ const ContactPage = () => {
                 <meta name="description" content="why you should hire stephen dewyer for your web design and development projects and programs" />
             </Head>
             <div className="container">
-                <div className="header">
+                <h1 className="header">
                     contact
-                </div>
-                <div className="header_02">
+                </h1>
+                <h2 className="header_02">
                     stephen is available for hire to collaborate on web design and development programs and projects.  
-                </div>
+                </h2>
                 <div className='paragraphs_container'>
                     <div className='paragraphs'>
                         Hire stephen for:

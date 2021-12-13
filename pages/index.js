@@ -42,9 +42,9 @@ const IndexPage = () => {
         <meta property="og:url" content="https://www.stephendewyerwebwork.com" />
       </Head>
       <div className="container">
-        <div className="header">
+        <h1 className="header">
           web design and development
-        </div>
+        </h1>
         <div className={styles.intro_video}>
           <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
         </div>

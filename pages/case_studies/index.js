@@ -17,12 +17,12 @@ const CaseStudiesPage = () => {
                 <meta name="description" content="sample overview of web projects and programs designed and developed by stephen dewyer" />
             </Head>
             <div className={classes.case_studies}>
-                <div className="header">
+                <h1 className="header">
                     case studies
-                </div>
-                <div className='header_02'>
+                </h1>
+                <h2 className='header_02'>
                     <p>client: Art in Tech Services Inc<br/>2021-present</p>
-                </div>
+                </h2>
                 <div className={classes.grid_container}>
                     <div className={classes.grid_item}>
                         <div className={classes.case_study_image}>
@@ -39,9 +39,9 @@ const CaseStudiesPage = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='header_02'>
+                <h2 className='header_02'>
                     <p>client: Public Arts Commission<br/>2017-present</p>
-                </div>
+                </h2>
                 <div className={classes.grid_container}>
                     <div className={classes.grid_item}>
                         <div className={classes.case_study_image}>
@@ -58,9 +58,9 @@ const CaseStudiesPage = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='header_02'>
+                <h2 className='header_02'>
                     <p>client: Infinite Mile LLC<br/>2013-2017</p>
-                </div>
+                </h2>
                 <div className={classes.grid_container}>
                     <div className={classes.grid_item}>
                         <div className={classes.case_study_image}>
