@@ -13,7 +13,7 @@
     float: left;
     margin: 0;
     width: 25%;
-    max-width: 350px;
+    max-width: 275px;
     min-width: 160px;
     height: auto;
 }
@@ -23,7 +23,7 @@
     float: right;
     display: block;
     width: 75%;
-    max-width: 1050px;
+    max-width: 825px;
     min-width: 480px;
     height: auto;
     display: grid;
