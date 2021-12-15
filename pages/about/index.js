@@ -38,7 +38,7 @@ const AboutPage = () => {
 
                         2013-2017, <span style={{fontWeight: "bold"}} >Co-Founding Editor</span><br/>
                         <span style={{fontWeight: "bold"}} >Infinite Mile LLC (<span>&#8734;</span> mile)</span><br/>
-                        Detroit, Michigan<br/>
+                        Detroit, Michigan
                 </div>
                 <div className="header_02" >
                     education
@@ -51,7 +51,7 @@ const AboutPage = () => {
                         2008, <span style={{fontWeight: "bold"}} >B.F.A. in Art History, Theory <span>&#38;</span> Criticism</span><br/>
                         <span style={{fontWeight: "bold"}} >Maryland Institute College of Art (MICA)</span><br/>
                         cum laude<br/>
-                        Baltimore, Maryland<br/><br/>
+                        Baltimore, Maryland
                 </div>
                 <div className="header_02" >
                     technical training
@@ -146,7 +146,7 @@ const AboutPage = () => {
                         <li>
                             Inspiring and Motivating Individuals
                         </li>
-                    </ul><br/>
+                    </ul>
                 </div>
                 <div className="header_02" >
                     awards and grants
