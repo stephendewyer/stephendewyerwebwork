@@ -14,7 +14,7 @@ const ArtinTechServices = () => {
                 <title>Art in Tech Services Inc - stephen dewyer web design and development</title>
                 <meta name="description" content="details of web design and development for Art in Tech Services Inc by stephen dewyer" />
             </Head>
-            <div className="container">
+            <div className="container" role="main">
                 <h1 className="header">
                     client: Art in Tech Services Inc<br/>
                     2021-present

@@ -1,7 +1,9 @@
 .slider_case_study {
     position: relative;
+    text-align: center;
     width: 50%;
     min-width: 640px;
+    max-width: 2000px;
     height: auto;
     margin-left: auto;
     margin-right: auto;

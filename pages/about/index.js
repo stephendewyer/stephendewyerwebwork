@@ -11,7 +11,7 @@ const AboutPage = () => {
                 <title>about - stephen dewyer web design and development</title>
                 <meta name="description" content="stephen dewyer résumé and profile" />
             </Head>
-            <div className="container">
+            <div className="container" role="main">
                 <h1 className="header">
                     about
                 </h1>

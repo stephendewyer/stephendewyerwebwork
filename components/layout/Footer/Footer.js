@@ -5,7 +5,7 @@ import ButtonFooter from '../../button/button_footer';
 function Footer() {
 
     return (
-        <div className={styles.footer}>
+        <div className={styles.footer} role="contentinfo">
             <div className={styles.footer_info}>
                 stephen garrett dewyer © 2021
             </div>

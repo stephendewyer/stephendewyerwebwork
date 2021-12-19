@@ -14,7 +14,7 @@ const PublicArtsCommission = () => {
                 <title>Public Arts Commission - stephen dewyer web design and development</title>
                 <meta name="description" content="details of web design and development for Public Arts Commission by stephen dewyer" />
             </Head>
-            <div className="container">
+            <div className="container" role="main">
                 <h1 className="header">
                     client: Public Arts Commission<br/>
                     2017-present

@@ -41,7 +41,7 @@ const IndexPage = () => {
         <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
         <meta property="og:url" content="https://www.stephendewyerwebwork.com" />
       </Head>
-      <div className="container">
+      <div className="container" role="main">
         <h1 className="header">
           web design and development
         </h1>

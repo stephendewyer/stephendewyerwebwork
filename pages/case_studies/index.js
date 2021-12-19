@@ -16,7 +16,7 @@ const CaseStudiesPage = () => {
                 <title>case studies - stephen dewyer web design and development</title>
                 <meta name="description" content="sample overview of web projects and programs designed and developed by stephen dewyer" />
             </Head>
-            <div className={classes.case_studies}>
+            <div className={classes.case_studies} role="main">
                 <h1 className="header">
                     case studies
                 </h1>

@@ -14,7 +14,7 @@ const InfiniteMile = () => {
                 <title>Infinite Mile - stephen dewyer web design and development</title>
                 <meta name="description" content="details of web design and development for Infinite Mile by stephen dewyer" />
             </Head>
-            <div className="container">
+            <div className="container" role="main">
                 <h1 className="header">
                     client: Infinite Mile (∞ mile)<br />
                     2013-2017
