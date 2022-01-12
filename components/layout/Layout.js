@@ -19,7 +19,8 @@ class Layout extends Component {
         this.setState({sideDrawerOpen: false});
     }
 
-    closeSliderHandler = () => {
+    linkClickHandler = () => {
+        console.log('link has been clicked');
         this.setState({sideDrawerOpen: false});
     }
 
@@ -33,11 +34,12 @@ class Layout extends Component {
         return (
             <div>
                 <MainNavigation drawerClickHandler={this.drawerToggleClickHandler} />
-                <SideDrawer show={this.state.sideDrawerOpen} />
+                <SideDrawer show={this.state.sideDrawerOpen} click={this.linkClickHandler} />
                 {backdrop}
                 <Container />
             </div>
         )
+
     }
 
 }

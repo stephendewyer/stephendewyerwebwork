@@ -80,13 +80,12 @@ const ContactLink = (props) => {
     );
 };
 
-
 const sideDrawer = props => {
 
     return (
 
        <nav className={(props.show) ? styles.side_drawer_open : styles.side_drawer}>
-            <div className={styles.grid_container}>
+            <div className={styles.grid_container} onClick={props.click}>
                 <div className={styles.grid_item} >
                     <AboutLink />
                 </div>
