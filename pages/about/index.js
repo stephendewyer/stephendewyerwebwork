@@ -60,13 +60,11 @@ const AboutPage = () => {
                     2021, <span style={{fontWeight: "bold"}} >Certificates in Modern Web Development and Web Accessibility, Udemy</span>
                     <ul>
                         <li>
-                            NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
+                            NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)<br />
                         </li>
                         <li>
-                            React - The Complete Guide (incl Hooks, React Router, Redux)
+                            React - The Complete Guide (incl Hooks, React Router, Redux)<br />
                         </li>
-                    </ul>
-                    <ul>
                         <li>
                             Web Accessibility Training Course - WCAG 2.1 Compliance
                         </li>
@@ -75,25 +73,17 @@ const AboutPage = () => {
                     2020-2021, <span style={{fontWeight: "bold"}} >Certificates in Building Web Applications, University of Michigan – Coursera</span>
                     <ul>
                         <li>
-                            JavaScript, jQuery, and JSON
+                            JavaScript, jQuery, and JSON<br />
                         </li>
-                    </ul>
-                    <ul>
                         <li>
-                            Interactivity with JavaScript
+                            Interactivity with JavaScript<br />
                         </li>
-                    </ul>
-                    <ul>
                         <li>
-                            Building Database Applications in PHP
+                            Building Database Applications in PHP<br />
                         </li>
-                    </ul>
-                    <ul>
                         <li>
-                            Introduction to Structured Query Language (SQL)
+                            Introduction to Structured Query Language (SQL)<br />
                         </li>
-                    </ul>
-                    <ul>
                         <li>
                             Building Web Applications in PHP
                         </li>
@@ -101,10 +91,8 @@ const AboutPage = () => {
                     2021, <span style={{fontWeight: "bold"}} >Certificates in Database Design, University of Michigan – Coursera</span>
                     <ul>
                         <li>
-                            Intermediate PostgreSQL
+                            Intermediate PostgreSQL<br />
                         </li>
-                    </ul>
-                    <ul>
                         <li>
                             Database Design and Basic SQL in PostgreSQL
                         </li>
@@ -113,10 +101,8 @@ const AboutPage = () => {
                     2020, <span style={{fontWeight: "bold"}} >Certificates in Python Programming, University of Michigan – Coursera</span>
                     <ul>
                         <li>
-                            Python Data Structures
+                            Python Data Structures<br />
                         </li>
-                    </ul>
-                    <ul>
                         <li>
                             Python for Everybody
                         </li>
@@ -125,20 +111,14 @@ const AboutPage = () => {
                     2020, <span style={{fontWeight: "bold"}} >Certificates in U.X. Design, Interaction Design Foundation</span> 
                     <ul>
                         <li>
-                            UI Design Patterns for Successful Software
+                            UI Design Patterns for Successful Software<br />
                         </li>
-                    </ul>
-                    <ul>
                         <li>
-                            Mobile User Experience (UX) Design
+                            Mobile User Experience (UX) Design<br />
                         </li>
-                    </ul>
-                    <ul>
                         <li>
-                            Become a UX Designer from Scratch
+                            Become a UX Designer from Scratch<br />
                         </li>
-                    </ul>
-                    <ul>
                         <li>
                             Human-Computer Interaction
                         </li>
