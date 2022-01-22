@@ -1,6 +1,6 @@
 .side_drawer {
     height: 100%;
-    background: #8D9AFF;
+    background: #D1D7FF;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
 
 .side_drawer_open {
     height: 100%;
-    background: #8D9AFF;
+    background: #D1D7FF;
     position: fixed;
     top: 0;
     left: 0;
