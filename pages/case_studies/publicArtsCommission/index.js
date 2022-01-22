@@ -28,28 +28,28 @@ const PublicArtsCommission = () => {
                         Services and features:<br />
                             <ul>
                                 <li>
-                                    Brand identity design;
+                                    Brand identity design
                                 </li>
                                 <li>
-                                    Custom images;
+                                    Custom images
                                 </li>
                                 <li>
-                                    Online portal for campaigns to apply for endorsement;
+                                    Online portal for campaigns to apply for endorsement
                                 </li>
                                 <li>
-                                    Email newsletter subscription form;
+                                    Email newsletter subscription form
                                 </li>
                                 <li>
-                                    Endorsed campaigns by state and country;
+                                    Endorsed campaigns by state and country
                                 </li>
                                 <li>
-                                    Interactivity and responsiveness.
+                                    Interactivity and responsiveness
                                 </li>
                             </ul>
                         Forthcoming:<br />
                             <ul>
                                 <li>
-                                    Web application for individuals in the art community to connect and organize at the grassroots level.
+                                    Web application for individuals in the art community to connect and organize at the grassroots level
                                 </li>
                             </ul>
                     </div>

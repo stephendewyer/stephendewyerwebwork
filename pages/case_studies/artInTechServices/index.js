@@ -28,16 +28,16 @@ const ArtinTechServices = () => {
                         Services and features:
                         <ul>
                             <li>
-                                Brand identity design;
+                                Brand identity design
                             </li>
                             <li>
-                                Quote request form;
+                                Quote request form
                             </li>
                             <li>
-                                Custom images and videos;
+                                Custom images and videos
                             </li>
                             <li>
-                                Interactivity and responsiveness.
+                                Interactivity and responsiveness
                             </li>
                         </ul>
                     </div>        

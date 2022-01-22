@@ -28,19 +28,19 @@ const InfiniteMile = () => {
                         Services and features:
                         <ul>
                             <li>
-                                Brand identity design;
+                                Brand identity design
                             </li>
                             <li>
-                                Custom images and videos;
+                                Custom images and videos
                             </li>
                             <li>
-                                Email newsletter subscription form;
+                                Email newsletter subscription form
                             </li>
                             <li>
-                                Custom serial publication and conference pages in partnership with the University of Michigan Stamps School of Art and Design; 
+                                Custom serial publication and conference pages in partnership with the University of Michigan Stamps School of Art and Design 
                             </li>
                             <li>
-                                Interactivity. 
+                                Interactivity
                             </li>
                         </ul>
                     </div>        
