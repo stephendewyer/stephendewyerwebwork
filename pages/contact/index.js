@@ -22,14 +22,14 @@ const ContactPage = () => {
                     <div className='paragraphs'>
                         Hire stephen for:
                         <ul><br/>
-                            <li>expert full-stack web development using advanced frameworks, libraries and databases;</li><br/>
-                            <li>expertise in identifying and solving problems in creative ways using digital technology and art;</li><br/>
-                            <li>expert User Experience and User Interaction design;</li><br/>
-                            <li>expertise in data visualization and interaction;</li><br/>
-                            <li>expert digital media production and editing;</li><br/>
-                            <li>expertise in working with multiple stakeholders to produce award-winning projects;</li><br/>
-                            <li>expertise in bringing diverse parts of the community together through multi-disciplinary projects;</li><br/>
-                            <li>expertise in directing projects and programs.</li><br/>
+                            <li>expert full-stack web development using advanced frameworks, libraries and databases</li><br/>
+                            <li>expertise in identifying and solving problems in creative ways using digital technology and art</li><br/>
+                            <li>expert User Experience and User Interaction design</li><br/>
+                            <li>expertise in data visualization and interaction</li><br/>
+                            <li>expert digital media production and editing</li><br/>
+                            <li>expertise in working with multiple stakeholders to produce award-winning projects</li><br/>
+                            <li>expertise in bringing diverse parts of the community together through multi-disciplinary projects</li><br/>
+                            <li>expertise in directing projects and programs</li><br/>
                         </ul>
                     </div>
                 </div>

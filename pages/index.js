@@ -53,31 +53,31 @@ const IndexPage = () => {
               stephen garrett dewyer is a:
               <ul><br/>
                 <li>
-                  full-stack web developer;
+                  full-stack web developer
                 </li><br/>
                 <li>
-                  User Interaction (U.I.) and User Experience (U.X.) designer;
+                  User Interaction (U.I.) and User Experience (U.X.) designer
                 </li><br/>
                 <li>
-                  award-winning artist whose work has shown in national and international exhibitions;
+                  award-winning artist whose work has shown in national and international exhibitions
                 </li><br/>
                 <li>
-                  organizer with a history of bringing diverse parts of the community together to produce critically-acclaimed projects.
+                  organizer with a history of bringing diverse parts of the community together to produce critically-acclaimed projects
                 </li><br/>
               </ul>
               He created digital designs including web programs for:
               <ul><br/>
                 <li>
-                  creative organizations;
+                  creative organizations
                 </li><br/>
                 <li>
-                  progressive campaigns and movements.
+                  progressive campaigns and movements
                 </li><br/>
               </ul>
               He enjoys:
               <ul><br/>
                 <li>
-                  using advancements in art and digital technology to improve design for the public and businesses.
+                  using advancements in art and digital technology to improve design for the public and businesses
                 </li><br/>
               </ul>
           </div>
