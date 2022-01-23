@@ -7,7 +7,7 @@ function Footer() {
     return (
         <div className={styles.footer} role="contentinfo">
             <div className={styles.footer_info}>
-                stephen garrett dewyer © 2021
+                stephen garrett dewyer © 2022
             </div>
             <div className={styles.footer_links}>
                 <Link href="https://www.linkedin.com/in/stephen-dewyer-a15539a5" passHref={true} aria-label="link to LinkedIn profile">
