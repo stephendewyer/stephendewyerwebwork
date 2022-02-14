@@ -82,14 +82,13 @@
         font-size: 18px;
     }
 
-    .detail_button {
+    .view_button {
         width: 100%;
         height: auto;
         position: relative;
         top: 0;
         left: 0;
         text-align: center;
-        margin-bottom: 40px;
     }
 
 }

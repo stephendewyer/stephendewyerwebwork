@@ -23,6 +23,29 @@
     position: relative;
 }
 
+.signatures {
+    text-align: right;
+    font-weight: bold;
+}
+
+.button {
+    width: 50%;
+    height: auto;
+    max-width: 640px;
+    min-width: 480px;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.view_button {
+    width: auto;
+}
+
 @media screen and (max-width: 750px) {
     .profile_image {
         width: 100%;
@@ -43,5 +66,27 @@
         margin-left: 0;
         margin-right: 0;
         height: auto;
+    }
+
+    .button {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    .view_button {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin-bottom: 40px;
     }
 }

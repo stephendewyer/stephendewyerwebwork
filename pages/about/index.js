@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import { Fragment, useEffect } from 'react';
+import Button from '../../components/button/button.js';
 import classes from './about.module.css';
 import Image from 'next/image';
 import stephen_dewyer_profile from '../../public/images/profile/stephen_dewyer_17_August_2021_02.jpg';
+import Link from 'next/link';
 
 const AboutPage = () => {
     return (
@@ -152,6 +154,32 @@ const AboutPage = () => {
                             Project: ∞ mile
                         </li>
                     </ul>
+                </div>
+                <div className="header_02" >
+                    testimonials
+                </div>
+                <div className={classes.profile_paragraphs}>
+                    Stephen [made] our daunting project of closing our business and two sites so easy and stress free.  
+                    The legacy site [he] created was exactly what we wanted.  
+                    We appreciated [his] proactive way of working with us, never finding a challenge too much to handle.  
+                    [He is] a joy to work with!<br /><br />
+                    <div className={classes.signatures}>
+                        - Chef Hollie Greene Rottman
+                    </div>
+                </div>
+                <div className="header_02" >
+                    resume
+                </div>
+                <div className={classes.button}>
+                    <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref >
+                        <a target="_blank">
+                            <div className={classes.view_button} >
+                                <Button>
+                                    view PDF
+                                </Button>
+                            </div>
+                        </a>
+                    </Link>
                 </div>
             </div>
         </Fragment>
