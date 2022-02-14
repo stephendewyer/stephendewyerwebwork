@@ -57,7 +57,7 @@ const AboutPage = () => {
                     technical training
                 </div>
                 <div className={classes.profile_paragraphs}>
-                    2021, <span style={{fontWeight: "bold"}} >Certificates in Modern Web Development and Web Accessibility, Udemy</span>
+                    2021-2022, <span style={{fontWeight: "bold"}} >Certificates in Modern Web Development and Web Accessibility, Udemy</span>
                     <ul>
                         <li>
                             NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)<br />
