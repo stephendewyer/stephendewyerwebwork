@@ -60,7 +60,7 @@ const InfiniteMile = () => {
                             </Button>
                         </div>
                     </Link>
-                    <Link href="/case_studies/artInTechServices" passHref={true} >
+                    <Link href="/case_studies/joyfoodly" passHref={true} >
                         <div className={classes.next_case_study}>
                             <Button passHref={true}>
                                 next

@@ -1,81 +1,85 @@
 .case_studies{
     position: relative;
     width: 100%;
-    max-width: 2000px;
+    max-width: 2400px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 150px;
 }
 
-.case_studies_grid {
-    width: 75%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.grid_container {
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-column-gap: 0;
-    padding-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    height: auto;
-    float: none;
-    position: relative;
-}
-
-.grid_item {
-    margin: 0;
+.case_studies_a {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: auto;
-    padding: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    
+}
+
+.case_studies_b {
+    display: flex;
+    width: 100%;
 }
 
 .case_study_image {
-    width: 100%;
-    height: auto;
-    position: relative;
-    margin-bottom: 50px;
+    width: 50%;
 }
 
-.detail_button {
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 45%;
-    left: 40%;
+.case_study_info_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
+.case_study_info {
+    width: auto;
+    height: 100%;
+}
+
+.case_study_description {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #7A7296;
+    font-size: 28px;
+}
+
+.view_button {
+    width: auto;
+}
 
 @media screen and (max-width: 750px) {
 
-    .grid_container {
-        display: grid;
-        grid-template-columns: auto;
-        padding-bottom: 40px;
-        margin-left: 0;
-        margin-right: 0;
-        left: 0;
-        right: 0;
-        min-width: 100%;
-        width: 100%;
+    .case_studies{
+        margin-bottom: 20px;
     }
 
-    .grid_item {
-        width: 100%;
-        top: 0;
-        left: 0;
+    .case_studies_a {
+        flex-direction: column;
+    }
+    .case_studies_b {
+        flex-direction: column-reverse;
     }
 
     .case_study_image {
-        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .case_study_info_container {
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .case_study_info_container {
+        width: 100%;
+        height: auto;
+    }
+    .case_study_description {
+        font-size: 18px;
     }
 
     .detail_button {

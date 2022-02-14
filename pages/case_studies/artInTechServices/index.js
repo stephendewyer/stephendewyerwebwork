@@ -50,7 +50,7 @@ const ArtinTechServices = () => {
                     </div>
                 </Link>
                 <div className={classes.case_studies_nav}>
-                    <Link href="/case_studies/infiniteMile" passHref={true} >
+                    <Link href="/case_studies/joyfoodly" passHref={true} >
                         <div className={classes.prev_case_study}>
                             <Button passHref={true}>
                                 previous
