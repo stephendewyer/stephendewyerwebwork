@@ -30,6 +30,10 @@ const AboutPage = () => {
                     experience
                 </div>
                 <div className={classes.profile_paragraphs}>
+                        2022-present, <span style={{fontWeight: "bold"}} >UX Design Consultant</span><br/>
+                        <span style={{fontWeight: "bold"}} >Turnberry Solutions</span><br/>
+                        Remote<br/><br/>
+
                         2021-present, <span style={{fontWeight: "bold"}} >Founding Director</span><br/>
                         <span style={{fontWeight: "bold"}} >Art in Tech Services Inc</span><br/>
                         Minneapolis-St. Paul area, Minnesota<br/><br/>
