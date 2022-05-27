@@ -31,7 +31,7 @@ const ArtinTechServices = () => {
                                 Brand identity design
                             </li>
                             <li>
-                                Quote request form
+                                Client relationship management software
                             </li>
                             <li>
                                 Custom images and videos
