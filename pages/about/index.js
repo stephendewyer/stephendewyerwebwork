@@ -30,10 +30,7 @@ const AboutPage = () => {
                     experience
                 </div>
                 <div className={classes.profile_paragraphs}>
-                        2022-present, <span style={{fontWeight: "bold"}} >UX Design Consultant</span><br/>
-                        <span style={{fontWeight: "bold"}} >Turnberry Solutions</span><br/>
-                        Remote<br/><br/>
-
+                    
                         2021-present, <span style={{fontWeight: "bold"}} >Founding Director</span><br/>
                         <span style={{fontWeight: "bold"}} >Art in Tech Services Inc</span><br/>
                         Minneapolis-St. Paul area, Minnesota<br/><br/>
@@ -41,6 +38,10 @@ const AboutPage = () => {
                         2017-present, <span style={{fontWeight: "bold"}} >Founder</span><br/>
                         <span style={{fontWeight: "bold"}} >Public Arts Commission</span><br/>
                         Minneapolis-St. Paul area, Minnesota<br/><br/>
+
+                        February - May 2022, <span style={{fontWeight: "bold"}} >UX Design Consultant</span><br/>
+                        <span style={{fontWeight: "bold"}} >Turnberry Solutions (contract)</span><br/>
+                        Remote<br/><br/>
 
                         2013-2017, <span style={{fontWeight: "bold"}} >Co-Founding Editor</span><br/>
                         <span style={{fontWeight: "bold"}} >Infinite Mile LLC (<span>&#8734;</span> mile)</span><br/>
