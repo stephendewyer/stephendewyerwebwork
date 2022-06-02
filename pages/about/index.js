@@ -3,7 +3,7 @@ import { Fragment, useEffect } from 'react';
 import Button from '../../components/button/button.js';
 import classes from './about.module.css';
 import Image from 'next/image';
-import stephen_dewyer_profile from '../../public/images/profile/stephen_dewyer_17_August_2021_02.jpg';
+import stephen_dewyer_profile from '../../public/images/profile/stephen_dewyer_10_cropped_square.jpg';
 import Link from 'next/link';
 
 const AboutPage = () => {
