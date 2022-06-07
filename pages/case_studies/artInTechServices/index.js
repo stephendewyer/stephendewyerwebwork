@@ -39,6 +39,9 @@ const ArtinTechServices = () => {
                             <li>
                                 Interactivity and responsiveness
                             </li>
+                            <li>
+                                Custom build using Next.js, MongoDB, SendGrid and Stripe
+                            </li>
                         </ul>
                     </div>        
                 </div>

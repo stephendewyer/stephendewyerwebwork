@@ -39,6 +39,9 @@ const Joyfoodly = () => {
                             <li>
                                 Redirection of domain names
                             </li>
+                            <li>
+                                Custom build using Next.js
+                            </li>
                         </ul>
                         The website redesign process, which uses a variation of the 5 Stage Design Thinking method:
                         <ol>
