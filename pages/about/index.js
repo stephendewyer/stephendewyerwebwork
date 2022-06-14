@@ -31,19 +31,19 @@ const AboutPage = () => {
                 </div>
                 <div className={classes.profile_paragraphs}>
                     
-                        2021-present, <span style={{fontWeight: "bold"}} >Founding Director</span><br/>
+                        2021 &ndash; present, <span style={{fontWeight: "bold"}} >Founding Director</span><br/>
                         <span style={{fontWeight: "bold"}} >Art in Tech Services Inc</span><br/>
                         Minneapolis-St. Paul area, Minnesota<br/><br/>
                         
-                        2017-present, <span style={{fontWeight: "bold"}} >Founder</span><br/>
+                        2017 &ndash; present, <span style={{fontWeight: "bold"}} >Founder</span><br/>
                         <span style={{fontWeight: "bold"}} >Public Arts Commission</span><br/>
                         Minneapolis-St. Paul area, Minnesota<br/><br/>
 
-                        February - May 2022, <span style={{fontWeight: "bold"}} >UX Design Consultant</span><br/>
+                        February &ndash; May 2022, <span style={{fontWeight: "bold"}} >UX Design Consultant</span><br/>
                         <span style={{fontWeight: "bold"}} >Turnberry Solutions (contract)</span><br/>
                         Remote<br/><br/>
 
-                        2013-2017, <span style={{fontWeight: "bold"}} >Co-Founding Editor</span><br/>
+                        2013 &ndash; 2017, <span style={{fontWeight: "bold"}} >Co-Founding Editor</span><br/>
                         <span style={{fontWeight: "bold"}} >Infinite Mile LLC (<span>&#8734;</span> mile)</span><br/>
                         Detroit, Michigan
                 </div>
@@ -64,7 +64,7 @@ const AboutPage = () => {
                     technical training
                 </div>
                 <div className={classes.profile_paragraphs}>
-                    2021-2022, <span style={{fontWeight: "bold"}} >Certificates in UX Design, Modern Web Development and Web Accessibility, Udemy</span>
+                    2021 &ndash; 2022, <span style={{fontWeight: "bold"}} >Certificates in UX Design, Modern Web Development and Web Accessibility, Udemy</span>
                     <ul>
                         <li>
                             NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)<br />
@@ -80,7 +80,7 @@ const AboutPage = () => {
                         </li>
                     </ul><br/>
                    
-                    2020-2021, <span style={{fontWeight: "bold"}} >Certificates in Building Web Applications, University of Michigan – Coursera</span>
+                    2020 &ndash; 2021, <span style={{fontWeight: "bold"}} >Certificates in Building Web Applications, University of Michigan – Coursera</span>
                     <ul>
                         <li>
                             JavaScript, jQuery, and JSON<br />
@@ -145,7 +145,7 @@ const AboutPage = () => {
                     awards and grants
                 </div>
                 <div className={classes.profile_paragraphs}>
-                    2014-2016, <span style={{fontWeight: "bold"}} >Knight Arts Challenge Detroit matching $20,000 grant<br />
+                    2014 &ndash; 2016, <span style={{fontWeight: "bold"}} >Knight Arts Challenge Detroit matching $20,000 grant<br />
                     John S. and James L. Knight Foundation</span><br />
                     Miami, Florida
                     <ul>
