@@ -17,7 +17,7 @@ const PublicArtsCommission = () => {
             <div className="container" role="main">
                 <h1 className="header">
                     client: Public Arts Commission<br/>
-                    2017-present
+                    2017 &ndash; present
                 </h1>
                 <div className={classes.slider_case_study}>
                     <PublicArtsCommissionSlideCarousel />

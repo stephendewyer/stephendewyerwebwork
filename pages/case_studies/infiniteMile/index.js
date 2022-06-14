@@ -17,7 +17,7 @@ const InfiniteMile = () => {
             <div className="container" role="main">
                 <h1 className="header">
                     client: Infinite Mile (∞ mile)<br />
-                    2013-2017
+                    2013 &ndash; 2017
                 </h1>
                 <div className={classes.slider_case_study}>
                     <InfiniteMileSlideCarousel />

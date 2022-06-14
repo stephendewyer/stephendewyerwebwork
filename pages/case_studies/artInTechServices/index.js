@@ -17,7 +17,7 @@ const ArtinTechServices = () => {
             <div className="container" role="main">
                 <h1 className="header">
                     client: Art in Tech Services Inc<br/>
-                    2021-present
+                    2021 &ndash; present
                 </h1>
                 <div className={classes.slider_case_study}>
                     <ArtinTechServicesSlideCarousel />

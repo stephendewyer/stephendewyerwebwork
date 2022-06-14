@@ -44,7 +44,7 @@ const CaseStudiesPage = () => {
                     <div className={classes.case_study_info_container}>
                         <div className={classes.case_study_info}>
                             <h2 className={classes.case_study_description}>
-                                client: Art in Tech Services Inc<br/>2021-present
+                                client: Art in Tech Services Inc<br/>2021 &ndash; present
                             </h2>
                             <Link href="/case_studies/artInTechServices" passHref >
                                 <div className={classes.view_button} >
@@ -66,7 +66,7 @@ const CaseStudiesPage = () => {
                     <div className={classes.case_study_info_container}>
                         <div className={classes.case_study_info}>
                             <h2 className={classes.case_study_description}>
-                                client: Public Arts Commission<br/>2017-present
+                                client: Public Arts Commission<br/>2017 &ndash; present
                             </h2>
                             <Link href="/case_studies/publicArtsCommission" passHref >
                                 <div className={classes.view_button} >
@@ -82,7 +82,7 @@ const CaseStudiesPage = () => {
                     <div className={classes.case_study_info_container}>
                         <div className={classes.case_study_info}>
                             <h2 className={classes.case_study_description}>
-                                client: Infinite Mile LLC<br/>2013-2017
+                                client: Infinite Mile LLC<br/>2013 &ndash; 2017
                             </h2>
                             <Link href="/case_studies/infiniteMile" passHref >
                                 <div className={classes.view_button} >
