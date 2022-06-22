@@ -1,46 +1,39 @@
-import React, { Component } from 'react';
+import React, { useState, useRef } from 'react';
 import MainNavigation from './MainNavigation/MainNavigation';
 import SideDrawer from './SideDrawer/SideDrawer';
 import Backdrop from './Backdrop/Backdrop';
 import Container from '../layout/Container/Container';
 
-class Layout extends Component {
-    state = {
-        sideDrawerOpen: false
-    };
+const Layout = () => {
 
-    drawerToggleClickHandler = () => {
-        this.setState((prevState) => {
-            return {sideDrawerOpen: !prevState.sideDrawerOpen};
-        });
+    const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
+
+    const drawerToggleClickHandler = () => {
+        setSideDrawerOpen(!sideDrawerOpen);        
+    }
+    
+    const backdropClickHandler = () => {
+        setSideDrawerOpen(false);
     }
 
-    backdropClickHandler = () => {
-        this.setState({sideDrawerOpen: false});
+    const linkClickHandler = () => {
+        setSideDrawerOpen(false);
+    }
+        
+    let backdrop;
+
+    if (sideDrawerOpen) {
+        backdrop = <Backdrop  back_drop_clicked={backdropClickHandler} />;
     }
 
-    linkClickHandler = () => {
-        console.log('link has been clicked');
-        this.setState({sideDrawerOpen: false});
-    }
-
-    render () {
-        let backdrop;
-
-        if (this.state.sideDrawerOpen) {
-            backdrop = <Backdrop click={this.backdropClickHandler} />;
-        }
-
-        return (
-            <div>
-                <MainNavigation drawerClickHandler={this.drawerToggleClickHandler} />
-                <SideDrawer show={this.state.sideDrawerOpen} click={this.linkClickHandler} />
-                {backdrop}
-                <Container />
-            </div>
-        )
-
-    }
+    return (
+        <div>
+            <MainNavigation drawerClickHandler={drawerToggleClickHandler} />
+            <SideDrawer show={sideDrawerOpen} click={linkClickHandler} />
+            {backdrop}
+            <Container />
+        </div>
+    )
 
 }
 

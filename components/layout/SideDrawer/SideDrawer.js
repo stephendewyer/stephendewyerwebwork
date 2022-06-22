@@ -11,7 +11,7 @@ import MyLink from '../../../public/util/myLink';
 
 <MyLink />
 
-const AboutLink = (props) => {
+const AboutLink = () => {
     const [isHovering, setIsHovered] = useState(false);
     const onMouseEnter = () => setIsHovered(true);
     const onMouseLeave = () => setIsHovered(false);
@@ -34,7 +34,7 @@ const AboutLink = (props) => {
     );
 };
 
-const CaseStudiesLink = (props) => {
+const CaseStudiesLink = () => {
     const [isHovering, setIsHovered] = useState(false);
     const onMouseEnter = () => setIsHovered(true);
     const onMouseLeave = () => setIsHovered(false);
@@ -57,7 +57,7 @@ const CaseStudiesLink = (props) => {
     );
 };
 
-const ContactLink = (props) => {
+const ContactLink = () => {
     const [isHovering, setIsHovered] = useState(false);
     const onMouseEnter = () => setIsHovered(true);
     const onMouseLeave = () => setIsHovered(false);
@@ -80,7 +80,7 @@ const ContactLink = (props) => {
     );
 };
 
-const sideDrawer = props => {
+const sideDrawer = (props) => {
 
     return (
 

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Fragment, useEffect } from 'react';
+import { Fragment } from 'react';
 import Button from '../../components/button/button.js';
 import classes from './about.module.css';
 import Image from 'next/image';
@@ -7,6 +7,7 @@ import stephen_dewyer_profile from '../../public/images/profile/stephen_dewyer_1
 import Link from 'next/link';
 
 const AboutPage = () => {
+
     return (
         <Fragment>
             <Head>
