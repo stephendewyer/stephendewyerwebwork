@@ -37,6 +37,18 @@
     position: relative;
 	width: auto;
 	height: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.external_link_icon {
+	width: 20px;
+	margin-left: 8px;
+}
+
+.email_icon {
+	width: 30px;
+	margin-left: 8px;
 }
 
 @media screen and (max-width: 750px){
@@ -44,20 +56,31 @@
     .footer {
 		padding-top: 30px;
 	    padding-bottom: 30px;
+		flex-direction: column;
+		
     }
 
     .footer_info {
-		padding-right: 12px;
-        padding-left: 25px;
+		width: auto;
+		justify-content: center;
+		padding: 0 10px;
 	}
 	
 	.footer_links {
-		flex-direction: column;
-        padding-right: 25px;
+		flex-wrap: wrap;
+		width: auto;
+		justify-content: center;
+		padding: 10px 10px;
 	}
-	
-	.footer_link {
-		float: right;
+
+	.external_link_icon {
+		width: 15px;
+		margin-left: 6px;
+	}
+
+	.email_icon {
+		width: 20px;
+		margin-left: 6px;
 	}
 
 }

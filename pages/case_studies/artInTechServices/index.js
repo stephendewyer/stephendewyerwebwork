@@ -1,11 +1,14 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Image from 'next/image';
 import classes from './artInTechServices.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArtinTechServicesSlideCarousel from "../../../components/slide_carousel/ArtinTechServicesSlideCarousel";
 import Link from 'next/link';
 import Button from '../../../components/button/button';
+import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
+import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
 
 const ArtinTechServices = () => {
     return (
@@ -46,22 +49,40 @@ const ArtinTechServices = () => {
                     </div>        
                 </div>
                 <Link href="https://www.artintechservices.com/" passHref={true} >
-                    <div className={classes.visit_link}>
-                        <Button passHref={true}>
-                            visit
-                        </Button>
-                    </div>
+                    <a className={classes.visit_link} target="_blank" rel="noopener noreferrer">
+                        <ButtonExternalLink passHref={true}>
+                            <div>
+                                visit
+                            </div>
+                            <div className={classes.external_link_icon} >
+                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                            </div>
+                        </ButtonExternalLink>
+                    </a>
+                </Link>
+
+                <Link href="https://www.figma.com/community/file/1077736708672476518" passHref={true} >
+                    <a className={classes.visit_link} target="_blank" rel="noopener noreferrer" >
+                        <ButtonExternalLink passHref={true}>
+                            <div>
+                                view prototype
+                            </div>
+                            <div className={classes.external_link_icon} >
+                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                            </div>
+                        </ButtonExternalLink>
+                    </a>
                 </Link>
                 <div className={classes.case_studies_nav}>
                     <Link href="/case_studies/joyfoodly" passHref={true} >
-                        <div className={classes.prev_case_study}>
+                        <div>
                             <Button passHref={true}>
                                 previous
                             </Button>
                         </div>
                     </Link>
                     <Link href="/case_studies/publicArtsCommission" passHref={true} >
-                        <div className={classes.next_case_study}>
+                        <div>
                             <Button passHref={true}>
                                 next
                             </Button>

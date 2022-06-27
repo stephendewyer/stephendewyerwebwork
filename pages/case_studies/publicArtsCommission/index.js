@@ -1,11 +1,14 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Image from 'next/image';
 import classes from './publicArtsCommission.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PublicArtsCommissionSlideCarousel from "../../../components/slide_carousel/PublicArtsCommissionSlideCarousel";
 import Link from 'next/link';
 import Button from '../../../components/button/button';
+import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
+import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
 
 const PublicArtsCommission = () => {
     return (
@@ -55,22 +58,27 @@ const PublicArtsCommission = () => {
                     </div>
                 </div>
                 <Link href="https://www.publicartscommission.org/" passHref={true} >
-                    <div className={classes.visit_link} >
-                        <Button passHref={true}>
-                            visit
-                        </Button>
-                    </div>
+                    <a className={classes.visit_link} target="_blank" rel="noopener noreferrer">
+                        <ButtonExternalLink passHref={true}>
+                            <div>
+                                visit
+                            </div>
+                            <div className={classes.external_link_icon} >
+                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                            </div>
+                        </ButtonExternalLink>
+                    </a>
                 </Link>
                 <div className={classes.case_studies_nav}>
                     <Link href="/case_studies/artInTechServices" passHref={true} >
-                        <div className={classes.prev_case_study}>
+                        <div>
                             <Button passHref={true}>
                                 previous
                             </Button>
                         </div>
                     </Link>
                     <Link href="/case_studies/infiniteMile" passHref={true} >
-                        <div className={classes.next_case_study}>
+                        <div>
                             <Button passHref={true}>
                                 next
                             </Button>

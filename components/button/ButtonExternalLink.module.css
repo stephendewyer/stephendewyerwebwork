@@ -1,6 +1,8 @@
 
-.button_footer {
-    display: inline-block;
+.button_external_link {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
     padding: 0.3em 1.2em;
     margin: 0 0.3em 0.3em 0;
     border-radius: 2em;
@@ -14,15 +16,6 @@
     cursor: pointer;
 }
 
-.button_footer:hover {
+.button_external_link:hover {
     background-color: #6A7B6C;
-}
-
-@media all and (max-width: 750px){
-
-    .button_footer {
-        display: block;
-        margin: 0.2em auto;
-    }
-
 }

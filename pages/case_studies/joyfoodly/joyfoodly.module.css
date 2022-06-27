@@ -10,75 +10,30 @@
     margin-bottom: 150px;
 }
 
-.prototypes_container {
-    text-align: center;
-    width: 50%;
-    max-width: 1000px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-}
-
-.prototypes_heading {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    color: #7A7296;
-    font-size: 28px;
-    margin-bottom: 60px;
-}
-
-.prototypes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-
-.prototype_mobile {
-    width: 30%;
-    height: auto;
-    margin-right: 10%;
-}
-
-.prototype_desktop {
-    width: 60%;
-    height: auto;
-}
-
 .visit_link {
     font-size: 24px;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
     font-weight: bold;
-    text-align: center;
+    width: auto;
+}
+
+.external_link_icon {
+	width: 20px;
+	margin-left: 8px;
 }
 
 .case_studies_nav {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     width: 50%;
-    max-width: 600px;
+    max-width: 640px;
     min-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
-    float: none;
-    margin-bottom: 150px;
-}
-
-.prev_case_study {
-    float: left;
-    right: 0;
-    position: relative;
-    height: auto;
-}
-
-.next_case_study {
-    float: right;
-    right: 0;
-    position: relative;
-    height: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 @media screen and (max-width: 750px) {
@@ -95,31 +50,27 @@
         margin-bottom: 125px;
     }
 
-    .prototypes_container {
-        width: 80%;
-        height: auto;
-        margin-bottom: 30px;
-    }
-    
-    .prototypes_heading {
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-
     .visit_link {
         font-size: 16px;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
 
+    .external_link_icon {
+		width: 15px;
+		margin-left: 6px;
+	}
+
     .case_studies_nav {
-        font-size: 16px;
-        margin-bottom: 140px;
         width: 100%;
+        max-width: 100%;
+        min-width:100%;
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-top: 20px;
         margin-left: 0;
         margin-right: 0;
         padding-left: 25px;
         padding-right: 25px;
-        max-width: 100%;
-        min-width: 100%;
     }
+    
 }
