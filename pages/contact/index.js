@@ -35,7 +35,7 @@ const ContactPage = () => {
                 </div>
                 <Link href="mailto:sdewyer@artintechservices.com" passHref={true} >
                     <div className={classes.contact_button} >
-                        <Button passHref={true}>
+                        <Button passHref={true} aria-label="email link">
                             stephen.dewyer@stephengdewyer.info
                         </Button>
                     </div>

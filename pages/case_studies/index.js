@@ -32,7 +32,7 @@ const CaseStudiesPage = () => {
                             </h2>
                             <Link href="/case_studies/joyfoodly" passHref >
                                 <div className={classes.view_button} >
-                                    <Button>
+                                    <Button aria-label="link to view">
                                         view
                                     </Button>
                                 </div>
@@ -48,7 +48,7 @@ const CaseStudiesPage = () => {
                             </h2>
                             <Link href="/case_studies/artInTechServices" passHref >
                                 <div className={classes.view_button} >
-                                    <Button>
+                                    <Button aria-label="link to view">
                                         view
                                     </Button>
                                 </div>
@@ -70,7 +70,7 @@ const CaseStudiesPage = () => {
                             </h2>
                             <Link href="/case_studies/publicArtsCommission" passHref >
                                 <div className={classes.view_button} >
-                                    <Button>
+                                    <Button aria-label="link to view">
                                         view
                                     </Button>
                                 </div>
@@ -86,7 +86,7 @@ const CaseStudiesPage = () => {
                             </h2>
                             <Link href="/case_studies/infiniteMile" passHref >
                                 <div className={classes.view_button} >
-                                    <Button>
+                                    <Button aria-label="link to view">
                                         view
                                     </Button>
                                 </div>

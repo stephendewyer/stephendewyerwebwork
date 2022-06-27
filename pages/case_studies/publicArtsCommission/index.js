@@ -59,7 +59,7 @@ const PublicArtsCommission = () => {
                 </div>
                 <Link href="https://www.publicartscommission.org/" passHref={true} >
                     <a className={classes.visit_link} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true}>
+                        <ButtonExternalLink passHref={true} aria-label="link to visit">
                             <div>
                                 visit
                             </div>
@@ -72,14 +72,14 @@ const PublicArtsCommission = () => {
                 <div className={classes.case_studies_nav}>
                     <Link href="/case_studies/artInTechServices" passHref={true} >
                         <div>
-                            <Button passHref={true}>
+                            <Button passHref={true} aria-label="link to previous case study">
                                 previous
                             </Button>
                         </div>
                     </Link>
                     <Link href="/case_studies/infiniteMile" passHref={true} >
                         <div>
-                            <Button passHref={true}>
+                            <Button passHref={true} aria-label="link to next case study">
                                 next
                             </Button>
                         </div>

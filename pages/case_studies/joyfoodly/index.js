@@ -69,7 +69,7 @@ const Joyfoodly = () => {
 
                 <Link href="https://joyfoodly.vercel.app/" passHref={true} >
                     <a className={classes.visit_link} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true}>
+                        <ButtonExternalLink passHref={true} aria-label="link to visit">
                             <div>
                                 visit
                             </div>
@@ -82,7 +82,7 @@ const Joyfoodly = () => {
 
                 <Link href="https://www.figma.com/community/file/1067233911203456668" passHref={true} >
                     <a className={classes.visit_link} target="_blank" rel="noopener noreferrer" >
-                        <ButtonExternalLink passHref={true}>
+                        <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
                             <div>
                                 view desktop prototype
                             </div>
@@ -95,7 +95,7 @@ const Joyfoodly = () => {
 
                 <Link href="https://www.figma.com/community/file/1067232787737440923" passHref={true} >
                     <a className={classes.visit_link} target="_blank" rel="noopener noreferrer" >
-                        <ButtonExternalLink passHref={true}>
+                        <ButtonExternalLink passHref={true} aria-label="link to mobile prototype">
                             <div>
                                 view mobile prototype
                             </div>
@@ -109,14 +109,14 @@ const Joyfoodly = () => {
                 <div className={classes.case_studies_nav}>
                     <Link href="/case_studies/infiniteMile" passHref={true} >
                         <div>
-                            <Button passHref={true}>
+                            <Button passHref={true} aria-label="link to previous case study">
                                 previous
                             </Button>
                         </div>
                     </Link>
                     <Link href="/case_studies/artInTechServices" passHref={true} >
                         <div>
-                            <Button passHref={true}>
+                            <Button passHref={true} aria-label="link to next case study">
                                 next
                             </Button>
                         </div>

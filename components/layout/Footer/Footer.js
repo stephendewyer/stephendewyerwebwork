@@ -44,7 +44,7 @@ function Footer() {
                                 email
                             </div>
                             <div className={styles.email_icon} >
-                                <Image src={emailIcon} layout="responsive" alt="email icon" />
+                                <Image src={emailIcon} layout="responsive" alt="email icon"/>
                             </div>
                         </ButtonExternalLink>
                     </div>

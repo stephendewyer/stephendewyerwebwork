@@ -50,7 +50,7 @@ const ArtinTechServices = () => {
                 </div>
                 <Link href="https://www.artintechservices.com/" passHref={true} >
                     <a className={classes.visit_link} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true}>
+                        <ButtonExternalLink passHref={true} aria-label="link to visit">
                             <div>
                                 visit
                             </div>
@@ -63,7 +63,7 @@ const ArtinTechServices = () => {
 
                 <Link href="https://www.figma.com/community/file/1077736708672476518" passHref={true} >
                     <a className={classes.visit_link} target="_blank" rel="noopener noreferrer" >
-                        <ButtonExternalLink passHref={true}>
+                        <ButtonExternalLink passHref={true} aria-label="link to view prototype">
                             <div>
                                 view prototype
                             </div>
@@ -76,14 +76,14 @@ const ArtinTechServices = () => {
                 <div className={classes.case_studies_nav}>
                     <Link href="/case_studies/joyfoodly" passHref={true} >
                         <div>
-                            <Button passHref={true}>
+                            <Button passHref={true} aria-label="link to previous case study">
                                 previous
                             </Button>
                         </div>
                     </Link>
                     <Link href="/case_studies/publicArtsCommission" passHref={true} >
                         <div>
-                            <Button passHref={true}>
+                            <Button passHref={true} aria-label="link to next case study">
                                 next
                             </Button>
                         </div>
