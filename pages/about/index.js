@@ -181,12 +181,10 @@ const AboutPage = () => {
                 </div>
                 <div className={classes.button}>
                     <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref >
-                        <a target="_blank">
-                            <div className={classes.view_button} >
-                                <Button>
-                                    view PDF
-                                </Button>
-                            </div>
+                        <a target="_blank" rel="noopener noreferrer" className={classes.view_button}>
+                            <Button>
+                                view PDF
+                            </Button>
                         </a>
                     </Link>
                 </div>

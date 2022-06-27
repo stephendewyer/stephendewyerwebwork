@@ -14,7 +14,7 @@ function Footer() {
             </div>
             <div className={styles.footer_links}>
                 <Link href="https://www.linkedin.com/in/stephen-dewyer-a15539a5" passHref={true} aria-label="link to LinkedIn profile">
-                    <div className={styles.footer_link}>
+                    <a className={styles.footer_link} target="_blank" rel="noopener noreferrer">
                         <ButtonExternalLink passHref={true}>
                             <div>
                                 LinkedIn
@@ -23,10 +23,10 @@ function Footer() {
                                 <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
                             </div>
                         </ButtonExternalLink>
-                    </div>
+                    </a>
                 </Link>
                 <Link href="https://www.github.com/stephendewyer" passHref={true} aria-label="link to GitHub profile">
-                    <div className={styles.footer_link}>
+                    <a className={styles.footer_link} target="_blank" rel="noopener noreferrer">
                         <ButtonExternalLink passHref={true}>
                             <div>
                                 GitHub
@@ -35,10 +35,10 @@ function Footer() {
                                 <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
                             </div>
                         </ButtonExternalLink>
-                    </div>
+                    </a>
                 </Link>
                 <Link href="mailto:sdewyer@artintechservices.com" passHref={true} aria-label="email stephen garrett dewyer">
-                    <div className={styles.footer_link}>
+                    <a className={styles.footer_link} target="_blank" rel="noopener noreferrer">
                         <ButtonExternalLink passHref={true}>
                             <div>
                                 email
@@ -47,7 +47,7 @@ function Footer() {
                                 <Image src={emailIcon} layout="responsive" alt="email icon"/>
                             </div>
                         </ButtonExternalLink>
-                    </div>
+                    </a>
                 </Link>
             </div>
         </div>
