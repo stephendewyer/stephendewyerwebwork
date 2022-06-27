@@ -1,103 +1,11 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import Image from 'next/image';
-import logo from '../../../public/images/logo/stephen_dewyer_web_logo_01.png';
-import logo_hover from '../../../public/images/logo/stephen_dewyer_web_logo_02.png';
-import aboutLink from '../../../public/images/links/blind_link_about_01.png';
-import aboutLink_hover from '../../../public/images/links/blind_link_about_02.png';
-import caseStudiesLink from '../../../public/images/links/blind_link_case_studies_01.png';
-import caseStudiesLink_hover from '../../../public/images/links/blind_link_case_studies_02.png';
-import contactLink from '../../../public/images/links/blind_link_contact_01.png';
-import contactLink_hover from '../../../public/images/links/blind_link_contact_02.png';
+import IndexTab from './navigation_tabs/IndexTab';
+import AboutTab from './navigation_tabs/AboutTab';
+import CaseStudiesTab from './navigation_tabs/CaseStudiesTab';
+import ContactTab from './navigation_tabs/ContactTab';
 import classes from './MainNavigation.module.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-import MyLink from '../../../public/util/myLink';
 import { debounce } from '../../../public/util/helpers';
-
-<MyLink />
-
-const Logo = () => {
-    const [isHovering, setIsHovered] = useState(false);
-    const onMouseEnter = () => setIsHovered(true);
-    const onMouseLeave = () => setIsHovered(false);
-    return (
-        <div 
-            
-            onMouseEnter={onMouseEnter} 
-            onMouseLeave={onMouseLeave}
-        >
-            <MyLink href="/" passHref >
-                {isHovering ? (
-                    <Image src={logo_hover} layout="responsive" alt="stephen dewyer web design and development logo"/> 
-                    ) : (
-                    <Image src={logo} layout="responsive" alt="stephen dewyer web design and development logo"/>
-                )}
-            </MyLink>    
-        </div>
-    );
-};
-
-const AboutLink = () => {
-    const [isHovering, setIsHovered] = useState(false);
-    const onMouseEnter = () => setIsHovered(true);
-    const onMouseLeave = () => setIsHovered(false);
-    return (
-        <div 
-            
-            onMouseEnter={onMouseEnter} 
-            onMouseLeave={onMouseLeave}
-        >
-            <MyLink href="/about" passHref >
-                {isHovering ? (
-                    <Image src={aboutLink_hover} layout="responsive" alt="about link"/> 
-                    ) : (
-                    <Image src={aboutLink} layout="responsive" alt="about link"/>
-                )}
-            </MyLink>    
-        </div>
-    );
-};
-
-const CaseStudiesLink = () => {
-    const [isHovering, setIsHovered] = useState(false);
-    const onMouseEnter = () => setIsHovered(true);
-    const onMouseLeave = () => setIsHovered(false);
-    return (
-        <div 
-            
-            onMouseEnter={onMouseEnter} 
-            onMouseLeave={onMouseLeave}
-        >
-            <MyLink href="/case_studies" passHref >
-                {isHovering ? (
-                    <Image src={caseStudiesLink_hover} layout="responsive" alt="case studies link"/> 
-                    ) : (
-                    <Image src={caseStudiesLink} layout="responsive" alt="case studies link"/>
-                )}
-            </MyLink>    
-        </div>
-    );
-};
-
-const ContactLink = () => {
-    const [isHovering, setIsHovered] = useState(false);
-    const onMouseEnter = () => setIsHovered(true);
-    const onMouseLeave = () => setIsHovered(false);
-    return (
-        <div 
-            
-            onMouseEnter={onMouseEnter} 
-            onMouseLeave={onMouseLeave}
-        >
-            <MyLink href="/contact" passHref >
-                {isHovering ? (
-                    <Image src={contactLink_hover} layout="responsive" alt="contact link"/> 
-                    ) : (
-                    <Image src={contactLink} layout="responsive" alt="contact link"/>
-                )}
-            </MyLink>    
-        </div>
-    );
-};
 
 const MainNavigation = (props) => {
 
@@ -138,28 +46,27 @@ const MainNavigation = (props) => {
 
     return (
         <Fragment>
-            <div className={classes.nav_bar} >
-                <nav style={{ ...navbarStyles, top: visible ? '0' : '-250px' }} >
-                
-                    <div className={classes.blind_logo} >
-                        <Logo />
+            <nav className={classes.nav_bar} >
+                <div style={{ ...navbarStyles, top: visible ? '0' : '-250px' }} > 
+                    <div className={classes.blind_logo} aria-hidden={(props.click) ? "true" : "false"}>
+                        <IndexTab />
                     </div>
-                    <div className={classes.grid_container}>
+                    <div className={classes.grid_container} aria-hidden={(props.click) ? "true" : "false"}>
                         <div className={classes.grid_item}>
-                            <AboutLink />
+                            <AboutTab />
                         </div>
                         <div className={classes.grid_item}>
-                            <CaseStudiesLink />
+                            <CaseStudiesTab />
                         </div>
                         <div className={classes.grid_item}>
-                            <ContactLink />
+                            <ContactTab />
                         </div>
                     </div>
                     <div className={classes.main_navigation_toggle_button}>
-                        <DrawerToggleButton click={props.drawerClickHandler}/>
+                        <DrawerToggleButton click={props.drawerClickHandler} aria-hidden={(props.click) ? "true" : "false"} />
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </Fragment>
     )
 }

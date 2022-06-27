@@ -10,12 +10,12 @@
     text-decoration: none;
     font-weight: 300;
     color: #FFE9C0;
-    background-color: #3B3C40;
+    background-color: #25262D;
     text-align: center;
     transition: all 0.2s;
     cursor: pointer;
 }
 
 .button_external_link:hover {
-    background-color: #777880;
+    background-color: #9497B2;
 }

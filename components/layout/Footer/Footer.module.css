@@ -56,14 +56,13 @@
     .footer {
 		padding-top: 30px;
 	    padding-bottom: 30px;
-		flex-direction: column;
-		
+		flex-direction: column-reverse;
     }
 
     .footer_info {
 		width: auto;
 		justify-content: center;
-		padding: 0 10px;
+		padding: 10px 10px;
 	}
 	
 	.footer_links {
