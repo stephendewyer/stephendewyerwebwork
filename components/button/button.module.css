@@ -3,18 +3,18 @@
     font-weight: bold;
     cursor: pointer;
     padding: 0.5em 3em;
-    border: 0.16em solid #FF8D61;
+    border: 0.16em solid #804731;
     margin:0 0.3em 0.3em 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: #FF8D61;
+    color: #804731;
     text-align: center;
     transition: all 0.15s;
 }
 
 .button:hover {
-    color:#6A7B6C;
-    border-color:#6A7B6C;
+    color:#FF8D61;
+    border-color:#FF8D61;
 }
 
 .button:active {
