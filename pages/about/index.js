@@ -22,7 +22,7 @@ const AboutPage = () => {
                     <Image src={stephen_dewyer_profile} layout="responsive" alt="stephen dewyer profile image" />
                 </div>
                 <div className={classes.profile_paragraphs}>
-                    <p>stephen garrett dewyer is a <span style={{fontWeight: "bold"}} >full-stack web developer</span>, <span style={{fontWeight: "bold"}} >U.I./U.X. designer</span>, <span style={{fontWeight: "bold"}} >award-winning artist</span> and <span style={{fontWeight: "bold"}} >organizer</span> with experience designing web programs for creative organizations.
+                    <p>stephen garrett dewyer is a <span style={{fontWeight: "bold"}} >full-stack web developer</span>, <span style={{fontWeight: "bold"}} >UX designer</span>, <span style={{fontWeight: "bold"}} >award-winning artist</span> and <span style={{fontWeight: "bold"}} >organizer</span> with experience designing web programs for creative organizations.
                         He worked with multiple stakeholders to produce critically-acclaimed projects that use advancements in art and digital technology.  
                         In his work, stephen brings together disparate parts of the community through multi-disciplinary projects.  
                         He is interested in developing creative, effective and attractive web programs that improve user experiences for the public and businesses.</p>
@@ -52,11 +52,11 @@ const AboutPage = () => {
                     education
                 </div>
                 <div className={classes.profile_paragraphs}>
-                        2011, <span style={{fontWeight: "bold"}} >M.F.A. in Sculpture</span><br/>
+                        2011, <span style={{fontWeight: "bold"}} >MFA in Sculpture</span><br/>
                         <span style={{fontWeight: "bold"}} >Yale University School of Art</span><br/>
                         New Haven, Connecticut<br/><br/>
 
-                        2008, <span style={{fontWeight: "bold"}} >B.F.A. in Art History, Theory <span>&#38;</span> Criticism</span><br/>
+                        2008, <span style={{fontWeight: "bold"}} >BFA in Art History, Theory <span>&#38;</span> Criticism</span><br/>
                         <span style={{fontWeight: "bold"}} >Maryland Institute College of Art (MICA)</span><br/>
                         cum laude<br/>
                         Baltimore, Maryland
@@ -119,7 +119,7 @@ const AboutPage = () => {
                         </li>
                     </ul><br/>
 
-                    2020, <span style={{fontWeight: "bold"}} >Certificates in U.X. Design, Interaction Design Foundation</span> 
+                    2020, <span style={{fontWeight: "bold"}} >Certificates in UX Design, Interaction Design Foundation</span> 
                     <ul>
                         <li>
                             UI Design Patterns for Successful Software<br />

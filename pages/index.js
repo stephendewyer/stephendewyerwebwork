@@ -56,7 +56,7 @@ const IndexPage = () => {
                   full-stack web developer
                 </li><br/>
                 <li>
-                  User Interaction (U.I.) and User Experience (U.X.) designer
+                  User Experience (U.X.) designer
                 </li><br/>
                 <li>
                   award-winning artist whose work has shown in national and international exhibitions
