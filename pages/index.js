@@ -67,6 +67,9 @@ const IndexPage = () => {
               </ul>
               He created digital designs including web programs for:
               <ul><br/>
+              <li>
+                  large enterprises
+                </li><br/>
                 <li>
                   creative organizations
                 </li><br/>
