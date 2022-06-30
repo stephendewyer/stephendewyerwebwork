@@ -5,6 +5,7 @@ import classes from './publicArtsCommission.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PublicArtsCommissionSlideCarousel from "../../../components/slide_carousel/PublicArtsCommissionSlideCarousel";
+import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
 import Button from '../../../components/button/button';
 import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
@@ -27,48 +28,139 @@ const PublicArtsCommission = () => {
                 </div>
                 <div className='paragraphs_container' >
                     <div className='paragraphs' >
-                        Public Arts Commission is a grassroots, 501(c)(4) non-profit organization that combines art and politics for greater democracy.<br /><br/> 
-                        Services and features:<br />
-                            <ul>
-                                <li>
-                                    Brand identity design
-                                </li>
-                                <li>
-                                    Custom images
-                                </li>
-                                <li>
-                                    Online portal for campaigns to apply for endorsement
-                                </li>
-                                <li>
-                                    Email newsletter subscription form
-                                </li>
-                                <li>
-                                    Endorsed campaigns by state and country
-                                </li>
-                                <li>
-                                    Interactivity and responsiveness
-                                </li>
-                            </ul>
-                        Forthcoming:<br />
-                            <ul>
-                                <li>
-                                    Web application for individuals in the art community to connect and organize at the grassroots level
-                                </li>
-                            </ul>
-                    </div>
+                    Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.
+                    <br /><br />
+                    <div className={classes.inline_bold}>my role: </div>Founder of Public Arts Commission
+                    <br /><br />
+                    <div className={classes.inline_bold}>services I provided:</div>
+                        <ul>
+                            <li>
+                                Designed brand identity including logo
+                            </li>
+                            <li>
+                                Designed, developed and deployed an enterprise website and web application
+                            </li>
+                            <li>
+                                Created custom graphics
+                            </li>
+                            <li>
+                                Created campaign management software
+                            </li>
+                            <li>
+                                Prototyping web applications for individuals to connect and organize and for campaigns to purchase subscriptions to connect with individuals in the Public Arts Commission network
+                            </li>
+                        </ul>
+                    </div> 
+                    <h2 className="header_02">
+                        the process
+                    </h2>       
                 </div>
-                <Link href="https://www.publicartscommission.org/" passHref={true} >
-                    <a className={classes.visit_link} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true} aria-label="link to visit">
-                            <div>
-                                visit
-                            </div>
-                            <div className={classes.external_link_icon} >
-                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                            </div>
-                        </ButtonExternalLink>
-                    </a>
-                </Link>
+                <Tabs>
+                    <div label="1" className={classes.step}>
+                        <h2 className={classes.process_heading}>
+                            empathize
+                        </h2>
+                        <p className={classes.process_paragraphs}>
+                            Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.  
+                            The non-profit organization launched in 2017.  
+                            The organization was contacting campaigns and handling campaign applications for endorsement mostly through email, which became cumbersome.  
+                            The organization is planning to use a subscription service for campaigns to connect with individuals in the Public Arts Commission network.  
+                            The organization is also planning to offer individuals free accounts to enable grass-roots organizing across the United States via a web application. 
+                        </p>
+                    </div>
+                    <div label="2" className={classes.step}>
+                        <h2 className={classes.process_heading}>
+                            define
+                        </h2>
+                        <p className={classes.process_paragraphs}>
+                            Public Arts Commission needed a website to display endorsed campaigns by election cycle and by state.  
+                            The website also needed to give important information about the organization.  
+                            The organization needed a web application to allow campaigns with accounts to apply for an endorsement and receive status updates.  Eventually, the organization will need a web application for campaigns to connect with individuals in the Public Arts Commission network.  
+                            Public Arts Commission will also need a web application for individuals to connect and organize for free. 
+                        </p>     
+                    </div>
+                    <div label="3" className={classes.step}>
+                        <h2 className={classes.process_heading}>
+                            ideate
+                        </h2>
+                        <p className={classes.process_paragraphs}>
+                            I generated drawings for the Public Arts Commission website and web application for campaigns to apply for endorsements.
+                        </p>
+                    </div>
+                    <div label="4" className={classes.step}>
+                        <h2 className={classes.process_heading}>
+                            prototype
+                        </h2>
+                        <p className={classes.process_paragraphs}>
+                        I created low-fidelity desktop and mobile prototypes for the Public Arts Commission web application for individuals to connect and organize.  
+                        I worked with the Public Arts Commission Board of Directors on the prototypes.  
+                        The Board of Directors aided in user testing the prototypes.
+                        
+                            <Link href="https://www.figma.com/community/file/1021815144303041374" passHref={true} >
+                                <a className={classes.view_prototype_button} target="_blank" rel="noopener noreferrer" >
+                                    <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
+                                        <div>
+                                            view prototype
+                                        </div>
+                                        <div className={classes.external_link_icon} >
+                                            <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                        </div>
+                                    </ButtonExternalLink>
+                                </a>
+                            </Link>
+                        </p>
+                    </div>
+                    <div label="5" className={classes.step}>
+                        <h2 className={classes.process_heading}>
+                            build
+                        </h2>
+                        <p className={classes.process_paragraphs}>
+                            To build the web application for campaigns to apply for endorsement, I used PHP, MySQL, CSS, JavaScript and HTML.  
+                            I built the Public Arts Commission website using HTML, CSS and JavaScript.  
+                            The build for Public Arts Commission campaign web application and individual application will use Svelte as a framework.  
+                            Eventually, all the Public Arts Commission web applications and website will build using Svelte.
+                        </p>
+                    </div>
+                    <div label="6" className={classes.step}>
+                        <h2 className={classes.process_heading}>
+                            test
+                        </h2>
+                        <p className={classes.process_paragraphs}>
+                            Testing on the Public Arts Commission website and web application used Google Chrome Developer.   
+                            User testing was conducted with individuals in my network.
+                        </p>
+                    </div>
+                </Tabs>
+
+                <h2 className="header_02">
+                    challenges
+                </h2>
+                <div className='paragraphs' >
+                    Revenue generation is a challenge facing the Public Arts Commission web programs.  
+                    The subscription-based web application for campaigns will likely help generate revenue.
+                </div>
+                <h2 className="header_02">
+                    discoveries
+                </h2>
+                <div className='paragraphs' >
+                    Launching the Public Arts Commission website and web application was a huge accomplishment.  
+                    However, they were done before I had learned about modern web development frameworks like Svelte and Next.js.  
+                    Using Svelte in the future will help with creating a modern website and modern web applications for Public Arts Commission.  
+                </div>
+                <div className={classes.visit_button}>
+                    <Link href="https://www.publicartscommission.org/" passHref={true} >
+                        <a className={classes.visit_link} target="_blank" rel="noopener noreferrer">
+                            <ButtonExternalLink passHref={true} aria-label="link to visit">
+                                <div>
+                                    visit
+                                </div>
+                                <div className={classes.external_link_icon} >
+                                    <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                </div>
+                            </ButtonExternalLink>
+                        </a>
+                    </Link>
+                </div>
                 <div className={classes.case_studies_nav}>
                     <Link href="/case_studies/artInTechServices" passHref={true} >
                         <div>

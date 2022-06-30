@@ -5,21 +5,13 @@ import classes from './joyfoodly.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import JoyfoodlySlideCarousel from "../../../components/slide_carousel/JoyfoodlySlideCarousel";
-import Tabs from "../../../components/tabs/Tabs"
+import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
 import Button from '../../../components/button/button';
 import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
 
 const Joyfoodly = () => {
-
-    // const [width, setWidth] = React.useState(0);
-    // React.useEffect(() => {
-    //     setWidth(window.innerWidth);
-    // });
-
-    // console.log(width);
-
 
     return (
         <Fragment>
@@ -41,16 +33,16 @@ const Joyfoodly = () => {
                     <br /><br />
                     <div className={classes.inline_bold}>my role:</div> Founding Director of Art in Tech Services
                     <br /><br />
-                    <div className={classes.inline_bold}>services and features:</div>
+                    <div className={classes.inline_bold}>services I provided:</div>
                         <ul>
                             <li>
-                                Design, develop and deploy a responsive legacy website
+                                Designed, developed and deployed a responsive legacy website
                             </li>
                             <li>
-                                Design custom emails
+                                Designed custom emails
                             </li>
                             <li>
-                                Redirect users to the legacy website from existing domain names
+                                Redirected users to the legacy website from existing domain names
                             </li>
                         </ul>
                         
@@ -98,32 +90,33 @@ const Joyfoodly = () => {
                         <p className={classes.process_paragraphs}>
                             I created high-fidelity mobile and desktop prototypes for the Joyfoodly legacy website using Figma with the content provided by Joyfoodly.  
                             The emails to subscribers were designed using Mailchimp with content provided by Joyfoodly.
-                        </p>
-                        <Link href="https://www.figma.com/community/file/1067233911203456668" passHref={true} >
-                            <a className={classes.visit_link} target="_blank" rel="noopener noreferrer" >
-                                <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
-                                    <div>
-                                        view desktop prototype
-                                    </div>
-                                    <div className={classes.external_link_icon} >
-                                        <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                                    </div>
-                                </ButtonExternalLink>
-                            </a>
-                        </Link>
+                        
+                            <Link href="https://www.figma.com/community/file/1067233911203456668" passHref={true} >
+                                <a className={classes.view_prototype_button} target="_blank" rel="noopener noreferrer" >
+                                    <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
+                                        <div>
+                                            view desktop prototype
+                                        </div>
+                                        <div className={classes.external_link_icon} >
+                                            <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                        </div>
+                                    </ButtonExternalLink>
+                                </a>
+                            </Link>
 
-                        <Link href="https://www.figma.com/community/file/1067232787737440923" passHref={true} >
-                            <a className={classes.visit_link} target="_blank" rel="noopener noreferrer" >
-                                <ButtonExternalLink passHref={true} aria-label="link to mobile prototype">
-                                    <div>
-                                        view mobile prototype
-                                    </div>
-                                    <div className={classes.external_link_icon} >
-                                        <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                                    </div>
-                                </ButtonExternalLink>
-                            </a>
-                        </Link>
+                            <Link href="https://www.figma.com/community/file/1067232787737440923" passHref={true} >
+                                <a className={classes.view_prototype_button} target="_blank" rel="noopener noreferrer" >
+                                    <ButtonExternalLink passHref={true} aria-label="link to mobile prototype">
+                                        <div>
+                                            view mobile prototype
+                                        </div>
+                                        <div className={classes.external_link_icon} >
+                                            <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                        </div>
+                                    </ButtonExternalLink>
+                                </a>
+                            </Link>
+                        </p>
                     </div>
                     <div label="5" className={classes.step}>
                         <h2 className={classes.process_heading}>
