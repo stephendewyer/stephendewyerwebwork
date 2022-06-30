@@ -36,6 +36,33 @@
     margin-top: 40px;
 }
 
+.process_heading {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.process_paragraphs {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 640px;
+    font-size: 24px;
+    font-weight: normal;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.inline_bold {
+    font-weight: bold;
+    display: inline;
+}
+
+.visit_button {
+    margin: 50px 0;
+}
+
 @media screen and (max-width: 750px) {
 
     .slider_case_study {
@@ -71,6 +98,27 @@
         margin-right: 0;
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .process_heading {
+        max-width: auto;
+        font-size: 16px;
+        padding-top: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .process_paragraphs {
+        max-width: auto;
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .visit_button {
+        margin: 25px 0;
     }
     
 }

@@ -27,9 +27,12 @@ const CaseStudiesPage = () => {
                     </div>
                     <div className={classes.case_study_info_container}>
                         <div className={classes.case_study_info}>
-                            <h2 className={classes.case_study_description}>
+                            <div className={classes.case_study_title}>
                                 client: Joyfoodly<br />2022
-                            </h2>
+                            </div>
+                            <div className={classes.case_study_subtitle}>
+                                A legacy website for a culinary education company serving families.
+                            </div>
                             <Link href="/case_studies/joyfoodly" passHref >
                                 <div className={classes.view_button} >
                                     <Button aria-label="link to view">
@@ -43,9 +46,12 @@ const CaseStudiesPage = () => {
                 <div className={classes.case_studies_b}>
                     <div className={classes.case_study_info_container}>
                         <div className={classes.case_study_info}>
-                            <h2 className={classes.case_study_description}>
+                            <div className={classes.case_study_title}>
                                 client: Art in Tech Services Inc<br/>2021 &ndash; present
-                            </h2>
+                            </div>
+                            <div className={classes.case_study_subtitle}>
+                                A website and web application for a company that uses advancements in art and digital technology to improve design for businesses and the public.
+                            </div>
                             <Link href="/case_studies/artInTechServices" passHref >
                                 <div className={classes.view_button} >
                                     <Button aria-label="link to view">
@@ -65,9 +71,12 @@ const CaseStudiesPage = () => {
                     </div>
                     <div className={classes.case_study_info_container}>
                         <div className={classes.case_study_info}>
-                            <h2 className={classes.case_study_description}>
+                            <div className={classes.case_study_title}>
                                 client: Public Arts Commission<br/>2017 &ndash; present
-                            </h2>
+                            </div>
+                            <div className={classes.case_study_subtitle}>
+                            A website and web applications for a non-profit organization that connects the art community to democratic movements.
+                            </div>
                             <Link href="/case_studies/publicArtsCommission" passHref >
                                 <div className={classes.view_button} >
                                     <Button aria-label="link to view">
@@ -81,9 +90,12 @@ const CaseStudiesPage = () => {
                 <div className={classes.case_studies_b}>
                     <div className={classes.case_study_info_container}>
                         <div className={classes.case_study_info}>
-                            <h2 className={classes.case_study_description}>
+                            <div className={classes.case_study_title}>
                                 client: Infinite Mile LLC<br/>2013 &ndash; 2017
-                            </h2>
+                            </div>
+                            <div className={classes.case_study_subtitle}>
+                                A website for an award-winning journal of art and culture(s) in Detroit, Michigan.
+                            </div>
                             <Link href="/case_studies/infiniteMile" passHref >
                                 <div className={classes.view_button} >
                                     <Button aria-label="link to view">
