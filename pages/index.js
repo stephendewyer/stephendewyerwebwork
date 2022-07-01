@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import React, { Fragment } from 'react';
+import Image from 'next/image';
 import VideoJS from '../components/videoJS/videoJS' // point to where the functional component is stored
 import styles from '../styles/Index.module.css';
+import quoteIcon from '../public/images/icons/quote_icon.svg';
 
 const IndexPage = () => {
 
@@ -83,8 +85,32 @@ const IndexPage = () => {
                   using advancements in art and digital technology to improve design for the public and businesses
                 </li><br/>
               </ul>
+              <div className={styles.client_reviews}>
+              
+              <h2 className="header_02">
+                <div className={styles.quote_icon}>
+                  <Image src={quoteIcon} layout="responsive" alt="external link icon"/>
+                </div>
+                client reviews
+              </h2>
+
+              <div className={styles.client_review_card}>
+                <div className={styles.client_review_card_content}>
+                  <div className={styles.quote}>
+                    stephen [made] our daunting project of closing our business and two sites so easy and stress free. 
+                    The legacy site [he] created was exactly what we wanted. 
+                    We appreciated [his] proactive way of working with us, never finding a challenge too much to handle. 
+                    [He is] a joy to work with!
+                  </div>
+                  <div className={styles.client_name}>
+                    - Chef Hollie Greene Rottman
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        
       </div>
     </Fragment>
     

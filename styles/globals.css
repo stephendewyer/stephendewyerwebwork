@@ -45,13 +45,16 @@ a:active {
   right: 0;
   height: auto;
   width: 100%;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 60px;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
 }
 
 .header {
   margin-top: 250px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding-left: 25px;
   padding-right: 25px;
   font-weight: bold;
@@ -62,8 +65,8 @@ a:active {
 
 .header_02 {
   font-size: 28px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   max-width: 640px;
   min-width: 400px;
   margin-left: auto;
@@ -79,7 +82,7 @@ a:active {
   position: relative;
   float: none;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .paragraphs {
@@ -99,16 +102,20 @@ a:active {
     font-size: 16px;
   }
 
+  .container {
+    margin-bottom: 30px;
+  }
+
   .header {
     font-size: 20px;
     margin-top: 150px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
   }
 
   .header_02 {
     font-size: 18px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     padding-left: 25px;
     padding-right: 25px;
     min-width: 0;

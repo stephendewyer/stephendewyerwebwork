@@ -16,10 +16,62 @@
   margin-bottom: 50px;
 }
 
+.client_reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote_icon {
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.client_review_card {
+  background-color: #EAFFFE;
+  border-radius: 20px;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
+}
+
+.client_review_card_content {
+  margin: 40px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  text-align: left;
+}
+
+.client_name {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 750px){
 
   .intro_video {
     margin-bottom: 40px;
+  }
+
+  .quote_icon {
+    width: 35px;
+  }
+
+  .client_review_card_content {
+    margin: 20px 20px;
+  }
+  
+  .client_name {
+    margin-top: 10px;
   }
 
 }

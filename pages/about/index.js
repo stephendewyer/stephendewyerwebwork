@@ -165,18 +165,6 @@ const AboutPage = () => {
                     </ul>
                 </div>
                 <div className="header_02" >
-                    testimonials
-                </div>
-                <div className={classes.profile_paragraphs}>
-                    Stephen [made] our daunting project of closing our business and two sites so easy and stress free.  
-                    The legacy site [he] created was exactly what we wanted.  
-                    We appreciated [his] proactive way of working with us, never finding a challenge too much to handle.  
-                    [He is] a joy to work with!<br /><br />
-                    <div className={classes.signatures}>
-                        - Chef Hollie Greene Rottman
-                    </div>
-                </div>
-                <div className="header_02" >
                     resume
                 </div>
                 <div className={classes.button}>
