@@ -49,6 +49,8 @@ const ContactPage = () => {
     async function submitHandler(event) {
         event.preventDefault();
 
+        setRequestStatus('pending');
+
         const enteredNameFirst = nameFirstRef.current.value;
         const enteredNameLast = nameLastRef.current.value;
         const enteredEmail = emailRef.current.value;
