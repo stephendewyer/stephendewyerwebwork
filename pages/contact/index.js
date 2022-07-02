@@ -86,8 +86,8 @@ const ContactPage = () => {
     if (requestStatus === 'success') {
         notification = {
             status: 'success',
-            title: 'message sent',
-            message: 'message successfully sent',
+            title: 'message successfully sent',
+            message: 'we sent you an email confirming your email was sent',
         };
     }
 

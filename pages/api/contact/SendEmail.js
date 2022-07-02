@@ -20,34 +20,34 @@ async function handler(req, res) {
     return;
   }
 
-  // start setting the message variables
-
-  const nodemailer = require('nodemailer');
-  const sendgridTransport = require('nodemailer-sendgrid-transport');
-
-  const transporter = nodemailer.createTransport(sendgridTransport({
-      auth: {
-        api_key: process.env.SendGrid_API_key
-      }
-  }));
-
-  // end setting the message variables
-
   // begin sending the message
 
-  transporter.sendMail({
-      to: 'stephen.dewyer@stephengdewyer.info',
-      from: 'sdewyer@artintechservices.com',
+  const sgMail = require('@sendgrid/mail')
+  sgMail.setApiKey(process.env.SendGrid_API_key)
+  const msg = [
+      {
+        to: 'stephen.dewyer@stephengdewyer.info',
+        from: 'stephen.dewyer@stephengdewyer.info',
+        subject: `message from ${nameFirst} ${nameLast} at ${email}`,
+        text: 'message sent via web work portfolio contact form',
+        html: message
+    },
+    {
+      to: email,
+      from: 'stephen.dewyer@stephengdewyer.info',
       subject: `message from ${nameFirst} ${nameLast} at ${email}`,
-      html: message
+      text: 'message sent via stephen dewyer web work portfolio contact form',
+      html: `<p>hi ${nameFirst} ${nameLast},<br /><br />thank you for contacting me.  Your email has been received.<br /><br />Best,<br /><br />stephen dewyer<br />www.stephendewyerwebwork.com</p>`,
+    },
+  ];
+  sgMail
+    .send(msg)
+    .then(() => {
+      console.log('email successfully sent')
   })
-
-  transporter.sendMail({
-    to: email,
-    from: 'sdewyer@artintechservices.com',
-    subject: `message from ${nameFirst} ${nameLast} at ${email}`,
-    html: `<p>hi ${nameFirst} ${nameLast},<br /><br />thank you for contacting me.  Your email has been received.<br /><br />Best,<br /><br />stephen dewyer</p>`
-})
+  .catch((error) => {
+    console.error(error)
+  })
 
   // end sending the message
 

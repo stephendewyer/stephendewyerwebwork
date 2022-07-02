@@ -10,7 +10,7 @@ module.exports = (phase) => {
         defaultLocale: "en-US",
       },
       env: {
-        SendGrid_API_key: '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',
+        SendGrid_API_key: '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',
       },
     };
   }
@@ -21,7 +21,7 @@ module.exports = (phase) => {
       defaultLocale: "en-US",
     },
     env: {
-      SendGrid_API_key: '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',
+      SendGrid_API_key: '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',
     },
   };
   
