@@ -35,7 +35,7 @@ async function handler(req, res) {
     {
       to: email,
       from: 'stephen.dewyer@stephengdewyer.info',
-      subject: `message from ${nameFirst} ${nameLast} at ${email}`,
+      subject: `message receipt`,
       text: 'message sent via stephen dewyer web work portfolio contact form',
       html: `<p>hi ${nameFirst} ${nameLast},<br /><br />thank you for contacting me.  Your email has been received.<br /><br />Best,<br /><br />stephen dewyer<br />www.stephendewyerwebwork.com</p>`,
     },
