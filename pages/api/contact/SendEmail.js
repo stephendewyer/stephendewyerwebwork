@@ -38,9 +38,9 @@ async function handler(req, res) {
    transporter.sendMail({
     to: 'stephen.dewyer@stephengdewyer.info',
     from: 'sdewyer@artintechservices.com',
-    subject: `message from ${nameFirst} ${nameLast} at ${email}`,
+    subject: `message from ${nameFirst} ${nameLast}`,
     text: 'message sent via web work portfolio contact form',
-    html: message,
+    html: `${message} <br /><br />Sender email: ${email}`,
    })
    .then(() => {
     console.log('email 01 successfully sent')
