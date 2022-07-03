@@ -30,7 +30,7 @@ async function handler(req, res) {
         from: 'stephen.dewyer@stephengdewyer.info',
         subject: `message from ${nameFirst} ${nameLast} at ${email}`,
         text: 'message sent via web work portfolio contact form',
-        html: message
+        html: message,
     },
     {
       to: email,
