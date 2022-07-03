@@ -20,17 +20,19 @@ async function handler(req, res) {
     return;
   }
 
+  // start setting the message variables
+
   // begin sending the message
 
   const sgMail = require('@sendgrid/mail')
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+  sgMail.setApiKey(process.env.SendGrid_API_key)
   const msg = [
-      {
-        to: 'stephen.dewyer@stephengdewyer.info',
-        from: 'stephen.dewyer@stephengdewyer.info',
-        subject: `message from ${nameFirst} ${nameLast} at ${email}`,
-        text: 'message sent via web work portfolio contact form',
-        html: message,
+    {
+      to: 'stephen.dewyer@stephengdewyer.info',
+      from: 'stephen.dewyer@stephengdewyer.info',
+      subject: `message from ${nameFirst} ${nameLast} at ${email}`,
+      text: 'message sent via web work portfolio contact form',
+      html: message,
     },
     {
       to: email,
@@ -41,9 +43,9 @@ async function handler(req, res) {
     },
   ];
   sgMail
-    .send(msg)
-    .then(() => {
-      console.log('email successfully sent')
+  .send(msg)
+  .then(() => {
+    console.log('emails successfully sent')
   })
   .catch((error) => {
     console.error(error)
