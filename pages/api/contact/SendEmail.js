@@ -29,14 +29,14 @@ async function handler(req, res) {
   const msg = [
     {
       to: 'stephen.dewyer@stephengdewyer.info',
-      from: 'stephen.dewyer@stephengdewyer.info',
+      from: 'sdewyer@artintechservices.com',
       subject: `message from ${nameFirst} ${nameLast} at ${email}`,
       text: 'message sent via web work portfolio contact form',
       html: message,
     },
     {
       to: email,
-      from: 'stephen.dewyer@stephengdewyer.info',
+      from: 'sdewyer@artintechservices.com',
       subject: `message receipt`,
       text: 'message sent via stephen dewyer web work portfolio contact form',
       html: `<p>hi ${nameFirst} ${nameLast},<br /><br />thank you for contacting me.  Your email has been received.<br /><br />Best,<br /><br />stephen dewyer<br />www.stephendewyerwebwork.com</p>`,
