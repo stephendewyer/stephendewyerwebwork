@@ -22,30 +22,43 @@ async function handler(req, res) {
 
   // start setting the message variables
 
-  // begin sending the message
+   // start setting the email verification variables
+  
+   const nodemailer = require('nodemailer');
+   const sendgridTransport = require('nodemailer-sendgrid-transport');
 
-  const sgMail = require('@sendgrid/mail')
-  sgMail.setApiKey(process.env.SendGrid_API_key)
-  const msg = [
-    {
-      to: 'stephen.dewyer@stephengdewyer.info',
-      from: 'sdewyer@artintechservices.com',
-      subject: `message from ${nameFirst} ${nameLast} at ${email}`,
-      text: 'message sent via web work portfolio contact form',
-      html: message,
-    },
-    {
-      to: email,
-      from: 'sdewyer@artintechservices.com',
-      subject: `message receipt`,
-      text: 'message sent via stephen dewyer web work portfolio contact form',
-      html: `<p>hi ${nameFirst} ${nameLast},<br /><br />thank you for contacting me.  Your email has been received.<br /><br />Best,<br /><br />stephen dewyer<br />www.stephendewyerwebwork.com</p>`,
-    },
-  ];
-  sgMail
-  .send(msg)
-  .then(() => {
-    console.log('emails successfully sent')
+   const transporter = nodemailer.createTransport(sendgridTransport({
+       auth: {
+       api_key: process.env.SendGrid_API_key
+       }
+   }));
+
+   // end setting the email verification variables
+
+   transporter.sendMail({
+    to: 'stephen.dewyer@stephengdewyer.info',
+    from: 'stephen.dewyer@stephengdewyer.info',
+    subject: `message from ${nameFirst} ${nameLast} at ${email}`,
+    text: 'message sent via web work portfolio contact form',
+    html: message,
+   })
+   .then(() => {
+    console.log('email 01 successfully sent')
+  })
+  .catch((error) => {
+    console.error(error)
+  })
+
+
+   transporter.sendMail({
+    to: email,
+    from: 'stephen.dewyer@stephengdewyer.info',
+    subject: `message receipt`,
+    text: 'message sent via stephen dewyer web work portfolio contact form',
+    html: `<p>hi ${nameFirst} ${nameLast},<br /><br />thank you for contacting me.  Your email has been received.<br /><br />Best,<br /><br />stephen dewyer<br />www.stephendewyerwebwork.com</p>`,
+   })
+   .then(() => {
+    console.log('email 02 successfully sent')
   })
   .catch((error) => {
     console.error(error)
