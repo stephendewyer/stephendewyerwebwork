@@ -23,7 +23,7 @@ async function createMessage(nameFirst, nameLast, email, message) {
 
 }
 
-const ContactPage = () => {
+const Contact = () => {
 
     const router = useRouter();
 
@@ -50,7 +50,7 @@ const ContactPage = () => {
         event.preventDefault();
 
         setRequestStatus('pending');
-
+        
         const enteredNameFirst = nameFirstRef.current.value;
         const enteredNameLast = nameLastRef.current.value;
         const enteredEmail = emailRef.current.value;
@@ -86,8 +86,8 @@ const ContactPage = () => {
     if (requestStatus === 'success') {
         notification = {
             status: 'success',
-            title: 'message successfully sent',
-            message: 'we sent you an email confirming your email was sent',
+            title: 'message sent',
+            message: 'we sent you an email confirming we recieved your message.',
         };
     }
 
@@ -162,4 +162,4 @@ const ContactPage = () => {
     );
 }
 
-export default ContactPage;
+export default Contact;
