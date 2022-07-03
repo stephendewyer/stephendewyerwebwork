@@ -40,18 +40,31 @@ async function handler(req, res) {
       html: `<p>hi ${nameFirst} ${nameLast},<br /><br />thank you for contacting me.  Your email has been received.<br /><br />Best,<br /><br />stephen dewyer<br />www.stephendewyerwebwork.com</p>`,
     },
   ];
-  sgMail
-  .send(msg)
-  .then(() => {
-    console.log('emails successfully sent')
-  })
-  .catch((error) => {
-    console.error(error)
-  })
+  // sgMail
+  //   .send(msg)
+  //   .then(() => {}, error => {
+  //     console.error(error);
+
+  //     if (error.response) {
+  //       console.error(error.response.body)
+  //     }
+  //   });
+  (async () => {
+    try {
+      await sgMail.send(msg);
+      res.status(200).json({ message: 'message sent'});
+    } catch (error) {
+      console.error(error);
+
+      if (error.response) {
+        console.error(error.response.body)
+      }
+    }
+  })();
 
   // end sending the message
 
-  res.status(200).json({ message: 'message sent'});
+  
 
   return;
 }
