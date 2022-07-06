@@ -40,15 +40,6 @@ async function handler(req, res) {
       html: `<p>hi ${nameFirst} ${nameLast},<br /><br />thank you for contacting me.  Your email has been received.<br /><br />Best,<br /><br />stephen dewyer<br />www.stephendewyerwebwork.com</p>`,
     },
   ];
-  // sgMail
-  //   .send(msg)
-  //   .then(() => {}, error => {
-  //     console.error(error);
-
-  //     if (error.response) {
-  //       console.error(error.response.body)
-  //     }
-  //   });
   (async () => {
     try {
       await sgMail.send(msg);
@@ -58,6 +49,7 @@ async function handler(req, res) {
 
       if (error.response) {
         console.error(error.response.body)
+        res.status(422).json({ message: 'message not sent due to a problem with the API' });
       }
     }
   })();
