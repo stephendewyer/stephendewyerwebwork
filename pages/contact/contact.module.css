@@ -26,6 +26,12 @@
     
 }
 
+.indicates_required {
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20px;
+}
+
 .label_and_input {
     display: flex;
     flex-direction: row;
@@ -138,6 +144,10 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
+    }
+
+    .indicates_required {
+        padding: 0 10px;
     }
 
     .label_and_input {

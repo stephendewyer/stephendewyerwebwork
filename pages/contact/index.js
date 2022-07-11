@@ -113,28 +113,37 @@ const Contact = () => {
                     how can stephen garrett dewyer help you?  
                 </h2>
                 <form className={classes.form} onSubmit={submitHandler} >
+                    <p className={classes.indicates_required}>
+                        * indicates required
+                    </p>
                     <div className={classes.label_and_input} >
                         <label className={classes.label} htmlFor='nameFirst' >
-                            first name:
+                        *first name:
                         </label>
                         <div className={classes.field} >
                             <input className={classes.input} id="nameFirst" type='text' ref={nameFirstRef} />
                         </div>
                     </div>
                     <div className={classes.label_and_input} >
-                        <label className={classes.label} htmlFor='nameLast' >last name:</label>
+                        <label className={classes.label} htmlFor='nameLast' >
+                            *last name:
+                            </label>
                         <div className={classes.field} >
                             <input className={classes.input} type='text' id="nameLast" ref={nameLastRef} />
                         </div>
                     </div>
                     <div className={classes.label_and_input} >
-                        <label className={classes.label} htmlFor='email' >email:</label>
+                        <label className={classes.label} htmlFor='email' >
+                            *email:
+                        </label>
                         <div className={classes.field} >
                             <input className={classes.input} type='email' id="email" ref={emailRef} />
                         </div>
                     </div>
                     <div className={classes.textarea_label_and_input} >
-                        <label className={classes.textarea_label} htmlFor='message' >message:</label>
+                        <label className={classes.textarea_label} htmlFor='message' >
+                            *message:
+                        </label>
                         <div className={classes.textarea_field} >
                             <textarea className={classes.textarea_input} type='text' id="message" ref={messageRef} />
                         </div>
