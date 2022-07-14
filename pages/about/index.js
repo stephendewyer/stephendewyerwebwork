@@ -42,7 +42,13 @@ const AboutPage = () => {
 
                         February &ndash; May 2022, <span style={{fontWeight: "bold"}} >UX Design Consultant</span><br/>
                         <span style={{fontWeight: "bold"}} >Turnberry Solutions (contract)</span><br/>
-                        Remote<br/><br/>
+                        Remote
+                        <ul>
+                            <li>
+                                client: FedPoint
+                            </li>
+                        </ul>
+                        <br/><br/>
 
                         2013 &ndash; 2017, <span style={{fontWeight: "bold"}} >Co-Founding Editor</span><br/>
                         <span style={{fontWeight: "bold"}} >Infinite Mile LLC (<span>&#8734;</span> mile)</span><br/>
