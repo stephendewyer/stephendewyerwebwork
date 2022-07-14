@@ -22,7 +22,7 @@ const AboutPage = () => {
                     <Image src={stephen_dewyer_profile} layout="responsive" alt="stephen dewyer profile image" />
                 </div>
                 <div className={classes.profile_paragraphs}>
-                    <p>stephen garrett dewyer is a <span style={{fontWeight: "bold"}} >full-stack web developer</span>, <span style={{fontWeight: "bold"}} >UX designer</span>, <span style={{fontWeight: "bold"}} >award-winning artist</span> and <span style={{fontWeight: "bold"}} >organizer</span> with experience designing enterprise web programs for businesses, creative organizations and government.
+                    <p>stephen garrett dewyer is an award-winning <span style={{fontWeight: "bold"}} >full-stack web developer</span>, <span style={{fontWeight: "bold"}} >UX designer</span>, <span style={{fontWeight: "bold"}} >artist</span> and <span style={{fontWeight: "bold"}} >organizer</span> with experience designing enterprise web programs for businesses, creative organizations and government.
                         He worked with multiple stakeholders to produce critically-acclaimed projects that use advancements in art and digital technology.  
                         In his work, stephen brings together disparate parts of the community through multi-disciplinary projects.  
                         He is interested in developing creative, effective and attractive web programs that improve user experiences for the public and businesses.</p>
