@@ -48,7 +48,7 @@ const AboutPage = () => {
                                 client: FedPoint
                             </li>
                         </ul>
-                        <br/><br/>
+                        <br />
 
                         2013 &ndash; 2017, <span style={{fontWeight: "bold"}} >Co-Founding Editor</span><br/>
                         <span style={{fontWeight: "bold"}} >Infinite Mile LLC (<span>&#8734;</span> mile)</span><br/>
