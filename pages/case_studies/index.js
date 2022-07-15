@@ -5,8 +5,8 @@ import classes from './case_studies.module.css';
 import Image from 'next/image';
 import joyfoodlyScreengrab from '../../public/images/case_studies/Joyfoodly/Joyfoodly_desktop.jpg';
 import artinTechServicesScreengrab from '../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_screengrab.JPG';
-import publicArtsCommissionScreengrab from '../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.JPG';
-import infiniteMileScreengrab from '../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.JPG';
+import publicArtsCommissionScreengrab from '../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.jpg';
+import infiniteMileScreengrab from '../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.jpg';
 import Link from 'next/link';
 
 const CaseStudiesPage = () => {
