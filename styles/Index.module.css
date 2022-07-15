@@ -16,6 +16,47 @@
   margin-bottom: 50px;
 }
 
+.intro_info {
+  max-width: 1680px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro_paragraphs {
+  width: 100%;
+  font-size: 26px;
+  font-weight: bold;
+  color: #7A7296;
+  padding: 10px 40px;
+}
+
+.intro_illustrations {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.intro_illustration_card {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+  padding: 0 20px;
+}
+
+.intro_illustration {
+  width: 100%;
+}
+
+.intro_illustration_heading {
+  width: 100%;
+  font-size: 24px;
+  font-weight: normal;
+}
+
 .client_reviews {
   display: flex;
   flex-direction: column;
@@ -30,6 +71,10 @@
 
 .client_review_card {
   background-color: #EAFFFE;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   border-radius: 20px;
   box-shadow:
     0 1px 1px hsl(0deg 0% 0% / 0.075),
@@ -64,6 +109,43 @@
 
   .quote_icon {
     width: 35px;
+  }
+
+  .intro_info {
+    max-width: auto;
+    width: 100%;
+  }
+  
+  .intro_paragraphs {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7A7296;
+    padding: 5px 20px;
+  }
+  
+  .intro_illustrations {
+    flex-direction: column;
+  }
+  
+  .intro_illustration_card {
+    width: 100%;
+    margin: 0 0;
+    padding: 10px 40px;
+  }
+
+  .intro_illustration {
+    width: auto;
+  }
+  
+  .intro_illustration_heading {
+    font-size: 18px;
+  }
+
+  .client_review_card {
+    margin: 20px 20px;
+    width: auto;
   }
 
   .client_review_card_content {

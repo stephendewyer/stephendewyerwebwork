@@ -4,6 +4,14 @@ import Image from 'next/image';
 import VideoJS from '../components/videoJS/videoJS' // point to where the functional component is stored
 import styles from '../styles/Index.module.css';
 import quoteIcon from '../public/images/icons/quote_icon.svg';
+import fullStackDeveloper from '../public/images/illustrations/full-stack_web_development.png';
+import UXDesigner from '../public/images/illustrations/UX_design.png';
+import artist from '../public/images/illustrations/art.png';
+import organizer from '../public/images/illustrations/organizing.png';
+import institutions from '../public/images/illustrations/institutions.png';
+import businesses from '../public/images/illustrations/businesses.png';
+import campaignsAndMovements from '../public/images/illustrations/campaigns_and_movements.png';
+import artInTechServicesLogo from '../public/images/illustrations/art_in_tech_services_logo.png';
 
 const IndexPage = () => {
 
@@ -50,67 +58,127 @@ const IndexPage = () => {
         <div className={styles.intro_video}>
           <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
         </div>
-        <div className="paragraphs_container">
-          <div className="paragraphs">
-              stephen garrett dewyer is a:
-              <ul><br/>
-                <li>
-                  full-stack web developer
-                </li><br/>
-                <li>
-                  user experience (UX) designer
-                </li><br/>
-                <li>
-                  award-winning artist whose work has shown in national and international exhibitions
-                </li><br/>
-                <li>
-                  organizer with a history of bringing diverse parts of the community together to produce critically-acclaimed projects
-                </li><br/>
-              </ul>
-              He created digital designs including web programs for:
-              <ul><br/>
-              <li>
-                  large enterprises
-                </li><br/>
-                <li>
-                  creative organizations
-                </li><br/>
-                <li>
-                  progressive campaigns and movements
-                </li><br/>
-              </ul>
-              He enjoys:
-              <ul><br/>
-                <li>
-                  using advancements in art and digital technology to improve design for the public and businesses
-                </li><br/>
-              </ul>
-              <div className={styles.client_reviews}>
-              
-              <h2 className="header_02">
-                <div className={styles.quote_icon}>
-                  <Image src={quoteIcon} layout="responsive" alt="external link icon"/>
-                </div>
-                client reviews
-              </h2>
+        <div className={styles.intro_info}>
 
-              <div className={styles.client_review_card}>
-                <div className={styles.client_review_card_content}>
-                  <div className={styles.quote}>
-                    stephen [made] our daunting project of closing our business and two sites so easy and stress free. 
-                    The legacy site [he] created was exactly what we wanted. 
-                    We appreciated [his] proactive way of working with us, never finding a challenge too much to handle. 
-                    [He is] a joy to work with!
-                  </div>
-                  <div className={styles.client_name}>
-                    - Chef Hollie Greene Rottman
-                  </div>
-                </div>
+          <h2 className={styles.intro_paragraphs}>
+            stephen garrett dewyer is a:
+          </h2>
+
+          <div className={styles.intro_illustrations}>
+
+            <div className={styles.intro_illustration_card}>
+              <div className={styles.intro_illustration}>
+                <Image src={fullStackDeveloper} layout="responsive" alt="full-stack web developer illustration"/>
+              </div>
+              <h3 className={styles.intro_illustration_heading}>
+                full-stack web developer
+              </h3>
+            </div>
+
+            <div className={styles.intro_illustration_card}>
+              <div className={styles.intro_illustration}>
+                <Image src={UXDesigner} layout="responsive" alt="user experience (UX) designer illustration"/>
+              </div>
+              <h3 className={styles.intro_illustration_heading}>
+                user experience (UX) designer
+              </h3>
+            </div>
+
+            <div className={styles.intro_illustration_card}>
+              <div className={styles.intro_illustration}>
+                <Image src={artist} layout="responsive" alt="artist illustration"/>
+              </div>
+              <h3 className={styles.intro_illustration_heading}>
+                award-winning artist whose work has shown in national and international exhibitions
+              </h3>
+            </div>
+
+            <div className={styles.intro_illustration_card}>
+              <div className={styles.intro_illustration}>
+                <Image src={organizer} layout="responsive" alt="organizer illustration"/>
+              </div>
+              <h3 className={styles.intro_illustration_heading}>
+                organizer with a history of bringing diverse parts of the community together to produce critically-acclaimed projects
+              </h3>
+            </div>
+
+          </div>
+
+          <h2 className={styles.intro_paragraphs}>
+            He created digital designs including web programs for:
+          </h2>
+
+          <div className={styles.intro_illustrations}>
+
+            <div className={styles.intro_illustration_card}>
+              <div className={styles.intro_illustration}>
+                <Image src={institutions} layout="responsive" alt="institutions illustration"/>
+              </div>
+              <h3 className={styles.intro_illustration_heading}>
+                institutions
+              </h3>
+            </div>
+
+            <div className={styles.intro_illustration_card}>
+              <div className={styles.intro_illustration}>
+                <Image src={businesses} layout="responsive" alt="businesses illustration"/>
+              </div>
+              <h3 className={styles.intro_illustration_heading}>
+                businesses
+              </h3>
+            </div>
+
+            <div className={styles.intro_illustration_card}>
+              <div className={styles.intro_illustration}>
+                <Image src={campaignsAndMovements} layout="responsive" alt="businesses illustration"/>
+              </div>
+              <h3 className={styles.intro_illustration_heading}>
+                campaigns and movements
+              </h3>
+            </div>
+
+          </div>
+
+          <h2 className={styles.intro_paragraphs}>
+            He enjoys:
+          </h2>
+
+          <div className={styles.intro_illustrations}>
+
+            <div className={styles.intro_illustration_card}>
+              <div className={styles.intro_illustration}>
+                <Image src={artInTechServicesLogo} layout="responsive" alt="Art in Tech Services logo illustration"/>
+              </div>
+              <h3 className={styles.intro_illustration_heading}>
+                using advancements in art and digital technology to improve design for the public and businesses
+              </h3>
+            </div>
+          </div>
+
+        </div>
+        <div className={styles.client_reviews}>
+              
+          <h2 className="header_02">
+            <div className={styles.quote_icon}>
+              <Image src={quoteIcon} layout="responsive" alt="external link icon"/>
+            </div>
+              client reviews
+          </h2>
+
+          <div className={styles.client_review_card}>
+            <div className={styles.client_review_card_content}>
+              <div className={styles.quote}>
+                stephen [made] our daunting project of closing our business and two sites so easy and stress free. 
+                The legacy site [he] created was exactly what we wanted. 
+                We appreciated [his] proactive way of working with us, never finding a challenge too much to handle. 
+                [He is] a joy to work with!
+              </div>
+              <div className={styles.client_name}>
+                - Chef Hollie Greene Rottman
               </div>
             </div>
           </div>
         </div>
-        
       </div>
     </Fragment>
     
