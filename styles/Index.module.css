@@ -17,52 +17,46 @@
 }
 
 .intro_info {
-  max-width: 1680px;
+  max-width: 840px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 60px;
+  margin-bottom: 30px;
 }
 
 .intro_paragraphs {
   font-size: 26px;
   font-weight: bold;
   color: #7A7296;
-  padding: 20px 40px;
+  padding: 15px 0;
 }
 
-.products {
-  max-width: 1920px;
+.intro_cards {
+ display: flex;
+ flex-direction: column;
+ margin-left: 30px;
+ margin-top: 15px;
+}
+
+.intro_card {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
 }
 
-.product_card {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  width: 360px;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 20px;
-  box-shadow:
-      0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075),
-      0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075),
-      0 16px 16px hsl(0deg 0% 0% / 0.075)
-    ;
+.intro_image {
+  width: 150px;
 }
 
-.product_image {
+.intro_heading {
+  max-width: 640px;
   width: 100%;
-}
-
-.product_heading {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: normal;
+  padding-left: 30px;
+  margin: 0;
 }
 
 .client_reviews {
@@ -115,37 +109,39 @@
     margin-bottom: 40px;
   }
 
+  .intro_info {
+    width: 100%;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+  }
+  
+  .intro_paragraphs {
+    font-size: 18px;
+    font-weight: bold;
+    color: #7A7296;
+    padding: 15px 0;
+  }
+  
+  .intro_cards {
+   display: flex;
+   flex-direction: column;
+   margin-left: 15px;
+   margin-top: 15px;
+  }
+  
+  .intro_image {
+    width: 100px;
+  }
+  
+  .intro_heading {
+    font-size: 18px;
+    padding-left: 15px;
+  }
+
   .quote_icon {
     width: 35px;
   }
 
-  .intro_info {
-    width: 100%;
-  }
-
-  .products {
-    max-width: 1920px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .product_card {
-      width: 100%;
-  }
-
-  .product_heading {
-      font-size: 18px;
-  }
-  
-  .intro_paragraphs {
-    width: 100%;
-    font-size: 20px;
-    font-weight: bold;
-    color: #7A7296;
-    padding: 20px 20px;
-  }
-  
   .client_review_card {
     margin: 20px 20px;
     width: auto;

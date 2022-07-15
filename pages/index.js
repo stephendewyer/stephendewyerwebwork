@@ -64,77 +64,77 @@ const IndexPage = () => {
             stephen garrett dewyer is a:
           </h2>
 
-          <div className={styles.products}>
+          <div className={styles.intro_cards}>
 
-            <div className={styles.product_card}>
-              <div className={styles.product_image}>
+            <div className={styles.intro_card}>
+              <div className={styles.intro_image}>
                 <Image src={fullStackDeveloper} layout="responsive" alt="full-stack web developer illustration"/>
               </div>
-              <h2 className={styles.product_heading}>
-                full-stack web developer
-              </h2>
+              <h3 className={styles.intro_heading}>
+                full-stack web developer with expertise in modern web technologies
+              </h3>
             </div>
 
-            <div className={styles.product_card}>
-              <div className={styles.product_image}>
+            <div className={styles.intro_card}>
+              <div className={styles.intro_image}>
                 <Image src={UXDesigner} layout="responsive" alt="user experience (UX) designer illustration"/>
               </div>
-              <h2 className={styles.product_heading}>
+              <h3 className={styles.intro_heading}>
                 user experience (UX) designer
-              </h2>
+              </h3>
             </div>
 
-            <div className={styles.product_card}>
-              <div className={styles.product_image}>
+            <div className={styles.intro_card}>
+              <div className={styles.intro_image}>
                 <Image src={artist} layout="responsive" alt="artist illustration"/>
               </div>
-              <h2 className={styles.product_heading}>
+              <h3 className={styles.intro_heading}>
                 award-winning artist whose work has shown in national and international exhibitions
-              </h2>
+              </h3>
             </div>
 
-            <div className={styles.product_card}>
-              <div className={styles.product_image}>
+            <div className={styles.intro_card}>
+              <div className={styles.intro_image}>
                 <Image src={organizer} layout="responsive" alt="organizer illustration"/>
               </div>
-              <h2 className={styles.product_heading}>
+              <h3 className={styles.intro_heading}>
                 organizer with a history of bringing diverse parts of the community together to produce critically-acclaimed projects
-              </h2>
+              </h3>
             </div>
-          
+
           </div>
 
           <h2 className={styles.intro_paragraphs}>
             He created digital designs including web programs for:
           </h2>
 
-          <div className={styles.products}>
+          <div className={styles.intro_cards}>
 
-            <div className={styles.product_card}>
-              <div className={styles.product_image}>
+            <div className={styles.intro_card}>
+              <div className={styles.intro_image}>
                 <Image src={institutions} layout="responsive" alt="institutions illustration"/>
               </div>
-              <h2 className={styles.product_heading}>
-                institutions
-              </h2>
+              <h3 className={styles.intro_heading}>
+                public institutions
+              </h3>
             </div>
 
-            <div className={styles.product_card}>
-              <div className={styles.product_image}>
+            <div className={styles.intro_card}>
+              <div className={styles.intro_image}>
                 <Image src={businesses} layout="responsive" alt="businesses illustration"/>
               </div>
-              <h2 className={styles.product_heading}>
+              <h3 className={styles.intro_heading}>
                 businesses
-              </h2>
+              </h3>
             </div>
 
-            <div className={styles.product_card}>
-              <div className={styles.product_image}>
+            <div className={styles.intro_card}>
+              <div className={styles.intro_image}>
                 <Image src={campaignsAndMovements} layout="responsive" alt="businesses illustration"/>
               </div>
-              <h2 className={styles.product_heading}>
+              <h3 className={styles.intro_heading}>
                 campaigns and movements
-              </h2>
+              </h3>
             </div>
 
           </div>
@@ -143,20 +143,21 @@ const IndexPage = () => {
             He enjoys:
           </h2>
 
-          <div className={styles.products}>
+          <div className={styles.intro_cards}>
 
-            <div className={styles.product_card}>
-              <div className={styles.product_image}>
+            <div className={styles.intro_card}>
+              <div className={styles.intro_image}>
                 <Image src={artInTechServicesLogo} layout="responsive" alt="Art in Tech Services logo illustration"/>
               </div>
-              <h2 className={styles.product_heading}>
+              <h3 className={styles.intro_heading}>
                 using advancements in art and digital technology to improve design for the public and businesses
-              </h2>
+              </h3>
             </div>
 
           </div>
 
         </div>
+
         <div className={styles.client_reviews}>
               
           <h2 className="header_02">
