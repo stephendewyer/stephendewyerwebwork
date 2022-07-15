@@ -64,77 +64,77 @@ const IndexPage = () => {
             stephen garrett dewyer is a:
           </h2>
 
-          <div className={styles.intro_illustrations}>
+          <div className={styles.products}>
 
-            <div className={styles.intro_illustration_card}>
-              <div className={styles.intro_illustration}>
+            <div className={styles.product_card}>
+              <div className={styles.product_image}>
                 <Image src={fullStackDeveloper} layout="responsive" alt="full-stack web developer illustration"/>
               </div>
-              <h3 className={styles.intro_illustration_heading}>
+              <h2 className={styles.product_heading}>
                 full-stack web developer
-              </h3>
+              </h2>
             </div>
 
-            <div className={styles.intro_illustration_card}>
-              <div className={styles.intro_illustration}>
+            <div className={styles.product_card}>
+              <div className={styles.product_image}>
                 <Image src={UXDesigner} layout="responsive" alt="user experience (UX) designer illustration"/>
               </div>
-              <h3 className={styles.intro_illustration_heading}>
+              <h2 className={styles.product_heading}>
                 user experience (UX) designer
-              </h3>
+              </h2>
             </div>
 
-            <div className={styles.intro_illustration_card}>
-              <div className={styles.intro_illustration}>
+            <div className={styles.product_card}>
+              <div className={styles.product_image}>
                 <Image src={artist} layout="responsive" alt="artist illustration"/>
               </div>
-              <h3 className={styles.intro_illustration_heading}>
+              <h2 className={styles.product_heading}>
                 award-winning artist whose work has shown in national and international exhibitions
-              </h3>
+              </h2>
             </div>
 
-            <div className={styles.intro_illustration_card}>
-              <div className={styles.intro_illustration}>
+            <div className={styles.product_card}>
+              <div className={styles.product_image}>
                 <Image src={organizer} layout="responsive" alt="organizer illustration"/>
               </div>
-              <h3 className={styles.intro_illustration_heading}>
+              <h2 className={styles.product_heading}>
                 organizer with a history of bringing diverse parts of the community together to produce critically-acclaimed projects
-              </h3>
+              </h2>
             </div>
-
+          
           </div>
 
           <h2 className={styles.intro_paragraphs}>
             He created digital designs including web programs for:
           </h2>
 
-          <div className={styles.intro_illustrations}>
+          <div className={styles.products}>
 
-            <div className={styles.intro_illustration_card}>
-              <div className={styles.intro_illustration}>
+            <div className={styles.product_card}>
+              <div className={styles.product_image}>
                 <Image src={institutions} layout="responsive" alt="institutions illustration"/>
               </div>
-              <h3 className={styles.intro_illustration_heading}>
+              <h2 className={styles.product_heading}>
                 institutions
-              </h3>
+              </h2>
             </div>
 
-            <div className={styles.intro_illustration_card}>
-              <div className={styles.intro_illustration}>
+            <div className={styles.product_card}>
+              <div className={styles.product_image}>
                 <Image src={businesses} layout="responsive" alt="businesses illustration"/>
               </div>
-              <h3 className={styles.intro_illustration_heading}>
+              <h2 className={styles.product_heading}>
                 businesses
-              </h3>
+              </h2>
             </div>
 
-            <div className={styles.intro_illustration_card}>
-              <div className={styles.intro_illustration}>
+            <div className={styles.product_card}>
+              <div className={styles.product_image}>
                 <Image src={campaignsAndMovements} layout="responsive" alt="businesses illustration"/>
               </div>
-              <h3 className={styles.intro_illustration_heading}>
+              <h2 className={styles.product_heading}>
                 campaigns and movements
-              </h3>
+              </h2>
             </div>
 
           </div>
@@ -143,16 +143,17 @@ const IndexPage = () => {
             He enjoys:
           </h2>
 
-          <div className={styles.intro_illustrations}>
+          <div className={styles.products}>
 
-            <div className={styles.intro_illustration_card}>
-              <div className={styles.intro_illustration}>
+            <div className={styles.product_card}>
+              <div className={styles.product_image}>
                 <Image src={artInTechServicesLogo} layout="responsive" alt="Art in Tech Services logo illustration"/>
               </div>
-              <h3 className={styles.intro_illustration_heading}>
+              <h2 className={styles.product_heading}>
                 using advancements in art and digital technology to improve design for the public and businesses
-              </h3>
+              </h2>
             </div>
+
           </div>
 
         </div>
