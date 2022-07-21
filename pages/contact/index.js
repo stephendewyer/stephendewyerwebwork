@@ -32,6 +32,80 @@ const Contact = () => {
     const emailRef = useRef();
     const messageRef = useRef();
 
+    // before submit
+
+    // first name validation state
+    const [enteredNameFirstIsValid, setEnteredNameFirstIsValid] = useState(true);
+    // last name validation state
+    const [enteredNameLastIsValid, setEnteredNameLastIsValid] = useState(true);
+    // email validation state
+    const [enteredEmailIsValid, setEnteredEmailIsValid] = useState(true);
+    // message validation state
+    const [enteredMessageIsValid, setEnteredMessageIsValid] = useState(true);
+
+    // first name touched state
+    const [enteredNameFirstIsTouched, setEnteredNameFirstIsTouched] = useState(true);
+    // last name touched state
+    const [enteredNameLastIsTouched, setEnteredNameLastIsTouched] = useState(true);
+    // email touched state
+    const [enteredEmailIsTouched, setEnteredEmailIsTouched] = useState(true);
+    // message touched state
+    const [enteredMessageIsTouched, setEnteredMessageIsTouched] = useState(true);
+
+    const nameFirstInputChangeHandler = (event) => {
+        if (nameFirstRef.current.value !== '') {
+            setEnteredNameFirstIsValid(true);
+        }
+    };
+
+    const nameLastInputChangeHandler = (event) => {
+        if (nameLastRef.current.value !== '') {
+            setEnteredNameLastIsValid(true);
+        }
+    };
+
+    const emailInputChangeHandler = (event) => {
+        if (emailRef.current.value !== '') {
+            setEnteredEmailIsValid(true);
+        }
+    };
+
+    const messageInputChangeHandler = (event) => {
+        if (messageRef.current.value !== '') {
+            setEnteredMessageIsValid(true);
+        }
+    };
+
+    const nameFirstInputBlurHandler = (event) => {
+        setEnteredNameFirstIsTouched(true);
+        if (nameFirstRef.current.value === '') {
+            setEnteredNameFirstIsValid(false);
+        }
+    }
+
+    const nameLastInputBlurHandler = (event) => {
+        setEnteredNameLastIsTouched(true);
+        if (nameLastRef.current.value === '') {
+            setEnteredNameLastIsValid(false);
+        }
+    }
+
+    const emailInputBlurHandler = (event) => {
+        setEnteredEmailIsTouched(true);
+        if (emailRef.current.value === '') {
+            setEnteredEmailIsValid(false);
+        }
+    }
+
+    const messageInputBlurHandler = (event) => {
+        setEnteredMessageIsTouched(true);
+        if (messageRef.current.value === '') {
+            setEnteredMessageIsValid(false);
+        }
+    }
+
+    // after submit
+
     const [requestStatus, setRequestStatus] = useState(); // 'pending', 'success', 'error'
     const [requestError, setRequestError] = useState();
 
@@ -49,12 +123,17 @@ const Contact = () => {
     async function submitHandler(event) {
         event.preventDefault();
 
-        setRequestStatus('pending');
-        
         const enteredNameFirst = nameFirstRef.current.value;
         const enteredNameLast = nameLastRef.current.value;
         const enteredEmail = emailRef.current.value;
         const enteredMessage = messageRef.current.value;
+
+        setEnteredNameFirstIsTouched(true);
+        setEnteredNameLastIsTouched(true);
+        setEnteredEmailIsTouched(true);
+        setEnteredMessageIsTouched(true);
+
+        setRequestStatus('pending');
 
         // optional: add client-side validation
 
@@ -68,6 +147,18 @@ const Contact = () => {
             setRequestStatus('success');
             router.replace('/');
         } catch (error) {
+            if (enteredNameFirst === '') {
+                setEnteredNameFirstIsValid(false);
+            }
+            if (enteredNameLast === '') {
+                setEnteredNameLastIsValid(false);
+            }
+            if (enteredEmail === '') {
+                setEnteredEmailIsValid(false);
+            }
+            if (enteredMessage === '') {
+                setEnteredMessageIsValid(false);
+            }
             setRequestError(error.message);
             setRequestStatus('error');
         }
@@ -99,6 +190,16 @@ const Contact = () => {
         };
     }
 
+    // const inputIsInvalid = !enteredDataIsValid && enteredInputTouched;
+
+    const nameFirstInputClasses = enteredNameFirstIsValid ? classes.input : classes.invalid_input;
+
+    const nameLastInputClasses = enteredNameLastIsValid ? classes.input : classes.invalid_input;
+
+    const emailInputClasses = enteredEmailIsValid ? classes.input : classes.invalid_input;
+
+    const messageInputClasses = enteredMessageIsValid ? classes.textarea_input : classes.invalid_textarea_input;
+
     return (
         <Fragment>
             <Head>
@@ -121,7 +222,14 @@ const Contact = () => {
                         *first name:
                         </label>
                         <div className={classes.field} >
-                            <input className={classes.input} id="nameFirst" type='text' ref={nameFirstRef} />
+                            <input 
+                                className={nameFirstInputClasses} 
+                                id="nameFirst" 
+                                type='text' 
+                                ref={nameFirstRef} 
+                                onChange={nameFirstInputChangeHandler} 
+                                onBlur={nameFirstInputBlurHandler}
+                            />
                         </div>
                     </div>
                     <div className={classes.label_and_input} >
@@ -129,7 +237,14 @@ const Contact = () => {
                             *last name:
                             </label>
                         <div className={classes.field} >
-                            <input className={classes.input} type='text' id="nameLast" ref={nameLastRef} />
+                            <input 
+                                className={nameLastInputClasses} 
+                                type='text' 
+                                id="nameLast" 
+                                ref={nameLastRef} 
+                                onChange={nameLastInputChangeHandler} 
+                                onBlur={nameLastInputBlurHandler}
+                            />
                         </div>
                     </div>
                     <div className={classes.label_and_input} >
@@ -137,7 +252,14 @@ const Contact = () => {
                             *email:
                         </label>
                         <div className={classes.field} >
-                            <input className={classes.input} type='email' id="email" ref={emailRef} />
+                            <input 
+                                className={emailInputClasses} 
+                                type='email' 
+                                id="email" 
+                                ref={emailRef} 
+                                onChange={emailInputChangeHandler} 
+                                onBlur={emailInputBlurHandler}
+                            />
                         </div>
                     </div>
                     <div className={classes.textarea_label_and_input} >
@@ -145,7 +267,14 @@ const Contact = () => {
                             *message:
                         </label>
                         <div className={classes.textarea_field} >
-                            <textarea className={classes.textarea_input} type='text' id="message" ref={messageRef} />
+                            <textarea 
+                                className={messageInputClasses} 
+                                type='text' 
+                                id="message" 
+                                ref={messageRef} 
+                                onChange={messageInputChangeHandler} 
+                                onBlur={messageInputBlurHandler}
+                            />
                         </div>
                     </div>
                     <div className={classes.send_button} >

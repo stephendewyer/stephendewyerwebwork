@@ -11,7 +11,6 @@
 .grid_container {
     position: relative;
     float: right;
-    display: block;
     width: 75%;
     max-width: 900px;
     min-width: 420px;

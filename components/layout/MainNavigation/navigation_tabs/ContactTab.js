@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import MyLink from '../../../../public/util/myLink';
-import contactLink from '../../../../public/images/links/blind_link_contact_01.png';
-import contactLink_hover from '../../../../public/images/links/blind_link_contact_02.png';
+import contactLink from '../../../../public/images/links/blind_link_contact_01.svg';
+import contactLink_hover from '../../../../public/images/links/blind_link_contact_02.svg';
 
 const ContactTab = () => {
     const [isHovering, setIsHovered] = useState(false);
