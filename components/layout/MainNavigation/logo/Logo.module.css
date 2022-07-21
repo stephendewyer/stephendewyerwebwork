@@ -1,0 +1,9 @@
+.blind_logo {
+    position: relative;
+    float: left;
+    margin: 0;
+    width: 25%;
+    max-width: 350px;
+    min-width: 200px;
+    height: auto;
+}

@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import IndexTab from './navigation_tabs/IndexTab';
+import Logo from './logo/Logo';
 import AboutTab from './navigation_tabs/AboutTab';
 import CaseStudiesTab from './navigation_tabs/CaseStudiesTab';
 import ContactTab from './navigation_tabs/ContactTab';
@@ -49,7 +49,7 @@ const MainNavigation = (props) => {
             <nav className={classes.nav_bar} >
                 <div style={{ ...navbarStyles, top: visible ? '0' : '-250px' }} > 
                     <div className={classes.blind_logo} aria-hidden={(props.click) ? "true" : "false"}>
-                        <IndexTab />
+                        <Logo />
                     </div>
                     <div className={classes.grid_container} aria-hidden={(props.click) ? "true" : "false"}>
                         <div className={classes.grid_item}>
