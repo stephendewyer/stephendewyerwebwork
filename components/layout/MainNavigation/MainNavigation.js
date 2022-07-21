@@ -48,7 +48,7 @@ const MainNavigation = (props) => {
         <Fragment>
             <nav className={classes.nav_bar} >
                 <div style={{ ...navbarStyles, top: visible ? '0' : '-250px' }} > 
-                    <div className={classes.blind_logo} aria-hidden={(props.click) ? "true" : "false"}>
+                    <div aria-hidden={(props.click) ? "true" : "false"}>
                         <Logo />
                     </div>
                     <div className={classes.grid_container} aria-hidden={(props.click) ? "true" : "false"}>
