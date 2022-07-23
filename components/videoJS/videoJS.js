@@ -1,6 +1,7 @@
 import React from "react";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
+import '@videojs/themes/dist/forest/index.css';// forest video.js skin theme
 
 export const VideoJS = ( props ) => {
 
@@ -38,7 +39,7 @@ export const VideoJS = ( props ) => {
 
   return (
     <div data-vjs-player>
-      <video ref={videoRef} className="video-js vjs-big-play-centered" />
+      <video ref={videoRef} className="video-js vjs-theme-forest" />
     </div>
   );
 }
