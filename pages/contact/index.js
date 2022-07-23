@@ -203,8 +203,10 @@ const Contact = () => {
     return (
         <Fragment>
             <Head>
-                <title>contact - stephen dewyer web design and development</title>
+                <title>contact - stephen dewyer UX design and full-stack web development</title>
                 <meta name="description" content="contact stephen garrett dewyer via the web" />
+                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
+                <meta property="og:url" content="https://stephendewyerwebwork.vercel/contact" />
             </Head>
             <div className="container">
                 <h1 className="header">

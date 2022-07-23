@@ -14,8 +14,10 @@ const CaseStudiesPage = () => {
     return (
         <Fragment>
             <Head>
-                <title>case studies - stephen dewyer web design and development</title>
-                <meta name="description" content="sample overview of web projects and programs designed and developed by stephen dewyer" />
+                <title>case studies - stephen dewyer UX design and full-stack web development</title>
+                <meta name="description" content="samples of web projects and programs designed and developed by stephen dewyer" />
+                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
+                <meta property="og:url" content="https://stephendewyerwebwork.vercel/case_studies" />
             </Head>
             <div className={classes.case_studies} role="main">
                 <h1 className="header">

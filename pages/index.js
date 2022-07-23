@@ -46,14 +46,14 @@ const IndexPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>stephen dewyer web design and development</title>
-        <meta name="description" content="portfolio of web design and development by stephen garrett dewyer" />
+        <title>stephen dewyer UX design and full-stack web development</title>
+        <meta name="description" content="portfolio of user experience (UX) design and full-stack web development by stephen garrett dewyer" />
         <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
-        <meta property="og:url" content="https://www.stephendewyerwebwork.com" />
+        <meta property="og:url" content="https://stephendewyerwebwork.vercel" />
       </Head>
       <div className="container" role="main">
         <h1 className="header">
-          web design and development
+          user experience (UX) design and full-stack web development
         </h1>
         <div className={styles.intro_video}>
           <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
@@ -68,19 +68,19 @@ const IndexPage = () => {
 
             <div className={styles.intro_card}>
               <div className={styles.intro_image}>
-                <Image src={fullStackDeveloper} layout="responsive" alt="full-stack web developer illustration"/>
+                <Image src={UXDesigner} layout="responsive" alt="user experience (UX) designer illustration"/>
               </div>
               <h3 className={styles.intro_heading}>
-                full-stack web developer with expertise in modern web technologies
+                UX designer
               </h3>
             </div>
 
             <div className={styles.intro_card}>
               <div className={styles.intro_image}>
-                <Image src={UXDesigner} layout="responsive" alt="user experience (UX) designer illustration"/>
+                <Image src={fullStackDeveloper} layout="responsive" alt="full-stack web developer illustration"/>
               </div>
               <h3 className={styles.intro_heading}>
-                user experience (UX) designer
+                full-stack web developer with expertise in modern web technologies
               </h3>
             </div>
 

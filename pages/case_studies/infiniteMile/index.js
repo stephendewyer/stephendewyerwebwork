@@ -15,8 +15,10 @@ const InfiniteMile = () => {
     return (
         <Fragment>
             <Head>
-                <title>Infinite Mile - stephen dewyer web design and development</title>
-                <meta name="description" content="details of web design and development for Infinite Mile by stephen dewyer" />
+                <title>Infinite Mile - stephen dewyer UX design and full-stack web development</title>
+                <meta name="description" content="details of UX design and web development for Infinite Mile by stephen dewyer" />
+                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
+                <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/infiniteMile" />
             </Head>
             <div className="container" role="main">
                 <h1 className="header">
