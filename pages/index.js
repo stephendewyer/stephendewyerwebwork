@@ -18,7 +18,7 @@ const IndexPage = () => {
   const playerRef = React.useRef(null);
 
   const videoJsOptions = { // lookup the options in the docs for more options
-    autoplay: true,
+    autoplay: false,
     loop: true,
     controls: true,
     responsive: true,

@@ -8,6 +8,7 @@ import artinTechServicesScreengrab from '../../public/images/case_studies/Art_in
 import publicArtsCommissionScreengrab from '../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
 import infiniteMileScreengrab from '../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
 import Link from 'next/link';
+import MyLink from '../../public/util/myLink';
 
 const CaseStudiesPage = () => {
 
@@ -25,7 +26,9 @@ const CaseStudiesPage = () => {
                 </h1>
                 <div className={classes.case_studies_a}>
                     <div className={classes.case_study_image}>
-                        <Image src={joyfoodlyScreengrab} layout="responsive" alt="Joyfoodly screenshot" />
+                        <MyLink href="/case_studies/joyfoodly" passHref >
+                            <Image src={joyfoodlyScreengrab} layout="responsive" alt="Joyfoodly screenshot" />
+                        </MyLink>
                     </div>
                     <div className={classes.case_study_info_container}>
                         <div className={classes.case_study_info}>
@@ -64,12 +67,16 @@ const CaseStudiesPage = () => {
                         </div>
                     </div>
                     <div className={classes.case_study_image}>
-                        <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services Inc screenshot" />
+                        <MyLink href="/case_studies/artInTechServices" passHref >
+                            <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services Inc screenshot" />
+                        </MyLink>
                     </div>
                 </div>
                 <div className={classes.case_studies_a}>
                     <div className={classes.case_study_image}>
-                        <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission screenshot" />
+                        <MyLink href="/case_studies/publicArtsCommission" passHref >
+                            <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission screenshot" />
+                        </MyLink>                    
                     </div>
                     <div className={classes.case_study_info_container}>
                         <div className={classes.case_study_info}>
@@ -108,7 +115,9 @@ const CaseStudiesPage = () => {
                         </div>
                     </div>
                     <div className={classes.case_study_image}>
-                        <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile screenshot" />
+                        <MyLink href="/case_studies/infiniteMile" passHref >
+                            <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile screenshot" />
+                        </MyLink>
                     </div>
                 </div>
             </div>

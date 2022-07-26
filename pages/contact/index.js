@@ -190,8 +190,6 @@ const Contact = () => {
         };
     }
 
-    // const inputIsInvalid = !enteredDataIsValid && enteredInputTouched;
-
     const nameFirstInputClasses = enteredNameFirstIsValid ? classes.input : classes.invalid_input;
 
     const nameLastInputClasses = enteredNameLastIsValid ? classes.input : classes.invalid_input;
