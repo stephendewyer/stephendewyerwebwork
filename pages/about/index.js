@@ -66,6 +66,7 @@ const AboutPage = () => {
                                 supporting organizations: University of Michigan Stamps School of Art &amp; Design, Knight Foundation, Awesome Foundation 
                             </li>
                         </ul>
+                        <br />
                 </div>
                 <div className="header_02" >
                     education
@@ -160,6 +161,7 @@ const AboutPage = () => {
                             Inspiring and Motivating Individuals
                         </li>
                     </ul>
+                    <br />
                 </div>
                 <div className="header_02" >
                     awards and grants
@@ -182,6 +184,7 @@ const AboutPage = () => {
                             Project: ∞ mile
                         </li>
                     </ul>
+                    <br />
                 </div>
                 <div className="header_02" >
                     resume
