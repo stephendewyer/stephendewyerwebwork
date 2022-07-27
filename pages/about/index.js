@@ -36,7 +36,13 @@ const AboutPage = () => {
                     
                         2021 &ndash; present, <span style={{fontWeight: "bold"}} >Founding Director</span><br/>
                         <span style={{fontWeight: "bold"}} >Art in Tech Services Inc</span><br/>
-                        Minneapolis-St. Paul area, Minnesota<br/><br/>
+                        Minneapolis-St. Paul area, Minnesota<br/>
+                        <ul>
+                            <li>
+                                clients: Joyfoodly
+                            </li>
+                        </ul>
+                        <br />
                         
                         2017 &ndash; present, <span style={{fontWeight: "bold"}} >Founder</span><br/>
                         <span style={{fontWeight: "bold"}} >Public Arts Commission</span><br/>
@@ -54,7 +60,12 @@ const AboutPage = () => {
 
                         2013 &ndash; 2017, <span style={{fontWeight: "bold"}} >Co-Founding Editor</span><br/>
                         <span style={{fontWeight: "bold"}} >Infinite Mile LLC (<span>&#8734;</span> mile)</span><br/>
-                        Detroit, Michigan
+                        Detroit, Michigan<br />
+                        <ul>
+                            <li>
+                                supporting organizations: University of Michigan Stamps School of Art &amp; Design, Knight Foundation, Awesome Foundation 
+                            </li>
+                        </ul>
                 </div>
                 <div className="header_02" >
                     education
