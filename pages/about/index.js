@@ -36,37 +36,34 @@ const AboutPage = () => {
                     
                         2021 &ndash; present, <span style={{fontWeight: "bold"}} >Founding Director</span><br/>
                         <span style={{fontWeight: "bold"}} >Art in Tech Services Inc</span><br/>
-                        Minneapolis-St. Paul area, Minnesota<br/>
+                        Minneapolis-St. Paul area, Minnesota
                         <ul>
                             <li>
                                 clients: Joyfoodly
                             </li>
                         </ul>
-                        <br />
                         
                         2017 &ndash; present, <span style={{fontWeight: "bold"}} >Founder</span><br/>
                         <span style={{fontWeight: "bold"}} >Public Arts Commission</span><br/>
                         Minneapolis-St. Paul area, Minnesota<br/><br/>
 
                         February &ndash; May 2022, <span style={{fontWeight: "bold"}} >UX Design Consultant</span><br/>
-                        <span style={{fontWeight: "bold"}} >Turnberry Solutions (contract)</span><br/>
+                        <span style={{fontWeight: "bold"}} >Turnberry Solutions (contract)</span>
                         Remote
                         <ul>
                             <li>
                                 client: FedPoint
                             </li>
                         </ul>
-                        <br />
 
                         2013 &ndash; 2017, <span style={{fontWeight: "bold"}} >Co-Founding Editor</span><br/>
                         <span style={{fontWeight: "bold"}} >Infinite Mile LLC (<span>&#8734;</span> mile)</span><br/>
-                        Detroit, Michigan<br />
+                        Detroit, Michigan
                         <ul>
                             <li>
                                 supporting organizations: University of Michigan Stamps School of Art &amp; Design, Knight Foundation, Awesome Foundation 
                             </li>
                         </ul>
-                        <br />
                 </div>
                 <div className="header_02" >
                     education
@@ -99,7 +96,7 @@ const AboutPage = () => {
                         <li>
                             The User Researcher’s guide to UX discoveries
                         </li>
-                    </ul><br/>
+                    </ul>
                    
                     2020 &ndash; 2021, <span style={{fontWeight: "bold"}} >Certificates in Building Web Applications, University of Michigan – Coursera</span>
                     <ul>
@@ -118,7 +115,7 @@ const AboutPage = () => {
                         <li>
                             Building Web Applications in PHP
                         </li>
-                    </ul><br/>
+                    </ul>
                     2021, <span style={{fontWeight: "bold"}} >Certificates in Database Design, University of Michigan – Coursera</span>
                     <ul>
                         <li>
@@ -127,7 +124,7 @@ const AboutPage = () => {
                         <li>
                             Database Design and Basic SQL in PostgreSQL
                         </li>
-                    </ul><br/>
+                    </ul>
 
                     2020, <span style={{fontWeight: "bold"}} >Certificates in Python Programming, University of Michigan – Coursera</span>
                     <ul>
@@ -137,7 +134,7 @@ const AboutPage = () => {
                         <li>
                             Python for Everybody
                         </li>
-                    </ul><br/>
+                    </ul>
 
                     2020, <span style={{fontWeight: "bold"}} >Certificates in UX Design, Interaction Design Foundation</span> 
                     <ul>
@@ -153,7 +150,7 @@ const AboutPage = () => {
                         <li>
                             Human-Computer Interaction
                         </li>
-                    </ul><br/>
+                    </ul>
 
                     2021, <span style={{fontWeight: "bold"}} >Certificate in Leadership, University of Michigan – Coursera</span>
                     <ul>
@@ -161,7 +158,6 @@ const AboutPage = () => {
                             Inspiring and Motivating Individuals
                         </li>
                     </ul>
-                    <br />
                 </div>
                 <div className="header_02" >
                     awards and grants
@@ -175,16 +171,14 @@ const AboutPage = () => {
                             Project: ∞ mile
                         </li>
                     </ul>
-                    <br />
                     2014, <span style={{fontWeight: "bold"}} >Detroit Chapter June 2014 $1,000 grant<br />
-                    Awesome Foundation</span><br />
+                    Awesome Foundation</span>
                     Boston, Massachusetts
                     <ul>
                         <li>
                             Project: ∞ mile
                         </li>
                     </ul>
-                    <br />
                 </div>
                 <div className="header_02" >
                     resume
