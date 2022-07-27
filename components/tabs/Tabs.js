@@ -20,10 +20,11 @@ const Tabs = ({ children}) => {
                         <li 
                             className={label == activeTab ? styles.current : "" } 
                             key={label}
+                            onClick={(e) => handleClick(e, label)}
                         >
-                            <a href="#" className={styles.tab_link} onClick={(e) => handleClick(e, label)} >
+                            <div className={styles.tab_link}  >
                                 {label}
-                            </a>
+                            </div>
                         </li>
                     )
                 })}
