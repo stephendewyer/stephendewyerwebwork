@@ -9,6 +9,7 @@
    display: flex;
    border-bottom: 2px solid #514C64;
    justify-content: center;
+   cursor: pointer;
 }
 
 .tabs > li {
