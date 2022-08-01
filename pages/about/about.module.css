@@ -1,92 +1,197 @@
+.about_section_01 {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .profile_image {
     width: 50%;
     height: auto;
-    max-width: 640px;
-    min-width: 480px;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    position: relative;
+    padding-left: 40px;
 }
 
-.profile_paragraphs {
+.profile_info {
     width: 50%;
     height: auto;
-    max-width: 640px;
-    min-width: 480px;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.signatures {
-    text-align: right;
-    font-weight: bold;
+.profile_info_paragraphs {
+    margin: 0 40px;
+}
+
+.resume_heading {
+    color: #C38368;
+    font-size: 26px;
+    text-align: center;
 }
 
 .button {
-    width: 50%;
-    height: auto;
-    max-width: 640px;
-    min-width: 480px;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
     text-align: center;
-    margin-bottom: 120px;
 }
 
-.view_button {
-    width: auto;
+.view_PDF {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.PDF_icon {
+    width: 75px;
+    margin-left: 15px;
+}
+
+.about_section_02 {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+.experience {
+    width: 38%;
+    padding-right: 20px;
+}
+
+.certificates_and_awards {
+    width: 38%;
+    padding-right: 20px;
+}
+
+.skills {
+    width: 24%;
+}
+
+.resume_heading_01 {
+    color: #7A7296;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+}
+
+.resume_heading_02 {
+    color: #595F46;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+}
+
+.resume_heading_03 {
+    color: #595F46;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: left;
+}
+
+.resume_paragraphs {
+    margin: 0;
+    padding: 0;
+}
+
+.skills_sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills_section {
+    width: 100%;
+    padding: 0 0;
 }
 
 @media screen and (max-width: 750px) {
+    .about_section_01 {
+        width: 100%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .profile_image {
         width: 100%;
-        max-width: 100%;
-        min-width: 100%;
         height: auto;
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 20px;
+        padding: 0 20px;
     }
-
-    .profile_paragraphs {
-        padding-left: 20px;
-        padding-right: 20px;
+    
+    .profile_info {
         width: 100%;
-        max-width: 100%;
-        min-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        height: auto;
+        justify-content: flex-start;
+        padding: 20px 0;
     }
-
+    
+    .profile_info_paragraphs {
+        margin: 0 20px;
+    }
+    
+    .resume_heading {
+        font-size: 20px;
+    }
+    
     .button {
-        padding-left: 20px;
-        padding-right: 20px;
+        text-align: center;
+    }
+    
+    .about_section_02 {
+        flex-direction: column;
         width: 100%;
-        max-width: 100%;
-        min-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        height: auto;
-        margin-bottom: 60px;
+        margin: 0 0;
+        padding: 0 20px;
+    }
+    
+    .experience {
+        width: auto;
+        padding: 0 0;
+        margin: 0 0;
+    }
+    
+    .certificates_and_awards {
+        width: auto;
+        padding: 0 0;
+        margin: 0 0;
+    }
+    
+    .skills {
+        width: auto;
+        padding: 0 0;
+        margin: 0 0;
+    }
+    
+    .resume_heading_01 {
+        font-size: 20px;
+    }
+    
+    .resume_heading_02 {
+        font-size: 18px;
+    }
+    
+    .resume_heading_03 {
+        font-size: 18px;
+    }
+    
+    .resume_paragraphs {
+        margin: 0;
+        padding: 0;
     }
 
-    .view_button {
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 0;
-        left: 0;
-        text-align: center;
-        margin-bottom: 40px;
+    .skills_sections {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .skills_section {
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    .PDF_icon {
+        width: 40px;
+        margin-left: 10px;
     }
 }

@@ -204,7 +204,7 @@ const Contact = () => {
                 <title>contact - stephen dewyer UX design and full-stack web development</title>
                 <meta name="description" content="contact stephen garrett dewyer via the web" />
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
-                <meta property="og:url" content="https://stephendewyerwebwork.vercel/contact" />
+                <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/contact" />
             </Head>
             <div className="container">
                 <h1 className="header">
@@ -277,7 +277,7 @@ const Contact = () => {
                             />
                         </div>
                     </div>
-                    <div className={classes.send_button} >
+                    <div className={classes.contact_buttons} >
                         <PillButton type='submit' >
                             send
                         </PillButton>

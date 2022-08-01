@@ -22,7 +22,7 @@ const Tabs = ({ children}) => {
                             key={label}
                             onClick={(e) => handleClick(e, label)}
                         >
-                            <div className={styles.tab_link}  >
+                            <div className={styles.tab_link} >
                                 {label}
                             </div>
                         </li>

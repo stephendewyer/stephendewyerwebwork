@@ -17,12 +17,19 @@
 }
 
 .intro_info {
-  max-width: 840px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1920px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 60px;
   margin-bottom: 30px;
+}
+
+.intro_info_section {
+  width: 50%;
 }
 
 .intro_paragraphs {
@@ -65,20 +72,15 @@
   padding: 0 20px;
 }
 
-.quote_icon {
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
-
 .client_review_card {
   background-color: #EAFFFE;
   max-width: 860px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  border-radius: 20px;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
   box-shadow:
     0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075),
@@ -88,20 +90,43 @@
   ;
 }
 
-.client_review_card_content {
-  margin: 40px 40px;
+.client_review_header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client_review_heading {
+  color: #7A7296;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 26px;
+}
+
+
+.client_review_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quote_icon {
+  width: 50px;
 }
 
 .quote {
   text-align: left;
 }
 
-.client_name {
-  text-align: right;
+.quote_attribution {
+  width: auto;
+}
+
+.quote_author_name {
+  color: #595F46;
   font-weight: bold;
-  margin-top: 20px;
 }
 
 @media screen and (max-width: 750px){
@@ -111,9 +136,16 @@
   }
 
   .intro_info {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     width: 100%;
     padding: 10px 30px;
     margin-bottom: 15px;
+  }
+
+  .intro_info_section {
+    width: 100%;
   }
   
   .intro_paragraphs {
@@ -139,12 +171,16 @@
     padding-left: 15px;
   }
 
+  .client_review_card {
+    padding: 20px 20px;
+  }
+
   .quote_icon {
     width: 35px;
   }
 
-  .client_review_card_content {
-    margin: 20px 20px;
+  .client_review_heading {
+    font-size: 18px;
   }
   
   .client_name {
