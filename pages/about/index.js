@@ -37,13 +37,13 @@ const AboutPage = () => {
                                 resume
                             </h2>
                             <div className={classes.button}>
-                                <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref >
+                                <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref aria-label="link to resume PDF">
                                     <a target="_blank" rel="noopener noreferrer" >
                                         <Button>
                                             <div className={classes.view_PDF}>
                                                 view  
                                                 <div className={classes.PDF_icon}>
-                                                    <Image src={PDF_icon} layout="responsive" alt="stephen dewyer profile image" />
+                                                    <Image src={PDF_icon} layout="responsive" alt="PDF icon" />
                                                 </div>
                                             </div>
                                         </Button>
@@ -77,7 +77,7 @@ const AboutPage = () => {
                             Minneapolis-St. Paul area, Minnesota<br/><br/>
 
                             February &ndash; May 2022, <span style={{fontWeight: "bold"}} >UX Design Consultant</span><br/>
-                            <span style={{fontWeight: "bold"}} >Turnberry Solutions (contract)</span>
+                            <span style={{fontWeight: "bold"}} >Turnberry Solutions (contract)</span><br/>
                             Remote
                             <ul>
                                 <li>
@@ -204,15 +204,37 @@ const AboutPage = () => {
                                 </li>
                             </ul>
                             2014, <span style={{fontWeight: "bold"}} >Detroit Chapter June 2014 $1,000 grant<br />
-                            Awesome Foundation</span>
+                            Awesome Foundation</span><br />
                             Boston, Massachusetts
                             <ul>
                                 <li>
                                     Project: ∞ mile
                                 </li>
                             </ul>
+                            2009-2011, <span style={{fontWeight: "bold"}} >Scholarship<br />
+                            Yale University School of Art</span>
+                            <br />
+                            New Haven, Connecticut
+                            <br /><br />
+                            2007, <span style={{fontWeight: "bold"}} >Interdisciplinary Sculpture Departmental Recognition Award<br /> 
+                            MICA</span><br />
+                            Baltimore, Maryland
+                            <br /><br /> 
+                            2006, <span style={{fontWeight: "bold"}} >Achievement Award<br /> 
+                            MICA</span><br />
+                            Baltimore, Maryland
+                            <br /><br />
+                            2005, <span style={{fontWeight: "bold"}} >Presidential Scholarship<br />
+                            MICA</span><br />
+                            Baltimore, Maryland
+                            <br /><br />
+                            2005, <span style={{fontWeight: "bold"}} >Fannie B. Thalheimer Scholarship<br />
+                            MICA</span><br />
+                            Baltimore, Maryland<br /><br />
+                            2005, <span style={{fontWeight: "bold"}} >Scholastic National Portfolio Award Scholarship<br />
+                            MICA</span><br />
+                            Baltimore, Maryland
                         </p>
-                        
                     </div>
                     <div className={classes.skills}>
                         <h3 className={classes.resume_heading_01} >
