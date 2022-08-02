@@ -8,7 +8,7 @@ import quoteIconEnd from '../public/images/icons/quote_icon_end.svg';
 import fullStackDeveloper from '../public/images/illustrations/full-stack_web_development.png';
 import UXDesigner from '../public/images/illustrations/UX_design.png';
 import artist from '../public/images/illustrations/art.png';
-import organizer from '../public/images/illustrations/organizing.png';
+import community_organizer from '../public/images/illustrations/organizing.png';
 import institutions from '../public/images/illustrations/institutions.png';
 import businesses from '../public/images/illustrations/businesses.png';
 import campaignsAndMovements from '../public/images/illustrations/campaigns_and_movements.png';
@@ -94,16 +94,16 @@ const IndexPage = () => {
                   award-winning artist whose work has shown in national and international exhibitions
                 </h3>
               </div>
-            </div>
-            <div className={styles.intro_card}>
-              <div className={styles.intro_image}>
-                <Image src={organizer} layout="responsive" alt="organizer illustration"/>
-              </div>
-              <h3 className={styles.intro_heading}>
-                organizer with a history of bringing diverse parts of the community together to produce critically-acclaimed projects
-              </h3>
-            </div>
 
+              <div className={styles.intro_card}>
+                <div className={styles.intro_image}>
+                  <Image src={community_organizer} layout="responsive" alt="organizer illustration"/>
+                </div>
+                <h3 className={styles.intro_heading}>
+                  organizer with a history of bringing diverse parts of the community together to produce critically-acclaimed projects
+                </h3>
+              </div>
+            </div>
           </div>
 
           <div className={styles.intro_info_section}>
