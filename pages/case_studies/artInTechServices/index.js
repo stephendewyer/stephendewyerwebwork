@@ -72,7 +72,7 @@ const ArtinTechServices = () => {
                             define
                         </h2>
                         <p className={classes.process_paragraphs}>
-                            requirements:
+                            Requirements:
                             <ul>
                                 <li>
                                     Redesign the Art in Tech Services website and create a custom web application using modern web development technologies including Next.js, SendGrid, Stripe and MongoDB
@@ -93,7 +93,7 @@ const ArtinTechServices = () => {
                                             receive, sign and send signed contracts 
                                         </li>
                                         <li>
-                                            receive invoices and make payment
+                                            receive invoices and make payments
                                         </li>
                                     </ul>
                                 </li>
