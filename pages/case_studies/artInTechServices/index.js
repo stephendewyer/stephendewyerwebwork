@@ -78,7 +78,7 @@ const ArtinTechServices = () => {
                                     Redesign the Art in Tech Services website and create a custom web application using modern web development technologies including Next.js, SendGrid, Stripe and MongoDB
                                 </li>
                                 <li>
-                                    Create client management software as part of the redesign that would allow users with accounts to:
+                                    Create client collaboration software as part of the redesign that would allow users with accounts to:
                                     <ul>
                                         <li>
                                             schedule consultations
