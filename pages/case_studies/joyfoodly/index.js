@@ -46,6 +46,9 @@ const Joyfoodly = () => {
                             <li>
                                 Redirected users to the legacy website from existing domain names
                             </li>
+                            <li>
+                                Closed previous web program accounts
+                            </li>
                         </ul>
                         
                     </div> 
@@ -59,9 +62,7 @@ const Joyfoodly = () => {
                             empathize
                         </h2>
                         <p className={classes.process_paragraphs}>
-                        Joyfoodly was a culinary education company that helped families learn to eat more fruits and vegetables.  
-                        The company provided content to subscribers via a web application.  
-                        As the business came to a close, Joyfoodly would provide users the Joyful12 cookbook for free via the web.  
+                            Busy parents want to cook healthy meals for their children, but sometimes don&#8217;t know how to make healthy meals with plenty of fruits and vegetables.  Joyfoodly was a culinary education company that helped busy parents learn to cook healthy meals with more fruits and vegetables.  As Joyfoodly came to a close, the company wanted to close all existing web accounts, provide the Joyfoodly community with a free version of the Joyful12 cookbook via a new legacy website and notify the community about the business closing and creation of the new legacy website via email.
                         </p>
                     </div>
                     <div label="2" className={classes.step}>
@@ -69,10 +70,18 @@ const Joyfoodly = () => {
                             define
                         </h2>
                         <p className={classes.process_paragraphs}>
-                            Joyfoodly needed the then existing web programs closed.  
-                            Users needed a legacy website featuring the downloadable cookbook Joyful12.  
-                            Users needed access to the website by entering the joyfoodly.com and joyful12.com domain names.  
-                            Users needed notification of the business closing and launch of the legacy website.
+                            Requirements:
+                            <ul>
+                                <li>
+                                    Design, develop and deploy a legacy website where the Joyfoodly community can visit and download a free version of the Joyful12 cookbook
+                                </li>
+                                <li>
+                                    Design emails using Mailchimp to notify Joyfoodly subscribers about the company closing and the launch of the legacy website
+                                </li>
+                                <li>
+                                    Close previous web programs and redirect traffic to new legacy website from the joyfoodly.com and joyful12.com domain names
+                                </li>
+                            </ul>
                         </p>     
                     </div>
                     <div label="3" className={classes.step}>
@@ -81,7 +90,7 @@ const Joyfoodly = () => {
                         </h2>
                         <p className={classes.process_paragraphs}>
                             We agreed to create a simple, modern website using Next.js for the legacy website.  
-                            I created quick sketches of possible desktop and mobile designs for the website.
+                            I created quick sketches of possible desktop and mobile designs for the website.  
                         </p>
                         
                     </div>
@@ -91,7 +100,8 @@ const Joyfoodly = () => {
                         </h2>
                         <p className={classes.process_paragraphs}>
                             I created high-fidelity mobile and desktop prototypes for the Joyfoodly legacy website using Figma with the content provided by Joyfoodly.  
-                            The emails to subscribers were designed using Mailchimp with content provided by Joyfoodly.
+                            The emails to subscribers were designed using Mailchimp with content provided by Joyfoodly.  
+                            Prototypes for the website and emails were shared with stakeholders for approval.
                         
                             <Link href="https://www.figma.com/community/file/1067233911203456668" passHref={true} >
                                 <a className={classes.view_prototype_button} target="_blank" rel="noopener noreferrer" >
@@ -125,9 +135,10 @@ const Joyfoodly = () => {
                             build
                         </h2>
                         <p className={classes.process_paragraphs}>
-                            After receiving approval from stakeholders, I developed the Joyfoodly website using Next.js.  
+                            After stakeholders agreed to prototype designs, I developed the Joyfoodly website using Next.js.  
                             I added redirects from the domain names joyfoodly.com and joyful12.com to the Joyfoodly legacy website.  
-                            I closed accounts for the web programs no longer needed for Joyfoodly.
+                            I closed accounts for the web programs no longer needed for Joyfoodly.  
+                            The emails were created using Mailchimp.
                         </p>
                     </div>
                     <div label="6" className={classes.step}>
@@ -135,19 +146,12 @@ const Joyfoodly = () => {
                             test
                         </h2>
                         <p className={classes.process_paragraphs}>
-                            Stakeholders received a preview of the legacy Joyfoodly website.  
-                            The Joyfoodly website was tested for cross-browser functionality and on multiple devices.
+                            The Joyfoodly website was tested for cross-browser functionality and on multiple devices.  
+                            By testing, we were able to observe slight differences between Android and iPhone browser versions of the legacy website.  
+                            I was able to correct the website for compatibility with Android and iPhone browsers.
                         </p>
                     </div>
                 </Tabs>
-
-                <h2 className="header_02">
-                    challenges
-                </h2>
-                <div className='paragraphs' >
-                    The project required closing unnecessary accounts on many different systems.  
-                    In order to properly coordinate the closing of accounts and direct users to the legacy website, I needed to locate and understand each account.
-                </div>
 
                 <h2 className="header_02">
                     discoveries

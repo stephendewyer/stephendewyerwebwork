@@ -115,17 +115,6 @@ const InfiniteMile = () => {
                         </p>
                     </div>
                 </Tabs>
-
-                <h2 className="header_02">
-                    challenges
-                </h2>
-                <div className='paragraphs' >
-                    Setting the direction for the Infinite Mile website was a challenge.  
-                    Many discussions about whether or not to create a custom website or use WordPress were had.  
-                    Procedures to change the website lacked a formal process.  
-                    The website was missing key functionality like responsiveness.
-                </div>
-
                 <h2 className="header_02">
                     discoveries
                 </h2>

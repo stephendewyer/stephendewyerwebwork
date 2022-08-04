@@ -37,8 +37,7 @@ const ArtinTechServices = () => {
                     <div className={classes.inline_bold}>services I provided:</div>
                         <ul>
                             <li>
-                                Designed, developed and deployed an enterprise website and web application featuring client management software
-                            </li>
+                                Designed, developed and deployed an enterprise web application featuring client collaboration software                            </li>
                             <li>
                                 Designed brand identity including logo
                             </li>
@@ -49,7 +48,7 @@ const ArtinTechServices = () => {
                                 Conducting user research
                             </li>
                             <li>
-                                Built the website and web application using Next.js, MongoDB, SendGrid and Stripe
+                                Built the web application using Next.js, MongoDB, SendGrid and Stripe
                             </li>
                         </ul>
                     </div> 
@@ -63,9 +62,9 @@ const ArtinTechServices = () => {
                             empathize
                         </h2>
                         <p className={classes.process_paragraphs}>
-                            Art in Tech Services is a company that uses advancements in art and digital technology to improve design for businesses and the public.  
-                            The company was using multiple channels of communication with clients, which became cumbersome to manage.  
+                            Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
                             The company had no way of processing financial transactions such as invoices via the company web application.  
+                            The company needed a web application to streamline collaboration with clients.
                         </p>
                     </div>
                     <div label="2" className={classes.step}>
@@ -73,25 +72,38 @@ const ArtinTechServices = () => {
                             define
                         </h2>
                         <p className={classes.process_paragraphs}>
-                            Art in Tech Services needed a redesign of the company&apos;s website and web application to feature client management software that would allow users with accounts to:
+                            requirements:
                             <ul>
                                 <li>
-                                    schedule consultations
+                                    Redesign the Art in Tech Services website and create a custom web application using modern web development technologies including Next.js, SendGrid, Stripe and MongoDB
                                 </li>
                                 <li>
-                                    start projects
+                                    Create client management software as part of the redesign that would allow users with accounts to:
+                                    <ul>
+                                        <li>
+                                            schedule consultations
+                                        </li>
+                                        <li>
+                                            start projects
+                                        </li>
+                                        <li>
+                                            receive project updates
+                                        </li>
+                                        <li>
+                                            receive, sign and send signed contracts 
+                                        </li>
+                                        <li>
+                                            receive invoices and make payment
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    receive project updates
+                                    Create public-facing forms to allow users without accounts to schedule consultations, start projects and contact Art in Tech Services via the web application
                                 </li>
                                 <li>
-                                    receive, sign and send contracts
-                                </li>
-                                <li>
-                                    receive invoices and make payments
+                                    Feature custom videos, graphics and animations as part of the web redesign
                                 </li>
                             </ul>
-                            The website needed to use advanced web technologies including Next.js, SendGrid, Stripe and MongoDB to improve performance.
                         </p>     
                     </div>
                     <div label="3" className={classes.step}>
@@ -99,8 +111,9 @@ const ArtinTechServices = () => {
                             ideate
                         </h2>
                         <p className={classes.process_paragraphs}>
-                            I created several sketches of possible designs for the Art in Tech Services website and web application.  
-                            I sketched several graphics to use for content.  
+                            First, I designed the Art in Tech Services logo, running through multiple iterations before selecting one.  
+                            As part of the logo design process, I consulted with graphic designers within my network.<br /><br />
+                            I created several sketches of possible designs for the Art in Tech Services website and web application.  I sketched several graphics to use for content.  
                             I conducted research on similar software to help generate ideas.
                         </p>
                     </div>
@@ -109,9 +122,9 @@ const ArtinTechServices = () => {
                             prototype
                         </h2>
                         <p className={classes.process_paragraphs}>
-                            I created medium-fidelity desktop and mobile prototypes for the Art in Tech Services website and web application using Figma.  
-                            I created custom graphics and animations for the prototypes.  
-                            The prototypes received user testing from individuals within my network.  
+                        I created medium-fidelity desktop and mobile prototypes for the Art in Tech Services web application using Figma.  
+                        I created custom graphics and animations for the prototypes.  
+                        The prototypes received user testing from individuals within my network 
                             <Link href="https://www.figma.com/community/file/1077736708672476518" passHref={true} >
                                 <a className={classes.view_prototype_button} target="_blank" rel="noopener noreferrer" >
                                     <ButtonExternalLink passHref={true} aria-label="link to view prototype">
@@ -131,10 +144,33 @@ const ArtinTechServices = () => {
                             build
                         </h2>
                         <p className={classes.process_paragraphs}>
-                            I developed the redesigned Art in Tech Services website and web application using Next.js, MongoDB, SendGrid and Stripe.  
-                            The process of developing the website and web application allowed me to discover capabilities that could improve the design, like adding animated chevrons to the navigation to tell users which navigation tab is open.  
-                            I created flash messages to give users feedback on forms.  
-                            I also was able to add accessibility features in the development.  
+                            I developed the redesigned Art in Tech Services web application using Next.js, MongoDB, SendGrid and Stripe.  
+                            The process of developing the web application allowed me to discover capabilities that could improve the design, like adding animated chevrons to the navigation to tell users which navigation tab is open. 
+                            <br /><br />
+                            As part of the development process, I created several very interfaces including:
+                            <ul>
+                                <li>
+                                    Dynamic, responsive and accessible tab panels
+                                </li>
+                                <li>
+                                    A dynamic, responsive, accessible, variable height and smooth transitioning accordion with arrows<br />
+                                    <Link href="https://accordion-with-arrows.vercel.app/" passHref={true} >
+                                        <a className={classes.visit_link} target="_blank" rel="noopener noreferrer">
+                                            <ButtonExternalLink passHref={true} aria-label="link to accordion with arrows">
+                                                <div>
+                                                    view
+                                                </div>
+                                                <div className={classes.external_link_icon} >
+                                                    <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                                </div>
+                                            </ButtonExternalLink>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    User feedback on forms that appeared once a form is submitted, when an input loses focus and on every key stroke
+                                </li>
+                            </ul>
                         </p>
                     </div>
                     <div label="6" className={classes.step}>
@@ -148,19 +184,18 @@ const ArtinTechServices = () => {
                     </div>
                 </Tabs>
                 <h2 className="header_02">
-                    challenges
-                </h2>
-                <div className='paragraphs' >
-                    The development of the redesigned Art in Tech Services website and web application required a thorough understanding of advanced web technologies such as Next.js and MongoDB.  
-                    As part of the process, I needed to gain a thorough understanding of how to use Next.js, MongoDB, SendGrid and Stripe in the development of a relatively complex website and web application.
-                </div>
-                <h2 className="header_02">
                     discoveries
                 </h2>
                 <div className='paragraphs' >
-                    Launching the redesigned Art in Tech Services website and web application was a huge accomplishment.  
-                    However, users are relatively unclear on how Art in Tech Services would solve their particular problems.  
-                    I will need to conduct research on pain points for users that Art in Tech Services is particularly adept at solving.
+                    Launching the Art in Tech Services web application was a huge accomplishment.  
+                    The process of developing the application allowed me to design new interfaces.  
+                    Creating the web application helped me to get a deeper understanding of modern web development.
+                </div>
+                <h2 className="header_02">
+                    next steps
+                </h2>
+                <div className='paragraphs' >
+                    As Art in Tech Services continues to evolve, I will talk with potential collaborators to see what their particular pain points are with technology and how Art in Tech Services can help solve their particular problems.
                 </div>
                 <div className={classes.visit_button}>
                     <Link href="https://www.artintechservices.com/" passHref={true} >
