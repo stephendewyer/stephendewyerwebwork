@@ -1,5 +1,6 @@
 .tabs_container {
     padding: 0 40px;
+    margin: 0;
 }
 
 .tabs {
@@ -12,7 +13,7 @@
    cursor: pointer;
 }
 
-.tabs > li {
+.tabs > dt {
     padding: 10px 20px;
     margin: 0 10px;
 }
@@ -22,15 +23,44 @@
     color: #514C64;
     border: 2px solid #514C64;
     border-bottom: 0;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     position: relative;
     top: 2px;
+    font-weight: bold;
 }
 
-.content {
-    padding: 0px;
+.panelItemContainer {
     border-bottom: 2px solid #514C64;
+    will-change: height;
+    transition: height 375ms cubic-bezier(0.65, 0.05, 0.36, 1);
+    margin: 0;
+}
+
+.item {
+    position: relative;
+    font-family: "Century Gothic",Verdana,sans-serif;
+}
+
+.itemEnter {
+    opacity: 0;
+    max-height: 0;
+}
+  
+.itemEnterActive {
+    opacity: 1;
+    max-height: auto;
+    transition: all 500ms ease-out;
+}
+  
+.itemExit {
+    opacity: 0;
+    max-height: 0;
+}
+  
+.itemExitActive {
+    opacity: 0;
+    max-height: 0;
 }
 
 @media screen and (max-width: 751px) {
@@ -44,18 +74,22 @@
        padding: 0;
        margin: 0;
        display: flex;
-       border-bottom: 2px solid #36261E;
+       border-bottom: 2px solid #514C64;
        justify-content: center;
     }
-    
-    .tabs > li {
-        padding: 8px 12px;
-        margin: 0 4px;
+
+    .tabs > dt {
+        padding: 6px 12px;
+        margin: 0 6px;
     }
     
-    
-    .content {
-        padding: 0px;
+    .current {
+        border: 2px solid #514C64;
+        border-bottom: 0;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        position: relative;
+        top: 2px;
     }
 
 }

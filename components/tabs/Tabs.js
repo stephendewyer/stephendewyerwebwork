@@ -1,44 +1,84 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from './Tabs.module.css';
+import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
+const Tabs = ({ tabPanels }) => {
 
-const Tabs = ({ children}) => {
-
-    const [activeTab, setActiveTab] = useState(children[0].props.label);
+    const [activeTab, setActiveTab] = useState(tabPanels[0].label);
 
     const handleClick = (e, newActiveTab) => {
         e.preventDefault();
         setActiveTab(newActiveTab);
     }
+    
+    const content = useRef(null);
+
+    const [height, setHeight] = useState('0px');
+
+    useEffect(() => {
+        
+        setHeight(height = content.current.scrollHeight) 
+        console.log('height: ', content.current.scrollHeight)
+    });  
 
     return (
-        <div className={styles.tabs_container}>
-            <ul className={styles.tabs}>
-                {children.map((tab) => {
-                    const label = tab.props.label;
+        
+        <ul 
+            className={styles.tabs_container}
+        >
+            <li 
+                className={styles.tabs}
+            >
+                {tabPanels.map((tab) => {
+                    const label = tab.label;
+                    const id = tab.id;
                     return (
-                        <li 
+                        <dt 
                             className={label == activeTab ? styles.current : "" } 
-                            key={label}
+                            key={id}
                             onClick={(e) => handleClick(e, label)}
                         >
-                            <div className={styles.tab_link} >
-                                {label}
-                            </div>
-                        </li>
+                            <a href="#">{label}</a>
+                        </dt>
                     )
                 })}
-            </ul>
-            {children.map((one) => {
-                if (one.props.label == activeTab)
-                    return (
-                        <div key={one.props.label == activeTab } className={styles.content}>
-                            {one.props.children}
-                        </div>    
-                    );
-            })}
-            
-        </div>
+            </li>
+            <div 
+                className={styles.panelItemContainer}
+                style={{ 'height': `${height}px` }}
+            >
+                <TransitionGroup >
+                    {tabPanels.map((panelItem) => {
+                        // if panel is the same as the activeTab, load showPanelContent as true
+                        const panelItemId = panelItem.id;
+                        const panelItemContent = panelItem.content;
+                        if (panelItem.label == activeTab)
+                            return (
+                                <CSSTransition
+                                    timeout={500}
+                                    unmountOnExit
+                                    classNames={
+                                        {
+                                            enterActive: styles.itemEnter,
+                                            enterDone: styles.itemEnterActive,
+                                            exitActive: styles.itemExit,
+                                            exitDone: styles.itemExitActive,
+                                        }
+                                    }
+                                    key={panelItemId}
+                                >
+                                    <dd 
+                                        className={styles.item}
+                                        ref={content} 
+                                    >
+                                        {panelItemContent}
+                                    </dd>
+                                </CSSTransition>       
+                        );
+                    })}
+                </TransitionGroup>
+            </div>
+        </ul>
     )
 }
 

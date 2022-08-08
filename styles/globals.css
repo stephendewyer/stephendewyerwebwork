@@ -3,8 +3,7 @@ body {
   background-color: #FFE9C0;
   padding: 0;
   margin: 0;
-  font-family: "CenturyGothic";
-  height: 100%;
+  font-family: "CenturyGothic","Century Gothic",Verdana,sans-serif;;
   color: #514C64;
   font-size: 24px;
 }
@@ -38,6 +37,11 @@ a:active {
   box-sizing: border-box;
 }
 
+dd {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   position: relative;
   top: 0;
@@ -65,12 +69,9 @@ a:active {
 
 .header_02 {
   font-size: 28px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 30px auto;
   max-width: 640px;
   min-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: bold;
   color: #7A7296;
   text-align: center;
@@ -114,8 +115,7 @@ a:active {
 
   .header_02 {
     font-size: 18px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin: 15px auto;
     padding-left: 25px;
     padding-right: 25px;
     min-width: 0;
@@ -130,7 +130,6 @@ a:active {
     max-width: 100%;
     min-width: 100%;
     font-size: 16px;
-    margin-bottom: 40px;
   }
 
 }
