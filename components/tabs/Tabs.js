@@ -1,26 +1,89 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback, useLayoutEffect } from 'react';
 import styles from './Tabs.module.css';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
 const Tabs = ({ tabPanels }) => {
 
+    // load the tab states in a variable and set the first tabPanel as active by default
+
     const [activeTab, setActiveTab] = useState(tabPanels[0].label);
 
-    const handleClick = (e, newActiveTab) => {
-        e.preventDefault();
-        setActiveTab(newActiveTab);
-    }
-    
-    const content = useRef(null);
+    // set a tab as active when corresponding tab is clicked
 
-    const [height, setHeight] = useState('0px');
+    const handleClick = (e, newActiveTab) => {
+
+        e.preventDefault();
+
+        setActiveTab(newActiveTab);
+
+    }
+
+    // load different height states in a variable and set the default height state to "0px"
+
+    const [height, setHeight] = useState(0);    
+
+    // calculate the height the panel content 
+
+    // store the referenced element in a varialbe
+
+    const panelItemContentContainer = useRef(null);
+
+    // get 'height' after the initial render and every time the list changes
 
     useEffect(() => {
-        
-        setHeight(height = content.current.scrollHeight) 
-        console.log('height: ', content.current.scrollHeight)
-    });  
 
+        // get current scrollHeight data on element with ref only if value is contained in the variable
+
+        if (panelItemContentContainer.current !== null) {
+
+            setHeight(panelItemContentContainer.current.scrollHeight);
+
+        }
+
+    });
+
+    // update the height when window resizes
+
+    // *IMPORTANT* use useCallback and not useEffect to ensure that even if a child component displays the measured node later (e.g. in response to a click), we still get notified about it in the parent component and can update the measurements.
+
+    const [node, setNode] = useState(null);
+
+    const measuredRef = useCallback(node => {
+
+        if (node !== null) {
+
+            setNode(node);
+
+        }
+
+    }, []);
+
+    // *IMPORTANT* use useLayoutEffect for synchronous rendering in the client. DO NOT USE useEffect, which uses asynchronous rendering
+
+    useLayoutEffect(() => {
+
+        if (node) {
+            
+            const measure = () => {
+
+                setHeight(node.getBoundingClientRect().height);
+
+            }
+            
+            window.addEventListener("resize", measure );
+
+            return () => {
+
+                window.removeEventListener("resize", measure );
+
+            };
+
+       }
+
+    }, [node]);
+
+    // console.log('height: ', height)
+    
     return (
         
         <ul 
@@ -68,10 +131,14 @@ const Tabs = ({ tabPanels }) => {
                                     key={panelItemId}
                                 >
                                     <dd 
-                                        className={styles.item}
-                                        ref={content} 
+                                        ref={panelItemContentContainer}
                                     >
-                                        {panelItemContent}
+                                        <div
+                                            ref={measuredRef}
+                                            className={styles.item}
+                                        >
+                                            {panelItemContent}
+                                        </div>
                                     </dd>
                                 </CSSTransition>       
                         );
