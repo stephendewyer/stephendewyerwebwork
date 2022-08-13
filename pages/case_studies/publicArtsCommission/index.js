@@ -127,7 +127,7 @@ const PublicArtsCommission = () => {
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/publicArtsCommission" />
             </Head>
-            <div className="container" role="main">
+            <div className="container">
                 <h1 className="header">
                     client: Public Arts Commission<br/>
                     2017 &ndash; present
@@ -212,7 +212,6 @@ const PublicArtsCommission = () => {
                 </div>
             </div>
         </Fragment>
-        
     );
 };
 

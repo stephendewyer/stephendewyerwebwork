@@ -148,7 +148,7 @@ const Joyfoodly = () => {
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/joyfoodly" />
             </Head>
-            <div className="container" role="main">
+            <div className="container">
                 <h1 className="header">
                     client: Joyfoodly<br />
                     2022

@@ -1,21 +1,15 @@
 .contact_paragraphs {
     width: 50%;
-    height: auto;
     max-width: 640px;
     min-width: 480px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+    margin: 20px auto;
 }
 
 .form {
     max-width: 640px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    
+    margin: 20px auto;
 }
 
 .indicates_required {
@@ -28,8 +22,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 0 20px;
     margin-bottom: 20px;
+    padding: 0 20px;
 }
 
 .label {
@@ -168,13 +162,11 @@
 @media screen and (max-width: 750px) {
 
     .contact_paragraphs {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 20px 20px;
         width: auto;
         height: auto;
         max-width: auto;
         min-width: auto;
-        margin-bottom: 40px;
     }
     .form {
         width: 100%;

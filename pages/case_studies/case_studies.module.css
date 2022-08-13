@@ -3,9 +3,7 @@
     width: 100%;
     max-width: 2400px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 150px;
+    margin: 0 auto;
 }
 
 .case_studies_a {
@@ -86,10 +84,6 @@
 
 @media screen and (max-width: 1000px) {
 
-    .case_studies{
-        margin-bottom: 20px;
-    }
-
     .case_studies_a {
         flex-direction: column;
         margin-top: 20px;
@@ -111,8 +105,7 @@
 
     .case_study_info_container {
         width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px auto;
 
     }
 

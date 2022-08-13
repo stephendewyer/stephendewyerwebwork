@@ -8,7 +8,7 @@ import Image from 'next/image';
 function Footer() {
 
     return (
-        <div className={styles.footer} role="contentinfo">
+        <div className={styles.footer}>
             <div className={styles.footer_info}>
                 stephen garrett dewyer © 2022
             </div>

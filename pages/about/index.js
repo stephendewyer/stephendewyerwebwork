@@ -17,7 +17,7 @@ const AboutPage = () => {
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/about" />
             </Head>
-            <div className="container" role="main">
+            <div className="container">
                 <h1 className="header">
                     about
                 </h1>

@@ -20,7 +20,7 @@ const CaseStudiesPage = () => {
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies" />
             </Head>
-            <div className={classes.case_studies} role="main">
+            <div className={classes.case_studies}>
                 <h1 className="header">
                     case studies
                 </h1>

@@ -109,7 +109,7 @@ const InfiniteMile = () => {
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/infiniteMile" />
             </Head>
-            <div className="container" role="main">
+            <div className="container">
                 <h1 className="header">
                     client: Infinite Mile (∞ mile)<br />
                     2013 &ndash; 2017

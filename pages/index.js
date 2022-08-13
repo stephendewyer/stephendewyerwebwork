@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import Image from 'next/image';
 import VideoJS from '../components/videoJS/videoJS' // point to where the functional component is stored
 import styles from '../styles/Index.module.css';
@@ -44,6 +44,16 @@ const IndexPage = () => {
     });
   };
 
+
+  useEffect(() => {
+		const player = playerRef.current
+		return () => {
+			if (!player || player.isDisposed()) return
+			player.dispose()
+			playerRef.current = null
+		}
+	}, [playerRef])
+
   return (
     <Fragment>
       <Head>
@@ -52,7 +62,7 @@ const IndexPage = () => {
         <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
         <meta property="og:url" content="https://stephendewyerwebwork.vercel.app" />
       </Head>
-      <div className="container" role="main">
+      <div className="container">
         <h1 className="header">
           user experience (UX) design and full-stack web development
         </h1>
