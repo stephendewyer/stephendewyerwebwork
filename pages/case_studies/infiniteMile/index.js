@@ -117,33 +117,52 @@ const InfiniteMile = () => {
                 <div className={styles.slider_case_study}>
                     <InfiniteMileSlideCarousel />
                 </div>
+                <h2 className="header_02">
+                    details
+                </h2>
+                <div className={styles.case_study_details}>
+                    <div className={styles.detail}>
+                        <h3 className={styles.detail_heading}>
+                            about the client:
+                        </h3>
+                        <p>
+                            Infinite Mile LLC was an award-winning journal of art and culture(s) in Detroit, Michigan that published monthly online issues and annual print anthologies.
+                        </p>
+                        <h3 className={styles.detail_heading}>
+                            my role and company:
+                        </h3>
+                        <p>
+                            Co-Founding Editor of Infinite Mile
+                        </p>
+                    </div>
+                    <div className={styles.detail}>
+                        <h3 className={styles.detail_heading}>
+                            services I provided:
+                        </h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Designed, developed and deployed an enterprise website
+                                </li>
+                                <li>
+                                    Designed brand identity including logo
+                                </li>
+                                <li>
+                                    Designed graphics
+                                </li>
+                                <li>
+                                    Maintained and updated website to publish monthly issues
+                                </li>
+                                <li>
+                                    Designed, developed and deployed a shop feature to allow users to purchase annual print anthologies and merchandise using a PayPal API
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
                 <div className='paragraphs_container' >
-                    <div className='paragraphs' >
-                    Infinite Mile LLC was an award-winning journal of art and culture(s) in Detroit, Michigan that published monthly online issues and annual print anthologies.
-                    <br /><br />
-                    <div className={styles.inline_bold}>my role: </div>Co-Founding Editor
-                    <br /><br />
-                    <div className={styles.inline_bold}>services I provided:</div>
-                        <ul>
-                            <li>
-                                Designed, developed and deployed an enterprise website
-                            </li>
-                            <li>
-                                Designed brand identity including logo
-                            </li>
-                            <li>
-                                Designed graphics
-                            </li>
-                            <li>
-                                Maintained and updated website to publish monthly issues
-                            </li>
-                            <li>
-                                Designed, developed and deployed a shop feature to allow users to purchase annual print anthologies and merchandise using a PayPal API
-                            </li>
-                        </ul>
-                    </div> 
                     <h2 className="header_02">
-                        the process
+                        process
                     </h2>
                     <Tabs tabPanels={tabPanels} />
                     <h2 className="header_02">

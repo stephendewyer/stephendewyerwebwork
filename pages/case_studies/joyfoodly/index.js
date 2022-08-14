@@ -156,75 +156,90 @@ const Joyfoodly = () => {
                 <div className={styles.slider_case_study}>
                     <JoyfoodlySlideCarousel />
                 </div>
-                <div className='paragraphs_container' >
-                    <div className='paragraphs' >
-                        Joyfoodly helps families learn to eat more fruits and vegetables, offering a downloadable cookbook called Joyful12.
-                        <br /><br />
-                        <span className={styles.inline_bold}>my role: </span> Founding Director of Art in Tech Services<br /><br />
-                        <span className={styles.inline_bold}>services I provided:</span>
-                        <ul>
-                            <li>
-                                Designed, developed and deployed a responsive legacy website
-                            </li>
-                            <li>
-                                Designed custom emails
-                            </li>
-                            <li>
-                                Redirected users to the legacy website from existing domain names
-                            </li>
-                            <li>
-                                Closed previous web program accounts
-                            </li>
-                        </ul>
-                            
-                    </div> 
-                    <h2 className="header_02">
-                        the process
-                    </h2>
-                    <Tabs tabPanels={tabPanels} />
-                    <h2 className="header_02">
-                        discoveries
-                    </h2>
-                    <div className='paragraphs' >
-                        The project went very well.  
-                        A key to the success of the project was writing a contract to set a timeline and expectations for deliverables.  
-                        Art in Tech Services was a great vehicle for the project.
+                <h2 className="header_02">
+                    details
+                </h2>
+                <div className={styles.case_study_details}>
+                    <div className={styles.detail}>
+                        <h3 className={styles.detail_heading}>
+                            about the client:
+                        </h3>
+                        <p>
+                            Joyfoodly helps families learn to eat more fruits and vegetables, offering a downloadable cookbook called Joyful12.
+                        </p>
+                        <h3 className={styles.detail_heading}>
+                            my role and company:
+                        </h3>
+                        <p>
+                            Founding Director of Art in Tech Services Inc
+                        </p>
                     </div>
-                    
-                    <div className={styles.visit_button}>
-                        <Link href="https://joyfoodly.vercel.app/" passHref={true} >
-                            <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
-                                <ButtonExternalLink passHref={true} aria-label="link to visit">
-                                    <div>
-                                        visit
-                                    </div>
-                                    <div className={styles.external_link_icon} >
-                                        <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                                    </div>
-                                </ButtonExternalLink>
-                            </a>
-                        </Link>
-                    </div>
-                    <div className={styles.case_studies_nav}>
-                        <Link href="/case_studies/infiniteMile" passHref={true} >
-                            <div>
-                                <Button passHref={true} aria-label="link to previous case study">
-                                    previous
-                                </Button>
-                            </div>
-                        </Link>
-                        <Link href="/case_studies/artInTechServices" passHref={true} >
-                            <div>
-                                <Button passHref={true} aria-label="link to next case study">
-                                    next
-                                </Button>
-                            </div>
-                        </Link>
+                    <div className={styles.detail}>
+                        <h3 className={styles.detail_heading}>
+                            services I provided:
+                        </h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Designed, developed and deployed a responsive legacy website
+                                </li>
+                                <li>
+                                    Designed custom emails
+                                </li>
+                                <li>
+                                    Redirected users to the legacy website from existing domain names
+                                </li>
+                                <li>
+                                    Closed previous web program accounts
+                                </li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
+                <h2 className="header_02">
+                    process
+                </h2>
+                <Tabs tabPanels={tabPanels} />
+                <h2 className="header_02">
+                    discoveries
+                </h2>
+                <div className='paragraphs' >
+                    The project went very well.  
+                    A key to the success of the project was writing a contract to set a timeline and expectations for deliverables.  
+                    Art in Tech Services was a great vehicle for the project.
+                </div>
+                <div className={styles.visit_button}>
+                    <Link href="https://joyfoodly.vercel.app/" passHref={true} >
+                        <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
+                            <ButtonExternalLink passHref={true} aria-label="link to visit">
+                                <div>
+                                    visit
+                                </div>
+                                <div className={styles.external_link_icon} >
+                                    <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                </div>
+                            </ButtonExternalLink>
+                        </a>
+                    </Link>
+                </div>
+                <div className={styles.case_studies_nav}>
+                    <Link href="/case_studies/infiniteMile" passHref={true} >
+                        <div>
+                            <Button passHref={true} aria-label="link to previous case study">
+                                previous
+                            </Button>
+                        </div>
+                    </Link>
+                    <Link href="/case_studies/artInTechServices" passHref={true} >
+                        <div>
+                            <Button passHref={true} aria-label="link to next case study">
+                                next
+                            </Button>
+                        </div>
+                    </Link>
+                </div>
             </div>
-        </Fragment>
-        
+        </Fragment> 
     );
 };
 

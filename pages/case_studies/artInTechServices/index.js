@@ -181,7 +181,6 @@ const ArtinTechServices = () => {
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/artInTechServices" />
             </Head>
             <div className="container">
-            
                 <h1 className="header">
                     client: Art in Tech Services Inc<br/>
                     2021 &ndash; present
@@ -189,33 +188,53 @@ const ArtinTechServices = () => {
                 <div className={styles.slider_case_study}>
                     <ArtinTechServicesSlideCarousel />
                 </div>
+
+                <h2 className="header_02">
+                        details
+                    </h2>
+                <div className={styles.case_study_details}>
+                    <div className={styles.detail}>
+                        <h3 className={styles.detail_heading}>
+                            about the client:
+                        </h3>
+                        <p>
+                            Art in Tech Services Inc is a company that uses advancements in art and digital technology to improve design for businesses and the public.
+                        </p>
+                        <h3 className={styles.detail_heading}>
+                            my role and company:
+                        </h3>
+                        <p>
+                            Founding Director of Art in Tech Services
+                        </p>
+                    </div>
+                    <div className={styles.detail}>
+                        <h3 className={styles.detail_heading}>
+                            services I provided:
+                        </h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Designed, developed and deployed an enterprise web application featuring client collaboration software                            
+                                </li>
+                                <li>
+                                    Designed brand identity including logo
+                                </li>
+                                <li>
+                                    Created custom graphics, animations and videos
+                                </li>
+                                <li>
+                                    Conducting user research
+                                </li>
+                                <li>
+                                    Built the web application using Next.js, MongoDB, SendGrid and Stripe
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
                 <div className='paragraphs_container' >
-                    <div className='paragraphs' >
-                    Art in Tech Services Inc is a company that uses advancements in art and digital technology to improve design for businesses and the public.
-                    <br/><br/>
-                    <div className={styles.inline_bold}>my role:</div> Founding Director of Art in Tech Services
-                    <br /><br />
-                    <div className={styles.inline_bold}>services I provided:</div>
-                        <ul>
-                            <li>
-                                Designed, developed and deployed an enterprise web application featuring client collaboration software                            
-                            </li>
-                            <li>
-                                Designed brand identity including logo
-                            </li>
-                            <li>
-                                Created custom graphics, animations and videos
-                            </li>
-                            <li>
-                                Conducting user research
-                            </li>
-                            <li>
-                                Built the web application using Next.js, MongoDB, SendGrid and Stripe
-                            </li>
-                        </ul>
-                    </div> 
                     <h2 className="header_02">
-                        the process
+                        process
                     </h2>       
                     <Tabs tabPanels={tabPanels} />
                     <h2 className="header_02">

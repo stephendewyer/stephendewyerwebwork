@@ -135,33 +135,52 @@ const PublicArtsCommission = () => {
                 <div className={styles.slider_case_study}>
                     <PublicArtsCommissionSlideCarousel />
                 </div>
+                <h2 className="header_02">
+                    details
+                </h2>
+                <div className={styles.case_study_details}>
+                    <div className={styles.detail}>
+                        <h3 className={styles.detail_heading}>
+                            about the client:
+                        </h3>
+                        <p>
+                            Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.
+                        </p>
+                        <h3 className={styles.detail_heading}>
+                            my role and company:
+                        </h3>
+                        <p>
+                            Founder of Public Arts Commission
+                        </p>
+                    </div>
+                    <div className={styles.detail}>
+                        <h3 className={styles.detail_heading}>
+                            services I provided:
+                        </h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Designed brand identity including logo
+                                </li>
+                                <li>
+                                    Designed, developed and deployed an enterprise website and web application
+                                </li>
+                                <li>
+                                    Created custom graphics
+                                </li>
+                                <li>
+                                    Created campaign management software
+                                </li>
+                                <li>
+                                    Prototyping web applications for individuals to connect and organize and for campaigns to purchase subscriptions to connect with individuals in the Public Arts Commission network
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
                 <div className='paragraphs_container' >
-                    <div className='paragraphs' >
-                    Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.
-                    <br /><br />
-                    <div className={styles.inline_bold}>my role: </div>Founder of Public Arts Commission
-                    <br /><br />
-                    <div className={styles.inline_bold}>services I provided:</div>
-                        <ul>
-                            <li>
-                                Designed brand identity including logo
-                            </li>
-                            <li>
-                                Designed, developed and deployed an enterprise website and web application
-                            </li>
-                            <li>
-                                Created custom graphics
-                            </li>
-                            <li>
-                                Created campaign management software
-                            </li>
-                            <li>
-                                Prototyping web applications for individuals to connect and organize and for campaigns to purchase subscriptions to connect with individuals in the Public Arts Commission network
-                            </li>
-                        </ul>
-                    </div> 
                     <h2 className="header_02">
-                        the process
+                        process
                     </h2>
                     <Tabs tabPanels={tabPanels} />
                     <h2 className="header_02">
