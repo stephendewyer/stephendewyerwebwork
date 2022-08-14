@@ -45,10 +45,10 @@ dd {
 .container {
   position: relative;
   width: 100%;
+  padding-top: 220px;
 }
 
 .header {
-  margin-top: 220px;
   margin-bottom: 30px;
   padding-left: 25px;
   padding-right: 25px;
@@ -94,9 +94,12 @@ dd {
     font-size: 16px;
   }
 
+  .container {
+    padding-top: 130px;
+  }
+
   .header {
     font-size: 20px;
-    margin-top: 130px;
     margin-bottom: 15px;
   }
 
