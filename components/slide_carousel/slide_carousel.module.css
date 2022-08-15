@@ -9,7 +9,7 @@
   position: relative;
   z-index: 2;
   width: 40%;
-  padding: 40px 0;
+  padding: 20px 0;
   margin: 0 auto;
 }
 
@@ -34,6 +34,11 @@
 }
 
 @media screen and (max-width: 750px) {
+
+  .arrows {
+    padding: 10px 0;
+  }
+
   .prev_arrow {
     width: 35px;
   }
