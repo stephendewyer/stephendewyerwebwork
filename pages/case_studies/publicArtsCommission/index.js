@@ -6,6 +6,9 @@ import styles from './publicArtsCommission.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PublicArtsCommissionSlideCarousel from "../../../components/slide_carousel/PublicArtsCommissionSlideCarousel";
+import ArtAtDemonstration from '../../../public/images/case_studies/Public_Arts_Commission/process/art_at_demonstration.JPG';
+import EndorsedByPublicArtsCommission from '../../../public/images/case_studies/Public_Arts_Commission/process/endorsement_image.jpg';
+import PublicArtsCommissionLogo from '../../../public/images/case_studies/Public_Arts_Commission/process/public_arts_commission_logo.svg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
 import Button from '../../../components/button/button';
@@ -18,32 +21,48 @@ const PublicArtsCommission = () => {
             id: uuidv4(),
             label: "1",
             content:
-                <div className={styles.panelContent}>
+                <div className={styles.panelContentParagraphsWithImage}>
                     <h2 className={styles.panelHeading}>
                         empathize
-                    </h2>             
-                    <p className={styles.panelParagraphs}>
-                        Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.  
-                        The non-profit organization launched in 2017.  
-                        The organization was contacting campaigns and handling campaign applications for endorsement mostly through email, which became cumbersome.  
-                        The organization is planning to use a subscription service for campaigns to connect with individuals in the Public Arts Commission network.  
-                        The organization is also planning to offer individuals free accounts to enable grass-roots organizing across the United States via a web application.
-                    </p>
-            </div>,
+                    </h2>
+                    <div className={styles.panelImageAndParagraphs}>
+                        <figure className={styles.panelImage}>
+                            <Image src={ArtAtDemonstration} layout="responsive" alt="Art at a demonstration for equity"/>  
+                            <figcaption className={styles.figCaption}>
+                                Art at a demonstration for equity
+                            </figcaption>   
+                        </figure>   
+                        <p className={styles.panelParagraphsWithImage}>
+                            Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.  
+                            The non-profit organization launched in 2017.  
+                            The organization was contacting campaigns and handling campaign applications for endorsement mostly through email, which became cumbersome.  
+                            The organization is planning to use a subscription service for campaigns to connect with individuals in the Public Arts Commission network.  
+                            The organization is also planning to offer individuals free accounts to enable grass-roots organizing across the United States via a web application.
+                        </p>
+                    </div>
+                </div>,
             },
         {
             id: uuidv4(),
             label: "2",
             content:
-                <div className={styles.panelContent}>
+                <div className={styles.panelContentParagraphsWithImage}>
                     <h2 className={styles.panelHeading}>
                         define
                     </h2>
-                    <div className={styles.panelParagraphs}>
-                        Public Arts Commission needed a website to display endorsed campaigns by election cycle and by state.  
-                        The website also needed to give important information about the organization.  
-                        The organization needed a web application to allow campaigns with accounts to apply for an endorsement and receive status updates.  Eventually, the organization will need a web application for campaigns to connect with individuals in the Public Arts Commission network.  
-                        Public Arts Commission will also need a web application for individuals to connect and organize for free.
+                    <div className={styles.panelImageAndParagraphs}>
+                        <figure className={styles.panelImage}>
+                            <Image src={EndorsedByPublicArtsCommission} layout="responsive" alt="Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota"/>  
+                            <figcaption className={styles.figCaption}>
+                                Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota
+                            </figcaption>   
+                        </figure>   
+                        <p className={styles.panelParagraphsWithImage}>
+                            Public Arts Commission needed a website to display endorsed campaigns by election cycle and by state.  
+                            The website also needed to give important information about the organization.  
+                            The organization needed a web application to allow campaigns with accounts to apply for an endorsement and receive status updates.  Eventually, the organization will need a web application for campaigns to connect with individuals in the Public Arts Commission network.  
+                            Public Arts Commission will also need a web application for individuals to connect and organize for free.
+                        </p>
                     </div>
                 </div>,
         },
@@ -51,12 +70,20 @@ const PublicArtsCommission = () => {
             id: uuidv4(),
             label: "3",
             content:
-                <div className={styles.panelContent}>
+                <div className={styles.panelContentParagraphsWithImage}>
                     <h2 className={styles.panelHeading}>
                         ideate
-                    </h2> 
-                    <div className={styles.panelParagraphs}>
-                        I generated drawings for the Public Arts Commission website and web application for campaigns to apply for endorsements.
+                    </h2>
+                    <div className={styles.panelImageAndParagraphs}>
+                        <figure className={styles.panelImage}>
+                            <Image src={PublicArtsCommissionLogo} layout="responsive" alt="Public Arts Commission logo"/>  
+                            <figcaption className={styles.figCaption}>
+                                Public Arts Commission logo
+                            </figcaption>   
+                        </figure>   
+                        <p className={styles.panelParagraphsWithImage}>
+                            I generated drawings for the Public Arts Commission website and web application for campaigns to apply for endorsements.
+                        </p>
                     </div>
                 </div>,
         },

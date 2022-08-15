@@ -6,6 +6,7 @@ import styles from './joyfoodly.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import JoyfoodlySlideCarousel from "../../../components/slide_carousel/JoyfoodlySlideCarousel";
+import familyCooking from '../../../public/images/case_studies/Joyfoodly/process/family_cooking.jpg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
 import Button from '../../../components/button/button';
@@ -18,16 +19,21 @@ const Joyfoodly = () => {
             id: uuidv4(),
             label: "1",
             content:
-                <div className={styles.panelContent}>
+                <div className={styles.panelContentParagraphsWithImage}>
                     <h2 className={styles.panelHeading}>
                         empathize
-                    </h2>             
-                    <p className={styles.panelParagraphs}>
-                        Busy parents want to cook healthy meals for their children, but sometimes don&#8217;t know how to make healthy meals with plenty of fruits and vegetables.  
-                        Joyfoodly was a culinary education company that helped busy parents learn to cook healthy meals with more fruits and vegetables.  
-                        As Joyfoodly came to a close, the company wanted to close all existing web accounts, provide the Joyfoodly community with a free version of the Joyful12 cookbook via a new legacy website and notify the community about the business closing and creation of the new legacy website via email.
-                    </p>
-            </div>,
+                    </h2>
+                    <div className={styles.panelImageAndParagraphs}>
+                        <div className={styles.panelImage}>
+                            <Image src={familyCooking} layout="responsive" alt="family cooking a meal"/>     
+                        </div>   
+                        <p className={styles.panelParagraphsWithImage}>
+                            Busy parents want to cook healthy meals for their children, but sometimes don&#8217;t know how to make healthy meals with plenty of fruits and vegetables.  
+                            Joyfoodly was a culinary education company that helped busy parents learn to cook healthy meals with more fruits and vegetables.  
+                            As Joyfoodly came to a close, the company wanted to close all existing web accounts, provide the Joyfoodly community with a free version of the Joyful12 cookbook via a new legacy website and notify the community about the business closing and creation of the new legacy website via email.
+                        </p>
+                    </div>
+                </div>,
             },
         {
             id: uuidv4(),

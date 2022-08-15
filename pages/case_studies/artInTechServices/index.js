@@ -6,6 +6,8 @@ import { v4 as uuidv4 } from 'uuid';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArtinTechServicesSlideCarousel from "../../../components/slide_carousel/ArtinTechServicesSlideCarousel";
+import StarFormingRegionJamesWebb from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/process/main_image_star-forming_region_carina_nircam_final-5mb.jpg';
+import ArtinTechServicesLogo from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/process/Art_in_Tech_Services_logo_01.svg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
 import Button from '../../../components/button/button';
@@ -19,16 +21,24 @@ const ArtinTechServices = () => {
             id: uuidv4(),
             label: "1",
             content:
-                <div className={styles.panelContent}>
+                <div className={styles.panelContentParagraphsWithImage}>
                     <h2 className={styles.panelHeading}>
                         empathize
-                    </h2>             
-                    <p className={styles.panelParagraphs}>
-                        Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
-                        The company had no way of processing financial transactions such as invoices via the company web application.  
-                        The company needed a web application to streamline collaboration with clients.
-                    </p>
-            </div>,
+                    </h2>
+                    <div className={styles.panelImageAndParagraphs}>
+                        <figure className={styles.panelImage}>
+                            <Image src={StarFormingRegionJamesWebb} layout="responsive" alt="James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured"/>  
+                            <figcaption className={styles.figCaption}>
+                                An example of art in tech: NASA&#8217;s James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured, 2022, Image credit: NASA, ESA, CSA and STScI
+                            </figcaption>   
+                        </figure>   
+                        <p className={styles.panelParagraphsWithImage}>
+                            Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
+                            The company had no way of processing financial transactions such as invoices via the company web application.  
+                            The company needed a web application to streamline collaboration with clients.
+                        </p>
+                    </div>
+                </div>,
             },
         {
             id: uuidv4(),
@@ -78,15 +88,23 @@ const ArtinTechServices = () => {
             id: uuidv4(),
             label: "3",
             content:
-                <div className={styles.panelContent}>
+                <div className={styles.panelContentParagraphsWithImage}>
                     <h2 className={styles.panelHeading}>
                         ideate
-                    </h2> 
-                    <div className={styles.panelParagraphs}>
-                        First, I designed the Art in Tech Services logo, running through multiple iterations before selecting one.  
-                        As part of the logo design process, I consulted with graphic designers within my network.<br /><br />
-                        I created several sketches of possible designs for the Art in Tech Services website and web application.  I sketched several graphics to use for content.  
-                        I conducted research on similar software to help generate ideas.
+                    </h2>
+                    <div className={styles.panelImageAndParagraphs}>
+                        <figure className={styles.panelImage}>
+                            <Image src={ArtinTechServicesLogo} layout="responsive" alt="Art in Tech Services logo"/>  
+                            <figcaption className={styles.figCaption}>
+                                Art in Tech Services logo
+                            </figcaption>   
+                        </figure>   
+                        <p className={styles.panelParagraphsWithImage}>
+                            First, I designed the Art in Tech Services logo, running through multiple iterations before selecting one.  
+                            As part of the logo design process, I consulted with graphic designers within my network.<br /><br />
+                            I created several sketches of possible designs for the Art in Tech Services website and web application.  I sketched several graphics to use for content.  
+                            I conducted research on similar software to help generate ideas.
+                        </p>
                     </div>
                 </div>,
         },
