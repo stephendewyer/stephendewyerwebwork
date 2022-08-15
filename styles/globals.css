@@ -52,6 +52,17 @@ figcaption {
   margin: 0;
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  padding: 0 40px;
+}
+
+.arrow {
+  padding: 0 10px;
+  margin: 0;
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -130,6 +141,14 @@ figcaption {
     max-width: 100%;
     min-width: 100%;
     font-size: 16px;
+  }
+
+  .breadcrumbs {
+    padding: 0 20px;
+  }
+
+  .arrow {
+    padding: 0 5px;
   }
 
 }

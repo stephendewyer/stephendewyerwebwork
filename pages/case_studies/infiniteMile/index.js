@@ -137,6 +137,23 @@ const InfiniteMile = () => {
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/infiniteMile" />
             </Head>
             <div className="container">
+                <div className="breadcrumbs">
+                    <Link href="/" aria-label="link to index page">
+                        index
+                    </Link>
+                    <p className="arrow">
+                        &#62;
+                    </p>
+                    <Link href="/case_studies/" aria-label="link to case studies page">
+                        case studies
+                    </Link>
+                    <p className="arrow">
+                        &#62;
+                    </p>
+                    <Link href="/case_studies/infiniteMile" aria-label="link to Infinite Mile page">
+                        Infinite Mile
+                    </Link>
+                </div>
                 <h1 className="header">
                     client: Infinite Mile (∞ mile)<br />
                     2013 &ndash; 2017

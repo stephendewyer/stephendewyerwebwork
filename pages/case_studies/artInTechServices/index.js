@@ -199,6 +199,23 @@ const ArtinTechServices = () => {
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/artInTechServices" />
             </Head>
             <div className="container">
+                <div className="breadcrumbs">
+                    <Link href="/" aria-label="link to index page">
+                        index
+                    </Link>
+                    <p className="arrow">
+                        &#62;
+                    </p>
+                    <Link href="/case_studies/" aria-label="link to case studies page">
+                        case studies
+                    </Link>
+                    <p className="arrow">
+                        &#62;
+                    </p>
+                    <Link href="/case_studies/artInTechServices" aria-label="link to Art in Tech Services page">
+                        Art in Tech Services
+                    </Link>
+                </div>
                 <h1 className="header">
                     client: Art in Tech Services Inc<br/>
                     2021 &ndash; present

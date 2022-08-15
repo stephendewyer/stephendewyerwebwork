@@ -155,6 +155,23 @@ const PublicArtsCommission = () => {
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/publicArtsCommission" />
             </Head>
             <div className="container">
+                <div className="breadcrumbs">
+                    <Link href="/" aria-label="link to index page">
+                        index
+                    </Link>
+                    <p className="arrow">
+                        &#62;
+                    </p>
+                    <Link href="/case_studies/" aria-label="link to case studies page">
+                        case studies
+                    </Link>
+                    <p className="arrow">
+                        &#62;
+                    </p>
+                    <Link href="/case_studies/publicArtsCommission" aria-label="link to Public Arts Commission page">
+                        Public Arts Commission
+                    </Link>
+                </div>
                 <h1 className="header">
                     client: Public Arts Commission<br/>
                     2017 &ndash; present
