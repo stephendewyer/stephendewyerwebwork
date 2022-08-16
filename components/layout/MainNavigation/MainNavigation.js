@@ -45,7 +45,11 @@ const MainNavigation = (props) => {
     }
 
     return (
-        <nav className={classes.nav_bar} style={{ ...navbarStyles, top: visible ? '0' : '-250px' }} > 
+        <nav 
+            role="navigation"
+            className={classes.nav_bar} 
+            style={{ ...navbarStyles, top: visible ? '0' : '-250px' }} 
+        > 
             <div className={classes.logo}>
                 <Logo />
             </div>
