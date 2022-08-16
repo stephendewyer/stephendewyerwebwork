@@ -3,6 +3,7 @@ import Image from 'next/image';
 import MyLink from '../../../../public/util/myLink';
 import caseStudiesLink from '../../../../public/images/links/blind_link_case_studies_01.svg';
 import caseStudiesLink_hover from '../../../../public/images/links/blind_link_case_studies_02.svg';
+import styles from './navigation_tab.module.css';
 
 const CaseStudiesTab = () => {
     const [isHovering, setIsHovered] = useState(false);
@@ -10,7 +11,7 @@ const CaseStudiesTab = () => {
     const onMouseLeave = () => setIsHovered(false);
     return (
         <div 
-            
+            className={styles.navigationTab}
             onMouseEnter={onMouseEnter} 
             onMouseLeave={onMouseLeave}
         >

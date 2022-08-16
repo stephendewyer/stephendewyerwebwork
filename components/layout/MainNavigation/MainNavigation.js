@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from './logo/Logo';
 import AboutTab from './navigation_tabs/AboutTab';
 import CaseStudiesTab from './navigation_tabs/CaseStudiesTab';
@@ -36,38 +36,34 @@ const MainNavigation = (props) => {
     const navbarStyles = {
         position: 'fixed',
         width: '100%',
-        height: 'auto',
+        height: '0',
         top: '0',
         left: '0',
         right: '0',
-        overflow: 'hidden',
+        overflow: 'visible',
         transition: 'top 0.6s',
     }
 
     return (
-        <Fragment>
-            <nav className={classes.nav_bar} >
-                <div style={{ ...navbarStyles, top: visible ? '0' : '-250px' }} > 
-                    <div aria-hidden={(props.click) ? "true" : "false"}>
-                        <Logo />
-                    </div>
-                    <div className={classes.grid_container} aria-hidden={(props.click) ? "true" : "false"}>
-                        <div className={classes.grid_item}>
-                            <AboutTab />
-                        </div>
-                        <div className={classes.grid_item}>
-                            <CaseStudiesTab />
-                        </div>
-                        <div className={classes.grid_item}>
-                            <ContactTab />
-                        </div>
-                    </div>
-                    <div className={classes.main_navigation_toggle_button}>
-                        <DrawerToggleButton click={props.drawerClickHandler} aria-hidden={(props.click) ? "true" : "false"} />
-                    </div>
+        <nav className={classes.nav_bar} style={{ ...navbarStyles, top: visible ? '0' : '-250px' }} > 
+            <div className={classes.logo}>
+                <Logo />
+            </div>
+            <div className={classes.navigation_tabs}>
+                <div className={classes.navigation_tab}>
+                    <AboutTab />
                 </div>
-            </nav>
-        </Fragment>
+                <div className={classes.navigation_tab}>
+                    <CaseStudiesTab />
+                </div>
+                <div className={classes.navigation_tab}>
+                    <ContactTab />
+                </div>
+            </div>
+            <div className={classes.main_navigation_toggle_button}>
+                <DrawerToggleButton click={props.drawerClickHandler} aria-hidden={(props.click) ? "true" : "false"} />
+            </div>
+        </nav>
     )
 }
 
