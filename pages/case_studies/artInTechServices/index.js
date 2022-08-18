@@ -33,9 +33,12 @@ const ArtinTechServices = () => {
                             </figcaption>   
                         </figure>   
                         <p className={styles.panelParagraphsWithImage}>
-                            Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
-                            The company had no way of processing financial transactions such as invoices via the company web application.  
-                            The company needed a web application to streamline collaboration with clients.
+                            In 2021, I launched Art in Tech Services to optimize human experiences of technology by using art in the design of digital programs.  
+                            Art in Tech Services works with clients to create digital products that optimize human experiences of technology in design.
+                            <br /><br />
+                            As a practical matter, Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
+                            The company had no way of processing financial transactions such as invoices via the company web application.  The company needed a web application to streamline collaboration with clients.
+
                         </p>
                     </div>
                 </div>,
@@ -49,7 +52,7 @@ const ArtinTechServices = () => {
                         define
                     </h2>
                     <div className={styles.panelParagraphs}>
-                        Requirements:
+                        Goals:
                         <ul>
                             <li>
                                 Redesign the Art in Tech Services website and create a custom web application using modern web development technologies including Next.js, SendGrid, Stripe and MongoDB
@@ -262,6 +265,34 @@ const ArtinTechServices = () => {
                                 </li>
                                 <li>
                                     Built the web application using Next.js, MongoDB, SendGrid and Stripe
+                                </li>
+                            </ul>
+                        </p>
+                        <h3 className={styles.detail_heading}>
+                            tools I used:
+                        </h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Figma
+                                </li>
+                                <li>
+                                    Next.js, Node.js, React.js, Video.js
+                                </li>
+                                <li>
+                                    MongoDB
+                                </li>
+                                <li>
+                                    Stripe
+                                </li>
+                                <li>
+                                    Twilio SendGrid
+                                </li>
+                                <li>
+                                    Adobe Creative Cloud
+                                </li>
+                                <li>
+                                    Canon EOS 70D Digital SLR camera
                                 </li>
                             </ul>
                         </p>

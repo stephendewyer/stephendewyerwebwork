@@ -44,7 +44,7 @@ const Joyfoodly = () => {
                         define
                     </h2>
                     <div className={styles.panelParagraphs}>
-                        Requirements:
+                        Goals:
                         <ul>
                             <li>
                                 Design, develop and deploy a legacy website where the Joyfoodly community can visit and download a free version of the Joyful12 cookbook
@@ -215,6 +215,22 @@ const Joyfoodly = () => {
                                 </li>
                                 <li>
                                     Closed previous web program accounts
+                                </li>
+                            </ul>
+                        </p>
+                        <h3 className={styles.detail_heading}>
+                            tools I used:
+                        </h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Figma
+                                </li>
+                                <li>
+                                    Next.js, React.js
+                                </li>
+                                <li>
+                                    Adobe Creative Cloud
                                 </li>
                             </ul>
                         </p>

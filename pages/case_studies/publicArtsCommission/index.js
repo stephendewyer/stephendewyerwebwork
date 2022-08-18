@@ -33,11 +33,11 @@ const PublicArtsCommission = () => {
                             </figcaption>   
                         </figure>   
                         <p className={styles.panelParagraphsWithImage}>
-                            Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.  
-                            The non-profit organization launched in 2017.  
-                            The organization was contacting campaigns and handling campaign applications for endorsement mostly through email, which became cumbersome.  
-                            The organization is planning to use a subscription service for campaigns to connect with individuals in the Public Arts Commission network.  
-                            The organization is also planning to offer individuals free accounts to enable grass-roots organizing across the United States via a web application.
+                            The art community is very active in democratic campaigns and movements, but doesn’t have a means by which to translate political activity into legislative and electoral results.  
+                            As a result, many of the demands from the art community on leadership in government often are ignored.  
+                            <br /><br />
+                            Seeing a need to connect the art community with democratic campaigns and movements, I launched Public Arts Commission in 2017.  
+                            Public Arts Commission will provide a tool for connecting the art community with democratic campaigns and movements to render more effective the organizing capacity of the art community.  
                         </p>
                     </div>
                 </div>,
@@ -58,10 +58,46 @@ const PublicArtsCommission = () => {
                             </figcaption>   
                         </figure>   
                         <p className={styles.panelParagraphsWithImage}>
-                            Public Arts Commission needed a website to display endorsed campaigns by election cycle and by state.  
-                            The website also needed to give important information about the organization.  
-                            The organization needed a web application to allow campaigns with accounts to apply for an endorsement and receive status updates.  Eventually, the organization will need a web application for campaigns to connect with individuals in the Public Arts Commission network.  
-                            Public Arts Commission will also need a web application for individuals to connect and organize for free.
+                            For Public Arts Commission to fulfill its mission, the organization’s web programs need to do a number of things including:
+                            <ul>
+                                <li>
+                                    Provide a publicly accessible agenda of organizational goals
+                                </li>
+                                <li>
+                                    Provide a searchable database of all campaigns and legislation endorsed by Public Arts Commission to the public
+                                </li>
+                                <li>
+                                    Allow individuals in the art community to create accounts that let them:
+                                </li>
+                                <ul>
+                                    <li>
+                                        Connect with different individuals in the art community who also have Public Arts Commission accounts
+                                    </li>
+                                    <li>
+                                        Send messages to individuals in their network on Public Arts Commission
+                                    </li>
+                                    <li>
+                                        Propose campaigns and events for endorsement by Public Arts Commission
+                                    </li>
+                                    <li>
+                                        See and support relevant campaigns and events endorsed by Public Arts Commission
+                                    </li>
+                                    <li>
+                                        Receive alerts on relevant action items endorsed by Public Arts Commission like upcoming election dates and times
+                                    </li>
+                                </ul>
+                                <li>
+                                    Allow campaigns to apply for an endorsement by Public Arts Commission
+                                </li>
+                                <li>
+                                    Allow Public Arts Commission-endorsed campaigns with paid subscriptions to have access to the following:
+                                </li>
+                                <ul>
+                                    <li>
+                                        All individuals who have Public Arts Commission accounts and are eligible to vote for the campaign in an election
+                                    </li>
+                                </ul>
+                            </ul>
                         </p>
                     </div>
                 </div>,
@@ -82,7 +118,7 @@ const PublicArtsCommission = () => {
                             </figcaption>   
                         </figure>   
                         <p className={styles.panelParagraphsWithImage}>
-                            I generated drawings for the Public Arts Commission website and web application for campaigns to apply for endorsements.
+                            I am currently working on generating drawings for a redesign of the Public Arts Commission web programs. 
                         </p>
                     </div>
                 </div>,
@@ -96,9 +132,9 @@ const PublicArtsCommission = () => {
                         prototype
                     </h2> 
                     <div className={styles.panelParagraphs}>
-                        I created low-fidelity desktop and mobile prototypes for the Public Arts Commission web application for individuals to connect and organize.  
-                        I worked with the Public Arts Commission Board of Directors on the prototypes.  
-                        The Board of Directors aided in user testing the prototypes.
+                        I am currently working on prototyping the Public Arts Commission web programs.  
+                        I am collaborating with the Public Arts Commission Board of Directors on the prototypes.  
+                        Some early examples of prototypes are provided.
                         
                         <Link href="https://www.figma.com/community/file/1021815144303041374" passHref={true} >
                             <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
@@ -124,10 +160,8 @@ const PublicArtsCommission = () => {
                         build
                     </h2> 
                     <div className={styles.panelParagraphs}>
-                        To build the web application for campaigns to apply for endorsement, I used PHP, MySQL, CSS, JavaScript and HTML.  
-                        I built the Public Arts Commission website using HTML, CSS and JavaScript.  
-                        The build for Public Arts Commission campaign web application and individual application will use Svelte as a framework.  
-                        Eventually, all the Public Arts Commission web applications and website will build using Svelte.
+                        For the first launch of some of the Public Arts Commission web programs, I used PHP, MySQL, CSS, JavaScript and HTML.  
+                        For the development of the redesigned Public Arts Commission web programs, I am planning on using Svelte and MongoDB.
                     </div>
                 </div>,
         },
@@ -217,6 +251,37 @@ const PublicArtsCommission = () => {
                                 </li>
                                 <li>
                                     Prototyping web applications for individuals to connect and organize and for campaigns to purchase subscriptions to connect with individuals in the Public Arts Commission network
+                                </li>
+                            </ul>
+                        </p>
+                        <h3 className={styles.detail_heading}>
+                            tools I used:
+                        </h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Figma
+                                </li>
+                                <li>
+                                    HTML, CSS, JavaScipt, jQuery, PHP, MySQL
+                                </li>
+                                <li>
+                                    WowSlider
+                                </li>
+                                <li>
+                                    Mailchimp
+                                </li>
+                                <li>
+                                    Adobe Creative Cloud
+                                </li>
+                                <li>
+                                    Svelte (forthcoming)
+                                </li>
+                                <li>
+                                    MongoDB (forthcoming)
+                                </li>
+                                <li>
+                                    Canon EOS 70D Digital SLR camera
                                 </li>
                             </ul>
                         </p>

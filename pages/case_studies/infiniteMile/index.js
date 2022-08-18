@@ -202,6 +202,34 @@ const InfiniteMile = () => {
                                 </li>
                             </ul>
                         </p>
+                        <h3 className={styles.detail_heading}>
+                            tools I used:
+                        </h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    Adobe Suite
+                                </li>
+                                <li>
+                                    Google Drive
+                                </li>
+                                <li>
+                                    HTML, CSS, JavaScript, jQuery, VideoJS
+                                </li>
+                                <li>
+                                    WowSlider
+                                </li>
+                                <li>
+                                    PayPal
+                                </li>
+                                <li>
+                                    Eventbrite
+                                </li>
+                                <li>
+                                    Canon EOS 70D Digital SLR camera
+                                </li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
                 <div className='paragraphs_container' >
