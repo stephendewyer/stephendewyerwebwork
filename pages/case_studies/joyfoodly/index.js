@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React, { Fragment } from 'react';
 import Image from 'next/image';
 import { v4 as uuidv4 } from 'uuid';
+import MyLink from '../../../public/util/myLink';
 import styles from './joyfoodly.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,9 +10,12 @@ import JoyfoodlySlideCarousel from "../../../components/slide_carousel/Joyfoodly
 import familyCooking from '../../../public/images/case_studies/Joyfoodly/process/family_cooking.jpg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
-import Button from '../../../components/button/button';
+import ButtonNext from '../../../components/button/ButtonNext';
+import ButtonPrevious from '../../../components/button/ButtonPrevious';
 import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
+import artinTechServicesScreengrab from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_screengrab.png';
+import infiniteMileScreengrab from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
 
 const Joyfoodly = () => {
     const tabPanels = [
@@ -263,20 +267,16 @@ const Joyfoodly = () => {
                     </Link>
                 </div>
                 <div className={styles.case_studies_nav}>
-                    <Link href="/case_studies/infiniteMile" passHref={true} >
-                        <div>
-                            <Button passHref={true} aria-label="link to previous case study">
-                                previous
-                            </Button>
-                        </div>
-                    </Link>
-                    <Link href="/case_studies/artInTechServices" passHref={true} >
-                        <div>
-                            <Button passHref={true} aria-label="link to next case study">
-                                next
-                            </Button>
-                        </div>
-                    </Link>
+                    <MyLink href="/case_studies/infiniteMile" passHref={true} >
+                        <ButtonPrevious passHref={true} aria-label="link to previous case study">
+                            <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
+                        </ButtonPrevious>
+                    </MyLink>
+                    <MyLink href="/case_studies/artInTechServices" passHref={true} >
+                        <ButtonNext passHref={true} aria-label="link to next case study" >
+                            <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
+                        </ButtonNext>
+                    </MyLink>
                 </div>
             </div>
         </Fragment> 

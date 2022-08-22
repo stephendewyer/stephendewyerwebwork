@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import Image from 'next/image';
 import styles from './artInTechServices.module.css';
 import { v4 as uuidv4 } from 'uuid';
+import MyLink from '../../../public/util/myLink';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArtinTechServicesSlideCarousel from "../../../components/slide_carousel/ArtinTechServicesSlideCarousel";
@@ -10,9 +11,12 @@ import StarFormingRegionJamesWebb from '../../../public/images/case_studies/Art_
 import ArtinTechServicesLogo from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/process/Art_in_Tech_Services_logo_01.svg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
-import Button from '../../../components/button/button';
+import ButtonNext from '../../../components/button/ButtonNext';
+import ButtonPrevious from '../../../components/button/ButtonPrevious';
 import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
+import joyfoodlyScreengrab from '../../../public/images/case_studies/Joyfoodly/Joyfoodly_desktop.png';
+import publicArtsCommissionScreengrab from '../../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
 
 const ArtinTechServices = () => {
 
@@ -333,20 +337,16 @@ const ArtinTechServices = () => {
                     </Link>
                 </div>
                 <div className={styles.case_studies_nav}>
-                    <Link href="/case_studies/joyfoodly" passHref={true} >
-                        <div>
-                            <Button passHref={true} aria-label="link to previous case study">
-                                previous
-                            </Button>
-                        </div>
-                    </Link>
-                    <Link href="/case_studies/publicArtsCommission" passHref={true} >
-                        <div>
-                            <Button passHref={true} aria-label="link to next case study">
-                                next
-                            </Button>
-                        </div>
-                    </Link>
+                    <MyLink href="/case_studies/joyfoodly" passHref={true} >
+                        <ButtonPrevious passHref={true} aria-label="link to previous case study">
+                            <Image src={joyfoodlyScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
+                        </ButtonPrevious>
+                    </MyLink>
+                    <MyLink href="/case_studies/publicArtsCommission" passHref={true} >
+                        <ButtonNext passHref={true} aria-label="link to next case study" >
+                            <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
+                        </ButtonNext>
+                    </MyLink>
                 </div>
             </div>
         </Fragment>

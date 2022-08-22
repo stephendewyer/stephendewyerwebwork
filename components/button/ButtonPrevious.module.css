@@ -1,0 +1,106 @@
+.next_button_and_image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
+.thumbnailImage {
+    width: 240px;
+    margin-bottom: 20px;
+}
+
+.bouncy {
+    animation-name: bouncy;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    position: relative;
+}
+
+@keyframes bouncy {
+    0%   { transform: translateY(0); }
+    10%  { transform: translateY(0); }
+    30%  { transform: translateY(-30px); }
+    50%  { transform: translateY(0); }
+    57%  { transform: translateY(-3px); }
+    64%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+  
+
+.bouncyThumbnailImage {
+    animation: bouncy;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    width: 240px;
+    margin-bottom: 20px;
+}  
+
+.button {
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 24px;
+    border: 3px solid;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:active {
+    color:#908FB2;
+    border-color:#908FB2;
+}
+
+.button_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    width: 25px;
+    will-change: 'margin-right';
+    transition: all 0.33s ease-out;
+}
+
+@media all and (max-width: 750px) {
+
+    .next_button_and_image {
+        align-items: flex-start;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 8px 16px;
+        border-width: 2px;
+        font-size: 18px;
+    }
+
+    .arrow {
+        width: 18px;
+    }
+
+    .thumbnailImage {
+        width: 120px;
+        margin-bottom: 15px;
+    }
+    
+    @keyframes bouncy {
+        0%   { transform: translateY(0); }
+        10%  { transform: translateY(0); }
+        30%  { transform: translateY(-20px); }
+        50%  { transform: translateY(0); }
+        57%  { transform: translateY(-2px); }
+        64%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+      
+    
+    .bouncyThumbnailImage {
+        width: 120px;
+        margin-bottom: 15px;
+    }
+}
