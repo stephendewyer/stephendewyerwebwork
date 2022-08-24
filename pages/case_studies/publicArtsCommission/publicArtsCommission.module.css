@@ -37,14 +37,20 @@
     flex-direction: column;
     padding: 40px 0;
 }
-  
-.panelHeading {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+
+.tabHeadingDesktop {
     font-size: 24px;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.tabHeadingMobile {
+    display: none;
+}
+  
+.panelHeadingMobile {
+    display: none;
 }
 
 .panelImageAndParagraphs {
@@ -154,14 +160,31 @@
     }
 
     .panelContent {
-        padding: 20px;
+        padding: 20px 0;
     }
 
     .panelContentParagraphsWithImage {
-        padding: 20px;
+        padding: 20px 0;
     }
 
-    .panelHeading {
+    .tabHeadingDesktop {
+        display: none;
+    }
+
+    .tabHeadingMobile {
+        display: block;
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .panelHeadingMobile {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
         font-size: 16px;
     }
 
@@ -172,7 +195,7 @@
     
     .panelImage {
         width: 100%;
-        padding: 10px 15px;
+        padding: 10px 0;
     }
 
     .figCaption {
@@ -182,7 +205,7 @@
     
     .panelParagraphsWithImage {
         width: 100%;
-        padding: 10px 15px;
+        padding: 10px 0;
     }
 
     .panelParagraphs {

@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import FlashMessage from '../../components/flash_message/FlashMessage';
 import MyLink from '../../public/util/myLink';
 import PillButton from '../../components/button/pill_button/PillButton';
+import PillButtonSecondary from '../../components/button/pillButtonSecondary/PillButtonSecondary';
 import classes from './contact.module.css';
 
 async function createMessage(nameFirst, nameLast, email, message) {
@@ -282,9 +283,9 @@ const Contact = () => {
                             send
                         </PillButton>
                         <MyLink href={'/'} passHref aria-label="link to index" >
-                            <PillButton>
+                            <PillButtonSecondary>
                                 cancel
-                            </PillButton>
+                            </PillButtonSecondary>
                         </MyLink>
                     </div>
                 </form>

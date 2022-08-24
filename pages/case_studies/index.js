@@ -34,7 +34,7 @@ const CaseStudiesPage = () => {
                         <div className={classes.case_study_info_container}>
                             <div className={classes.case_study_info}>
                                 <div className={classes.case_study_title}>
-                                    client: Joyfoodly<br />2022
+                                    Joyfoodly legacy website<br />2022
                                 </div>
                                 <div className={classes.case_study_subtitle}>
                                     A legacy website for a culinary education company serving families.
@@ -53,10 +53,10 @@ const CaseStudiesPage = () => {
                         <div className={classes.case_study_info_container}>
                             <div className={classes.case_study_info}>
                                 <div className={classes.case_study_title}>
-                                    client: Art in Tech Services Inc<br/>2021 &ndash; present
+                                    Art in Tech Services Inc web programs<br/>2021 &ndash; present
                                 </div>
                                 <div className={classes.case_study_subtitle}>
-                                    A website and web application for a company that uses advancements in art and digital technology to improve design for businesses and the public.
+                                    Web programs for a company that uses advancements in art and digital technology to improve design for businesses and the public.
                                 </div>
                                 <Link href="/case_studies/artInTechServices" passHref >
                                     <div className={classes.view_button} >
@@ -82,10 +82,10 @@ const CaseStudiesPage = () => {
                         <div className={classes.case_study_info_container}>
                             <div className={classes.case_study_info}>
                                 <div className={classes.case_study_title}>
-                                    client: Public Arts Commission<br/>2017 &ndash; present
+                                    Public Arts Commission web programs<br/>2017 &ndash; present
                                 </div>
                                 <div className={classes.case_study_subtitle}>
-                                A website and web applications for a non-profit organization that connects the art community to democratic movements.
+                                    Web programs for a non-profit organization that connects the art community to democratic movements.
                                 </div>
                                 <Link href="/case_studies/publicArtsCommission" passHref >
                                     <div className={classes.view_button} >
@@ -101,7 +101,7 @@ const CaseStudiesPage = () => {
                         <div className={classes.case_study_info_container}>
                             <div className={classes.case_study_info}>
                                 <div className={classes.case_study_title}>
-                                    client: Infinite Mile LLC<br/>2013 &ndash; 2017
+                                    Infinite Mile LLC website<br/>2013 &ndash; 2017
                                 </div>
                                 <div className={classes.case_study_subtitle}>
                                     A website for an award-winning journal of art and culture(s) in Detroit, Michigan.

@@ -23,10 +23,15 @@ const InfiniteMile = () => {
     const tabPanels = [
         {
             id: uuidv4(),
-            label: "1",
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>empathize</div>
+                    <div className={styles.tabHeadingMobile}>1</div>
+                </Fragment>
+            ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         empathize
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
@@ -45,10 +50,15 @@ const InfiniteMile = () => {
             },
         {
             id: uuidv4(),
-            label: "2",
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>define</div>
+                    <div className={styles.tabHeadingMobile}>2</div>
+                </Fragment>
+            ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         define
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
@@ -67,10 +77,15 @@ const InfiniteMile = () => {
         },
         {
             id: uuidv4(),
-            label: "3",
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>ideate</div>
+                    <div className={styles.tabHeadingMobile}>3</div>
+                </Fragment>
+            ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         ideate
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
@@ -92,10 +107,15 @@ const InfiniteMile = () => {
         },
         {
             id: uuidv4(),
-            label: "4",
+            label:
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>prototype</div>
+                    <div className={styles.tabHeadingMobile}>4</div>
+                </Fragment>
+            ,
             content: 
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         prototype
                     </h2> 
                     <div className={styles.panelParagraphs}>
@@ -105,10 +125,15 @@ const InfiniteMile = () => {
         },
         {
             id: uuidv4(),
-            label: "5",
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>build</div>
+                    <div className={styles.tabHeadingMobile}>5</div>
+                </Fragment>
+            ,
             content: 
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         build
                     </h2> 
                     <div className={styles.panelParagraphs}>
@@ -119,10 +144,15 @@ const InfiniteMile = () => {
         },
         {   
             id: uuidv4(),
-            label: "6",
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>test</div>
+                    <div className={styles.tabHeadingMobile}>6</div>
+                </Fragment>
+            ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         test
                     </h2>  
                     <div className={styles.panelParagraphs}>
@@ -159,7 +189,7 @@ const InfiniteMile = () => {
                     </Link>
                 </div>
                 <h1 className="header">
-                    client: Infinite Mile (∞ mile)<br />
+                    Infinite Mile LLC (∞ mile) website<br />
                     2013 &ndash; 2017
                 </h1>
                 <div className={styles.slider_case_study}>

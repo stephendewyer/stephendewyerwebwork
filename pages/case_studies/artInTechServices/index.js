@@ -23,10 +23,15 @@ const ArtinTechServices = () => {
     const tabPanels = [
         {
             id: uuidv4(),
-            label: "1",
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>empathize</div>
+                    <div className={styles.tabHeadingMobile}>1</div>
+                </Fragment>
+            ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         empathize
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
@@ -49,10 +54,15 @@ const ArtinTechServices = () => {
             },
         {
             id: uuidv4(),
-            label: "2",
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>define</div>
+                    <div className={styles.tabHeadingMobile}>2</div>
+                </Fragment>
+            ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         define
                     </h2>
                     <div className={styles.panelParagraphs}>
@@ -93,10 +103,15 @@ const ArtinTechServices = () => {
         },
         {
             id: uuidv4(),
-            label: "3",
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>ideate</div>
+                    <div className={styles.tabHeadingMobile}>3</div>
+                </Fragment>
+            ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         ideate
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
@@ -117,12 +132,17 @@ const ArtinTechServices = () => {
         },
         {
             id: uuidv4(),
-            label: "4",
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>prototype</div>
+                    <div className={styles.tabHeadingMobile}>4</div>
+                </Fragment>
+            ,
             content: 
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         prototype
-                    </h2> 
+                    </h2>
                     <div className={styles.panelParagraphs}>
                         I created medium-fidelity desktop and mobile prototypes for the Art in Tech Services web application using Figma.  
                         I created custom graphics and animations for the prototypes.  
@@ -144,26 +164,57 @@ const ArtinTechServices = () => {
         },
         {
             id: uuidv4(),
-            label: "5",
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>build</div>
+                    <div className={styles.tabHeadingMobile}>5</div>
+                </Fragment>
+            ,
             content: 
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         build
-                    </h2> 
-                    <div className={styles.panelParagraphs}>
-                        I developed the redesigned Art in Tech Services web application using Next.js, MongoDB, SendGrid and Stripe.  
+                    </h2>
+                    <div className={styles.panelParagraphs}>  
                         The process of developing the web application allowed me to discover capabilities that could improve the design, like adding animated chevrons to the navigation to tell users which navigation tab is open. 
                         <br /><br />
-                        As part of the development process, I created several very interfaces including:
+                        As part of the development process, I created several very useful interfaces including:
                         <ul>
                             <li>
-                                Dynamic, responsive and accessible tab panels
+                                Animated tab panels<br />
+                                <Link href="https://animatedtabpanels.vercel.app/" passHref={true} >
+                                    <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
+                                        <ButtonExternalLink passHref={true} aria-label="link to animated tab panels">
+                                            <div>
+                                                view
+                                            </div>
+                                            <div className={styles.external_link_icon} >
+                                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                            </div>
+                                        </ButtonExternalLink>
+                                    </a>
+                                </Link>
                             </li>
                             <li>
-                                A dynamic, responsive, accessible, variable height and smooth transitioning accordion with arrows<br />
+                                Accordion with arrows<br />
                                 <Link href="https://accordion-with-arrows.vercel.app/" passHref={true} >
                                     <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
                                         <ButtonExternalLink passHref={true} aria-label="link to accordion with arrows">
+                                            <div>
+                                                view
+                                            </div>
+                                            <div className={styles.external_link_icon} >
+                                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                            </div>
+                                        </ButtonExternalLink>
+                                    </a>
+                                </Link>
+                            </li>
+                            <li>
+                                Dynamic footer<br />
+                                <Link href="https://dynamicfooter.vercel.app/" passHref={true} >
+                                    <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
+                                        <ButtonExternalLink passHref={true} aria-label="link to footer example website">
                                             <div>
                                                 view
                                             </div>
@@ -183,12 +234,17 @@ const ArtinTechServices = () => {
         },
         {
             id: uuidv4(),
-            label: "6",
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>test</div>
+                    <div className={styles.tabHeadingMobile}>6</div>
+                </Fragment>
+            ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeading}>
+                    <h2 className={styles.panelHeadingMobile}>
                         test
-                    </h2>  
+                    </h2>
                     <div className={styles.panelParagraphs}>
                         The redesigned Art in Tech Services website and web application received user testing from individuals in my network.  
                         I am currently working on sending a survey to prospective users asking what problems art in technology could help solve for them, what technology they needed to improve their work and how Art in Tech Services could better serve their needs. 
@@ -224,7 +280,7 @@ const ArtinTechServices = () => {
                     </Link>
                 </div>
                 <h1 className="header">
-                    client: Art in Tech Services Inc<br/>
+                    Art in Tech Services Inc web programs<br/>
                     2021 &ndash; present
                 </h1>
                 <div className={styles.slider_case_study}>
