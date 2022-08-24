@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
-import Button from '../../components/button/button.js';
 import classes from './about.module.css';
 import Image from 'next/image';
 import stephen_dewyer_profile from '../../public/images/profile/stephen_dewyer_10_cropped_square.jpg';
-import PDF_icon from '../../public/images/icons/PDF_icon.svg';
+import ResumeButton from '../../components/button/resumeButton/ResumeButton';
 import Link from 'next/link';
 
 const AboutPage = () => {
@@ -36,24 +35,14 @@ const AboutPage = () => {
                             <h2 className={classes.resume_heading} >
                                 resume
                             </h2>
-                            <div className={classes.button}>
-                                <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref aria-label="link to resume PDF">
-                                    <a target="_blank" rel="noopener noreferrer" >
-                                        <Button>
-                                            <div className={classes.view_PDF}>
-                                                view  
-                                                <div className={classes.PDF_icon}>
-                                                    <Image src={PDF_icon} layout="responsive" alt="PDF icon" />
-                                                </div>
-                                            </div>
-                                        </Button>
-                                    </a>
-                                </Link>
-                            </div>
+                            <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref={true} aria-label="link to resume PDF" >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <ResumeButton passHref={true} />
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
-
                 <div className={classes.about_section_02}>
                     <div className={classes.experience}>
                         <h3 className={classes.resume_heading_01} >

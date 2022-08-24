@@ -31,10 +31,6 @@
     text-align: center;
 }
 
-.button {
-    text-align: center;
-}
-
 .view_PDF {
     display: flex;
     flex-direction: row;
@@ -51,7 +47,7 @@
     max-width: 1440px;
     display: flex;
     flex-direction: row;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 0 40px;
 }
 
@@ -104,10 +100,11 @@
 
 .skills_section {
     width: 100%;
-    padding: 0 0;
+    padding: 0;
 }
 
 @media screen and (max-width: 750px) {
+
     .about_section_01 {
         width: 100%;
         flex-direction: column;
@@ -124,7 +121,7 @@
     .profile_info {
         width: 100%;
         justify-content: flex-start;
-        padding: 20px 0;
+        padding: 20px 0 0 0;
     }
     
     .profile_info_paragraphs {
@@ -135,33 +132,29 @@
         font-size: 20px;
     }
     
-    .button {
-        text-align: center;
-    }
-    
     .about_section_02 {
         flex-direction: column;
         width: 100%;
-        margin: 0 0;
+        margin: 0;
         padding: 0 20px;
     }
     
     .experience {
         width: auto;
-        padding: 0 0;
-        margin: 0 0;
+        padding: 0;
+        margin: 0;
     }
     
     .certificates_and_awards {
         width: auto;
-        padding: 0 0;
-        margin: 0 0;
+        padding: 0;
+        margin: 0;
     }
     
     .skills {
         width: auto;
-        padding: 0 0;
-        margin: 0 0;
+        padding: 0;
+        margin: 0;
     }
     
     .resume_heading_01 {
@@ -174,7 +167,7 @@
     
     .resume_heading_03 {
         font-size: 18px;
-        padding: 0 0;
+        padding: 0;
     }
     
     .resume_paragraphs {
