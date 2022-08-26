@@ -263,20 +263,20 @@ const ArtinTechServices = () => {
             </Head>
             <div className="container">
                 <div className="breadcrumbs">
-                    <Link href="/" aria-label="link to index page">
+                    <Link href="/" aria-label="link to index page" passHref={true}>
                         index
                     </Link>
                     <p className="arrow">
                         &#62;
                     </p>
-                    <Link href="/case_studies/" aria-label="link to case studies page">
+                    <Link href="/case_studies/" aria-label="link to case studies page" passHref={true}>
                         case studies
                     </Link>
                     <p className="arrow">
                         &#62;
                     </p>
-                    <Link href="/case_studies/artInTechServices" aria-label="link to Art in Tech Services page">
-                        Art in Tech Services
+                    <Link href="/case_studies/artInTechServices" aria-label="link to Art in Tech Services page" passHref={true}>
+                        Art in Tech Services Inc
                     </Link>
                 </div>
                 <h1 className="header">
