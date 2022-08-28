@@ -218,65 +218,98 @@ const Contact = () => {
                     <p className={classes.indicates_required}>
                         * indicates required
                     </p>
-                    <div className={classes.label_and_input} >
-                        <label className={classes.label} htmlFor='nameFirst' >
-                        *first name:
-                        </label>
-                        <div className={classes.field} >
-                            <input 
-                                className={nameFirstInputClasses} 
-                                id="nameFirst" 
-                                type='text' 
-                                ref={nameFirstRef} 
-                                onChange={nameFirstInputChangeHandler} 
-                                onBlur={nameFirstInputBlurHandler}
-                            />
-                        </div>
-                    </div>
-                    <div className={classes.label_and_input} >
-                        <label className={classes.label} htmlFor='nameLast' >
-                            *last name:
+                    <div className={classes.formSection}>
+                        <div className={classes.label_and_input} >
+                            <label className={classes.label} htmlFor='nameFirst' >
+                            *first name:
                             </label>
-                        <div className={classes.field} >
-                            <input 
-                                className={nameLastInputClasses} 
-                                type='text' 
-                                id="nameLast" 
-                                ref={nameLastRef} 
-                                onChange={nameLastInputChangeHandler} 
-                                onBlur={nameLastInputBlurHandler}
-                            />
+                            <div className={classes.field} >
+                                <input 
+                                    className={nameFirstInputClasses} 
+                                    id="nameFirst" 
+                                    type='text' 
+                                    ref={nameFirstRef} 
+                                    onChange={nameFirstInputChangeHandler} 
+                                    onBlur={nameFirstInputBlurHandler}
+                                />
+                            </div> 
                         </div>
+                        { enteredNameFirstIsValid ? 
+                            ""
+                            : 
+                            <p className={classes.inputErrorMessage}>
+                                first name required
+                            </p> 
+                        }
                     </div>
-                    <div className={classes.label_and_input} >
-                        <label className={classes.label} htmlFor='email' >
-                            *email:
-                        </label>
-                        <div className={classes.field} >
-                            <input 
-                                className={emailInputClasses} 
-                                type='email' 
-                                id="email" 
-                                ref={emailRef} 
-                                onChange={emailInputChangeHandler} 
-                                onBlur={emailInputBlurHandler}
-                            />
+                    <div className={classes.formSection}>
+                        <div className={classes.label_and_input} >
+                            <label className={classes.label} htmlFor='nameLast' >
+                                *last name:
+                                </label>
+                            <div className={classes.field} >
+                                <input 
+                                    className={nameLastInputClasses} 
+                                    type='text' 
+                                    id="nameLast" 
+                                    ref={nameLastRef} 
+                                    onChange={nameLastInputChangeHandler} 
+                                    onBlur={nameLastInputBlurHandler}
+                                />
+                            </div>
                         </div>
+                        { enteredNameLastIsValid ? 
+                            "" :
+                            <p className={classes.inputErrorMessage}>
+                                last name required
+                            </p> 
+                        }
                     </div>
-                    <div className={classes.textarea_label_and_input} >
-                        <label className={classes.textarea_label} htmlFor='message' >
-                            *message:
-                        </label>
-                        <div className={classes.textarea_field} >
-                            <textarea 
-                                className={messageInputClasses} 
-                                type='text' 
-                                id="message" 
-                                ref={messageRef} 
-                                onChange={messageInputChangeHandler} 
-                                onBlur={messageInputBlurHandler}
-                            />
+                    <div className={classes.formSection}>
+                        <div className={classes.label_and_input} >
+                            <label className={classes.label} htmlFor='email' >
+                                *email:
+                            </label>
+                            <div className={classes.field} >
+                                <input 
+                                    className={emailInputClasses} 
+                                    type='email' 
+                                    id="email" 
+                                    ref={emailRef} 
+                                    onChange={emailInputChangeHandler} 
+                                    onBlur={emailInputBlurHandler}
+                                />
+                            </div>
                         </div>
+                        { enteredEmailIsValid ?
+                            "":
+                            <p className={classes.inputErrorMessage}>
+                                email required
+                            </p>
+                        }
+                    </div>
+                    <div className={classes.formSection}>
+                        <div className={classes.textarea_label_and_input} >
+                            <label className={classes.textarea_label} htmlFor='message' >
+                                *message:
+                            </label>
+                            <div className={classes.textarea_field} >
+                                <textarea 
+                                    className={messageInputClasses} 
+                                    type='text' 
+                                    id="message" 
+                                    ref={messageRef} 
+                                    onChange={messageInputChangeHandler} 
+                                    onBlur={messageInputBlurHandler}
+                                />
+                            </div>
+                        </div>
+                        { enteredMessageIsValid ? 
+                            "":
+                            <p className={classes.inputErrorMessage}>
+                                message required
+                            </p>
+                        }
                     </div>
                     <div className={classes.contact_buttons} >
                         <PillButton type='submit' >
