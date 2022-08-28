@@ -6,24 +6,26 @@
     box-sizing: border-box;
     text-decoration:none;
     font-weight:300;
-    color:#595F46;
+    color:#868697;
     text-align:center;
     transition: all 0.2s;
     cursor: pointer;
     font-size: 24px;
     outline: none;
-    border: 0.16em solid #595F46;
+    border: 0.16em solid #868697;
     background-color: transparent;
 }
 
 .pill_button:hover {
-    color: #6F7185;
-    border-color: #6F7185;
+    color: #FFE9C0;
+    border-color: #595F46;
+    background-color: #868697;
 }
 
 .pill_button:active {
-    color:#FF8D61;
+    color:#FFE9C0;
     border-color:#FF8D61;
+    background-color: #868697;
 }
 
 @media all and (max-width: 751px){
