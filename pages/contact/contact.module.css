@@ -67,7 +67,7 @@
 }
 
 .input:focus {
-    border: #575B46 solid 2px;
+    border: #AEB587 solid 2px;
 }
 
 .invalid_input {
@@ -116,7 +116,7 @@
 }
 
 .textarea_input:focus {
-    border: #575B46 solid 2px;
+    border: #AEB587 solid 2px;
 }
 
 .invalid_textarea_input {
