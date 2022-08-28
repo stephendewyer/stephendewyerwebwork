@@ -10,12 +10,22 @@ async function handler(req, res) {
   if (
     !nameFirst ||
     !nameLast ||
-    !email.includes('@') ||
+    !email ||
     !message 
   ) {
     res.status(422).json({
       message:
         'message not sent due to missing input data',
+    });
+    return;
+  }
+
+  if (
+    !email.includes('@')
+  ) {
+    res.status(422).json({
+      message:
+        'missing an @ symbol in email address',
     });
     return;
   }

@@ -224,7 +224,13 @@
     .input {
         display: flex;
         width: 100%;
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .invalid_input {
+        display: flex;
+        width: 100%;
+        font-size: 16px;
     }
     
     .textarea_label_and_input {
@@ -251,6 +257,11 @@
     }
     
     .textarea_input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .invalid_textarea_input {
         width: 100%;
         font-size: 16px;
     }

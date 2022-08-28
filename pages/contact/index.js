@@ -41,6 +41,8 @@ const Contact = () => {
     const [enteredNameLastIsValid, setEnteredNameLastIsValid] = useState(true);
     // email validation state
     const [enteredEmailIsValid, setEnteredEmailIsValid] = useState(true);
+    // email validation state 2
+    const [enteredEmailHasAtSymbol, setEnteredEmailHasAtSymbol] = useState(true);
     // message validation state
     const [enteredMessageIsValid, setEnteredMessageIsValid] = useState(true);
 
@@ -66,8 +68,9 @@ const Contact = () => {
     };
 
     const emailInputChangeHandler = (event) => {
-        if (emailRef.current.value !== '') {
+        if ( emailRef.current.value !== '' && emailRef.current.value.includes('@') ) {
             setEnteredEmailIsValid(true);
+            setEnteredEmailHasAtSymbol(true);
         }
     };
 
@@ -95,6 +98,10 @@ const Contact = () => {
         setEnteredEmailIsTouched(true);
         if (emailRef.current.value === '') {
             setEnteredEmailIsValid(false);
+        }
+        if (emailRef.current.value !== '' && !emailRef.current.value.includes('@') ) {
+            setEnteredEmailIsValid(true);
+            setEnteredEmailHasAtSymbol(false);
         }
     }
 
@@ -157,6 +164,9 @@ const Contact = () => {
             if (enteredEmail === '') {
                 setEnteredEmailIsValid(false);
             }
+            if (enteredEmail !== '' && !enteredEmail.includes('@')) {
+                setEnteredEmailHasAtSymbol(false);
+            }
             if (enteredMessage === '') {
                 setEnteredMessageIsValid(false);
             }
@@ -195,9 +205,19 @@ const Contact = () => {
 
     const nameLastInputClasses = enteredNameLastIsValid ? classes.input : classes.invalid_input;
 
-    const emailInputClasses = enteredEmailIsValid ? classes.input : classes.invalid_input;
+    const emailInputClasses = enteredEmailIsValid && enteredEmailHasAtSymbol ? classes.input : classes.invalid_input;
 
     const messageInputClasses = enteredMessageIsValid ? classes.textarea_input : classes.invalid_textarea_input;
+
+    const emailErrorMessage = '';
+
+    if (!enteredEmailIsValid) {
+        emailErrorMessage = "email required";
+    }
+
+    if (enteredEmailIsValid && !enteredEmailHasAtSymbol) {
+        emailErrorMessage = "missing an @ symbol in email address";
+    }
 
     return (
         <Fragment>
@@ -214,7 +234,7 @@ const Contact = () => {
                 <h2 className="header_02">
                     how can stephen garrett dewyer help you?  
                 </h2>
-                <form className={classes.form} onSubmit={submitHandler} >
+                <form className={classes.form} onSubmit={submitHandler} noValidate>
                     <p className={classes.indicates_required}>
                         * indicates required
                     </p>
@@ -281,12 +301,9 @@ const Contact = () => {
                                 />
                             </div>
                         </div>
-                        { enteredEmailIsValid ?
-                            "":
                             <p className={classes.inputErrorMessage}>
-                                email required
+                                {emailErrorMessage}
                             </p>
-                        }
                     </div>
                     <div className={classes.formSection}>
                         <div className={classes.textarea_label_and_input} >
