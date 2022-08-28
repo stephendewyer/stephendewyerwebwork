@@ -18,7 +18,7 @@
 
 .pill_button:hover {
     color: #FFE9C0;
-    border-color: #595F46;
+    border-color: #868697;
     background-color: #868697;
 }
 
@@ -31,7 +31,6 @@
 @media all and (max-width: 751px){
 
     .pill_button {
-
         display:block;
         margin:0.2em auto;
         font-size: 18px;
