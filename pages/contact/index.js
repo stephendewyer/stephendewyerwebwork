@@ -220,7 +220,12 @@ const Contact = () => {
                     email required
                 </p> 
                 <div className={classes.inputErrorIcon}>
-                    <Image src={errorIcon} layout="responsive" alt="organizer illustration"/>
+                    <Image 
+                        src={errorIcon} 
+                        layout="responsive" 
+                        alt="organizer illustration"
+                        priority
+                    />
                 </div>
             </div>
         )
@@ -233,7 +238,12 @@ const Contact = () => {
                     missing an @ symbol in email address
                 </p> 
                 <div className={classes.inputErrorIcon}>
-                    <Image src={errorIcon} layout="responsive" alt="organizer illustration"/>
+                    <Image 
+                        src={errorIcon} 
+                        layout="responsive" 
+                        alt="organizer illustration"
+                        priority
+                    />
                 </div>
             </div>
         )
@@ -282,7 +292,12 @@ const Contact = () => {
                                     first name required
                                 </p> 
                                 <div className={classes.inputErrorIcon}>
-                                    <Image src={errorIcon} layout="responsive" alt="organizer illustration"/>
+                                    <Image 
+                                        src={errorIcon} 
+                                        layout="responsive" 
+                                        alt="organizer illustration"
+                                        priority
+                                    />
                                 </div>
                             </div>
                         }
@@ -310,7 +325,12 @@ const Contact = () => {
                                     last name required
                                 </p> 
                                 <div className={classes.inputErrorIcon}>
-                                    <Image src={errorIcon} layout="responsive" alt="organizer illustration"/>
+                                    <Image 
+                                        src={errorIcon} 
+                                        layout="responsive" 
+                                        alt="organizer illustration"
+                                        priority
+                                    />
                                 </div>
                             </div>
                         }
@@ -358,7 +378,12 @@ const Contact = () => {
                                     message required
                                 </p> 
                                 <div className={classes.inputErrorIcon}>
-                                    <Image src={errorIcon} layout="responsive" alt="organizer illustration"/>
+                                    <Image 
+                                        src={errorIcon} 
+                                        layout="responsive" 
+                                        alt="organizer illustration"
+                                        priority
+                                    />
                                 </div>
                             </div>
                         }
