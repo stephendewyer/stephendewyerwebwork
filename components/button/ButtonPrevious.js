@@ -34,7 +34,8 @@ const ButtonPrevious = (props) => {
                                 <Image src={previousButtonDefault}  layout="responsive" alt="previous button arrow" priority />
                             }
                     </div>
-                    previous
+                    <span className={styles.caseStudyParagraphMobile}>previous<br />case<br />study</span>
+                    <span className={styles.caseStudyParagraphDesktop}>previous case study</span>
                 </div>
             </div>
         </div>

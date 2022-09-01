@@ -34,7 +34,12 @@ const Joyfoodly = () => {
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
                         <div className={styles.panelImage}>
-                            <Image src={familyCooking} layout="responsive" alt="family cooking a meal"/>     
+                            <Image 
+                                src={familyCooking} 
+                                layout="responsive" 
+                                alt="family cooking a meal"
+                                priority
+                            />     
                         </div>   
                         <p className={styles.panelParagraphsWithImage}>
                             Busy parents want to cook healthy meals for their children, but sometimes don&#8217;t know how to make healthy meals with plenty of fruits and vegetables.  
@@ -226,7 +231,7 @@ const Joyfoodly = () => {
                             Joyfoodly helps families learn to eat more fruits and vegetables, offering a downloadable cookbook called Joyful12.
                         </p>
                         <h3 className={styles.detail_heading}>
-                            my role and company:
+                            my role:
                         </h3>
                         <p>
                             Founding Director of Art in Tech Services Inc
@@ -295,11 +300,21 @@ const Joyfoodly = () => {
                 <div className={styles.case_studies_nav}>
                     <MyLink href="/case_studies/infiniteMile" passHref={true} >
                         <ButtonPrevious passHref={true} aria-label="link to previous case study">
+                            <div className={styles.caseStudyThumbnailOverlay} >
+                                <p className={styles.caseStudyThumbnailHeading} >
+                                    Infinite Mile website
+                                </p>
+                            </div>
                             <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
                         </ButtonPrevious>
                     </MyLink>
                     <MyLink href="/case_studies/artInTechServices" passHref={true} >
                         <ButtonNext passHref={true} aria-label="link to next case study" >
+                            <div className={styles.caseStudyThumbnailOverlay} >
+                                <p className={styles.caseStudyThumbnailHeading} >
+                                    Art in Tech Services web programs
+                                </p>
+                            </div>
                             <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
                         </ButtonNext>
                     </MyLink>

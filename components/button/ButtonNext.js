@@ -25,7 +25,8 @@ const ButtonNext = (props) => {
                 style={{ color: isHovering ? '#90947E': '#575B46', borderColor: isHovering ? '#90947E': '#575B46' }}
             >
                 <div className={styles.button_content}>
-                    next
+                    <span className={styles.caseStudyParagraphMobile}>next<br />case<br />study</span>
+                    <span className={styles.caseStudyParagraphDesktop}>next case study</span>
                     <div 
                         className={styles.arrow}
                         style={{ marginLeft: isHovering ? '24px' : '12px', color: isHovering ? '#90947E': '#575B46', borderColor: isHovering ? '#90947E': '#575B46' }}

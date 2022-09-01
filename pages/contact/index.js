@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import React, { Fragment, useRef, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import FlashMessage from '../../components/flash_message/FlashMessage';
 import MyLink from '../../public/util/myLink';
+import errorIcon from '../../public/images/icons/error_icon.svg';
 import PillButton from '../../components/button/pill_button/PillButton';
 import PillButtonSecondary from '../../components/button/pillButtonSecondary/PillButtonSecondary';
 import classes from './contact.module.css';
@@ -212,11 +214,29 @@ const Contact = () => {
     const emailErrorMessage = '';
 
     if (!enteredEmailIsValid) {
-        emailErrorMessage = "email required";
+        emailErrorMessage = (
+            <div className={classes.inputErrorMessage}>
+                <p className={classes.inputErrorParagraph}>
+                    email required
+                </p> 
+                <div className={classes.inputErrorIcon}>
+                    <Image src={errorIcon} layout="responsive" alt="organizer illustration"/>
+                </div>
+            </div>
+        )
     }
 
     if (enteredEmailIsValid && !enteredEmailHasAtSymbol) {
-        emailErrorMessage = "missing an @ symbol in email address";
+        emailErrorMessage = (
+            <div className={classes.inputErrorMessage}>
+                <p className={classes.inputErrorParagraph}>
+                    missing an @ symbol in email address
+                </p> 
+                <div className={classes.inputErrorIcon}>
+                    <Image src={errorIcon} layout="responsive" alt="organizer illustration"/>
+                </div>
+            </div>
+        )
     }
 
     return (
@@ -257,9 +277,14 @@ const Contact = () => {
                         { enteredNameFirstIsValid ? 
                             ""
                             : 
-                            <p className={classes.inputErrorMessage}>
-                                first name required
-                            </p> 
+                            <div className={classes.inputErrorMessage}>
+                                <p className={classes.inputErrorParagraph}>
+                                    first name required
+                                </p> 
+                                <div className={classes.inputErrorIcon}>
+                                    <Image src={errorIcon} layout="responsive" alt="organizer illustration"/>
+                                </div>
+                            </div>
                         }
                     </div>
                     <div className={classes.formSection}>
@@ -280,9 +305,14 @@ const Contact = () => {
                         </div>
                         { enteredNameLastIsValid ? 
                             "" :
-                            <p className={classes.inputErrorMessage}>
-                                last name required
-                            </p> 
+                            <div className={classes.inputErrorMessage}>
+                                <p className={classes.inputErrorParagraph}>
+                                    last name required
+                                </p> 
+                                <div className={classes.inputErrorIcon}>
+                                    <Image src={errorIcon} layout="responsive" alt="organizer illustration"/>
+                                </div>
+                            </div>
                         }
                     </div>
                     <div className={classes.formSection}>
@@ -323,9 +353,14 @@ const Contact = () => {
                         </div>
                         { enteredMessageIsValid ? 
                             "":
-                            <p className={classes.inputErrorMessage}>
-                                message required
-                            </p>
+                            <div className={classes.inputErrorMessage}>
+                                <p className={classes.inputErrorParagraph}>
+                                    message required
+                                </p> 
+                                <div className={classes.inputErrorIcon}>
+                                    <Image src={errorIcon} layout="responsive" alt="organizer illustration"/>
+                                </div>
+                            </div>
                         }
                     </div>
                     <div className={classes.contact_buttons} >

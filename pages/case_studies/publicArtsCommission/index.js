@@ -36,7 +36,12 @@ const PublicArtsCommission = () => {
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
                         <figure className={styles.panelImage}>
-                            <Image src={ArtAtDemonstration} layout="responsive" alt="Art at a demonstration for equity"/>  
+                            <Image 
+                                src={ArtAtDemonstration} 
+                                layout="responsive" 
+                                alt="Art at a demonstration for equity"
+                                priority
+                            />  
                             <figcaption className={styles.figCaption}>
                                 Art at a demonstration for equity
                             </figcaption>   
@@ -66,7 +71,12 @@ const PublicArtsCommission = () => {
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
                         <figure className={styles.panelImage}>
-                            <Image src={EndorsedByPublicArtsCommission} layout="responsive" alt="Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota"/>  
+                            <Image 
+                                src={EndorsedByPublicArtsCommission} 
+                                layout="responsive" 
+                                alt="Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota"
+                                priority
+                            />  
                             <figcaption className={styles.figCaption}>
                                 Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota
                             </figcaption>   
@@ -131,7 +141,12 @@ const PublicArtsCommission = () => {
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
                         <figure className={styles.panelImage}>
-                            <Image src={PublicArtsCommissionLogo} layout="responsive" alt="Public Arts Commission logo"/>  
+                            <Image 
+                                src={PublicArtsCommissionLogo} 
+                                layout="responsive" 
+                                alt="Public Arts Commission logo"
+                                priority
+                            />  
                             <figcaption className={styles.figCaption}>
                                 Public Arts Commission logo
                             </figcaption>   
@@ -259,7 +274,7 @@ const PublicArtsCommission = () => {
                             Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.
                         </p>
                         <h3 className={styles.detail_heading}>
-                            my role and company:
+                            my role:
                         </h3>
                         <p>
                             Founder of Public Arts Commission
@@ -355,11 +370,21 @@ const PublicArtsCommission = () => {
                 <div className={styles.case_studies_nav}>
                     <MyLink href="/case_studies/artInTechServices" passHref={true} >
                         <ButtonPrevious passHref={true} aria-label="link to previous case study">
+                            <div className={styles.caseStudyThumbnailOverlay} >
+                                <p className={styles.caseStudyThumbnailHeading} >
+                                    Art in Tech Services web programs
+                                </p>
+                            </div>
                             <Image src={artinTechServicesScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
                         </ButtonPrevious>
                     </MyLink>
                     <MyLink href="/case_studies/infiniteMile" passHref={true} >
                         <ButtonNext passHref={true} aria-label="link to next case study" >
+                            <div className={styles.caseStudyThumbnailOverlay} >
+                                <p className={styles.caseStudyThumbnailHeading} >
+                                    Infinite Mile website
+                                </p>
+                            </div>
                             <Image src={infiniteMileScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
                         </ButtonNext>
                     </MyLink>

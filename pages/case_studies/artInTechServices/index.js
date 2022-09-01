@@ -36,7 +36,12 @@ const ArtinTechServices = () => {
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
                         <figure className={styles.panelImage}>
-                            <Image src={StarFormingRegionJamesWebb} layout="responsive" alt="James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured"/>  
+                            <Image 
+                                src={StarFormingRegionJamesWebb} 
+                                layout="responsive" 
+                                alt="James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured" 
+                                priority
+                            />  
                             <figcaption className={styles.figCaption}>
                                 An example of art in tech: NASA&#8217;s James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured, 2022, Image credit: NASA, ESA, CSA and STScI
                             </figcaption>   
@@ -115,7 +120,12 @@ const ArtinTechServices = () => {
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
                         <figure className={styles.panelImage}>
-                            <Image src={ArtinTechServicesLogo} layout="responsive" alt="Art in Tech Services logo"/>  
+                            <Image 
+                                src={ArtinTechServicesLogo} 
+                                layout="responsive" 
+                                alt="Art in Tech Services logo" 
+                                priority
+                            />  
                             <figcaption className={styles.figCaption}>
                                 Art in Tech Services logo
                             </figcaption>   
@@ -295,7 +305,7 @@ const ArtinTechServices = () => {
                             Art in Tech Services Inc is a company that uses advancements in art and digital technology to improve design for businesses and the public.
                         </p>
                         <h3 className={styles.detail_heading}>
-                            my role and company:
+                            my role:
                         </h3>
                         <p>
                             Founding Director of Art in Tech Services
@@ -387,11 +397,21 @@ const ArtinTechServices = () => {
                 <div className={styles.case_studies_nav}>
                     <MyLink href="/case_studies/joyfoodly" passHref={true} >
                         <ButtonPrevious passHref={true} aria-label="link to previous case study">
+                            <div className={styles.caseStudyThumbnailOverlay} >
+                                <p className={styles.caseStudyThumbnailHeading} >
+                                    Joyfoodly website
+                                </p>
+                            </div>
                             <Image src={joyfoodlyScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
                         </ButtonPrevious>
                     </MyLink>
                     <MyLink href="/case_studies/publicArtsCommission" passHref={true} >
                         <ButtonNext passHref={true} aria-label="link to next case study" >
+                            <div className={styles.caseStudyThumbnailOverlay} >
+                                <p className={styles.caseStudyThumbnailHeading} >
+                                    Public Arts Commission web programs
+                                </p>
+                            </div>
                             <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
                         </ButtonNext>
                     </MyLink>

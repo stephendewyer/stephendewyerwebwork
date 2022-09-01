@@ -36,7 +36,12 @@ const InfiniteMile = () => {
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
                         <figure className={styles.panelImage}>
-                            <Image src={BreakfastClubViewDetroit} layout="responsive" alt="View of Detroit as seen from the 22nd floor of the Fisher Building."/>  
+                            <Image 
+                                src={BreakfastClubViewDetroit} 
+                                layout="responsive" 
+                                alt="View of Detroit as seen from the 22nd floor of the Fisher Building."
+                                priority
+                            />  
                             <figcaption className={styles.figCaption}>
                                 View of Detroit as seen from the 22nd floor of the Fisher Building.
                             </figcaption>   
@@ -63,7 +68,12 @@ const InfiniteMile = () => {
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
                         <figure className={styles.panelImage}>
-                            <Image src={ArtAndRaceConference} layout="responsive" alt="Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016"/>  
+                            <Image 
+                                src={ArtAndRaceConference} 
+                                layout="responsive" 
+                                alt="Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016"
+                                priority
+                            />  
                             <figcaption className={styles.figCaption}>
                                 Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016.  Photograph by Sarah Nesbitt.
                             </figcaption>   
@@ -90,7 +100,12 @@ const InfiniteMile = () => {
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
                         <figure className={styles.panelImage}>
-                            <Image src={InfiniteMileLogo} layout="responsive" alt="Infinite Mile logo"/>  
+                            <Image 
+                                src={InfiniteMileLogo} 
+                                layout="responsive" 
+                                alt="Infinite Mile logo"
+                                priority
+                            />  
                             <figcaption className={styles.figCaption}>
                                 Infinite Mile logo
                             </figcaption>   
@@ -207,7 +222,7 @@ const InfiniteMile = () => {
                             Infinite Mile LLC was an award-winning journal of art and culture(s) in Detroit, Michigan that published monthly online issues and annual print anthologies.
                         </p>
                         <h3 className={styles.detail_heading}>
-                            my role and company:
+                            my role:
                         </h3>
                         <p>
                             Co-Founding Editor of Infinite Mile
@@ -293,11 +308,21 @@ const InfiniteMile = () => {
                 <div className={styles.case_studies_nav}>
                     <MyLink href="/case_studies/publicArtsCommission" passHref={true} >
                         <ButtonPrevious passHref={true} aria-label="link to previous case study">
+                            <div className={styles.caseStudyThumbnailOverlay} >
+                                <p className={styles.caseStudyThumbnailHeading} >
+                                    Public Arts Commission web programs
+                                </p>
+                            </div>
                             <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
                         </ButtonPrevious>
                     </MyLink>
                     <MyLink href="/case_studies/joyfoodly" passHref={true} >
                         <ButtonNext passHref={true} aria-label="link to next case study" >
+                            <div className={styles.caseStudyThumbnailOverlay} >
+                                <p className={styles.caseStudyThumbnailHeading} >
+                                    Joyfoodly website
+                                </p>
+                            </div>
                             <Image src={joyfoodlyScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
                         </ButtonNext>
                     </MyLink>
