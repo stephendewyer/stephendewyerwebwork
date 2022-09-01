@@ -24,9 +24,9 @@ const NextArrow = () => {
           onMouseLeave={onMouseLeave}
       >
         {isHovering ? (
-          <Image src={green_right_arrow} alt="green right arrow" /> 
+          <Image src={green_right_arrow} alt="green right arrow" priority /> 
           ) : (
-          <Image src={orange_right_arrow} alt="orange right arrow" />
+          <Image src={orange_right_arrow} alt="orange right arrow" priority />
         )}    
     </div>
   );
