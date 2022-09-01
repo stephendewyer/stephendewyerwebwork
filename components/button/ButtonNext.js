@@ -31,8 +31,8 @@ const ButtonNext = (props) => {
                         style={{ marginLeft: isHovering ? '24px' : '12px', color: isHovering ? '#90947E': '#575B46', borderColor: isHovering ? '#90947E': '#575B46' }}
                     >
                         {isHovering ? 
-                            <Image src={nextButtonHover}  layout="responsive" alt="next button arrow"/> :
-                            <Image src={nextButtonDefault}  layout="responsive" alt="next button arrow"/>
+                            <Image src={nextButtonHover}  layout="responsive" alt="next button arrow" priority /> :
+                            <Image src={nextButtonDefault}  layout="responsive" alt="next button arrow" priority />
                         }
                     </div>
                 </div>

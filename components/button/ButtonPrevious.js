@@ -30,8 +30,8 @@ const ButtonPrevious = (props) => {
                         style={{ marginRight: isHovering ? '24px' : '12px', color: isHovering ? '#90947E': '#575B46', borderColor: isHovering ? '#90947E': '#575B46' }}
                     >
                         {isHovering ? 
-                                <Image src={previousButtonHover}  layout="responsive" alt="previous button arrow"/> :
-                                <Image src={previousButtonDefault}  layout="responsive" alt="previous button arrow"/>
+                                <Image src={previousButtonHover}  layout="responsive" alt="previous button arrow" priority /> :
+                                <Image src={previousButtonDefault}  layout="responsive" alt="previous button arrow" priority />
                             }
                     </div>
                     previous

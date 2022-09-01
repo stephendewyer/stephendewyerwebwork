@@ -36,8 +36,8 @@ const ButtonNext = () => {
                 className={ isHovering ? styles.bouncyPDFIcon : styles.PDFIcon } 
             >
                 {isHovering ? 
-                    <Image src={PDFIconHover}  layout="responsive" alt="PDF icon hover"/> :
-                    <Image src={PDFIconDefault}  layout="responsive" alt="PDF icon default"/>
+                    <Image src={PDFIconHover}  layout="responsive" alt="PDF icon hover" priority /> :
+                    <Image src={PDFIconDefault}  layout="responsive" alt="PDF icon default" priority />
                 }
             </div> 
         </div>
