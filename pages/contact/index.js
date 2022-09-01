@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import React, { Fragment, useRef, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
+import InputErrorMessage from '../../components/inputErrorMessage/InputErrorMessage';
 import FlashMessage from '../../components/flash_message/FlashMessage';
 import MyLink from '../../public/util/myLink';
-import errorIcon from '../../public/images/icons/error_icon.svg';
 import PillButton from '../../components/button/pill_button/PillButton';
 import PillButtonSecondary from '../../components/button/pillButtonSecondary/PillButtonSecondary';
 import classes from './contact.module.css';
@@ -73,6 +72,9 @@ const Contact = () => {
         if ( emailRef.current.value !== '' && emailRef.current.value.includes('@') ) {
             setEnteredEmailIsValid(true);
             setEnteredEmailHasAtSymbol(true);
+        }
+        if ( emailRef.current.value !== '' && !emailRef.current.value.includes('@') ) {
+            setEnteredEmailIsValid(true);
         }
     };
 
@@ -215,37 +217,17 @@ const Contact = () => {
 
     if (!enteredEmailIsValid) {
         emailErrorMessage = (
-            <div className={classes.inputErrorMessage}>
-                <p className={classes.inputErrorParagraph}>
-                    email required
-                </p> 
-                <div className={classes.inputErrorIcon}>
-                    <Image 
-                        src={errorIcon} 
-                        layout="responsive" 
-                        alt="organizer illustration"
-                        priority
-                    />
-                </div>
-            </div>
+            <InputErrorMessage>
+                email required
+            </InputErrorMessage>
         )
     }
 
     if (enteredEmailIsValid && !enteredEmailHasAtSymbol) {
         emailErrorMessage = (
-            <div className={classes.inputErrorMessage}>
-                <p className={classes.inputErrorParagraph}>
+            <InputErrorMessage>
                     missing an @ symbol in email address
-                </p> 
-                <div className={classes.inputErrorIcon}>
-                    <Image 
-                        src={errorIcon} 
-                        layout="responsive" 
-                        alt="organizer illustration"
-                        priority
-                    />
-                </div>
-            </div>
+            </InputErrorMessage>
         )
     }
 
@@ -287,19 +269,9 @@ const Contact = () => {
                         { enteredNameFirstIsValid ? 
                             ""
                             : 
-                            <div className={classes.inputErrorMessage}>
-                                <p className={classes.inputErrorParagraph}>
+                            <InputErrorMessage>
                                     first name required
-                                </p> 
-                                <div className={classes.inputErrorIcon}>
-                                    <Image 
-                                        src={errorIcon} 
-                                        layout="responsive" 
-                                        alt="organizer illustration"
-                                        priority
-                                    />
-                                </div>
-                            </div>
+                            </InputErrorMessage>
                         }
                     </div>
                     <div className={classes.formSection}>
@@ -320,19 +292,9 @@ const Contact = () => {
                         </div>
                         { enteredNameLastIsValid ? 
                             "" :
-                            <div className={classes.inputErrorMessage}>
-                                <p className={classes.inputErrorParagraph}>
-                                    last name required
-                                </p> 
-                                <div className={classes.inputErrorIcon}>
-                                    <Image 
-                                        src={errorIcon} 
-                                        layout="responsive" 
-                                        alt="organizer illustration"
-                                        priority
-                                    />
-                                </div>
-                            </div>
+                            <InputErrorMessage>
+                                last name required
+                            </InputErrorMessage>
                         }
                     </div>
                     <div className={classes.formSection}>
@@ -351,9 +313,7 @@ const Contact = () => {
                                 />
                             </div>
                         </div>
-                            <p className={classes.inputErrorMessage}>
-                                {emailErrorMessage}
-                            </p>
+                        {emailErrorMessage}
                     </div>
                     <div className={classes.formSection}>
                         <div className={classes.textarea_label_and_input} >
@@ -373,19 +333,9 @@ const Contact = () => {
                         </div>
                         { enteredMessageIsValid ? 
                             "":
-                            <div className={classes.inputErrorMessage}>
-                                <p className={classes.inputErrorParagraph}>
-                                    message required
-                                </p> 
-                                <div className={classes.inputErrorIcon}>
-                                    <Image 
-                                        src={errorIcon} 
-                                        layout="responsive" 
-                                        alt="organizer illustration"
-                                        priority
-                                    />
-                                </div>
-                            </div>
+                            <InputErrorMessage>
+                                message required
+                            </InputErrorMessage>
                         }
                     </div>
                     <div className={classes.contact_buttons} >

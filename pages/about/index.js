@@ -64,7 +64,7 @@ const AboutPage = () => {
                         <h4 className={classes.resume_heading_02}>
                             positions
                         </h4>
-                        <p className={classes.resume_paragraphs}>
+                        <div className={classes.resume_paragraphs}>
                             2021 &ndash; present, <span style={{fontWeight: "bold"}} >Founding Director</span><br/>
                             <span style={{fontWeight: "bold"}} >Art in Tech Services Inc</span><br/>
                             Minneapolis-St. Paul area, Minnesota
@@ -95,7 +95,7 @@ const AboutPage = () => {
                                     supporting organizations: University of Michigan Stamps School of Art &amp; Design, Knight Foundation, Awesome Foundation 
                                 </li>
                             </ul>
-                        </p>
+                        </div>
                         <h4 className={classes.resume_heading_02}>
                             education
                         </h4>
@@ -117,7 +117,7 @@ const AboutPage = () => {
                         <h4 className={classes.resume_heading_02}>
                             certificates
                         </h4>
-                        <p className={classes.resume_paragraphs}>
+                        <div className={classes.resume_paragraphs}>
                             2021 &ndash; 2022, <span style={{fontWeight: "bold"}} >Certificates in UX Design, Modern Web Development and Web Accessibility, Udemy</span>
                             <ul>
                                 <li>
@@ -236,7 +236,7 @@ const AboutPage = () => {
                             2005, <span style={{fontWeight: "bold"}} >Scholastic National Portfolio Award Scholarship<br />
                             MICA</span><br />
                             Baltimore, Maryland
-                        </p>
+                        </div>
                     </div>
                     <div className={classes.skills}>
                         <h3 className={classes.resume_heading_01} >
