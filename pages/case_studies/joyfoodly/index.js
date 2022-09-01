@@ -236,38 +236,34 @@ const Joyfoodly = () => {
                         <h3 className={styles.detail_heading}>
                             services I provided:
                         </h3>
-                        <p>
-                            <ul>
-                                <li>
-                                    Designed, developed and deployed a responsive legacy website
-                                </li>
-                                <li>
-                                    Designed custom emails
-                                </li>
-                                <li>
-                                    Redirected users to the legacy website from existing domain names
-                                </li>
-                                <li>
-                                    Closed previous web program accounts
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                Designed, developed and deployed a responsive legacy website
+                            </li>
+                            <li>
+                                Designed custom emails
+                            </li>
+                            <li>
+                                Redirected users to the legacy website from existing domain names
+                            </li>
+                            <li>
+                                Closed previous web program accounts
+                            </li>
+                        </ul>
                         <h3 className={styles.detail_heading}>
                             tools I used:
                         </h3>
-                        <p>
-                            <ul>
-                                <li>
-                                    Figma
-                                </li>
-                                <li>
-                                    Next.js, React.js
-                                </li>
-                                <li>
-                                    Adobe Creative Cloud
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                Figma
+                            </li>
+                            <li>
+                                Next.js, React.js
+                            </li>
+                            <li>
+                                Adobe Creative Cloud
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <h2 className="header_02">
@@ -287,7 +283,7 @@ const Joyfoodly = () => {
                         <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
                             <ButtonExternalLink passHref={true} aria-label="link to visit">
                                 <div>
-                                    visit
+                                    visit Joyfoodly website
                                 </div>
                                 <div className={styles.external_link_icon} >
                                     <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />

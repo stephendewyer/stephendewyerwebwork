@@ -47,7 +47,6 @@ const ArtinTechServices = () => {
                             <br /><br />
                             As a practical matter, Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
                             The company had no way of processing financial transactions such as invoices via the company web application.  The company needed a web application to streamline collaboration with clients.
-
                         </p>
                     </div>
                 </div>,
@@ -147,18 +146,18 @@ const ArtinTechServices = () => {
                         I created medium-fidelity desktop and mobile prototypes for the Art in Tech Services web application using Figma.  
                         I created custom graphics and animations for the prototypes.  
                         The prototypes received user testing from individuals within my network 
-                            <Link href="https://www.figma.com/community/file/1077736708672476518" passHref={true} >
-                                <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
-                                    <ButtonExternalLink passHref={true} aria-label="link to view prototype">
-                                        <div>
-                                            view prototype
-                                        </div>
-                                        <div className={styles.external_link_icon} >
-                                            <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                                        </div>
-                                    </ButtonExternalLink>
-                                </a>
-                            </Link>
+                        <Link href="https://www.figma.com/community/file/1077736708672476518" passHref={true} >
+                            <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
+                                <ButtonExternalLink passHref={true} aria-label="link to view prototype">
+                                    <div>
+                                        view prototype
+                                    </div>
+                                    <div className={styles.external_link_icon} >
+                                        <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                    </div>
+                                </ButtonExternalLink>
+                            </a>
+                        </Link>
                     </div>
                 </div>,
         },
@@ -181,12 +180,11 @@ const ArtinTechServices = () => {
                         As part of the development process, I created several very useful interfaces including:
                         <ul>
                             <li>
-                                Animated tab panels<br />
-                                <Link href="https://animatedtabpanels.vercel.app/" passHref={true} >
+                                 <Link href="https://animatedtabpanels.vercel.app/" passHref={true} >
                                     <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
                                         <ButtonExternalLink passHref={true} aria-label="link to animated tab panels">
                                             <div>
-                                                view
+                                                animated tab panels
                                             </div>
                                             <div className={styles.external_link_icon} >
                                                 <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
@@ -196,12 +194,11 @@ const ArtinTechServices = () => {
                                 </Link>
                             </li>
                             <li>
-                                Accordion with arrows<br />
                                 <Link href="https://accordion-with-arrows.vercel.app/" passHref={true} >
                                     <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
                                         <ButtonExternalLink passHref={true} aria-label="link to accordion with arrows">
                                             <div>
-                                                view
+                                                accordion with arrows
                                             </div>
                                             <div className={styles.external_link_icon} >
                                                 <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
@@ -211,12 +208,11 @@ const ArtinTechServices = () => {
                                 </Link>
                             </li>
                             <li>
-                                Dynamic footer<br />
                                 <Link href="https://dynamicfooter.vercel.app/" passHref={true} >
                                     <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
                                         <ButtonExternalLink passHref={true} aria-label="link to footer example website">
                                             <div>
-                                                view
+                                                dynamic footer
                                             </div>
                                             <div className={styles.external_link_icon} >
                                                 <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
@@ -228,7 +224,7 @@ const ArtinTechServices = () => {
                             <li>
                                 User feedback on forms that appeared once a form is submitted, when an input loses focus and on every key stroke
                             </li>
-                        </ul>
+                        </ul>      
                     </div>
                 </div>,
         },
@@ -309,7 +305,6 @@ const ArtinTechServices = () => {
                         <h3 className={styles.detail_heading}>
                             services I provided:
                         </h3>
-                        <p>
                             <ul>
                                 <li>
                                     Designed, developed and deployed an enterprise web application featuring client collaboration software                            
@@ -327,11 +322,9 @@ const ArtinTechServices = () => {
                                     Built the web application using Next.js, MongoDB, SendGrid and Stripe
                                 </li>
                             </ul>
-                        </p>
                         <h3 className={styles.detail_heading}>
                             tools I used:
                         </h3>
-                        <p>
                             <ul>
                                 <li>
                                     Figma
@@ -355,7 +348,6 @@ const ArtinTechServices = () => {
                                     Canon EOS 70D Digital SLR camera
                                 </li>
                             </ul>
-                        </p>
                     </div>
                 </div>
                 <div className='paragraphs_container' >
@@ -383,7 +375,7 @@ const ArtinTechServices = () => {
                         <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
                             <ButtonExternalLink passHref={true} aria-label="link to visit">
                                 <div>
-                                    visit
+                                    visit Art in Tech Services website
                                 </div>
                                 <div className={styles.external_link_icon} >
                                     <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />

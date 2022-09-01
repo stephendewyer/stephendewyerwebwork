@@ -17,9 +17,19 @@ const CaseStudiesTab = () => {
         >
             <MyLink href="/case_studies" passHref aria-label="link to case studies page">
                 {isHovering ? (
-                    <Image src={caseStudiesLink_hover} layout="responsive" alt="case studies link"/> 
+                    <Image 
+                        src={caseStudiesLink_hover} 
+                        layout="responsive" 
+                        alt="case studies link"
+                        priority
+                    /> 
                     ) : (
-                    <Image src={caseStudiesLink} layout="responsive" alt="case studies link"/>
+                    <Image 
+                        src={caseStudiesLink} 
+                        layout="responsive" 
+                        alt="case studies link"
+                        priority
+                    />
                 )}
             </MyLink>    
         </div>

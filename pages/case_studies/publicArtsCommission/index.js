@@ -71,7 +71,7 @@ const PublicArtsCommission = () => {
                                 Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota
                             </figcaption>   
                         </figure>   
-                        <p className={styles.panelParagraphsWithImage}>
+                        <div className={styles.panelParagraphsWithImage}>
                             For Public Arts Commission to fulfill its mission, the organization’s web programs need to do a number of things including:
                             <ul>
                                 <li>
@@ -112,7 +112,7 @@ const PublicArtsCommission = () => {
                                     </li>
                                 </ul>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                 </div>,
         },
@@ -269,56 +269,52 @@ const PublicArtsCommission = () => {
                         <h3 className={styles.detail_heading}>
                             services I provided:
                         </h3>
-                        <p>
-                            <ul>
-                                <li>
-                                    Designed brand identity including logo
-                                </li>
-                                <li>
-                                    Designed, developed and deployed an enterprise website and web application
-                                </li>
-                                <li>
-                                    Created custom graphics
-                                </li>
-                                <li>
-                                    Created campaign collaboration software
-                                </li>
-                                <li>
-                                    Prototyping web applications for individuals to connect and organize and for campaigns to purchase subscriptions to connect with individuals in the Public Arts Commission network
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                Designed brand identity including logo
+                            </li>
+                            <li>
+                                Designed, developed and deployed an enterprise website and web application
+                            </li>
+                            <li>
+                                Created custom graphics
+                            </li>
+                            <li>
+                                Created campaign collaboration software
+                            </li>
+                            <li>
+                                Prototyping web applications for individuals to connect and organize and for campaigns to purchase subscriptions to connect with individuals in the Public Arts Commission network
+                            </li>
+                        </ul>
                         <h3 className={styles.detail_heading}>
                             tools I used:
                         </h3>
-                        <p>
-                            <ul>
-                                <li>
-                                    Figma
-                                </li>
-                                <li>
-                                    HTML, CSS, JavaScipt, jQuery, PHP, MySQL
-                                </li>
-                                <li>
-                                    WowSlider
-                                </li>
-                                <li>
-                                    Mailchimp
-                                </li>
-                                <li>
-                                    Adobe Creative Cloud
-                                </li>
-                                <li>
-                                    Svelte (forthcoming)
-                                </li>
-                                <li>
-                                    MongoDB (forthcoming)
-                                </li>
-                                <li>
-                                    Canon EOS 70D Digital SLR camera
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                Figma
+                            </li>
+                            <li>
+                                HTML, CSS, JavaScipt, jQuery, PHP, MySQL
+                            </li>
+                            <li>
+                                WowSlider
+                            </li>
+                            <li>
+                                Mailchimp
+                            </li>
+                            <li>
+                                Adobe Creative Cloud
+                            </li>
+                            <li>
+                                Svelte (forthcoming)
+                            </li>
+                            <li>
+                                MongoDB (forthcoming)
+                            </li>
+                            <li>
+                                Canon EOS 70D Digital SLR camera
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div className='paragraphs_container' >
@@ -347,7 +343,7 @@ const PublicArtsCommission = () => {
                         <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
                             <ButtonExternalLink passHref={true} aria-label="link to visit">
                                 <div>
-                                    visit
+                                    visit Public Arts Commission website
                                 </div>
                                 <div className={styles.external_link_icon} >
                                     <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />

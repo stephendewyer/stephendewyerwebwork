@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Fragment } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import classes from './about.module.css';
 import Image from 'next/image';
 import stephen_dewyer_profile from '../../public/images/profile/stephen_dewyer_10_cropped_square.jpg';
@@ -7,6 +7,14 @@ import ResumeButton from '../../components/button/resumeButton/ResumeButton';
 import Link from 'next/link';
 
 const AboutPage = () => {
+
+    const [profileImageDidStart, setProfileImageDidStart] = useState(false);
+
+    useEffect(() => {
+
+        setProfileImageDidStart(true);
+
+    }, []);
 
     return (
         <Fragment>
@@ -16,13 +24,18 @@ const AboutPage = () => {
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/about" />
             </Head>
-            <div className="container">
+            <div className={classes.aboutPageContainer}>
                 <h1 className="header">
                     about
                 </h1>
-                <div className={classes.about_section_01}>
-                    <div className={classes.profile_image}>
-                        <Image src={stephen_dewyer_profile} layout="responsive" alt="stephen dewyer profile image" />
+                <div className={classes.aboutSection01}>
+                    <div className={(profileImageDidStart) ? classes.profileImageEnd : classes.profileImageStart}>
+                        <Image 
+                            src={stephen_dewyer_profile} 
+                            layout="responsive" 
+                            alt="stephen dewyer profile image" 
+                            priority
+                        /> 
                     </div>
                     <div className={classes.profile_info}>
                         <p className={classes.profile_info_paragraphs}>

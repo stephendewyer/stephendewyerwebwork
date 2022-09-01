@@ -17,9 +17,19 @@ const AboutTab = () => {
         >
             <MyLink href="/about" passHref aria-label="link to about page">
                 {isHovering ? (
-                    <Image src={aboutLink_hover} layout="responsive" alt="about link"/> 
+                    <Image 
+                        src={aboutLink_hover} 
+                        layout="responsive" 
+                        alt="about link"
+                        priority
+                        /> 
                     ) : (
-                    <Image src={aboutLink} layout="responsive" alt="about link"/>
+                    <Image 
+                        src={aboutLink} 
+                        layout="responsive" 
+                        alt="about link"
+                        priority
+                    />
                 )}
             </MyLink>    
         </div>

@@ -217,53 +217,49 @@ const InfiniteMile = () => {
                         <h3 className={styles.detail_heading}>
                             services I provided:
                         </h3>
-                        <p>
-                            <ul>
-                                <li>
-                                    Designed, developed and deployed an enterprise website
-                                </li>
-                                <li>
-                                    Designed brand identity including logo
-                                </li>
-                                <li>
-                                    Designed graphics
-                                </li>
-                                <li>
-                                    Maintained and updated website to publish monthly issues
-                                </li>
-                                <li>
-                                    Designed, developed and deployed a shop feature to allow users to purchase annual print anthologies and merchandise using a PayPal API
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                Designed, developed and deployed an enterprise website
+                            </li>
+                            <li>
+                                Designed brand identity including logo
+                            </li>
+                            <li>
+                                Designed graphics
+                            </li>
+                            <li>
+                                Maintained and updated website to publish monthly issues
+                            </li>
+                            <li>
+                                Designed, developed and deployed a shop feature to allow users to purchase annual print anthologies and merchandise using a PayPal API
+                            </li>
+                        </ul>
                         <h3 className={styles.detail_heading}>
                             tools I used:
                         </h3>
-                        <p>
-                            <ul>
-                                <li>
-                                    Adobe Suite
-                                </li>
-                                <li>
-                                    Google Drive
-                                </li>
-                                <li>
-                                    HTML, CSS, JavaScript, jQuery, VideoJS
-                                </li>
-                                <li>
-                                    WowSlider
-                                </li>
-                                <li>
-                                    PayPal
-                                </li>
-                                <li>
-                                    Eventbrite
-                                </li>
-                                <li>
-                                    Canon EOS 70D Digital SLR camera
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                Adobe Suite
+                            </li>
+                            <li>
+                                Google Drive
+                            </li>
+                            <li>
+                                HTML, CSS, JavaScript, jQuery, VideoJS
+                            </li>
+                            <li>
+                                WowSlider
+                            </li>
+                            <li>
+                                PayPal
+                            </li>
+                            <li>
+                                Eventbrite
+                            </li>
+                            <li>
+                                Canon EOS 70D Digital SLR camera
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div className='paragraphs_container' >
@@ -285,7 +281,7 @@ const InfiniteMile = () => {
                         <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
                             <ButtonExternalLink passHref={true} aria-label="link to visit">
                                 <div>
-                                    visit
+                                    visit Infinite Mile website
                                 </div>
                                 <div className={styles.external_link_icon} >
                                     <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />

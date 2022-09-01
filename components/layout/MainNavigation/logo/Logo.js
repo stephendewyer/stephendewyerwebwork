@@ -17,9 +17,19 @@ const IndexTab = () => {
         >
             <MyLink href="/" passHref aria-label="link to index page">
                 {isHovering ? (
-                    <Image src={logo_hover} layout="responsive" alt="stephen dewyer web design and development logo"/> 
+                    <Image 
+                        src={logo_hover} 
+                        layout="responsive" 
+                        alt="stephen dewyer web design and development logo"
+                        priority
+                    /> 
                     ) : (
-                    <Image src={logo} layout="responsive" alt="stephen dewyer web design and development logo"/>
+                    <Image 
+                        src={logo} 
+                        layout="responsive" 
+                        alt="stephen dewyer web design and development logo"
+                        priority
+                    />
                 )}
             </MyLink>    
         </div>

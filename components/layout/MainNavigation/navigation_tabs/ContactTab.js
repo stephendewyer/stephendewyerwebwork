@@ -17,9 +17,19 @@ const ContactTab = () => {
         >
             <MyLink href="/contact" passHref aria-label="link to contact page">
                 {isHovering ? (
-                    <Image src={contactLink_hover} layout="responsive" alt="contact link"/> 
+                    <Image 
+                        src={contactLink_hover} 
+                        layout="responsive" 
+                        alt="contact link"
+                        priority
+                    /> 
                     ) : (
-                    <Image src={contactLink} layout="responsive" alt="contact link"/>
+                    <Image 
+                        src={contactLink} 
+                        layout="responsive" 
+                        alt="contact link"
+                        priority
+                    />
                 )}
             </MyLink>    
         </div>
