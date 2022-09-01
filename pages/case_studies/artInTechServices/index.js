@@ -150,7 +150,7 @@ const ArtinTechServices = () => {
                             <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
                                 <ButtonExternalLink passHref={true} aria-label="link to view prototype">
                                     <div>
-                                        view prototype
+                                        prototype
                                     </div>
                                     <div className={styles.external_link_icon} >
                                         <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
@@ -375,7 +375,7 @@ const ArtinTechServices = () => {
                         <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
                             <ButtonExternalLink passHref={true} aria-label="link to visit">
                                 <div>
-                                    visit Art in Tech Services website
+                                    Art in Tech Services website
                                 </div>
                                 <div className={styles.external_link_icon} >
                                     <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />

@@ -164,7 +164,7 @@ const PublicArtsCommission = () => {
                             <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
                                 <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
                                     <div>
-                                        view prototype
+                                        prototype
                                     </div>
                                     <div className={styles.external_link_icon} >
                                         <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
@@ -343,7 +343,7 @@ const PublicArtsCommission = () => {
                         <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
                             <ButtonExternalLink passHref={true} aria-label="link to visit">
                                 <div>
-                                    visit Public Arts Commission website
+                                    Public Arts Commission website
                                 </div>
                                 <div className={styles.external_link_icon} >
                                     <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
