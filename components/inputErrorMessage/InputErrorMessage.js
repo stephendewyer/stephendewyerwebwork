@@ -12,7 +12,7 @@ const InputErrorMessage = (props) => {
                 <Image 
                     src={errorIcon} 
                     layout="responsive" 
-                    alt="organizer illustration"
+                    alt="error icon"
                     priority
                 />
             </div>

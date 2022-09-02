@@ -246,7 +246,7 @@ const Contact = () => {
                 <h2 className="header_02">
                     how can stephen garrett dewyer help you?  
                 </h2>
-                <form className={classes.form} onSubmit={submitHandler} noValidate>
+                <form className={classes.form} onSubmit={submitHandler} noValidate >
                     <p className={classes.indicates_required}>
                         * indicates required
                     </p>
@@ -270,7 +270,7 @@ const Contact = () => {
                             ""
                             : 
                             <InputErrorMessage>
-                                    first name required
+                                first name required
                             </InputErrorMessage>
                         }
                     </div>
