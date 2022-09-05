@@ -7,6 +7,7 @@ import styles from './infiniteMile.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import InfiniteMileSlideCarousel from "../../../components/slide_carousel/InfiniteMileSlideCarousel";
+import InfoCards from "../../../components/infoCards/InfoCards";
 import BreakfastClubViewDetroit from '../../../public/images/case_studies/Infinite_Mile_LLC/process/citings_issue_28_May_2016_06.jpg';
 import ArtAndRaceConference from '../../../public/images/case_studies/Infinite_Mile_LLC/process/Art_and_Race_Conference_2016.jpg';
 import InfiniteMileLogo from '../../../public/images/case_studies/Infinite_Mile_LLC/process/Infinite_Mile_logo.svg';
@@ -20,6 +21,87 @@ import joyfoodlyScreengrab from '../../../public/images/case_studies/Joyfoodly/J
 import publicArtsCommissionScreengrab from '../../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
 
 const InfiniteMile = () => {
+
+    const infoCards = [
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        about the client:
+                    </h3>
+                    <p>
+                        Infinite Mile LLC was an award-winning journal of art and culture(s) in Detroit, Michigan that published monthly online issues and annual print anthologies.
+                    </p>
+                    <h3 className={styles.detail_heading}>
+                        my role:
+                    </h3>
+                    <p>
+                        Co-Founding Editor of Infinite Mile
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        services I provided:
+                    </h3>
+                    <ul>
+                        <li>
+                            Designed, developed and deployed an enterprise website
+                        </li>
+                        <li>
+                            Designed brand identity including logo
+                        </li>
+                        <li>
+                            Designed graphics
+                        </li>
+                        <li>
+                            Maintained and updated website to publish monthly issues
+                        </li>
+                        <li>
+                            Designed, developed and deployed a shop feature to allow users to purchase annual print anthologies and merchandise using a PayPal API
+                        </li>
+                    </ul>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+                content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        tools I used:
+                    </h3>
+                    <ul>
+                        <li>
+                            Adobe Suite
+                        </li>
+                        <li>
+                            Google Drive
+                        </li>
+                        <li>
+                            HTML, CSS, JavaScript, jQuery, VideoJS
+                        </li>
+                        <li>
+                            WowSlider
+                        </li>
+                        <li>
+                            PayPal
+                        </li>
+                        <li>
+                            Eventbrite
+                        </li>
+                        <li>
+                            Canon EOS 70D Digital SLR camera
+                        </li>
+                    </ul>
+                </Fragment>
+        },
+        
+    ];
+
     const tabPanels = [
         {
             id: uuidv4(),
@@ -213,70 +295,7 @@ const InfiniteMile = () => {
                 <h2 className="header_02">
                     details
                 </h2>
-                <div className={styles.case_study_details}>
-                    <div className={styles.detail}>
-                        <h3 className={styles.detail_heading}>
-                            about the client:
-                        </h3>
-                        <p>
-                            Infinite Mile LLC was an award-winning journal of art and culture(s) in Detroit, Michigan that published monthly online issues and annual print anthologies.
-                        </p>
-                        <h3 className={styles.detail_heading}>
-                            my role:
-                        </h3>
-                        <p>
-                            Co-Founding Editor of Infinite Mile
-                        </p>
-                    </div>
-                    <div className={styles.detail}>
-                        <h3 className={styles.detail_heading}>
-                            services I provided:
-                        </h3>
-                        <ul>
-                            <li>
-                                Designed, developed and deployed an enterprise website
-                            </li>
-                            <li>
-                                Designed brand identity including logo
-                            </li>
-                            <li>
-                                Designed graphics
-                            </li>
-                            <li>
-                                Maintained and updated website to publish monthly issues
-                            </li>
-                            <li>
-                                Designed, developed and deployed a shop feature to allow users to purchase annual print anthologies and merchandise using a PayPal API
-                            </li>
-                        </ul>
-                        <h3 className={styles.detail_heading}>
-                            tools I used:
-                        </h3>
-                        <ul>
-                            <li>
-                                Adobe Suite
-                            </li>
-                            <li>
-                                Google Drive
-                            </li>
-                            <li>
-                                HTML, CSS, JavaScript, jQuery, VideoJS
-                            </li>
-                            <li>
-                                WowSlider
-                            </li>
-                            <li>
-                                PayPal
-                            </li>
-                            <li>
-                                Eventbrite
-                            </li>
-                            <li>
-                                Canon EOS 70D Digital SLR camera
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <InfoCards infoCards={infoCards} />
                 <div className='paragraphs_container' >
                     <h2 className="header_02">
                         process

@@ -6,6 +6,7 @@ import MyLink from '../../../public/util/myLink';
 import styles from './joyfoodly.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import InfoCards from "../../../components/infoCards/InfoCards";
 import JoyfoodlySlideCarousel from "../../../components/slide_carousel/JoyfoodlySlideCarousel";
 import familyCooking from '../../../public/images/case_studies/Joyfoodly/process/family_cooking.jpg';
 import Tabs from "../../../components/tabs/Tabs";
@@ -18,6 +19,72 @@ import artinTechServicesScreengrab from '../../../public/images/case_studies/Art
 import infiniteMileScreengrab from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
 
 const Joyfoodly = () => {
+
+    const infoCards = [
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        about the client:
+                    </h3>
+                    <p>
+                        Joyfoodly helps families learn to eat more fruits and vegetables, offering a downloadable cookbook called Joyful12.
+                    </p>
+                    <h3 className={styles.detail_heading}>
+                        my role:
+                    </h3>
+                    <p>
+                        Founding Director of Art in Tech Services Inc
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        services I provided:
+                    </h3>
+                    <ul>
+                        <li>
+                            Designed, developed and deployed a responsive legacy website
+                        </li>
+                        <li>
+                            Designed custom emails
+                        </li>
+                        <li>
+                            Redirected users to the legacy website from existing domain names
+                        </li>
+                        <li>
+                            Closed previous web program accounts
+                        </li>
+                    </ul>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+                content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        tools I used:
+                    </h3>
+                    <ul>
+                        <li>
+                            Figma
+                        </li>
+                        <li>
+                            Next.js, React.js
+                        </li>
+                        <li>
+                            Adobe Creative Cloud
+                        </li>
+                    </ul>
+                </Fragment>
+        },
+        
+    ];
+
     const tabPanels = [
         {
             id: uuidv4(),
@@ -185,6 +252,47 @@ const Joyfoodly = () => {
                 </div>,
         },
     ];
+
+    const outcomeCards = [
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        new website featuring Joyful12 cookbook
+                    </h3>
+                    <p>
+                        The Joyfoodly community given free access to the Joyful12 cookbook.
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        saved money by closing unnecessary accounts
+                    </h3>
+                    <p>
+                        By using a free Vercel account and closing the WordPress account, I was able to save the client hundreds of dollars a year.
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+                content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        informed Joyfoodly community
+                    </h3>
+                    <p>
+                        The Joyfoodly received custom emails about the business closing and access to the Joyful12 cookbook via a new website.
+                    </p>
+                </Fragment>
+        },
+        
+    ];
+
     return (
         <Fragment>
             <Head>
@@ -222,59 +330,15 @@ const Joyfoodly = () => {
                 <h2 className="header_02">
                     details
                 </h2>
-                <div className={styles.case_study_details}>
-                    <div className={styles.detail}>
-                        <h3 className={styles.detail_heading}>
-                            about the client:
-                        </h3>
-                        <p>
-                            Joyfoodly helps families learn to eat more fruits and vegetables, offering a downloadable cookbook called Joyful12.
-                        </p>
-                        <h3 className={styles.detail_heading}>
-                            my role:
-                        </h3>
-                        <p>
-                            Founding Director of Art in Tech Services Inc
-                        </p>
-                    </div>
-                    <div className={styles.detail}>
-                        <h3 className={styles.detail_heading}>
-                            services I provided:
-                        </h3>
-                        <ul>
-                            <li>
-                                Designed, developed and deployed a responsive legacy website
-                            </li>
-                            <li>
-                                Designed custom emails
-                            </li>
-                            <li>
-                                Redirected users to the legacy website from existing domain names
-                            </li>
-                            <li>
-                                Closed previous web program accounts
-                            </li>
-                        </ul>
-                        <h3 className={styles.detail_heading}>
-                            tools I used:
-                        </h3>
-                        <ul>
-                            <li>
-                                Figma
-                            </li>
-                            <li>
-                                Next.js, React.js
-                            </li>
-                            <li>
-                                Adobe Creative Cloud
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <InfoCards infoCards={infoCards} />
                 <h2 className="header_02">
                     process
                 </h2>
                 <Tabs tabPanels={tabPanels} />
+                <h2 className="header_02">
+                    results
+                </h2>
+                <InfoCards outcomeCards={outcomeCards} />
                 <h2 className="header_02">
                     discoveries
                 </h2>

@@ -7,6 +7,7 @@ import MyLink from '../../../public/util/myLink';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArtinTechServicesSlideCarousel from "../../../components/slide_carousel/ArtinTechServicesSlideCarousel";
+import InfoCards from "../../../components/infoCards/InfoCards";
 import StarFormingRegionJamesWebb from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/process/main_image_star-forming_region_carina_nircam_final-5mb.jpg';
 import ArtinTechServicesLogo from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/process/Art_in_Tech_Services_logo_01.svg';
 import Tabs from "../../../components/tabs/Tabs";
@@ -19,6 +20,86 @@ import joyfoodlyScreengrab from '../../../public/images/case_studies/Joyfoodly/J
 import publicArtsCommissionScreengrab from '../../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
 
 const ArtinTechServices = () => {
+
+    const infoCards = [
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        about the client:
+                    </h3>
+                    <p>
+                        Art in Tech Services Inc is a company that uses advancements in art and digital technology to improve design for businesses and the public.
+                    </p>
+                    <h3 className={styles.detail_heading}>
+                        my role:
+                    </h3>
+                    <p>
+                        Founding Director of Art in Tech Services
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        services I provided:
+                    </h3>
+                    <ul>
+                        <li>
+                            Designed, developed and deployed an enterprise web application featuring client collaboration software                            
+                        </li>
+                        <li>
+                            Designed brand identity including logo
+                        </li>
+                        <li>
+                            Created custom graphics, animations and videos
+                        </li>
+                        <li>
+                            Conducting user research
+                        </li>
+                        <li>
+                            Built the web application using Next.js, MongoDB, SendGrid and Stripe
+                        </li>
+                    </ul>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+                content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                            tools I used:
+                    </h3>
+                    <ul>
+                        <li>
+                            Figma
+                        </li>
+                        <li>
+                            Next.js, Node.js, React.js, Video.js
+                        </li>
+                        <li>
+                            MongoDB
+                        </li>
+                        <li>
+                            Stripe
+                        </li>
+                        <li>
+                            Twilio SendGrid
+                        </li>
+                        <li>
+                            Adobe Creative Cloud
+                        </li>
+                        <li>
+                            Canon EOS 70D Digital SLR camera
+                        </li>
+                    </ul>
+                </Fragment>
+        },
+        
+    ];
 
     const tabPanels = [
         {
@@ -295,71 +376,8 @@ const ArtinTechServices = () => {
 
                 <h2 className="header_02">
                         details
-                    </h2>
-                <div className={styles.case_study_details}>
-                    <div className={styles.detail}>
-                        <h3 className={styles.detail_heading}>
-                            about the client:
-                        </h3>
-                        <p>
-                            Art in Tech Services Inc is a company that uses advancements in art and digital technology to improve design for businesses and the public.
-                        </p>
-                        <h3 className={styles.detail_heading}>
-                            my role:
-                        </h3>
-                        <p>
-                            Founding Director of Art in Tech Services
-                        </p>
-                    </div>
-                    <div className={styles.detail}>
-                        <h3 className={styles.detail_heading}>
-                            services I provided:
-                        </h3>
-                            <ul>
-                                <li>
-                                    Designed, developed and deployed an enterprise web application featuring client collaboration software                            
-                                </li>
-                                <li>
-                                    Designed brand identity including logo
-                                </li>
-                                <li>
-                                    Created custom graphics, animations and videos
-                                </li>
-                                <li>
-                                    Conducting user research
-                                </li>
-                                <li>
-                                    Built the web application using Next.js, MongoDB, SendGrid and Stripe
-                                </li>
-                            </ul>
-                        <h3 className={styles.detail_heading}>
-                            tools I used:
-                        </h3>
-                            <ul>
-                                <li>
-                                    Figma
-                                </li>
-                                <li>
-                                    Next.js, Node.js, React.js, Video.js
-                                </li>
-                                <li>
-                                    MongoDB
-                                </li>
-                                <li>
-                                    Stripe
-                                </li>
-                                <li>
-                                    Twilio SendGrid
-                                </li>
-                                <li>
-                                    Adobe Creative Cloud
-                                </li>
-                                <li>
-                                    Canon EOS 70D Digital SLR camera
-                                </li>
-                            </ul>
-                    </div>
-                </div>
+                </h2>
+                <InfoCards infoCards={infoCards} />
                 <div className='paragraphs_container' >
                     <h2 className="header_02">
                         process

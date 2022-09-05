@@ -7,6 +7,7 @@ import styles from './publicArtsCommission.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PublicArtsCommissionSlideCarousel from "../../../components/slide_carousel/PublicArtsCommissionSlideCarousel";
+import InfoCards from "../../../components/infoCards/InfoCards";
 import ArtAtDemonstration from '../../../public/images/case_studies/Public_Arts_Commission/process/art_at_demonstration.JPG';
 import EndorsedByPublicArtsCommission from '../../../public/images/case_studies/Public_Arts_Commission/process/endorsement_image.jpg';
 import PublicArtsCommissionLogo from '../../../public/images/case_studies/Public_Arts_Commission/process/public_arts_commission_logo.svg';
@@ -20,6 +21,90 @@ import artinTechServicesScreengrab from '../../../public/images/case_studies/Art
 import infiniteMileScreengrab from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
 
 const PublicArtsCommission = () => {
+
+    const infoCards = [
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        about the client:
+                    </h3>
+                    <p>
+                        Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.
+                    </p>
+                    <h3 className={styles.detail_heading}>
+                        my role:
+                    </h3>
+                    <p>
+                        Founder of Public Arts Commission
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        services I provided:
+                    </h3>
+                    <ul>
+                        <li>
+                            Designed brand identity including logo
+                        </li>
+                        <li>
+                            Designed, developed and deployed an enterprise website and web application
+                        </li>
+                        <li>
+                            Created custom graphics
+                        </li>
+                        <li>
+                            Created campaign collaboration software
+                        </li>
+                        <li>
+                            Prototyping web applications for individuals to connect and organize and for campaigns to purchase subscriptions to connect with individuals in the Public Arts Commission network
+                        </li>
+                    </ul>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+                content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        tools I used:
+                    </h3>
+                    <ul>
+                        <li>
+                            Figma
+                        </li>
+                        <li>
+                            HTML, CSS, JavaScipt, jQuery, PHP, MySQL
+                        </li>
+                        <li>
+                            WowSlider
+                        </li>
+                        <li>
+                            Mailchimp
+                        </li>
+                        <li>
+                            Adobe Creative Cloud
+                        </li>
+                        <li>
+                            Svelte (forthcoming)
+                        </li>
+                        <li>
+                            MongoDB (forthcoming)
+                        </li>
+                        <li>
+                            Canon EOS 70D Digital SLR camera
+                        </li>
+                    </ul>
+                </Fragment>
+        },
+        
+    ];
+
     const tabPanels = [
         {
             id: uuidv4(),
@@ -265,73 +350,7 @@ const PublicArtsCommission = () => {
                 <h2 className="header_02">
                     details
                 </h2>
-                <div className={styles.case_study_details}>
-                    <div className={styles.detail}>
-                        <h3 className={styles.detail_heading}>
-                            about the client:
-                        </h3>
-                        <p>
-                            Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.
-                        </p>
-                        <h3 className={styles.detail_heading}>
-                            my role:
-                        </h3>
-                        <p>
-                            Founder of Public Arts Commission
-                        </p>
-                    </div>
-                    <div className={styles.detail}>
-                        <h3 className={styles.detail_heading}>
-                            services I provided:
-                        </h3>
-                        <ul>
-                            <li>
-                                Designed brand identity including logo
-                            </li>
-                            <li>
-                                Designed, developed and deployed an enterprise website and web application
-                            </li>
-                            <li>
-                                Created custom graphics
-                            </li>
-                            <li>
-                                Created campaign collaboration software
-                            </li>
-                            <li>
-                                Prototyping web applications for individuals to connect and organize and for campaigns to purchase subscriptions to connect with individuals in the Public Arts Commission network
-                            </li>
-                        </ul>
-                        <h3 className={styles.detail_heading}>
-                            tools I used:
-                        </h3>
-                        <ul>
-                            <li>
-                                Figma
-                            </li>
-                            <li>
-                                HTML, CSS, JavaScipt, jQuery, PHP, MySQL
-                            </li>
-                            <li>
-                                WowSlider
-                            </li>
-                            <li>
-                                Mailchimp
-                            </li>
-                            <li>
-                                Adobe Creative Cloud
-                            </li>
-                            <li>
-                                Svelte (forthcoming)
-                            </li>
-                            <li>
-                                MongoDB (forthcoming)
-                            </li>
-                            <li>
-                                Canon EOS 70D Digital SLR camera
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <InfoCards infoCards={infoCards} />
                 <div className='paragraphs_container' >
                     <h2 className="header_02">
                         process

@@ -1,0 +1,42 @@
+.caseStudyInfoCards {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.caseStudyInfoCard {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+    box-sizing: border-box;
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .caseStudyInfoCards {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 20px;
+        
+    }
+    
+    .caseStudyInfoCard {
+        margin: 10px auto;
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
