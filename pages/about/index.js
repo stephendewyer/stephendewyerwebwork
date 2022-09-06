@@ -130,11 +130,11 @@ const AboutPage = () => {
                                     Web Accessibility Training Course - WCAG 2.1 Compliance
                                 </li>
                                 <li>
-                                    The User Researcher’s guide to UX discoveries
+                                    The User Researcher&#39;s guide to UX discoveries
                                 </li>
                             </ul>
                         
-                            2020 &ndash; 2021, <span style={{fontWeight: "bold"}} >Certificates in Building Web Applications, University of Michigan – Coursera</span>
+                            2020 &ndash; 2021, <span style={{fontWeight: "bold"}} >Certificates in Building Web Applications, University of Michigan &#8211; Coursera</span>
                             <ul>
                                 <li>
                                     JavaScript, jQuery, and JSON<br />
@@ -152,7 +152,7 @@ const AboutPage = () => {
                                     Building Web Applications in PHP
                                 </li>
                             </ul>
-                            2021, <span style={{fontWeight: "bold"}} >Certificates in Database Design, University of Michigan – Coursera</span>
+                            2021, <span style={{fontWeight: "bold"}} >Certificates in Database Design, University of Michigan &#8211; Coursera</span>
                             <ul>
                                 <li>
                                     Intermediate PostgreSQL<br />
@@ -162,7 +162,7 @@ const AboutPage = () => {
                                 </li>
                             </ul>
 
-                            2020, <span style={{fontWeight: "bold"}} >Certificates in Python Programming, University of Michigan – Coursera</span>
+                            2020, <span style={{fontWeight: "bold"}} >Certificates in Python Programming, University of Michigan &#8211; Coursera</span>
                             <ul>
                                 <li>
                                     Python Data Structures<br />
@@ -188,7 +188,7 @@ const AboutPage = () => {
                                 </li>
                             </ul>
 
-                            2021, <span style={{fontWeight: "bold"}} >Certificate in Leadership, University of Michigan – Coursera</span>
+                            2021, <span style={{fontWeight: "bold"}} >Certificate in Leadership, University of Michigan &#8211; Coursera</span>
                             <ul>
                                 <li>
                                     Inspiring and Motivating Individuals

@@ -340,6 +340,46 @@ const ArtinTechServices = () => {
         },
     ];
 
+    const outcomeCards = [
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        streamlined client collaboration
+                    </h3>
+                    <p>
+                        The web portal on the Art in Tech Services website has become a hub for communication with clients, making collaboration more efficient and effective.
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+                content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        helping clients manage their accounts
+                    </h3>
+                    <p>
+                        The Art in Tech Services client collaboration software enables clients to manage their accounts by allowing clients to schedule consultations, start projects, send and receive documents (forthcoming) and manage billing.
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+                content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        modern web programs
+                    </h3>
+                    <p>
+                        The Art in Tech Services web programs mostly use Next.js to create a modern web experience that is fast, responsive, accessible and dynamic.
+                    </p>
+                </Fragment>
+        },
+        
+    ];
+
     return (
         <Fragment>
             <Head>
@@ -383,6 +423,10 @@ const ArtinTechServices = () => {
                         process
                     </h2>       
                     <Tabs tabPanels={tabPanels} />
+                    <h2 className="header_02">
+                        results
+                    </h2>
+                    <InfoCards outcomeCards={outcomeCards} />
                     <h2 className="header_02">
                         discoveries
                     </h2>

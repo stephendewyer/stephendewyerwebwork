@@ -259,6 +259,55 @@ const InfiniteMile = () => {
                 </div>,
         },
     ];
+
+    const outcomeCards = [
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        brought community together in one of the most segregated cities in the United States 
+                    </h3>
+                    <p>
+                        Infinite Mile brought community together from many different walks of life to voice issues affecting the art community in Detroit, Michigan.  Infinite Mile effectively showed the diversity and nuance of the population in Detroit.
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+                content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        empowered representative media coverage of art and culture(s) in Detroit
+                    </h3>
+                    <p>
+                        Infinite Mile gave a platform for the art community in Detroit to publish articles and artist projects about the city, which frequently differed from the narratives published by national and international media companies outside Detroit.
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+                content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        won a number of grants
+                    </h3>
+                    <p>
+                        Infinite Mile won a number of grants and awards including:
+                    </p>
+                    <ul>
+                        <li>
+                            2014 &#8211; 2016, Knights Arts Challenge Detroit $20,000 matching grant
+                        </li>
+                        <li>
+                            2014, Awesome Foundation Detroit Chapter $1,000 grant
+                        </li>
+                    </ul>
+                </Fragment>
+        },
+        
+    ];
+
     return (
         <Fragment>
             <Head>
@@ -301,6 +350,10 @@ const InfiniteMile = () => {
                         process
                     </h2>
                     <Tabs tabPanels={tabPanels} />
+                    <h2 className="header_02">
+                        results
+                    </h2>
+                    <InfoCards outcomeCards={outcomeCards} />
                     <h2 className="header_02">
                         discoveries
                     </h2>

@@ -314,6 +314,48 @@ const PublicArtsCommission = () => {
                 </div>,
         },
     ];
+
+    const outcomeCards = [
+        {
+            id: uuidv4(),
+            content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        a searchable database of all the campaigns, legislation and amendments endorsed by Public Arts Commission
+                    </h3>
+                    <p>
+                        All campaigns, legislation and amendments endorsed by Public Arts Commission are searchable by state on the Public Arts Commission website.  
+                        Eventually, individuals will be able to search all campaigns, legislation and amendments using more specific data.
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+                content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        access to the Public Arts Commission network of individuals for Public Arts Commission-endorsed campaigns with paid subscriptions (forthcoming)
+                    </h3>
+                    <p>
+                        Public Arts Commission-endorsed campaigns with paid subscriptions will be able to access individuals in the Public Arts Commission network who comprise the electorates for their respective offices sought.
+                    </p>
+                </Fragment>
+        },
+        {
+            id: uuidv4(),
+                content: 
+                <Fragment>
+                    <h3 className={styles.detail_heading}>
+                        a platform for the art community to connect and organize (forthcoming)
+                    </h3>
+                    <p>
+                        Public Arts Commission will create a web portal for individuals in the art community to connect and organize with Public Art Commission-endorsed campaigns, movements and events.
+                    </p>
+                </Fragment>
+        },
+        
+    ];
+
     return (
         <Fragment>
             <Head>
@@ -356,6 +398,10 @@ const PublicArtsCommission = () => {
                         process
                     </h2>
                     <Tabs tabPanels={tabPanels} />
+                    <h2 className="header_02">
+                        results
+                    </h2>
+                    <InfoCards outcomeCards={outcomeCards} />
                     <h2 className="header_02">
                         challenges
                     </h2>
