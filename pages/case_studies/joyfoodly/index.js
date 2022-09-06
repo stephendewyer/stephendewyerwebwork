@@ -286,7 +286,7 @@ const Joyfoodly = () => {
                         informed Joyfoodly community
                     </h3>
                     <p>
-                        The Joyfoodly received custom emails about the business closing and access to the Joyful12 cookbook via a new website.
+                        The Joyfoodly community received custom emails about the business closing and access to the Joyful12 cookbook via a new website.
                     </p>
                 </Fragment>
         },
