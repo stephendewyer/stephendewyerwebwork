@@ -347,6 +347,8 @@ const AboutPage = () => {
                                         brand identity design
                                     </li>
                                 </ul>
+                            </div>
+                            <div className={classes.skills_section}>
                                 <h4 className={classes.resume_heading_03}>people:</h4>
                                 <ul>
                                     <li>
