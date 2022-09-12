@@ -270,6 +270,12 @@ const AboutPage = () => {
                                     <li>
                                         requirements gathering
                                     </li>
+                                    <li>
+                                        design systems
+                                    </li>
+                                    <li>
+                                        design thinking
+                                    </li>
                                 </ul>
                             </div>
                             <div className={classes.skills_section}>
@@ -317,6 +323,9 @@ const AboutPage = () => {
                                     <li>
                                         GIT
                                     </li>
+                                    <li>
+                                        Agile software development
+                                    </li>
                                 </ul>
                             </div>
                             <div className={classes.skills_section}>
@@ -336,6 +345,21 @@ const AboutPage = () => {
                                     </li>
                                     <li>
                                         brand identity design
+                                    </li>
+                                </ul>
+                                <h4 className={classes.resume_heading_03}>people:</h4>
+                                <ul>
+                                    <li>
+                                        empathy
+                                    </li>
+                                    <li>
+                                        communication
+                                    </li>
+                                    <li>
+                                        inspiring and motivating individuals
+                                    </li>
+                                    <li>
+                                        building trust with integrity and fairness
                                     </li>
                                 </ul>
                             </div>
