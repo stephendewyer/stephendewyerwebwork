@@ -41,9 +41,9 @@ const PrevArrow = () => {
           onMouseLeave={onMouseLeave}
       >
         {isHovering ? (
-          <Image src={green_left_arrow} alt="green left arrow" /> 
+          <Image src={green_left_arrow} alt="green left arrow" priority/> 
           ) : (
-          <Image src={orange_left_arrow} alt="orange left arrow" />
+          <Image src={orange_left_arrow} alt="orange left arrow" priority/>
         )}    
     </div>
   );
@@ -76,10 +76,10 @@ export default class JoyfoodlySlideCarousel extends Component {
       <div className={classes.slide_carousel}>
         <Slider ref={c => (this.slider = c)} {...settings}>
           <div key={1}>
-            <Image src={slide_01} alt="Joyfoodly slide 1" />
+            <Image src={slide_01} alt="Joyfoodly slide 1" priority/>
           </div>
           <div key={2}>
-            <Image src={slide_02} alt="Joyfoodly slide 2" />
+            <Image src={slide_02} alt="Joyfoodly slide 2" priority/>
           </div>
         </Slider>
         <div className={classes.arrows}>

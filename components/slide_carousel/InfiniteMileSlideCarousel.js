@@ -51,9 +51,9 @@ const PrevArrow = () => {
           onMouseLeave={onMouseLeave}
       >
         {isHovering ? (
-          <Image src={green_left_arrow} alt="green left arrow" /> 
+          <Image src={green_left_arrow} alt="green left arrow" priority/> 
           ) : (
-          <Image src={orange_left_arrow} alt="orange left arrow" />
+          <Image src={orange_left_arrow} alt="orange left arrow" priority/>
         )}    
     </div>
   );
@@ -86,40 +86,40 @@ export default class InfiniteMileSlideCarousel extends Component {
       <div className={classes.slide_carousel}>
         <Slider ref={c => (this.slider = c)} {...settings}>
           <div key={1}>
-            <Image src={slide_01} alt="Infinite Mile slide 1" />
+            <Image src={slide_02} alt="Infinite Mile slide 1" priority/>
           </div>
           <div key={2}>
-            <Image src={slide_02} alt="Infinite Mile slide 2" />
+            <Image src={slide_01} alt="Infinite Mile slide 2" priority/>
           </div>
           <div key={3}>
-            <Image src={slide_03} alt="Infinite Mile slide 3" />
+            <Image src={slide_03} alt="Infinite Mile slide 3" priority/>
           </div>
           <div key={4}>
-            <Image src={slide_04} alt="Infinite Mile slide 4" />
+            <Image src={slide_04} alt="Infinite Mile slide 4" priority/>
           </div>
           <div key={5}>
-            <Image src={slide_05} alt="Infinite Mile slide 5" />
+            <Image src={slide_05} alt="Infinite Mile slide 5" priority/>
           </div>
           <div key={6}>
-            <Image src={slide_06} alt="Infinite Mile slide 6" />
+            <Image src={slide_06} alt="Infinite Mile slide 6" priority/>
           </div>
           <div key={7}>
-            <Image src={slide_07} alt="Infinite Mile slide 7" />
+            <Image src={slide_07} alt="Infinite Mile slide 7" priority/>
           </div>
           <div key={8}>
-            <Image src={slide_08} alt="Infinite Mile slide 8" />
+            <Image src={slide_08} alt="Infinite Mile slide 8" priority/>
           </div>
           <div key={9}>
-            <Image src={slide_09} alt="Infinite Mile slide 9" />
+            <Image src={slide_09} alt="Infinite Mile slide 9" priority/>
           </div>
           <div key={10}>
-            <Image src={slide_10} alt="Infinite Mile slide 10" />
+            <Image src={slide_10} alt="Infinite Mile slide 10" priority/>
           </div>
           <div key={11}>
-            <Image src={slide_11} alt="Infinite Mile slide 11" />
+            <Image src={slide_11} alt="Infinite Mile slide 11" priority/>
           </div>
           <div key={12}>
-            <Image src={slide_12} alt="Infinite Mile slide 12" />
+            <Image src={slide_12} alt="Infinite Mile slide 12" priority/>
           </div>
         </Slider>
         <div className={classes.arrows}>
