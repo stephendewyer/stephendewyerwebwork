@@ -7,8 +7,9 @@ import orange_right_arrow from '../../public/images/arrows/arrow_right_01.png';
 import green_right_arrow from '../../public/images/arrows/arrow_right_02.png';
 import slide_01 from '../../public/images/case_studies/Public_Arts_Commission/mockups/Public_Arts_Commission_case_study_01.jpg';
 import slide_02 from '../../public/images/case_studies/Public_Arts_Commission/mockups/Public_Arts_Commission_case_study_02.jpg';
-import slide_03 from '../../public/images/case_studies/Public_Arts_Commission/mockups/Public_Arts_Commission_case_study_05.jpg';
-import slide_04 from '../../public/images/case_studies/Public_Arts_Commission/mockups/Public_Arts_Commission_case_study_03.jpg';
+import slide_03 from '../../public/images/case_studies/Public_Arts_Commission/mockups/Public_Arts_Commission_case_study_03.jpg';
+import slide_04 from '../../public/images/case_studies/Public_Arts_Commission/mockups/Public_Arts_Commission_case_study_04.jpg';
+import slide_05 from '../../public/images/case_studies/Public_Arts_Commission/mockups/Public_Arts_Commission_case_study_05.jpg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -88,6 +89,9 @@ export default class PublicArtsCommissionSlideCarousel extends Component {
           </div>
           <div key={4}>
             <Image src={slide_04} alt="Public Arts Commission slide 4" />
+          </div>
+          <div key={5}>
+            <Image src={slide_05} alt="Public Arts Commission slide 5" />
           </div>
         </Slider>
         <div className={classes.arrows}>

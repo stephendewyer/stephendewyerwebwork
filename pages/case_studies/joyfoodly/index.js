@@ -303,23 +303,6 @@ const Joyfoodly = () => {
             </Head>
             
             <div className="container">
-                <div className="breadcrumbs">
-                    <Link href="/" aria-label="link to index page">
-                        index
-                    </Link>
-                    <p className="arrow">
-                        &#62;
-                    </p>
-                    <Link href="/case_studies/" aria-label="link to case studies page">
-                        case studies
-                    </Link>
-                    <p className="arrow">
-                        &#62;
-                    </p>
-                    <Link href="/case_studies/joyfoodly" aria-label="link to Joyfoodly page">
-                        Joyfoodly
-                    </Link>
-                </div>
                 <h1 className="header">
                     Joyfoodly legacy website<br />
                     2022

@@ -9,6 +9,14 @@ import slide_01 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups
 import slide_02 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups/Infinite_Mile_LLC_case_study_01.jpg';
 import slide_03 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups/Infinite_Mile_LLC_case_study_03.jpg';
 import slide_04 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups/Infinite_Mile_LLC_case_study_04.jpg';
+import slide_05 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups/Infinite_Mile_LLC_case_study_05.jpg';
+import slide_06 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups/Infinite_Mile_LLC_case_study_06.jpg';
+import slide_07 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups/Infinite_Mile_LLC_case_study_07.jpg';
+import slide_08 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups/Infinite_Mile_LLC_case_study_08.jpg';
+import slide_09 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups/Infinite_Mile_LLC_case_study_09.jpg';
+import slide_10 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups/Infinite_Mile_LLC_case_study_10.jpg';
+import slide_11 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups/Infinite_Mile_LLC_case_study_11.jpg';
+import slide_12 from '../../public/images/case_studies/Infinite_Mile_LLC/mockups/Infinite_Mile_LLC_case_study_12.jpg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -88,6 +96,30 @@ export default class InfiniteMileSlideCarousel extends Component {
           </div>
           <div key={4}>
             <Image src={slide_04} alt="Infinite Mile slide 4" />
+          </div>
+          <div key={5}>
+            <Image src={slide_05} alt="Infinite Mile slide 5" />
+          </div>
+          <div key={6}>
+            <Image src={slide_06} alt="Infinite Mile slide 6" />
+          </div>
+          <div key={7}>
+            <Image src={slide_07} alt="Infinite Mile slide 7" />
+          </div>
+          <div key={8}>
+            <Image src={slide_08} alt="Infinite Mile slide 8" />
+          </div>
+          <div key={9}>
+            <Image src={slide_09} alt="Infinite Mile slide 9" />
+          </div>
+          <div key={10}>
+            <Image src={slide_10} alt="Infinite Mile slide 10" />
+          </div>
+          <div key={11}>
+            <Image src={slide_11} alt="Infinite Mile slide 11" />
+          </div>
+          <div key={12}>
+            <Image src={slide_12} alt="Infinite Mile slide 12" />
           </div>
         </Slider>
         <div className={classes.arrows}>
