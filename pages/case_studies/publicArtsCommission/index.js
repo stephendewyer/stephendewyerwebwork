@@ -367,7 +367,7 @@ const PublicArtsCommission = () => {
             <div className="container">
                 <h1 className="header">
                     Public Arts Commission web programs<br/>
-                    2017 &ndash; present
+                    <span style={{color: "#545451"}} >2017 &ndash; present</span>
                 </h1>
                 <div className={styles.slider_case_study}>
                     <PublicArtsCommissionSlideCarousel />

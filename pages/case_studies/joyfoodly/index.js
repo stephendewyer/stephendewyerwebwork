@@ -305,7 +305,7 @@ const Joyfoodly = () => {
             <div className="container">
                 <h1 className="header">
                     Joyfoodly legacy website<br />
-                    2022
+                    <span style={{color: "#545451"}} >2022</span>
                 </h1>
                 <div className={styles.slider_case_study}>
                     <JoyfoodlySlideCarousel />

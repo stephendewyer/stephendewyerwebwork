@@ -391,7 +391,7 @@ const ArtinTechServices = () => {
             <div className="container">
                 <h1 className="header">
                     Art in Tech Services Inc web programs<br/>
-                    2021 &ndash; present
+                    <span style={{color: "#545451"}} >2021 &ndash; present</span>
                 </h1>
                 <div className={styles.slider_case_study}>
                     <ArtinTechServicesSlideCarousel />

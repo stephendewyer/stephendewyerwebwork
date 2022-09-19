@@ -319,7 +319,7 @@ const InfiniteMile = () => {
             <div className="container">
                 <h1 className="header">
                     Infinite Mile LLC (∞ mile) website<br />
-                    2013 &ndash; 2017
+                    <span style={{color: "#545451"}} >2013 &ndash; 2017</span>
                 </h1>
                 <div className={styles.slider_case_study}>
                     <InfiniteMileSlideCarousel />

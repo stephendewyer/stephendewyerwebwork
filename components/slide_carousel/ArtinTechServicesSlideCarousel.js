@@ -18,7 +18,6 @@ import slide_10 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/
 import slide_11 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_11.jpg';
 import slide_12 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_12.jpg';
 import slide_13 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_13.jpg';
-import slide_14 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_14.jpg';
 import slide_15 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_15.jpg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -126,9 +125,6 @@ export default class ArtinTechServicesSlideCarousel extends Component {
           </div>
           <div key={13}>
             <Image src={slide_13} alt="Art in Tech Services Inc slide 13" priority/>
-          </div>
-          <div key={14}>
-            <Image src={slide_14} alt="Art in Tech Services Inc slide 14" priority/>
           </div>
           <div key={15}>
             <Image src={slide_15} alt="Art in Tech Services Inc slide 15" priority/>
