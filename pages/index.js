@@ -166,7 +166,7 @@ const IndexPage = () => {
                   <Image src={artInTechServicesLogo} layout="responsive" alt="Art in Tech Services logo illustration"/>
                 </div>
                 <h3 className={styles.intro_heading}>
-                  using advancements in art and digital technology to improve design for the public and businesses
+                  improving human experiences of technology and delivering elegant solutions to complex problems
                 </h3>
               </div>
 
