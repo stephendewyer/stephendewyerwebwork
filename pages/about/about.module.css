@@ -66,22 +66,48 @@
     max-width: 1440px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 20px auto;
     padding: 0 40px;
 }
 
 .experience {
-    width: 38%;
-    padding-right: 20px;
+    width: 35%;
+    padding: 0 20px 40px 20px;
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+    box-sizing: border-box;
 }
 
 .certificates_and_awards {
-    width: 38%;
-    padding-right: 20px;
+    width: 35%;
+    padding: 0 20px 40px 20px;
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+    box-sizing: border-box;
 }
 
 .skills {
-    width: 24%;
+    width: 25%;
+    padding: 0 20px 40px 20px;
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+    box-sizing: border-box;
 }
 
 .resume_heading_01 {
@@ -170,20 +196,20 @@
     
     .experience {
         width: auto;
-        padding: 0;
-        margin: 0;
+        padding: 0 20px 20px 20px;
+        margin: 0 0 20px 0;
     }
     
     .certificates_and_awards {
         width: auto;
-        padding: 0;
-        margin: 0;
+        padding: 0 20px 20px 20px;
+        margin: 0 0 20px 0;
     }
     
     .skills {
         width: auto;
-        padding: 0;
-        margin: 0;
+        padding: 0 20px 20px 20px;
+        margin: 0 0 20px 0;
     }
     
     .resume_heading_01 {
