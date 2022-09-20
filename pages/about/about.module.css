@@ -232,7 +232,7 @@
 
     .skills_sections {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
     }
     
