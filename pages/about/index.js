@@ -45,7 +45,7 @@ const AboutPage = () => {
                         </h2>
                         <p className={classes.profile_info_paragraphs}>
                             I worked with stakeholders including the University of Michigan Stamps School of Art and Design and Knight Foundation to produce critically-acclaimed projects that use advancements in art and digital technology. 
-                            In my work, I brings together disparate parts of the community through multi-disciplinary projects.
+                            In my work, I bring together disparate parts of the community through multi-disciplinary projects.
                         </p>
                         
                     </div>
