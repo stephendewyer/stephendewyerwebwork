@@ -72,92 +72,12 @@ const IndexPage = () => {
         <h2 className="header_02">
           welcome!
         </h2>
-        <div className={styles.myStory}>
-          <h3 className="header_03">
-            I am an award-winning
-          </h3>
-          <div className={styles.myStoryCards}>
-
-            <div className={styles.myStoryCard}>
-                <div className={styles.myStoryCardImage}>
-                  <Image src={UXDesigner} layout="responsive" alt="user experience (UX) designer illustration"/>
-                </div>
-                <h3 className={styles.myStoryCardHeading}>
-                  UX designer
-                </h3>
-            </div>
-            <div className={styles.myStoryCard}>
-                <div className={styles.myStoryCardImage}>
-                  <Image src={fullStackDeveloper} layout="responsive" alt="full-stack web developer illustration"/>
-                </div>
-                <h3 className={styles.myStoryCardHeading}>
-                  full-stack web developer
-                </h3>
-              </div>
-              <div className={styles.myStoryCard}>
-                <div className={styles.myStoryCardImage}>
-                  <Image src={artist} layout="responsive" alt="artist illustration"/>
-                </div>
-                <h3 className={styles.myStoryCardHeading}>
-                  artist
-                </h3>
-              </div>
-              <div className={styles.myStoryCard}>
-                <div className={styles.myStoryCardImage}>
-                  <Image src={community_organizer} layout="responsive" alt="organizer illustration"/>
-                </div>
-                <h3 className={styles.myStoryCardHeading}>
-                  organizer
-                </h3>
-              </div>
-          </div>
-          <h3 className="header_03">
-            with over 10 years of experience creating web programs for organizations including
-          </h3>
-          <div className={styles.myStoryCards}>
-
-              <div className={styles.myStoryCard}>
-                <div className={styles.myStoryCardImage}>
-                  <Image src={institutions} layout="responsive" alt="institutions illustration"/>
-                </div>
-                <h3 className={styles.myStoryCardHeading}>
-                  public institutions
-                </h3>
-              </div>
-              <div className={styles.myStoryCard}>
-                <div className={styles.myStoryCardImage}>
-                  <Image src={businesses} layout="responsive" alt="businesses illustration"/>
-                </div>
-                <h3 className={styles.myStoryCardHeading}>
-                  businesses
-                </h3>
-              </div>
-              <div className={styles.myStoryCard}>
-                <div className={styles.myStoryCardImage}>
-                  <Image src={campaignsAndMovements} layout="responsive" alt="businesses illustration"/>
-                </div>
-                <h3 className={styles.myStoryCardHeading}>
-                  campaigns and movements
-                </h3>
-              </div>
-          </div>
-          <h3 className="header_03">
-            Improving human experiences of technology is my passion.  I create digital products that users
-          </h3>
-          <div className={styles.myStoryCards}>
-            <div className={styles.myStoryCard}>
-              <div className={styles.myStoryCardImage}>
-                <Image src={heart} layout="responsive" alt="love illustration"/>
-              </div>
-              <h3 className={styles.myStoryCardHeading}>
-                love
-              </h3>
-            </div>
-          </div>
-          <h3 className="header_03">
+        <p className={styles.myStory}>
+            I am an award-winning <span style={{fontWeight: "bold"}}>UX designer</span>, <span style={{fontWeight: "bold"}}>full-stack web developer</span>, <span style={{fontWeight: "bold"}}>artist</span> and <span style={{fontWeight: "bold"}}>organizer</span> with over ten years of experience creating web programs for public institutions, businesses, campaigns and movements.  
+            Improving human experiences of technology is my passion.  
+            I create digital products that users love.  
             My experience allows me to create web programs that bring community together and provide value for organizations.
-          </h3>
-        </div>
+        </p>
 
         <div className={styles.client_reviews}>
           <div className={styles.client_review_card}>
