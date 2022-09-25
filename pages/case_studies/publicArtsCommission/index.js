@@ -28,13 +28,13 @@ const PublicArtsCommission = () => {
             content: 
                 <Fragment>
                     <h3 className={styles.detail_heading}>
-                        about the client:
+                        about the client
                     </h3>
                     <p>
                         Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.
                     </p>
                     <h3 className={styles.detail_heading}>
-                        my role:
+                        my role
                     </h3>
                     <p>
                         Founder of Public Arts Commission
@@ -46,7 +46,7 @@ const PublicArtsCommission = () => {
             content: 
                 <Fragment>
                     <h3 className={styles.detail_heading}>
-                        services I provided:
+                        services I provided
                     </h3>
                     <ul>
                         <li>

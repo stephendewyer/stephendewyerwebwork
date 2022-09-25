@@ -26,13 +26,13 @@ const Joyfoodly = () => {
             content: 
                 <Fragment>
                     <h3 className={styles.detail_heading}>
-                        about the client:
+                        about the client
                     </h3>
                     <p>
                         Joyfoodly helps families learn to eat more fruits and vegetables, offering a downloadable cookbook called Joyful12.
                     </p>
                     <h3 className={styles.detail_heading}>
-                        my role:
+                        my role
                     </h3>
                     <p>
                         Founding Director of Art in Tech Services Inc
@@ -44,7 +44,7 @@ const Joyfoodly = () => {
             content: 
                 <Fragment>
                     <h3 className={styles.detail_heading}>
-                        services I provided:
+                        services I provided
                     </h3>
                     <ul>
                         <li>
@@ -67,7 +67,7 @@ const Joyfoodly = () => {
                 content: 
                 <Fragment>
                     <h3 className={styles.detail_heading}>
-                        tools I used:
+                        tools I used
                     </h3>
                     <ul>
                         <li>

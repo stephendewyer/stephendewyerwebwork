@@ -13,51 +13,49 @@
   position: relative;
   height: auto;
   width: 100%;
-  margin-bottom: 50px;
+  margin: 0 auto 40px auto;
 }
 
-.intro_info {
+.myStory {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  max-width: 1920px;
+  flex-direction: column;
+  max-width: 1400px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 60px;
-  margin-bottom: 30px;
+  padding: 0 20px;
+  margin: 0 auto 40px auto;
 }
 
-.intro_info_section {
-  width: 50%;
+.myStoryCards {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 0 20px 0;
 }
 
-.intro_paragraphs {
-  font-size: 26px;
-  font-weight: bold;
-  color: #7A7296;
-  padding: 15px 0;
-}
-
-.intro_cards {
- display: flex;
- flex-direction: column;
- margin-left: 30px;
- margin-top: 15px;
-}
-
-.intro_card {
+.myStoryCard {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 10px 0;
+  width: 300px;
+  padding: 20px;
+  margin: 0 10px 20px 10px;
+  box-sizing: border-box;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
 }
 
-.intro_image {
+.myStoryCardImage {
   width: 150px;
 }
 
-.intro_heading {
+.myStoryCardHeading {
   max-width: 640px;
   width: 100%;
   font-size: 26px;
@@ -132,41 +130,41 @@
 @media screen and (max-width: 750px){
 
   .intro_video {
-    margin-bottom: 40px;
+    margin: 0 0 20px 0;
   }
 
-  .intro_info {
+  .myStory {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
     width: 100%;
-    padding: 10px 30px;
-    margin-bottom: 15px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
   }
 
-  .intro_info_section {
+  .myStoryCards {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 10px 0;
     width: 100%;
   }
-  
-  .intro_paragraphs {
-    font-size: 18px;
-    font-weight: bold;
-    color: #7A7296;
-    padding: 15px 0;
+
+  .myStoryCard {
+    align-items: center;
+    max-width: 300px;
+    min-width: 200px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto 20px auto;
   }
   
-  .intro_cards {
-   display: flex;
-   flex-direction: column;
-   margin-left: 15px;
-   margin-top: 15px;
-  }
-  
-  .intro_image {
+  .myStoryCardImage {
     width: 100px;
   }
   
-  .intro_heading {
+  .myStoryCardHeading {
     font-size: 18px;
     padding-left: 15px;
   }

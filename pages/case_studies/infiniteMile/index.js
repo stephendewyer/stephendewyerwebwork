@@ -28,13 +28,13 @@ const InfiniteMile = () => {
             content: 
                 <Fragment>
                     <h3 className={styles.detail_heading}>
-                        about the client:
+                        about the client
                     </h3>
                     <p>
                         Infinite Mile LLC was an award-winning journal of art and culture(s) in Detroit, Michigan that published monthly online issues and annual print anthologies.
                     </p>
                     <h3 className={styles.detail_heading}>
-                        my role:
+                        my role
                     </h3>
                     <p>
                         Co-Founding Editor of Infinite Mile
@@ -46,7 +46,7 @@ const InfiniteMile = () => {
             content: 
                 <Fragment>
                     <h3 className={styles.detail_heading}>
-                        services I provided:
+                        services I provided
                     </h3>
                     <ul>
                         <li>
@@ -72,7 +72,7 @@ const InfiniteMile = () => {
                 content: 
                 <Fragment>
                     <h3 className={styles.detail_heading}>
-                        tools I used:
+                        tools I used
                     </h3>
                     <ul>
                         <li>

@@ -3,7 +3,7 @@ body {
   background-color: #FFE9C0;
   padding: 0;
   margin: 0;
-  font-family: "CenturyGothic","Century Gothic",Verdana,sans-serif;;
+  font-family: "CenturyGothic","Century Gothic",Verdana,sans-serif;
   color: #514C64;
   font-size: 24px;
 }
@@ -64,7 +64,7 @@ figcaption {
 }
 
 .header {
-  margin-bottom: 20px;
+  margin: 0 auto 40px auto;
   padding: 0 20px;
   font-weight: bold;
   font-size: 28px;
@@ -74,13 +74,22 @@ figcaption {
 
 .header_02 {
   font-size: 28px;
-  margin: 0 auto;
-  padding: 20px 0;
+  margin: 0 auto 40px auto;
   max-width: 640px;
-  min-width: 400px;
   font-weight: bold;
   color: #7A7296;
   text-align: center;
+}
+
+.header_03 {
+  color: #545451;
+  font-size: 24px;
+  margin: 0 auto 40px auto;
+  width: 100%;
+  max-width: 860px;
+  padding: 0 40px;
+  font-weight: bold;
+  text-align: left;
 }
 
 .paragraphs_container {
@@ -114,14 +123,25 @@ figcaption {
 
   .header {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: 0 auto 20px auto;
   }
 
   .header_02 {
     font-size: 18px;
-    margin: 0 auto;
-    padding: 10px 20px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
     min-width: 0;
+  }
+
+  .header_03 {
+    color: #545451;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    font-weight: bold;
+    text-align: left;
   }
 
   .paragraphs {

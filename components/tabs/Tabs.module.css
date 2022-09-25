@@ -1,6 +1,6 @@
 .tabs_container {
-    padding: 0 80px;
-    margin: 0;
+    padding: 0 40px;
+    margin: 0 0 40px 0;
 }
 
 .tabs {
@@ -68,6 +68,7 @@
 
     .tabs_container {
         padding: 0 20px;
+        margin: 0 0 20px 0;
     }
     
     .tabs {

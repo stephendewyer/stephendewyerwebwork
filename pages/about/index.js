@@ -38,22 +38,31 @@ const AboutPage = () => {
                         /> 
                     </div>
                     <div className={classes.profile_info}>
+                        <h2 className={classes.aboutHeading02}>hi!<br /><br />
+                            I create elegant solutions to complex problems<br /><br />
+                            improving human experiences of technology is my goal<br /><br />
+                            using my experience as an award-winning UX designer, full-stack web developer, artist and organizer allows me to create world-class digital programs and products that provide value and bring community together
+                        </h2>
                         <p className={classes.profile_info_paragraphs}>
-                            stephen garrett dewyer is an award-winning <span style={{fontWeight: "bold"}} >UX designer</span>, <span style={{fontWeight: "bold"}} >full-stack web developer</span>, <span style={{fontWeight: "bold"}} >artist</span> and <span style={{fontWeight: "bold"}} >organizer</span> with over ten years of experience creating web programs for organizations. 
-                            He worked with stakeholders including the University of Michigan Stamps School of Art and Design and Knight Foundation to produce critically-acclaimed projects that use advancements in art and digital technology. 
-                            In his work, stephen brings together disparate parts of the community through multi-disciplinary projects. 
-                            He is interested in designing and developing creative, effective and attractive web programs that improve user experiences for the public and businesses.
+                            I worked with stakeholders including the University of Michigan Stamps School of Art and Design and Knight Foundation to produce critically-acclaimed projects that use advancements in art and digital technology. 
+                            In my work, I brings together disparate parts of the community through multi-disciplinary projects.
                         </p>
-                        <div className={classes.resume_section}>
-                            <h2 className={classes.resume_heading} >
-                                resume
-                            </h2>
-                            <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref={true} aria-label="link to resume PDF" >
-                                <a target="_blank" rel="noopener noreferrer">
-                                    <ResumeButton passHref={true} />
-                                </a>
-                            </Link>
-                        </div>
+                        
+                    </div>
+                </div>
+                <div className={classes.resume_section}>
+                    <div className={classes.resumeLeftColumn}>
+
+                    </div>
+                    <h2 className={classes.resume_heading} >
+                        resume
+                    </h2>
+                    <div className={classes.resumePDF}>    
+                        <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref={true} aria-label="link to resume PDF" >
+                            <a target="_blank" rel="noopener noreferrer">
+                                <ResumeButton passHref={true} />
+                            </a>
+                        </Link>
                     </div>
                 </div>
                 <div className={classes.about_section_02}>
@@ -242,130 +251,120 @@ const AboutPage = () => {
                         <h3 className={classes.resume_heading_01} >
                             skills
                         </h3>
-                        <div className={classes.skills_sections}>
-                            <div className={classes.skills_section}>
-                                <h4 className={classes.resume_heading_03}>UX design:</h4>
-                                <ul>
-                                    <li>
-                                        wire framing
-                                    </li>
-                                    <li>
-                                        prototyping
-                                    </li>
-                                    <li>
-                                        user research
-                                    </li>
-                                    <li>
-                                        user testing
-                                    </li>
-                                    <li>
-                                        information architecture
-                                    </li>
-                                    <li>
-                                        user flows
-                                    </li>
-                                    <li>
-                                        user interviews
-                                    </li>
-                                    <li>
-                                        requirements gathering
-                                    </li>
-                                    <li>
-                                        design systems
-                                    </li>
-                                    <li>
-                                        design thinking
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={classes.skills_section}>
-                                <h4 className={classes.resume_heading_03}>full-stack web development:</h4>
-                                <ul>
-                                    <li>
-                                        Next.js
-                                    </li>
-                                    <li>
-                                        React
-                                    </li>
-                                    <li>
-                                        Node.js
-                                    </li>
-                                    <li>
-                                        Python
-                                    </li>
-                                    <li>
-                                        JavaScript
-                                    </li>
-                                    <li>
-                                        PHP
-                                    </li>
-                                    <li>
-                                        HTML
-                                    </li>
-                                    <li>
-                                        CSS
-                                    </li>
-                                    <li>
-                                        JSON
-                                    </li>
-                                    <li>
-                                        PostgreSQL
-                                    </li>
-                                    <li>
-                                        MySQL
-                                    </li>
-                                    <li>
-                                        MongoDB
-                                    </li>
-                                    <li>
-                                        WCAG 2.1
-                                    </li>
-                                    <li>
-                                        GIT
-                                    </li>
-                                    <li>
-                                        Agile software development
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={classes.skills_section}>
-                                <h4 className={classes.resume_heading_03}>art and design:</h4>
-                                <ul>
-                                    <li>
-                                        photography
-                                    </li>
-                                    <li>
-                                        videography
-                                    </li>
-                                    <li>
-                                        graphic design
-                                    </li>
-                                    <li>
-                                        motion graphics
-                                    </li>
-                                    <li>
-                                        brand identity design
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={classes.skills_section}>
-                                <h4 className={classes.resume_heading_03}>people:</h4>
-                                <ul>
-                                    <li>
-                                        empathy
-                                    </li>
-                                    <li>
-                                        communication
-                                    </li>
-                                    <li>
-                                        inspiring and motivating individuals
-                                    </li>
-                                    <li>
-                                        building trust with integrity and fairness
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <h4 className={classes.resume_heading_02}>UX design</h4>
+                        <ul>
+                            <li>
+                                wire framing
+                            </li>
+                            <li>
+                                prototyping
+                            </li>
+                            <li>
+                                user research
+                            </li>
+                            <li>
+                                user testing
+                            </li>
+                            <li>
+                                information architecture
+                            </li>
+                            <li>
+                                user flows
+                            </li>
+                            <li>
+                                user interviews
+                            </li>
+                            <li>
+                                requirements gathering
+                            </li>
+                            <li>
+                                design systems
+                            </li>
+                            <li>
+                                design thinking
+                            </li>
+                        </ul>
+                        <h4 className={classes.resume_heading_02}>full-stack web development</h4>
+                        <ul>
+                            <li>
+                                Next.js
+                            </li>
+                            <li>
+                                React
+                            </li>
+                            <li>
+                                Node.js
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                JavaScript
+                            </li>
+                            <li>
+                                PHP
+                            </li>
+                            <li>
+                                HTML
+                            </li>
+                            <li>
+                                CSS
+                            </li>
+                            <li>
+                                JSON
+                            </li>
+                            <li>
+                                PostgreSQL
+                            </li>
+                            <li>
+                                MySQL
+                            </li>
+                            <li>
+                                MongoDB
+                            </li>
+                            <li>
+                                WCAG 2.1
+                            </li>
+                            <li>
+                                GIT
+                            </li>
+                            <li>
+                                Agile software development
+                            </li>
+                        </ul>
+                        <h4 className={classes.resume_heading_02}>art and design</h4>
+                        <ul>
+                            <li>
+                                photography
+                            </li>
+                            <li>
+                                videography
+                            </li>
+                            <li>
+                                graphic design
+                            </li>
+                            <li>
+                                motion graphics
+                            </li>
+                            <li>
+                                brand identity design
+                            </li>
+                        </ul>
+                        <h4 className={classes.resume_heading_02}>people</h4>
+                        <ul>
+                            <li>
+                                empathy
+                            </li>
+                            <li>
+                                communication
+                            </li>
+                            <li>
+                                inspiring and motivating individuals
+                            </li>
+                            <li>
+                                building trust with integrity and fairness
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

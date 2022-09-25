@@ -1,7 +1,7 @@
 .caseStudyInfoCards {
     max-width: 1340px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,6 +29,7 @@
     .caseStudyInfoCards {
         flex-direction: column;
         justify-content: flex-start;
+        margin: 0 0 20px 0;
         padding: 0 20px;
         
     }

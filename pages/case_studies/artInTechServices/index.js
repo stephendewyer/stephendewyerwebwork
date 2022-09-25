@@ -27,13 +27,13 @@ const ArtinTechServices = () => {
             content: 
                 <Fragment>
                     <h3 className={styles.detail_heading}>
-                        about the client:
+                        about the client
                     </h3>
                     <p>
                         Art in Tech Services Inc is a company that uses advancements in art and digital technology to improve design for businesses and the public.
                     </p>
                     <h3 className={styles.detail_heading}>
-                        my role:
+                        my role
                     </h3>
                     <p>
                         Founding Director of Art in Tech Services
@@ -45,7 +45,7 @@ const ArtinTechServices = () => {
             content: 
                 <Fragment>
                     <h3 className={styles.detail_heading}>
-                        services I provided:
+                        services I provided
                     </h3>
                     <ul>
                         <li>
@@ -71,7 +71,7 @@ const ArtinTechServices = () => {
                 content: 
                 <Fragment>
                     <h3 className={styles.detail_heading}>
-                            tools I used:
+                            tools I used
                     </h3>
                     <ul>
                         <li>
