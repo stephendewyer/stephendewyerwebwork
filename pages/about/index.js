@@ -38,7 +38,7 @@ const AboutPage = () => {
                         /> 
                     </div>
                     <div className={classes.profile_info}>
-                        <h2 className={classes.aboutHeading02}>Hi!<br /><br />
+                        <h2 className={classes.aboutHeading02}>hi!<br /><br />
                             I create elegant solutions to complex problems.<br /><br />
                             Improving human experiences of technology is my goal.<br /><br />
                             Using my experience as an award-winning UX designer, full-stack web developer, artist and organizer allows me to create world-class digital programs and products that provide value and bring community together.
