@@ -39,6 +39,12 @@ const InfiniteMile = () => {
                     <p>
                         Co-Founding Editor of Infinite Mile
                     </p>
+                    <h3 className={styles.detail_heading}>
+                        team
+                    </h3>
+                    <p>
+                        Infinite Mile leadership, staff and contributors
+                    </p>
                 </Fragment>
         },
         {

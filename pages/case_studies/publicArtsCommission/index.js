@@ -39,6 +39,12 @@ const PublicArtsCommission = () => {
                     <p>
                         Founder of Public Arts Commission
                     </p>
+                    <h3 className={styles.detail_heading}>
+                        team
+                    </h3>
+                    <p>
+                        Public Arts Commission Board of Directors
+                    </p>
                 </Fragment>
         },
         {
