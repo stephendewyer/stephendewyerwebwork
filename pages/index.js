@@ -73,7 +73,7 @@ const IndexPage = () => {
           welcome!
         </h2>
         <p className={styles.myStory}>
-            I am <span style={{fontWeight: "bold"}}>stephen dewyer</span>, an award-winning <span style={{fontWeight: "bold"}}>UX designer</span>, <span style={{fontWeight: "bold"}}>full-stack web developer</span>, <span style={{fontWeight: "bold"}}>artist</span> and <span style={{fontWeight: "bold"}}>organizer</span> with over ten years of experience creating web programs for public institutions, businesses, campaigns and movements.  
+            My name is <span style={{fontWeight: "bold"}}>stephen dewyer</span> and I'm an award-winning <span style={{fontWeight: "bold"}}>UX designer</span>, <span style={{fontWeight: "bold"}}>full-stack web developer</span>, <span style={{fontWeight: "bold"}}>artist</span> and <span style={{fontWeight: "bold"}}>organizer</span> with over ten years of experience creating web programs for public institutions, businesses, campaigns and movements.  
             Improving human experiences of technology is my passion.  
             I create digital products that users love.  
             My experience allows me to create web programs that bring community together and provide value for organizations.
