@@ -244,7 +244,7 @@ const Contact = () => {
                     contact
                 </h1>
                 <h2 className="header_02">
-                    how can stephen garrett dewyer help you?  
+                    how can I help you?  
                 </h2>
                 <form className={classes.form} onSubmit={submitHandler} noValidate >
                     <p className={classes.indicates_required}>

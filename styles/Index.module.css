@@ -16,20 +16,65 @@
   margin: 0 auto 40px auto;
 }
 
-.myStory {
-  max-width: 940px;
+.workSection {
   width: 100%;
-  padding: 0 40px;
-  margin: 0 auto 80px auto;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.aboutSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.myStory {
+  max-width: 800px;
+  width: 75%;
   color: #545451;
   font-size: 28px;
+  margin: 0;
+}
+
+.learnAboutMeButton {
+  padding-right: 20px;
+}
+
+.viewCaseStudiesButton {
+  padding-left: 20px;
+}
+
+.contactButton {
+  padding-left: 20px;
 }
 
 .client_reviews {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 60px auto;
 }
 
 .client_review_card {
@@ -94,15 +139,74 @@
     margin: 0 0 20px 0;
   }
 
-  .myStory {
+  .workSection {
     width: 100%;
-    padding: 10px 20px;
-    margin-bottom: 20px;
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+  }
+  
+  .aboutSection {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .contactSection {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .myStory {
+    max-width: 100%;
+    width: 100%;
+    color: #545451;
     font-size: 18px;
+    margin: 0;
   }
 
+  .learnAboutMeButton {
+    padding-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .viewCaseStudiesButton {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .contactButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+
   .client_reviews {
-    margin: 0;
+    margin: 0 0 40px 0;
   }
 
   .client_review_card {

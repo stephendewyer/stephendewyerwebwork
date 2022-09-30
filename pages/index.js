@@ -3,16 +3,11 @@ import React, { Fragment, useEffect } from 'react';
 import Image from 'next/image';
 import VideoJS from '../components/videoJS/videoJS' // point to where the functional component is stored
 import styles from '../styles/Index.module.css';
+import Link from 'next/link';
+import MyLink from '../public/util/myLink';
+import Button from '../components/button/button.js';
 import quoteIconStart from '../public/images/icons/quote_icon_start.svg';
 import quoteIconEnd from '../public/images/icons/quote_icon_end.svg';
-import fullStackDeveloper from '../public/images/illustrations/full-stack_web_development.png';
-import UXDesigner from '../public/images/illustrations/UX_design.png';
-import artist from '../public/images/illustrations/art.png';
-import community_organizer from '../public/images/illustrations/organizing.png';
-import institutions from '../public/images/illustrations/institutions.png';
-import businesses from '../public/images/illustrations/businesses.png';
-import campaignsAndMovements from '../public/images/illustrations/campaigns_and_movements.png';
-import heart from '../public/images/illustrations/heart.png';
 
 const IndexPage = () => {
 
@@ -72,13 +67,39 @@ const IndexPage = () => {
         <h2 className="header_02">
           welcome!
         </h2>
-        <p className={styles.myStory}>
-            My name is <span style={{fontWeight: "bold"}}>stephen dewyer</span> and I&#39;m an award-winning <span style={{fontWeight: "bold"}}>UX designer</span>, <span style={{fontWeight: "bold"}}>full-stack web developer</span>, <span style={{fontWeight: "bold"}}>artist</span> and <span style={{fontWeight: "bold"}}>organizer</span> with over ten years of experience creating web programs for public institutions, businesses, campaigns and movements.  
-            Improving human experiences of technology is my passion.  
-            I create digital products that users love.  
-            My experience allows me to create web programs that bring community together and provide value for organizations.
-        </p>
-
+        <div className={styles.workSection}>
+          <p className={styles.myStory}>
+              My name is <span style={{fontWeight: "bold"}}>stephen dewyer</span> and I&#39;m an award-winning <span style={{fontWeight: "bold"}}>UX designer</span>, <span style={{fontWeight: "bold"}}>full-stack web developer</span>, <span style={{fontWeight: "bold"}}>artist</span> and <span style={{fontWeight: "bold"}}>organizer</span> with <span style={{fontWeight: "bold"}}>over ten years of experience</span> creating web programs for <span style={{fontWeight: "bold"}}>public institutions</span>, <span style={{fontWeight: "bold"}}>businesses</span>, <span style={{fontWeight: "bold"}}>campaigns</span> and <span style={{fontWeight: "bold"}}>movements</span>.
+          </p>
+          <div className={styles.viewCaseStudiesButton}>
+            <MyLink href="/case_studies" passHref={true}>
+              <Button aria-label="link to case studies page">
+                view case studies
+              </Button>
+            </MyLink>
+          </div>
+        </div>
+        <h2 className="header_02">
+          in my own words
+        </h2>
+        <div className={styles.aboutSection}>
+          <div className={styles.learnAboutMeButton}>
+            <MyLink href="/about" passHref={true}>
+              <Button aria-label="link to about page">
+                learn about me
+              </Button>
+            </MyLink> 
+          </div>
+           
+          <p className={styles.myStory}>
+              Improving human experiences of technology is my passion.  
+              I create digital products that users love.  
+              My experience allows me to create web programs that bring community together and provide value for organizations.
+          </p>
+        </div>
+        <h2 className="header_02">
+          words from clients
+        </h2>
         <div className={styles.client_reviews}>
           <div className={styles.client_review_card}>
               <div className={styles.client_review_header}>
@@ -108,9 +129,23 @@ const IndexPage = () => {
               </div>
           </div>
         </div>
+        <h2 className="header_02">
+          get in touch
+        </h2>
+        <div className={styles.contactSection}>
+          <p className={styles.myStory}>
+              Have a project idea?  Want to connect?  Feel welcome to contact me.
+          </p>
+          <div className={styles.contactButton}>
+            <MyLink href="/contact" passHref={true}>
+              <Button aria-label="link to contact page">
+                contact
+              </Button>
+            </MyLink>  
+          </div>
+        </div>
       </div>
     </Fragment>
-    
   )
 }
 
