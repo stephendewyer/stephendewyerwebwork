@@ -312,7 +312,7 @@
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .contactButton {
@@ -321,7 +321,7 @@
     justify-content: flex-end;
     padding-right: 0;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .client_reviews {

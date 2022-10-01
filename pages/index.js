@@ -91,7 +91,7 @@ const IndexPage = () => {
         <h2 
           className="header_02"
         >
-          case studies
+          featured case studies
         </h2>
         <div className={styles.case_studies}>
           <div className={styles.case_studies_a}>

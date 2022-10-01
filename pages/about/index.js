@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useState, useEffect, Fragment } from 'react';
+import { useState, useEffect, useRef, Fragment } from 'react';
 import classes from './about.module.css';
 import Image from 'next/image';
 import stephen_dewyer_profile from '../../public/images/profile/stephen_dewyer_10_cropped_square.jpg';
@@ -10,10 +10,14 @@ const AboutPage = () => {
 
     const [profileImageDidStart, setProfileImageDidStart] = useState(false);
 
+    const profileImage = useRef();
+
     useEffect(() => {
-
-        setProfileImageDidStart(true);
-
+        const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        setProfileImageDidStart(entry.isIntersecting)
+        })
+        observer.observe(profileImage.current)
     }, []);
 
     return (
@@ -28,8 +32,13 @@ const AboutPage = () => {
                 <h1 className="header">
                     about
                 </h1>
-                <div className={classes.aboutSection01}>
-                    <div className={(profileImageDidStart) ? classes.profileImageEnd : classes.profileImageStart}>
+                <div 
+                    ref={profileImage}
+                    className={classes.aboutSection01}
+                >
+                    <div 
+                        className={(profileImageDidStart) ? classes.profileImageEnd : classes.profileImageStart}
+                    >
                         <Image 
                             src={stephen_dewyer_profile} 
                             layout="responsive" 
