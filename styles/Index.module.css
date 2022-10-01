@@ -201,6 +201,7 @@
 
 .quote {
   text-align: left;
+  margin: 0;
 }
 
 .quote_attribution {
@@ -218,13 +219,8 @@
     margin: 0 0 20px 0;
   }
 
-  .animatedHeadingStart {
-    font-size: 20px;
-    margin: 0 auto 20px auto;
-  }
-  
-  .animatedHeadingEnd {
-    font-size: 20px;
+  .animatedHeading {
+    font-size: 18px;
     margin: 0 auto 20px auto;
   }
 
