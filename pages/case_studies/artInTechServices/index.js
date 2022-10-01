@@ -410,7 +410,7 @@ const ArtinTechServices = () => {
                         results
                     </h2>
                     <InfoCards outcomeCards={outcomeCards} />
-                    <div className={classes.caseStudyInfoSection}>
+                    <div className={styles.caseStudyInfoSection}>
                         <h2 className="header_02">
                             discoveries
                         </h2>
@@ -420,7 +420,7 @@ const ArtinTechServices = () => {
                             Creating the web application helped me to get a deeper understanding of modern web development.
                         </div>
                     </div>
-                    <div className={classes.caseStudyInfoSection}>
+                    <div className={styles.caseStudyInfoSection}>
                         <h2 className="header_02">
                             next steps
                         </h2>

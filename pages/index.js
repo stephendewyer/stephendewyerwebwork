@@ -227,9 +227,9 @@ const IndexPage = () => {
               </div>
               <p className={styles.quote}>
                 stephen [made] our daunting project of closing our business and two sites so easy and stress free. 
-                  The legacy site [he] created was exactly what we wanted. 
-                  We appreciated [his] proactive way of working with us, never finding a challenge too much to handle. 
-                  [He is] a joy to work with!
+                The legacy site [he] created was exactly what we wanted. 
+                We appreciated [his] proactive way of working with us, never finding a challenge too much to handle. 
+                [He is] a joy to work with!
               </p>
               <div className={styles.client_review_footer}>
                 <h4 className={styles.quote_attribution}>
