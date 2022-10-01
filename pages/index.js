@@ -10,8 +10,7 @@ import joyfoodlyScreengrab from '../public/images/case_studies/Joyfoodly/Joyfood
 import artinTechServicesScreengrab from '../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_screengrab.png';
 import publicArtsCommissionScreengrab from '../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
 import infiniteMileScreengrab from '../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
-import quoteIconStart from '../public/images/icons/quote_icon_start.svg';
-import quoteIconEnd from '../public/images/icons/quote_icon_end.svg';
+import HollieRottmanQuote from '../public/images/illustrations/quotes/Hollie_Rottman_quote_bubble.png';
 
 const IndexPage = () => {
 
@@ -216,32 +215,8 @@ const IndexPage = () => {
           words from clients
         </h2>
         <div className={styles.client_reviews}>
-          <div className={styles.client_review_card}>
-              <div className={styles.client_review_header}>
-                <div className={styles.quote_icon}>
-                  <Image src={quoteIconStart} layout="responsive" alt="start quote icon"/>
-                </div>
-                <h3 className={styles.client_review_heading}>
-                  client review
-                </h3>
-              </div>
-              <p className={styles.quote}>
-                stephen [made] our daunting project of closing our business and two sites so easy and stress free. 
-                The legacy site [he] created was exactly what we wanted. 
-                We appreciated [his] proactive way of working with us, never finding a challenge too much to handle. 
-                [He is] a joy to work with!
-              </p>
-              <div className={styles.client_review_footer}>
-                <h4 className={styles.quote_attribution}>
-                  <div className={styles.quote_author_name}>
-                    Chef Hollie Greene Rottman
-                  </div>
-                  Joyfoodly
-                </h4>
-                <div className={styles.quote_icon}>
-                  <Image src={quoteIconEnd} layout="responsive" alt="start quote icon"/>
-                </div>
-              </div>
+          <div className={styles.clientReview}>
+            <Image src={HollieRottmanQuote} layout="responsive" alt="start quote icon"/>
           </div>
         </div>
         <h2 

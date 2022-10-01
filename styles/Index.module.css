@@ -154,57 +154,16 @@
 
 .client_reviews {
   display: flex;
-  flex-direction: column;
-  margin: 0 auto 60px auto;
-  background-color: #EAFFFE;
-}
-
-.client_review_card {
-  max-width: 860px;
-  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
-  padding: 10px 40px;
-  display: flex;
-  flex-direction: column;
+  margin: 0 0 60px 0;
 }
 
-.client_review_header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.client_review_heading {
-  color: #545451;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 24px;
-}
-
-.client_review_footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.quote_icon {
-  width: 50px;
-}
-
-.quote {
-  text-align: left;
-  margin: 0;
-}
-
-.quote_attribution {
-  width: auto;
-}
-
-.quote_author_name {
-  color: #545451;
-  font-weight: bold;
+.clientReview {
+  max-width: 860px;
+  width: 100%;
+  padding: 0 40px;
 }
 
 @media screen and (max-width: 1500px){
@@ -328,20 +287,10 @@
     margin: 0 0 30px 0;
   }
 
-  .client_review_card {
-    padding: 5px 20px;
-  }
-
-  .quote_icon {
-    width: 35px;
-  }
-
-  .client_review_heading {
-    font-size: 18px;
-  }
-  
-  .client_name {
-    margin-top: 5px;
+  .clientReview {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px;
   }
 
 }
