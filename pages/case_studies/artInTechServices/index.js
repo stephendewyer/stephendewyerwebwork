@@ -410,19 +410,23 @@ const ArtinTechServices = () => {
                         results
                     </h2>
                     <InfoCards outcomeCards={outcomeCards} />
-                    <h2 className="header_02">
-                        discoveries
-                    </h2>
-                    <div className='paragraphs' >
-                        Launching the Art in Tech Services web application was a huge accomplishment.  
-                        The process of developing the application allowed me to design new interfaces.  
-                        Creating the web application helped me to get a deeper understanding of modern web development.
+                    <div className={classes.caseStudyInfoSection}>
+                        <h2 className="header_02">
+                            discoveries
+                        </h2>
+                        <div className='paragraphs' >
+                            Launching the Art in Tech Services web application was a huge accomplishment.  
+                            The process of developing the application allowed me to design new interfaces.  
+                            Creating the web application helped me to get a deeper understanding of modern web development.
+                        </div>
                     </div>
-                    <h2 className="header_02">
-                        next steps
-                    </h2>
-                    <div className='paragraphs' >
-                        As Art in Tech Services continues to evolve, I will talk with potential collaborators to see what their particular pain points are with technology and how Art in Tech Services can help solve their particular problems.
+                    <div className={classes.caseStudyInfoSection}>
+                        <h2 className="header_02">
+                            next steps
+                        </h2>
+                        <div className='paragraphs' >
+                            As Art in Tech Services continues to evolve, I will talk with potential collaborators to see what their particular pain points are with technology and how Art in Tech Services can help solve their particular problems.
+                        </div>
                     </div>
                 </div>
                 <div className={styles.visit_button}>

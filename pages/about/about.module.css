@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .profileImageStart {
@@ -52,7 +52,9 @@
 }
 
 .profile_info_paragraphs {
-    margin: 0;
+    margin: 0 auto 40px auto;
+    padding: 0 40px;
+    max-width: 1440px;
 }
 
 .resume_section {
@@ -188,12 +190,12 @@
 
     .profileImageStart {
         width: 50%;
-        padding: 0 20px;
+        padding: 0;
     }
     
     .profileImageEnd {
         width: 50%;
-        padding: 0 20px;
+        padding: 0;
     }
     
     .profile_info {
@@ -203,7 +205,9 @@
     }
     
     .profile_info_paragraphs {
-        margin: 0;
+        margin: 0 ;
+        padding: 0 20px;
+        max-width: 100%;
     }
 
     .resume_section {

@@ -155,25 +155,17 @@
 .client_reviews {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
   margin: 0 auto 60px auto;
+  background-color: #EAFFFE;
 }
 
 .client_review_card {
-  background-color: #EAFFFE;
   max-width: 860px;
   margin: 0 auto;
   width: 100%;
-  padding: 20px 40px;
+  padding: 10px 40px;
   display: flex;
   flex-direction: column;
-  box-shadow:
-    0 1px 1px hsl(0deg 0% 0% / 0.075),
-    0 2px 2px hsl(0deg 0% 0% / 0.075),
-    0 4px 4px hsl(0deg 0% 0% / 0.075),
-    0 8px 8px hsl(0deg 0% 0% / 0.075),
-    0 16px 16px hsl(0deg 0% 0% / 0.075)
-  ;
 }
 
 .client_review_header {
@@ -215,11 +207,18 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 1500px){
+  .intro_video {
+    margin: 0 0 40px 0;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 750px){
 
   .intro_video {
     margin: 0 0 20px 0;
-    padding: 0 20px;
+    padding: 0;
   }
 
   .animatedHeading {
@@ -324,11 +323,11 @@
   }
 
   .client_reviews {
-    margin: 0 0 40px 0;
+    margin: 0 0 30px 0;
   }
 
   .client_review_card {
-    padding: 10px 20px;
+    padding: 5px 20px;
   }
 
   .quote_icon {
@@ -340,7 +339,7 @@
   }
   
   .client_name {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
 }
