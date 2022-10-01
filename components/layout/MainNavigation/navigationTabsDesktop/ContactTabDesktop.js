@@ -2,21 +2,20 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import MyLink from '../../../../public/util/myLink';
-import aboutLinkPageInactive from '../../../../public/images/links/blind_link_about_01.svg';
-import aboutLinkPageActive from '../../../../public/images/links/blind_link_about_03.svg';
-import aboutLink_hover from '../../../../public/images/links/blind_link_about_02.svg';
-import styles from './navigation_tab.module.css';
+import contactLinkPageInactive from '../../../../public/images/links/desktop/blindLinkContact01.svg';
+import contactLinkPageActive from '../../../../public/images/links/desktop/blindLinkContact03.svg';
+import contactLink_hover from '../../../../public/images/links/desktop/blindLinkContact02.svg';
+import styles from './navigationTabDesktop.module.css';
 
-const AboutTab = () => {
+const ContactTabDesktop = () => {
 
     const router = useRouter();
     const pagePath = router.pathname;
-    const pageIsActive = pagePath === "/about";
+    const pageIsActive = pagePath === "/contact";
 
     const [isHovering, setIsHovered] = useState(false);
     const onMouseEnter = () => setIsHovered(true);
     const onMouseLeave = () => setIsHovered(false);
-
     return (
         (pageIsActive) ? 
             <div 
@@ -24,49 +23,49 @@ const AboutTab = () => {
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
             >
-                <MyLink href="/about" passHref aria-label="link to about page">
+                <MyLink href="/contact" passHref aria-label="link to contact page">
                     {isHovering ? (
                         <Image 
-                            src={aboutLink_hover} 
+                            src={contactLink_hover} 
                             layout="responsive" 
-                            alt="about link"
+                            alt="contact link"
                             priority
                         /> 
                         ) : (
                         <Image 
-                            src={aboutLinkPageActive} 
+                            src={contactLinkPageActive} 
                             layout="responsive" 
-                            alt="about link"
+                            alt="contact link"
                             priority
                         />
                     )}
                 </MyLink>    
-            </div> 
+            </div>
         :
             <div 
                 className={styles.navigationTab}
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
             >
-                <MyLink href="/about" passHref aria-label="link to about page">
+                <MyLink href="/contact" passHref aria-label="link to contact page">
                     {isHovering ? (
                         <Image 
-                            src={aboutLink_hover} 
+                            src={contactLink_hover} 
                             layout="responsive" 
-                            alt="about link"
+                            alt="contact link"
                             priority
-                            /> 
+                        /> 
                         ) : (
                         <Image 
-                            src={aboutLinkPageInactive} 
+                            src={contactLinkPageInactive} 
                             layout="responsive" 
-                            alt="about link"
+                            alt="contact link"
                             priority
                         />
                     )}
                 </MyLink>    
-            </div>  
+            </div>
     );
 };
 
-export default AboutTab;
+export default ContactTabDesktop;

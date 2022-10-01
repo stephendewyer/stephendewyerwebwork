@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './logo/Logo';
-import AboutTab from './navigation_tabs/AboutTab';
-import CaseStudiesTab from './navigation_tabs/CaseStudiesTab';
-import ContactTab from './navigation_tabs/ContactTab';
+import AboutTab from './navigationTabsDesktop/AboutTabDesktop';
+import CaseStudiesTab from './navigationTabsDesktop/CaseStudiesTabDesktop';
+import ContactTab from './navigationTabsDesktop/ContactTabDesktop';
 import classes from './MainNavigation.module.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import { debounce } from '../../../public/util/helpers';

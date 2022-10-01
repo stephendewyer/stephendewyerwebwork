@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import MyLink from '../../../../public/util/myLink';
-import aboutLinkPageInactive from '../../../../public/images/links/blind_link_about_01.svg';
-import aboutLinkPageActive from '../../../../public/images/links/blind_link_about_03.svg';
-import aboutLink_hover from '../../../../public/images/links/blind_link_about_02.svg';
-import styles from './navigation_tab.module.css';
+import aboutLinkPageInactive from '../../../../public/images/links/desktop/blindLinkAboutDesktop01.svg';
+import aboutLinkPageActive from '../../../../public/images/links/desktop/blindLinkAboutDesktop03.svg';
+import aboutLink_hover from '../../../../public/images/links/desktop/blindLinkAboutDesktop02.svg';
+import styles from './navigationTabDesktop.module.css';
 
-const AboutTab = () => {
+const AboutTabDesktop = () => {
 
     const router = useRouter();
     const pagePath = router.pathname;
@@ -69,4 +69,4 @@ const AboutTab = () => {
     );
 };
 
-export default AboutTab;
+export default AboutTabDesktop;
