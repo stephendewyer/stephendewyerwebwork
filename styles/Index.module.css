@@ -154,9 +154,11 @@
 
 .client_reviews {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  height: auto;
   margin: 0 0 60px 0;
 }
 
@@ -164,6 +166,10 @@
   max-width: 860px;
   width: 100%;
   padding: 0 40px;
+}
+
+.quoteCitation {
+  text-align: center;
 }
 
 @media screen and (max-width: 1500px){

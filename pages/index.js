@@ -6,6 +6,7 @@ import styles from '../styles/Index.module.css';
 import Link from 'next/link';
 import MyLink from '../public/util/myLink';
 import Button from '../components/button/button.js';
+import SpeechBubble from '../components/speechBubble/SpeechBubble';
 import joyfoodlyScreengrab from '../public/images/case_studies/Joyfoodly/Joyfoodly_desktop.png';
 import artinTechServicesScreengrab from '../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_screengrab.png';
 import publicArtsCommissionScreengrab from '../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
@@ -215,9 +216,16 @@ const IndexPage = () => {
           words from clients
         </h2>
         <div className={styles.client_reviews}>
-          <div className={styles.clientReview}>
-            <Image src={HollieRottmanQuote} layout="responsive" alt="start quote icon"/>
-          </div>
+          <dib className={styles.clientReview}>
+            <SpeechBubble>
+              stephen [made] our daunting project of closing our business and two sites so easy and stress free. 
+              The legacy site [he] created was exactly what we wanted. We appreciated [his] proactive way of working with us, never finding a challenge too much to handle. 
+              [He is] a joy to work with!
+            </SpeechBubble>
+            <cite className={styles.quoteCitation}>
+              Chef Hollie Greene Rottman
+            </cite>
+          </dib>
         </div>
         <h2 
           className="header_02"
