@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState, useEffect, useRef, Fragment } from 'react';
+import SkillsChart from '../../components/charts/SkillsChart';
 import classes from './about.module.css';
 import Image from 'next/image';
 import stephen_dewyer_profile from '../../public/images/profile/stephen_dewyer_10_cropped_square.jpg';
@@ -61,6 +62,9 @@ const AboutPage = () => {
                     <br /><br />
                     Today, I am more committed than ever to helping solve problems for people as a UX designer and full-stack web developer.  My experience has taught me valuable skills in working with multiple stakeholders and as a part of teams.  Outside work, I enjoy working out, running, traveling, hiking, art, coffee and farmer&#39;s markets.
                 </p>
+                <div className={classes.skillsChart}>
+                    <SkillsChart />
+                </div>
                 <div className={classes.resume_section}>
                     <div className={classes.resumeLeftColumn}>
                     </div>
