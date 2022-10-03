@@ -32,6 +32,9 @@ const AboutPage = () => {
                 <h1 className="header">
                     about
                 </h1>
+                <p className={classes.myStoryParagraphs}>
+                    I&#39; m stephen dewyer, an award-winning user experience (UX) designer, full-stack web developer, artist and organizer with experience bringing together disparate parts of the community through multi-disciplinary projects. 
+                </p>
                 <div 
                     ref={profileImage}
                     className={classes.aboutSection01}
@@ -45,23 +48,21 @@ const AboutPage = () => {
                             alt="stephen dewyer profile image" 
                             priority
                         /> 
-                    </div>
-                    <div className={classes.profile_info}>
-                        <h2 className={classes.aboutHeading02}>
-                            I create elegant solutions to complex problems.<br /><br />
-                            I enjoy improving human experiences of technology.<br /><br />
-                            Using my experience as an award-winning UX designer, full-stack web developer, artist and organizer allows me to create world-class digital programs and products that provide value and bring community together.
-                        </h2>
-                    </div>
-                    
+                    </div>                    
                 </div>
-                <p className={classes.profile_info_paragraphs}>
-                        I worked with stakeholders including the University of Michigan Stamps School of Art and Design and Knight Foundation to produce critically-acclaimed projects that use advancements in art and digital technology. 
-                        In my work, I bring together disparate parts of the community through multi-disciplinary projects.
-                    </p>
+                <p className={classes.myStoryParagraphs}>
+                    I have over ten years of experience creating web programs for organizations.  Improving human experiences of technology is work I love doing.  
+                    <br /><br />
+                    I first entered the fields of UX design and web development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called Infinite Mile.  The journal&#39; s website gave a platform for the art community in Detroit to publish articles and artist projects about the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
+                    <br /><br />
+                    In 2017, I created the website for Public Arts Commission, a non-profit organization that connects the art community to democratic movements.  The website features a searchable database of all campaigns, ballot initiatives, legislation and constitutional amendments endorsed by Public Arts Commission.  Campaigns can apply for endorsement via the Public Arts Commission website.
+                    <br /><br />
+                    After seeing the creativity involved in producing great web programs that help empower communities, I decided to further develop my skills in UX design and full-stack web development.  I learned modern web development techniques and advanced UX design skills.  I learned that I can apply my experience as an artist and organizer to create web programs that help empower communities and provide value for organizations.  
+                    <br /><br />
+                    Today, I am more committed than ever to helping solve problems for people as a UX designer and full-stack web developer.  My experience has taught me valuable skills in working with multiple stakeholders and as a part of teams.  Outside work, I enjoy working out, running, traveling, hiking, art, coffee and farmer&#39;s markets.
+                </p>
                 <div className={classes.resume_section}>
                     <div className={classes.resumeLeftColumn}>
-
                     </div>
                     <h2 className={classes.resume_heading} >
                         resume

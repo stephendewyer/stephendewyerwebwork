@@ -6,55 +6,33 @@
   }
 
 .aboutSection01 {
-    width: 200%;
-    transform: translateX(-25%);
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 0 auto 40px auto;
 }
 
 .profileImageStart {
-    width: 25%;
-    max-width: 720px;
+    width: 100%;
+    max-width: 820px;
     height: auto;
-    padding-left: 40px;
     transform: translateX(-100vw);
     transition: transform 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .profileImageEnd {
-    width: 25%;
-    max-width: 720px;
+    width: 100%;
+    max-width: 820px;
     height: auto;
-    padding-left: 40px;
     transform: translateX(0);
     transition: transform 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
-.profile_info {
-    width: 25%;
-    max-width: 720px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0 40px;
-}
-
-.aboutHeading02 {
-    font-size: 28px;
-    margin: 0 auto 40px auto;
-    width: 100%;
-    font-weight: bold;
-    color: #7A7296;
-    text-align: left;
-}
-
-.profile_info_paragraphs {
+.myStoryParagraphs {
     margin: 0 auto 40px auto;
     padding: 0 40px;
-    max-width: 1440px;
+    max-width: 820px;
 }
 
 .resume_section {
@@ -172,22 +150,16 @@
 
     .profileImageStart {
         width: 50%;
-        padding: 0;
+        margin: 0 0 20px 0;
     }
     
     .profileImageEnd {
         width: 50%;
-        padding: 0;
+        margin: 0 0 20px 0;
     }
     
-    .profile_info {
-        width: 50%;
-        justify-content: flex-start;
-        padding: 20px 20px 0 20px;
-    }
-    
-    .profile_info_paragraphs {
-        margin: 0 ;
+    .myStoryParagraphs  {
+        margin: 0 0 20px 0;
         padding: 0 20px;
         max-width: 100%;
     }
@@ -206,6 +178,7 @@
         font-size: 26px;
         text-align: center;
         width: 100%;
+        margin: 0 auto 20px auto;
     }
     
     .resumePDF {
