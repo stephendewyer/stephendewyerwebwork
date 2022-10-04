@@ -425,9 +425,9 @@ const PublicArtsCommission = () => {
                     <MyLink href="/case_studies/artInTechServices" passHref={true} >
                         <ButtonPrevious passHref={true} aria-label="link to previous case study">
                             <div className={styles.caseStudyThumbnailOverlay} >
-                                <p className={styles.caseStudyThumbnailHeading} >
+                                <h4 className={styles.caseStudyThumbnailHeading} >
                                     Art in Tech Services web programs
-                                </p>
+                                </h4>
                             </div>
                             <Image src={artinTechServicesScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
                         </ButtonPrevious>
@@ -435,9 +435,9 @@ const PublicArtsCommission = () => {
                     <MyLink href="/case_studies/infiniteMile" passHref={true} >
                         <ButtonNext passHref={true} aria-label="link to next case study" >
                             <div className={styles.caseStudyThumbnailOverlay} >
-                                <p className={styles.caseStudyThumbnailHeading} >
+                                <h4 className={styles.caseStudyThumbnailHeading} >
                                     Infinite Mile website
-                                </p>
+                                </h4>
                             </div>
                             <Image src={infiniteMileScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
                         </ButtonNext>

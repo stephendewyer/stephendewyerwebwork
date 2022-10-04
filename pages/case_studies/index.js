@@ -33,9 +33,9 @@ const CaseStudiesPage = () => {
                         </div>
                         <div className={classes.case_study_info_container}>
                             <div className={classes.case_study_info}>
-                                <div className={classes.case_study_title}>
+                                <h3 className={classes.case_study_title}>
                                     Joyfoodly legacy website<br /><span style={{color: "#545451"}} >2022</span>
-                                </div>
+                                </h3>
                                 <div className={classes.case_study_subtitle}>
                                     A legacy website for a culinary education company serving families.
                                 </div>
@@ -52,9 +52,9 @@ const CaseStudiesPage = () => {
                     <div className={classes.case_studies_b}>
                         <div className={classes.case_study_info_container}>
                             <div className={classes.case_study_info}>
-                                <div className={classes.case_study_title}>
+                                <h3 className={classes.case_study_title}>
                                     Art in Tech Services Inc web programs<br/><span style={{color: "#545451"}} >2021 &ndash; present</span>
-                                </div>
+                                </h3>
                                 <div className={classes.case_study_subtitle}>
                                     Web programs for a company that uses advancements in art and digital technology to improve design for businesses and the public.
                                 </div>
@@ -81,9 +81,9 @@ const CaseStudiesPage = () => {
                         </div>
                         <div className={classes.case_study_info_container}>
                             <div className={classes.case_study_info}>
-                                <div className={classes.case_study_title}>
+                                <h3 className={classes.case_study_title}>
                                     Public Arts Commission web programs<br/><span style={{color: "#545451"}} >2017 &ndash; present</span>
-                                </div>
+                                </h3>
                                 <div className={classes.case_study_subtitle}>
                                     Web programs for a non-profit organization that connects the art community to democratic movements.
                                 </div>
@@ -100,9 +100,9 @@ const CaseStudiesPage = () => {
                     <div className={classes.case_studies_b}>
                         <div className={classes.case_study_info_container}>
                             <div className={classes.case_study_info}>
-                                <div className={classes.case_study_title}>
+                                <h3 className={classes.case_study_title}>
                                     Infinite Mile LLC website<br/><span style={{color: "#545451"}} >2013 &ndash; 2017</span>
-                                </div>
+                                </h3>
                                 <div className={classes.case_study_subtitle}>
                                     A website for an award-winning journal of art and culture(s) in Detroit, Michigan.
                                 </div>

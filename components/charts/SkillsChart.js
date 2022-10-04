@@ -32,12 +32,19 @@ const SkillsChart = () => {
         plugins: {
             legend: {
                 position: 'top',
+                labels: {
+                    font: {
+                        size: 18,
+                        family: 'segoeUI',
+                    },
+                }
             },
             title: {
                 display: true,
                 text: 'what I bring to the table',
                 font: {
-                    size: 18
+                    size: 18,
+                    family: 'centuryGothic',
                 },
             }
         },
@@ -51,9 +58,21 @@ const SkillsChart = () => {
                     callback: function(value, index, values) {
                         return yLabels[value];
                     },
+                    font: {
+                        family: 'segoeUI',
+                        size: 16,
+                    },
                 }
                 
             },
+            x: {
+                ticks: {
+                    font: {
+                        family: 'segoeUI',
+                        size: 16,
+                    },
+                },
+            }
         }
     };
   

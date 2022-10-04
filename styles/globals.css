@@ -3,7 +3,7 @@ body {
   background-color: #FFE9C0;
   padding: 0;
   margin: 0;
-  font-family: "CenturyGothic","Century Gothic",Verdana,sans-serif;
+  font-family: "segoeUI";
   color: #514C64;
   font-size: 24px;
   line-height: 1.6em;
@@ -12,6 +12,31 @@ body {
 @font-face {
   font-family: "CenturyGothic";
   src: url(/fonts/century_gothic/CenturyGothic.ttf);
+}
+
+@font-face {
+  font-family: "segoeUI";
+  src: url(/fonts/segoeUI/SegoeUI.ttf);
+}
+
+h1 {
+  font-family: "CenturyGothic";
+}
+
+h2 {
+  font-family: "CenturyGothic";
+}
+
+h3 {
+  font-family: "CenturyGothic";
+}
+
+h4 {
+  font-family: "CenturyGothic";
+}
+
+button {
+  font-family: "CenturyGothic";
 }
 
 a:link {

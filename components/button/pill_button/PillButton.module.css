@@ -1,5 +1,4 @@
 .pill_button {
-
     display:inline-block;
     padding:0.5em 3em;
     margin:0 0.3em 0.3em 0;
@@ -15,6 +14,7 @@
     font-size: 24px;
     outline: none;
     border: none;
+    font-family: "CenturyGothic";
 }
 
 .pill_button:hover{

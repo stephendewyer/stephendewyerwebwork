@@ -7,10 +7,13 @@ import Image from 'next/image';
 
 function Footer() {
 
+    const today = new Date();
+    const year = today.getFullYear();
+
     return (
         <div className={styles.footer}>
             <div className={styles.footer_info}>
-                stephen garrett dewyer © 2022
+                stephen garrett dewyer © {year}
             </div>
             <div className={styles.footer_links}>
                 <Link href="https://www.linkedin.com/in/stephen-dewyer-a15539a5" passHref={true} aria-label="link to LinkedIn profile">

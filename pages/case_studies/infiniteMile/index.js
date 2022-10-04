@@ -370,9 +370,9 @@ const InfiniteMile = () => {
                     <MyLink href="/case_studies/publicArtsCommission" passHref={true} >
                         <ButtonPrevious passHref={true} aria-label="link to previous case study">
                             <div className={styles.caseStudyThumbnailOverlay} >
-                                <p className={styles.caseStudyThumbnailHeading} >
+                                <h4 className={styles.caseStudyThumbnailHeading} >
                                     Public Arts Commission web programs
-                                </p>
+                                </h4>
                             </div>
                             <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
                         </ButtonPrevious>
@@ -380,9 +380,9 @@ const InfiniteMile = () => {
                     <MyLink href="/case_studies/joyfoodly" passHref={true} >
                         <ButtonNext passHref={true} aria-label="link to next case study" >
                             <div className={styles.caseStudyThumbnailOverlay} >
-                                <p className={styles.caseStudyThumbnailHeading} >
+                                <h4 className={styles.caseStudyThumbnailHeading} >
                                     Joyfoodly website
-                                </p>
+                                </h4>
                             </div>
                             <Image src={joyfoodlyScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
                         </ButtonNext>

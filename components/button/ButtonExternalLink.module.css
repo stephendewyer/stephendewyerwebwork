@@ -1,4 +1,3 @@
-
 .button_external_link {
     display: inline-flex;
     flex-direction: row;
@@ -14,6 +13,7 @@
     text-align: center;
     transition: all 0.2s;
     cursor: pointer;
+    font-family: "CenturyGothic";
 }
 
 .button_external_link:hover {

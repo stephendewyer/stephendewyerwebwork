@@ -34,7 +34,7 @@ const AboutPage = () => {
                     about
                 </h1>
                 <p className={classes.myStoryParagraphs}>
-                    I&#39; m stephen dewyer, an award-winning user experience (UX) designer, full-stack web developer, artist and organizer with experience bringing together disparate parts of the community through multi-disciplinary projects. 
+                    I&#39;m stephen dewyer, an award-winning user experience (UX) designer, full-stack web developer, artist and organizer with experience bringing together disparate parts of the community through multi-disciplinary projects. 
                 </p>
                 <div 
                     ref={profileImage}

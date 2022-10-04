@@ -47,6 +47,7 @@
     box-sizing: border-box;
     text-decoration: none;
     text-align: center;
+    font-family: "CenturyGothic";
 }
 
 .button:active {

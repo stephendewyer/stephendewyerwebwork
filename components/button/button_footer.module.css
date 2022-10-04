@@ -12,6 +12,7 @@
     text-align: center;
     transition: all 0.2s;
     cursor: pointer;
+    font-family: "CenturyGothic";
 }
 
 .button_footer:hover {
