@@ -349,6 +349,9 @@ const AboutPage = () => {
                         <h4 className={classes.resume_heading_02}>art and design</h4>
                         <ul>
                             <li>
+                                data visualization
+                            </li>
+                            <li>
                                 photography
                             </li>
                             <li>
@@ -377,6 +380,9 @@ const AboutPage = () => {
                             </li>
                             <li>
                                 building trust with integrity and fairness
+                            </li>
+                            <li>
+                                working with diverse communities
                             </li>
                         </ul>
                     </div>

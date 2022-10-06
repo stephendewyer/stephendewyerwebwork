@@ -116,17 +116,19 @@ const ArtinTechServices = () => {
                         empathize
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
-                        <figure className={styles.panelImage}>
+                        <div 
+                            className={styles.panelImage} 
+                        >
                             <Image 
                                 src={StarFormingRegionJamesWebb} 
                                 layout="responsive" 
                                 alt="James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured" 
                                 priority
-                            />  
+                            />
                             <figcaption className={styles.figCaption}>
                                 An example of art in tech: NASA&#8217;s James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured, 2022, Image credit: NASA, ESA, CSA and STScI
-                            </figcaption>   
-                        </figure>   
+                            </figcaption>
+                        </div>   
                         <p className={styles.panelParagraphsWithImage}>
                             In 2021, I launched Art in Tech Services to optimize human experiences of technology by using art in the design of digital programs.  
                             Art in Tech Services works with clients to create digital products that optimize human experiences of technology in design.

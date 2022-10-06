@@ -391,21 +391,26 @@ const PublicArtsCommission = () => {
                         results
                     </h2>
                     <InfoCards outcomeCards={outcomeCards} />
-                    <h2 className="header_02">
-                        challenges
-                    </h2>
-                    <div className='paragraphs' >
-                        Revenue generation is a challenge facing the Public Arts Commission web programs.  
-                        The subscription-based web application for campaigns will likely help generate revenue.
+                    <div className={styles.caseStudyInfoSection}>
+                        <h2 className="header_02">
+                            challenges
+                        </h2>
+                        <div className='paragraphs' >
+                            Revenue generation is a challenge facing the Public Arts Commission web programs.  
+                            The subscription-based web application for campaigns will likely help generate revenue.
+                        </div>
                     </div>
-                    <h2 className="header_02">
-                        discoveries
-                    </h2>
-                    <div className='paragraphs' >
-                        Launching the Public Arts Commission website and web application was a huge accomplishment.  
-                        However, they were done before I had learned about modern web development frameworks like Svelte and Next.js.  
-                        Using Svelte in the future will help with creating a modern website and modern web applications for Public Arts Commission.  
+                    <div className={styles.caseStudyInfoSection}>
+                        <h2 className="header_02">
+                            discoveries
+                        </h2>
+                        <div className='paragraphs' >
+                            Launching the Public Arts Commission website and web application was a huge accomplishment.  
+                            However, they were done before I had learned about modern web development frameworks like Svelte and Next.js.  
+                            Using Svelte in the future will help with creating a modern website and modern web applications for Public Arts Commission.  
+                        </div>
                     </div>
+                    
                 </div>
                 <div className={styles.visit_button}>
                     <Link href="https://www.publicartscommission.org/" passHref={true} >

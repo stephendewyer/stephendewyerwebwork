@@ -102,6 +102,10 @@
     display: inline;
 }
 
+.caseStudyInfoSection {
+    margin-bottom: 40px;
+}
+
 .case_studies_nav {
     display: flex;
     justify-content: space-between;
@@ -215,6 +219,10 @@
 		width: 15px;
 		margin-left: 6px;
 	}
+
+    .caseStudyInfoSection {
+        margin-bottom: 20px;
+    }
 
     .case_studies_nav {
         width: 100%;
