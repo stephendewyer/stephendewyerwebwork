@@ -1,7 +1,5 @@
 .imagePlusCaptionContainer {
     width: 100%;
-    max-width: 640px;
-    margin: 20px auto;
     position: relative;
 }
 
@@ -47,4 +45,12 @@
     font-size: 18px;
     font-weight: bold;
     color: #514C64;
+}
+
+@media all and (max-width: 750px) {
+
+    .captionContainer {
+        font-size: 16px;
+    }
+    
 }

@@ -22,7 +22,7 @@ import publicArtsCommissionScreengrab from '../../../public/images/case_studies/
 
 const ArtinTechServices = () => {
 
-    const imagePlusCaption = {
+    const imagePlusCaptionEmpathize = {
         image: 
             <Image 
                 src={StarFormingRegionJamesWebb} 
@@ -32,8 +32,22 @@ const ArtinTechServices = () => {
             />,
         caption: 
             <p>
-                An example of art in tech: NASA&#8217;s James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured, 2022, Image credit: NASA, ESA, CSA and STScI
+                "An example of art in tech: NASA&#8217;s James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured, 2022, Image credit: NASA, ESA, CSA and STScI"
             </p>,                  
+    }
+
+    const imagePlusCaptionIdeate = {
+        image: 
+            <Image 
+                src={ArtinTechServicesLogo} 
+                layout="responsive" 
+                alt="Art in Tech Services logo" 
+                priority
+            />,
+        caption: 
+            <p>
+                Art in Tech Services logo
+            </p>   
     }
 
     const infoCards = [
@@ -134,7 +148,7 @@ const ArtinTechServices = () => {
                         <div 
                             className={styles.panelImage} 
                         >
-                            <ImageHoverCaption imagePlusCaption={imagePlusCaption} />
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionEmpathize} />
                         </div>   
                         <p className={styles.panelParagraphsWithImage}>
                             In 2021, I launched Art in Tech Services to optimize human experiences of technology by using art in the design of digital programs.  
@@ -209,17 +223,9 @@ const ArtinTechServices = () => {
                         ideate
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
-                        <figure className={styles.panelImage}>
-                            <Image 
-                                src={ArtinTechServicesLogo} 
-                                layout="responsive" 
-                                alt="Art in Tech Services logo" 
-                                priority
-                            />  
-                            <figcaption className={styles.figCaption}>
-                                Art in Tech Services logo
-                            </figcaption>   
-                        </figure>   
+                        <div className={styles.panelImage}>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} />
+                        </div>   
                         <p className={styles.panelParagraphsWithImage}>
                             First, I designed the Art in Tech Services logo, running through multiple iterations before selecting one.  
                             As part of the logo design process, I consulted with graphic designers within my network.<br /><br />
