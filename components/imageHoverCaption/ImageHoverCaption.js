@@ -5,13 +5,22 @@ const ImageHoverCaption = ({ imagePlusCaption }) => {
     const [isHovering, setIsHovered] = useState(false);
     const onMouseEnter = () => setIsHovered(true);
     const onMouseLeave = () => setIsHovered(false);
+
+    const clickHandler = () => {
+        if (isHovering) {
+            return onMouseLeave;
+        } else {
+            return onMouseEnter;
+        }
+    };
+    
     return (
         <figure 
             className={styles.imagePlusCaptionContainer}
             onMouseEnter={onMouseEnter} 
             onMouseLeave={onMouseLeave}
 
-            onClick={onMouseEnter}
+            onClick={clickHandler}
             onBlur={onMouseLeave}
         >
             <div 
