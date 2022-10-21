@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import MyLink from '../../../public/util/myLink';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import ArtinTechServicesSlideCarousel from "../../../components/slide_carousel/ArtinTechServicesSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";
 import StarFormingRegionJamesWebb from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/process/main_image_star-forming_region_carina_nircam_final-5mb.jpg';
@@ -20,6 +21,20 @@ import joyfoodlyScreengrab from '../../../public/images/case_studies/Joyfoodly/J
 import publicArtsCommissionScreengrab from '../../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
 
 const ArtinTechServices = () => {
+
+    const imagePlusCaption = {
+        image: 
+            <Image 
+                src={StarFormingRegionJamesWebb} 
+                layout="responsive" 
+                alt="James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured" 
+                priority
+            />,
+        caption: 
+            <p>
+                An example of art in tech: NASA&#8217;s James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured, 2022, Image credit: NASA, ESA, CSA and STScI
+            </p>,                  
+    }
 
     const infoCards = [
         {
@@ -119,15 +134,7 @@ const ArtinTechServices = () => {
                         <div 
                             className={styles.panelImage} 
                         >
-                            <Image 
-                                src={StarFormingRegionJamesWebb} 
-                                layout="responsive" 
-                                alt="James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured" 
-                                priority
-                            />
-                            <figcaption className={styles.figCaption}>
-                                An example of art in tech: NASA&#8217;s James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured, 2022, Image credit: NASA, ESA, CSA and STScI
-                            </figcaption>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaption} />
                         </div>   
                         <p className={styles.panelParagraphsWithImage}>
                             In 2021, I launched Art in Tech Services to optimize human experiences of technology by using art in the design of digital programs.  
