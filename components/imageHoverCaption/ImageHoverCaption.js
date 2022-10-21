@@ -8,12 +8,12 @@ const ImageHoverCaption = ({ imagePlusCaption }) => {
 
     const clickHandler = () => {
         if (isHovering) {
-            return onMouseLeave;
+            setIsHovered(false);
         } else {
-            return onMouseEnter;
+            setIsHovered(true);
         }
     };
-    
+
     return (
         <figure 
             className={styles.imagePlusCaptionContainer}
