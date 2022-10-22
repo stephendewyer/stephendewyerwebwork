@@ -49,6 +49,10 @@
 
 @media all and (max-width: 750px) {
 
+    .imagePlusCaptionContainer {
+        min-width: auto;
+    }
+
     .captionContainer {
         font-size: 16px;
     }
