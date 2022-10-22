@@ -6,6 +6,7 @@ import MyLink from '../../../public/util/myLink';
 import styles from './publicArtsCommission.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import PublicArtsCommissionSlideCarousel from "../../../components/slide_carousel/PublicArtsCommissionSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";
 import ArtAtDemonstration from '../../../public/images/case_studies/Public_Arts_Commission/process/art_at_demonstration.JPG';
@@ -21,6 +22,48 @@ import artinTechServicesScreengrab from '../../../public/images/case_studies/Art
 import infiniteMileScreengrab from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
 
 const PublicArtsCommission = () => {
+
+    const imagePlusCaptionEmpathize = {
+        image: 
+            <Image 
+                src={ArtAtDemonstration} 
+                layout="responsive" 
+                alt="Art at a demonstration for equity"
+                priority
+            />,
+        caption: 
+            <p>
+                Art at a demonstration for equity.
+            </p>,                  
+    }
+
+    const imagePlusCaptionDefine = {
+        image: 
+            <Image 
+                src={EndorsedByPublicArtsCommission} 
+                layout="responsive" 
+                alt="Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota"
+                priority
+            />,
+        caption: 
+            <p>
+                Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota.
+            </p>,
+    }
+
+    const imagePlusCaptionIdeate = {
+        image: 
+            <Image 
+                src={PublicArtsCommissionLogo} 
+                layout="responsive" 
+                alt="Public Arts Commission logo"
+                priority
+            />,
+        caption: 
+            <p>
+                Public Arts Commission logo.
+            </p>,
+    }
 
     const infoCards = [
         {
@@ -126,17 +169,9 @@ const PublicArtsCommission = () => {
                         empathize
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
-                        <figure className={styles.panelImage}>
-                            <Image 
-                                src={ArtAtDemonstration} 
-                                layout="responsive" 
-                                alt="Art at a demonstration for equity"
-                                priority
-                            />  
-                            <figcaption className={styles.figCaption}>
-                                Art at a demonstration for equity
-                            </figcaption>   
-                        </figure>   
+                        <div className={styles.panelImage}>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionEmpathize} />  
+                        </div>   
                         <p className={styles.panelParagraphsWithImage}>
                             The art community is very active in democratic campaigns and movements, but doesn’t have a means by which to translate political activity into legislative and electoral results.  
                             As a result, many of the demands from the art community on leadership in government often are ignored.  
@@ -161,17 +196,9 @@ const PublicArtsCommission = () => {
                         define
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
-                        <figure className={styles.panelImage}>
-                            <Image 
-                                src={EndorsedByPublicArtsCommission} 
-                                layout="responsive" 
-                                alt="Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota"
-                                priority
-                            />  
-                            <figcaption className={styles.figCaption}>
-                                Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota
-                            </figcaption>   
-                        </figure>   
+                        <div className={styles.panelImage}>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionDefine} /> 
+                        </div>   
                         <div className={styles.panelParagraphsWithImage}>
                             For Public Arts Commission to fulfill its mission, the organization’s web programs need to do a number of things including:
                             <ul>
@@ -231,17 +258,9 @@ const PublicArtsCommission = () => {
                         ideate
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
-                        <figure className={styles.panelImage}>
-                            <Image 
-                                src={PublicArtsCommissionLogo} 
-                                layout="responsive" 
-                                alt="Public Arts Commission logo"
-                                priority
-                            />  
-                            <figcaption className={styles.figCaption}>
-                                Public Arts Commission logo
-                            </figcaption>   
-                        </figure>   
+                        <div className={styles.panelImage}>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} />
+                        </div>   
                         <p className={styles.panelParagraphsWithImage}>
                             I am currently working on generating drawings for a redesign of the Public Arts Commission web programs. 
                         </p>

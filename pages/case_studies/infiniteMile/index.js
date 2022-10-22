@@ -6,6 +6,7 @@ import MyLink from '../../../public/util/myLink';
 import styles from './infiniteMile.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import InfiniteMileSlideCarousel from "../../../components/slide_carousel/InfiniteMileSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";
 import BreakfastClubViewDetroit from '../../../public/images/case_studies/Infinite_Mile_LLC/process/citings_issue_28_May_2016_06.jpg';
@@ -21,6 +22,48 @@ import joyfoodlyScreengrab from '../../../public/images/case_studies/Joyfoodly/J
 import publicArtsCommissionScreengrab from '../../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
 
 const InfiniteMile = () => {
+
+    const imagePlusCaptionEmpathize = {
+        image: 
+            <Image 
+                src={BreakfastClubViewDetroit} 
+                layout="responsive" 
+                alt="View of Detroit as seen from the 22nd floor of the Fisher Building."
+                priority
+            />,
+        caption: 
+            <p>
+                View of Detroit as seen from the 22nd floor of the Fisher Building.
+            </p>,                  
+    }
+
+    const imagePlusCaptionDefine = {
+        image: 
+            <Image 
+                src={ArtAndRaceConference} 
+                layout="responsive" 
+                alt="Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016"
+                priority
+            />,
+        caption: 
+            <p>
+                Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016.  Photograph by Sarah Nesbitt.
+            </p>,
+    }
+
+    const imagePlusCaptionIdeate = {
+        image: 
+            <Image 
+                src={InfiniteMileLogo} 
+                layout="responsive" 
+                alt="Infinite Mile logo"
+                priority
+            />,
+        caption: 
+            <p>
+                Infinite Mile logo
+            </p>,
+    }
 
     const infoCards = [
         {
@@ -123,17 +166,9 @@ const InfiniteMile = () => {
                         empathize
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
-                        <figure className={styles.panelImage}>
-                            <Image 
-                                src={BreakfastClubViewDetroit} 
-                                layout="responsive" 
-                                alt="View of Detroit as seen from the 22nd floor of the Fisher Building."
-                                priority
-                            />  
-                            <figcaption className={styles.figCaption}>
-                                View of Detroit as seen from the 22nd floor of the Fisher Building.
-                            </figcaption>   
-                        </figure>   
+                        <div className={styles.panelImage}>
+                          <ImageHoverCaption imagePlusCaption={imagePlusCaptionEmpathize} />  
+                        </div>   
                         <p className={styles.panelParagraphsWithImage}>
                             Despite having an active art community, no journals covered art and culture(s) in Detroit, Michigan from Detroit.  
                             As a result, the art community in Detroit did not have a platform from which it could voice issues affecting the community.
@@ -155,17 +190,9 @@ const InfiniteMile = () => {
                         define
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
-                        <figure className={styles.panelImage}>
-                            <Image 
-                                src={ArtAndRaceConference} 
-                                layout="responsive" 
-                                alt="Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016"
-                                priority
-                            />  
-                            <figcaption className={styles.figCaption}>
-                                Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016.  Photograph by Sarah Nesbitt.
-                            </figcaption>   
-                        </figure>   
+                        <div className={styles.panelImage}>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionDefine} />
+                        </div>   
                         <p className={styles.panelParagraphsWithImage}>
                             Detroit, Michigan needed a monthly, web-based journal of art and culture(s) to voice issues affecting the Detroit art community.  
                             The journal would have to bridge demographic groups in a very segregated region by class and race.
@@ -187,17 +214,9 @@ const InfiniteMile = () => {
                         ideate
                     </h2>
                     <div className={styles.panelImageAndParagraphs}>
-                        <figure className={styles.panelImage}>
-                            <Image 
-                                src={InfiniteMileLogo} 
-                                layout="responsive" 
-                                alt="Infinite Mile logo"
-                                priority
-                            />  
-                            <figcaption className={styles.figCaption}>
-                                Infinite Mile logo
-                            </figcaption>   
-                        </figure>   
+                        <div className={styles.panelImage}>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} />
+                        </div>
                         <p className={styles.panelParagraphsWithImage}>
                             Rapid iterations of logo and name ideas were shared amongst stakeholders.  
                             The process was one of the best I&#39;ve seen, with stakeholders working together to find the best design solution instead of defending their own ideas.

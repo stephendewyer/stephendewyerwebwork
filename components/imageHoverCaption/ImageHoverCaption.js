@@ -19,7 +19,6 @@ const ImageHoverCaption = ({ imagePlusCaption }) => {
             className={styles.imagePlusCaptionContainer}
             onMouseEnter={onMouseEnter} 
             onMouseLeave={onMouseLeave}
-
             onClick={clickHandler}
             onBlur={onMouseLeave}
         >
@@ -30,6 +29,7 @@ const ImageHoverCaption = ({ imagePlusCaption }) => {
             </div>
             <div 
                 className={ (isHovering) ? styles.overlay : styles.overlayHidden }
+                aria-hidden={!isHovering}
             >
                 <figcaption className={styles.captionContainer}>
                     {imagePlusCaption.caption}
