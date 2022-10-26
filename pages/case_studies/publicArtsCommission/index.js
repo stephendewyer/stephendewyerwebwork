@@ -34,7 +34,7 @@ const PublicArtsCommission = () => {
             />,
         caption: 
             <p>
-                Art at a demonstration for equity.
+                art at a demonstration for equity
             </p>,                  
     }
 
@@ -48,7 +48,7 @@ const PublicArtsCommission = () => {
             />,
         caption: 
             <p>
-                Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota.
+                graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota
             </p>,
     }
 
@@ -62,7 +62,7 @@ const PublicArtsCommission = () => {
             />,
         caption: 
             <p>
-                Public Arts Commission logo.
+                Public Arts Commission logo
             </p>,
     }
 
@@ -76,7 +76,7 @@ const PublicArtsCommission = () => {
             />,
         caption: 
             <p>
-                Site map created using GitMind for the forthcoming Public Arts Commission web programs redesign.
+                site map created using GitMind for the forthcoming Public Arts Commission web programs redesign
             </p>,
     }
 

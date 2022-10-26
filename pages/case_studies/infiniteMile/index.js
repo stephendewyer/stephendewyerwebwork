@@ -33,7 +33,7 @@ const InfiniteMile = () => {
             />,
         caption: 
             <p>
-                View of Detroit as seen from the 22nd floor of the Fisher Building.
+                view of Detroit as seen from the 22nd floor of the Fisher Building
             </p>,                  
     }
 
