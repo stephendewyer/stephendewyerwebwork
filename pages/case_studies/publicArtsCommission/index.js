@@ -20,6 +20,7 @@ import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
 import artinTechServicesScreengrab from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_screengrab.png';
 import infiniteMileScreengrab from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
+import PublicArtsCommissionSiteMap from '../../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_sitemap.jpg';
 
 const PublicArtsCommission = () => {
 
@@ -62,6 +63,20 @@ const PublicArtsCommission = () => {
         caption: 
             <p>
                 Public Arts Commission logo.
+            </p>,
+    }
+
+    const imagePlusCaptionSiteMap = {
+        image: 
+            <Image
+                src={PublicArtsCommissionSiteMap}
+                layout="responsive" 
+                alt="Public Arts Commission logo"
+                priority
+            />,
+        caption: 
+            <p>
+                Site map created using GitMind for the forthcoming Public Arts Commission web programs redesign.
             </p>,
     }
 
@@ -261,9 +276,9 @@ const PublicArtsCommission = () => {
                         <div className={styles.panelImage}>
                             <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} />
                         </div>   
-                        <p className={styles.panelParagraphsWithImage}>
-                            I am currently working on generating drawings for a redesign of the Public Arts Commission web programs. 
-                        </p>
+                        <div className={styles.panelParagraphsWithImage}>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionSiteMap} />
+                        </div>
                     </div>
                 </div>,
         },
