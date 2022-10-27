@@ -33,9 +33,9 @@ const InfiniteMile = () => {
                 priority
             />,
         caption: 
-            <p>
+            <div>
                 view of Detroit as seen from the 22nd floor of the Fisher Building
-            </p>,                  
+            </div>,                  
     }
 
     const imagePlusCaptionDefine = {
@@ -47,9 +47,9 @@ const InfiniteMile = () => {
                 priority
             />,
         caption: 
-            <p>
+            <div>
                 Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016.  Photograph by Sarah Nesbitt.
-            </p>,
+            </div>,
     }
 
     const imagePlusCaptionIdeate = {
@@ -61,9 +61,9 @@ const InfiniteMile = () => {
                 priority
             />,
         caption: 
-            <p>
+            <div>
                 Infinite Mile logo
-            </p>,
+            </div>,
     }
 
     const imagePlusCaptionSiteMap = {
@@ -75,9 +75,9 @@ const InfiniteMile = () => {
                 priority
             />,
         caption: 
-            <p>
+            <div>
                 site map for the Infinite Mile website
-            </p>,
+            </div>,
     }
 
     const infoCards = [
