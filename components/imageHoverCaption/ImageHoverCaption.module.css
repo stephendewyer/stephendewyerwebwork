@@ -23,6 +23,7 @@
     will-change: opacity;
     opacity: 100%;
     padding: 0 0 12% 0;
+    overflow: hidden;
 }
 
 .overlayHidden {
@@ -40,6 +41,7 @@
     will-change: opacity;
     opacity: 0;
     padding: 0 0 12% 0;
+    overflow: hidden;
 }
 
 .captionContainer {
