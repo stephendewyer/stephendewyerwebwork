@@ -39,7 +39,7 @@ export const VideoJS = ( props ) => {
 
   return (
     <div data-vjs-player>
-      <video ref={videoRef} className="video-js vjs-theme-forest" />
+      <video ref={videoRef} className="video-js" />
     </div>
   );
 }

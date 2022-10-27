@@ -3,6 +3,9 @@
 /* IMPORTANT!  Make navbar height = 0 and overflow = visible to avoid creating a layer around nav items */
 .nav_bar {
   width: 100%;
+  max-width: 2400px;
+  padding: 0 40px;
+  margin: 0 auto;
   height: 0;
   overflow: visible;
   position: fixed;
@@ -41,9 +44,19 @@
 	margin: 15px;
 }
 
+@media screen and (max-width: 1500px){
+  .nav_bar {
+    padding: 0 20px;
+  }
+}
+
 @media screen and (max-width: 750px){
 	
 	/* begin mobile navigation */
+
+  .nav_bar {
+    padding: 0;
+  }
 	
 	.navigation_tabs {
 		display: none;

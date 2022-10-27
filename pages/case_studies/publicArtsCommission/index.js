@@ -71,12 +71,12 @@ const PublicArtsCommission = () => {
             <Image
                 src={PublicArtsCommissionSiteMap}
                 layout="responsive" 
-                alt="Public Arts Commission logo"
+                alt="Public Arts Commission site map"
                 priority
             />,
         caption: 
             <p>
-                site map created using GitMind for the forthcoming Public Arts Commission web programs redesign
+                site map for the forthcoming Public Arts Commission web programs redesign
             </p>,
     }
 

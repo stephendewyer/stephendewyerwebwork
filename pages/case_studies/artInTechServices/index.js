@@ -10,6 +10,7 @@ import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverC
 import ArtinTechServicesSlideCarousel from "../../../components/slide_carousel/ArtinTechServicesSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";
 import StarFormingRegionJamesWebb from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/process/main_image_star-forming_region_carina_nircam_final-5mb.jpg';
+import ArtInTechServicesSiteMap from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Servicces_site_map.jpg';
 import ArtinTechServicesLogo from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/process/Art_in_Tech_Services_logo_01.svg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
@@ -48,6 +49,20 @@ const ArtinTechServices = () => {
             <p>
                 Art in Tech Services logo
             </p>   
+    }
+
+    const imagePlusCaptionSiteMap = {
+        image: 
+            <Image
+                src={ArtInTechServicesSiteMap}
+                layout="responsive" 
+                alt="Art in Tech Services site map"
+                priority
+            />,
+        caption: 
+            <p>
+                site map for the Art in Tech Services website
+            </p>,
     }
 
     const infoCards = [
@@ -225,13 +240,17 @@ const ArtinTechServices = () => {
                     <div className={styles.panelImageAndParagraphs}>
                         <div className={styles.panelImage}>
                             <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} />
+                            <p>
+                                The Art in Tech Services logo I created uses the 8 bars that comprise the IBM logo and IBM Sans Plex font to reflect tech history.  An arrow function expression above Art in Tech Services also signifies the equality sign as greater than the following value.
+                            </p>
                         </div>   
-                        <p className={styles.panelParagraphsWithImage}>
-                            First, I designed the Art in Tech Services logo, running through multiple iterations before selecting one.  
-                            As part of the logo design process, I consulted with graphic designers within my network.<br /><br />
-                            I created several sketches of possible designs for the Art in Tech Services website and web application.  I sketched several graphics to use for content.  
-                            I conducted research on similar software to help generate ideas.
-                        </p>
+                        <div className={styles.panelParagraphsWithImage}>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionSiteMap} />
+                            <p>
+                                I created several sketches of possible designs for the Art in Tech Services website and web application.  I sketched several graphics to use for content.  
+                                I conducted research on similar software to help generate ideas.
+                            </p>                            
+                        </div>
                     </div>
                 </div>,
         },

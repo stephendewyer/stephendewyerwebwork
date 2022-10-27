@@ -12,6 +12,7 @@ import InfoCards from "../../../components/infoCards/InfoCards";
 import BreakfastClubViewDetroit from '../../../public/images/case_studies/Infinite_Mile_LLC/process/citings_issue_28_May_2016_06.jpg';
 import ArtAndRaceConference from '../../../public/images/case_studies/Infinite_Mile_LLC/process/Art_and_Race_Conference_2016.jpg';
 import InfiniteMileLogo from '../../../public/images/case_studies/Infinite_Mile_LLC/process/Infinite_Mile_logo.svg';
+import InfiniteMileSiteMap from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_site_map.jpg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
 import ButtonNext from '../../../components/button/ButtonNext';
@@ -62,6 +63,20 @@ const InfiniteMile = () => {
         caption: 
             <p>
                 Infinite Mile logo
+            </p>,
+    }
+
+    const imagePlusCaptionSiteMap = {
+        image: 
+            <Image
+                src={InfiniteMileSiteMap}
+                layout="responsive" 
+                alt="Infinite Mile site map"
+                priority
+            />,
+        caption: 
+            <p>
+                site map for the Infinite Mile website
             </p>,
     }
 
@@ -216,14 +231,19 @@ const InfiniteMile = () => {
                     <div className={styles.panelImageAndParagraphs}>
                         <div className={styles.panelImage}>
                             <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} />
+                            <p>
+                                Rapid iterations of logo and name ideas were shared amongst stakeholders.  
+                                The process was one of the best I&#39;ve seen, with stakeholders working together to find the best design solution instead of defending their own ideas.  
+                                Ultimately, we agreed to use a logo I created that rotates the 8 in 8 Mile, a symbol of racial and economic division, ninety degrees to make an infinity symbol, which is impossible to divide.
+                                Contours of two chain links were used in the infinity symbol to reflect Detroit's industrial history.
+                            </p>
                         </div>
-                        <p className={styles.panelParagraphsWithImage}>
-                            Rapid iterations of logo and name ideas were shared amongst stakeholders.  
-                            The process was one of the best I&#39;ve seen, with stakeholders working together to find the best design solution instead of defending their own ideas.
-                            <br />
-                            <br />
-                            Once the name and logo were decided, I began sketching ideas for the Infinite Mile website.  Stakeholders agreed to use a custom website because the website needed to have a different look than all the rest of the websites and have strong aesthetics because the journal was focusing on art and culture(s).
-                        </p>
+                        <div className={styles.panelParagraphsWithImage}>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionSiteMap} />
+                            <p>
+                                Once the name, logo and style were decided, I began sketching ideas for the Infinite Mile website.  Stakeholders agreed to use a custom website because the website needed to have a different look than all the rest of the websites and have strong aesthetics because the journal was focusing on art and culture(s).
+                            </p>
+                        </div>
                     </div>
                 </div>,
         },
