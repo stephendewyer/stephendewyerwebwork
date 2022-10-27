@@ -235,7 +235,7 @@ const InfiniteMile = () => {
                                 Rapid iterations of logo and name ideas were shared amongst stakeholders.  
                                 The process was one of the best I&#39;ve seen, with stakeholders working together to find the best design solution instead of defending their own ideas.  
                                 Ultimately, we agreed to use a logo I created that rotates the 8 in 8 Mile, a symbol of racial and economic division, ninety degrees to make an infinity symbol, which is impossible to divide.
-                                Contours of two chain links were used in the infinity symbol to reflect Detroit's industrial history.
+                                Contours of two chain links were used in the infinity symbol to reflect Detroit&#39;s industrial history.
                             </p>
                         </div>
                         <div className={styles.panelParagraphsWithImage}>
