@@ -32,9 +32,9 @@ const ArtinTechServices = () => {
                 priority
             />,
         caption: 
-            <p>
+            <div>
                 an example of art in tech: NASA&#8217;s James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured, 2022, Image credit: NASA, ESA, CSA and STScI
-            </p>,                  
+            </div>,                  
     }
 
     const imagePlusCaptionIdeate = {
@@ -46,9 +46,9 @@ const ArtinTechServices = () => {
                 priority
             />,
         caption: 
-            <p>
+            <div>
                 Art in Tech Services logo
-            </p>   
+            </div>   
     }
 
     const imagePlusCaptionSiteMap = {
@@ -60,9 +60,9 @@ const ArtinTechServices = () => {
                 priority
             />,
         caption: 
-            <p>
+            <div>
                 site map for the Art in Tech Services website
-            </p>,
+            </div>,
     }
 
     const infoCards = [
