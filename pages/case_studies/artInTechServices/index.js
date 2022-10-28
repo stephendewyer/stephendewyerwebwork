@@ -23,20 +23,6 @@ import publicArtsCommissionScreengrab from '../../../public/images/case_studies/
 
 const ArtinTechServices = () => {
 
-    const imagePlusCaptionEmpathize = {
-        image: 
-            <Image 
-                src={StarFormingRegionJamesWebb} 
-                layout="responsive" 
-                alt="James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured" 
-                priority
-            />,
-        caption: 
-            <div>
-                an example of art in tech: NASA&#8217;s James Webb Space Telescope reveals emerging stellar nurseries and individual stars in the Carina Nebula that were previously obscured, 2022, Image credit: NASA, ESA, CSA and STScI
-            </div>,                  
-    }
-
     const imagePlusCaptionIdeate = {
         image: 
             <Image 
@@ -155,24 +141,17 @@ const ArtinTechServices = () => {
                 </Fragment>
             ,
             content:
-                <div className={styles.panelContentParagraphsWithImage}>
+                <div className={styles.panelContent}>
                     <h2 className={styles.panelHeadingMobile}>
                         empathize
-                    </h2>
-                    <div className={styles.panelImageAndParagraphs}>
-                        <div 
-                            className={styles.panelImage} 
-                        >
-                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionEmpathize} />
-                        </div>   
-                        <p className={styles.panelParagraphsWithImage}>
-                            In 2021, I launched Art in Tech Services to optimize human experiences of technology by using art in the design of digital programs.  
-                            Art in Tech Services works with clients to create digital products that optimize human experiences of technology in design.
-                            <br /><br />
-                            As a practical matter, Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
-                            The company had no way of processing financial transactions such as invoices via the company web application.  The company needed a web application to streamline collaboration with clients.
-                        </p>
-                    </div>
+                    </h2>  
+                    <p className={styles.panelParagraphs}>
+                        In 2021, I launched Art in Tech Services to optimize human experiences of technology by using art in the design of digital programs.  
+                        Art in Tech Services works with clients to create digital products that optimize human experiences of technology in design.
+                        <br /><br />
+                        As a practical matter, Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
+                        The company had no way of processing financial transactions such as invoices via the company web application.  The company needed a web application to streamline collaboration with clients.
+                    </p>
                 </div>,
             },
         {
