@@ -11,7 +11,6 @@ import joyfoodlyScreengrab from '../public/images/case_studies/Joyfoodly/Joyfood
 import artinTechServicesScreengrab from '../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_screengrab.png';
 import publicArtsCommissionScreengrab from '../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
 import infiniteMileScreengrab from '../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
-import HollieRottmanQuote from '../public/images/illustrations/quotes/Hollie_Rottman_quote_bubble.png';
 
 const IndexPage = () => {
 

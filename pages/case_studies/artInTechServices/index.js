@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import ArtinTechServicesSlideCarousel from "../../../components/slide_carousel/ArtinTechServicesSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";
-import StarFormingRegionJamesWebb from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/process/main_image_star-forming_region_carina_nircam_final-5mb.jpg';
+import ArtInTechServicesPrototype from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_prototype.png';
 import ArtInTechServicesSiteMap from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Servicces_site_map.jpg';
 import ArtinTechServicesLogo from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/process/Art_in_Tech_Services_logo_01.svg';
 import Tabs from "../../../components/tabs/Tabs";
@@ -48,6 +48,20 @@ const ArtinTechServices = () => {
         caption: 
             <div>
                 site map for the Art in Tech Services website
+            </div>,
+    }
+
+    const imagePlusCaptionPrototype = {
+        image: 
+            <Image
+                src={ArtInTechServicesPrototype}
+                layout="responsive" 
+                alt="Art in Tech Services prototype"
+                priority
+            />,
+        caption: 
+            <div>
+                prototype for the Art in Tech Services website
             </div>,
     }
 
@@ -247,9 +261,12 @@ const ArtinTechServices = () => {
                         prototype
                     </h2>
                     <div className={styles.panelParagraphs}>
-                        I created medium-fidelity desktop and mobile prototypes for the Art in Tech Services web application using Figma.  
-                        I created custom graphics and animations for the prototypes.  
-                        The prototypes received user testing from individuals within my network 
+                        <ImageHoverCaption imagePlusCaption={imagePlusCaptionPrototype} />
+                        <p>
+                            I created medium-fidelity desktop and mobile prototypes for the Art in Tech Services web application using Figma.  
+                            I created custom graphics and animations for the prototypes.  
+                            The prototypes received user testing from individuals within my network  
+                        </p>
                         <Link href="https://www.figma.com/community/file/1077736708672476518" passHref={true} >
                             <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
                                 <ButtonExternalLink passHref={true} aria-label="link to view prototype">

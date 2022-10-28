@@ -7,8 +7,11 @@ import styles from './joyfoodly.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import InfoCards from "../../../components/infoCards/InfoCards";
+import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import JoyfoodlySlideCarousel from "../../../components/slide_carousel/JoyfoodlySlideCarousel";
 import familyCooking from '../../../public/images/case_studies/Joyfoodly/process/family_cooking.jpg';
+import JoyfoodlyDesktopPrototype from '../../../public/images/case_studies/Joyfoodly/Joyfoodly_desktop_prototype.jpg';
+import JoyfoodlyMobilePrototype from '../../../public/images/case_studies/Joyfoodly/Joyfoodly_mobile_desktop.jpg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
 import ButtonNext from '../../../components/button/ButtonNext';
@@ -19,6 +22,34 @@ import artinTechServicesScreengrab from '../../../public/images/case_studies/Art
 import infiniteMileScreengrab from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
 
 const Joyfoodly = () => {
+
+    const imagePlusCaptionDesktopPrototype = {
+        image: 
+            <Image
+                src={JoyfoodlyDesktopPrototype}
+                layout="responsive" 
+                alt="Art in Tech Services prototype"
+                priority
+            />,
+        caption: 
+            <div>
+                prototype for the Joyfoodly website for mobile device
+            </div>,
+    }
+
+    const imagePlusCaptionMobilePrototype = {
+        image: 
+            <Image
+                src={JoyfoodlyMobilePrototype}
+                layout="responsive" 
+                alt="Art in Tech Services prototype"
+                priority
+            />,
+        caption: 
+            <div>
+                prototype for the Joyfoodly website for desktop device
+            </div>,
+    }
 
     const infoCards = [
         {
@@ -173,40 +204,47 @@ const Joyfoodly = () => {
                 </Fragment>
             ,
             content: 
-                <div className={styles.panelContent}>
+                <div className={styles.panelContentParagraphsWithImage}>
                     <h2 className={styles.panelHeadingMobile}>
                         prototype
                     </h2> 
-                    <div className={styles.panelParagraphs}>
-                        I created high-fidelity mobile and desktop prototypes for the Joyfoodly legacy website using Figma with the content provided by Joyfoodly.  
-                        The emails to subscribers were designed using Mailchimp with content provided by Joyfoodly.  
-                        Prototypes for the website and emails were shared with stakeholders for approval.
+                    <div className={styles.panelImageAndParagraphs}>
+                        <div className={styles.panelImage}>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionMobilePrototype} />
                         
-                        <Link href="https://www.figma.com/community/file/1067233911203456668" passHref={true} >
-                            <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
-                                <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
-                                    <div>
-                                        desktop prototype
-                                    </div>
-                                    <div className={styles.external_link_icon} >
-                                        <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                                    </div>
-                                </ButtonExternalLink>
-                            </a>
-                        </Link>
-
-                        <Link href="https://www.figma.com/community/file/1067232787737440923" passHref={true} >
-                            <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
-                                <ButtonExternalLink passHref={true} aria-label="link to mobile prototype">
-                                    <div>
-                                        mobile prototype
-                                    </div>
-                                    <div className={styles.external_link_icon} >
-                                        <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                                    </div>
-                                </ButtonExternalLink>
-                            </a>
-                        </Link>
+                            <Link href="https://www.figma.com/community/file/1067232787737440923" passHref={true} >
+                                <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
+                                    <ButtonExternalLink passHref={true} aria-label="link to mobile prototype">
+                                        <div>
+                                            mobile prototype
+                                        </div>
+                                        <div className={styles.external_link_icon} >
+                                            <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                        </div>
+                                    </ButtonExternalLink>
+                                </a>
+                            </Link>
+                        </div>       
+                        <div className={styles.panelParagraphsWithImage}>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionDesktopPrototype} />
+                            <p>
+                                I created high-fidelity mobile and desktop prototypes for the Joyfoodly legacy website using Figma with the content provided by Joyfoodly.  
+                                The emails to subscribers were designed using Mailchimp with content provided by Joyfoodly.  
+                                Prototypes for the website and emails were shared with stakeholders for approval.
+                            </p>    
+                            <Link href="https://www.figma.com/community/file/1067233911203456668" passHref={true} >
+                                <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
+                                    <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
+                                        <div>
+                                            desktop prototype
+                                        </div>
+                                        <div className={styles.external_link_icon} >
+                                            <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                        </div>
+                                    </ButtonExternalLink>
+                                </a>
+                            </Link>                        
+                        </div>
                     </div>
                 </div>,
         },
