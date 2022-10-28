@@ -11,53 +11,57 @@
 .overlay {
     position: absolute;
     width: 100%;
-    max-height: 100%;
     height: auto;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
-    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); 
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); 
-    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); 
-    z-index: 3;
     top: 0;
     transition: all 0.33s ease-out;
     will-change: opacity;
     opacity: 100%;
-    padding: 0 0 12% 0;
-    overflow: hidden;
 }
 
 .overlayHidden {
     position: absolute;
     width: 100%;
     height: auto;
-    max-height: 100%;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
-    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); 
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); 
-    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); 
-    z-index: 3;
     top: 0;
     transition: all 0.33s ease-out;
     will-change: opacity;
     opacity: 0;
-    padding: 0 0 12% 0;
-    overflow: hidden;
+}
+
+.overlayContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlayAndCaption {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlayCaptionAndBackground {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .captionContainer {
     position: relative;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 20px 40px;
     text-align: left;
     font-size: 18px;
     font-weight: bold;
     color: #514C64;
+    background-color: rgba(255,255,255,.75);
 }
 
 @media all and (max-width: 750px) {
@@ -68,6 +72,7 @@
 
     .captionContainer {
         font-size: 16px;
+        padding: 10px 20px;
     }
     
 }
