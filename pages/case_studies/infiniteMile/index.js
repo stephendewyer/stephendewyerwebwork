@@ -44,12 +44,12 @@ const InfiniteMile = () => {
             <Image 
                 src={ArtAndRaceConference} 
                 layout="responsive" 
-                alt="Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016.  Photograph by Sarah Nesbitt."
+                alt="Infinite Mile + University of Michigan Stamps School of Art and Design Art and Race Conference at MOCAD in May of 2016.  Photograph by Sarah Nesbitt."
                 priority
             />,
         caption: 
             <div>
-                Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016.  Photograph by Sarah Nesbitt.
+                Infinite Mile + University of Michigan Stamps School of Art and Design Art and Race Conference at MOCAD in May of 2016.  Photograph by Sarah Nesbitt.
             </div>,
     }
 

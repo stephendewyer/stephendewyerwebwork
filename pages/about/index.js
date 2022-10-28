@@ -60,7 +60,7 @@ const AboutPage = () => {
                     <br /><br />
                     After seeing the creativity involved in producing great web programs that help empower communities, I decided to further develop my skills in UX design and full-stack web development.  I learned modern web development techniques and advanced UX design skills.  I learned that I can apply my experience as an artist and organizer to create web programs that help empower communities and provide value for organizations.  
                     <br /><br />
-                    Today, I am more committed than ever to helping solve problems for people as a UX designer and full-stack web developer.  My experience has taught me valuable skills in working with multiple stakeholders and as a part of teams.  Outside work, I enjoy working out, running, traveling, hiking, art, coffee and farmer&#39;s markets.
+                    Today, I am more committed than ever to helping solve problems for people as a UX designer and full-stack web developer.  My experience has taught me valuable skills in working with multiple stakeholders and as a part of teams.  Outside work, I enjoy working out, running, traveling, hiking, art, coffee and farmers markets.
                 </p>
                 <div className={classes.skillsChart}>
                     <SkillsChart />
