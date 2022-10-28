@@ -48,7 +48,7 @@
 
 .panelImage {
     width: 32%;
-    padding: 20px 20px;
+    padding: 20px 20px 20px 0;
     min-width: 420px;
 }
 
@@ -58,12 +58,12 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 40px 0;
+    padding: 40px 20px;
 }
 
 .panelContentParagraphsWithImage {
     width: 100%;
-    padding: 40px 0;
+    padding: 40px;
     max-width: 2000px;
     margin: 0 auto;
 }
@@ -71,14 +71,14 @@
 .panelParagraphsWithImage {
     width: 50%;
     margin: 0;
-    padding: 20px 20px;
+    padding: 20px 20px 0 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .panelParagraphs {
     width: 100%;
     margin: 0;
-    padding: 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 .view_prototype_button {

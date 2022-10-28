@@ -10,7 +10,8 @@ import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverC
 import InfiniteMileSlideCarousel from "../../../components/slide_carousel/InfiniteMileSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";
 import BreakfastClubViewDetroit from '../../../public/images/case_studies/Infinite_Mile_LLC/process/citings_issue_28_May_2016_06.jpg';
-import ArtAndRaceConference from '../../../public/images/case_studies/Infinite_Mile_LLC/process/Art_and_Race_Conference_2016.jpg';
+import ArtAndRaceConference from '../../../public/images/case_studies/Infinite_Mile_LLC/team/Art_and_Race_Conference.jpg';
+import InfiniteMileStaff from '../../../public/images/case_studies/Infinite_Mile_LLC/team/Infinite_Mile_staff.jpg';
 import InfiniteMileLogo from '../../../public/images/case_studies/Infinite_Mile_LLC/process/Infinite_Mile_logo.svg';
 import InfiniteMileSiteMap from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_site_map.jpg';
 import Tabs from "../../../components/tabs/Tabs";
@@ -38,17 +39,31 @@ const InfiniteMile = () => {
             </div>,                  
     }
 
-    const imagePlusCaptionDefine = {
+    const imagePlusCaptionArtAndRaceConference = {
         image: 
             <Image 
                 src={ArtAndRaceConference} 
                 layout="responsive" 
-                alt="Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016"
+                alt="Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016.  Photograph by Sarah Nesbitt."
                 priority
             />,
         caption: 
             <div>
                 Infinite Mile + University of Michigan Stamps School of Art and Deign Art and Race Conference at MOCAD in May of 2016.  Photograph by Sarah Nesbitt.
+            </div>,
+    }
+
+    const imagePlusCaptionInfiniteMileStaff = {
+        image: 
+            <Image 
+                src={InfiniteMileStaff} 
+                layout="responsive" 
+                alt="Infinite Mile Co-Founding Editor Jennifer Junkermeier, Infinite Mile Co-Founding Editor stephen dewyer and Infinite Mile Associate Editor Ryan Harte.  Photograph (c) 2017 Jeff Cancelosi"
+                priority
+            />,
+        caption: 
+            <div>
+                Infinite Mile Co-Founding Editor Jennifer Junkermeier, Infinite Mile Associate Editor Ryan Harte and Infinite Mile Co-Founding Editor stephen dewyer.  Photograph (c) 2017 Jeff Cancelosi.
             </div>,
     }
 
@@ -96,12 +111,6 @@ const InfiniteMile = () => {
                     </h3>
                     <p>
                         Co-Founding Editor of Infinite Mile
-                    </p>
-                    <h3 className={styles.detail_heading}>
-                        team
-                    </h3>
-                    <p>
-                        Infinite Mile leadership, staff and contributors
                     </p>
                 </Fragment>
         },
@@ -200,19 +209,14 @@ const InfiniteMile = () => {
                 </Fragment>
             ,
             content:
-                <div className={styles.panelContentParagraphsWithImage}>
+                <div className={styles.panelContent}>
                     <h2 className={styles.panelHeadingMobile}>
                         define
                     </h2>
-                    <div className={styles.panelImageAndParagraphs}>
-                        <div className={styles.panelImage}>
-                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionDefine} />
-                        </div>   
-                        <p className={styles.panelParagraphsWithImage}>
-                            Detroit, Michigan needed a monthly, web-based journal of art and culture(s) to voice issues affecting the Detroit art community.  
-                            The journal would have to bridge demographic groups in a very segregated region by class and race.
-                        </p>
-                    </div>
+                    <p className={styles.panelParagraphs}>
+                        Detroit, Michigan needed a monthly, web-based journal of art and culture(s) to voice issues affecting the Detroit art community.  
+                        The journal would have to bridge demographic groups in a very segregated region by class and race.
+                    </p>
                 </div>,
         },
         {
@@ -260,9 +264,9 @@ const InfiniteMile = () => {
                     <h2 className={styles.panelHeadingMobile}>
                         prototype
                     </h2> 
-                    <div className={styles.panelParagraphs}>
+                    <p className={styles.panelParagraphs}>
                         I created a password-protected website as a prototype to share with stakeholders, who shared feedback.
-                    </div>
+                    </p>
                 </div>,
         },
         {
@@ -373,6 +377,17 @@ const InfiniteMile = () => {
                     details
                 </h2>
                 <InfoCards infoCards={infoCards} />
+                <h2 className="header_02">
+                    team
+                </h2>
+                <div className={styles.team}>
+                    <div className={styles.teamImageA}>
+                        <ImageHoverCaption imagePlusCaption={imagePlusCaptionArtAndRaceConference} /> 
+                    </div>
+                    <div className={styles.teamImageB}>
+                        <ImageHoverCaption imagePlusCaption={imagePlusCaptionInfiniteMileStaff} /> 
+                    </div>
+                </div>
                 <div className='paragraphs_container' >
                     <h2 className="header_02">
                         process
