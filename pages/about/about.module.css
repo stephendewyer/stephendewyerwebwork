@@ -44,7 +44,7 @@
 }
 
 .resume_section {
-    padding: 0 40px 20px 40px;
+    padding: 0 40px;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -78,7 +78,7 @@
 
 .about_section_02 {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,25 +86,56 @@
     padding: 0 40px 40px 40px;
 }
 
-.experience {
-    width: 35%;
-    padding: 0 20px 40px 20px;
-    background-color: #FFEDCB;
-    box-sizing: border-box;
-}
-
-.certificates_and_awards {
-    width: 35%;
-    padding: 0 20px 40px 20px;
-    background-color: #FFEDCB;
-    box-sizing: border-box;
+.resumeSection01 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
 }
 
 .skills {
-    width: 25%;
-    padding: 0 20px 40px 20px;
-    background-color: #FFEDCB;
+    width: 30%;
+    height: auto;
+    padding: 20px;
+    margin: 0 20px auto 20px;
     box-sizing: border-box;
+    border: solid 3px #514C64;
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+}
+
+.experience {
+    width: auto;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    box-sizing: border-box;
+    border: solid 3px #514C64;
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+}
+
+.certificates_and_awards {
+    width: auto;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    border: solid 3px #514C64;
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
 }
 
 .resume_heading_01 {
@@ -202,6 +233,12 @@
         justify-content: flex-end;
         width: 100%;
     }
+
+    .resumeSection01 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
     
     .resumeLeftColumn {
         width: 33%;
@@ -222,18 +259,21 @@
         width: auto;
         padding: 0 20px 20px 20px;
         margin: 0 0 20px 0;
+        border-width: 2px;
     }
     
     .certificates_and_awards {
         width: auto;
         padding: 0 20px 20px 20px;
         margin: 0 0 20px 0;
+        border-width: 2px;
     }
     
     .skills {
         width: auto;
         padding: 0 20px 20px 20px;
         margin: 0 0 20px 0;
+        border-width: 2px;
     }
     
     .resume_heading_01 {
