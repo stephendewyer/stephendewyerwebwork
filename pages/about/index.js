@@ -1,11 +1,16 @@
 import Head from 'next/head';
 import { useState, useEffect, useRef, Fragment } from 'react';
-import SkillsChart from '../../components/charts/SkillsChart';
+import Button from '../../components/button/button.js';
 import classes from './about.module.css';
 import Image from 'next/image';
 import stephen_dewyer_profile from '../../public/images/profile/stephen_dewyer_10_cropped_square.jpg';
+import UXdesign from '../../public/images/illustrations/UX_design.png';
+import fullstackWebDevelopment from '../../public/images/illustrations/full-stack_web_development.png';
+import art from '../../public/images/illustrations/art.png';
+import organizing from '../../public/images/illustrations/organizing.png';
 import ResumeButton from '../../components/button/resumeButton/ResumeButton';
 import Link from 'next/link';
+import MyLink from '../../public/util/myLink';
 
 const AboutPage = () => {
 
@@ -33,52 +38,109 @@ const AboutPage = () => {
                 <h1 className="header">
                     about
                 </h1>
-                <p className={classes.myStoryParagraphs}>
-                    I&#39;m stephen dewyer, an award-winning user experience (UX) designer, full-stack web developer, artist and organizer with experience bringing together disparate parts of the community through multi-disciplinary projects. 
-                </p>
-                <div 
-                    ref={profileImage}
-                    className={classes.aboutSection01}
-                >
-                    <div 
-                        className={(profileImageDidStart) ? classes.profileImageEnd : classes.profileImageStart}
-                    >
-                        <Image 
-                            src={stephen_dewyer_profile} 
-                            layout="responsive" 
-                            alt="stephen dewyer profile image" 
-                            priority
-                        /> 
-                    </div>                    
-                </div>
-                <p className={classes.myStoryParagraphs}>
-                    I have over ten years of experience creating web programs for organizations.  Improving human experiences of technology is work I love doing.  
-                    <br /><br />
-                    I first entered the fields of UX design and web development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called Infinite Mile.  The journal&#39; s website gave a platform for the art community in Detroit to publish articles and artist projects about the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
-                    <br /><br />
-                    In 2017, I created the website for Public Arts Commission, a non-profit organization that connects the art community to democratic movements.  The website features a searchable database of all campaigns, ballot initiatives, legislation and constitutional amendments endorsed by Public Arts Commission.  Campaigns can apply for endorsement via the Public Arts Commission website.
-                    <br /><br />
-                    After seeing the creativity involved in producing great web programs that help empower communities, I decided to further develop my skills in UX design and full-stack web development.  I learned modern web development techniques and advanced UX design skills.  I learned that I can apply my experience as an artist and organizer to create web programs that help empower communities and provide value for organizations.  
-                    <br /><br />
-                    Today, I am more committed than ever to helping solve problems for people as a UX designer and full-stack web developer.  My experience has taught me valuable skills in working with multiple stakeholders and as a part of teams.  Outside work, I enjoy working out, running, traveling, hiking, art, coffee and farmers markets.
-                </p>
-                <div className={classes.skillsChart}>
-                    <SkillsChart />
-                </div>
-                <div className={classes.resume_section}>
-                    <div className={classes.resumeLeftColumn}>
+                <div className={classes.introAboutSection}>
+                    <div className={classes.myStoryContainer}>
+                        <div className={classes.myStory}>
+                            <p className={classes.myStoryParagraphs}>
+                                I&#39;m stephen dewyer, an award-winning user experience (UX) designer, full-stack web developer, artist and organizer with experience bringing together disparate parts of the community through multi-disciplinary projects. 
+                            </p>
+                            <div 
+                                ref={profileImage}
+                                className={classes.aboutSection01}
+                            >
+                                <div 
+                                    className={(profileImageDidStart) ? classes.profileImageEnd : classes.profileImageStart}
+                                >
+                                    <Image 
+                                        src={stephen_dewyer_profile} 
+                                        layout="responsive" 
+                                        alt="stephen dewyer profile image" 
+                                        priority
+                                    /> 
+                                </div>                    
+                            </div>
+                            <p className={classes.myStoryParagraphs}>
+                                I have over ten years of experience creating web programs for organizations.  Improving human experiences of technology is work I love doing.  
+                                <br /><br />
+                                I first entered the fields of UX design and web development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called Infinite Mile.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
+                                <br /><br />
+                                In 2017, I created the website for Public Arts Commission, a non-profit organization that connects the art community to democratic movements.  The website features a searchable database of all campaigns, ballot initiatives, legislation and constitutional amendments endorsed by Public Arts Commission.  Campaigns can apply for endorsement via the Public Arts Commission website.
+                                <br /><br />
+                                After seeing the creativity involved in producing great web programs that help empower communities, I decided to further develop my skills in UX design and full-stack web development.  I learned modern web development techniques and advanced UX design skills.  I learned that I can apply my experience as an artist and organizer to create web programs that help empower communities and provide value for organizations.  
+                                <br /><br />
+                                Today, I am more committed than ever to helping solve problems for people as a UX designer and full-stack web developer.  My experience has taught me valuable skills in working with multiple stakeholders and as a part of teams.  Outside work, I enjoy working out, running, traveling, hiking, art, coffee and farmers markets.
+                            </p>
+                        </div>
                     </div>
-                    <h2 className={classes.resume_heading} >
-                        resume
-                    </h2>
-                    <div className={classes.resumePDF}>    
-                        <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref={true} aria-label="link to resume PDF" >
-                            <a target="_blank" rel="noopener noreferrer">
-                                <ResumeButton passHref={true} />
-                            </a>
-                        </Link>
+                    <div className={classes.introAboutSection02}>
+                        <div className={classes.resumePDF}>    
+                            <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref={true} aria-label="link to resume PDF" >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <ResumeButton passHref={true} />
+                                </a>
+                            </Link>
+                        </div>
+                        <div className={classes.workTogetherButton} >
+                            <MyLink href="/contact" passHref >
+                                <Button aria-label="link to contact page">
+                                    let&#39;s work together
+                                </Button>
+                            </MyLink>
+                        </div>
+                        <h2 className={classes.strengthsHeading}>some of my strengths</h2>
+                        <div className={classes.strengthCard}>
+                            <div className={classes.strengthCardIllustration}>
+                                <Image 
+                                    src={UXdesign} 
+                                    layout="responsive" 
+                                    alt="UX design illustration" 
+                                /> 
+                            </div>
+                            <h3 className={classes.strengthHeading}>
+                                user experience (UX) design
+                            </h3>
+                        </div>
+                        <div className={classes.strengthCard}>
+                            <div className={classes.strengthCardIllustration}>
+                                <Image 
+                                    src={fullstackWebDevelopment} 
+                                    layout="responsive" 
+                                    alt="full-stack web development illustration" 
+                                /> 
+                            </div>
+                            <h3 className={classes.strengthHeading}>
+                                full-stack web development
+                            </h3>
+                        </div>
+                        <div className={classes.strengthCard}>
+                            <div className={classes.strengthCardIllustration}>
+                                <Image 
+                                    src={art} 
+                                    layout="responsive" 
+                                    alt="art illustration" 
+                                /> 
+                            </div>
+                            <h3 className={classes.strengthHeading}>
+                                art
+                            </h3>
+                        </div>
+                        <div className={classes.strengthCard}>
+                            <div className={classes.strengthCardIllustration}>
+                                <Image 
+                                    src={organizing} 
+                                    layout="responsive" 
+                                    alt="organizing illustration" 
+                                /> 
+                            </div>
+                            <h3 className={classes.strengthHeading}>
+                                organizing
+                            </h3>
+                        </div>
                     </div>
                 </div>
+                <h2 className={classes.resume_heading} >
+                    resume
+                </h2>
                 <div className={classes.about_section_02}>
                     <div className={classes.resumeSection01}>
                         <div className={classes.experience}>

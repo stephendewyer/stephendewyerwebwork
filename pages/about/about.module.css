@@ -3,7 +3,32 @@
     width: 100%;
     padding-top: 220px;
     overflow: hidden;
-  }
+}
+
+.introAboutSection {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.myStoryContainer {
+    width: 70%;
+}
+
+.myStory {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 860px;
+}
+
+.introAboutSection02 {
+    width: 30%;
+    padding: 0 20px 0 40px;
+}
 
 .aboutSection01 {
     width: 100%;
@@ -15,7 +40,6 @@
 
 .profileImageStart {
     width: 100%;
-    max-width: 820px;
     height: auto;
     transform: translateX(-100vw);
     transition: transform 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
@@ -23,7 +47,6 @@
 
 .profileImageEnd {
     width: 100%;
-    max-width: 820px;
     height: auto;
     transform: translateX(0);
     transition: transform 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
@@ -31,44 +54,22 @@
 
 .myStoryParagraphs {
     margin: 0 auto 40px auto;
-    padding: 0 40px;
-    max-width: 820px;
-}
-
-.skillsChart {
-    max-width: 1440px;
-    width: 100%;
-    height: 640px;
-    margin: 0 auto 40px auto;
-    padding: 0 40px;
-}
-
-.resume_section {
-    padding: 0 40px;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 0;
 }
 
 .resume_heading {
     color: #545451;
     font-size: 26px;
     text-align: center;
-    width: 33%;
+    width: 100%;
+    margin: 0 auto 40px auto;
 }
 
 .resumePDF {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 33%;
-}
-
-.resumeLeftColumn {
-    width: 33%;
+    width: 100%;
 }
 
 .PDF_icon {
@@ -76,9 +77,52 @@
     margin-left: 15px;
 }
 
+.workTogetherButton {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.strengthsHeading {
+    width: 100%;
+    color: #545451;
+    font-size: 26px;
+    text-align: center;
+    margin: 0 auto 40px auto;
+}
+
+.strengthCard {
+    width: auto;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+}
+
+.strengthCardIllustration {
+    width: auto;
+    padding: 20px;
+    margin: 0;
+}
+
+.strengthHeading {
+    width: auto;
+    color: #7A7296;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0 20px 20px 20px;
+}
+
 .about_section_02 {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1600px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -172,14 +216,36 @@
         padding-top: 130px;
     }
 
-    .aboutSection01 {
-        width: 200%;
-        transform: translateX(-25%);
+    .introAboutSection {
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
-        margin-bottom: 0;
+        padding: 0 0 20px 0;
+    }
+    
+    .myStoryContainer {
+        width: 100%;
+    }
+    
+    .myStory {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 860px;
+    }
+
+    .introAboutSection02 {
+        width: auto;
+        margin: 0 20px 0 20px;
+        padding: 0 0 0 0;
+    }
+
+    .aboutSection01 {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 0 20px 0;
     }
 
     .aboutHeading02 {
@@ -188,13 +254,11 @@
     }
 
     .profileImageStart {
-        width: 50%;
-        margin: 0 0 20px 0;
+        margin: 0;
     }
     
     .profileImageEnd {
-        width: 50%;
-        margin: 0 0 20px 0;
+        margin: 0;
     }
     
     .myStoryParagraphs  {
@@ -202,46 +266,46 @@
         padding: 0 20px;
         max-width: 100%;
     }
-
-    .skillsChart {
-        max-width: 100%;
-        padding: 0 20px;
-        margin: 0 0 20px 0;
-        height: 320px;
-    }
-
-    .resume_section {
-        padding: 20px;
-        margin: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
     
     .resume_heading {
-        color: #545451;
         font-size: 26px;
         text-align: center;
-        width: 100%;
         margin: 0 auto 20px auto;
     }
     
     .resumePDF {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        width: 100%;
+        justify-content: center;
     }
+
+    .workTogetherButton {
+        padding: 20px 0;
+        justify-content: center;
+    }
+
+    .strengthsHeading {
+        font-size: 20px;
+        margin: 0 auto 20px auto;
+    }
+
+    .strengthCard {
+        width: auto;
+    }
+
+    .strengthCardIllustration {
+        width: auto;
+    }
+
+    .strengthHeading {
+        font-size: 18px;
+        padding: 0 20px 20px 20px;
+        width: auto;
+    }
+    
 
     .resumeSection01 {
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
-    
-    .resumeLeftColumn {
-        width: 33%;
     }
     
     .resume_heading {
