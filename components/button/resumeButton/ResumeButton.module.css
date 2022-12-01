@@ -63,6 +63,20 @@
     display: none;
 }
 
+@media all and (max-width: 1250px) {
+    .button_and_PDFIcon {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: right;
+        margin: 0 0.3em 0 0;
+    }
+
+    .button {
+        margin: 0.3em 0 0 0;
+    }
+}
+
 @media all and (max-width: 750px) {
 
     .button {

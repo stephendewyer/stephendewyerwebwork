@@ -27,7 +27,7 @@
 
 .introAboutSection02 {
     width: 30%;
-    padding: 0 20px 0 40px;
+    padding: 0 0 0 40px;
 }
 
 .aboutSection01 {
@@ -118,6 +118,7 @@
     font-weight: bold;
     font-size: 22px;
     padding: 0 20px 20px 20px;
+    margin: 0;
 }
 
 .about_section_02 {
@@ -140,7 +141,7 @@
     width: 30%;
     height: auto;
     padding: 20px;
-    margin: 0 20px auto 20px;
+    margin: 0 0 auto 20px;
     box-sizing: border-box;
     border: solid 3px #514C64;
     box-shadow:
@@ -155,7 +156,7 @@
 .experience {
     width: auto;
     padding: 20px;
-    margin: 0 20px 20px 20px;
+    margin: 0 0 20px 0;
     box-sizing: border-box;
     border: solid 3px #514C64;
     box-shadow:
@@ -170,7 +171,7 @@
 .certificates_and_awards {
     width: auto;
     padding: 20px;
-    margin: 20px;
+    margin: 0;
     box-sizing: border-box;
     border: solid 3px #514C64;
     box-shadow:

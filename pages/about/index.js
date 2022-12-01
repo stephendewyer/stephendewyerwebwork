@@ -207,6 +207,9 @@ const AboutPage = () => {
                                 2021 &ndash; 2022, <span style={{fontWeight: "bold"}} >Certificates in UX Design, Modern Web Development and Web Accessibility, Udemy</span>
                                 <ul>
                                     <li>
+                                        Svelte.js - The Complete Guide (incl. Sapper.js)<br />
+                                    </li>
+                                    <li>
                                         NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)<br />
                                     </li>
                                     <li>
@@ -366,13 +369,16 @@ const AboutPage = () => {
                         <h4 className={classes.resume_heading_02}>full-stack web development</h4>
                         <ul>
                             <li>
+                                Svelte
+                            </li>
+                            <li>
                                 Next.js
                             </li>
                             <li>
                                 React
                             </li>
                             <li>
-                                Node.js
+                                Node
                             </li>
                             <li>
                                 Python
