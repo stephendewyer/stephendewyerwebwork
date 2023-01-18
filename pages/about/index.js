@@ -151,7 +151,18 @@ const AboutPage = () => {
                                 positions
                             </h4>
                             <div className={classes.resume_paragraphs}>
-                                2021 &ndash; present, <span style={{fontWeight: "bold"}} >Founding Director</span><br/>
+                                2022 &ndash; present, <span style={{fontWeight: "bold"}} >Web Engineer</span><br/>
+                                <span style={{fontWeight: "bold"}} >Bullseye Media LLC</span><br/>
+                                Minneapolis, Minnesota
+                                <ul>
+                                    <li>
+                                        developing creative and ambitious web programs for clients that improve user experiences
+                                    </li>
+                                    <li>
+                                        working with a multidisciplinary team focusing on digital media
+                                    </li>
+                                </ul>
+                                2021 &ndash; 2022, <span style={{fontWeight: "bold"}} >Founding Director</span><br/>
                                 <span style={{fontWeight: "bold"}} >Art in Tech Services Inc</span><br/>
                                 Minneapolis-St. Paul area, Minnesota
                                 <ul>
