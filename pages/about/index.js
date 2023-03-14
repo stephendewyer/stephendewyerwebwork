@@ -161,6 +161,17 @@ const AboutPage = () => {
                                     <li>
                                         working with a multidisciplinary team focusing on digital media
                                     </li>
+                                    <li>
+                                        developed websites as a part of a team including&nbsp;
+                                        <Link href="https://mgtrailer.com/" passHref={true} aria-label="link to resume PDF" >
+                                            <a target="_blank" rel="noopener noreferrer">
+                                                mgtrailer.com
+                                            </a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        developed accessible, dynamic, responsive and reusable components for websites
+                                    </li>
                                 </ul>
                                 2021 &ndash; 2022, <span style={{fontWeight: "bold"}} >Founding Director</span><br/>
                                 <span style={{fontWeight: "bold"}} >Art in Tech Services Inc</span><br/>
@@ -387,6 +398,9 @@ const AboutPage = () => {
                             </li>
                             <li>
                                 React
+                            </li>
+                            <li>
+                                Vue.js
                             </li>
                             <li>
                                 Node
