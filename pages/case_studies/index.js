@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import Button from '../../components/button/button.js';
 import classes from './case_studies.module.css';
 import Image from 'next/image';
+import MGTrailerScreengrab from '../../public/images/case_studies/MGTrailer/MGTrailer_index_top.JPG';
 import joyfoodlyScreengrab from '../../public/images/case_studies/Joyfoodly/Joyfoodly_desktop.png';
 import artinTechServicesScreengrab from '../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_screengrab.png';
 import publicArtsCommissionScreengrab from '../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
@@ -25,6 +26,53 @@ const CaseStudiesPage = () => {
                     <h1 className="header">
                         case studies
                     </h1>
+                    <div className={classes.case_studies_b}>
+                        <div className={classes.case_study_info_container}>
+                            <div className={classes.case_study_info}>
+                                <h3 className={classes.case_study_title}>
+                                    M&amp;G Trailer<br/><span style={{color: "#545451"}} >2023</span>
+                                </h3>
+                                <div className={classes.case_study_subtitle}>
+                                    New website for a nationally recognized trailer dealership.
+                                </div>
+                                <Link 
+                                    href="https://mgtrailer.com/" 
+                                    target="_blank" 
+                                    passHref={true} 
+                                    rel="noopener noreferrer"
+                                >
+                                    <a 
+                                        className={classes.view_button} 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Button 
+                                            aria-label="link to view"
+                                            passHref={true}
+                                        >
+                                            coming soon
+                                        </Button>
+                                    </a>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className={classes.case_study_image}>
+                            <Link 
+                                href="https://mgtrailer.com/" 
+                                target="_blank" 
+                                passHref={true} 
+                                rel="noopener noreferrer"
+                                >
+                                <a 
+                                    className={classes.view_button} 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Image src={MGTrailerScreengrab} layout="responsive" alt="M&G Trailer screenshot" />
+                                </a>
+                            </Link>
+                        </div>
+                    </div>
                     <div className={classes.case_studies_a}>
                         <div className={classes.case_study_image}>
                             <MyLink href="/case_studies/joyfoodly" passHref >

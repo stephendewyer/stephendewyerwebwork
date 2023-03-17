@@ -164,6 +164,36 @@ const AboutPage = () => {
                                 <span style={{fontWeight: "bold"}} >Public Arts Commission</span><br/>
                                 Minneapolis-St. Paul area, Minnesota<br/><br/>
 
+                                November 2022 &ndash; March 2023, <span style={{fontWeight: "bold"}} >Web Engineer</span><br/>
+                                <span style={{fontWeight: "bold"}} >Bullseye Media</span><br/>
+                                Minneapolis, Minnesota
+                                <ul>
+                                    <li>
+                                        Developed creative and ambitious web programs for clients that improve user experiences
+                                    </li>
+                                    <li>
+                                        Worked with a multidisciplinary team focusing on digital media
+                                    </li>
+                                    <li>
+                                        Developed websites as a part of a team including mgtrailer.com
+                                    </li>
+                                    <li>
+                                        Developed accessible, dynamic, responsive and reusable components for websites
+                                    </li>
+                                    <li>
+                                        Updated and maintained websites for clients
+                                    </li>
+                                    <li>
+                                        Used Vue.js, JavaScript, WordPress, PHP and MySQL to develop websites
+                                    </li>
+                                    <li>
+                                        Used collaborative software including BugHerd and Bitbucket
+                                    </li>
+                                    <li>
+                                        The position ended due to company outsourcing of web services
+                                    </li>
+                                </ul>
+
                                 February &ndash; May 2022, <span style={{fontWeight: "bold"}} >UX Design Consultant</span><br/>
                                 <span style={{fontWeight: "bold"}} >Turnberry Solutions (contract)</span><br/>
                                 Remote
