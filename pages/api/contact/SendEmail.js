@@ -33,7 +33,7 @@ async function handler(req, res) {
   // begin sending the message
 
   const sgMail = require('@sendgrid/mail')
-  sgMail.setApiKey(process.env.SendGrid_API_key)
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY)
   const msg = [
     {
       to: 'stephen.dewyer@stephengdewyer.info',
