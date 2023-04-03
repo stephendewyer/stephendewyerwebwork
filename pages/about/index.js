@@ -368,6 +368,9 @@ const AboutPage = () => {
                         <h4 className={classes.resume_heading_02}>full-stack web development</h4>
                         <ul>
                             <li>
+                                SvelteKit
+                            </li>
+                            <li>
                                 Svelte
                             </li>
                             <li>
