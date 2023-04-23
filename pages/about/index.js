@@ -203,8 +203,11 @@ const AboutPage = () => {
                                 certificates
                             </h4>
                             <div className={classes.resume_paragraphs}>
-                                2021 &ndash; 2022, <span style={{fontWeight: "bold"}} >Certificates in UX Design, Modern Web Development and Web Accessibility, Udemy</span>
+                                2021 &ndash; 2023, <span style={{fontWeight: "bold"}} >Certificates in UX Design, Modern Web Development and Web Accessibility, Udemy</span>
                                 <ul>
+                                    <li>
+                                        GraphQL by Example<br />
+                                    </li>
                                     <li>
                                         Svelte.js - The Complete Guide (incl. Sapper.js)<br />
                                     </li>
@@ -384,6 +387,9 @@ const AboutPage = () => {
                             </li>
                             <li>
                                 Node
+                            </li>
+                            <li>
+                                GraphQL
                             </li>
                             <li>
                                 Python
