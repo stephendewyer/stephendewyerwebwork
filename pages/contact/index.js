@@ -339,14 +339,14 @@ const Contact = () => {
                         }
                     </div>
                     <div className={classes.contact_buttons} >
-                        <PillButton type='submit' >
-                            send
-                        </PillButton>
                         <MyLink href={'/'} passHref aria-label="link to index" >
                             <PillButtonSecondary>
                                 cancel
                             </PillButtonSecondary>
                         </MyLink>
+                        <PillButton type='submit' >
+                            send
+                        </PillButton>
                     </div>
                 </form>
                 {notification && (
