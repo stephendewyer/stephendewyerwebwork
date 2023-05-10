@@ -9,13 +9,30 @@
     text-decoration: none;
     color: #575B46;
     text-align: center;
-    transition: all 0.15s;
+    transition: all 0.15s ease-out;
     font-family: "CenturyGothic";
+    will-change: color border-color;
 }
 
 .button:hover {
     color:#90947E;
     border-color:#90947E;
+}
+
+.button_active {
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5em 3em;
+    border: 0.16em solid #90947E;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:#90947E;
+    text-align: center;
+    transition: all 0.15s ease-out;
+    font-family: "CenturyGothic";
+    will-change: color border-color;
 }
 
 .button:active {
