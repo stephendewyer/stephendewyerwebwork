@@ -203,8 +203,11 @@ const AboutPage = () => {
                                 certificates
                             </h4>
                             <div className={classes.resume_paragraphs}>
-                                2021 &ndash; 2023, <span style={{fontWeight: "bold"}} >Certificates in UX Design, Modern Web Development and Web Accessibility, Udemy</span>
+                                2021 &ndash; 2023, <span style={{fontWeight: "bold"}} >Certificates in UX Design, Modern Web Development, Web Accessibility and Machine Learning, Udemy</span>
                                 <ul>
+                                    <li>
+                                        Machine Learning A-Z: AI, Python & R + ChatGPT Bonus [2023]<br />
+                                    </li>
                                     <li>
                                         GraphQL by Example<br />
                                     </li>
@@ -425,12 +428,10 @@ const AboutPage = () => {
                                 GIT
                             </li>
                             <li>
-                                content management systems including WordPress
-                            </li>
-                            <li>
                                 project management
                             </li>
                         </ul>
+                        <h4 className={classes.resume_heading_02}>machine learning</h4>
                         <h4 className={classes.resume_heading_02}>art and design</h4>
                         <ul>
                             <li>
