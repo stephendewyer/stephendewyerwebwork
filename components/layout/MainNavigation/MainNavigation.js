@@ -15,10 +15,10 @@ const MainNavigation = (props) => {
 
     const handleScroll = debounce(() => {
         // find current scroll position
-        const currentScrollPos = window.pageYOffset;
+        const currentScrollPos = window.scrollY;
 
-        // set state based on location info (explained in more detail below)
-        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+        // set state based on location info
+        setVisible((prevScrollPos > currentScrollPos) || currentScrollPos < 10);
 
         // set state to new scroll position
         setPrevScrollPos(currentScrollPos);
@@ -31,24 +31,13 @@ const MainNavigation = (props) => {
 
         return () => window.removeEventListener('scroll', handleScroll);
 
-    }, [prevScrollPos, visible, handleScroll]);
-
-    const navbarStyles = {
-        position: 'fixed',
-        width: '100%',
-        height: '0',
-        top: '0',
-        left: '0',
-        right: '0',
-        overflow: 'visible',
-        transition: 'top 0.6s',
-    }
+    }, [prevScrollPos]);
 
     return (
         <nav 
             role="navigation"
             className={classes.nav_bar} 
-            style={{ ...navbarStyles, top: visible ? '0' : '-250px' }} 
+            style={{ top: visible ? '0' : '-250px' }} 
         > 
             <div className={classes.logo}>
                 <Logo />
