@@ -160,7 +160,7 @@ const AboutPage = () => {
                                     </li>
                                 </ul>
                                 
-                                2017 &ndash; present, <span style={{fontWeight: "bold"}} >Founder, Full-stack Web Developer and UX designer</span><br/>
+                                2017 &ndash; present, <span style={{fontWeight: "bold"}} >Founder, Full-stack Web Developer and UX Designer</span><br/>
                                 <span style={{fontWeight: "bold"}} >Public Arts Commission</span><br/>
                                 Minneapolis-St. Paul area, Minnesota<br/><br/>
                                 February &ndash; May 2022, <span style={{fontWeight: "bold"}} >UX Design Consultant (contract)</span><br/>
