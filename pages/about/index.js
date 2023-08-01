@@ -151,7 +151,7 @@ const AboutPage = () => {
                                 positions
                             </h4>
                             <div className={classes.resume_paragraphs}>
-                                2021 &ndash; present, <span style={{fontWeight: "bold"}} >Founding Director</span><br/>
+                                2021 &ndash; present, <span style={{fontWeight: "bold"}} >Founding Director, Full-stack Web Developer and UX Designer</span><br/>
                                 <span style={{fontWeight: "bold"}} >Art in Tech Services Inc</span><br/>
                                 Minneapolis-St. Paul area, Minnesota
                                 <ul>
@@ -160,11 +160,11 @@ const AboutPage = () => {
                                     </li>
                                 </ul>
                                 
-                                2017 &ndash; present, <span style={{fontWeight: "bold"}} >Founder</span><br/>
+                                2017 &ndash; present, <span style={{fontWeight: "bold"}} >Founder, Full-stack Web Developer and UX designer</span><br/>
                                 <span style={{fontWeight: "bold"}} >Public Arts Commission</span><br/>
                                 Minneapolis-St. Paul area, Minnesota<br/><br/>
-                                February &ndash; May 2022, <span style={{fontWeight: "bold"}} >UX Design Consultant</span><br/>
-                                <span style={{fontWeight: "bold"}} >Turnberry Solutions (contract)</span><br/>
+                                February &ndash; May 2022, <span style={{fontWeight: "bold"}} >UX Design Consultant (contract)</span><br/>
+                                <span style={{fontWeight: "bold"}} >Turnberry Solutions</span><br/>
                                 Remote
                                 <ul>
                                     <li>
@@ -172,7 +172,7 @@ const AboutPage = () => {
                                     </li>
                                 </ul>
 
-                                2013 &ndash; 2017, <span style={{fontWeight: "bold"}} >Co-Founding Editor</span><br/>
+                                2013 &ndash; 2017, <span style={{fontWeight: "bold"}} >Co-Founding Editor, Web Developer and UX Designer</span><br/>
                                 <span style={{fontWeight: "bold"}} >Infinite Mile LLC (<span>&#8734;</span> mile)</span><br/>
                                 Detroit, Michigan
                                 <ul>
