@@ -32,7 +32,6 @@
 @media all and (max-width: 751px){
 
     .pill_button {
-        display: block;
         margin: 0.2em auto;
         font-size: 18px;
     }
