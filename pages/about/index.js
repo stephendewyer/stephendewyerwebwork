@@ -206,6 +206,9 @@ const AboutPage = () => {
                                 2021 &ndash; 2023, <span style={{fontWeight: "bold"}} >Certificates in UX Design, Modern Web Development, Web Accessibility and Machine Learning, Udemy</span>
                                 <ul>
                                     <li>
+                                        Understanding TypeScript<br />
+                                    </li>
+                                    <li>
                                         Machine Learning A-Z: AI, Python & R + ChatGPT Bonus [2023]<br />
                                     </li>
                                     <li>
@@ -399,6 +402,9 @@ const AboutPage = () => {
                             </li>
                             <li>
                                 JavaScript
+                            </li>
+                            <li>
+                                TypeScript
                             </li>
                             <li>
                                 PHP
