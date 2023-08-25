@@ -31,7 +31,7 @@ const MainNavigation = (props) => {
 
         return () => window.removeEventListener('scroll', handleScroll);
 
-    }, [prevScrollPos]);
+    }, [prevScrollPos, handleScroll]);
 
     return (
         <nav 
