@@ -172,7 +172,7 @@ const AboutPage = () => {
                                     </li>
                                 </ul>
 
-                                2013 &ndash; 2017, <span style={{fontWeight: "bold"}} >Co-Founding Editor, Web Developer and UX Designer</span><br/>
+                                2013 &ndash; 2017, <span style={{fontWeight: "bold"}} >Web Developer and UX Designer / Co-Founding Editor</span><br/>
                                 <span style={{fontWeight: "bold"}} >Infinite Mile LLC (<span>&#8734;</span> mile)</span><br/>
                                 Detroit, Michigan
                                 <ul>
