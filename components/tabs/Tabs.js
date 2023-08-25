@@ -40,7 +40,7 @@ const Tabs = ({ tabPanels }) => {
 
         }
 
-    });
+    }, [activeTab]);
 
     // update the height when window resizes
 
