@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Logo from './logo/Logo';
 import AboutTab from './navigationTabsDesktop/AboutTabDesktop';
 import CaseStudiesTab from './navigationTabsDesktop/CaseStudiesTabDesktop';
@@ -11,8 +11,8 @@ const MainNavigation = (props) => {
 
     const [prevScrollPos, setPrevScrollPos] = useState(0);
 
-    const [visible, setVisible] = useState(true)
-
+    const [visible, setVisible] = useState(true);
+    
     const handleScroll = debounce(() => {
         // find current scroll position
         const currentScrollPos = window.scrollY;

@@ -300,7 +300,7 @@ const PublicArtsCommission = () => {
                         I am collaborating with the Public Arts Commission Board of Directors on the prototypes.  
                         Some early examples of prototypes are provided.
                         
-                        <Link href="https://www.figma.com/community/file/1021815144303041374" passHref={true} >
+                        <Link href="https://www.figma.com/community/file/1257459517679894104/public-arts-commission-website" passHref={true} >
                             <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
                                 <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
                                     <div>
