@@ -120,7 +120,7 @@ const Tabs = ({ tabPanels }) => {
                         // if panel is the same as the activeTab, load showPanelContent as true
                         const panelItemId = panelItem.id;
                         const panelItemContent = panelItem.content;
-                        if (panelItemLabel == activeTab)
+                        if (panelItem.label == activeTab)
                             return (
                                 <CSSTransition
                                     timeout={500}
