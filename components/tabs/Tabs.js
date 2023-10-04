@@ -100,10 +100,10 @@ const Tabs = ({ tabPanels }) => {
                             className={label == activeTab ? styles.current : "" } 
                             key={id}
                             onClick={(e) => handleClick(e, label)}
-                            id={`tabpanel_header_${label}`}
+                            id={`tabpanel_header_${index}`}
                             role="tab"
                             aria-selected={label == activeTab ? true : false}
-                            aria-controls={`${label}_tabpanel`}
+                            aria-controls={`${index}_tabpanel`}
                             tabIndex={-index}
                         >
                             <a href="#">{label}</a>
@@ -120,7 +120,6 @@ const Tabs = ({ tabPanels }) => {
                         // if panel is the same as the activeTab, load showPanelContent as true
                         const panelItemId = panelItem.id;
                         const panelItemContent = panelItem.content;
-                        const panelItemLabel = panelItem.label;
                         if (panelItemLabel == activeTab)
                             return (
                                 <CSSTransition
@@ -138,10 +137,10 @@ const Tabs = ({ tabPanels }) => {
                                 >
                                     <dd 
                                         ref={panelItemContentContainer}
-                                        id={`${panelItemLabel}_tabpanel`}
+                                        id={`${index}_tabpanel`}
                                         role="tabpanel"
                                         tabIndex={-index}
-                                        aria-labelledby={`tabpanel_header_${panelItemLabel}`}
+                                        aria-labelledby={`tabpanel_header_${index}`}
                                     >
                                         <div
                                             ref={measuredRef}
