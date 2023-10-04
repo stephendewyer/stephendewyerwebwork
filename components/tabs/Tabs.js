@@ -92,7 +92,7 @@ const Tabs = ({ tabPanels }) => {
             <li 
                 className={styles.tabs}
             >
-                {tabPanels.map((tab) => {
+                {tabPanels.map((tab, index) => {
                     const label = tab.label;
                     const id = tab.id;
                     return (
@@ -100,6 +100,11 @@ const Tabs = ({ tabPanels }) => {
                             className={label == activeTab ? styles.current : "" } 
                             key={id}
                             onClick={(e) => handleClick(e, label)}
+                            id={`tabpanel_header_${label}`}
+                            role="tab"
+                            aria-selected={label == activeTab ? true : false}
+                            aria-controls={`${label}_tabpanel`}
+                            tabIndex={-index}
                         >
                             <a href="#">{label}</a>
                         </dt>
@@ -111,11 +116,12 @@ const Tabs = ({ tabPanels }) => {
                 style={{ 'height': `${height}px` }}
             >
                 <TransitionGroup >
-                    {tabPanels.map((panelItem) => {
+                    {tabPanels.map((panelItem, index) => {
                         // if panel is the same as the activeTab, load showPanelContent as true
                         const panelItemId = panelItem.id;
                         const panelItemContent = panelItem.content;
-                        if (panelItem.label == activeTab)
+                        const panelItemLabel = panelItem.label;
+                        if (panelItemLabel == activeTab)
                             return (
                                 <CSSTransition
                                     timeout={500}
@@ -132,6 +138,10 @@ const Tabs = ({ tabPanels }) => {
                                 >
                                     <dd 
                                         ref={panelItemContentContainer}
+                                        id={`${panelItemLabel}_tabpanel`}
+                                        role="tabpanel"
+                                        tabIndex={-index}
+                                        aria-labelledby={`tabpanel_header_${panelItemLabel}`}
                                     >
                                         <div
                                             ref={measuredRef}

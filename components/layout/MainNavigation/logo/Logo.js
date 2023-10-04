@@ -20,7 +20,7 @@ const IndexTab = () => {
     return (
         (pageIsActive) ? 
             <div className={classes.blind_logo}
-                
+                aria-current={pageIsActive}
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
             >
@@ -44,7 +44,7 @@ const IndexTab = () => {
             </div> 
         :
             <div className={classes.blind_logo}
-                
+                aria-current={pageIsActive}
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
             >

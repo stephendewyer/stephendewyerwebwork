@@ -23,6 +23,7 @@ const CaseStudiesTabDesktop = () => {
                 className={styles.navigationTab}
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
+                aria-current={pageIsActive}
             >
                 <MyLink href="/case_studies" passHref aria-label="link to case studies page">
                     {isHovering ? (
@@ -47,6 +48,7 @@ const CaseStudiesTabDesktop = () => {
                 className={styles.navigationTab}
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
+                aria-current={pageIsActive}
             >
                 <MyLink href="/case_studies" passHref aria-label="link to case studies page">
                     {isHovering ? (

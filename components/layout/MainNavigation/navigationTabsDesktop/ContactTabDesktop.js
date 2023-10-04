@@ -22,6 +22,7 @@ const ContactTabDesktop = () => {
                 className={styles.navigationTab}
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
+                aria-current={pageIsActive}
             >
                 <MyLink href="/contact" passHref aria-label="link to contact page">
                     {isHovering ? (
@@ -46,6 +47,7 @@ const ContactTabDesktop = () => {
                 className={styles.navigationTab}
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
+                aria-current={pageIsActive}
             >
                 <MyLink href="/contact" passHref aria-label="link to contact page">
                     {isHovering ? (

@@ -20,6 +20,7 @@ const AboutTab = () => {
     return (
         (pageIsActive) ? 
             <div 
+                aria-current={pageIsActive}
                 className={styles.navigationTab}
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
@@ -44,6 +45,7 @@ const AboutTab = () => {
             </div> 
         :
             <div 
+            aria-current={pageIsActive}
                 className={styles.navigationTab}
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}

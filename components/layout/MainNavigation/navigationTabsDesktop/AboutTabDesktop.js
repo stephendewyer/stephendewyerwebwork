@@ -23,6 +23,7 @@ const AboutTabDesktop = () => {
                 className={styles.navigationTab}
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
+                aria-current={pageIsActive}
             >
                 <MyLink href="/about" passHref aria-label="link to about page">
                     {isHovering ? (
@@ -47,6 +48,7 @@ const AboutTabDesktop = () => {
                 className={styles.navigationTab}
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
+                aria-current={pageIsActive}
             >
                 <MyLink href="/about" passHref aria-label="link to about page">
                     {isHovering ? (
