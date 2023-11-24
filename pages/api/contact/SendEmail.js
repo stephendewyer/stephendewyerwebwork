@@ -65,9 +65,7 @@ async function handler(req, res) {
   })();
 
   // end sending the message
-
   
-
   return;
 }
 
