@@ -114,19 +114,10 @@ const PublicArtsCommission = () => {
                     </h3>
                     <ul>
                         <li>
-                            Designed brand identity including logo
+                            Designed brand identity and media
                         </li>
                         <li>
-                            Designed, developed and deployed an enterprise website and web application
-                        </li>
-                        <li>
-                            Created custom graphics
-                        </li>
-                        <li>
-                            Created campaign collaboration software
-                        </li>
-                        <li>
-                            Prototyping web applications for individuals to connect and organize and for campaigns to purchase subscriptions to connect with individuals in the Public Arts Commission network
+                            Leading the redesign of the organization&#39;s website to provide personalized connections between voters, actions and campaigns for greater democracy within and outside art
                         </li>
                     </ul>
                 </Fragment>
