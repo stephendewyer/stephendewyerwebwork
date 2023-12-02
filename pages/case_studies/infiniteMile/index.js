@@ -110,7 +110,7 @@ const InfiniteMile = () => {
                         my role
                     </h3>
                     <p>
-                        Co-Founding Editor of Infinite Mile
+                        Web Developer and UX Designer / Co-Founding Editor at Infinite Mile
                     </p>
                 </Fragment>
         },

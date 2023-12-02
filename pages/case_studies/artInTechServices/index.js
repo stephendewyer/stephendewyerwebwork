@@ -80,7 +80,7 @@ const ArtinTechServices = () => {
                         my role
                     </h3>
                     <p>
-                        Founding Director of Art in Tech Services
+                        Founding Director, Full-Stack Web Developer and UX Designer at Art in Tech Services
                     </p>
                 </Fragment>
         },

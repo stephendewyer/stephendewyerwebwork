@@ -95,7 +95,7 @@ const PublicArtsCommission = () => {
                         my role
                     </h3>
                     <p>
-                        Founder of Public Arts Commission
+                        Founder, Full-Stack Web Developer and UX Designer at Public Arts Commission
                     </p>
                     <h3 className={styles.detail_heading}>
                         team
