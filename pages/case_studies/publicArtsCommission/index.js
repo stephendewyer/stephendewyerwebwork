@@ -143,25 +143,28 @@ const PublicArtsCommission = () => {
                             Figma
                         </li>
                         <li>
-                            HTML, CSS, JavaScipt, jQuery, PHP, MySQL
+                            SvelteKit
                         </li>
                         <li>
-                            WowSlider
+                            TypeScript
                         </li>
                         <li>
-                            Mailchimp
+                            Auth.js
                         </li>
                         <li>
-                            Adobe Creative Cloud
+                            MySQL2
                         </li>
                         <li>
-                            Svelte (forthcoming)
+                            TomTom
                         </li>
                         <li>
-                            MongoDB (forthcoming)
+                            Twilio SendGrid
                         </li>
                         <li>
-                            Canon EOS 70D Digital SLR camera
+                            Stripe
+                        </li>
+                        <li>
+                            Splide
                         </li>
                     </ul>
                 </Fragment>
@@ -296,9 +299,7 @@ const PublicArtsCommission = () => {
                         prototype
                     </h2> 
                     <div className={styles.panelParagraphs}>
-                        I am currently working on prototyping the Public Arts Commission web programs.  
-                        I am collaborating with the Public Arts Commission Board of Directors on the prototypes.  
-                        Some early examples of prototypes are provided.
+                        I used Figma to prototype the Public Arts Commission website redesign.  Public Arts Commission Board Directors helped with user testing of the prototypes.
                         
                         <Link href="https://www.figma.com/community/file/1257459517679894104/public-arts-commission-website" passHref={true} >
                             <a className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer" >
@@ -329,8 +330,7 @@ const PublicArtsCommission = () => {
                         build
                     </h2> 
                     <div className={styles.panelParagraphs}>
-                        For the first launch of some of the Public Arts Commission web programs, I used PHP, MySQL, CSS, JavaScript and HTML.  
-                        For the development of the redesigned Public Arts Commission web programs, I am planning on using Svelte and MongoDB.
+                        For the development of the redesigned Public Arts Commission web programs, I am using a variety of technologies including SvelteKit, which is high performing and modern.
                     </div>
                 </div>,
         },
@@ -447,7 +447,7 @@ const PublicArtsCommission = () => {
                     
                 </div>
                 <div className={styles.visit_button}>
-                    <Link href="https://www.publicartscommission.org/" passHref={true} >
+                    <Link href="https://public-arts-commission.vercel.app/" passHref={true} >
                         <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
                             <ButtonExternalLink passHref={true} aria-label="link to visit">
                                 <div>

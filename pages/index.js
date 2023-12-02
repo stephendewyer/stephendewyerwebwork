@@ -8,7 +8,7 @@ import Button from '../components/button/button.js';
 import SpeechBubble from '../components/speechBubble/SpeechBubble';
 import joyfoodlyScreengrab from '../public/images/case_studies/Joyfoodly/Joyfoodly_desktop.png';
 import artinTechServicesScreengrab from '../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_screengrab.png';
-import publicArtsCommissionScreengrab from '../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
+import publicArtsCommissionScreengrab from '../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_website_desktop_01.jpg';
 import infiniteMileScreengrab from '../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
 
 const IndexPage = () => {
