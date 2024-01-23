@@ -383,24 +383,24 @@ const Joyfoodly = () => {
                     </Link>
                 </div>
                 <div className={styles.case_studies_nav}>
-                    <MyLink href="/case_studies/infiniteMile" passHref={true} >
-                        <ButtonPrevious passHref={true} aria-label="link to previous case study">
-                            <div className={styles.caseStudyThumbnailOverlay} >
-                                <h4 className={styles.caseStudyThumbnailHeading} >
-                                    Infinite Mile website
-                                </h4>
-                            </div>
-                            <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
-                        </ButtonPrevious>
-                    </MyLink>
                     <MyLink href="/case_studies/artInTechServices" passHref={true} >
-                        <ButtonNext passHref={true} aria-label="link to next case study" >
+                        <ButtonPrevious passHref={true} aria-label="link to previous case study">
                             <div className={styles.caseStudyThumbnailOverlay} >
                                 <h4 className={styles.caseStudyThumbnailHeading} >
                                     Art in Tech Services web programs
                                 </h4>
                             </div>
                             <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
+                        </ButtonPrevious>
+                    </MyLink>
+                    <MyLink href="/case_studies/infiniteMile" passHref={true} >
+                        <ButtonNext passHref={true} aria-label="link to next case study" >
+                            <div className={styles.caseStudyThumbnailOverlay} >
+                                <h4 className={styles.caseStudyThumbnailHeading} >
+                                    Infinite Mile website
+                                </h4>
+                            </div>
+                            <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
                         </ButtonNext>
                     </MyLink>
                 </div>

@@ -117,7 +117,7 @@ const PublicArtsCommission = () => {
                             Designed brand identity and media
                         </li>
                         <li>
-                            Leading the redesign of the organization&#39;s website to provide personalized connections between voters, actions and campaigns for greater democracy within and outside art
+                            Leading the design, development and deployment for the organization&#39;s web platform that includes a campaign application management system, a voter networking and organizing portal, an endorsement management system and a searchable database of all the organization&#39;s endorsements 
                         </li>
                     </ul>
                 </Fragment>
@@ -182,11 +182,13 @@ const PublicArtsCommission = () => {
                             <ImageHoverCaption imagePlusCaption={imagePlusCaptionEmpathize} />  
                         </div>   
                         <p className={styles.panelParagraphsWithImage}>
-                            The art community is very active in democratic campaigns and movements, but doesn’t have a means by which to translate political activity into legislative and electoral results.  
+                            The art community is very active in democratic campaigns and movements, but doesn&#39;t have a means by which to translate political activity into legislative and electoral results.  
                             As a result, many of the demands from the art community on leadership in government often are ignored.  
                             <br /><br />
-                            Seeing a need to connect the art community with democratic campaigns and movements, I launched Public Arts Commission in 2017.  
-                            Public Arts Commission will provide a tool for connecting the art community with democratic campaigns and movements to render more effective the organizing capacity of the art community.  
+                            Seeing a need to connect the art community with democratic campaigns and movements and a need to engage in electoral politics, I launched Public Arts Commission in 2017.  
+                            Public Arts Commission will provide a platform for voters to network and organize to support democratic campaigns and movements that align with the public arts commission agenda to expand the political imaginary by making excellent public art available to everyone.  
+                            <br /><br />
+                            Creating a platform whereby candidates who share the values of Public Arts Commission can connect with an active network of voters on the Public Arts Commission platform will also reduce some of the barriers to running for office for candidates endorsed by Public Arts Commission.
                         </p>
                     </div>
                 </div>,
@@ -209,32 +211,38 @@ const PublicArtsCommission = () => {
                             <ImageHoverCaption imagePlusCaption={imagePlusCaptionDefine} /> 
                         </div>   
                         <div className={styles.panelParagraphsWithImage}>
-                            For Public Arts Commission to fulfill its mission, the organization’s web programs need to do a number of things including:
+                            For Public Arts Commission to fulfill its mission, the organization&#39;s web platform needs to do a number of things including:
                             <ul>
                                 <li>
-                                    Provide a publicly accessible agenda of organizational goals
+                                    Provide a list of Public Arts Commission&#39;s priorities to the public
                                 </li>
                                 <li>
-                                    Provide a searchable database of all campaigns and legislation endorsed by Public Arts Commission to the public
+                                    Provide a searchable database of all candidates, legislation, referendums, amendments and actions endorsed by Public Arts Commission to the public
                                 </li>
                                 <li>
-                                    Allow individuals in the art community to create accounts that let them:
+                                    Allow voters to create accounts that let them:
                                 </li>
                                 <ul>
                                     <li>
-                                        Connect with different individuals in the art community who also have Public Arts Commission accounts
+                                        Connect with other voters on the Public Arts Commission platform
                                     </li>
                                     <li>
-                                        Send messages to individuals in their network on Public Arts Commission
+                                        Send messages to other voters on the Public Arts Commission platform
                                     </li>
                                     <li>
-                                        Propose campaigns and events for endorsement by Public Arts Commission
+                                        Connect and organize with other voters who are interested in unionizing or already a part of their union if any
                                     </li>
                                     <li>
-                                        See and support relevant campaigns and events endorsed by Public Arts Commission
+                                        Submit candidates, legislation, referendums, amendments and actions for endorsement by Public Arts Commission
                                     </li>
                                     <li>
-                                        Receive alerts on relevant action items endorsed by Public Arts Commission like upcoming election dates and times
+                                        View and manage elections in which the voter can vote
+                                    </li>
+                                    <li>
+                                        View and manage actions in which the voter can participate
+                                    </li>
+                                    <li>
+                                        Connect and organize with Public Arts Commission endorsed candidates, legislation, referendums, amendments and actions
                                     </li>
                                 </ul>
                                 <li>
@@ -245,7 +253,7 @@ const PublicArtsCommission = () => {
                                 </li>
                                 <ul>
                                     <li>
-                                        All individuals who have Public Arts Commission accounts and are eligible to vote for the campaign in an election
+                                        All voters who have Public Arts Commission accounts and are eligible to vote for the campaign in an election
                                     </li>
                                 </ul>
                             </ul>
@@ -397,8 +405,8 @@ const PublicArtsCommission = () => {
             </Head>
             <div className="container">
                 <h1 className="header">
-                    Public Arts Commission web programs<br/>
-                    <span style={{color: "#545451"}} >2017 &ndash; present</span>
+                    Public Arts Commission web platform<br/>
+                    <span style={{color: "#545451"}} >first launched in 2017 and redesigned in 2023</span>
                 </h1>
                 <div className={styles.slider_case_study}>
                     <PublicArtsCommissionSlideCarousel />
@@ -421,8 +429,8 @@ const PublicArtsCommission = () => {
                             challenges
                         </h2>
                         <div className='paragraphs' >
-                            Revenue generation is a challenge facing the Public Arts Commission web programs.  
-                            The subscription-based web application for campaigns will likely help generate revenue.
+                            Revenue generation is a challenge facing the Public Arts Commission web platform.  
+                            The subscription-based web platform for campaigns will likely help generate revenue.
                         </div>
                     </div>
                     <div className={styles.caseStudyInfoSection}>
@@ -430,9 +438,7 @@ const PublicArtsCommission = () => {
                             discoveries
                         </h2>
                         <div className='paragraphs' >
-                            Launching the Public Arts Commission website and web application was a huge accomplishment.  
-                            However, they were done before I had learned about modern web development frameworks like Svelte and Next.js.  
-                            Using Svelte in the future will help with creating a modern website and modern web applications for Public Arts Commission.  
+                            Forthcoming.
                         </div>
                     </div>
                     
@@ -452,24 +458,24 @@ const PublicArtsCommission = () => {
                     </Link>
                 </div>
                 <div className={styles.case_studies_nav}>
-                    <MyLink href="/case_studies/artInTechServices" passHref={true} >
+                    <MyLink href="/case_studies/infiniteMile" passHref={true} >
                         <ButtonPrevious passHref={true} aria-label="link to previous case study">
+                            <div className={styles.caseStudyThumbnailOverlay} >
+                                <h4 className={styles.caseStudyThumbnailHeading} >
+                                    Infinite Mile website 
+                                </h4>
+                            </div>
+                            <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
+                        </ButtonPrevious>
+                    </MyLink>
+                    <MyLink href="/case_studies/artInTechServices" passHref={true} >
+                        <ButtonNext passHref={true} aria-label="link to next case study" >
                             <div className={styles.caseStudyThumbnailOverlay} >
                                 <h4 className={styles.caseStudyThumbnailHeading} >
                                     Art in Tech Services web programs
                                 </h4>
                             </div>
-                            <Image src={artinTechServicesScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
-                        </ButtonPrevious>
-                    </MyLink>
-                    <MyLink href="/case_studies/infiniteMile" passHref={true} >
-                        <ButtonNext passHref={true} aria-label="link to next case study" >
-                            <div className={styles.caseStudyThumbnailOverlay} >
-                                <h4 className={styles.caseStudyThumbnailHeading} >
-                                    Infinite Mile website
-                                </h4>
-                            </div>
-                            <Image src={infiniteMileScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
+                            <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
                         </ButtonNext>
                     </MyLink>
                 </div>

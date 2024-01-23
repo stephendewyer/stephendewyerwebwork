@@ -11,6 +11,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+const JoyfoodlySlides = [
+  {
+    image: slide_01,
+    alt_text: "Joyfoodly slide 1"
+  },
+  {
+    image: slide_02,
+    alt_text: "Joyfoodly slide 2"
+  }
+];
+
 const NextArrow = () => {
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
@@ -75,12 +86,13 @@ export default class JoyfoodlySlideCarousel extends Component {
     return (
       <div className={classes.slide_carousel}>
         <Slider ref={c => (this.slider = c)} {...settings}>
-          <div key={1}>
-            <Image src={slide_01} alt="Joyfoodly slide 1" priority/>
-          </div>
-          <div key={2}>
-            <Image src={slide_02} alt="Joyfoodly slide 2" priority/>
-          </div>
+          {JoyfoodlySlides.map((slide, index) => {
+            return (
+              <div key={index}>
+                <Image src={slide.image} alt={slide.alt_text} priority/>
+              </div>
+            );
+          })}
         </Slider>
         <div className={classes.arrows}>
           <div className={classes.prev_arrow} onClick={this.previous}>

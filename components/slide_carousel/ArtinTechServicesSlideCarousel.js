@@ -23,6 +23,65 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+const ArtInTechServicesSlides = [
+  {
+    image: slide_01,
+    alt_text: "Art in Tech Services Inc slide 1"
+  },
+  {
+    image: slide_02,
+    alt_text: "Art in Tech Services Inc slide 2"
+  },
+  {
+    image: slide_03,
+    alt_text: "Art in Tech Services Inc slide 3"
+  },
+  {
+    image: slide_04,
+    alt_text: "Art in Tech Services Inc slide 4"
+  },
+  {
+    image: slide_05,
+    alt_text: "Art in Tech Services Inc slide 5"
+  },
+  {
+    image: slide_06,
+    alt_text: "Art in Tech Services Inc slide 6"
+  },
+  {
+    image: slide_07,
+    alt_text: "Art in Tech Services Inc slide 7"
+  },
+  {
+    image: slide_08,
+    alt_text: "Art in Tech Services Inc slide 8"
+  },
+  {
+    image: slide_09,
+    alt_text: "Art in Tech Services Inc slide 9"
+  },
+  {
+    image: slide_10,
+    alt_text: "Art in Tech Services Inc slide 10"
+  },
+  {
+    image: slide_11,
+    alt_text: "Art in Tech Services Inc slide 11"
+  },
+  {
+    image: slide_12,
+    alt_text: "Art in Tech Services Inc slide 12"
+  },
+  {
+    image: slide_13,
+    alt_text: "Art in Tech Services Inc slide 13"
+  },
+  {
+    image: slide_15,
+    alt_text: "Art in Tech Services Inc slide 15"
+  }
+];
+
 const NextArrow = () => {
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
@@ -87,48 +146,13 @@ export default class ArtinTechServicesSlideCarousel extends Component {
     return (
       <div className={classes.slide_carousel}>
         <Slider ref={c => (this.slider = c)} {...settings}>
-          <div key={1}>
-            <Image src={slide_01} alt="Art in Tech Services Inc slide 1" priority/>
-          </div>
-          <div key={2}>
-            <Image src={slide_02} alt="Art in Tech Services Inc slide 2" priority/>
-          </div>
-          <div key={3}>
-            <Image src={slide_03} alt="Art in Tech Services Inc slide 3" priority/>
-          </div>
-          <div key={4}>
-            <Image src={slide_04} alt="Art in Tech Services Inc slide 4" priority/>
-          </div>
-          <div key={5}>
-            <Image src={slide_05} alt="Art in Tech Services Inc slide 5" priority/>
-          </div>
-          <div key={6}>
-            <Image src={slide_06} alt="Art in Tech Services Inc slide 6" priority/>
-          </div>
-          <div key={7}>
-            <Image src={slide_07} alt="Art in Tech Services Inc slide 7" priority/>
-          </div>
-          <div key={8}>
-            <Image src={slide_08} alt="Art in Tech Services Inc slide 8" priority/>
-          </div>
-          <div key={9}>
-            <Image src={slide_09} alt="Art in Tech Services Inc slide 9" priority/>
-          </div>
-          <div key={10}>
-            <Image src={slide_10} alt="Art in Tech Services Inc slide 10" priority/>
-          </div>
-          <div key={11}>
-            <Image src={slide_11} alt="Art in Tech Services Inc slide 11" priority/>
-          </div>
-          <div key={12}>
-            <Image src={slide_12} alt="Art in Tech Services Inc slide 12" priority/>
-          </div>
-          <div key={13}>
-            <Image src={slide_13} alt="Art in Tech Services Inc slide 13" priority/>
-          </div>
-          <div key={15}>
-            <Image src={slide_15} alt="Art in Tech Services Inc slide 15" priority/>
-          </div>
+          {ArtInTechServicesSlides.map((slide, index) => {
+            return (
+              <div key={index}>
+                <Image src={slide.image} alt={slide.alt_text} priority/>
+              </div>
+            )
+          })}
         </Slider>
         <div className={classes.arrows}>
           <div className={classes.prev_arrow} onClick={this.previous}>

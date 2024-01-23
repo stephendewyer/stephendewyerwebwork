@@ -98,37 +98,37 @@ const IndexPage = () => {
           featured case studies
         </h2>
         <div className={styles.case_studies}>
-          <MyLink 
-            onMouseEnter={(() => setJoyfoodlyIsHovered(true))}
-            onMouseOver={(() => setJoyfoodlyIsHovered(true))}
-            onMouseLeave={(() => setJoyfoodlyIsHovered(false))}
-            onMouseOut={(() => setJoyfoodlyIsHovered(false))}
-            href="/case_studies/joyfoodly" 
+        <MyLink 
+            onMouseEnter={(() => setPublicArtsCommissionIsHovered(true))}
+            onMouseOver={(() => setPublicArtsCommissionIsHovered(true))}
+            onMouseLeave={(() => setPublicArtsCommissionIsHovered(false))}
+            onMouseOut={(() => setPublicArtsCommissionIsHovered(false))}
+            href="/case_studies/publicArtsCommission" 
             passHref 
           >
             <div className={styles.case_studies_a}>
-              <div className={styles.case_study_image}>  
-                <Image src={joyfoodlyScreengrab} layout="responsive" alt="Joyfoodly screenshot" /> 
+              <div className={styles.case_study_image}>
+                <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission screenshot" />              
               </div>
               <div className={styles.case_study_info_container}>
                 <div className={styles.case_study_info}>
                   <h3 className={styles.case_study_title}>
-                    Joyfoodly legacy website<br /><span style={{color: "#52535E"}} >2022</span>
+                      Public Arts Commission web platform<br/><span style={{color: "#52535E"}} >2017 &ndash; present</span>
                   </h3>
                   <div className={styles.case_study_subtitle}>
-                    A legacy website for a culinary education company serving families.
+                      A web platform for a non-profit organization that is dedicated to expanding the political imagination for greater democracy within and outside art.
                   </div>
                   <div className={styles.view_button} >
-                    <Button 
-                      buttonIsActive={joyfoodlyIsHovered}
-                      aria-label="link to view"
-                    >
-                      view
-                    </Button>
+                      <Button 
+                        buttonIsActive={publicArtsCommissionIsHovered}
+                        aria-label="link to view"
+                      >
+                          view
+                      </Button>
                   </div>
                 </div>
               </div>
-            </div>
+          </div>
           </MyLink>
           <MyLink 
             onMouseEnter={(() => setArtInTechServicesIsHovered(true))}
@@ -163,36 +163,36 @@ const IndexPage = () => {
             </div>
           </MyLink>
           <MyLink 
-            onMouseEnter={(() => setPublicArtsCommissionIsHovered(true))}
-            onMouseOver={(() => setPublicArtsCommissionIsHovered(true))}
-            onMouseLeave={(() => setPublicArtsCommissionIsHovered(false))}
-            onMouseOut={(() => setPublicArtsCommissionIsHovered(false))}
-            href="/case_studies/publicArtsCommission" 
+            onMouseEnter={(() => setJoyfoodlyIsHovered(true))}
+            onMouseOver={(() => setJoyfoodlyIsHovered(true))}
+            onMouseLeave={(() => setJoyfoodlyIsHovered(false))}
+            onMouseOut={(() => setJoyfoodlyIsHovered(false))}
+            href="/case_studies/joyfoodly" 
             passHref 
           >
             <div className={styles.case_studies_a}>
-              <div className={styles.case_study_image}>
-                <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission screenshot" />              
+              <div className={styles.case_study_image}>  
+                <Image src={joyfoodlyScreengrab} layout="responsive" alt="Joyfoodly screenshot" /> 
               </div>
               <div className={styles.case_study_info_container}>
                 <div className={styles.case_study_info}>
                   <h3 className={styles.case_study_title}>
-                      Public Arts Commission web programs<br/><span style={{color: "#52535E"}} >2017 &ndash; present</span>
+                    Joyfoodly legacy website<br /><span style={{color: "#52535E"}} >2022</span>
                   </h3>
                   <div className={styles.case_study_subtitle}>
-                      Web programs for a non-profit organization that connects the art community to democratic movements.
+                    A legacy website for a culinary education company serving families.
                   </div>
                   <div className={styles.view_button} >
-                      <Button 
-                        buttonIsActive={publicArtsCommissionIsHovered}
-                        aria-label="link to view"
-                      >
-                          view
-                      </Button>
+                    <Button 
+                      buttonIsActive={joyfoodlyIsHovered}
+                      aria-label="link to view"
+                    >
+                      view
+                    </Button>
                   </div>
                 </div>
               </div>
-          </div>
+            </div>
           </MyLink>
           <MyLink 
             onMouseEnter={(() => setInfiniteMileIsHovered(true))}

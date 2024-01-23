@@ -21,7 +21,7 @@ import ButtonPrevious from '../../../components/button/ButtonPrevious';
 import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
 import joyfoodlyScreengrab from '../../../public/images/case_studies/Joyfoodly/Joyfoodly_desktop.png';
-import publicArtsCommissionScreengrab from '../../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_screengrab.png';
+import publicArtsCommissionScreengrab from '../../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_website_desktop_01.jpg';
 
 const InfiniteMile = () => {
 
@@ -421,24 +421,24 @@ const InfiniteMile = () => {
                     </Link>
                 </div>
                 <div className={styles.case_studies_nav}>
-                    <MyLink href="/case_studies/publicArtsCommission" passHref={true} >
+                    <MyLink href="/case_studies/joyfoodly" passHref={true} >
                         <ButtonPrevious passHref={true} aria-label="link to previous case study">
                             <div className={styles.caseStudyThumbnailOverlay} >
                                 <h4 className={styles.caseStudyThumbnailHeading} >
-                                    Public Arts Commission web programs
-                                </h4>
-                            </div>
-                            <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
-                        </ButtonPrevious>
-                    </MyLink>
-                    <MyLink href="/case_studies/joyfoodly" passHref={true} >
-                        <ButtonNext passHref={true} aria-label="link to next case study" >
-                            <div className={styles.caseStudyThumbnailOverlay} >
-                                <h4 className={styles.caseStudyThumbnailHeading} >
-                                    Joyfoodly website
+                                    Joyfoodly website 
                                 </h4>
                             </div>
                             <Image src={joyfoodlyScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
+                        </ButtonPrevious>
+                    </MyLink>
+                    <MyLink href="/case_studies/publicArtsCommission" passHref={true} >
+                        <ButtonNext passHref={true} aria-label="link to next case study" >
+                            <div className={styles.caseStudyThumbnailOverlay} >
+                                <h4 className={styles.caseStudyThumbnailHeading} >
+                                    Public Arts Commission web platform
+                                </h4>
+                            </div>
+                            <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission desktop screengrab thumbnail" />
                         </ButtonNext>
                     </MyLink>
                 </div>
