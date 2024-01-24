@@ -230,9 +230,6 @@ const PublicArtsCommission = () => {
                                         Send messages to other voters on the Public Arts Commission platform
                                     </li>
                                     <li>
-                                        Connect and organize with other voters who are interested in unionizing or already a part of their union if any
-                                    </li>
-                                    <li>
                                         Submit candidates, legislation, referendums, amendments and actions for endorsement by Public Arts Commission
                                     </li>
                                     <li>
