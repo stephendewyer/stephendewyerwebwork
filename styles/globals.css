@@ -5,8 +5,8 @@ body {
   margin: 0;
   font-family: "segoeUI";
   color: #514C64;
-  font-size: 24px;
-  line-height: 1.6em;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 @font-face {
@@ -21,18 +21,39 @@ body {
 
 h1 {
   font-family: "CenturyGothic";
+  color: #514C64;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
 }
 
 h2 {
   font-family: "CenturyGothic";
+  color: #7A7296;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0 0 1rem 0;
 }
 
 h3 {
   font-family: "CenturyGothic";
+  color:#545451;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0 0 1rem 0;
 }
 
 h4 {
   font-family: "CenturyGothic";
+  color: #707578;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+p {
+  text-align: left;
+  margin: 0 0 1rem 0;
 }
 
 button {
@@ -89,93 +110,54 @@ figcaption {
   padding-top: 220px;
 }
 
-.header {
-  margin: 0 auto 40px auto;
-  padding: 0 20px;
-  font-weight: bold;
-  font-size: 28px;
-  color: #514C64;
-  text-align: center;
-}
+@media screen and (max-width: 1440px) {
 
-.header_02 {
-  font-size: 28px;
-  margin: 0 auto 40px auto;
-  max-width: 640px;
-  font-weight: bold;
-  color: #7A7296;
-  text-align: center;
-}
+  html, body {
+    font-size: 1.1rem;
+  }
 
-.header_03 {
-  color: #545451;
-  font-size: 24px;
-  margin: 0 auto 40px auto;
-  width: 100%;
-  max-width: 860px;
-  padding: 0 40px;
-  font-weight: bold;
-  text-align: left;
-}
+  h1 {
+    font-size: 1.4rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  h4 {
+    font-size: 1.1rem;
+  }
 
-.paragraphs_container {
-  height: auto;
-  width: 100%;
-  position: relative;
-  float: none;
-  padding: 0;
-  margin-bottom: 30px;
-}
-
-.paragraphs {
-  position: relative;
-  width: 50%;
-  max-width: 640px;
-  min-width: 400px;
-  margin: 0 auto;
-  font-size: 24px;
-  color: #514C64;
 }
 
 @media screen and (max-width: 750px){
 
-  body {
-    font-size: 16px;
+  html, body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+  
+  h4 {
+    font-size: 1rem;
   }
 
   .container {
     padding-top: 130px;
-  }
-
-  .header {
-    font-size: 20px;
-    margin: 0 auto 20px auto;
-  }
-
-  .header_02 {
-    font-size: 18px;
-    margin: 0 auto 20px auto;
-    padding: 0 20px;
-    min-width: 0;
-  }
-
-  .header_03 {
-    color: #545451;
-    font-size: 18px;
-    margin: 0 0 20px 0;
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-    font-weight: bold;
-    text-align: left;
-  }
-
-  .paragraphs {
-    width: 100%;
-    padding: 0 20px;
-    max-width: 100%;
-    min-width: 100%;
-    font-size: 16px;
   }
 
   .arrow {

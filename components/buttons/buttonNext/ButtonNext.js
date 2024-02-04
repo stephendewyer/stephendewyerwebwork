@@ -1,8 +1,8 @@
 import { useState  } from 'react';
 import styles from './ButtonNext.module.css';
 import Image from 'next/image';
-import nextButtonDefault from '../../public/images/arrows/arrow_links/arrow_next_01.svg';
-import nextButtonHover from '../../public/images/arrows/arrow_links/arrow_next_02.svg';
+import nextButtonDefault from '../../../public/images/arrows/arrow_links/arrow_next_01.svg';
+import nextButtonHover from '../../../public/images/arrows/arrow_links/arrow_next_02.svg';
 
 const ButtonNext = (props) => {
 

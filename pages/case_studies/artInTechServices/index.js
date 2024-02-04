@@ -14,12 +14,13 @@ import ArtInTechServicesSiteMap from '../../../public/images/case_studies/Art_in
 import ArtinTechServicesLogo from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/process/Art_in_Tech_Services_logo_01.svg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
-import ButtonNext from '../../../components/button/ButtonNext';
-import ButtonPrevious from '../../../components/button/ButtonPrevious';
-import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
+import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
+import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
+import ButtonExternalLink from '../../../components/buttons/buttonExternalLink/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
 import joyfoodlyScreengrab from '../../../public/images/case_studies/Joyfoodly/Joyfoodly_desktop.png';
 import publicArtsCommissionScreengrab from '../../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_website_desktop_01.jpg';
+import ArtInTechServicesBanner from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/background/Art_in_Tech_Services_background.jpg';
 
 const ArtinTechServices = () => {
 
@@ -32,9 +33,9 @@ const ArtinTechServices = () => {
                 priority
             />,
         caption: 
-            <div>
+            <p>
                 Art in Tech Services logo
-            </div>   
+            </p>   
     }
 
     const imagePlusCaptionSiteMap = {
@@ -46,9 +47,9 @@ const ArtinTechServices = () => {
                 priority
             />,
         caption: 
-            <div>
+            <p>
                 site map for the Art in Tech Services website
-            </div>,
+            </p>
     }
 
     const imagePlusCaptionPrototype = {
@@ -60,9 +61,9 @@ const ArtinTechServices = () => {
                 priority
             />,
         caption: 
-            <div>
+            <p>
                 prototype for the Art in Tech Services website
-            </div>,
+            </p>
     }
 
     const infoCards = [
@@ -70,15 +71,15 @@ const ArtinTechServices = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         about the client
-                    </h3>
+                    </h4>
                     <p>
                         Art in Tech Services Inc is a company that uses advancements in art and digital technology to improve design for businesses and the public.
                     </p>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         my role
-                    </h3>
+                    </h4>
                     <p>
                         Founding Director, Full-Stack Web Developer and UX Designer at Art in Tech Services
                     </p>
@@ -88,9 +89,9 @@ const ArtinTechServices = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         services I provided
-                    </h3>
+                    </h4>
                     <ul>
                         <li>
                             Designed, developed and deployed an enterprise web application featuring client collaboration software                            
@@ -114,9 +115,9 @@ const ArtinTechServices = () => {
             id: uuidv4(),
                 content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                             tools I used
-                    </h3>
+                    </h4>
                     <ul>
                         <li>
                             Figma
@@ -156,9 +157,9 @@ const ArtinTechServices = () => {
             ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         empathize
-                    </h2>  
+                    </h4>  
                     <p className={styles.panelParagraphs}>
                         In 2021, I launched Art in Tech Services to optimize human experiences of technology by using art in the design of digital programs.  
                         Art in Tech Services works with clients to create digital products that optimize human experiences of technology in design.
@@ -178,9 +179,9 @@ const ArtinTechServices = () => {
             ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         define
-                    </h2>
+                    </h4>
                     <div className={styles.panelParagraphs}>
                         Goals:
                         <ul>
@@ -227,9 +228,9 @@ const ArtinTechServices = () => {
             ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         ideate
-                    </h2>
+                    </h4>
                     <div className={styles.panelImageAndParagraphs}>
                         <div className={styles.panelImage}>
                             <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} />
@@ -257,9 +258,9 @@ const ArtinTechServices = () => {
             ,
             content: 
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         prototype
-                    </h2>
+                    </h4>
                     <div className={styles.panelParagraphs}>
                         <ImageHoverCaption imagePlusCaption={imagePlusCaptionPrototype} />
                         <p>
@@ -292,9 +293,9 @@ const ArtinTechServices = () => {
             ,
             content: 
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         build
-                    </h2>
+                    </h4>
                     <div className={styles.panelParagraphs}>  
                         The process of developing the web application allowed me to discover capabilities that could improve the design, like adding animated chevrons to the navigation to tell users which navigation tab is open. 
                         <br /><br />
@@ -359,9 +360,9 @@ const ArtinTechServices = () => {
             ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         test
-                    </h2>
+                    </h4>
                     <div className={styles.panelParagraphs}>
                         The redesigned Art in Tech Services website and web application received user testing from individuals in my network.  
                         I am currently working on sending a survey to prospective users asking what problems art in technology could help solve for them, what technology they needed to improve their work and how Art in Tech Services could better serve their needs. 
@@ -375,9 +376,9 @@ const ArtinTechServices = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         streamlined client collaboration
-                    </h3>
+                    </h4>
                     <p>
                         The web portal on the Art in Tech Services website has become a hub for communication with clients, making collaboration more efficient and effective.
                     </p>
@@ -387,9 +388,9 @@ const ArtinTechServices = () => {
             id: uuidv4(),
                 content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         helping clients manage their accounts
-                    </h3>
+                    </h4>
                     <p>
                         The Art in Tech Services client collaboration software enables clients to manage their accounts by allowing clients to schedule consultations, start projects, send and receive documents (forthcoming) and manage billing.
                     </p>
@@ -399,9 +400,9 @@ const ArtinTechServices = () => {
             id: uuidv4(),
                 content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         modern web programs
-                    </h3>
+                    </h4>
                     <p>
                         The Art in Tech Services web programs mostly use Next.js to create a modern web experience that is fast, responsive, accessible and dynamic.
                     </p>
@@ -418,84 +419,106 @@ const ArtinTechServices = () => {
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/artInTechServices" />
             </Head>
-            <div className="container">
-                <h1 className="header">
-                    Art in Tech Services Inc web programs<br/>
-                    <span style={{color: "#545451"}} >2021 &ndash; present</span>
-                </h1>
-                <div className={styles.slider_case_study}>
-                    <ArtinTechServicesSlideCarousel />
+            <div className={styles.banner_container}>
+                <Image 
+                    src={ArtInTechServicesBanner} 
+                    priority 
+                    objectFit="cover"
+                    layout="fill"
+                    alt="scene of Hal from 2001: A Space Odyssey directed by Stanley Kubrick"
+                />
+                <div className={styles.banner_overlay} />
+                <div className={styles.problem_and_solution_container}>
+                    <div className={styles.problem_container}>
+                        <p>
+                            <span className={styles.banner_heading}>The problem: </span>Technology that is not designed for human desire.
+                        </p>
+                    </div>
+                    <div className={styles.solution_container}>
+                        <p className={styles.banner_heading}>
+                            The solution:
+                        </p>
+                    </div>
                 </div>
+            </div>
+            <h1>
+                Art in Tech Services Inc web platform
+            </h1>
+            <h2>
+                2021 &ndash; present
+            </h2>
+            <div className={styles.slider_case_study}>
+                <ArtinTechServicesSlideCarousel />
+            </div>
 
-                <h2 className="header_02">
-                        details
-                </h2>
-                <InfoCards infoCards={infoCards} />
-                <div className='paragraphs_container' >
-                    <h2 className="header_02">
-                        process
-                    </h2>       
-                    <Tabs tabPanels={tabPanels} />
-                    <h2 className="header_02">
-                        results
-                    </h2>
-                    <InfoCards outcomeCards={outcomeCards} />
-                    <div className={styles.caseStudyInfoSection}>
-                        <h2 className="header_02">
-                            discoveries
-                        </h2>
-                        <div className='paragraphs' >
-                            Launching the Art in Tech Services web application was a huge accomplishment.  
-                            The process of developing the application allowed me to design new interfaces.  
-                            Creating the web application helped me to get a deeper understanding of modern web development.
-                        </div>
-                    </div>
-                    <div className={styles.caseStudyInfoSection}>
-                        <h2 className="header_02">
-                            next steps
-                        </h2>
-                        <div className='paragraphs' >
-                            As Art in Tech Services continues to evolve, I will talk with potential collaborators to see what their particular pain points are with technology and how Art in Tech Services can help solve their particular problems.
-                        </div>
-                    </div>
+            <h3>
+                    details
+            </h3>
+            <InfoCards infoCards={infoCards} />
+            <div className='paragraphs_container' >
+                <h3>
+                    process
+                </h3>       
+                <Tabs tabPanels={tabPanels} />
+                <h3 className="header_02">
+                    results
+                </h3>
+                <InfoCards outcomeCards={outcomeCards} />
+                <div className={styles.caseStudyInfoSection}>
+                    <h3 className="header_02">
+                        discoveries
+                    </h3>
+                    <p>
+                        Launching the Art in Tech Services web application was a huge accomplishment.  
+                        The process of developing the application allowed me to design new interfaces.  
+                        Creating the web application helped me to get a deeper understanding of modern web development.
+                    </p>
                 </div>
-                <div className={styles.visit_button}>
-                    <Link href="https://www.artintechservices.com/" passHref={true} >
-                        <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
-                            <ButtonExternalLink passHref={true} aria-label="link to visit">
-                                <div>
-                                    Art in Tech Services website
-                                </div>
-                                <div className={styles.external_link_icon} >
-                                    <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                                </div>
-                            </ButtonExternalLink>
-                        </a>
-                    </Link>
+                <div className={styles.caseStudyInfoSection}>
+                    <h3 className="header_02">
+                        next steps
+                    </h3>
+                    <p>
+                        As Art in Tech Services continues to evolve, I will talk with potential collaborators to see what their particular pain points are with technology and how Art in Tech Services can help solve their particular problems.
+                    </p>
                 </div>
-                <div className={styles.case_studies_nav}>
-                    <MyLink href="/case_studies/publicArtsCommission" passHref={true} >
-                        <ButtonPrevious passHref={true} aria-label="link to previous case study">
-                            <div className={styles.caseStudyThumbnailOverlay} >
-                                <h4 className={styles.caseStudyThumbnailHeading} >
-                                    Public Arts Commission web platform
-                                </h4>
+            </div>
+            <div className={styles.visit_button}>
+                <Link href="https://www.artintechservices.com/" passHref={true} >
+                    <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
+                        <ButtonExternalLink passHref={true} aria-label="link to visit">
+                            <div>
+                                Art in Tech Services website
                             </div>
-                            <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission desktop screengrab thumbnail" />
-                        </ButtonPrevious>
-                    </MyLink>
-                    <MyLink href="/case_studies/joyfoodly" passHref={true} >
-                        <ButtonNext passHref={true} aria-label="link to next case study" >
-                            <div className={styles.caseStudyThumbnailOverlay} >
-                                <h4 className={styles.caseStudyThumbnailHeading} >
-                                    
-                                    Joyfoodly website
-                                </h4>
+                            <div className={styles.external_link_icon} >
+                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
                             </div>
-                            <Image src={joyfoodlyScreengrab} layout="responsive" alt="Joyfoodly desktop screengrab thumbnail" />
-                        </ButtonNext>
-                    </MyLink>
-                </div>
+                        </ButtonExternalLink>
+                    </a>
+                </Link>
+            </div>
+            <div className={styles.case_studies_nav}>
+                <MyLink href="/case_studies/publicArtsCommission" passHref={true} >
+                    <ButtonPrevious passHref={true} aria-label="link to previous case study">
+                        <div className={styles.caseStudyThumbnailOverlay} >
+                            <h4 className={styles.caseStudyThumbnailHeading} >
+                                Public Arts Commission web platform
+                            </h4>
+                        </div>
+                        <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission desktop screengrab thumbnail" />
+                    </ButtonPrevious>
+                </MyLink>
+                <MyLink href="/case_studies/joyfoodly" passHref={true} >
+                    <ButtonNext passHref={true} aria-label="link to next case study" >
+                        <div className={styles.caseStudyThumbnailOverlay} >
+                            <h4 className={styles.caseStudyThumbnailHeading} >
+                                
+                                Joyfoodly website
+                            </h4>
+                        </div>
+                        <Image src={joyfoodlyScreengrab} layout="responsive" alt="Joyfoodly desktop screengrab thumbnail" />
+                    </ButtonNext>
+                </MyLink>
             </div>
         </Fragment>
         

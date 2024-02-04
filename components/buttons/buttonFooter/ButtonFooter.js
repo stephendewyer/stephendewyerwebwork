@@ -1,4 +1,4 @@
-import classes from './button_footer.module.css';
+import classes from './ButtonFooter.module.css';
 
 const ButtonFooter = (props) => {
     return (

@@ -14,12 +14,13 @@ import JoyfoodlyDesktopPrototype from '../../../public/images/case_studies/Joyfo
 import JoyfoodlyMobilePrototype from '../../../public/images/case_studies/Joyfoodly/Joyfoodly_mobile_desktop.jpg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
-import ButtonNext from '../../../components/button/ButtonNext';
-import ButtonPrevious from '../../../components/button/ButtonPrevious';
-import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
+import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
+import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
+import ButtonExternalLink from '../../../components/buttons/buttonExternalLink/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
 import artinTechServicesScreengrab from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_screengrab.png';
 import infiniteMileScreengrab from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
+import JoyfoodlyBanner from '../../../public/images/case_studies/Joyfoodly/background/Joyfoodly_background.jpg';
 
 const Joyfoodly = () => {
 
@@ -32,9 +33,9 @@ const Joyfoodly = () => {
                 priority
             />,
         caption: 
-            <div>
+            <p>
                 prototype for the Joyfoodly website for mobile device
-            </div>,
+            </p>
     }
 
     const imagePlusCaptionMobilePrototype = {
@@ -46,9 +47,9 @@ const Joyfoodly = () => {
                 priority
             />,
         caption: 
-            <div>
+            <p>
                 prototype for the Joyfoodly website for desktop device
-            </div>,
+            </p>
     }
 
     const infoCards = [
@@ -56,15 +57,15 @@ const Joyfoodly = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         about the client
-                    </h3>
+                    </h4>
                     <p>
                         Joyfoodly helps families learn to eat more fruits and vegetables, offering a downloadable cookbook called Joyful12.
                     </p>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         my role
-                    </h3>
+                    </h4>
                     <p>
                         Founding Director of Art in Tech Services Inc
                     </p>
@@ -74,9 +75,9 @@ const Joyfoodly = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         services I provided
-                    </h3>
+                    </h4>
                     <ul>
                         <li>
                             Designed, developed and deployed a responsive legacy website
@@ -97,9 +98,9 @@ const Joyfoodly = () => {
             id: uuidv4(),
                 content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         tools I used
-                    </h3>
+                    </h4>
                     <ul>
                         <li>
                             Figma
@@ -127,9 +128,9 @@ const Joyfoodly = () => {
             ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4>
                         empathize
-                    </h2>
+                    </h4>
                     <div className={styles.panelImageAndParagraphs}>
                         <div className={styles.panelImage}>
                             <Image 
@@ -139,7 +140,7 @@ const Joyfoodly = () => {
                                 priority
                             />     
                         </div>   
-                        <p className={styles.panelParagraphsWithImage}>
+                        <p>
                             Busy parents want to cook healthy meals for their children, but sometimes don&#8217;t know how to make healthy meals with plenty of fruits and vegetables.  
                             Joyfoodly was a culinary education company that helped busy parents learn to cook healthy meals with more fruits and vegetables.  
                             As Joyfoodly came to a close, the company wanted to close all existing web accounts, provide the Joyfoodly community with a free version of the Joyful12 cookbook via a new legacy website and notify the community about the business closing and creation of the new legacy website via email.
@@ -157,9 +158,9 @@ const Joyfoodly = () => {
             ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         define
-                    </h2>
+                    </h4>
                     <div className={styles.panelParagraphs}>
                         Goals:
                         <ul>
@@ -186,14 +187,14 @@ const Joyfoodly = () => {
             ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         ideate
-                    </h2> 
-                    <div className={styles.panelParagraphs}>
+                    </h4> 
+                    <p>
                         We agreed to create a simple, modern website using Next.js for the legacy website.  
                         I created quick sketches of possible desktop and mobile designs for the website.
-                    </div>
-                </div>,
+                    </p>
+                </div>
         },
         {
             id: uuidv4(),
@@ -205,9 +206,9 @@ const Joyfoodly = () => {
             ,
             content: 
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         prototype
-                    </h2> 
+                    </h4> 
                     <div className={styles.panelImageAndParagraphs}>
                         <div className={styles.panelImage}>
                             <ImageHoverCaption imagePlusCaption={imagePlusCaptionMobilePrototype} />
@@ -258,16 +259,16 @@ const Joyfoodly = () => {
             ,
             content: 
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         build
-                    </h2> 
-                    <div className={styles.panelParagraphs}>
+                    </h4> 
+                    <p>
                         After stakeholders agreed to prototype designs, I developed the Joyfoodly website using Next.js.  
                         I added redirects from the domain names joyfoodly.com and joyful12.com to the Joyfoodly legacy website.  
                         I closed accounts for the web programs no longer needed for Joyfoodly.  
                         The emails were created using Mailchimp.
-                    </div>
-                </div>,
+                    </p>
+                </div>
         },
         {
             id: uuidv4(),
@@ -279,14 +280,14 @@ const Joyfoodly = () => {
             ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         test
-                    </h2>  
-                    <div className={styles.panelParagraphs}>
+                    </h4>  
+                    <p>
                         The Joyfoodly website was tested for cross-browser functionality and on multiple devices.  
                         By testing, we were able to observe slight differences between Android and iPhone browser versions of the legacy website.  
                         I was able to correct the website for compatibility with Android and iPhone browsers.
-                    </div>
+                    </p>
                 </div>,
         },
     ];
@@ -296,9 +297,9 @@ const Joyfoodly = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         new website featuring Joyful12 cookbook
-                    </h3>
+                    </h4>
                     <p>
                         The Joyfoodly community given free access to the Joyful12 cookbook.
                     </p>
@@ -308,9 +309,9 @@ const Joyfoodly = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         saved money by closing unnecessary accounts
-                    </h3>
+                    </h4>
                     <p>
                         By using a free Vercel account and closing the WordPress account, I was able to save the client hundreds of dollars a year.
                     </p>
@@ -320,9 +321,9 @@ const Joyfoodly = () => {
             id: uuidv4(),
                 content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         informed Joyfoodly community
-                    </h3>
+                    </h4>
                     <p>
                         The Joyfoodly community received custom emails about the business closing and access to the Joyful12 cookbook via a new website.
                     </p>
@@ -339,71 +340,94 @@ const Joyfoodly = () => {
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/joyfoodly" />
             </Head>
-            
-            <div className="container">
-                <h1 className="header">
-                    Joyfoodly legacy website<br />
-                    <span style={{color: "#545451"}} >2022</span>
-                </h1>
-                <div className={styles.slider_case_study}>
-                    <JoyfoodlySlideCarousel />
+            <div className={styles.banner_container}>
+                <Image 
+                    src={JoyfoodlyBanner} 
+                    priority 
+                    objectFit="cover"
+                    layout="fill"
+                    alt="busy parent cooking with child"
+                />
+                <div className={styles.banner_overlay} />
+                <div className={styles.problem_and_solution_container}>
+                    <div className={styles.problem_container}>
+                        <p>
+                            <span className={styles.banner_heading}>The problem: </span>Joyfoodly, a culinary education company, needs a website where users can go to download Joyfoodly cookbook after closing business.
+                        </p>
+                    </div>
+                    <div className={styles.solution_container}>
+                        <p className={styles.banner_heading}>
+                            The solution:
+                        </p>
+                    </div>
                 </div>
-                <h2 className="header_02">
-                    details
-                </h2>
-                <InfoCards infoCards={infoCards} />
-                <h2 className="header_02">
-                    process
-                </h2>
-                <Tabs tabPanels={tabPanels} />
-                <h2 className="header_02">
-                    results
-                </h2>
-                <InfoCards outcomeCards={outcomeCards} />
-                <h2 className="header_02">
+            </div>
+            <h1>
+                Joyfoodly legacy website
+            </h1>
+            <h2>
+                2022
+            </h2>
+            <div className={styles.slider_case_study}>
+                <JoyfoodlySlideCarousel />
+            </div>
+            <h3>
+                details
+            </h3>
+            <InfoCards infoCards={infoCards} />
+            <h3>
+                process
+            </h3>
+            <Tabs tabPanels={tabPanels} />
+            <h3>
+                results
+            </h3>
+            <InfoCards outcomeCards={outcomeCards} />
+            <div className={styles.caseStudyInfoSection}>
+                <h3>
                     discoveries
-                </h2>
-                <div className='paragraphs' >
+                </h3>
+                <p>
                     The project went very well.  
                     A key to the success of the project was writing a contract to set a timeline and expectations for deliverables.  
                     Art in Tech Services was a great vehicle for the project.
-                </div>
-                <div className={styles.visit_button}>
-                    <Link href="https://joyfoodly.vercel.app/" passHref={true} >
-                        <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
-                            <ButtonExternalLink passHref={true} aria-label="link to visit">
-                                <div>
-                                    Joyfoodly website
-                                </div>
-                                <div className={styles.external_link_icon} >
-                                    <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                                </div>
-                            </ButtonExternalLink>
-                        </a>
-                    </Link>
-                </div>
-                <div className={styles.case_studies_nav}>
-                    <MyLink href="/case_studies/artInTechServices" passHref={true} >
-                        <ButtonPrevious passHref={true} aria-label="link to previous case study">
-                            <div className={styles.caseStudyThumbnailOverlay} >
-                                <h4 className={styles.caseStudyThumbnailHeading} >
-                                    Art in Tech Services web programs
-                                </h4>
+                </p>
+            </div>
+            <div className={styles.visit_button}>
+                <Link href="https://joyfoodly.vercel.app/" passHref={true} >
+                    <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
+                        <ButtonExternalLink passHref={true} aria-label="link to visit">
+                            <div>
+                                Joyfoodly website
                             </div>
-                            <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
-                        </ButtonPrevious>
-                    </MyLink>
-                    <MyLink href="/case_studies/infiniteMile" passHref={true} >
-                        <ButtonNext passHref={true} aria-label="link to next case study" >
-                            <div className={styles.caseStudyThumbnailOverlay} >
-                                <h4 className={styles.caseStudyThumbnailHeading} >
-                                    Infinite Mile website
-                                </h4>
+                            <div className={styles.external_link_icon} >
+                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
                             </div>
-                            <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
-                        </ButtonNext>
-                    </MyLink>
-                </div>
+                        </ButtonExternalLink>
+                    </a>
+                </Link>
+            </div>
+            <div className={styles.case_studies_nav}>
+                <MyLink href="/case_studies/artInTechServices" passHref={true} >
+                    <ButtonPrevious passHref={true} aria-label="link to previous case study">
+                        <div className={styles.caseStudyThumbnailOverlay} >
+                            <h4 className={styles.caseStudyThumbnailHeading} >
+                                Art in Tech Services web programs
+                            </h4>
+                        </div>
+                        <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
+                    </ButtonPrevious>
+                </MyLink>
+                <MyLink href="/case_studies/infiniteMile" passHref={true} >
+                    <ButtonNext passHref={true} aria-label="link to next case study" >
+                        <div className={styles.caseStudyThumbnailOverlay} >
+                            <h4 className={styles.caseStudyThumbnailHeading} >
+                                Infinite Mile website
+                            </h4>
+                        </div>
+                        <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
+                    </ButtonNext>
+                </MyLink>
             </div>
         </Fragment> 
     );

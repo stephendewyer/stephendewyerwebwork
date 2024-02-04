@@ -1,0 +1,124 @@
+.panel {
+    width: 100%;
+    border-bottom: 1px solid #514C64;
+    height: auto;
+}
+
+.panel_label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+
+.panel_label_bold {
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    color: #838B6A;
+}
+
+.panel_label_image {
+    min-width: 4rem;
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+}
+
+.arrow_container {
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    min-width: 1.25em;
+    transform: rotateX(0) rotate(90deg);
+    will-change: transform;
+    transition: transform 0.2s ease-out;
+}
+
+.arrow_container_active {
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    min-width: 1.25em;
+    transform: rotateX(180deg) rotate(90deg);
+    will-change: transform;
+    transition: transform 0.2s ease-out;
+}
+  
+.panel_label::after {
+    
+    width: 0.8rem;
+    height: 0.8rem;
+}
+  
+.panel_label_bold::after {
+    transition: transform 300ms ease-out;
+    transform: rotate(0deg);
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.panel_label:hover {
+    color: #5B7BA2;
+}
+
+
+.panel_inner {
+    overflow: hidden;
+    will-change: height;
+    transition: height 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.panel_content {
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: opacity 0.3s linear 0.18s;  
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+    .panel_label {
+        gap: 0.75rem;
+        padding: 0.5rem 0;  
+    }
+    
+    .panel_label_bold {
+        gap: 0.75rem;
+        padding: 0.5rem 0;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .panel_label {
+        gap: 0.5rem;
+        padding: 0.5rem 0;  
+    }
+    
+    .panel_label_bold {
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .panel_content {
+        margin-bottom: 30px;
+        margin-left: 0px;
+        padding-left: 0;
+        padding-right: 40px;  
+    }
+
+  }

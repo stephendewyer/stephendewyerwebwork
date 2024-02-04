@@ -4,8 +4,8 @@ import { useRouter } from 'next/router';
 import InputErrorMessage from '../../components/inputErrorMessage/InputErrorMessage';
 import FlashMessage from '../../components/flash_message/FlashMessage';
 import MyLink from '../../public/util/myLink';
-import PillButton from '../../components/button/pill_button/PillButton';
-import PillButtonSecondary from '../../components/button/pillButtonSecondary/PillButtonSecondary';
+import PillButton from '../../components/buttons/buttonPill/ButtonPIll';
+import PillButtonSecondary from '../../components/buttons/buttonPillSecondary/ButtonPillSecondary';
 import classes from './contact.module.css';
 
 async function createMessage(nameFirst, nameLast, email, message) {
@@ -213,7 +213,7 @@ const Contact = () => {
 
     const messageInputClasses = enteredMessageIsValid ? classes.textarea_input : classes.invalid_textarea_input;
 
-    const emailErrorMessage = '';
+    let emailErrorMessage = '';
 
     if (!enteredEmailIsValid) {
         emailErrorMessage = (
@@ -339,11 +339,6 @@ const Contact = () => {
                         }
                     </div>
                     <div className={classes.contact_buttons} >
-                        <MyLink href={'/'} passHref aria-label="link to index" >
-                            <PillButtonSecondary>
-                                cancel
-                            </PillButtonSecondary>
-                        </MyLink>
                         <PillButton type='submit' >
                             send
                         </PillButton>
@@ -356,6 +351,11 @@ const Contact = () => {
                         message={notification.message}
                     />
                 )}
+                <MyLink href={'/'} passHref aria-label="link to index" className={classes.contact_button}>
+                    <PillButtonSecondary>
+                        cancel
+                    </PillButtonSecondary>
+                </MyLink>
             </div>
         </Fragment>
     );

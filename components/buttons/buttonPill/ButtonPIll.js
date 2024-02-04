@@ -1,6 +1,6 @@
-import classes from './PillButton.module.css';
+import classes from './ButtonPill.module.css';
 
-const PillButton = (props) => {
+const ButtonPill = (props) => {
     return (
         <button className={classes.pill_button}>
             {props.children}
@@ -8,4 +8,4 @@ const PillButton = (props) => {
     );
 };
 
-export default PillButton;
+export default ButtonPill;

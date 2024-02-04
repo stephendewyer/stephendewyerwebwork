@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styles from './ButtonPrevious.module.css';
 import Image from 'next/image';
-import previousButtonDefault from '../../public/images/arrows/arrow_links/arrow_previous_01.svg';
-import previousButtonHover from '../../public/images/arrows/arrow_links/arrow_previous_02.svg';
+import previousButtonDefault from '../../../public/images/arrows/arrow_links/arrow_previous_01.svg';
+import previousButtonHover from '../../../public/images/arrows/arrow_links/arrow_previous_02.svg';
 
 const ButtonPrevious = (props) => {
 

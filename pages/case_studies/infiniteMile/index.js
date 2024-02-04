@@ -16,12 +16,13 @@ import InfiniteMileLogo from '../../../public/images/case_studies/Infinite_Mile_
 import InfiniteMileSiteMap from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_site_map.jpg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
-import ButtonNext from '../../../components/button/ButtonNext';
-import ButtonPrevious from '../../../components/button/ButtonPrevious';
-import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
+import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
+import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
+import ButtonExternalLink from '../../../components/buttons/buttonExternalLink/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
 import joyfoodlyScreengrab from '../../../public/images/case_studies/Joyfoodly/Joyfoodly_desktop.png';
 import publicArtsCommissionScreengrab from '../../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_website_desktop_01.jpg';
+import InfiniteMileBanner from '../../../public/images/case_studies/Infinite_Mile_LLC/background/Infinite_Mile_background.jpg';
 
 const InfiniteMile = () => {
 
@@ -34,9 +35,9 @@ const InfiniteMile = () => {
                 priority
             />,
         caption: 
-            <div>
+            <p>
                 view of Detroit as seen from the 22nd floor of the Fisher Building
-            </div>,                  
+            </p>          
     }
 
     const imagePlusCaptionArtAndRaceConference = {
@@ -48,9 +49,9 @@ const InfiniteMile = () => {
                 priority
             />,
         caption: 
-            <div>
+            <p>
                 Infinite Mile + University of Michigan Stamps School of Art and Design Art and Race Conference at MOCAD in May of 2016.  Photograph by Sarah Nesbitt.
-            </div>,
+            </p>
     }
 
     const imagePlusCaptionInfiniteMileStaff = {
@@ -62,9 +63,9 @@ const InfiniteMile = () => {
                 priority
             />,
         caption: 
-            <div>
+            <p>
                 Infinite Mile Co-Founding Editor Jennifer Junkermeier, Infinite Mile Associate Editor Ryan Harte and Infinite Mile Co-Founding Editor stephen dewyer.  Photograph (c) 2017 Jeff Cancelosi.
-            </div>,
+            </p>
     }
 
     const imagePlusCaptionIdeate = {
@@ -76,9 +77,9 @@ const InfiniteMile = () => {
                 priority
             />,
         caption: 
-            <div>
+            <p>
                 Infinite Mile logo
-            </div>,
+            </p>
     }
 
     const imagePlusCaptionSiteMap = {
@@ -90,9 +91,9 @@ const InfiniteMile = () => {
                 priority
             />,
         caption: 
-            <div>
+            <p>
                 site map for the Infinite Mile website
-            </div>,
+            </p>
     }
 
     const infoCards = [
@@ -100,15 +101,15 @@ const InfiniteMile = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         about the client
-                    </h3>
+                    </h4>
                     <p>
                         Infinite Mile LLC was an award-winning journal of art and culture(s) in Detroit, Michigan that published monthly online issues and annual print anthologies.
                     </p>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         my role
-                    </h3>
+                    </h4>
                     <p>
                         Web Developer and UX Designer / Co-Founding Editor at Infinite Mile
                     </p>
@@ -118,9 +119,9 @@ const InfiniteMile = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         services I provided
-                    </h3>
+                    </h4>
                     <ul>
                         <li>
                             Designed, developed and deployed an enterprise website
@@ -144,9 +145,9 @@ const InfiniteMile = () => {
             id: uuidv4(),
                 content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         tools I used
-                    </h3>
+                    </h4>
                     <ul>
                         <li>
                             Adobe Suite
@@ -186,9 +187,9 @@ const InfiniteMile = () => {
             ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         empathize
-                    </h2>
+                    </h4>
                     <div className={styles.panelImageAndParagraphs}>
                         <div className={styles.panelImage}>
                           <ImageHoverCaption imagePlusCaption={imagePlusCaptionEmpathize} />  
@@ -210,9 +211,9 @@ const InfiniteMile = () => {
             ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         define
-                    </h2>
+                    </h4>
                     <p className={styles.panelParagraphs}>
                         Detroit, Michigan needed a monthly, web-based journal of art and culture(s) to voice issues affecting the Detroit art community.  
                         The journal would have to bridge demographic groups in a very segregated region by class and race.
@@ -229,9 +230,9 @@ const InfiniteMile = () => {
             ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         ideate
-                    </h2>
+                    </h4>
                     <div className={styles.panelImageAndParagraphs}>
                         <div className={styles.panelImage}>
                             <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} />
@@ -261,9 +262,9 @@ const InfiniteMile = () => {
             ,
             content: 
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         prototype
-                    </h2> 
+                    </h4> 
                     <p className={styles.panelParagraphs}>
                         I created a password-protected website as a prototype to share with stakeholders, who shared feedback.
                     </p>
@@ -279,9 +280,9 @@ const InfiniteMile = () => {
             ,
             content: 
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         build
-                    </h2> 
+                    </h4> 
                     <div className={styles.panelParagraphs}>
                         I built the Infinite Mile website using HTML, CSS, JavaScript, jQuery, MailChimp, VideoJS and WowSlider.  
                         Later, I added APIs for events using EventBrite and to handle sales of annual print anthologies and merchandise using PayPal.
@@ -298,9 +299,9 @@ const InfiniteMile = () => {
             ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         test
-                    </h2>  
+                    </h4>  
                     <div className={styles.panelParagraphs}>
                         User tests were conducted for the Infinite Mile website.  
                         Google Chrome Developer was used to test the code. 
@@ -314,9 +315,9 @@ const InfiniteMile = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         brought community together in one of the most segregated cities in the United States 
-                    </h3>
+                    </h4>
                     <p>
                         Infinite Mile brought community together from many different walks of life to voice issues affecting the art community in Detroit, Michigan.  Infinite Mile effectively showed the diversity and nuance of the population in Detroit.
                     </p>
@@ -326,9 +327,9 @@ const InfiniteMile = () => {
             id: uuidv4(),
                 content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         empowered representative media coverage of art and culture(s) in Detroit
-                    </h3>
+                    </h4>
                     <p>
                         Infinite Mile gave a platform for the art community in Detroit to publish articles and artist projects about the city, which frequently differed from the narratives published by national and international media companies outside Detroit.
                     </p>
@@ -338,9 +339,9 @@ const InfiniteMile = () => {
             id: uuidv4(),
                 content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         won a number of grants
-                    </h3>
+                    </h4>
                     <p>
                         Infinite Mile won a number of grants and awards including:
                     </p>
@@ -365,83 +366,101 @@ const InfiniteMile = () => {
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/infiniteMile" />
             </Head>
-            <div className="container">
-                <h1 className="header">
-                    Infinite Mile LLC (∞ mile) website<br />
-                    <span style={{color: "#545451"}} >2013 &ndash; 2017</span>
-                </h1>
-                <div className={styles.slider_case_study}>
-                    <InfiniteMileSlideCarousel />
-                </div>
-                <h2 className="header_02">
-                    details
-                </h2>
-                <InfoCards infoCards={infoCards} />
-                <h2 className="header_02">
-                    team
-                </h2>
-                <div className={styles.team}>
-                    <div className={styles.teamImageA}>
-                        <ImageHoverCaption imagePlusCaption={imagePlusCaptionArtAndRaceConference} /> 
+            <div className={styles.banner_container}>
+                <Image 
+                    src={InfiniteMileBanner} 
+                    priority 
+                    objectFit="cover"
+                    layout="fill"
+                    alt="view of Detroit, Michigan as seen from Fisher Building during sunrise"
+                />
+                <div className={styles.banner_overlay} />
+                <div className={styles.problem_and_solution_container}>
+                    <div className={styles.problem_container}>
+                        <p>
+                            <span className={styles.banner_heading}>The problem: </span>No local art and cultural journal covering local art and culture in Detroit, Michigan, causing many local art events to go unnoticed despite an active and vibrant local art scene.
+                        </p>
                     </div>
-                    <div className={styles.teamImageB}>
-                        <ImageHoverCaption imagePlusCaption={imagePlusCaptionInfiniteMileStaff} /> 
+                    <div className={styles.solution_container}>
+                        <p className={styles.banner_heading}>
+                            The solution:
+                        </p>
                     </div>
                 </div>
-                <div className='paragraphs_container' >
-                    <h2 className="header_02">
-                        process
-                    </h2>
-                    <Tabs tabPanels={tabPanels} />
-                    <h2 className="header_02">
-                        results
-                    </h2>
-                    <InfoCards outcomeCards={outcomeCards} />
-                    <h2 className="header_02">
-                        discoveries
-                    </h2>
-                    <div className='paragraphs' >
-                        Infinite Mile was a huge success and some of the most rewarding work I have done in my life.  
-                        Infinite Mile was an important lesson in how web programs can bring communities together.  
-                        As a result, I decided to deeply learn web development and UX design.
-                    </div>
-                </div>
-                <div className={styles.visit_button}>
-                    <Link href="https://www.infinitemiledetroit.com/" passHref={true} >
-                        <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
-                            <ButtonExternalLink passHref={true} aria-label="link to visit">
-                                <div>
-                                    Infinite Mile website
-                                </div>
-                                <div className={styles.external_link_icon} >
-                                    <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                                </div>
-                            </ButtonExternalLink>
-                        </a>
-                    </Link>
-                </div>
-                <div className={styles.case_studies_nav}>
-                    <MyLink href="/case_studies/joyfoodly" passHref={true} >
-                        <ButtonPrevious passHref={true} aria-label="link to previous case study">
-                            <div className={styles.caseStudyThumbnailOverlay} >
-                                <h4 className={styles.caseStudyThumbnailHeading} >
-                                    Joyfoodly website 
-                                </h4>
+            </div>
+            <h1>
+                Infinite Mile LLC (∞ mile) website
+            </h1>
+            <h2>
+                2013 &ndash; 2017
+            </h2>
+            <div className={styles.slider_case_study}>
+                <InfiniteMileSlideCarousel />
+            </div>
+            <h3>
+                details
+            </h3>
+            <InfoCards infoCards={infoCards} />
+            <h3>
+                team
+            </h3>
+            <div className={styles.team}>
+                <ImageHoverCaption imagePlusCaption={imagePlusCaptionArtAndRaceConference} /> 
+                <ImageHoverCaption imagePlusCaption={imagePlusCaptionInfiniteMileStaff} /> 
+            </div>
+            <h3>
+                process
+            </h3>
+            <Tabs tabPanels={tabPanels} />
+            <h3>
+                results
+            </h3>
+            <InfoCards outcomeCards={outcomeCards} />
+            <div className={styles.caseStudyInfoSection}>
+                <h3>
+                    discoveries
+                </h3>
+                <p>
+                    Infinite Mile was a huge success and some of the most rewarding work I have done in my life.  
+                    Infinite Mile was an important lesson in how web programs can bring communities together.  
+                    As a result, I decided to deeply learn web development and UX design.
+                </p> 
+            </div>
+            <div className={styles.visit_button}>
+                <Link href="https://www.infinitemiledetroit.com/" passHref={true} >
+                    <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
+                        <ButtonExternalLink passHref={true} aria-label="link to visit">
+                            <div>
+                                Infinite Mile website
                             </div>
-                            <Image src={joyfoodlyScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
-                        </ButtonPrevious>
-                    </MyLink>
-                    <MyLink href="/case_studies/publicArtsCommission" passHref={true} >
-                        <ButtonNext passHref={true} aria-label="link to next case study" >
-                            <div className={styles.caseStudyThumbnailOverlay} >
-                                <h4 className={styles.caseStudyThumbnailHeading} >
-                                    Public Arts Commission web platform
-                                </h4>
+                            <div className={styles.external_link_icon} >
+                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
                             </div>
-                            <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission desktop screengrab thumbnail" />
-                        </ButtonNext>
-                    </MyLink>
-                </div>
+                        </ButtonExternalLink>
+                    </a>
+                </Link>
+            </div>
+            <div className={styles.case_studies_nav}>
+                <MyLink href="/case_studies/joyfoodly" passHref={true} >
+                    <ButtonPrevious passHref={true} aria-label="link to previous case study">
+                        <div className={styles.caseStudyThumbnailOverlay} >
+                            <h4 className={styles.caseStudyThumbnailHeading} >
+                                Joyfoodly website 
+                            </h4>
+                        </div>
+                        <Image src={joyfoodlyScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
+                    </ButtonPrevious>
+                </MyLink>
+                <MyLink href="/case_studies/publicArtsCommission" passHref={true} >
+                    <ButtonNext passHref={true} aria-label="link to next case study" >
+                        <div className={styles.caseStudyThumbnailOverlay} >
+                            <h4 className={styles.caseStudyThumbnailHeading} >
+                                Public Arts Commission web platform
+                            </h4>
+                        </div>
+                        <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission desktop screengrab thumbnail" />
+                    </ButtonNext>
+                </MyLink>
             </div>
         </Fragment>
         

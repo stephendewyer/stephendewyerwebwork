@@ -1,10 +1,10 @@
 import { useState  } from 'react';
-import styles from './ResumeButton.module.css';
+import styles from './ButtonResume.module.css';
 import Image from 'next/image';
 import PDFIconDefault from '../../../public/images/icons/PDF_icon_default.svg';
 import PDFIconHover from '../../../public/images/icons/PDF_icon_hover.svg';
 
-const ButtonNext = () => {
+const ButtonResume = () => {
 
     const [isHovering, setIsHovered] = useState(false);
     const onMouseEnter = () => setIsHovered(true);
@@ -45,4 +45,4 @@ const ButtonNext = () => {
     );
 };
 
-export default ButtonNext;
+export default ButtonResume;

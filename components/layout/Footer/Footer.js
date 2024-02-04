@@ -1,6 +1,6 @@
 import styles from './Footer.module.css';
 import Link from 'next/link';
-import ButtonExternalLink from '../../button/ButtonExternalLink';
+import ButtonExternalLink from '../../buttons/buttonExternalLink/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
 import emailIcon from '../../../public/images/icons/email_icon.svg';
 import Image from 'next/image';

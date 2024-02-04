@@ -1,3 +1,54 @@
+.banner_container {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgb(255,233,192);
+    background: linear-gradient(0deg, rgba(255,233,192,1) 0%, rgba(255,233,192,0) 100%);
+}
+
+.banner_heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.problem_and_solution_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin: auto;
+    max-width: 40rem;
+}
+
+.problem_container {
+    position: relative;
+    color: #FFE9C0;
+    background-color: rgba(37,38,45,0.75);
+    width: auto;
+    padding: 1rem 2rem 0 2rem;
+    max-height: auto;
+    overflow-y: none;
+}
+
+.solution_container {
+    position: relative;
+    color: #FFE9C0;
+    background-color: rgba(37,38,45,0.75);
+    width: auto;
+    padding: 1rem 2rem 0 2rem;
+}
+
 .slider_case_study {
     position: relative;
     text-align: center;
@@ -8,34 +59,21 @@
     padding-bottom: 50px;
 }
 
+.team {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 1rem 1rem 1rem;
+    gap: 1rem;
+}
+
 .detail_heading {
     color: #575B46;
     font-weight: bold;
     font-size: 24px;
     padding: 0;
     margin: 0;
-}
-
-.team {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    width: 100%;
-    max-width: 2000px;
-    margin: 40px auto;
-    padding: 0 40px;
-}
-
-.teamImageA {
-    width: 50%;
-    padding: 0 20px 0 0;
-}
-
-.teamImageB {
-    width: 50%;
-    padding: 0 0 0 20px;
 }
 
 .panelContent {
@@ -123,7 +161,10 @@
 }
 
 .caseStudyInfoSection {
-    margin-bottom: 40px;
+    margin: 0 auto 1rem auto;
+    padding: 0 1rem;
+    max-width: 40rem;
+    width: 100%;
 }
 
 .case_studies_nav {
@@ -164,35 +205,76 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1440px) {
+
+    .banner_container {
+        height: 30rem;
+    }
+
+    .banner_heading {
+        font-size: 1.35rem;
+    }
+
+    .problem_and_solution_container {
+        gap: 0.75rem;
+        max-width: 40rem;
+    }
+
+    .problem_container {
+        padding: 0.75rem 1.5rem 0 1.5rem;
+    }
+
+    .solution_container {
+        padding: 0.75rem 1.5rem 0 1.5rem; 
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .banner_container {
+        height: 20rem;
+    }
+
+    .banner_heading {
+        font-size: 1.2rem;
+    }
+
+    .problem_and_solution_container {
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 1rem;
+        height: 100%;
+    }
+
+    .problem_container {
+        padding: 0.5rem 1.25rem 0 1.25rem;
+        overflow-y: scroll;
+        max-height: 8rem;
+    }
+
+    .solution_container {
+        padding: 0.5rem 1.25rem 0 1.25rem; 
+    }
 
     .slider_case_study {
         position: relative;
         width: 100%;
         min-width: 100%;
     }
+
+    .team {
+        width: auto;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem 1rem 1rem;
+        gap: 0.5rem;
+    }
     
     .detail_heading {
         font-size: 18px;
-    }
-
-    .team {
-        flex-direction: column;
-        justify-content: flex-start;
-        max-width: 2000px;
-        margin: 20px 0;
-        padding: 0;
-    }
-    
-    .teamImageA {
-        width: 100%;
-        padding: 0;
-        margin: 0 0 20px 0;
-    }
-    
-    .teamImageB {
-        width: 100%;
-        padding: 0;
     }
 
     .panelContent {

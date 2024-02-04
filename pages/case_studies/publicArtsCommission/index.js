@@ -14,13 +14,14 @@ import EndorsedByPublicArtsCommission from '../../../public/images/case_studies/
 import PublicArtsCommissionLogo from '../../../public/images/case_studies/Public_Arts_Commission/process/public_arts_commission_logo.svg';
 import Tabs from "../../../components/tabs/Tabs";
 import Link from 'next/link';
-import ButtonNext from '../../../components/button/ButtonNext';
-import ButtonPrevious from '../../../components/button/ButtonPrevious';
-import ButtonExternalLink from '../../../components/button/ButtonExternalLink';
+import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
+import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
+import ButtonExternalLink from '../../../components/buttons/buttonExternalLink/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
 import artinTechServicesScreengrab from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_screengrab.png';
 import infiniteMileScreengrab from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
 import PublicArtsCommissionSiteMap from '../../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_sitemap.jpg';
+import PublicArtsCommissionBanner from '../../../public/images/case_studies/public_arts_commission_redesign/background/Public_Arts_Commission_background.jpg';
 
 const PublicArtsCommission = () => {
 
@@ -85,21 +86,21 @@ const PublicArtsCommission = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         about the client
-                    </h3>
+                    </h4>
                     <p>
                         Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.
                     </p>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         my role
-                    </h3>
+                    </h4>
                     <p>
                         Founder, Full-Stack Web Developer and UX Designer at Public Arts Commission
                     </p>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         team
-                    </h3>
+                    </h4>
                     <p>
                         Public Arts Commission Board of Directors
                     </p>
@@ -109,9 +110,9 @@ const PublicArtsCommission = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         services I provided
-                    </h3>
+                    </h4>
                     <ul>
                         <li>
                             Designed brand identity and media
@@ -126,9 +127,9 @@ const PublicArtsCommission = () => {
             id: uuidv4(),
                 content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         tools I used:
-                    </h3>
+                    </h4>
                     <ul>
                         <li>
                             Figma
@@ -174,9 +175,9 @@ const PublicArtsCommission = () => {
             ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         empathize
-                    </h2>
+                    </h4>
                     <div className={styles.panelImageAndParagraphs}>
                         <div className={styles.panelImage}>
                             <ImageHoverCaption imagePlusCaption={imagePlusCaptionEmpathize} />  
@@ -203,9 +204,9 @@ const PublicArtsCommission = () => {
             ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         define
-                    </h2>
+                    </h4>
                     <div className={styles.panelImageAndParagraphs}>
                         <div className={styles.panelImage}>
                             <ImageHoverCaption imagePlusCaption={imagePlusCaptionDefine} /> 
@@ -268,9 +269,9 @@ const PublicArtsCommission = () => {
             ,
             content:
                 <div className={styles.panelContentParagraphsWithImage}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         ideate
-                    </h2>
+                    </h4>
                     <div className={styles.panelImageAndParagraphs}>
                         <div className={styles.panelImage}>
                             <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} />
@@ -291,9 +292,9 @@ const PublicArtsCommission = () => {
             ,
             content: 
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         prototype
-                    </h2> 
+                    </h4> 
                     <div className={styles.panelParagraphs}>
                         I used Figma to prototype the Public Arts Commission website redesign.  Public Arts Commission Board Directors helped with user testing of the prototypes.
                         
@@ -322,12 +323,12 @@ const PublicArtsCommission = () => {
             ,
             content: 
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         build
-                    </h2> 
-                    <div className={styles.panelParagraphs}>
+                    </h4> 
+                    <p>
                         For the development of the redesigned Public Arts Commission web programs, I am using a variety of technologies including SvelteKit, which is high performing and modern.
-                    </div>
+                    </p>
                 </div>,
         },
         {
@@ -340,14 +341,14 @@ const PublicArtsCommission = () => {
             ,
             content:
                 <div className={styles.panelContent}>
-                    <h2 className={styles.panelHeadingMobile}>
+                    <h4 className={styles.panelHeadingMobile}>
                         test
-                    </h2>  
-                    <div className={styles.panelParagraphs}>
+                    </h4>  
+                    <p>
                         Testing on the Public Arts Commission website and web application used Google Chrome Developer.   
                         User testing was conducted with individuals in my network.
-                    </div>
-                </div>,
+                    </p>
+                </div>
         },
     ];
 
@@ -356,9 +357,9 @@ const PublicArtsCommission = () => {
             id: uuidv4(),
             content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         a searchable database of all the campaigns, legislation and amendments endorsed by Public Arts Commission
-                    </h3>
+                    </h4>
                     <p>
                         All campaigns, legislation and amendments endorsed by Public Arts Commission are searchable by state on the Public Arts Commission website.  
                         Eventually, individuals will be able to search all campaigns, legislation and amendments using more specific data.
@@ -369,9 +370,9 @@ const PublicArtsCommission = () => {
             id: uuidv4(),
                 content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         access to the Public Arts Commission network of individuals for Public Arts Commission-endorsed campaigns with paid subscriptions (forthcoming)
-                    </h3>
+                    </h4>
                     <p>
                         Public Arts Commission-endorsed campaigns with paid subscriptions will be able to access individuals in the Public Arts Commission network who comprise the electorates for their respective offices sought.
                     </p>
@@ -381,9 +382,9 @@ const PublicArtsCommission = () => {
             id: uuidv4(),
                 content: 
                 <Fragment>
-                    <h3 className={styles.detail_heading}>
+                    <h4>
                         a platform for the art community to connect and organize (forthcoming)
-                    </h3>
+                    </h4>
                     <p>
                         Public Arts Commission will create a web portal for individuals in the art community to connect and organize with Public Art Commission-endorsed campaigns, movements and events.
                     </p>
@@ -400,82 +401,104 @@ const PublicArtsCommission = () => {
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/publicArtsCommission" />
             </Head>
-            <div className="container">
-                <h1 className="header">
-                    Public Arts Commission web platform<br/>
-                    <span style={{color: "#545451"}} >first launched in 2017 and redesigned in 2023</span>
-                </h1>
-                <div className={styles.slider_case_study}>
-                    <PublicArtsCommissionSlideCarousel />
-                </div>
-                <h2 className="header_02">
-                    details
-                </h2>
-                <InfoCards infoCards={infoCards} />
-                <div className='paragraphs_container' >
-                    <h2 className="header_02">
-                        process
-                    </h2>
-                    <Tabs tabPanels={tabPanels} />
-                    <h2 className="header_02">
-                        results
-                    </h2>
-                    <InfoCards outcomeCards={outcomeCards} />
-                    <div className={styles.caseStudyInfoSection}>
-                        <h2 className="header_02">
-                            challenges
-                        </h2>
-                        <div className='paragraphs' >
-                            Revenue generation is a challenge facing the Public Arts Commission web platform.  
-                            The subscription-based web platform for campaigns will likely help generate revenue.
-                        </div>
+            <div className={styles.banner_container}>
+                <Image 
+                    src={PublicArtsCommissionBanner} 
+                    priority 
+                    objectFit="cover"
+                    layout="fill"
+                    alt="Michigan State Capitol Building doors"
+                />
+                <div className={styles.banner_overlay} />
+                <div className={styles.problem_and_solution_container}>
+                    <div className={styles.problem_container}>
+                        <p>
+                            <span className={styles.banner_heading}>The problem: </span>Art workers who often lead democratic movements are largely excluded from electoral politics.  As a result, art has become exclusive to the wealthy and government lacks political imagination.
+                        </p>
                     </div>
-                    <div className={styles.caseStudyInfoSection}>
-                        <h2 className="header_02">
-                            discoveries
-                        </h2>
-                        <div className='paragraphs' >
-                            Forthcoming.
-                        </div>
+                    <div className={styles.solution_container}>
+                        <p className={styles.banner_heading}>
+                            The solution:
+                        </p>
                     </div>
-                    
                 </div>
-                <div className={styles.visit_button}>
-                    <Link href="https://public-arts-commission.vercel.app/" passHref={true} >
-                        <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
-                            <ButtonExternalLink passHref={true} aria-label="link to visit">
-                                <div>
-                                    Public Arts Commission website
-                                </div>
-                                <div className={styles.external_link_icon} >
-                                    <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                                </div>
-                            </ButtonExternalLink>
-                        </a>
-                    </Link>
+            </div>
+            <h1>
+                Public Arts Commission web platform
+            </h1>
+            <h2>
+                first launched in 2017 and redesigned in 2023
+            </h2>
+            <div className={styles.slider_case_study}>
+                <PublicArtsCommissionSlideCarousel />
+            </div>
+            <h3>
+                details
+            </h3>
+            <InfoCards infoCards={infoCards} />
+            <div className='paragraphs_container' >
+                <h3>
+                    process
+                </h3>
+                <Tabs tabPanels={tabPanels} />
+                <h3>
+                    results
+                </h3>
+                <InfoCards outcomeCards={outcomeCards} />
+                <div className={styles.caseStudyInfoSection}>
+                    <h3>
+                        challenges
+                    </h3>
+                    <p>
+                        Revenue generation is a challenge facing the Public Arts Commission web platform.  
+                        The subscription-based web platform for campaigns will likely help generate revenue.
+                    </p>
                 </div>
-                <div className={styles.case_studies_nav}>
-                    <MyLink href="/case_studies/infiniteMile" passHref={true} >
-                        <ButtonPrevious passHref={true} aria-label="link to previous case study">
-                            <div className={styles.caseStudyThumbnailOverlay} >
-                                <h4 className={styles.caseStudyThumbnailHeading} >
-                                    Infinite Mile website 
-                                </h4>
+                <div className={styles.caseStudyInfoSection}>
+                    <h3>
+                        discoveries
+                    </h3>
+                    <p>
+                        Forthcoming.
+                    </p>
+                </div>
+                
+            </div>
+            <div className={styles.visit_button}>
+                <Link href="https://public-arts-commission.vercel.app/" passHref={true} >
+                    <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">
+                        <ButtonExternalLink passHref={true} aria-label="link to visit">
+                            <div>
+                                Public Arts Commission website
                             </div>
-                            <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
-                        </ButtonPrevious>
-                    </MyLink>
-                    <MyLink href="/case_studies/artInTechServices" passHref={true} >
-                        <ButtonNext passHref={true} aria-label="link to next case study" >
-                            <div className={styles.caseStudyThumbnailOverlay} >
-                                <h4 className={styles.caseStudyThumbnailHeading} >
-                                    Art in Tech Services web programs
-                                </h4>
+                            <div className={styles.external_link_icon} >
+                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
                             </div>
-                            <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
-                        </ButtonNext>
-                    </MyLink>
-                </div>
+                        </ButtonExternalLink>
+                    </a>
+                </Link>
+            </div>
+            <div className={styles.case_studies_nav}>
+                <MyLink href="/case_studies/infiniteMile" passHref={true} >
+                    <ButtonPrevious passHref={true} aria-label="link to previous case study">
+                        <div className={styles.caseStudyThumbnailOverlay} >
+                            <h4 className={styles.caseStudyThumbnailHeading} >
+                                Infinite Mile website 
+                            </h4>
+                        </div>
+                        <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
+                    </ButtonPrevious>
+                </MyLink>
+                <MyLink href="/case_studies/artInTechServices" passHref={true} >
+                    <ButtonNext passHref={true} aria-label="link to next case study" >
+                        <div className={styles.caseStudyThumbnailOverlay} >
+                            <h4 className={styles.caseStudyThumbnailHeading} >
+                                Art in Tech Services web programs
+                            </h4>
+                        </div>
+                        <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
+                    </ButtonNext>
+                </MyLink>
             </div>
         </Fragment>
     );
