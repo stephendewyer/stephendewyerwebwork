@@ -10,7 +10,6 @@ import ButtonAction from '../../../buttons/buttonAction/ButtonAction';
 const PulblicArtsCommissionCard = () => {
 
     const [publicArtsCommissionIsHovered, setPublicArtsCommissionIsHovered] = useState(false);
-    const [videoIsHovered, setVideoIsHovered] = useState(false);
 
     return (
       <MyLink 
@@ -22,26 +21,20 @@ const PulblicArtsCommissionCard = () => {
           passHref 
         >
           <div className={publicArtsCommissionIsHovered ? styles.case_studies_a_hovered : styles.case_studies_a}>
-            <div 
-              onMouseEnter={(() => setVideoIsHovered(true))}
-              onMouseOver={(() => setVideoIsHovered(true))}
-              onMouseLeave={(() => setVideoIsHovered(false))}
-              onMouseOut={(() => setVideoIsHovered(false))}
-              className={styles.case_study_image}
-            >
+            <div className={styles.case_study_image} >
               <video 
                 autoPlay 
                 muted 
                 loop 
                 className={styles.video}
-                style={{display: videoIsHovered ? "block" : "none" }}
+                style={{display: publicArtsCommissionIsHovered ? "block" : "none" }}
               >         
                 <source 
                   src="/videos/Public_Arts_Commission_interactions.mp4" 
                   type="video/mp4"
                 />       
               </video>
-              <div style={{display: videoIsHovered ? "none" : "block" }}>
+              <div style={{display: publicArtsCommissionIsHovered ? "none" : "block" }}>
                 <Image 
                   src={PublicArtsCommissionBackground} 
                   alt="doors to Michigan State Capitol Building" 

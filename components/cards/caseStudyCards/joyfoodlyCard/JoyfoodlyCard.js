@@ -10,7 +10,6 @@ import JoyfoodlyBackground from '../../../../public/images/case_studies/Joyfoodl
 const JoyfoodlyCard = () => {
 
     const [joyfoodlyIsHovered, setJoyfoodlyIsHovered] = useState(false);
-    const [videoIsHovered, setVideoIsHovered] = useState(false);
 
     return (
       <MyLink 
@@ -22,26 +21,20 @@ const JoyfoodlyCard = () => {
           passHref 
         >
           <div className={joyfoodlyIsHovered ? styles.case_studies_a_hovered : styles.case_studies_a}>
-            <div 
-              onMouseEnter={(() => setVideoIsHovered(true))}
-              onMouseOver={(() => setVideoIsHovered(true))}
-              onMouseLeave={(() => setVideoIsHovered(false))}
-              onMouseOut={(() => setVideoIsHovered(false))}
-              className={styles.case_study_image}
-            >  
+            <div className={styles.case_study_image} >  
               <video 
                 autoPlay 
                 muted 
                 loop 
                 className={styles.video}
-                style={{display: videoIsHovered ? "block" : "none" }}
+                style={{display: joyfoodlyIsHovered ? "block" : "none" }}
               >         
                 <source 
                   src="/videos/Joyfoodly_interactions.mp4" 
                   type="video/mp4"
                 />       
               </video>
-              <div style={{display: videoIsHovered ? "none" : "block" }}>
+              <div style={{display: joyfoodlyIsHovered ? "none" : "block" }}>
                 <Image 
                   src={JoyfoodlyBackground} 
                   layout="fill"

@@ -9,7 +9,6 @@ import InfiniteMileDetroitMobilePrototype from '../../../../public/images/case_s
 const InfiniteMileCard = () => {
 
     const [infiniteMileIsHovered, setInfiniteMileIsHovered] = useState(false);
-    const [videoIsHovered, setVideoIsHovered] = useState(false);
 
     return (
       <MyLink 
@@ -42,26 +41,20 @@ const InfiniteMileCard = () => {
                 </div>
               </div>
             </div>
-            <div 
-              onMouseEnter={(() => setVideoIsHovered(true))}
-              onMouseOver={(() => setVideoIsHovered(true))}
-              onMouseLeave={(() => setVideoIsHovered(false))}
-              onMouseOut={(() => setVideoIsHovered(false))}
-              className={styles.case_study_image}
-            >
+            <div className={styles.case_study_image} >
               <video 
                 autoPlay 
                 muted 
                 loop 
                 className={styles.video}
-                style={{display: videoIsHovered ? "block" : "none" }}
+                style={{display: infiniteMileIsHovered ? "block" : "none" }}
               >         
                 <source 
                   src="/videos/Infinite_Mile_interactions.mp4" 
                   type="video/mp4"
                 />       
               </video>
-              <div style={{display: videoIsHovered ? "none" : "block" }}>
+              <div style={{display: infiniteMileIsHovered ? "none" : "block" }}>
                 <Image 
                   src={InfiniteMileBackground} 
                   alt="Detroit, Michigan as seen from Fisher Building in the morning" 

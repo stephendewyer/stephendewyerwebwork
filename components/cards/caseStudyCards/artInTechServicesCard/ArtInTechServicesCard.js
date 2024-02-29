@@ -10,7 +10,6 @@ import { useState } from 'react';
 const ArtInTechServicesCard = () => {
 
     const [artInTechServicesIsHovered, setArtInTechServicesIsHovered] = useState(false);
-    const [videoIsHovered, setVideoIsHovered] = useState(false);
 
     return (
       <MyLink 
@@ -43,23 +42,17 @@ const ArtInTechServicesCard = () => {
               </div>
             </div>
           </div>
-          <div 
-            className={styles.case_study_image}
-            onMouseEnter={(() => setVideoIsHovered(true))}
-            onMouseOver={(() => setVideoIsHovered(true))}
-            onMouseLeave={(() => setVideoIsHovered(false))}
-            onMouseOut={(() => setVideoIsHovered(false))}
-          >
+          <div className={styles.case_study_image} >
             <video 
               autoPlay 
               muted 
               loop 
               className={styles.video} 
-              style={{display: videoIsHovered ? "block" : "none" }}
+              style={{display: artInTechServicesIsHovered ? "block" : "none" }}
             >         
               <source src="/videos/Art_in_Tech_Services_interaction.mp4" type="video/mp4"/>       
             </video>
-            <div style={{display: videoIsHovered ? "none" : "block" }}>
+            <div style={{display: artInTechServicesIsHovered ? "none" : "block" }}>
               <Image 
                 src={ArtInTechServicesBackground} 
                 layout="fill"
