@@ -9,6 +9,38 @@
   padding: 0;
 }
 
+.intro_paragraph_container {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.intro_paragraph {
+  max-width: 860px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto 40px auto;
+  line-height: 2.4rem;
+}
+
+.welcome {
+  font-size: 2.25rem;
+  font-weight: bold;
+  display: inline;
+  will-change: opacity;
+  transition: opacity 375ms linear;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  display: inline;
+}
+
+.delayed_paragraph {
+  will-change: opacity;
+  transition: opacity 750ms linear;
+}
+
 .intro_video {
   position: relative;
   width: 100%;
@@ -16,12 +48,6 @@
   height: auto;
   padding: 0 40px 20px 40px;
   margin: 0 auto 40px auto;
-}
-
-.animatedHeading {
-  margin: 0 auto 1rem auto;
-  will-change: opacity;
-  transition: opacity 375ms linear;
 }
 
 .workSection {
@@ -104,6 +130,19 @@
     padding: 0;
   }
 
+  .intro_paragraph {
+    padding: 0 20px;
+    line-height: 2.2rem;
+  }
+
+  .welcome {
+    font-size: 2rem;
+  }
+  
+  .paragraph {
+    font-size: 1.35rem;
+  }
+
   .case_studies {
     padding: 0 20px 20px 20px;
   }
@@ -121,9 +160,17 @@
       padding: 0;
     }
   
-    .animatedHeading {
-      font-size: 18px;
+    .intro_paragraph {
+      line-height: 2rem;
       margin: 0 auto 20px auto;
+    }
+
+    .welcome {
+      font-size: 1.75rem;
+    }
+    
+    .paragraph {
+      font-size: 1.2rem;
     }
   
     .workSection {
