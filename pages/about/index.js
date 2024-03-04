@@ -373,126 +373,133 @@ const AboutPage = () => {
                             </ul>
                     </div>
                 </div>
-                <div className={classes.skills}>
-                    <h3>skills</h3>
-                    <SkillsAccordion skills={skills} />                        
-                    <h3>certificates</h3>
-                    <div className={classes.label_paragraphs}>
-                        <span className={classes.label_item}>2021 &ndash; 2023</span>
-                        <span className={classes.position}>Certificates in UX Design, Modern Web Development, Web Accessibility and Machine Learning</span>
-                        <span className={classes.label_item}>Udemy</span>
-                    </div>
-                    <ul>
-                        <li>
-                            Understanding TypeScript<br />
-                        </li>
-                        <li>
-                            Machine Learning A-Z: AI, Python & R + ChatGPT Bonus [2023]<br />
-                        </li>
-                        <li>
-                            GraphQL by Example<br />
-                        </li>
-                        <li>
-                            Svelte.js - The Complete Guide (incl. Sapper.js)<br />
-                        </li>
-                        <li>
-                            NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)<br />
-                        </li>
-                        <li>
-                            React - The Complete Guide (incl Hooks, React Router, Redux)<br />
-                        </li>
-                        <li>
-                            Web Accessibility Training Course - WCAG 2.1 Compliance
-                        </li>
-                        <li>
-                            The User Researcher&#39;s guide to UX discoveries
-                        </li>
-                    </ul>
-                    <div className={classes.label_paragraphs}>
-                        <span className={classes.label_item}>2020 &ndash; 2021</span>
-                        <span className={classes.position}>Certificates in Building Web Applications</span>
-                        <span className={classes.label_item}> University of Michigan &#8211; Coursera</span>
-                    </div>
-                    <ul>
-                        <li>
-                            JavaScript, jQuery, and JSON<br />
-                        </li>
-                        <li>
-                            Interactivity with JavaScript<br />
-                        </li>
-                        <li>
-                            Building Database Applications in PHP<br />
-                        </li>
-                        <li>
-                            Introduction to Structured Query Language (SQL)<br />
-                        </li>
-                        <li>
-                            Building Web Applications in PHP
-                        </li>
-                    </ul>
-                    <div className={classes.label_paragraphs}>
-                        <span className={classes.label_item}>2021</span>
-                        <span className={classes.position}>Certificates in Database Design</span>
-                        <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
-                    </div>
-                    <ul>
-                        <li>
-                            Intermediate PostgreSQL<br />
-                        </li>
-                        <li>
-                            Database Design and Basic SQL in PostgreSQL
-                        </li>
-                    </ul>
-                    <div className={classes.label_paragraphs}>
-                        <span className={classes.label_item}>2020</span>
-                        <span className={classes.position}>Certificates in Python Programming</span>
-                        <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
-                    </div>
-                    <ul>
-                        <li>
-                            Python Data Structures<br />
-                        </li>
-                        <li>
-                            Python for Everybody
-                        </li>
-                    </ul>
-                    <div className={classes.label_paragraphs}>
-                        <span className={classes.label_item}>2020</span>
-                        <span className={classes.position}>Certificates in UX Design</span>
-                        <span className={classes.label_item}>Interaction Design Foundation</span>
-                    </div>
-                    <ul>
-                        <li>
-                            UI Design Patterns for Successful Software<br />
-                        </li>
-                        <li>
-                            Mobile User Experience (UX) Design<br />
-                        </li>
-                        <li>
-                            Become a UX Designer from Scratch<br />
-                        </li>
-                        <li>
-                            Human-Computer Interaction
-                        </li>
-                    </ul>
-                    <div className={classes.label_paragraphs}>
-                        <span className={classes.label_item}>2021</span>
-                        <span className={classes.position}>Certificate in Leadership</span>
-                        <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
-                    </div>
-                    <ul>
-                        <li>
-                            Inspiring and Motivating Individuals
-                        </li>
-                    </ul>
-                </div>
-                <div className={classes.workTogetherButton} >
-                            <MyLink href="/contact" passHref >
-                                <ButtonAction aria-label="link to contact page">
-                                    let&#39;s work together
-                                </ButtonAction>
-                            </MyLink>
+                <div className={classes.introAboutSection}>
+                        <div className={classes.myStoryContainer}>
+                        <div className={classes.myStory}>
+                            <h3>skills</h3>
+                            <SkillsAccordion skills={skills} /> 
                         </div>
+                    </div>
+                    <div className={classes.introAboutSection02}>                                           
+                        <h3>certificates</h3>
+                        <div className={classes.label_paragraphs}>
+                            <span className={classes.label_item}>2021 &ndash; 2023</span>
+                            <span className={classes.position}>Certificates in UX Design, Modern Web Development, Web Accessibility and Machine Learning</span>
+                            <span className={classes.label_item}>Udemy</span>
+                        </div>
+                        <ul>
+                            <li>
+                                Understanding TypeScript<br />
+                            </li>
+                            <li>
+                                Machine Learning A-Z: AI, Python & R + ChatGPT Bonus [2023]<br />
+                            </li>
+                            <li>
+                                GraphQL by Example<br />
+                            </li>
+                            <li>
+                                Svelte.js - The Complete Guide (incl. Sapper.js)<br />
+                            </li>
+                            <li>
+                                NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)<br />
+                            </li>
+                            <li>
+                                React - The Complete Guide (incl Hooks, React Router, Redux)<br />
+                            </li>
+                            <li>
+                                Web Accessibility Training Course - WCAG 2.1 Compliance
+                            </li>
+                            <li>
+                                The User Researcher&#39;s guide to UX discoveries
+                            </li>
+                        </ul>
+                        <div className={classes.label_paragraphs}>
+                            <span className={classes.label_item}>2020 &ndash; 2021</span>
+                            <span className={classes.position}>Certificates in Building Web Applications</span>
+                            <span className={classes.label_item}> University of Michigan &#8211; Coursera</span>
+                        </div>
+                        <ul>
+                            <li>
+                                JavaScript, jQuery, and JSON<br />
+                            </li>
+                            <li>
+                                Interactivity with JavaScript<br />
+                            </li>
+                            <li>
+                                Building Database Applications in PHP<br />
+                            </li>
+                            <li>
+                                Introduction to Structured Query Language (SQL)<br />
+                            </li>
+                            <li>
+                                Building Web Applications in PHP
+                            </li>
+                        </ul>
+                        <div className={classes.label_paragraphs}>
+                            <span className={classes.label_item}>2021</span>
+                            <span className={classes.position}>Certificates in Database Design</span>
+                            <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
+                        </div>
+                        <ul>
+                            <li>
+                                Intermediate PostgreSQL<br />
+                            </li>
+                            <li>
+                                Database Design and Basic SQL in PostgreSQL
+                            </li>
+                        </ul>
+                        <div className={classes.label_paragraphs}>
+                            <span className={classes.label_item}>2020</span>
+                            <span className={classes.position}>Certificates in Python Programming</span>
+                            <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
+                        </div>
+                        <ul>
+                            <li>
+                                Python Data Structures<br />
+                            </li>
+                            <li>
+                                Python for Everybody
+                            </li>
+                        </ul>
+                        <div className={classes.label_paragraphs}>
+                            <span className={classes.label_item}>2020</span>
+                            <span className={classes.position}>Certificates in UX Design</span>
+                            <span className={classes.label_item}>Interaction Design Foundation</span>
+                        </div>
+                        <ul>
+                            <li>
+                                UI Design Patterns for Successful Software<br />
+                            </li>
+                            <li>
+                                Mobile User Experience (UX) Design<br />
+                            </li>
+                            <li>
+                                Become a UX Designer from Scratch<br />
+                            </li>
+                            <li>
+                                Human-Computer Interaction
+                            </li>
+                        </ul>
+                        <div className={classes.label_paragraphs}>
+                            <span className={classes.label_item}>2021</span>
+                            <span className={classes.position}>Certificate in Leadership</span>
+                            <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
+                        </div>
+                        <ul>
+                            <li>
+                                Inspiring and Motivating Individuals
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div className={classes.workTogetherButton} >
+                    <MyLink href="/contact" passHref >
+                        <ButtonAction aria-label="link to contact page">
+                            let&#39;s work together
+                        </ButtonAction>
+                    </MyLink>
+                </div>
             </div>
         </Fragment>
     );
