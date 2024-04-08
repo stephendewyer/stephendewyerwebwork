@@ -20,7 +20,7 @@ const AboutPage = () => {
 
     const experience = [
         {
-            length: '2021 - present', 
+            length: 'April 2021 - present', 
             position: 'Founding Director, Full-stack Web Developer and UX Designer',
             company: 'Art in Tech Services Inc',
             location: 'Minneapolis, Minnesota',
@@ -41,7 +41,7 @@ const AboutPage = () => {
                 </ul>
         },
         {
-            length: '2017 – present', 
+            length: 'April 2017 – present', 
             position: 'Founder, Full-stack Web Developer and UX Designer',
             company: 'Public Arts Commission',
             location: 'Minneapolis, Minnesota',
@@ -65,7 +65,7 @@ const AboutPage = () => {
                 </ul>
         },
         {
-            length: '2022', 
+            length: 'February - May 2022', 
             position: 'UX Design Consultant (contract)',
             company: 'Turnberry Solutions',
             location: 'Minneapolis, Minnesota',
@@ -83,7 +83,7 @@ const AboutPage = () => {
                 </ul>
         },
         {
-            length: '2013 – 2017', 
+            length: 'July 2013 – January 2017', 
             position: 'Web Developer and UX Designer / Co-Founding Editor',
             company: '∞ mile (Infinite Mile LLC)',
             location: 'Detroit, Michigan',
