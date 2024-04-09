@@ -27,16 +27,16 @@ const AboutPage = () => {
             responsibilities: 
                 <ul>
                     <li>
-                        Created dynamic, accessible and responsive web programs including client collaboration software
+                        Developed a client portal as a part of organization’s website to help streamline client collaboration
                     </li>
                     <li>
-                        Works with clients to plan and achieve digital product goals
+                        Helps clients successfully plan and achieve digital product goals
                     </li>
                     <li>
-                        Provides UX design for enterprise web programs
+                        Applies advancements in digital technology and art to improve user experiences
                     </li>
                     <li>
-                        Leads strategy for making digital products using advancements in art and digital technology
+                        Responsible for all aspects of organization operations
                     </li>
                 </ul>
         },
@@ -54,7 +54,7 @@ const AboutPage = () => {
                         Conducted user tests for web prototypes with Board of Directors and art experts
                     </li>
                     <li>
-                        Designs brand and media
+                        Designed brand and media
                     </li>
                     <li>
                         Works with Board of Directors to achieve organizational goals
