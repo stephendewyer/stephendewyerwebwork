@@ -256,7 +256,7 @@ const AboutPage = () => {
     return (
         <Fragment>
             <Head>
-                <title>about - stephen dewyer UX design and full-stack web development</title>
+                <title>about - stephen dewyer UX design and software development</title>
                 <meta name="description" content="stephen dewyer résumé and profile" />
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/about" />
@@ -279,9 +279,9 @@ const AboutPage = () => {
                     <div className={classes.myStoryContainer}>
                         <div className={classes.myStory}>
                             <p className={classes.myStoryParagraphs}>
-                                I&#39;m stephen dewyer, an award-winning user experience (UX) designer, full-stack web developer, artist and founder with experience bringing together disparate parts of the community through multi-disciplinary projects. 
-                                My work has been featured in <Link href="https://www.nytimes.com/2016/01/07/fashion/shinola-watches-bicycles-leather-goods-expansion.html" passHref={true} aria-label="link to Shinola Takes Its 'Detroit Message on the Road'"><a target="_blank" rel="noopener noreferrer">The New York Times</a></Link>, <Link href="https://www.detroitnews.com/story/entertainment/2015/04/14/art-journals-detroit-increasing-art-scene/25784987/" passHref={true} aria-label="link to New journals showcase Detroit art scene"><a target="_blank" rel="noopener noreferrer">The Detroit News</a></Link> and <Link href="https://news.artnet.com/opinion/galapagos-art-space-detroit-corktown-sale-404495" passHref={true} aria-label="link to Galapagos Art Space Plans $6.25 Million Detroit Property Flip"><a target="_blank" rel="noopener noreferrer">Artnet News</a></Link> to name a few publications. 
-                                Creating groundbreaking web programs that solve problems for people using advancements in digital technology, art and design is my passion.
+                                I&#39;m stephen dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience creating groundbreaking web programs for organizations. 
+                                I worked with a variety of stakeholders to produce critically-acclaimed projects, some of which have been featured in <Link href="https://www.nytimes.com/2016/01/07/fashion/shinola-watches-bicycles-leather-goods-expansion.html" passHref={true} aria-label="link to Shinola Takes Its 'Detroit Message on the Road'"><a target="_blank" rel="noopener noreferrer">The New York Times</a></Link>, <Link href="https://www.detroitnews.com/story/entertainment/2015/04/14/art-journals-detroit-increasing-art-scene/25784987/" passHref={true} aria-label="link to New journals showcase Detroit art scene"><a target="_blank" rel="noopener noreferrer">The Detroit News</a></Link> and <Link href="https://news.artnet.com/opinion/galapagos-art-space-detroit-corktown-sale-404495" passHref={true} aria-label="link to Galapagos Art Space Plans $6.25 Million Detroit Property Flip"><a target="_blank" rel="noopener noreferrer">Artnet News</a></Link>. 
+                                I enjoy developing creative software solutions to challenging problems that help empower businesses and communities.
                             </p>
                             <div 
                                 ref={profileImage}
@@ -299,7 +299,7 @@ const AboutPage = () => {
                                 </div>                    
                             </div>
                             <p className={classes.myStoryParagraphs}>
-                                I first entered the fields of UX design and web development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called Infinite Mile.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
+                                I first entered the fields of UX design and software development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called Infinite Mile.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
                                 <br /><br />
                                 In 2017, I created the website for Public Arts Commission, a non-profit organization that is dedicated to expanding the political imaginary for a more egalitarian society by supporting democratic movements for greater public art.  
                                 The website features a searchable database of all campaigns, ballot initiatives, legislation and constitutional amendments endorsed by Public Arts Commission.  
@@ -314,7 +314,7 @@ const AboutPage = () => {
                                 I learned modern web development techniques and advanced UX design skills.  
                                 I learned that I can apply my experience as an artist and organizer to create web programs that help empower communities and provide value for organizations.  
                                 <br /><br />
-                                Today, I am more committed than ever to helping solve problems for people as a UX designer and full-stack web developer.  
+                                Today, I am more committed than ever to helping solve problems for people as a UX designer and software developer.  
                                 My experience has taught me valuable skills in working with multiple stakeholders and as a part of teams.  Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers markets and meeting people.
                             </p>
                         </div>
