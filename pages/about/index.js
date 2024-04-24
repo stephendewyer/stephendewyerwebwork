@@ -115,7 +115,7 @@ const AboutPage = () => {
             content: 
                 <ul>
                     <li>
-                        Programming languages: JavaScript, TypeScript, PHP, Python
+                        Programming languages: JavaScript, TypeScript, C++, PHP, Python
                     </li>
                     <li>
                         Stylesheet languages: CSS 3
@@ -383,11 +383,14 @@ const AboutPage = () => {
                     <div className={classes.introAboutSection02}>                                           
                         <h3>certificates</h3>
                         <div className={classes.label_paragraphs}>
-                            <span className={classes.label_item}>2021 &ndash; 2023</span>
+                            <span className={classes.label_item}>2021 &ndash; 2024</span>
                             <span className={classes.position}>Certificates in UX Design, Modern Web Development, Web Accessibility and Machine Learning</span>
                             <span className={classes.label_item}>Udemy</span>
                         </div>
                         <ul>
+                            <li>
+                                Beginning C++ Programming - From Beginner to Beyond<br />
+                            </li>
                             <li>
                                 Understanding TypeScript<br />
                             </li>
