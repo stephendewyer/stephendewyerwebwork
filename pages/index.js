@@ -9,7 +9,7 @@ import PulblicArtsCommissionCard from '../components/cards/caseStudyCards/public
 import ArtInTechServicesCard from '../components/cards/caseStudyCards/artInTechServicesCard/ArtInTechServicesCard';
 import JoyfoodlyCard from '../components/cards/caseStudyCards/joyfoodlyCard/JoyfoodlyCard';
 import InfiniteMileCard from '../components/cards/caseStudyCards/infiniteMileCard/InfiniteMileCard';
-
+import ClientReviewsSlideCarousel from "../components/slide_carousel/ClientReviewsSlideCarousel";
 const IndexPage = () => {
 
   const [pageLoaded, setPageLoaded] = useState(false);
@@ -127,18 +127,7 @@ const IndexPage = () => {
         <h2>
           words from clients
         </h2>
-        <div className={styles.client_reviews}>
-          <dib className={styles.clientReview}>
-            <SpeechBubble>
-              stephen [made] our daunting project of closing our business and two sites so easy and stress free. 
-              The legacy site [he] created was exactly what we wanted. We appreciated [his] proactive way of working with us, never finding a challenge too much to handle. 
-              [He is] a joy to work with!
-            </SpeechBubble>
-            <cite className={styles.quoteCitation}>
-              Chef Hollie Greene Rottman
-            </cite>
-          </dib>
-        </div>
+        <ClientReviewsSlideCarousel />
         <h2>
           get in touch
         </h2>
