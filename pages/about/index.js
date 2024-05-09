@@ -30,13 +30,13 @@ const AboutPage = () => {
                         Developed a client portal as a part of organization’s website to help streamline client collaboration
                     </li>
                     <li>
-                        Helps clients successfully plan and achieve digital product goals
+                        Record of 100% client satisfaction rate by effectively communicating throughout a client’s project and meeting or exceeding project goals
                     </li>
                     <li>
-                        Applies advancements in digital technology and art to improve user experiences
+                        Created groundbreaking digital products that improve human experiences of technology by combining advancements in technology and art
                     </li>
                     <li>
-                        Responsible for all aspects of organization operations
+                        Successfully led the organization to achieve mission by investing in in-house training in advanced technologies
                     </li>
                 </ul>
         },
@@ -48,16 +48,16 @@ const AboutPage = () => {
             responsibilities:
                 <ul>
                     <li>
-                        Leading the design, development and deployment for the organization’s web platform that includes a campaign application management system, a voter networking and organizing portal, an endorsement management system and a searchable database of all the organization’s endorsements 
+                        Developed key software programs to streamline operations that included a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
+                    </li>
+                    <li>
+                        Developing a voter networking and organizing portal 
                     </li>
                     <li>
                         Conducted user tests for web prototypes with Board of Directors and art experts
                     </li>
                     <li>
-                        Designed brand and media
-                    </li>
-                    <li>
-                        Works with Board of Directors to achieve organizational goals
+                        Grew Board of Directors by 233% to include leading voices in art community by delivering strong leadership
                     </li>
                     <li>
                         Responsible for overall direction of the non-profit, 501(c)(4) organization
@@ -93,10 +93,7 @@ const AboutPage = () => {
                         Collaborated with stakeholders to create brand and website
                     </li>
                     <li>
-                        Led a monthly online, Detroit-based art journal that published yearly print anthologies
-                    </li>
-                    <li>
-                        Directed editing staff and contributors
+                        Directed three editing staff and 78 contributors to publish 94 essays and interviews, 51 artist projects, 26 reviews and 27 works of fiction or poetry
                     </li>
                     <li>
                         Wrote successful grant applications
