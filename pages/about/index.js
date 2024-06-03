@@ -23,7 +23,7 @@ const AboutPage = () => {
             length: 'April 2021 - present', 
             position: 'Founding Director, Full-stack Web Developer and UX Designer',
             company: 'Art in Tech Services Inc',
-            location: 'Minneapolis, Minnesota',
+            location: 'Tucson, Arizona',
             responsibilities: 
                 <ul>
                     <li>
@@ -44,7 +44,7 @@ const AboutPage = () => {
             length: 'April 2017 – present', 
             position: 'Founder, Full-stack Web Developer and UX Designer',
             company: 'Public Arts Commission',
-            location: 'Minneapolis, Minnesota',
+            location: 'Tucson, Arizona',
             responsibilities:
                 <ul>
                     <li>
