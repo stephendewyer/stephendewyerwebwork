@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Logo from './logo/Logo';
+import BlindsIndex from './blindsIndex/BlindsIndex';
 import AboutTab from './navigationTabsDesktop/AboutTabDesktop';
 import CaseStudiesTab from './navigationTabsDesktop/CaseStudiesTabDesktop';
 import ContactTab from './navigationTabsDesktop/ContactTabDesktop';
@@ -39,8 +39,8 @@ const MainNavigation = (props) => {
             className={classes.nav_bar} 
             style={{ top: visible ? '0' : '-250px' }} 
         > 
-            <div className={classes.logo}>
-                <Logo />
+            <div className={classes.blinds_index}>
+                <BlindsIndex />
             </div>
             <div className={classes.navigation_tabs}>
                 <div className={classes.navigation_tab}>

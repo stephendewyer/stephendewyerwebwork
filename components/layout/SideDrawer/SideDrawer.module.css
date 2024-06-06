@@ -9,6 +9,9 @@
     z-index: 200;
     transform: translateX(-100%);
     transition: transform 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .side_drawer_open {
@@ -22,31 +25,65 @@
     z-index: 200;
     transform: translateX(0);
     transition: transform 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.grid_container {
-    position: relative;
-    float: none;
-    margin: auto;
-    display: block;
+.blinds {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     width: 80%;
-    height: auto;
-    display: grid;
-    grid-template-columns: auto;
-    padding: 0;
-  }
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.125rem;
+}
 
-  .grid_item {
-    border: 0;
-    padding: 0;
-    text-align: center;
-  }
+.tab {
+    position: relative;
+        width: 100%;
+}
 
-  @media (min-width: 751px) {
-      .side_drawer {
-          display: none;
-      }
-      .side_drawer_open {
-          display: none;
-      }
-  }
+.blindsTabBackground {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.125rem;
+    width: 100%
+}
+
+.tab_container {
+    width: 100%;
+}
+
+.tabName {
+    color: #FFE9C0;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blind {
+    height: 1rem;
+    width: 100%;
+    background-color: #514C64;
+    position: relative;
+    transition: background-color 0.2s linear;
+}
+
+@media (min-width: 751px) {
+    .side_drawer {
+        display: none;
+    }
+    .side_drawer_open {
+        display: none;
+    }
+}

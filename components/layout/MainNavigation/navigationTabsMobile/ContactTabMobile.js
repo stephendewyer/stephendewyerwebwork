@@ -5,9 +5,9 @@ import MyLink from '../../../../public/util/myLink';
 import contactLinkPageInactive from '../../../../public/images/links/blind_link_contact_01.svg';
 import contactLinkPageActive from '../../../../public/images/links/blind_link_contact_03.svg';
 import contactLink_hover from '../../../../public/images/links/blind_link_contact_02.svg';
-import styles from './navigation_tab.module.css';
+import styles from "./navigation_tab_mobile.module.css";
 
-const ContactTab = () => {
+const ContactTabMobile = () => {
 
     const router = useRouter();
     const pagePath = router.pathname;
@@ -70,4 +70,4 @@ const ContactTab = () => {
     );
 };
 
-export default ContactTab;
+export default ContactTabMobile;

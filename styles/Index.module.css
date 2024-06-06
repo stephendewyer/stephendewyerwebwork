@@ -1,12 +1,9 @@
 .container {
   position: relative;
-  top: 0;
-  left: 0; 
-  right: 0;
-  height: auto;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
 }
 
 .intro_paragraph_container {
@@ -18,8 +15,7 @@
 .intro_paragraph {
   max-width: 860px;
   width: 100%;
-  padding: 0 40px;
-  margin: 0 auto 40px auto;
+  padding: 0 1rem;
   line-height: 2.4rem;
 }
 
@@ -32,7 +28,6 @@
 }
 
 .paragraph {
-  font-size: 1.5rem;
   display: inline;
 }
 
@@ -41,20 +36,21 @@
   transition: opacity 750ms linear;
 }
 
-.intro_video {
-  position: relative;
+.intro_video_container {
   width: 100%;
-  max-width: 2400px;
-  height: auto;
-  padding: 0 40px 20px 40px;
-  margin: 0 auto 40px auto;
+  height: 40rem;
+}
+
+.intro_video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .workSection {
   width: 100%;
   max-width: 46rem;
-  margin: 0 auto 60px auto;
-  padding: 0 40px;
+  padding: 0 1rem;
 }
 
 .case_studies {
@@ -62,15 +58,13 @@
   width: 100%;
   max-width: 2400px;
   height: auto;
-  margin: 0 auto;
-  padding: 0 40px 20px 40px;
+  padding: 0 1rem;
 }
 
 .aboutSection {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto 60px auto;
-  padding: 0 40px;
+  padding: 0 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -80,8 +74,7 @@
 .contactSection {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto 60px auto;
-  padding: 0 40px;
+  padding: 0 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -92,15 +85,14 @@
   max-width: 800px;
   width: 75%;
   color: #545451;
-  margin: 0;
 }
 
 .learnAboutMeButton {
-  padding-left: 20px;
+  padding-left: 1rem;
 }
 
 .contactButton {
-  padding-right: 20px;
+  padding-right: 1rem;
 }
 
 .client_reviews {
@@ -110,13 +102,12 @@
   align-items: center;
   width: 100%;
   height: auto;
-  margin: 0 0 60px 0;
 }
 
 .clientReview {
   max-width: 860px;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 1rem
 }
 
 .quoteCitation {
@@ -125,13 +116,11 @@
 
 @media screen and (max-width: 1440px){
 
-  .intro_video {
-    margin: 0 0 40px 0;
-    padding: 0;
+  .intro_video_container {
+    height: 30rem;
   }
 
   .intro_paragraph {
-    padding: 0 20px;
     line-height: 2.2rem;
   }
 
@@ -143,26 +132,22 @@
     font-size: 1.35rem;
   }
 
-  .case_studies {
-    padding: 0 20px 20px 20px;
-  }
+}
 
+@media screen and (max-width: 1080px) {
+  .intro_video_container {
+    height: 20rem;
+  }
 }
 
 @media screen and (max-width: 720px) {
 
-  .case_studies {
-      padding: 0 20px 20px 20px;
-    }
-
-    .intro_video {
-      margin: 0 0 20px 0;
-      padding: 0;
-    }
+  .intro_video_container {
+    height: 20rem;
+  }
   
     .intro_paragraph {
       line-height: 2rem;
-      margin: 0 auto 20px auto;
     }
 
     .welcome {
@@ -176,15 +161,11 @@
     .workSection {
       width: 100%;
       max-width: 100%;
-      margin: 0 auto 30px auto;
-      padding: 0 20px;
     }
   
     .aboutSection {
       width: 100%;
       max-width: 100%;
-      margin: 0 auto 30px auto;
-      padding: 0 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -194,8 +175,6 @@
     .contactSection {
       width: 100%;
       max-width: 100%;
-      margin: 0 auto 30px auto;
-      padding: 0 20px;
       display: flex;
       flex-direction: column-reverse;
       justify-content: flex-start;
@@ -227,14 +206,9 @@
       margin-top: 10px;
     }
   
-    .client_reviews {
-      margin: 0 0 30px 0;
-    }
-  
     .clientReview {
       max-width: 100%;
       width: 100%;
-      padding: 0 20px;
     }
 
 }

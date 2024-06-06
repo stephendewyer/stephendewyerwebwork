@@ -1,13 +1,13 @@
 import { useRef, useEffect, useState, useLayoutEffect } from "react";
 import { useRouter } from 'next/router';
 import MyLink from "../../../../public/util/myLink";
-import styles from "./navigationTabDesktop.module.css";
+import styles from "./navigation_tab_mobile.module.css";
 
-const CaseStudiesTabMobile= () => {
+const CaseStudiesTabMobile = () => {
 
     const router = useRouter();
     const pagePath = router.pathname;
-    const pageIsActive = pagePath === "/case_studies";
+    const pageIsActive = pagePath === "/about";
 
     const blindsHeightRef = useRef(0);
 
@@ -45,9 +45,9 @@ const CaseStudiesTabMobile= () => {
 
     return (
         <MyLink 
-            href="/case_studies" 
+            href="/" 
             passHref 
-            aria-label="link to case studies page"
+            aria-label="link to index page"
         >
             <ul 
                 className={styles.blinds_index_container} 
@@ -64,7 +64,7 @@ const CaseStudiesTabMobile= () => {
                     <BlindsBottom />
                 </div>
                 <li className={styles.name}>
-                    case studies
+                    about
                 </li>
             </ul> 
         </MyLink>
