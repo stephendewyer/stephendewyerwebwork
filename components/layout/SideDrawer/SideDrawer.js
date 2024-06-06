@@ -108,7 +108,6 @@ const SideDrawer = (props) => {
                                 </div>
                             </li>     
                         </MyLink>
-                        
                     )
                 })}
                 <BlindsBottom />

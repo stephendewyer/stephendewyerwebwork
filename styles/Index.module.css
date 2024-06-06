@@ -16,7 +16,7 @@
   max-width: 860px;
   width: 100%;
   padding: 0 1rem;
-  line-height: 2.4rem;
+  line-height: 2rem;
 }
 
 .welcome {
@@ -117,11 +117,11 @@
 @media screen and (max-width: 1440px){
 
   .intro_video_container {
-    height: 30rem;
+    height: 36rem;
   }
 
   .intro_paragraph {
-    line-height: 2.2rem;
+    line-height: 2rem;
   }
 
   .welcome {
@@ -136,14 +136,14 @@
 
 @media screen and (max-width: 1080px) {
   .intro_video_container {
-    height: 20rem;
+    height: 24rem;
   }
 }
 
 @media screen and (max-width: 720px) {
 
   .intro_video_container {
-    height: 20rem;
+    height: 14rem;
   }
   
     .intro_paragraph {

@@ -43,7 +43,8 @@ const IndexPage = () => {
               loop 
               className={styles.intro_video}
             >         
-              <source src="/videos/imagine_echo/imagine_echo.mp4" type="video/mp4"/>       
+              <source src="/videos/imagine_echo/imagine_echo.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.       
             </video>
         </div>
           <div className={styles.intro_paragraph}>
@@ -94,7 +95,7 @@ const IndexPage = () => {
             </MyLink>  
           </div>
           <p className={styles.myStory}>
-              Have a project idea?  Want help on an existing project?  Want to connect?  Feel welcome to contact me.
+            Have a project idea?  Want help on an existing project?  Want to connect?  Feel welcome to contact me.
           </p>
         </div>
       </div>
