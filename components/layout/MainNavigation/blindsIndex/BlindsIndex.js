@@ -3,11 +3,11 @@ import { useRouter } from 'next/router';
 import MyLink from "../../../../public/util/myLink";
 import styles from "./BlindsIndex.module.css";
 
-const BlindsIndex = () => {
+const BlindsIndex = (props) => {
 
     const router = useRouter();
     const pagePath = router.pathname;
-    const pageIsActive = pagePath === "/";
+    const pageIsActive = pagePath === props.navItem.pathname;
 
     const blindsHeightRef = useRef(0);
 
@@ -45,7 +45,7 @@ const BlindsIndex = () => {
 
     return (
         <MyLink 
-            href="/" 
+            href={props.navItem.pathname} 
             passHref 
             aria-label="link to index page"
         >
@@ -64,7 +64,7 @@ const BlindsIndex = () => {
                     <BlindsBottom />
                 </div>
                 <li className={styles.logo}>
-                    stephen garrett dewyer
+                    {props.navItem.name}
                 </li>
             </ul> 
         </MyLink>

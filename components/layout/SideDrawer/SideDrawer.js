@@ -2,20 +2,26 @@ import styles from './SideDrawer.module.css';
 import { useRouter } from "next/router";
 import { useEffect, useLayoutEffect, useState, useRef } from "react";
 import MyLink from '../../../public/util/myLink';
+import DrawerToggleButton from './DrawerToggleButton';
+import NavData from "../../../public/data/navigation.json";
 
 const SideDrawer = (props) => {
 
     const router = useRouter();
     const pagePath = router.pathname;
-    const pageIsActive = pagePath === "/about";
+
+    console.log(pagePath)
 
     const blindsHeightRef = useRef(0);
 
     const [blindsHeight, setBlindsHeight] = useState(0);
 
     useEffect(() => {
-        setBlindsHeight(blindsHeightRef.current.clientHeight);
-    }, []);
+        if (blindsHeight.current !== null) {
+            setBlindsHeight(blindsHeightRef.current.clientHeight);
+        };
+        
+    }, [blindsHeight]);
 
     useLayoutEffect(() => {
         const measure = () => {
@@ -43,72 +49,43 @@ const SideDrawer = (props) => {
         );
     };
 
-    const navigationTabs = [
-        {
-            href: "/about",
-            name: "about",
-            sub_tabs: null
-        },
-        {
-            href: "/case_studies",
-            name: "case studies",
-            sub_tabs: [
-                {
-                    href: "/case_studies/publicArtsCommission",
-                    name: "Public Arts Commission web platform",
-                    subTabs: null
-                },
-                {
-                    href: "/case_studies/artInTechServices",
-                    name: "Art in Tech Services web programs",
-                    subTabs: null
-                },
-                {
-                    href: "/case_studies/joyfoodly",
-                    name: "Joyfoodly website",
-                    subTabs: null
-                }
-                ,
-                {
-                    href: "/case_studies/infiniteMile",
-                    name: "Infinite Mile website",
-                    subTabs: null
-                }
-            ]
-        },
-        {
-            href: "/contact",
-            name: "contact",
-            subTabs: null
-        }
-    ];
-
     return (
-       <nav className={(props.show) ? styles.side_drawer_open : styles.side_drawer} aria-hidden={(props.show)? "true" : "false"}>
+        <nav 
+            className={(props.show) ? styles.side_drawer_open : styles.side_drawer} 
+            aria-hidden={(props.show)? "true" : "false"}
+        >
+            <div className={styles.drawer_toggle_button_container}>
+                <DrawerToggleButton 
+                    sideDrawerOpen={props.show} 
+                    click={props.click}
+                /> 
+            </div>
            <ul className={styles.blinds}>
                 <BlindsTop />
-                {navigationTabs.map((tab, index) => {
-                    return (
-                        <MyLink
-                            href={tab.href}
-                            key={index}
-                            className={styles.tab_container}
-                            onClick={props.click}
-                        >
-                           <li
-                                className={styles.tab}
-                                style={{height: `${blindsHeight}px`}}
+                {NavData.map((tab, index) => {
+                    if (tab.name !== "stephen garrett dewyer") {
+                        return (
+                            <MyLink
+                                href={tab.pathname}
+                                key={index}
+                                className={styles.tab_container}
+                                onClick={props.click}
                             >
-                                <div className={styles.blindsTabBackground} ref={blindsHeightRef}>
-                                    <div className={styles.blind} />
-                                    <div className={styles.blind} />
-                                </div>
-                                <div className={styles.tabName}>
-                                    {tab.name}
-                                </div>
-                            </li>     
-                        </MyLink>
-                    )
+                            <li
+                                    className={styles.tab}
+                                    style={{height: `${blindsHeight}px`}}
+                                >
+                                    <div className={styles.blindsTabBackground} ref={blindsHeightRef}>
+                                        <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#646C85" : ""}}/>
+                                        <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#646C85" : ""}}/>
+                                    </div>
+                                    <div className={styles.tabName}>
+                                        {tab.name}
+                                    </div>
+                                </li>     
+                            </MyLink>
+                        );
+                    };
                 })}
                 <BlindsBottom />
            </ul>

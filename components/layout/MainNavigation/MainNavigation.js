@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 import BlindsIndex from './blindsIndex/BlindsIndex';
-import AboutTab from './navigationTabsDesktop/AboutTabDesktop';
-import CaseStudiesTab from './navigationTabsDesktop/CaseStudiesTabDesktop';
-import ContactTab from './navigationTabsDesktop/ContactTabDesktop';
 import classes from './MainNavigation.module.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import { debounce } from '../../../public/util/helpers';
+import NavData from "../../../public/data/navigation.json";
+import NavTabDesktop from './navigationTabDesktop/NavTabDesktop';
 
 const MainNavigation = (props) => {
 
@@ -39,22 +38,39 @@ const MainNavigation = (props) => {
             className={classes.nav_bar} 
             style={{ top: visible ? '0' : '-250px' }} 
         > 
-            <div className={classes.blinds_index}>
-                <BlindsIndex />
-            </div>
+            {NavData.map((navItem, index) => {
+                if (navItem.name === "stephen garrett dewyer") {
+                    return (
+                        <div 
+                            className={classes.blinds_index}
+                            key={index}
+                        >
+                            <BlindsIndex navItem={navItem}/>
+                        </div>
+                    );
+                };
+            })}
             <div className={classes.navigation_tabs}>
-                <div className={classes.navigation_tab}>
-                    <AboutTab />
-                </div>
-                <div className={classes.navigation_tab}>
-                    <CaseStudiesTab />
-                </div>
-                <div className={classes.navigation_tab}>
-                    <ContactTab />
-                </div>
+                {NavData.map((navItem, index) => {
+                    if (navItem.name !== "stephen garrett dewyer") {
+                        return (
+                            <div 
+                                className={classes.navigation_tab}
+                                key={index}
+                            >
+                                <NavTabDesktop navItem={navItem}/>
+                            </div>
+                        );
+                    };
+                    
+                })}
             </div>
             <div className={classes.main_navigation_toggle_button}>
-                <DrawerToggleButton click={props.drawerClickHandler} aria-hidden={(props.click) ? "true" : "false"} />
+                <DrawerToggleButton 
+                    click={props.drawerClickHandler} 
+                    sideDrawerOpen={props.sideDrawerOpen}
+                    aria-hidden={(!props.sideDrawerOpen) ? "true" : "false"} 
+                />
             </div>
         </nav>
     )

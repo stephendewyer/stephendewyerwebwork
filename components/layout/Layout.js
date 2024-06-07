@@ -25,8 +25,8 @@ const Layout = (props) => {
     let backdrop;
 
     if (sideDrawerOpen) {
-        backdrop = <Backdrop  back_drop_clicked={backdropClickHandler} />;
-    }
+        backdrop = <Backdrop back_drop_clicked={backdropClickHandler} />;
+    };
 
     // store the referenced element in a variable
 
@@ -96,8 +96,14 @@ const Layout = (props) => {
 
     return (
         <Fragment>
-            <MainNavigation drawerClickHandler={drawerToggleClickHandler} />
-            <SideDrawer show={sideDrawerOpen} click={linkClickHandler} />
+            <MainNavigation 
+                drawerClickHandler={drawerToggleClickHandler} 
+                sideDrawerOpen={sideDrawerOpen}
+            />
+            <SideDrawer 
+                show={sideDrawerOpen} 
+                click={linkClickHandler} 
+            />
             {backdrop}
             <Container />
             <div

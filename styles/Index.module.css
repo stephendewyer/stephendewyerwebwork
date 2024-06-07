@@ -6,34 +6,8 @@
   align-items: center;
 }
 
-.intro_paragraph_container {
-  display: block;
-  width: 100%;
-  margin: 0;
-}
-
-.intro_paragraph {
-  max-width: 860px;
-  width: 100%;
-  padding: 0 1rem;
-  line-height: 2rem;
-}
-
-.welcome {
-  font-size: 2.25rem;
-  font-weight: bold;
-  display: inline;
-  will-change: opacity;
-  transition: opacity 375ms linear;
-}
-
 .paragraph {
   display: inline;
-}
-
-.delayed_paragraph {
-  will-change: opacity;
-  transition: opacity 750ms linear;
 }
 
 .intro_video_container {
@@ -81,6 +55,13 @@
   justify-content: space-between;
 }
 
+.intro_paragraph {
+  max-width: 800px;
+  width: 75%;
+  padding: 0 1rem;
+  color: #545451;
+}
+
 .myStory {
   max-width: 800px;
   width: 75%;
@@ -119,14 +100,6 @@
   .intro_video_container {
     height: 36rem;
   }
-
-  .intro_paragraph {
-    line-height: 2rem;
-  }
-
-  .welcome {
-    font-size: 2rem;
-  }
   
   .paragraph {
     font-size: 1.35rem;
@@ -144,71 +117,70 @@
 
   .intro_video_container {
     height: 14rem;
+  }    
+  .paragraph {
+    font-size: 1.2rem;
+  }
+
+  .workSection {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .aboutSection {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
   
-    .intro_paragraph {
-      line-height: 2rem;
-    }
+  .contactSection {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
 
-    .welcome {
-      font-size: 1.75rem;
-    }
-    
-    .paragraph {
-      font-size: 1.2rem;
-    }
+  .intro_paragraph {
+    max-width: 100%;
+    width: 100%;
+    color: #545451;
+    font-size: 18px;
+    margin: 0;
+  }
   
-    .workSection {
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .aboutSection {
-      width: 100%;
-      max-width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-    }
-    
-    .contactSection {
-      width: 100%;
-      max-width: 100%;
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: flex-start;
-    }
-    
-    .myStory {
-      max-width: 100%;
-      width: 100%;
-      color: #545451;
-      font-size: 18px;
-      margin: 0;
-    }
-  
-    .learnAboutMeButton {
-      padding-left: 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
-      margin-top: 0px;
-    }
-  
-    .contactButton {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding-right: 0;
-      width: 100%;
-      margin-top: 10px;
-    }
-  
-    .clientReview {
-      max-width: 100%;
-      width: 100%;
-    }
+  .myStory {
+    max-width: 100%;
+    width: 100%;
+    color: #545451;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .learnAboutMeButton {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .contactButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .clientReview {
+    max-width: 100%;
+    width: 100%;
+  }
 
 }

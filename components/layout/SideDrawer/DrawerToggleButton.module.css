@@ -1,22 +1,61 @@
-.toggle_button {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 35px;
-    width: 40px;
-    background: transparent;
-    border: none;
+.drawer_toggle_button {
     cursor: pointer;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.toggle_button:focus {
+    border: none;
     outline: none;
+    position: relative;
+    background: none;
 }
 
-.toggle_button__line {
-    width: 40px;
+.drawer_toggle_button_open {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: relative;
+    background: none;
+    transform: scale(1)
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
     height: 5px;
-    background: #FF8D61;
+    background-color: #FF8D61;
+    margin: 6px 0;
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bar1_open {
+    width: 35px;
+    height: 5px;
+    background-color: #FF8D61;
+    margin: 6px 0;
+    -webkit-transform: translateY(11px) rotate(45deg);
+    -ms-transform: translateY(11px) rotate(45deg);
+    -o-transform: translateY(11px) rotate(45deg);
+    transform: translateY(11px) rotate(45deg);
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bar2_open {
+    width: 35px;
+    height: 5px;
+    background-color: #FF8D61;
+    margin: 6px 0;
+    opacity: 0;
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bar3_open {
+    width: 35px;
+    height: 5px;
+    background-color: #FF8D61;
+    margin: 6px 0;
+    -webkit-transform: translateY(-11px) rotate(-45deg);
+    -ms-transform: translateY(-11px) rotate(-45deg);
+    -o-transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-11px) rotate(-45deg);
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;
 }

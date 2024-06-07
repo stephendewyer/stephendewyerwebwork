@@ -3,11 +3,10 @@
     background: #EDEFFF;
     position: fixed;
     top: 0;
-    left: 0;
-    width: auto;
-    right: 70px;
+    left: 4rem;
+    right: 0;
     z-index: 200;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: transform 0.3s ease-out;
     display: flex;
     flex-direction: column;
@@ -18,10 +17,10 @@
     height: 100%;
     background: #EDEFFF;
     position: fixed;
+    position: fixed;
     top: 0;
-    left: 0;
-    width: auto;
-    right: 70px;
+    left: 4rem;
+    right: 0;
     z-index: 200;
     transform: translateX(0);
     transition: transform 0.3s ease-out;
@@ -30,12 +29,18 @@
     align-items: center;
 }
 
+.drawer_toggle_button_container {
+    position: absolute;
+    width: 100%;
+    padding: 0.5rem;
+}
+
 .blinds {
+    position: relative;
     list-style: none;
-    margin: 0;
+    width: 75%;
+    margin: 0 0 0 4rem;
     padding: 0;
-    width: 80%;
-    max-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +49,7 @@
 
 .tab {
     position: relative;
-        width: 100%;
+    width: 100%;
 }
 
 .blindsTabBackground {
@@ -58,6 +63,10 @@
 
 .tab_container {
     width: 100%;
+}
+
+.tab:hover > .blindsTabBackground > .blind {
+    background-color: #6F7185;
 }
 
 .tabName {

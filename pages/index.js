@@ -11,22 +11,6 @@ import ClientReviewsSlideCarousel from "../components/slide_carousel/ClientRevie
 
 const IndexPage = () => {
 
-  const [pageLoaded, setPageLoaded] = useState(false);
-
-  const [showIntroParagraph, setShowIntroParagraph] = useState(false);
-
-  useEffect(() => {
-    setPageLoaded(true);
-
-    const timeoutIntroParagraph = setTimeout(() => {
-      setShowIntroParagraph(true);
-    }, 750);
-
-    // cleanup function to clear the timeout if component unmounts
-    return () => clearTimeout(timeoutIntroParagraph);
-
-  }, []);
-
   return (
     <Fragment>
       <Head>
@@ -49,10 +33,7 @@ const IndexPage = () => {
         </div>
           <div className={styles.intro_paragraph}>
             <p className={styles.paragraph}>
-              <span className={styles.welcome} style={pageLoaded ? {opacity: "100%"} : {opacity: "0"}}>welcome! </span>
-              <span className={styles.delayed_paragraph} style={showIntroParagraph ? {opacity: "100%"} : {opacity: "0"}}>
-                My name is stephen dewyer and I&apos;m an award-winning <span style={{fontWeight: "bold"}}>software developer</span>,<span style={{fontWeight: "bold"}}> user experience (UX) designer</span>, <span style={{fontWeight: "bold"}}>founder</span> and <span style={{fontWeight: "bold"}}>artist</span>.  I enjoy creating groundbreaking software that helps empower communities to solve some of our most challenging problems.
-              </span>
+                welcome!  My name is stephen dewyer and I&apos;m an award-winning <span style={{fontWeight: "bold"}}>software developer</span>,<span style={{fontWeight: "bold"}}> user experience (UX) designer</span>, <span style={{fontWeight: "bold"}}>founder</span> and <span style={{fontWeight: "bold"}}>artist</span>.  I enjoy creating groundbreaking software that helps empower communities to solve some of our most challenging problems.
             </p>
           </div>
         <h2>

@@ -3,19 +3,22 @@ import { useRouter } from 'next/router';
 import MyLink from "../../../../public/util/myLink";
 import styles from "./navigationTabDesktop.module.css";
 
-const CaseStudiesTabMobile= () => {
+const NavTabDesktop = (props) => {
 
     const router = useRouter();
     const pagePath = router.pathname;
-    const pageIsActive = pagePath === "/case_studies";
+    const pageIsActive = pagePath === props.navItem.pathname;
 
     const blindsHeightRef = useRef(0);
 
     const [blindsHeight, setBlindsHeight] = useState(0);
 
     useEffect(() => {
-        setBlindsHeight(blindsHeightRef.current.clientHeight);
-    }, []);
+        if (blindsHeightRef.current !== null) {
+            setBlindsHeight(blindsHeightRef.current.clientHeight);
+        }
+        
+    }, [blindsHeight]);
 
     useLayoutEffect(() => {
         const measure = () => {
@@ -45,9 +48,9 @@ const CaseStudiesTabMobile= () => {
 
     return (
         <MyLink 
-            href="/case_studies" 
+            href={props.navItem.pathname}
             passHref 
-            aria-label="link to case studies page"
+            aria-label={`link to ${props.navItem.name} page`}
         >
             <ul 
                 className={styles.blinds_index_container} 
@@ -64,12 +67,11 @@ const CaseStudiesTabMobile= () => {
                     <BlindsBottom />
                 </div>
                 <li className={styles.name}>
-                    case studies
+                    {props.navItem.name}
                 </li>
             </ul> 
         </MyLink>
     );
-
 }
 
-export default CaseStudiesTabMobile;
+export default NavTabDesktop;
