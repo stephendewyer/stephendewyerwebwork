@@ -15,7 +15,7 @@ const BlindsIndex = (props) => {
 
     useEffect(() => {
         setBlindsHeight(blindsHeightRef.current.clientHeight);
-    }, []);
+    }, [blindsHeight]);
 
     useLayoutEffect(() => {
         const measure = () => {
@@ -43,6 +43,15 @@ const BlindsIndex = (props) => {
         );
     };
 
+    const [showLogo, setShowLogo] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowLogo(true);
+        }, 600);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <MyLink 
             href={props.navItem.pathname} 
@@ -63,7 +72,7 @@ const BlindsIndex = (props) => {
                     <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#646C85" : "" }} />
                     <BlindsBottom />
                 </div>
-                <li className={styles.logo}>
+                <li className={styles.logo} style={{opacity: showLogo ? "100%" : "0%"}}>
                     {props.navItem.name}
                 </li>
             </ul> 

@@ -16,7 +16,7 @@ const NavTabDesktop = (props) => {
     useEffect(() => {
         if (blindsHeightRef.current !== null) {
             setBlindsHeight(blindsHeightRef.current.clientHeight);
-        }
+        };
         
     }, [blindsHeight]);
 
@@ -46,6 +46,15 @@ const NavTabDesktop = (props) => {
         );
     };
 
+    const [showLogo, setShowLogo] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowLogo(true);
+        }, 600);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <MyLink 
             href={props.navItem.pathname}
@@ -66,7 +75,7 @@ const NavTabDesktop = (props) => {
                     <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#646C85" : "" }} />
                     <BlindsBottom />
                 </div>
-                <li className={styles.name}>
+                <li className={styles.name} style={{opacity: showLogo ? "100%" : "0%"}}>
                     {props.navItem.name}
                 </li>
             </ul> 

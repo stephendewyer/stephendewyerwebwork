@@ -41,6 +41,7 @@
     color: #FFE9C0;
     font-size: 1.25rem;
     text-shadow: 0rem 0.125rem 0.25rem black;
+    transition: opacity 0.3s linear;
 }
 
 @media screen and (max-width: 1440px) {

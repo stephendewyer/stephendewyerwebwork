@@ -42,6 +42,7 @@
     text-shadow: 0rem 0.125rem 0.25rem black;
     font-size: 1.25rem;
     padding: 0 1rem;
+    transition: opacity 0.3s linear;
 }
 
 @media screen and (max-width: 1440px) {
