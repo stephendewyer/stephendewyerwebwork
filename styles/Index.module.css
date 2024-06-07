@@ -12,7 +12,7 @@
 
 .intro_video_container {
   width: 100%;
-  height: 40rem;
+  height: 48rem;
 }
 
 .intro_video {
@@ -98,7 +98,7 @@
 @media screen and (max-width: 1440px){
 
   .intro_video_container {
-    height: 36rem;
+    height: 42rem;
   }
   
   .paragraph {

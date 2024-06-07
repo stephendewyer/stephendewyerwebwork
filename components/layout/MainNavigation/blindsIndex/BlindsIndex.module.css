@@ -41,6 +41,7 @@
     color: #FFE9C0;
     text-shadow: 0rem 0.125rem 0.25rem black;
     font-size: 1.25rem;
+    padding: 0 1rem;
 }
 
 @media screen and (max-width: 1440px) {
