@@ -55,32 +55,36 @@ const NavTabDesktop = (props) => {
         return () => clearTimeout(timer);
     }, []);
 
-    return (
-        <MyLink 
-            href={props.navItem.pathname}
-            passHref 
-            aria-label={`link to ${props.navItem.name} page`}
-        >
-            <ul 
-                className={styles.blinds_index_container} 
-                style={{height: `${blindsHeight}px`}}
+    if (props.navItem.name !== "stephen garrett dewyer") {
+        return (
+            <MyLink 
+                href={props.navItem.pathname} 
+                passHref 
+                aria-label={`link to ${props.navItem.name} page`}
             >
-                <div 
-                    className={styles.blinds} 
-                    ref={blindsHeightRef} 
-                    style={{color: pageIsActive ? "#646C85" : "" }}
+                <ul 
+                    className={styles.blinds_index_container} 
+                    style={{height: `${blindsHeight}px`}}
                 >
-                    <BlindsTop />
-                    <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#646C85" : "" }} />
-                    <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#646C85" : "" }} />
-                    <BlindsBottom />
-                </div>
-                <li className={styles.name} style={{opacity: showLogo ? "100%" : "0%"}}>
-                    {props.navItem.name}
-                </li>
-            </ul> 
-        </MyLink>
-    );
+                    <div 
+                        className={styles.blinds} 
+                        ref={blindsHeightRef} 
+                        style={{color: pageIsActive ? "#646C85" : "" }}
+                    >
+                        <BlindsTop />
+                        <div className={styles.blinds_middle}>
+                            <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#646C85" : "" }} />
+                            <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#646C85" : "" }} />
+                        </div>
+                        <BlindsBottom />
+                    </div>
+                    <li className={styles.name} style={{opacity: showLogo ? "100%" : "0%"}}>
+                        {props.navItem.name}
+                    </li>
+                </ul> 
+            </MyLink>
+        );
+    };
 }
 
 export default NavTabDesktop;

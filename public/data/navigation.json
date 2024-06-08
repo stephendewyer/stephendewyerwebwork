@@ -15,23 +15,23 @@
         "sub_navigation": [
                 {
                     "pathname": "/case_studies/publicArtsCommission",
-                    "name": "Public Arts Commission web platform",
+                    "name": "Public Arts Commission",
                     "sub_navigation": null
                 },
                 {
                     "pathname": "/case_studies/artInTechServices",
-                    "name": "Art in Tech Services web programs",
+                    "name": "Art in Tech Services",
                     "sub_navigation": null
                 },
                 {
                     "pathname": "/case_studies/joyfoodly",
-                    "name": "Joyfoodly website",
+                    "name": "Joyfoodly",
                     "sub_navigation": null
                 }
                 ,
                 {
                     "pathname": "/case_studies/infiniteMile",
-                    "name": "Infinite Mile website",
+                    "name": "Infinite Mile",
                     "sub_navigation": null
                 }
         ]

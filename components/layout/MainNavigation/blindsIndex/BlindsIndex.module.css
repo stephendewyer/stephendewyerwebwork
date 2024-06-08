@@ -10,15 +10,24 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
+    gap: 0.125rem;
     transition: color 0.2s linear;
+}
+
+.blinds_middle {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .blinds_index_container:hover > .blinds {
     color: #6F7185;
 }
 
-.blinds_index_container:hover > .blinds > .blind {
+.blinds_index_container:hover > .blinds > .blinds_middle > .blind {
     background-color: #6F7185;
 }
 
@@ -39,10 +48,10 @@
     justify-content: center;
     align-items: center;
     color: #FFE9C0;
-    text-shadow: 0rem 0.125rem 0.25rem black;
     font-size: 1.25rem;
     padding: 0 1rem;
     transition: opacity 0.3s linear;
+    text-align: center;
 }
 
 @media screen and (max-width: 1440px) {
@@ -53,7 +62,7 @@
 
 @media screen and (max-width: 1080px) {
     .logo {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 

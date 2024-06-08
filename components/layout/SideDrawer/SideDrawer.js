@@ -62,31 +62,33 @@ const SideDrawer = (props) => {
             </div>
            <ul className={styles.blinds}>
                 <BlindsTop />
-                {NavData.map((tab, index) => {
-                    if (tab.name !== "stephen garrett dewyer") {
-                        return (
-                            <MyLink
-                                href={tab.pathname}
-                                key={index}
-                                className={styles.tab_container}
-                                onClick={props.click}
-                            >
-                            <li
-                                    className={styles.tab}
-                                    style={{height: `${blindsHeight}px`}}
+                <div className={styles.blinds_middle}>
+                    {NavData.map((tab, index) => {
+                        if (tab.name !== "stephen garrett dewyer") {
+                            return (
+                                <MyLink
+                                    href={tab.pathname}
+                                    key={index}
+                                    className={styles.tab_container}
+                                    onClick={props.click}
                                 >
-                                    <div className={styles.blindsTabBackground} ref={blindsHeightRef}>
-                                        <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#646C85" : ""}}/>
-                                        <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#646C85" : ""}}/>
-                                    </div>
-                                    <div className={styles.tabName}>
-                                        {tab.name}
-                                    </div>
-                                </li>     
-                            </MyLink>
-                        );
-                    };
-                })}
+                                    <li
+                                        className={styles.tab}
+                                        style={{height: `${blindsHeight}px`}}
+                                    >
+                                        <div className={styles.blindsTabBackground} ref={blindsHeightRef}>
+                                            <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#646C85" : ""}}/>
+                                            <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#646C85" : ""}}/>
+                                        </div>
+                                        <div className={styles.tabName}>
+                                            {tab.name}
+                                        </div>
+                                    </li>     
+                                </MyLink>
+                            );
+                        };
+                    })}
+                </div>
                 <BlindsBottom />
            </ul>
         </nav> 
