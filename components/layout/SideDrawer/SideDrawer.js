@@ -51,6 +51,7 @@ const SideDrawer = (props) => {
 
     return (
         <nav 
+            id={styles["sidedrawer"]}
             className={(props.show) ? styles.side_drawer_open : styles.side_drawer} 
             aria-hidden={(props.show)? "true" : "false"}
         >

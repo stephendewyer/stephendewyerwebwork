@@ -1,37 +1,31 @@
-.side_drawer {
+#sidedrawer {
     height: 100%;
     background: #EDEFFF;
     position: fixed;
     top: 0;
+    bottom: 0;
     left: 4rem;
     right: 0;
     z-index: 200;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-out;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+}
+
+.side_drawer {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
 }
 
 .side_drawer_open {
-    height: 100%;
-    background: #EDEFFF;
-    position: fixed;
-    position: fixed;
-    top: 0;
-    left: 4rem;
-    right: 0;
-    z-index: 200;
     transform: translateX(0);
     transition: transform 0.3s ease-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .drawer_toggle_button_container {
-    position: absolute;
     width: 100%;
+    position: relative;
     padding: 0.5rem;
 }
 
@@ -39,7 +33,6 @@
     position: relative;
     list-style: none;
     width: 75%;
-    margin: 0 0 0 4rem;
     padding: 0;
     display: flex;
     flex-direction: column;
