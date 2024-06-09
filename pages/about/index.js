@@ -330,52 +330,56 @@ const AboutPage = () => {
                         <h3>
                             education
                         </h3>
-                        <p className={classes.resume_paragraphs}>
-                            <div className={classes.label_paragraphs} style={{marginBottom: "1rem"}}>
-                                <span className={classes.label_item}>2011</span>
-                                <span className={classes.position}>MFA in Sculpture</span>
-                                <span className={classes.label_item}>Yale University School of Art</span>
-                                <span className={classes.label_item}>New Haven, Connecticut</span>
-                            </div>
-                            <div className={classes.label_paragraphs}>
-                                <span className={classes.label_item}>2008</span>
-                                <span className={classes.position}>BFA in Art History, Theory <span>&#38;</span> Criticism</span>
-                                <span className={classes.label_item}>Maryland Institute College of Art (MICA)</span>
-                                <span className={classes.label_item}>cum laude</span>
-                                <span className={classes.label_item}>Baltimore, Maryland</span>
-                            </div>
-                        </p>
-                        <h3>awards and grants</h3>
+                        <div className={classes.label_paragraphs}>
+                            <span className={classes.label_item}>2011</span>
+                            <span className={classes.position}>MFA in Sculpture</span>
+                            <span className={classes.label_item}>Yale University School of Art</span>
+                            <span className={classes.label_item}>New Haven, Connecticut</span>
+                        </div>
+                        <div className={classes.label_paragraphs}>
+                            <span className={classes.label_item}>2008</span>
+                            <span className={classes.position}>BFA in Art History, Theory <span>&#38;</span> Criticism</span>
+                            <span className={classes.label_item}>Maryland Institute College of Art (MICA)</span>
+                            <span className={classes.label_item}>cum laude</span>
+                            <span className={classes.label_item}>Baltimore, Maryland</span>
+                        </div>
+                    </div>
+                </div>
+                <div className={classes.awards_and_grants_container}>
+                    <h3>awards and grants</h3>
+                    <div className={classes.awards_and_grants}>
+                        <div className={classes.award}>
                             <div className={classes.label_paragraphs}>
                                 <span className={classes.label_item}>2014 &ndash; 2016</span>
                                 <span className={classes.position}>Knight Arts Challenge Detroit matching $20,000 grant</span>
                                 <span className={classes.label_item}>John S. and James L. Knight Foundation</span>
                                 <span className={classes.label_item}>Miami, Florida</span>
                             </div>
-                            <ul>
+                            <ul className={classes.label_paragraphs}>
                                 <li>
                                     Project: ∞ mile
                                 </li>
                             </ul>
+                        </div>
+                        <div className={classes.award}>
                             <div className={classes.label_paragraphs}>
                                 <span className={classes.label_item}>2014</span>
                                 <span className={classes.position}>Detroit Chapter June 2014 $1,000 grant</span>
                                 <span className={classes.label_item}>Awesome Foundation</span>
                                 <span className={classes.label_item}>Boston, Massachusetts</span>
                             </div>
-                            <ul>
+                            <ul className={classes.label_paragraphs}>
                                 <li>
                                     Project: ∞ mile
                                 </li>
                             </ul>
+                        </div>
                     </div>
                 </div>
                 <div className={classes.introAboutSection}>
-                        <div className={classes.myStoryContainer}>
-                        <div className={classes.myStory}>
-                            <h3>skills</h3>
-                            <SkillsAccordion skills={skills} /> 
-                        </div>
+                    <div className={classes.skills_container}>
+                        <h3>skills</h3>
+                        <SkillsAccordion skills={skills} />
                     </div>
                     <div className={classes.introAboutSection02}>                                           
                         <h3>certificates</h3>
