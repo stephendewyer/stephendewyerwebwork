@@ -16,10 +16,10 @@ const CaseStudiesPage = () => {
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies" />
             </Head>
             <div className="container">
+                <h1>
+                    case studies
+                </h1>
                 <div className={styles.case_studies}>
-                    <h1>
-                        case studies
-                    </h1>
                     <PulblicArtsCommissionCard />
                     <ArtInTechServicesCard />
                     <JoyfoodlyCard />

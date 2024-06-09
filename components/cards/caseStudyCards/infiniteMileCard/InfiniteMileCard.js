@@ -8,77 +8,95 @@ import InfiniteMileDetroitMobilePrototype from '../../../../public/images/case_s
 
 const InfiniteMileCard = () => {
 
-    const [infiniteMileIsHovered, setInfiniteMileIsHovered] = useState(false);
+  const [infiniteMileIsHovered, setInfiniteMileIsHovered] = useState(false);
+  const [buttonActive, setButtonActive] = useState(false);
 
-    return (
-      <MyLink 
-          onMouseEnter={(() => setInfiniteMileIsHovered(true))}
-          onMouseOver={(() => setInfiniteMileIsHovered(true))}
-          onMouseLeave={(() => setInfiniteMileIsHovered(false))}
-          onMouseOut={(() => setInfiniteMileIsHovered(false))}
-          href="/case_studies/infiniteMile" 
-          passHref 
-        >
-          <div className={infiniteMileIsHovered ? styles.case_studies_b_hovered : styles.case_studies_b}>
-            <div className={styles.case_study_info_container}>
-              <div className={styles.case_study_info}>
-                <h3>
-                  Infinite Mile LLC website
-                </h3>
-                <h4>
-                  2013 &ndash; 2017
-                </h4>
-                <p>
-                  A website for an award-winning journal of art and culture(s) in Detroit, Michigan.
-                </p>
-                <div className={styles.view_button} >
-                    <ButtonAction 
-                      buttonIsActive={infiniteMileIsHovered}
-                      aria-label="link to view"
-                    >
-                        view
-                    </ButtonAction>
-                </div>
-              </div>
-            </div>
-            <div className={styles.case_study_image} >
-              <video 
-                autoPlay 
-                muted 
-                loop 
-                className={styles.video}
-                style={{display: infiniteMileIsHovered ? "block" : "none" }}
-              >         
-                <source 
-                  src="/videos/Infinite_Mile_interactions.mp4" 
-                  type="video/mp4"
-                />       
-              </video>
-              <div style={{display: infiniteMileIsHovered ? "none" : "block" }}>
-                <Image 
-                  src={InfiniteMileBackground} 
-                  alt="Detroit, Michigan as seen from Fisher Building in the morning" 
-                  layout="fill"
-                  objectFit="cover"
+  return (
+    <div
+      className={styles.case_study}
+      onMouseEnter={(() => setInfiniteMileIsHovered(true))}
+      onMouseOver={(() => setInfiniteMileIsHovered(true))}
+      onMouseLeave={(() => setInfiniteMileIsHovered(false))}
+      onMouseOut={(() => setInfiniteMileIsHovered(false))}
+    >
+      <div className={styles.case_study_background}>
+        <div className={styles.case_study_background_image}>
+          <Image 
+            src={InfiniteMileBackground} 
+            alt="Detroit, Michigan as seen from Fisher Building in the morning" 
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+        </div>
+        <div className={styles.case_study_overlay}/>
+      </div>
+      <div className={styles.case_study_content} >
+        <div className={styles.prototypes}>
+          <video 
+            style={{display: infiniteMileIsHovered ? "block" : "none" }}
+            autoPlay 
+            muted 
+            loop 
+            className={styles.video}
+          >         
+            <source 
+              src="/videos/Infinite_Mile_interactions.mp4" 
+              type="video/mp4"
+            />       
+          </video>
+          <div 
+            style={{display: infiniteMileIsHovered ? "none" : "block" }}
+            className={styles.case_study_prototypes}
+          >
+            <div className={styles.prototypes_container}>
+              <div className={styles.case_study_prototype_desktop}>
+                <Image
+                  src={InfiniteMileDetroitMobilePrototype}
+                  alt="Infinite Mile desktop prototype"
+                  layout="responsive"
+                  objectFit="contain"
                   priority
                 />
-                <div className={styles.case_study_overlay} />
-                <div className={styles.case_study_prototypes}>
-                    <div className={styles.case_study_prototype_desktop}>
-                      <Image
-                        src={InfiniteMileDetroitMobilePrototype}
-                        alt="Infinite Mile desktop prototype"
-                        layout="fill"
-                        objectFit="contain"
-                        priority
-                      />
-                    </div>
-                  </div>
-                </div>
+              </div>
             </div>
           </div>
-      </MyLink>
-    );
+        </div>
+        <div className={styles.about_case_study}>
+          <div className={styles.case_study_info}>
+            <h3>
+              Infinite Mile LLC website
+            </h3>
+            <h4>
+              2013 &ndash; 2017
+            </h4>
+            <p>
+              A website for an award-winning journal of art and culture(s) in Detroit, Michigan.
+            </p>
+            <MyLink 
+              href="/case_studies/infiniteMile" 
+              passHref 
+            >
+              <div 
+                className={styles.view_button} 
+                onMouseEnter={(() => setButtonActive(true))}
+                onMouseOver={(() => setButtonActive(true))}
+                onMouseLeave={(() => setButtonActive(false))}
+                onMouseOut={(() => setButtonActive(false))}
+              >
+                  <ButtonAction
+                    buttonIsActive={buttonActive}
+                    aria-label="link to view"
+                  >
+                      view
+                  </ButtonAction>
+              </div>
+            </MyLink>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default InfiniteMileCard;

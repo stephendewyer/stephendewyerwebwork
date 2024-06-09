@@ -10,84 +10,102 @@ import ButtonAction from '../../../buttons/buttonAction/ButtonAction';
 const PulblicArtsCommissionCard = () => {
 
     const [publicArtsCommissionIsHovered, setPublicArtsCommissionIsHovered] = useState(false);
+    const [buttonActive, setButtonActive] = useState(false);
 
     return (
-      <MyLink 
-          onMouseEnter={(() => setPublicArtsCommissionIsHovered(true))}
-          onMouseOver={(() => setPublicArtsCommissionIsHovered(true))}
-          onMouseLeave={(() => setPublicArtsCommissionIsHovered(false))}
-          onMouseOut={(() => setPublicArtsCommissionIsHovered(false))}
-          href="/case_studies/publicArtsCommission" 
-          passHref 
-        >
-          <div className={publicArtsCommissionIsHovered ? styles.case_studies_a_hovered : styles.case_studies_a}>
-            <div className={styles.case_study_image} >
-              <video 
-                autoPlay 
-                muted 
-                loop 
-                className={styles.video}
-                style={{display: publicArtsCommissionIsHovered ? "block" : "none" }}
-              >         
-                <source 
-                  src="/videos/Public_Arts_Commission_interactions.mp4" 
-                  type="video/mp4"
-                />       
-              </video>
-              <div style={{display: publicArtsCommissionIsHovered ? "none" : "block" }}>
-                <Image 
-                  src={PublicArtsCommissionBackground} 
-                  alt="doors to Michigan State Capitol Building" 
-                  layout="fill"
-                  objectFit="cover"
-                  priority
-                />
-                <div className={styles.case_study_overlay} />
-                <div className={styles.case_study_prototypes}>
-                  <div className={styles.case_study_prototype_mobile}>
-                    <Image
-                      src={PublicArtsCommissionMobilePrototype}
-                      alt="Public Arts Commission mobile prototype"
-                      layout="fill"
-                      objectFit="contain"
-                      priority
-                    />
-                  </div>
-                  <div className={styles.case_study_prototype_desktop}>
-                    <Image
-                      src={PublicArtsCommissionDesktopPrototype}
-                      alt="Public Arts Commission desktop prototype"
-                      layout="fill"
-                      objectFit="contain"
-                      priority
-                    />
-                  </div>
+      <div
+        className={styles.case_study}
+        onMouseEnter={(() => setPublicArtsCommissionIsHovered(true))}
+        onMouseOver={(() => setPublicArtsCommissionIsHovered(true))}
+        onMouseLeave={(() => setPublicArtsCommissionIsHovered(false))}
+        onMouseOut={(() => setPublicArtsCommissionIsHovered(false))}
+      >
+        <div className={styles.case_study_background}>
+          <div className={styles.case_study_background_image}>
+            <Image 
+              src={PublicArtsCommissionBackground} 
+              alt="doors to Michigan State Capitol Building" 
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
+          <div className={styles.case_study_overlay}/>
+        </div>
+        <div className={styles.case_study_content} >
+          <div className={styles.prototypes}>
+            <video 
+              style={{display: publicArtsCommissionIsHovered ? "block" : "none" }}
+              autoPlay 
+              muted 
+              loop 
+              className={styles.video}
+            >         
+              <source 
+                src="/videos/Public_Arts_Commission_interactions.mp4" 
+                type="video/mp4"
+              />       
+            </video>
+            <div 
+              style={{display: publicArtsCommissionIsHovered ? "none" : "block" }}
+              className={styles.case_study_prototypes}
+            >
+              <div className={styles.prototypes_container}>
+                <div className={styles.case_study_prototype_mobile}>
+                  <Image
+                    src={PublicArtsCommissionMobilePrototype}
+                    alt="Public Arts Commission mobile prototype"
+                    layout="responsive"
+                    objectFit="contain"
+                    priority
+                  />
+                </div>
+                <div className={styles.case_study_prototype_desktop}>
+                  <Image
+                    src={PublicArtsCommissionDesktopPrototype}
+                    alt="Public Arts Commission desktop prototype"
+                    layout="responsive"
+                    objectFit="contain"
+                    priority
+                  />
                 </div>
               </div>
             </div>
-            <div className={styles.case_study_info_container}>
-              <div className={styles.case_study_info}>
-                <h3>
-                    Public Arts Commission web platform
-                </h3>
-                <h4>
-                  first launched in 2017 and redesigned in 2023
-                </h4>
-                <p>
-                    A web platform for a non-profit organization that is dedicated to expanding the political imagination for greater democracy within and outside art.
-                </p>
-                <div className={styles.view_button} >
+          </div>
+          <div className={styles.about_case_study}>
+            <div className={styles.case_study_info}>
+              <h3>
+                Public Arts Commission web platform
+              </h3>
+              <h4>
+                first launched in 2017 and redesigned in 2023
+              </h4>
+              <p>
+                  A web platform for a non-profit organization that is dedicated to expanding the political imagination for greater democracy within and outside art.
+              </p>
+              <MyLink 
+                href="/case_studies/publicArtsCommission" 
+                passHref 
+              >
+                <div 
+                  className={styles.view_button} 
+                  onMouseEnter={(() => setButtonActive(true))}
+                  onMouseOver={(() => setButtonActive(true))}
+                  onMouseLeave={(() => setButtonActive(false))}
+                  onMouseOut={(() => setButtonActive(false))}
+                >
                     <ButtonAction
-                      buttonIsActive={publicArtsCommissionIsHovered}
+                      buttonIsActive={buttonActive}
                       aria-label="link to view"
                     >
                         view
                     </ButtonAction>
                 </div>
-              </div>
+              </MyLink>
             </div>
+          </div>
         </div>
-      </MyLink>
+      </div>
     );
 }
 
