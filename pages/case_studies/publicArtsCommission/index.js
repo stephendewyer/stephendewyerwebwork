@@ -18,8 +18,8 @@ import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
 import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
 import ButtonExternalLink from '../../../components/buttons/buttonExternalLink/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
-import artinTechServicesScreengrab from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_screengrab.png';
-import infiniteMileScreengrab from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_Screengrab.png';
+import artinTechServicesThumbnail from "../../../public/images/thumbnails/Art_in_Tech_Services_website_screenshot.jpg";
+import infiniteMileThumbnail from "../../../public/images/thumbnails/Infinite_Mile_Screengrab.jpg";
 import PublicArtsCommissionSiteMap from '../../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_sitemap.jpg';
 import PublicArtsCommissionBanner from '../../../public/images/case_studies/public_arts_commission_redesign/background/Public_Arts_Commission_background.jpg';
 
@@ -486,7 +486,11 @@ const PublicArtsCommission = () => {
                                 Infinite Mile website 
                             </h4>
                         </div>
-                        <Image src={infiniteMileScreengrab} layout="responsive" alt="Infinite Mile desktop screengrab thumbnail" />
+                        <Image 
+                            src={infiniteMileThumbnail} 
+                            layout="responsive" 
+                            alt="Infinite Mile desktop screengrab thumbnail" priority 
+                        />
                     </ButtonPrevious>
                 </MyLink>
                 <MyLink href="/case_studies/artInTechServices" passHref={true} >
@@ -496,7 +500,12 @@ const PublicArtsCommission = () => {
                                 Art in Tech Services web programs
                             </h4>
                         </div>
-                        <Image src={artinTechServicesScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
+                        <Image 
+                            src={artinTechServicesThumbnail} 
+                            layout="responsive" 
+                            alt="Art in Tech Services desktop screengrab thumbnail" 
+                            priority 
+                        />
                     </ButtonNext>
                 </MyLink>
             </div>

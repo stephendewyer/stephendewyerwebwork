@@ -20,8 +20,8 @@ import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
 import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
 import ButtonExternalLink from '../../../components/buttons/buttonExternalLink/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
-import joyfoodlyScreengrab from '../../../public/images/case_studies/Joyfoodly/Joyfoodly_desktop.png';
-import publicArtsCommissionScreengrab from '../../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_website_desktop_01.jpg';
+import joyfoodlyThumbnail from "../../../public/images/thumbnails/Joyfoodly_desktop.jpg";
+import publicArtsCommissionThumbnail from "../../../public/images/thumbnails/public_arts_commission_website_desktop_01.jpg";
 import InfiniteMileBanner from '../../../public/images/case_studies/Infinite_Mile_LLC/background/Infinite_Mile_background.jpg';
 
 const InfiniteMile = () => {
@@ -448,7 +448,12 @@ const InfiniteMile = () => {
                                 Joyfoodly website 
                             </h4>
                         </div>
-                        <Image src={joyfoodlyScreengrab} layout="responsive" alt="Art in Tech Services desktop screengrab thumbnail" />
+                        <Image 
+                            src={joyfoodlyThumbnail} 
+                            layout="responsive" 
+                            alt="Art in Tech Services desktop screengrab thumbnail" 
+                            priority
+                        />
                     </ButtonPrevious>
                 </MyLink>
                 <MyLink href="/case_studies/publicArtsCommission" passHref={true} >
@@ -458,7 +463,12 @@ const InfiniteMile = () => {
                                 Public Arts Commission web platform
                             </h4>
                         </div>
-                        <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission desktop screengrab thumbnail" />
+                        <Image 
+                            src={publicArtsCommissionThumbnail} 
+                            layout="responsive" 
+                            alt="Public Arts Commission desktop screengrab thumbnail" 
+                            priority
+                        />
                     </ButtonNext>
                 </MyLink>
             </div>

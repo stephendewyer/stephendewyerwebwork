@@ -133,6 +133,8 @@
     align-items: center;
     gap: 1rem;
     width: 100%;
+    background-color: #26272D;
+    padding: 1rem;
 }
 
 .awards_and_grants {
@@ -141,7 +143,6 @@
     justify-content: center;
     width: 100%;
     gap: 1rem;
-    padding: 0 1rem;
 }
 
 .award {
@@ -160,6 +161,28 @@
 
 .label_item {
     font-size: 1rem;
+}
+
+.awards_and_grants_header {
+    color: #EEE3D5;
+}
+
+.awards_and_grants_item_label {
+    font-size: 1rem;
+    color: #E3E7DF;
+}
+
+.awards_and_grants_item_position {
+    font-size: 1.5rem;
+    color: #E3E7DF;
+}
+
+.awards_and_grants_item_project {
+    color: #E3E7DF;
+}
+
+.certificates {
+    width: 100%;
 }
 
 @media screen and (max-width: 1440px) {
@@ -189,6 +212,10 @@
     }
 
     .position {
+        font-size: 1.35rem;
+    }
+
+    .awards_and_grants_item_position {
         font-size: 1.35rem;
     }
 }
@@ -265,6 +292,10 @@
     }
 
     .position {
+        font-size: 1.25rem;
+    }
+
+    .awards_and_grants_item_position {
         font-size: 1.25rem;
     }
 

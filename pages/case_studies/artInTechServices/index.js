@@ -18,8 +18,8 @@ import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
 import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
 import ButtonExternalLink from '../../../components/buttons/buttonExternalLink/ButtonExternalLink';
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
-import joyfoodlyScreengrab from '../../../public/images/case_studies/Joyfoodly/Joyfoodly_desktop.png';
-import publicArtsCommissionScreengrab from '../../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_website_desktop_01.jpg';
+import joyfoodlyThumbnail from "../../../public/images/thumbnails/Joyfoodly_desktop.jpg";
+import publicArtsCommissionThumbnail from "../../../public/images/thumbnails/public_arts_commission_website_desktop_01.jpg";
 import ArtInTechServicesBanner from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/background/Art_in_Tech_Services_background.jpg';
 
 const ArtinTechServices = () => {
@@ -491,7 +491,12 @@ const ArtinTechServices = () => {
                                 Art in Tech Services website
                             </div>
                             <div className={styles.external_link_icon} >
-                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                                <Image 
+                                    src={externalLinkIcon} 
+                                    layout="responsive" 
+                                    alt="external link icon" 
+                                    priority
+                                />
                             </div>
                         </ButtonExternalLink>
                     </a>
@@ -505,7 +510,7 @@ const ArtinTechServices = () => {
                                 Public Arts Commission web platform
                             </h4>
                         </div>
-                        <Image src={publicArtsCommissionScreengrab} layout="responsive" alt="Public Arts Commission desktop screengrab thumbnail" />
+                        <Image src={publicArtsCommissionThumbnail} layout="responsive" alt="Public Arts Commission desktop screengrab thumbnail" />
                     </ButtonPrevious>
                 </MyLink>
                 <MyLink href="/case_studies/joyfoodly" passHref={true} >
@@ -516,7 +521,12 @@ const ArtinTechServices = () => {
                                 Joyfoodly website
                             </h4>
                         </div>
-                        <Image src={joyfoodlyScreengrab} layout="responsive" alt="Joyfoodly desktop screengrab thumbnail" />
+                        <Image 
+                            src={joyfoodlyThumbnail} 
+                            layout="responsive" 
+                            alt="Joyfoodly desktop screengrab thumbnail" 
+                            priority
+                        />
                     </ButtonNext>
                 </MyLink>
             </div>
