@@ -19,6 +19,10 @@ import slide_11 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/
 import slide_12 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_12.jpg';
 import slide_13 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_13.jpg';
 import slide_15 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_15.jpg';
+import slide_21 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_21.jpg';
+import slide_22 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_22.jpg';
+import slide_23 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_23.jpg';
+import slide_24 from '../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_Inc_case_study_24.jpg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -79,6 +83,22 @@ const ArtInTechServicesSlides = [
   {
     image: slide_15,
     alt_text: "Art in Tech Services Inc slide 15"
+  },
+  {
+    image: slide_21,
+    alt_text: "Art in Tech Services Inc slide 21"
+  },
+  {
+    image: slide_22,
+    alt_text: "Art in Tech Services Inc slide 22"
+  },
+  {
+    image: slide_23,
+    alt_text: "Art in Tech Services Inc slide 23"
+  },
+  {
+    image: slide_24,
+    alt_text: "Art in Tech Services Inc slide 24"
   }
 ];
 

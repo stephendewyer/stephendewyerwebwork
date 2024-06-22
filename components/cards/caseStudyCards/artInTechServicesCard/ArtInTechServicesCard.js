@@ -2,8 +2,8 @@ import styles from './ArtInTechServicesCard.module.css';
 import MyLink from '../../../../public/util/myLink';
 import ButtonAction from '../../../buttons/buttonAction/ButtonAction';
 import Image from 'next/image';
-import ArtInTechServicesMobilePrototype from '../../../../public/images/case_studies/Art_in_Tech_Services_Inc/prototypes/Art_in_Tech_Services_Inc_web_prototype_07.png';
-import ArtInTechServicesDesktopPrototype from '../../../../public/images/case_studies/Art_in_Tech_Services_Inc/prototypes/Art_in_Tech_Services_Inc_web_prototype_laptop_02.png';
+import ArtInTechServicesMobilePrototype from '../../../../public/images/case_studies/Art_in_Tech_Services_Inc/prototypes/Art_in_Tech_Services_prototype_14.png';
+import ArtInTechServicesDesktopPrototype from '../../../../public/images/case_studies/Art_in_Tech_Services_Inc/prototypes/Art_in_Tech_Services_prototype_01.png';
 import ArtInTechServicesBackground from '../../../../public/images/case_studies/Art_in_Tech_Services_Inc/background/Art_in_Tech_Services_background.jpg';
 import { useState } from 'react';
 
