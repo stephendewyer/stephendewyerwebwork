@@ -75,7 +75,7 @@ const ArtinTechServices = () => {
                         about the client
                     </h4>
                     <p>
-                        Art in Tech Services Inc is a company that uses advancements in art and digital technology to improve design for businesses and the public.
+                        Art in Tech Services Inc is a company that brings the vision and technical expertise to create groundbreaking digital products.
                     </p>
                     <h4>
                         my role
@@ -105,9 +105,6 @@ const ArtinTechServices = () => {
                         <li>
                             Conducting user research
                         </li>
-                        <li>
-                            Built the web application using Next.js, MongoDB, SendGrid and Stripe
-                        </li>
                     </ul>
                 </Fragment>
         },
@@ -123,16 +120,25 @@ const ArtinTechServices = () => {
                             Figma
                         </li>
                         <li>
-                            Next.js, Node.js, React.js, Video.js
+                            SvelteKit
                         </li>
                         <li>
-                            MongoDB
+                            TypeScript
+                        </li>
+                        <li>
+                            MySQL2
                         </li>
                         <li>
                             Stripe
                         </li>
                         <li>
                             Twilio SendGrid
+                        </li>
+                        <li>
+                            Video.js
+                        </li>
+                        <li>
+                            Auth.js
                         </li>
                         <li>
                             Adobe Creative Cloud
@@ -161,8 +167,8 @@ const ArtinTechServices = () => {
                         empathize
                     </h4>  
                     <p className={styles.panelParagraphs}>
-                        In 2021, I launched Art in Tech Services to optimize human experiences of technology by using art in the design of digital programs.  
-                        Art in Tech Services works with clients to create digital products that optimize human experiences of technology in design.
+                        Art often envisions technological discoveries before they happen.  At the same time, I noticed advancements in digital technology have largely become very alienating and fail to solve major problems facing humanity like climate change and economic inequality. In fact, the uses of digital technology by large corporationns and some governemnts I found exacerbating our problems.  
+                        To solve the issue of very alienating digital technology that worsens the human condition, I launched Art in Tech Services as a way to bring art and technology together to envision digital products that improve the human condition.    
                         <br /><br />
                         As a practical matter, Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
                         The company had no way of processing financial transactions such as invoices via the company web application.  The company needed a web application to streamline collaboration with clients.
@@ -186,7 +192,7 @@ const ArtinTechServices = () => {
                         Goals:
                         <ul>
                             <li>
-                                Redesign the Art in Tech Services website and create a custom web application using modern web development technologies including Next.js, SendGrid, Stripe and MongoDB
+                                Redesign the Art in Tech Services website and create a custom web application using modern web development technologies
                             </li>
                             <li>
                                 Create client collaboration software as part of the redesign that would allow users with accounts to:
