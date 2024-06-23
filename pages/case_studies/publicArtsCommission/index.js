@@ -4,8 +4,6 @@ import Image from 'next/image';
 import { v4 as uuidv4 } from 'uuid';
 import MyLink from '../../../public/util/myLink';
 import styles from './publicArtsCommission.module.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import PublicArtsCommissionSlideCarousel from "../../../components/slide_carousel/PublicArtsCommissionSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";

@@ -4,8 +4,6 @@ import Image from 'next/image';
 import styles from './artInTechServices.module.css';
 import { v4 as uuidv4 } from 'uuid';
 import MyLink from '../../../public/util/myLink';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import ArtinTechServicesSlideCarousel from "../../../components/slide_carousel/ArtinTechServicesSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";

@@ -4,8 +4,6 @@ import Image from 'next/image';
 import { v4 as uuidv4 } from 'uuid';
 import MyLink from '../../../public/util/myLink';
 import styles from './infiniteMile.module.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import InfiniteMileSlideCarousel from "../../../components/slide_carousel/InfiniteMileSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";
