@@ -51,12 +51,8 @@
 
 .slider_case_study {
     position: relative;
-    text-align: center;
-    width: 50%;
-    min-width: 640px;
-    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 50px;
 }
 
 .detail_heading {
@@ -247,12 +243,6 @@
 
     .solution_container {
         padding: 0.5rem 1.25rem 0 1.25rem; 
-    }
-
-    .slider_case_study {
-        position: relative;
-        width: 100%;
-        min-width: 100%;
     }
     
     .detail_heading {

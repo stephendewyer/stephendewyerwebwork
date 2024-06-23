@@ -9,9 +9,6 @@ const SideDrawer = (props) => {
 
     const router = useRouter();
     const pagePath = router.pathname;
-
-    console.log(pagePath)
-
     const blindsHeightRef = useRef(0);
 
     const [blindsHeight, setBlindsHeight] = useState(0);

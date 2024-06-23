@@ -13,7 +13,7 @@ import ArtAtDemonstration from '../../../public/images/case_studies/Public_Arts_
 import EndorsedByPublicArtsCommission from '../../../public/images/case_studies/Public_Arts_Commission/process/endorsement_image.jpg';
 import PublicArtsCommissionLogo from '../../../public/images/case_studies/Public_Arts_Commission/process/public_arts_commission_logo.svg';
 import Tabs from "../../../components/tabs/Tabs";
-import Link from 'next/link';
+import Link from "next/link";
 import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
 import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
 import ButtonExternalLink from '../../../components/buttons/buttonExternalLink/ButtonExternalLink';
@@ -392,6 +392,8 @@ const PublicArtsCommission = () => {
         },
         
     ];
+
+    
 
     return (
         <Fragment>

@@ -52,11 +52,7 @@
 .slider_case_study {
     position: relative;
     text-align: center;
-    width: 50%;
-    min-width: 640px;
-    max-width: 1000px;
     margin: 0 auto;
-    padding-bottom: 50px;
 }
 
 .detail_heading {
@@ -251,8 +247,6 @@
 
     .slider_case_study {
         position: relative;
-        width: 100%;
-        min-width: 100%;
     }
     
     .detail_heading {

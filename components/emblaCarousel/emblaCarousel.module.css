@@ -1,0 +1,172 @@
+
+.carousel_container {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    position: relative;
+    padding: 0 4rem;
+}
+
+.embla {
+    width: 100%;
+    position: relative;
+}
+
+.embla__viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.embla__container {
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    position: relative;
+    width: 100%;
+}
+
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    width: 100%;
+    position: relative;
+}
+
+.arrows {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.arrow_button {
+    width: 2.5rem;
+    padding: 0;
+    background: none;
+    color: #575B46;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.3s linear;
+}
+
+.arrow_button:hover {
+    color: #90947E;
+}
+
+.arrow_button:active {
+    color:#908FB2;
+}
+
+.arrow_button_prev {
+    transform: rotate(180deg);
+
+}
+
+.arrow_button:disabled {
+    color: var(--detail-high-contrast);
+}
+
+.embla__dots_container {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.embla__dots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.embla__dot {
+    -webkit-tap-highlight-color: rgba(49, 49, 49, 0.5);
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.embla__dot:after {
+    box-shadow: inset 0 0 0 0.2rem #575B46;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    content: '';
+    transition: box-shadow 0.3s linear, background-color 0.3s linear;
+}
+
+.embla__dot:hover::after {
+    box-shadow: inset 0 0 0 0.2rem #90947E;
+}
+
+.embla__dot_selected::after {
+    box-shadow: inset 0 0 0 0.2rem #FFBC6C;
+    background-color: #FFBC6C; 
+    transition: box-shadow 0.3s linear, background-color 0.3s linear;
+}
+
+.embla__dot_selected:hover::after {
+    box-shadow: inset 0 0 0 0.2rem #FFBC6C;
+    background-color: #FFBC6C; 
+}
+
+@media screen and (max-width: 1440px) {
+    .carousel_container {
+        padding: 0 3rem;
+    }
+
+    .arrow_button {
+        width: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .carousel_container {
+        padding: 0 2.5rem;
+    }
+
+    .arrow_button {
+        width: 2rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .carousel_container {
+        padding: 0 2rem;
+    }
+
+    .arrow_button {
+        width: 1.75rem;
+    }
+}
