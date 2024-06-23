@@ -46,16 +46,18 @@ const EmblaCarousel = (props) => {
   const [dotsContainerHeight, setDotsContainerHeight] = useState(0);
 
   useEffect(() => {
-        const handleResize = () => {
+    setDotsContainerHeight(dotsContainerRef.current.clientHeight);
+    
+    const handleResize = () => {
             setDotsContainerHeight(dotsContainerRef.current.clientHeight);
-      };
-  
-      window.addEventListener('resize', handleResize);
-  
-      // Remove the event listener when the component unmounts
-      return () => {
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Remove the event listener when the component unmounts
+    return () => {
         window.removeEventListener('resize', handleResize);
-      };
+    };
   }, []);
 
   console.log(dotsContainerHeight)
