@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useEffect, useState } from 'react';
+import React, { useCallback } from 'react';
 import { DotButton, useDotButton } from './emblaCarouselDotButton';
 import {
   PrevButton,
@@ -41,27 +41,6 @@ const EmblaCarousel = (props) => {
     onNextButtonClick
   } = usePrevNextButtons(emblaApi, onNavButtonClick);
 
-  const dotsContainerRef = useRef();
-
-  const [dotsContainerHeight, setDotsContainerHeight] = useState(0);
-
-  useEffect(() => {
-    setDotsContainerHeight(dotsContainerRef.current.clientHeight);
-    
-    const handleResize = () => {
-            setDotsContainerHeight(dotsContainerRef.current.clientHeight);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    // Remove the event listener when the component unmounts
-    return () => {
-        window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  console.log(dotsContainerHeight)
-
   return (
     <section className={styles.carousel_container}>
         <div className={styles.arrows}>
@@ -86,15 +65,9 @@ const EmblaCarousel = (props) => {
                     })}
                 </div>
             </div>
-            <div 
-                className={styles.embla__dots_container} 
-                style={{height: `${dotsContainerHeight}px`}}
-            >
+            <div className={styles.embla__dots_container} >
                 <div className={styles.embla__dots}>
-                    <div 
-                        className={styles.embla__dots_inner} 
-                        ref={dotsContainerRef}
-                    >
+                    <div className={styles.embla__dots_inner} >
                         {scrollSnaps.map((_, index) => (
                             <DotButton
                                 key={index}
