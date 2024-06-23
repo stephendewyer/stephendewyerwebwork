@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useRef } from 'react';
 import { DotButton, useDotButton } from './emblaCarouselDotButton';
 import {
   PrevButton,
@@ -14,17 +14,22 @@ const EmblaCarousel = (props) => {
 
   const { slides, options } = props;
 
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
+  const autoplay = useRef(
+    Autoplay(
+        {stopOnInteraction: false},
+        (emblaRoot) => emblaRoot.parentElement
+    )
+  );
+
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [autoplay.current]);
   
-  const onNavButtonClick = useCallback((emblaApi) => {
+  const onNavButtonClick = useCallback(() => {
 
-    const autoplay = emblaApi?.plugins()?.autoplay;
-
-    if (!autoplay) {
+    if (!autoplay.current) {
         return
     };
 
-    const reset = autoplay.reset;
+    const reset = autoplay.current.reset;
 
     reset();
   }, []);
@@ -73,7 +78,7 @@ const EmblaCarousel = (props) => {
                                 key={index}
                                 onClick={() => onDotButtonClick(index)}
                                 className={classNames(styles.embla__dot, 
-                                    { [styles.embla__dot_selected]: (index === selectedIndex)}
+                                    {[styles.embla__dot_selected]: (index === selectedIndex)}
                                 )}
                             />
                         ))}

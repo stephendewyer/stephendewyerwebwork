@@ -1,6 +1,5 @@
 const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
 
-
 module.exports = (phase) => {
 
   if (phase === PHASE_DEVELOPMENT_SERVER) {
@@ -11,7 +10,8 @@ module.exports = (phase) => {
         defaultLocale: "en-US",
       }
     };
-  }
+  };
+  
   return {
     reactStrictMode: true,
     i18n: {

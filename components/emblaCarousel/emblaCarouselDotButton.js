@@ -1,5 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
-import styles from "./emblaCarousel.module.css";
+import React, { useCallback, useEffect, useState } from 'react';
 
 export const useDotButton = (emblaApi, onButtonClick) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -27,7 +26,7 @@ export const useDotButton = (emblaApi, onButtonClick) => {
 
     onInit(emblaApi);
     onSelect(emblaApi);
-    emblaApi.on('reInit', onInit).on('reInit', onSelect).on('select', onSelect)
+    emblaApi.on('reInit', onInit).on('reInit', onSelect).on('select', onSelect);
   }, [emblaApi, onInit, onSelect]);
 
   return {
