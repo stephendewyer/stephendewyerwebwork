@@ -167,7 +167,7 @@ const ArtinTechServices = () => {
                         empathize
                     </h4>  
                     <p className={styles.panelParagraphs}>
-                        Art often envisions technological discoveries before they happen.  At the same time, I noticed advancements in digital technology have largely become very alienating and fail to solve major problems facing humanity like climate change and economic inequality. In fact, the uses of digital technology by large corporationns and some governemnts I found exacerbating our problems.  
+                        Art often envisions technological discoveries before they happen.  At the same time, I noticed advancements in digital technology have largely become very alienating and fail to solve major problems facing humanity like climate change and economic inequality. In fact, some uses of digital technology exacerbated the issues.
                         To solve the issue of very alienating digital technology that worsens the human condition, I launched Art in Tech Services as a way to bring art and technology together to envision digital products that improve the human condition.    
                         <br /><br />
                         As a practical matter, Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
