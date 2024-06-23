@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useRef, useEffect, useState } from 'react';
 import { DotButton, useDotButton } from './emblaCarouselDotButton';
 import {
   PrevButton,
@@ -16,7 +16,6 @@ const EmblaCarousel = (props) => {
 
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
   
-
   const onNavButtonClick = useCallback((emblaApi) => {
 
     const autoplay = emblaApi?.plugins()?.autoplay;
@@ -26,7 +25,7 @@ const EmblaCarousel = (props) => {
     };
 
     const reset = autoplay.reset;
-    
+
     reset();
   }, []);
 
@@ -41,6 +40,25 @@ const EmblaCarousel = (props) => {
     onPrevButtonClick,
     onNextButtonClick
   } = usePrevNextButtons(emblaApi, onNavButtonClick);
+
+  const dotsContainerRef = useRef();
+
+  const [dotsContainerHeight, setDotsContainerHeight] = useState(0);
+
+  useEffect(() => {
+        const handleResize = () => {
+            setDotsContainerHeight(dotsContainerRef.current.clientHeight);
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      // Remove the event listener when the component unmounts
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+  }, []);
+
+  console.log(dotsContainerHeight)
 
   return (
     <section className={styles.carousel_container}>
@@ -66,17 +84,25 @@ const EmblaCarousel = (props) => {
                     })}
                 </div>
             </div>
-            <div className={styles.embla__dots_container}>
+            <div 
+                className={styles.embla__dots_container} 
+                style={{height: `${dotsContainerHeight}px`}}
+            >
                 <div className={styles.embla__dots}>
-                    {scrollSnaps.map((_, index) => (
-                        <DotButton
-                            key={index}
-                            onClick={() => onDotButtonClick(index)}
-                            className={classNames(styles.embla__dot, 
-                                { [styles.embla__dot_selected]: (index === selectedIndex)}
-                            )}
-                        />
-                    ))}
+                    <div 
+                        className={styles.embla__dots_inner} 
+                        ref={dotsContainerRef}
+                    >
+                        {scrollSnaps.map((_, index) => (
+                            <DotButton
+                                key={index}
+                                onClick={() => onDotButtonClick(index)}
+                                className={classNames(styles.embla__dot, 
+                                    { [styles.embla__dot_selected]: (index === selectedIndex)}
+                                )}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

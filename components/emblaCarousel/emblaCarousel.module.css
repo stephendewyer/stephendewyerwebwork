@@ -83,10 +83,15 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 1rem 0;
+    margin: 1rem 0;
 }
 
 .embla__dots {
+    position: relative;
+}
+
+.embla__dots_inner {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -130,13 +135,13 @@
 }
 
 .embla__dot_selected::after {
-    box-shadow: inset 0 0 0 0.2rem #FFBC6C;
+    box-shadow: inset 0 0 0 0.2rem #575B46;
     background-color: #FFBC6C; 
     transition: box-shadow 0.3s linear, background-color 0.3s linear;
 }
 
 .embla__dot_selected:hover::after {
-    box-shadow: inset 0 0 0 0.2rem #FFBC6C;
+    box-shadow: inset 0 0 0 0.2rem #575B46;
     background-color: #FFBC6C; 
 }
 
@@ -161,12 +166,42 @@
 }
 
 @media screen and (max-width: 720px) {
-
     .carousel_container {
-        padding: 0 2rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .embla {
+        margin: 0;
+    }
+
+    .embla__slide {
+        width: 100%;
+    }
+
+    .arrows {
+        position: relative;
+        width: 100%;
+        padding: 1rem;
     }
 
     .arrow_button {
         width: 1.75rem;
+    }
+
+    .embla__dots {
+        position: absolute;
+        /* bottom: 0.5rem; */
+        margin: 0 4rem 0 4rem;
+        left: 0;
+        right: 0;
+    }
+
+    .embla__dots_inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
