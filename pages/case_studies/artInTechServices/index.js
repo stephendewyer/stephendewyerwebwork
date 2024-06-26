@@ -408,7 +408,7 @@ const ArtinTechServices = () => {
                         modern web programs
                     </h4>
                     <p>
-                        The Art in Tech Services web programs mostly use Next.js to create a modern web experience that is fast, responsive, accessible and dynamic.
+                        The Art in Tech Services web programs mostly use SvelteKit to create a modern web experience that is fast, responsive, accessible and dynamic.
                     </p>
                 </Fragment>
         },

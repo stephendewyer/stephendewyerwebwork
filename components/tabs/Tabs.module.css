@@ -13,22 +13,29 @@
    cursor: pointer;
 }
 
-.tabs > dt {
+.tab {
+    position: relative;
     padding: 10px 20px;
     margin: 0 5px;
-    
+    transition: top 0.2s linear;
 }
 
 .current {
     background: #FFE9C0;
-    color: #514C64;
     border: 2px solid #514C64;
     border-bottom: 0;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    position: relative;
     top: 2px;
+}
+
+.tab > a {
+    transition: color 0.2s linear, font-weight 0.2s linear;
+}
+
+.current > a {
     font-weight: bold;
+    color: #514C64;
 }
 
 .panelItemContainer {
@@ -79,7 +86,7 @@
        justify-content: center;
     }
 
-    .tabs > dt {
+    .tab {
         padding: 6px 12px;
         margin: 0 4px;
     }
@@ -89,7 +96,6 @@
         border-bottom: 0;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
-        position: relative;
         top: 2px;
     }
 

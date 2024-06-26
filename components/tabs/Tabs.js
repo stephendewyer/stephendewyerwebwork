@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useLayoutEffect } from 'react';
 import styles from './Tabs.module.css';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
+import classNames from 'classnames';
 
 const Tabs = ({ tabPanels }) => {
 
@@ -16,7 +17,7 @@ const Tabs = ({ tabPanels }) => {
 
         setActiveTab(newActiveTab);
 
-    }
+    };
 
     // load different height states in a variable and set the default height state to "0px"
 
@@ -38,7 +39,7 @@ const Tabs = ({ tabPanels }) => {
 
             setHeight(panelItemContentContainer.current.scrollHeight);
 
-        }
+        };
 
     }, [activeTab]);
 
@@ -54,7 +55,7 @@ const Tabs = ({ tabPanels }) => {
 
             setNode(node);
 
-        }
+        };
 
     }, []);
 
@@ -68,7 +69,7 @@ const Tabs = ({ tabPanels }) => {
 
                 setHeight(node.getBoundingClientRect().height);
 
-            }
+            };
             
             window.addEventListener("resize", measure );
 
@@ -78,11 +79,9 @@ const Tabs = ({ tabPanels }) => {
 
             };
 
-       }
+       };
 
     }, [node]);
-
-    // console.log('height: ', height)
     
     return (
         
@@ -97,7 +96,8 @@ const Tabs = ({ tabPanels }) => {
                     const id = tab.id;
                     return (
                         <dt 
-                            className={label == activeTab ? styles.current : "" } 
+                            className={classNames(styles.tab, 
+                                {[styles.current]: label == activeTab})}
                             key={id}
                             onClick={(e) => handleClick(e, label)}
                             id={`tabpanel_header_${index}`}
