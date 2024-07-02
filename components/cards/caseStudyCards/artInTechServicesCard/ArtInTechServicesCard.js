@@ -98,7 +98,7 @@ const ArtInTechServicesCard = () => {
                     buttonIsActive={buttonActive}
                     aria-label="link to view"
                   >
-                      view
+                      view case study
                   </ButtonAction>
               </div>
             </MyLink>
