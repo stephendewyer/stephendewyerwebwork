@@ -52,12 +52,6 @@ const SideDrawer = (props) => {
             className={(props.show) ? styles.side_drawer_open : styles.side_drawer} 
             aria-hidden={(props.show)? "true" : "false"}
         >
-            <div className={styles.drawer_toggle_button_container}>
-                <DrawerToggleButton 
-                    sideDrawerOpen={props.show} 
-                    click={props.click}
-                /> 
-            </div>
            <ul className={styles.blinds}>
                 <BlindsTop />
                 <div className={styles.blinds_middle}>
@@ -75,8 +69,8 @@ const SideDrawer = (props) => {
                                         style={{height: `${blindsHeight}px`}}
                                     >
                                         <div className={styles.blindsTabBackground} ref={blindsHeightRef}>
-                                            <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#646C85" : ""}}/>
-                                            <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#646C85" : ""}}/>
+                                            <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#73856A" : ""}}/>
+                                            <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#73856A" : ""}}/>
                                         </div>
                                         <div className={styles.tabName}>
                                             {tab.name}
@@ -89,6 +83,12 @@ const SideDrawer = (props) => {
                 </div>
                 <BlindsBottom />
            </ul>
+           <div className={styles.drawer_toggle_button_container}>
+                <DrawerToggleButton 
+                    sideDrawerOpen={props.show} 
+                    click={props.click}
+                /> 
+            </div>
         </nav> 
     );
 };

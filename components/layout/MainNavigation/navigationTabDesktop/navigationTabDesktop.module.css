@@ -3,6 +3,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    color: #575E53;
 }
 
 .blinds {
@@ -24,17 +25,17 @@
 }
 
 .blinds_index_container:hover > .blinds {
-    color: #6F7185;
+    color: #8A977F;
 }
 
 .blinds_index_container:hover > .blinds > .blinds_middle > .blind {
-    background-color: #6F7185;
+    background-color: #8A977F;
 }
 
 .blind {
     height: 1rem;
     width: 100%;
-    background-color: #514C64;
+    background-color: #575E53;
     position: relative;
     transition: background-color 0.2s linear;
 }

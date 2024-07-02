@@ -65,12 +65,12 @@ const BlindsIndex = (props) => {
                 <div 
                     className={styles.blinds} 
                     ref={blindsHeightRef} 
-                    style={{color: pageIsActive ? "#646C85" : "" }}
+                    style={{color: pageIsActive ? "#73856A" : "" }}
                 >
                     <BlindsTop />
                     <div className={styles.blinds_middle}>
-                        <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#646C85" : "" }} />
-                        <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#646C85" : "" }} />
+                        <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#73856A" : "" }} />
+                        <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#73856A" : "" }} />
                     </div>
                     <BlindsBottom />
                 </div>

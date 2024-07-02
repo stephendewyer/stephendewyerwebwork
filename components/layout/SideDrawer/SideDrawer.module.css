@@ -26,18 +26,21 @@
 .drawer_toggle_button_container {
     width: 100%;
     position: relative;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem 1rem 2rem;
 }
 
 .blinds {
-    position: relative;
+    margin: 0;
+    position: absolute;
     list-style: none;
-    width: 75%;
-    padding: 0;
+    left: 0;
+    right: 0;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.125rem;
+    color: #575E53;
 }
 
 .blinds_middle {
@@ -68,12 +71,12 @@
 }
 
 .tab:hover > .blindsTabBackground > .blind {
-    background-color: #6F7185;
+    background-color: #8A977F;
 }
 
 .tabName {
     color: #FFE9C0;
-    font-size: 1.2rem;
+    font-size: 2rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -82,9 +85,9 @@
 }
 
 .blind {
-    height: 1rem;
+    height: 2rem;
     width: 100%;
-    background-color: #514C64;
+    background-color: #575E53;
     position: relative;
     transition: background-color 0.2s linear;
 }

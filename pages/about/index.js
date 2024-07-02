@@ -242,12 +242,21 @@ const AboutPage = () => {
 
     const profileImage = useRef();
 
+    
+
     useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-        const entry = entries[0];
-        setProfileImageDidStart(entry.isIntersecting)
-        })
-        observer.observe(profileImage.current)
+        const options = {
+            triggerOnce: true
+        };
+        const profilePhotoHandler = (entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                setProfileImageDidStart(true);
+            };   
+        };
+        const observer = new IntersectionObserver(profilePhotoHandler, options);
+        observer.observe(profileImage.current);
+            
     }, []);
 
     return (
