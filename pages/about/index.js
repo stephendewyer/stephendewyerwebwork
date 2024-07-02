@@ -264,7 +264,7 @@ const AboutPage = () => {
                         src={AboutBanner} 
                         priority 
                         objectFit="cover"
-                        objectPosition={top}
+
                         layout="fill"
                         alt="stephen dewyer and Erin Maye Quade and rally in Northfield, Minnesota in front of public fountain"
                     />
