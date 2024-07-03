@@ -11,8 +11,6 @@ import ClientReviewsSlideCarousel from "../components/slide_carousel/ClientRevie
 
 const IndexPage = () => {
 
-  console.log("test");
-
   return (
     <Fragment>
       <Head>
