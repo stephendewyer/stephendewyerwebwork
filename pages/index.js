@@ -50,7 +50,7 @@ const IndexPage = () => {
         </h2>
         <div className={styles.aboutSection}>
           <p className={styles.myStory}>
-          I began my career in art and moved into software development.  With over a decade of experience using advancements in digital technology, art and design in my work, I&apos;ve worked with a variety of for-profit and non-profit organizations.
+          I began my career in art and moved into software development.  My background in art makes me great at finding creative solutions that improve human experiences of technology.  With over a decade of experience using advancements in digital technology, art and design in my work, I&apos;ve worked with a variety of for-profit and non-profit organizations.
           </p>
           <div className={styles.learnAboutMeButton}>
             <MyLink href="/about" passHref={true}>
