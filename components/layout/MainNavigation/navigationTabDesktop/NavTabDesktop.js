@@ -69,12 +69,12 @@ const NavTabDesktop = (props) => {
                     <div 
                         className={styles.blinds} 
                         ref={blindsHeightRef} 
-                        style={{color: pageIsActive ? "#73856A" : "" }}
+                        style={{color: pageIsActive ? "#4F534D" : "" }}
                     >
                         <BlindsTop />
                         <div className={styles.blinds_middle}>
-                            <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#73856A" : "" }} />
-                            <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#73856A" : "" }} />
+                            <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#4F534D" : "" }} />
+                            <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#4F534D" : "" }} />
                         </div>
                         <BlindsBottom />
                     </div>

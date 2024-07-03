@@ -69,8 +69,8 @@ const SideDrawer = (props) => {
                                         style={{height: `${blindsHeight}px`}}
                                     >
                                         <div className={styles.blindsTabBackground} ref={blindsHeightRef}>
-                                            <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#73856A" : ""}}/>
-                                            <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#73856A" : ""}}/>
+                                            <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#4F534D" : ""}}/>
+                                            <div className={styles.blind} style={{backgroundColor: (pagePath === tab.pathname) ? "#4F534D" : ""}}/>
                                         </div>
                                         <div className={styles.tabName}>
                                             {tab.name}
