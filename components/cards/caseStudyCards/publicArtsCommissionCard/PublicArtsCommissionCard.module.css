@@ -1,6 +1,6 @@
 .case_study {
     position: relative;
-    height: 30rem;
+    height: 40rem;
     display: flex;
     flex-direction: row;
 }
@@ -64,6 +64,8 @@
     background-color: rgba(255, 233, 192, 0.75);
     padding: 1rem;
     gap: 0.5rem;
+    width: 100%;
+    max-width: 40rem;
 }
 
 .video {
@@ -107,6 +109,10 @@
 
 .view_button {
     width: auto;
+}
+
+.case_study {
+    height: 35rem;
 }
 
 @media screen and (max-width: 1440px){
