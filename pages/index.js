@@ -26,6 +26,7 @@ const IndexPage = () => {
               muted 
               loop 
               className={styles.intro_video}
+              poster="/videos/imagine_echo/imagine_echo_still_02.jpg"
             >         
               <source src="/videos/imagine_echo/imagine_echo.mp4" type="video/mp4"/>
               Your browser does not support the video tag.       
