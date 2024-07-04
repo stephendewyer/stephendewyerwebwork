@@ -306,23 +306,20 @@ const AboutPage = () => {
                                 </div>                    
                             </div>
                             <p className={classes.myStoryParagraphs}>
-                                I first entered the fields of UX design and software development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called Infinite Mile.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
+                                I first entered the fields of UX design and software development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called Infinite Mile.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about art and cultures in the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
                                 <br /><br />
-                                In 2017, I created the website for Public Arts Commission, a non-profit organization that is dedicated to expanding the political imaginary for a more egalitarian society by supporting democratic movements for greater public art.  
-                                The website features a searchable database of all campaigns, ballot initiatives, legislation and constitutional amendments endorsed by Public Arts Commission.  
+                                In 2017, I created the website for Public Arts Commission, a non-profit organization that is dedicated to expanding the political imaginary for a fairer, more just economy and a more egalitarian society by supporting democratic movements for greater public art.  
+                                The website features a searchable database of all candidates, referendums, legislation, constitutional amendments and actions endorsed by Public Arts Commission.  
                                 Campaigns can apply for endorsement via the Public Arts Commission website.
-                                A redesign of the Public Arts Commission is currently underway that will expand capabilities for the organization.
                                 <br /><br />
                                 Currently, I am Founding Director, Full-stack Web Developer and UX Designer at <Link href="https://artintechservices.com" passHref={true} aria-label="link to Art in Tech Services Inc. website"><a target="_blank" rel="noopener noreferrer">Art in Tech Services Inc.</a></Link>, a C corporation that uses advancements in art and digital technology to improve design for the public and businesses.  
                                 At Art in Tech Services Inc., I help clients plan and achieve their digital product goals.  
-                                Art in Tech Services Inc. launched in 2021.
+                                Art in Tech Services Inc. launched in 2021.  A voter portal that I am currently developing will allow voters to network and organize using the website.
                                 <br /><br />
-                                After seeing the creativity involved in producing great web programs that help empower communities, I decided to further develop my skills in UX design and full-stack web development.  
-                                I learned modern web development techniques and advanced UX design skills.  
-                                I learned that I can apply my experience as an artist and organizer to create web programs that help empower communities and provide value for organizations.  
+                                After diving deep into software development, I found that art was actually often a precursor to technological discoveries.  For instance, Terravision, the 3D mapping software and inspiration for Google Earth, was created in 1993 as an art project by a German company called ART+COM.  I decided to further develop my skills in UX design and software development.  
                                 <br /><br />
-                                Today, I am more committed than ever to helping solve problems for people as a UX designer and software developer.  
-                                My experience has taught me valuable skills in working with multiple stakeholders and as a part of teams.  Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers markets and meeting people.
+                                Today, I am more committed than ever to finding creative solutions to challenging problems as a UX designer and software developer.  
+                                Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers markets and meeting people.
                             </p>
                         </div>
                     </div>
