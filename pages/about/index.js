@@ -14,7 +14,7 @@ import FullStackWebDevelopment from '../../public/images/icons/full-stack_web_de
 import Art from '../../public/images/icons/art.svg';
 import Leadership from '../../public/images/icons/leadership.svg';
 import ArtificialIntelligence from '../../public/images/icons/artificial_intelligence.png';
-import AboutBanner from '../../public/images/about/stephen_dewyer_Art_and_Race_Conference.jpg';
+import AboutBanner from '../../public/images/about/rally_13_August_2018_stephen_dewyer_and_Erin_Maye_Quade.jpg';
 
 const AboutPage = () => {
 
@@ -273,7 +273,7 @@ const AboutPage = () => {
                         src={AboutBanner} 
                         priority 
                         objectFit="cover"
-
+                        objectPosition="top"
                         layout="fill"
                         alt="stephen dewyer and Erin Maye Quade and rally in Northfield, Minnesota in front of public fountain"
                     />
