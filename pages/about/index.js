@@ -27,16 +27,16 @@ const AboutPage = () => {
             responsibilities: 
                 <ul>
                     <li>
-                        Developed a client portal as a part of organization’s website to help streamline client collaboration
+                        Designed, developed and deployed the company’s website
                     </li>
                     <li>
-                        Record of 100% client satisfaction rate by effectively communicating throughout a client’s project and meeting or exceeding project goals
+                        Streamlined client collaboration by producing a client collaboration portal via the company’s website
                     </li>
                     <li>
-                        Created groundbreaking digital products that improve human experiences of technology by combining advancements in technology and art
+                        Met or exceeded client goals, achieving a 100% client satisfaction rate
                     </li>
                     <li>
-                        Successfully led the organization to achieve mission by investing in in-house training in advanced technologies
+                        Directs the company to provide digital services that empower businesses and communities
                     </li>
                 </ul>
         },
@@ -48,7 +48,7 @@ const AboutPage = () => {
             responsibilities:
                 <ul>
                     <li>
-                        Developed key software programs to streamline operations that included a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
+                    Designed, developed and deployed software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
                     </li>
                     <li>
                         Developing a voter networking and organizing portal 
