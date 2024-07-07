@@ -310,11 +310,11 @@ const AboutPage = () => {
                                 <br /><br />
                                 In 2017, I created the website for Public Arts Commission, a non-profit organization that is dedicated to expanding the political imaginary for a fairer, more just economy and a more egalitarian society by supporting democratic movements for greater public art.  
                                 The website features a searchable database of all candidates, referendums, legislation, constitutional amendments and actions endorsed by Public Arts Commission.  
-                                Campaigns can apply for endorsement via the Public Arts Commission website.
+                                Campaigns can apply for endorsement via the Public Arts Commission website.  A voter portal that I am currently developing will allow voters to network and organize using the website.
                                 <br /><br />
                                 Currently, I am Founding Director, Full-stack Web Developer and UX Designer at <Link href="https://artintechservices.com" passHref={true} aria-label="link to Art in Tech Services Inc. website"><a target="_blank" rel="noopener noreferrer">Art in Tech Services Inc.</a></Link>, a C corporation that uses advancements in art and digital technology to improve design for the public and businesses.  
                                 At Art in Tech Services Inc., I help clients plan and achieve their digital product goals.  
-                                Art in Tech Services Inc. launched in 2021.  A voter portal that I am currently developing will allow voters to network and organize using the website.
+                                Art in Tech Services Inc. launched in 2021.  
                                 <br /><br />
                                 After diving deep into software development, I found that art was actually often a precursor to technological discoveries.  For instance, Terravision, the 3D mapping software and inspiration for Google Earth, was created in 1993 as an art project by a German company called ART+COM.  I decided to further develop my skills in UX design and software development.  
                                 <br /><br />
