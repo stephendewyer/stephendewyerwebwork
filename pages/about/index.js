@@ -319,7 +319,7 @@ const AboutPage = () => {
                                 After diving deep into software development, I found that art was actually often a precursor to technological discoveries.  For instance, Terravision, the 3D mapping software and inspiration for Google Earth, was created in 1993 as an art project by a German company called ART+COM.  I decided to further develop my skills in UX design and software development.  
                                 <br /><br />
                                 Today, I am more committed than ever to finding creative solutions to challenging problems as a UX designer and software developer.  
-                                Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers markets and meeting people.
+                                Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
                             </p>
                         </div>
                     </div>
