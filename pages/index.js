@@ -8,8 +8,38 @@ import ArtInTechServicesCard from '../components/cards/caseStudyCards/artInTechS
 import JoyfoodlyCard from '../components/cards/caseStudyCards/joyfoodlyCard/JoyfoodlyCard';
 import InfiniteMileCard from '../components/cards/caseStudyCards/infiniteMileCard/InfiniteMileCard';
 import ClientReviewsSlideCarousel from "../components/slide_carousel/ClientReviewsSlideCarousel";
+import VideoJS from '../components/videoPlayer/VideoPlayer';
 
 const IndexPage = () => {
+
+  const playerRef = React.useRef(null);
+
+  const videoJsOptions = {
+    poster: "/videos/imagine_echo/imagine_echo_still_02.jpg",
+    autoplay: true,
+    muted: true,
+    controls: true,
+    loop: true,
+    responsive: true,
+    fluid: true,
+    sources: [{
+      src: '/videos/imagine_echo/imagine_echo.mp4',
+      type: 'video/mp4'
+    }]
+  };
+
+  const handlePlayerReady = (player) => {
+    playerRef.current = player;
+
+    // You can handle player events here, for example:
+    player.on('waiting', () => {
+      videojs.log('player is waiting');
+    });
+
+    player.on('dispose', () => {
+      videojs.log('player will dispose');
+    });
+  };
 
   return (
     <Fragment>
@@ -20,17 +50,8 @@ const IndexPage = () => {
         <meta property="og:url" content="https://stephendewyerwebwork.vercel.app" />
       </Head>
       <div className={styles.container}>
-        <div className={styles.intro_video_container}>
-          <video 
-              autoPlay 
-              muted 
-              loop 
-              className={styles.intro_video}
-              poster="/videos/imagine_echo/imagine_echo_still_02.jpg"
-            >         
-              <source src="/videos/imagine_echo/imagine_echo.mp4" type="video/mp4"/>
-              Your browser does not support the video tag.       
-            </video>
+        <div className={styles.intro_video}>
+          <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
         </div>
           <div className={styles.intro_paragraph}>
             <p className={styles.paragraph}>
