@@ -7,7 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     font-family: "CenturyGothic";
     will-change: margin-right;
     transition: margin-right 0.33s ease-out, color 0.33s ease-out;
@@ -28,6 +28,9 @@
     width: 25px;
     will-change: margin-left;
     transition: margin-left 0.33s ease-out, color 0.33s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media all and (max-width: 750px) {

@@ -1,46 +1,30 @@
-.blinds_index_container {
+.index_tab_container {
     position: relative;
     list-style: none;
     padding: 0;
     margin: 0;
-    color: #575E53;
-}
-
-.blinds {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.125rem;
-    transition: color 0.2s linear;
-}
-
-.blinds_middle {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.125rem;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.blinds_index_container:hover > .blinds {
-    color: #8A977F;
-}
-
-.blinds_index_container:hover > .blinds > .blinds_middle > .blind {
-    background-color: #8A977F;
-}
-
-.blind {
-    height: 1rem;
-    width: 100%;
     background-color: #575E53;
-    position: relative;
     transition: background-color 0.2s linear;
 }
 
-.logo {
+.index_tab_container:hover {
+    background-color: #8A977F;
+}
+
+.index_tab_container > li[aria-current='page']::before {
+    --size: 6px;
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: var(--size) solid transparent;
+    border-top: 6px solid #FFE9C0;
+    overflow: visible;
+}
+
+.index_tab {
     position: relative;
     height: 100%;
     width: 100%;
@@ -49,26 +33,25 @@
     justify-content: center;
     align-items: center;
     color: #FFE9C0;
-    font-size: 1.25rem;
-    padding: 0 1rem;
-    transition: opacity 0.3s linear;
-    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: left;
 }
 
 @media screen and (max-width: 1440px) {
-    .logo {
-        font-size: 1.2rem;
+    .index_tab {
+        font-size: 1.4rem;
     }
 }
 
 @media screen and (max-width: 1080px) {
-    .logo {
-        font-size: 1rem;
+    .index_tab {
+        font-size: 1.35rem;
     }
 }
 
 @media screen and (max-width: 720px) {
-    .logo {
-        font-size: 1rem;
+    .index_tab {
+        font-size: 1.3rem;
     }
 }

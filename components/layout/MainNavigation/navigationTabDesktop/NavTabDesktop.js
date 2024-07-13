@@ -1,7 +1,12 @@
-import { useRef, useEffect, useState, useLayoutEffect } from "react";
+import { Fragment, useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import MyLink from "../../../../public/util/myLink";
 import styles from "./navigationTabDesktop.module.css";
+import PublicArtsCommissionThumbnail from "../../../../public/images/thumbnails/public_arts_commission_website_desktop_01.jpg";
+import ArtInTechServicesThumbnail from "../../../../public/images/thumbnails/Art_in_Tech_Services_website_screenshot.jpg";
+import JoyfoodlyThumbnail from "../../../../public/images/thumbnails/Joyfoodly_desktop.jpg";
+import InfiniteMileThumbnail from "../../../../public/images/thumbnails/Infinite_Mile_Screengrab.jpg";
+import Image from 'next/image';
 
 const NavTabDesktop = (props) => {
 
@@ -9,80 +14,132 @@ const NavTabDesktop = (props) => {
     const pagePath = router.pathname;
     const pageIsActive = pagePath === props.navItem.pathname;
 
-    const blindsHeightRef = useRef(0);
-
-    const [blindsHeight, setBlindsHeight] = useState(0);
-
-    useEffect(() => {
-        if (blindsHeightRef.current !== null) {
-            setBlindsHeight(blindsHeightRef.current.clientHeight);
-        };
-        
-    }, [blindsHeight]);
-
-    useLayoutEffect(() => {
-        const measure = () => {
-            setBlindsHeight(blindsHeightRef.current.clientHeight);
-        };
-        window.addEventListener("resize", measure );
-        return () => {
-            window.removeEventListener("resize", measure );
-        };
-    }, []);
-
-    const BlindsTop = () => {
+    const Arrow = () => {
         return (
-            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1078.65 110" fill="currentColor">
-                <path  d="m1078.63,73.87c-.97-23.08.54-46.21-1.51-69.29-.24-2.73-.9-4-2.06-4.58H3C.72,1-.16,3.12.03,6.53c.49,8.66.73,17.3.4,26.01-.32,8.23,1.53,16.55,1.26,24.78-.6,17.61,1.56,35.07,1.97,52.62v.06h1007.07c36.82-.19,58.95-.3,60.5-.32,2.2-.03,5.66.72,4.9-3.06-2.25-11.2,2.96-21.72,2.5-32.75Z"/>
-            </svg>
+          <svg 
+            id="Layer_1" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 500 500"
+            fill="currentColor"
+          >
+            <polygon points="250 250 0 0 250 0 500 250 250 500 0 500 250 250"/>
+          </svg>
         );
     };
 
-    const BlindsBottom = () => {
-        return (
-            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1051.81 76.68" fill="currentColor">
-                <path  d="m1051.16,51.72c-2.79-15.23-6.36-30.31-9.24-45.54-.88-4.72-3.04-6.27-7.6-6.18C1024.62.2,41.88.8,11.07,1c-4.36.03-6.1,1.96-6.26,5.81-.89,21.07-7.55,41.71-3.53,63.29.59,3.14,1.19,5.24,2.31,6.58h1046.46c1.14-8.3,2.64-16.65,1.11-24.96Z"/>
-            </svg>
-        );
+    let caseStudiesData = [];
+
+    if (props.navItem.name === "case studies") {
+        props.navItem.sub_navigation.forEach((subNavItem, index) => {
+            if (subNavItem.name === "Public Arts Commission") {
+                caseStudiesData = [...caseStudiesData, {...subNavItem, thumbnailImage: <Image src={PublicArtsCommissionThumbnail} alt={`thumbnail ${subNavItem.name}`} layout="responsive"/>}];
+            } else if (subNavItem.name === "Art in Tech Services") {
+                caseStudiesData = [...caseStudiesData, {...subNavItem, thumbnailImage: <Image src={ArtInTechServicesThumbnail} alt={`thumbnail ${subNavItem.name}`} layout="responsive"/>}];
+            } else if (subNavItem.name === "Joyfoodly") {
+                caseStudiesData = [...caseStudiesData, {...subNavItem, thumbnailImage: <Image src={JoyfoodlyThumbnail} alt={`thumbnail ${subNavItem.name}`} layout="responsive"/>}];
+            } else if (subNavItem.name === "Infinite Mile") {
+                caseStudiesData = [...caseStudiesData, {...subNavItem, thumbnailImage: <Image src={InfiniteMileThumbnail} alt={`thumbnail ${subNavItem.name}`} layout="responsive"/>}];
+            };
+        });
     };
 
-    const [showLogo, setShowLogo] = useState(false);
+    const [panelHovered, setPanelHovered] = useState(false);
+    const [tabHovered, setTabHovered] = useState(false);
+
+    // set the panel height state to 0
+
+    const [height, setHeight] = useState("0px");
+
+    const content = useRef(null);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowLogo(true);
-        }, 600);
-        return () => clearTimeout(timer);
-    }, []);
+        if (content.current) {
+            setHeight(content.current.scrollHeight);
+        };
+    }, [tabHovered]);
 
     if (props.navItem.name !== "stephen garrett dewyer") {
         return (
-            <MyLink 
-                href={props.navItem.pathname} 
-                passHref 
-                aria-label={`link to ${props.navItem.name} page`}
-            >
-                <ul 
-                    className={styles.blinds_index_container} 
-                    style={{height: `${blindsHeight}px`}}
-                >
-                    <div 
-                        className={styles.blinds} 
-                        ref={blindsHeightRef} 
-                        style={{color: pageIsActive ? "#4F534D" : "" }}
+            <Fragment>
+                {(props.navItem.sub_navigation === null) ?
+                    <MyLink 
+                        href={props.navItem.pathname} 
+                        passHref 
+                        aria-label={`link to ${props.navItem.name} page`}
                     >
-                        <BlindsTop />
-                        <div className={styles.blinds_middle}>
-                            <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#4F534D" : "" }} />
-                            <div className={styles.blind} style={{backgroundColor: pageIsActive ? "#4F534D" : "" }} />
+                        <ul className={styles.tab_container} >
+                            <li 
+                                className={styles.tab}
+                                aria-current={ pageIsActive ? "page" : undefined }
+                            >
+                                {props.navItem.name}
+                            </li>
+                        </ul> 
+                    </MyLink>
+                : props.navItem.sub_navigation.length > 0 &&
+                    <ul className={styles.tab_panel_container} >
+                        <MyLink 
+                            href={props.navItem.pathname} 
+                            passHref 
+                            aria-label={`link to ${props.navItem.name} page`}
+                        >
+                            <div className={styles.tab_container}>
+                                <li 
+                                    className={styles.tab}
+                                    aria-current={ (pageIsActive || pagePath.includes("/case_studies")) ? "page" : undefined }
+                                    style={{backgroundColor: panelHovered && "#8A977F"}}
+                                    onMouseEnter={(() => setTabHovered(true))}
+                                    onMouseOver={(() => setTabHovered(true))}
+                                    onMouseLeave={(() => setTabHovered(false))}
+                                    onMouseOut={(() => setTabHovered(false))}
+                                    onClick={() => setTabHovered(!panelHovered)}
+                                    onKeyUp={() => setTabHovered(!panelHovered)}
+                                >
+                                    {props.navItem.name}
+                                    <div className={(tabHovered || panelHovered) ? styles.arrow_active : styles.arrow}>
+                                        <Arrow/>
+                                    </div>
+                                </li>
+                            </div>
+                        </MyLink>
+                        <div className={styles.panel_container} >
+                            <div 
+                                className={styles.panel}
+                                ref={content}
+                                style={(tabHovered || panelHovered) ? { height: `${height}px` } : { height: '0px' }}
+                                onMouseEnter={(() => setPanelHovered(true))}
+                                onMouseOver={(() => setPanelHovered(true))}
+                                onMouseLeave={(() => setPanelHovered(false))}
+                                onMouseOut={(() => setPanelHovered(false))} 
+                            >
+                                {caseStudiesData.map((subNavItem, index) => {
+                                    return (
+                                        <MyLink 
+                                            href={subNavItem.pathname} 
+                                            passHref 
+                                            aria-label={`link to ${subNavItem.name} page`}
+                                            key={index} 
+                                        >
+                                            <li 
+                                                
+                                                className={styles.subnav_tab}
+                                                style={ (tabHovered || panelHovered) ? {opacity: "100%"} : {opacity: "0%"}}
+                                            >
+                                                <div className={styles.subnav_text} style={(pagePath === subNavItem.pathname) ? {textDecoration: "underline"}: {textDecoration: ""}}>
+                                                    {subNavItem.name}
+                                                </div>
+                                                <div className={styles.subnav_image}>
+                                                    {subNavItem.thumbnailImage}
+                                                </div>
+                                            </li>
+                                        </MyLink>
+                                    )})    
+                                }
+                            </div>
                         </div>
-                        <BlindsBottom />
-                    </div>
-                    <li className={styles.name} style={{opacity: showLogo ? "100%" : "0%"}}>
-                        {props.navItem.name}
-                    </li>
-                </ul> 
-            </MyLink>
+                    </ul> 
+                }
+            </Fragment>
         );
     };
 }
