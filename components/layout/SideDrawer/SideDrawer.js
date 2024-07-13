@@ -72,27 +72,46 @@ const SideDrawer = (props) => {
                                     <li
                                         className={styles.tab}
                                     >
-                                    <MyLink
-                                        href={tab.pathname}
-                                        className={styles.tab_container}
-                                        onClick={props.click}
-                                    >
-                                        <div 
-                                            className={styles.tabName}>
-                                            {tab.name}
-                                        </div>
-                                    </MyLink>
-                                            
-                                            <div className={panelOpen ? styles.arrow_active : styles.arrow}>
-                                                <Arrow />
+                                        <MyLink
+                                            href={tab.pathname}
+                                            className={styles.tab_container}
+                                            onClick={props.click}
+                                        >
+                                            <div 
+                                                className={styles.tabName}>
+                                                {tab.name}
                                             </div>
-                                        </li> 
-                                    <MyLink
-                                        href={tab.pathname}
-                                        onClick={props.click}
+                                        </MyLink>
+                                        <div 
+                                            className={panelOpen ? styles.arrow_active : styles.arrow}
+                                            onClick={() => setPanelOpen(!panelOpen)}
+                                            onKeyUp={() => setPanelOpen(!panelOpen)}
+                                        >
+                                            <Arrow />
+                                        </div>
+                                    </li>
+                                    <div 
+                                        className={styles.panel_container}
+                                        ref={content}
+                                        style={(panelOpen) ? { height: `${height}px` } : { height: '0px' }}
                                     >
-
-                                    </MyLink>
+                                        {tab.sub_navigation.map((tab_sub, index) => {
+                                            return (
+                                                <MyLink
+                                                    key={index}
+                                                    href={tab_sub.pathname}
+                                                    onClick={props.click}
+                                                >
+                                                    <li 
+                                                        className={styles.tab_sub}
+                                                        style={ (panelOpen) ? {opacity: "100%"} : {opacity: "0%"}}
+                                                    >
+                                                        {tab_sub.name}
+                                                    </li>
+                                                </MyLink>
+                                            );
+                                        })}
+                                    </div>
                                 </Fragment>
                                 
                             );
