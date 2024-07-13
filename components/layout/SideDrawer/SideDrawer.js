@@ -57,7 +57,10 @@ const SideDrawer = (props) => {
                                         className={styles.tab}
                                     >
 
-                                        <div className={styles.tabName}>
+                                        <div 
+                                            className={styles.tabName}
+                                            style={(pagePath === tab.pathname || pagePath.includes(tab.pathname)) ? {color: "#FFE9C0"} : {color: "#EDEFFF"}}
+                                        >
                                             {tab.name}
                                         </div>
                                     </li>     
@@ -68,7 +71,6 @@ const SideDrawer = (props) => {
                                 <Fragment
                                     key={index}
                                 >
-                                    
                                     <li
                                         className={styles.tab}
                                     >
@@ -78,7 +80,9 @@ const SideDrawer = (props) => {
                                             onClick={props.click}
                                         >
                                             <div 
-                                                className={styles.tabName}>
+                                                className={styles.tabName}
+                                                style={(pagePath === tab.pathname || pagePath.includes(tab.pathname)) ? {color: "#FFE9C0"} : {color: "#EDEFFF"}}
+                                            >
                                                 {tab.name}
                                             </div>
                                         </MyLink>
@@ -104,7 +108,8 @@ const SideDrawer = (props) => {
                                                 >
                                                     <li 
                                                         className={styles.tab_sub}
-                                                        style={ (panelOpen) ? {opacity: "100%"} : {opacity: "0%"}}
+                                                        style={(panelOpen) ? {opacity: "100%"} : {opacity: "0%"}}
+                                                        aria-current={pagePath === tab_sub.pathname ? "page" : undefined}
                                                     >
                                                         {tab_sub.name}
                                                     </li>
