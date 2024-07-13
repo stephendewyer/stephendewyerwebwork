@@ -3,13 +3,13 @@
     border: none;
     outline: none;
     position: relative;
-    background: none;
-    background-color: #575E53;
+    background: rgb(87,94,83);
+    background-color: rgba(87,94,83,0.75);
     transition: background-color 0.2s linear;
 }
 
 .drawer_toggle_button:hover {
-    background-color: #8A977F;
+    background-color: rgba(87,94,83,1);
 }
 
 .drawer_toggle_button_open {
@@ -24,7 +24,7 @@
 }
 
 .drawer_toggle_button_open:hover {
-    background-color: #8A977F;
+    background-color: rgba(87,94,83,1);
 }
 
 .bar1, .bar2, .bar3 {

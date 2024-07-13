@@ -33,11 +33,11 @@ const IndexPage = () => {
 
     // You can handle player events here, for example:
     player.on('waiting', () => {
-      videojs.log('player is waiting');
+      console.log('player is waiting');
     });
 
     player.on('dispose', () => {
-      videojs.log('player will dispose');
+      console.log('player will dispose');
     });
   };
 

@@ -3,12 +3,13 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #575E53;
+    background: rgb(87,94,83);
+    background: linear-gradient(180deg, rgba(87,94,83,1) 0%, rgba(87,94,83,0.75) 60%, rgba(87,94,83,0) 100%);
     transition: background-color 0.2s linear;
 }
 
 .index_tab_container:hover {
-    background-color: #8A977F;
+    background-color: #575e53;
 }
 
 .index_tab_container > li[aria-current='page']::before {
@@ -33,25 +34,32 @@
     justify-content: center;
     align-items: center;
     color: #FFE9C0;
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
     text-align: left;
 }
 
 @media screen and (max-width: 1440px) {
     .index_tab {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 1080px) {
     .index_tab {
-        font-size: 1.35rem;
+        font-size: 1.15rem;
     }
 }
 
 @media screen and (max-width: 720px) {
+
+    .index_tab_container > li[aria-current='page']::before {
+        --size: 4px;
+        border-top: 4px solid #FFE9C0;
+    }
+    
     .index_tab {
-        font-size: 1.3rem;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
     }
 }

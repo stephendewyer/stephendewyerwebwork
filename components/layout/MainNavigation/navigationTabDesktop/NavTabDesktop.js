@@ -83,24 +83,22 @@ const NavTabDesktop = (props) => {
                             passHref 
                             aria-label={`link to ${props.navItem.name} page`}
                         >
-                            <div className={styles.tab_container}>
-                                <li 
-                                    className={styles.tab}
-                                    aria-current={ (pageIsActive || pagePath.includes("/case_studies")) ? "page" : undefined }
-                                    style={{backgroundColor: panelHovered && "#8A977F"}}
-                                    onMouseEnter={(() => setTabHovered(true))}
-                                    onMouseOver={(() => setTabHovered(true))}
-                                    onMouseLeave={(() => setTabHovered(false))}
-                                    onMouseOut={(() => setTabHovered(false))}
-                                    onClick={() => setTabHovered(!panelHovered)}
-                                    onKeyUp={() => setTabHovered(!panelHovered)}
-                                >
-                                    {props.navItem.name}
-                                    <div className={(tabHovered || panelHovered) ? styles.arrow_active : styles.arrow}>
-                                        <Arrow/>
-                                    </div>
-                                </li>
-                            </div>
+                            <li 
+                                className={styles.tab_expandable}
+                                aria-current={ (pageIsActive || pagePath.includes("/case_studies")) ? "page" : undefined }
+                                style={{background: panelHovered && "#8A977F"}}
+                                onMouseEnter={(() => setTabHovered(true))}
+                                onMouseOver={(() => setTabHovered(true))}
+                                onMouseLeave={(() => setTabHovered(false))}
+                                onMouseOut={(() => setTabHovered(false))}
+                                onClick={() => setTabHovered(!panelHovered)}
+                                onKeyUp={() => setTabHovered(!panelHovered)}
+                            >
+                                {props.navItem.name}
+                                <div className={(tabHovered || panelHovered) ? styles.arrow_active : styles.arrow}>
+                                    <Arrow/>
+                                </div>
+                            </li>
                         </MyLink>
                         <div className={styles.panel_container} >
                             <div 
