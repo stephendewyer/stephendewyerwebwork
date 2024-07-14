@@ -27,27 +27,29 @@ const AboutPage = () => {
             location: 'Tucson, Arizona',
             responsibilities:
                 <table>
-                    <tr>
-                        <td>
-                            Designed, developed and deployed the company’s website
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td>
-                            Streamlined client collaboration by producing a client collaboration portal via the company’s website
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Met or exceeded client goals, achieving a 100% client satisfaction rate
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Directs the company to provide digital services that empower businesses and communities
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Designed, developed and deployed the company’s website
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                Streamlined client collaboration by producing a client collaboration portal via the company’s website
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Met or exceeded client goals, achieving a 100% client satisfaction rate
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Directs the company to provide digital services that empower businesses and communities
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
         },
         {
@@ -57,32 +59,34 @@ const AboutPage = () => {
             location: 'Tucson, Arizona',
             responsibilities:
                 <table>
-                    <tr>
-                        <td>
-                        Designed, developed and deployed software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td>
-                            Developing a voter networking and organizing portal 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Conducted user tests for web prototypes with Board of Directors and art experts
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Grew Board of Directors by 233% to include leading voices in art community by delivering strong leadership
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Responsible for overall direction of the non-profit, 501(c)(4) organization
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                            Designed, developed and deployed software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                Developing a voter networking and organizing portal 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Conducted user tests for web prototypes with Board of Directors and art experts
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Grew Board of Directors by 233% to include leading voices in art community by delivering strong leadership
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Responsible for overall direction of the non-profit, 501(c)(4) organization
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
         },
         {
@@ -92,21 +96,23 @@ const AboutPage = () => {
             location: 'Minneapolis, Minnesota',
             responsibilities:
                 <table>
-                    <tr>
-                        <td>
-                            Created high-fidelity prototypes to personalize dental insurance plan shopping in the Federal Employees Dental and Vision Insurance Program (FEDVIP)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Helped empower teams to produce great UX design for enterprise web products 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Client: FedPoint
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Created high-fidelity prototypes to personalize dental insurance plan shopping in the Federal Employees Dental and Vision Insurance Program (FEDVIP)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Helped empower teams to produce great UX design for enterprise web products 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Client: FedPoint
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
         },
         {
@@ -116,26 +122,28 @@ const AboutPage = () => {
             location: 'Detroit, Michigan',
             responsibilities:
                 <table>
-                    <tr>
-                        <td>
-                            Collaborated with stakeholders to create brand and website
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Directed three editing staff and 78 contributors to publish 94 essays and interviews, 51 artist projects, 26 reviews and 27 works of fiction or poetry
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Wrote successful grant applications
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        Partnered with the University of Michigan Stamps School of Art & Design to produce two serial publications and conferences
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Collaborated with stakeholders to create brand and website
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Directed three editing staff and 78 contributors to publish 94 essays and interviews, 51 artist projects, 26 reviews and 27 works of fiction or poetry
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Wrote successful grant applications
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            Partnered with the University of Michigan Stamps School of Art & Design to produce two serial publications and conferences
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
         }
     ];
@@ -146,110 +154,112 @@ const AboutPage = () => {
             label: "full-stack web development",
             content: 
                 <table>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Programming languages:
-                        </td>
-                        <td>
-                            JavaScript, TypeScript, C++, PHP, Python
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Stylesheet languages:
-                        </td>
-                        <td>
-                            CSS 3
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Markup languages:
-                        </td>
-                        <td>
-                            HTML 5
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            JavaScript compilers, frameworks and libraries:
-                        </td>
-                        <td>
-                            SvelteKit, Svelte, Next.js, React, Vue.js, Express, Handlebars
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Server environments:
-                        </td>
-                        <td>
-                            Node
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Development environments:
-                        </td>
-                        <td>
-                            Visual Studio, PhpStorm
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Data interchange formats:
-                        </td>
-                        <td>
-                            JSON
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Database management systems:
-                        </td>
-                        <td>
-                            PostgreSQL, MySQL, MongoDB
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Application programming interfaces (APIs):
-                        </td>
-                        <td>
-                            Representational State Transfer (REST), GraphQL
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Web accessibility standards:
-                        </td>
-                        <td>
-                            WCAG 2.1
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Version control systems:
-                        </td>
-                        <td>
-                            Git, GitHub, BitBucket
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Geocoding:
-                        </td>
-                        <td>
-                            TomTom, Google Maps
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={classes.row_heading}>
-                            Data visualization:
-                        </td>
-                        <td>
-                            D3.js
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Programming languages:
+                            </td>
+                            <td>
+                                JavaScript, TypeScript, C++, PHP, Python
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Stylesheet languages:
+                            </td>
+                            <td>
+                                CSS 3
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Markup languages:
+                            </td>
+                            <td>
+                                HTML 5
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                JavaScript compilers, frameworks and libraries:
+                            </td>
+                            <td>
+                                SvelteKit, Svelte, Next.js, React, Vue.js, Express, Handlebars
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Server environments:
+                            </td>
+                            <td>
+                                Node
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Development environments:
+                            </td>
+                            <td>
+                                Visual Studio, PhpStorm
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Data interchange formats:
+                            </td>
+                            <td>
+                                JSON
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Database management systems:
+                            </td>
+                            <td>
+                                PostgreSQL, MySQL, MongoDB
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Application programming interfaces (APIs):
+                            </td>
+                            <td>
+                                Representational State Transfer (REST), GraphQL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Web accessibility standards:
+                            </td>
+                            <td>
+                                WCAG 2.1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Version control systems:
+                            </td>
+                            <td>
+                                Git, GitHub, BitBucket
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Geocoding:
+                            </td>
+                            <td>
+                                TomTom, Google Maps
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Data visualization:
+                            </td>
+                            <td>
+                                D3.js
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
         },
         {
@@ -257,41 +267,43 @@ const AboutPage = () => {
             label: "user experience (UX) design",
             content: 
                 <table>
-                    <tr>
-                        <td>
-                            wire framing
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            prototyping
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            user research
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            user testing
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            information architecture
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            user flows
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            user interviews
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                wire framing
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                prototyping
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                user research
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                user testing
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                information architecture
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                user flows
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                user interviews
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
         },
         {
@@ -299,31 +311,33 @@ const AboutPage = () => {
             label: "art direction",
             content: 
                 <table>
-                    <tr>
-                        <td>
-                            photography
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            videography
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            graphic design
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            brand identity design
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            animation
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                photography
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                videography
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                graphic design
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                brand identity design
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                animation
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
         },
         {
@@ -331,31 +345,33 @@ const AboutPage = () => {
             label: "leadership",
             content:
             <table>
-                <tr>
-                    <td>
-                        inspiring and motivating individuals
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        empathy
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        building trust with integrity and fairness
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        working with diverse communities
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        communication
-                    </td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            inspiring and motivating individuals
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            empathy
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            building trust with integrity and fairness
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            working with diverse communities
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            communication
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         },
         {
@@ -363,16 +379,18 @@ const AboutPage = () => {
             label: "artificial intelligence",
             content: 
                 <table>
-                    <tr>
-                        <td>
-                            machine learning
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            deep learning including artificial neural networks and convolutional neural networks
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                machine learning
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                deep learning including artificial neural networks and convolutional neural networks
+                            </td>
+                        </tr> 
+                    </tbody>
                 </table>
         }
     ];
@@ -440,6 +458,19 @@ const AboutPage = () => {
             
     }, [currentStickyTabsPosition, currentActionsPosition]);
 
+    const introductionTabRef = useRef(null);
+    const positionsTabRef = useRef(null);
+    const educationTabRef = useRef(null);
+    const awardsAndGrantsTabRef = useRef(null);
+    const skillsTabRef = useRef(null);
+    const certificatesTabRef = useRef(null);
+
+    const handleTabClick = (event, id) => {
+        event.preventDefault();
+        const targetElement = document.getElementById(id);
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
     return (
         <Fragment>
             <Head>
@@ -467,44 +498,62 @@ const AboutPage = () => {
                     <div 
                         className={classes.tabs}
                         ref={stickyTabsRef}
+                        style={{zIndex: "2"}}
                     >
                         <div 
                             className={tabsSticky ? classes.tabs_inner_sticky : classes.tabs_inner}
-                            style={{zIndex: "2"}}
                         >
                             <ul 
                                 className={classes.tabs_list}
                             >
-                                <Link href="/about#introduction" passHref>
+                                <a 
+                                    ref={introductionTabRef}
+                                    onClick={(event) => handleTabClick(event, "introduction")}
+                                >
                                     <li>
                                         introduction
                                     </li>
-                                </Link>
-                                <Link href="/about#positions" passHref>
+                                </a>
+                                <a 
+                                    ref={positionsTabRef}
+                                    onClick={(event) => handleTabClick(event, "positions")}
+                                >
                                     <li>
                                         positions
                                     </li>
-                                </Link>
-                                <Link href="/about#education" passHref>
+                                </a>
+                                <a 
+                                    ref={educationTabRef}
+                                    onClick={(event) => handleTabClick(event, "education")}
+                                >
                                     <li>
                                         education
                                     </li>
-                                </Link>
-                                <Link href="/about#awards-and-grants" passHref>
+                                </a>
+                                <a 
+                                    ref={awardsAndGrantsTabRef}
+                                    onClick={(event) => handleTabClick(event, "awards-and-grants")}
+                                >
                                     <li>
                                         awards and grants
                                     </li>
-                                </Link>
-                                <Link href="/about#skills" passHref>
+                                </a>
+                                <a 
+                                    ref={skillsTabRef}
+                                    onClick={(event) => handleTabClick(event, "skills")}
+                                >
                                     <li>
                                         skills
                                     </li>
-                                </Link>
-                                <Link href="/about#certificates" passHref>
+                                </a>
+                                <a 
+                                    ref={certificatesTabRef}
+                                    onClick={(event) => handleTabClick(event, "certificates")}
+                                >
                                     <li>
                                         certificates
                                     </li>
-                                </Link>
+                                </a>
                             </ul>
                         </div>
                     </div>
@@ -530,7 +579,7 @@ const AboutPage = () => {
                                 I worked with a variety of stakeholders to produce critically-acclaimed projects, some of which have been featured in <Link href="https://www.nytimes.com/2016/01/07/fashion/shinola-watches-bicycles-leather-goods-expansion.html" passHref={true} aria-label="link to Shinola Takes Its 'Detroit Message on the Road'"><a target="_blank" rel="noopener noreferrer">The New York Times</a></Link>, <Link href="https://www.detroitnews.com/story/entertainment/2015/04/14/art-journals-detroit-increasing-art-scene/25784987/" passHref={true} aria-label="link to New journals showcase Detroit art scene"><a target="_blank" rel="noopener noreferrer">The Detroit News</a></Link> and <Link href="https://news.artnet.com/opinion/galapagos-art-space-detroit-corktown-sale-404495" passHref={true} aria-label="link to Galapagos Art Space Plans $6.25 Million Detroit Property Flip"><a target="_blank" rel="noopener noreferrer">Artnet News</a></Link>. 
                                 I enjoy developing creative software solutions to challenging problems that help empower businesses and communities.
                                 <br /><br />
-                                I first entered the fields of UX design and software development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called Infinite Mile.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about art and cultures in the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
+                                I first entered the fields of UX design and software development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called <Link href="https://infinitemiledetroit.com" passHref={true} aria-label="link to Infinite Mile website"><a target="_blank" rel="noopener noreferrer">Infinite Mile</a></Link>.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about art and cultures in the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
                                 <br /><br />
                                 In 2017, I created the website for <Link href="https://publicartscommission.org" passHref={true} aria-label="link to Public Arts Commission website"><a target="_blank" rel="noopener noreferrer">Public Arts Commission</a></Link>, a non-profit organization that is dedicated to expanding the political imaginary for a fairer, more just economy and a more egalitarian society by supporting democratic movements for greater public art.  
                                 The website features a searchable database of all candidates, referendums, legislation, constitutional amendments and actions endorsed by Public Arts Commission.  
@@ -605,51 +654,53 @@ const AboutPage = () => {
                             <span className={classes.label_item}>Udemy</span>
                         </div>
                         <table>
-                            <tr>
-                                <td>
-                                    Beginning C++ Programming - From Beginner to Beyond
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Understanding TypeScript
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Machine Learning A-Z: AI, Python & R + ChatGPT Bonus [2023]
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    GraphQL by Example
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Svelte.js - The Complete Guide (incl. Sapper.js)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    React - The Complete Guide (incl Hooks, React Router, Redux)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Web Accessibility Training Course - WCAG 2.1 Compliance
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    The User Researcher&#39;s guide to UX discoveries
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Beginning C++ Programming - From Beginner to Beyond
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Understanding TypeScript
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Machine Learning A-Z: AI, Python & R + ChatGPT Bonus [2023]
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        GraphQL by Example
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Svelte.js - The Complete Guide (incl. Sapper.js)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        React - The Complete Guide (incl Hooks, React Router, Redux)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Web Accessibility Training Course - WCAG 2.1 Compliance
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        The User Researcher&#39;s guide to UX discoveries
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                     <div className={classes.certificates_group}>
@@ -659,31 +710,33 @@ const AboutPage = () => {
                             <span className={classes.label_item}> University of Michigan &#8211; Coursera</span>
                         </div>
                         <table>
-                            <tr>
-                                <td>
-                                    JavaScript, jQuery, and JSON
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Interactivity with JavaScript
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Building Database Applications in PHP
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Introduction to Structured Query Language (SQL)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Building Web Applications in PHP
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        JavaScript, jQuery, and JSON
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Interactivity with JavaScript
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Building Database Applications in PHP
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Introduction to Structured Query Language (SQL)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Building Web Applications in PHP
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>   
                     <div className={classes.certificates_group}>
@@ -693,16 +746,18 @@ const AboutPage = () => {
                             <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
                         </div>
                         <table>
-                            <tr>
-                                <td>
-                                    Intermediate PostgreSQL
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Database Design and Basic SQL in PostgreSQL
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Intermediate PostgreSQL
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Database Design and Basic SQL in PostgreSQL
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                     <div className={classes.certificates_group}>
@@ -712,16 +767,18 @@ const AboutPage = () => {
                             <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
                         </div>
                         <table>
-                            <tr>
-                                <td>
-                                    Python Data Structures
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Python for Everybody
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Python Data Structures
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Python for Everybody
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                     <div className={classes.certificates_group}>
@@ -731,26 +788,28 @@ const AboutPage = () => {
                             <span className={classes.label_item}>Interaction Design Foundation</span>
                         </div>
                         <table>
-                            <tr>
-                                <td>
-                                    UI Design Patterns for Successful Software
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Mobile User Experience (UX) Design
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Become a UX Designer from Scratch
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Human-Computer Interaction
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        UI Design Patterns for Successful Software
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile User Experience (UX) Design
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Become a UX Designer from Scratch
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Human-Computer Interaction
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div> 
                     <div className={classes.certificates_group}>
@@ -760,11 +819,13 @@ const AboutPage = () => {
                             <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
                         </div>
                         <table>
-                            <tr>
-                                <td>
-                                    Inspiring and Motivating Individuals
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Inspiring and Motivating Individuals
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
