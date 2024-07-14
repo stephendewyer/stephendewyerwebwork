@@ -8,25 +8,28 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
     border: none;
     cursor: pointer;
     padding: 0.5rem 0;
+    color: #575B46;
+    transition: color 0.2s linear, font-weight 0.2s linear;
 }
 
-.panel_label_bold {
-    font-weight: bold;
-    width: 100%;
-    position: relative;
+.panel_label:hover > .arrow_container {
+    color: #5B7BA2;
+}
+
+.panel_label:hover > .arrow_container_active {
+    color: #5B7BA2;
+}
+
+.label_and_image {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem 0;
-    color: #838B6A;
 }
 
 .panel_label_image {
@@ -43,7 +46,9 @@
     min-width: 1.25em;
     transform: rotateX(0) rotate(90deg);
     will-change: transform;
-    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, color 0.2s linear;
+    color: #575B46;
+    padding: 1rem 0;
 }
 
 .arrow_container_active {
@@ -53,7 +58,9 @@
     min-width: 1.25em;
     transform: rotateX(180deg) rotate(90deg);
     will-change: transform;
-    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, color 0.2s linear;
+    color: #575B46;
+    padding: 1rem 0;
 }
   
 .panel_label::after {
@@ -81,9 +88,7 @@
 }
 
 .panel_content {
-    margin-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin: 0 0 1rem 0;
     transition: opacity 0.3s linear 0.18s;  
 }
 
