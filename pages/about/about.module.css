@@ -275,11 +275,16 @@
     }
 
     .tabs_inner {
-        top: 0;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        right: 1rem;
+        left: 1rem;
     }
 
     .tabs_inner_sticky {
-        top: 0;
+        top: auto;
+        bottom: 0;
         right: 1rem;
         left: 1rem;
     }
