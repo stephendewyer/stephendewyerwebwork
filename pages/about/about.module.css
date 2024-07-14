@@ -39,7 +39,13 @@
 }
 
 .tabs_inner {
-  top: 4rem;  
+    position: relative;
+    top: 4rem;  
+}
+
+.tabs_inner_sticky {
+    position: fixed;
+    top: 4rem;
 }
 
 .tabs_list {
@@ -262,7 +268,12 @@
 
     .tabs_inner {
         top: 0;
-        z-index: 1;
+    }
+
+    .tabs_inner_sticky {
+        top: 0;
+        right: 1rem;
+        left: 1rem;
     }
 
     .tabs_list {

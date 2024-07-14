@@ -469,8 +469,8 @@ const AboutPage = () => {
                         ref={stickyTabsRef}
                     >
                         <div 
-                            className={classes.tabs_inner}
-                            style={tabsSticky ? {position: "fixed", right: "1rem", left: "1rem"} : {position: "relative"}}
+                            className={tabsSticky ? classes.tabs_inner_sticky : classes.tabs_inner}
+                            style={{zIndex: "2"}}
                         >
                             <ul 
                                 className={classes.tabs_list}
