@@ -410,12 +410,29 @@ const AboutPage = () => {
     const [actionsSticky, setActionsSticky] = useState(false);
 
     const [currentActionsPosition, setCurrentActionsPosition] = useState(0);
+
+    const introductionRef = useRef(null);
+    const positionsRef = useRef(null);
+    const educationRef = useRef(null);
+    const awardsAndGrantsRef = useRef(null);
+    const skillsRef = useRef(null);
+    const certificatesRef = useRef(null);
     
+    const [introductionObserved, setIntroductionObserved] = useState(false);
+    const [positionsObserved, setPositionsObserved] = useState(false);
+    const [educationObserved, setEducationObserved] = useState(false);
+    const [awardsAndGrantsObserved, setAwardsAndGrantsObserved] = useState(false);
+    const [skillsObserved, setSkillsObserved] = useState(false);
+    const [certificatesObserved, setCertificatesObserved] = useState(false);
 
     useEffect(() => {
 
         const options = {
             triggerOnce: true
+        };
+
+        const tabIntersectingOptions = {
+            rootMargin: "-25% 0% -75% 0%"
         };
 
         const profilePhotoHandler = (entries) => {
@@ -425,9 +442,80 @@ const AboutPage = () => {
             };   
         };
 
-        const observer = new IntersectionObserver(profilePhotoHandler, options);
+        const profileImageObserver = new IntersectionObserver(profilePhotoHandler, options);
+        profileImageObserver.observe(profileImage.current);
 
-        observer.observe(profileImage.current);
+        const introductionIntersectingHandler = (entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                    setIntroductionObserved(true);
+            } else {
+                setIntroductionObserved(false);
+            };
+        };
+
+        const introductionObserver = new IntersectionObserver(introductionIntersectingHandler, tabIntersectingOptions);
+        introductionObserver.observe(introductionRef.current);
+
+        const positionsIntersectingHandler = (entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                setPositionsObserved(true);
+            } else {
+                setPositionsObserved(false);
+            };
+        };
+
+        const positionsObserver = new IntersectionObserver(positionsIntersectingHandler, tabIntersectingOptions);
+        positionsObserver.observe(positionsRef.current);
+
+        const educationIntersectingHandler = (entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                setEducationObserved(true);
+            } else {
+                setEducationObserved(false);
+            };
+        };
+
+        const educationObserver = new IntersectionObserver(educationIntersectingHandler, tabIntersectingOptions);
+        educationObserver.observe(educationRef.current);
+
+        const awardsAndGrantsIntersectingHandler = (entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                setAwardsAndGrantsObserved(true);
+            } else {
+                setAwardsAndGrantsObserved(false);
+            };
+        };
+
+        const awardsAndGrantsObserver = new IntersectionObserver(awardsAndGrantsIntersectingHandler, tabIntersectingOptions);
+        awardsAndGrantsObserver.observe(awardsAndGrantsRef.current);
+
+        const skillsIntersectingHandler = (entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                setSkillsObserved(true);
+            } else {
+                setSkillsObserved(false);
+            };
+        };
+
+        const skillsObserver = new IntersectionObserver(skillsIntersectingHandler, tabIntersectingOptions);
+        skillsObserver.observe(skillsRef.current);
+
+        const certificatesIntersectingHandler = (entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                setCertificatesObserved(true);
+            } else {
+                setCertificatesObserved(false);
+            };
+        };
+
+        const certificatesObserver = new IntersectionObserver(certificatesIntersectingHandler, tabIntersectingOptions);
+        certificatesObserver.observe(certificatesRef.current);
 
         setCurrentStickyTabsPosition(stickyTabsRef.current.getBoundingClientRect().top + window.scrollY);
 
@@ -457,13 +545,6 @@ const AboutPage = () => {
         };
             
     }, [currentStickyTabsPosition, currentActionsPosition]);
-
-    const introductionTabRef = useRef(null);
-    const positionsTabRef = useRef(null);
-    const educationTabRef = useRef(null);
-    const awardsAndGrantsTabRef = useRef(null);
-    const skillsTabRef = useRef(null);
-    const certificatesTabRef = useRef(null);
 
     const handleTabClick = (event, id) => {
         event.preventDefault();
@@ -506,51 +587,33 @@ const AboutPage = () => {
                             <ul 
                                 className={classes.tabs_list}
                             >
-                                <a 
-                                    ref={introductionTabRef}
-                                    onClick={(event) => handleTabClick(event, "introduction")}
-                                >
-                                    <li>
+                                <a onClick={(event) => handleTabClick(event, "introduction")}>
+                                    <li style={{fontWeight: (introductionObserved) ? "bold": "normal"}}>
                                         introduction
                                     </li>
                                 </a>
-                                <a 
-                                    ref={positionsTabRef}
-                                    onClick={(event) => handleTabClick(event, "positions")}
-                                >
-                                    <li>
+                                <a onClick={(event) => handleTabClick(event, "positions")}>
+                                    <li style={{fontWeight: (positionsObserved) ? "bold": "normal"}}>
                                         positions
                                     </li>
                                 </a>
-                                <a 
-                                    ref={educationTabRef}
-                                    onClick={(event) => handleTabClick(event, "education")}
-                                >
-                                    <li>
+                                <a onClick={(event) => handleTabClick(event, "education")}>
+                                    <li style={{fontWeight: (educationObserved) ? "bold": "normal"}}>
                                         education
                                     </li>
                                 </a>
-                                <a 
-                                    ref={awardsAndGrantsTabRef}
-                                    onClick={(event) => handleTabClick(event, "awards-and-grants")}
-                                >
-                                    <li>
+                                <a onClick={(event) => handleTabClick(event, "awards-and-grants")}>
+                                    <li style={{fontWeight: (awardsAndGrantsObserved) ? "bold": "normal"}}>
                                         awards and grants
                                     </li>
                                 </a>
-                                <a 
-                                    ref={skillsTabRef}
-                                    onClick={(event) => handleTabClick(event, "skills")}
-                                >
-                                    <li>
+                                <a onClick={(event) => handleTabClick(event, "skills")}>
+                                    <li style={{fontWeight: (skillsObserved) ? "bold": "normal"}}> 
                                         skills
                                     </li>
                                 </a>
-                                <a 
-                                    ref={certificatesTabRef}
-                                    onClick={(event) => handleTabClick(event, "certificates")}
-                                >
-                                    <li>
+                                <a onClick={(event) => handleTabClick(event, "certificates")}>
+                                    <li style={{fontWeight: (certificatesObserved) ? "bold": "normal"}}>
                                         certificates
                                     </li>
                                 </a>
@@ -558,7 +621,11 @@ const AboutPage = () => {
                         </div>
                     </div>
                     <div className={classes.about}>
-                        <div className={classes.intro_section} id="introduction">
+                        <div 
+                            className={classes.intro_section} 
+                            id="introduction" 
+                            ref={introductionRef}
+                        >
                             <div 
                                 ref={profileImage}
                                 className={classes.profile_image_container}
@@ -595,260 +662,286 @@ const AboutPage = () => {
                                 Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
                             </p> 
                         </div>
-                        <h3 id="positions">positions</h3>
-                        <ExperienceAccordion experience={experience}/>
-                        <h3 id="education">
-                            education
-                        </h3>
-                        <div className={classes.label_paragraphs}>
-                            <span className={classes.label_item}>2011</span>
-                            <span className={classes.position}>MFA in Sculpture</span>
-                            <span className={classes.label_item}>Yale University School of Art</span>
-                            <span className={classes.label_item}>New Haven, Connecticut</span>
+                        <div 
+                            className={classes.positions}
+                            ref={positionsRef}
+                        >
+                            <h3 id="positions">positions</h3>
+                            <ExperienceAccordion experience={experience}/>
                         </div>
-                        <div className={classes.label_paragraphs}>
-                            <span className={classes.label_item}>2008</span>
-                            <span className={classes.position}>BFA in Art History, Theory <span>&#38;</span> Criticism</span>
-                            <span className={classes.label_item}>Maryland Institute College of Art (MICA)</span>
-                            <span className={classes.label_item}>cum laude</span>
-                            <span className={classes.label_item}>Baltimore, Maryland</span>
-                        </div>
-                        <div className={classes.awards_and_grants_container}>
-                        <h3 id="awards-and-grants" className={classes.awards_and_grants_header}>awards and grants</h3>
-                        <div className={classes.awards_and_grants}>
-                            <div className={classes.award}>
-                                <div className={classes.label_paragraphs}>
-                                    <span className={classes.awards_and_grants_item_label}>2014 &ndash; 2016</span>
-                                    <span className={classes.awards_and_grants_item_position}>Knight Arts Challenge Detroit matching $20,000 grant</span>
-                                    <span className={classes.awards_and_grants_item_label}>John S. and James L. Knight Foundation</span>
-                                    <span className={classes.awards_and_grants_item_label}>Miami, Florida</span>
-                                </div>
-                                <ul className={classes.label_paragraphs}>
-                                    <li className={classes.awards_and_grants_item_project}>
-                                        Project: ∞ mile
-                                    </li>
-                                </ul>
+                        <div 
+                            className={classes.education}
+                            ref={educationRef}
+                            id="education"
+                        >
+                            <h3>
+                                education
+                            </h3>
+                            <div className={classes.label_paragraphs}>
+                                <span className={classes.label_item}>2011</span>
+                                <span className={classes.position}>MFA in Sculpture</span>
+                                <span className={classes.label_item}>Yale University School of Art</span>
+                                <span className={classes.label_item}>New Haven, Connecticut</span>
                             </div>
-                            <div className={classes.award}>
-                                <div className={classes.label_paragraphs}>
-                                    <span className={classes.awards_and_grants_item_label}>2014</span>
-                                    <span className={classes.awards_and_grants_item_position}>Detroit Chapter June 2014 $1,000 grant</span>
-                                    <span className={classes.awards_and_grants_item_label}>Awesome Foundation</span>
-                                    <span className={classes.awards_and_grants_item_label}>Boston, Massachusetts</span>
-                                </div>
-                                <ul className={classes.awards_and_grants_item_project}>
-                                    <li>
-                                        Project: ∞ mile
-                                    </li>
-                                </ul>
+                            <div className={classes.label_paragraphs}>
+                                <span className={classes.label_item}>2008</span>
+                                <span className={classes.position}>BFA in Art History, Theory <span>&#38;</span> Criticism</span>
+                                <span className={classes.label_item}>Maryland Institute College of Art (MICA)</span>
+                                <span className={classes.label_item}>cum laude</span>
+                                <span className={classes.label_item}>Baltimore, Maryland</span>
                             </div>
                         </div>
+                        <div 
+                            className={classes.awards_and_grants_container}
+                            ref={awardsAndGrantsRef}
+                        >
+                            <h3 id="awards-and-grants" className={classes.awards_and_grants_header}>awards and grants</h3>
+                            <div className={classes.awards_and_grants}>
+                                <div className={classes.award}>
+                                    <div className={classes.label_paragraphs}>
+                                        <span className={classes.awards_and_grants_item_label}>2014 &ndash; 2016</span>
+                                        <span className={classes.awards_and_grants_item_position}>Knight Arts Challenge Detroit matching $20,000 grant</span>
+                                        <span className={classes.awards_and_grants_item_label}>John S. and James L. Knight Foundation</span>
+                                        <span className={classes.awards_and_grants_item_label}>Miami, Florida</span>
+                                    </div>
+                                    <ul className={classes.label_paragraphs}>
+                                        <li className={classes.awards_and_grants_item_project}>
+                                            Project: ∞ mile
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className={classes.award}>
+                                    <div className={classes.label_paragraphs}>
+                                        <span className={classes.awards_and_grants_item_label}>2014</span>
+                                        <span className={classes.awards_and_grants_item_position}>Detroit Chapter June 2014 $1,000 grant</span>
+                                        <span className={classes.awards_and_grants_item_label}>Awesome Foundation</span>
+                                        <span className={classes.awards_and_grants_item_label}>Boston, Massachusetts</span>
+                                    </div>
+                                    <ul className={classes.awards_and_grants_item_project}>
+                                        <li>
+                                            Project: ∞ mile
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div 
+                            className={classes.skills}
+                            ref={skillsRef}
+                            id="skills"
+                        >
+                            <h3>skills</h3>
+                            <SkillsAccordion skills={skills} />          
+                        </div>
+                        <div 
+                            className={classes.certificates}
+                            id="certificates"
+                            ref={certificatesRef}
+                        >
+                            <h3>certificates</h3>
+                            <div className={classes.certificates_group}>
+                                <div className={classes.label_paragraphs}>
+                                    <span className={classes.label_item}>2021 &ndash; 2024</span>
+                                    <span className={classes.position}>Certificates in UX Design, Modern Web Development, Web Accessibility and Machine Learning</span>
+                                    <span className={classes.label_item}>Udemy</span>
+                                </div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Beginning C++ Programming - From Beginner to Beyond
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Understanding TypeScript
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Machine Learning A-Z: AI, Python & R + ChatGPT Bonus [2023]
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                GraphQL by Example
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Svelte.js - The Complete Guide (incl. Sapper.js)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                React - The Complete Guide (incl Hooks, React Router, Redux)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Web Accessibility Training Course - WCAG 2.1 Compliance
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                The User Researcher&#39;s guide to UX discoveries
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className={classes.certificates_group}>
+                                <div className={classes.label_paragraphs}>
+                                    <span className={classes.label_item}>2020 &ndash; 2021</span>
+                                    <span className={classes.position}>Certificates in Building Web Applications</span>
+                                    <span className={classes.label_item}> University of Michigan &#8211; Coursera</span>
+                                </div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                JavaScript, jQuery, and JSON
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Interactivity with JavaScript
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Building Database Applications in PHP
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Introduction to Structured Query Language (SQL)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Building Web Applications in PHP
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>   
+                            <div className={classes.certificates_group}>
+                                <div className={classes.label_paragraphs}>
+                                    <span className={classes.label_item}>2021</span>
+                                    <span className={classes.position}>Certificates in Database Design</span>
+                                    <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
+                                </div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Intermediate PostgreSQL
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Database Design and Basic SQL in PostgreSQL
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className={classes.certificates_group}>
+                                <div className={classes.label_paragraphs}>
+                                    <span className={classes.label_item}>2020</span>
+                                    <span className={classes.position}>Certificates in Python Programming</span>
+                                    <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
+                                </div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Python Data Structures
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Python for Everybody
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className={classes.certificates_group}>
+                                <div className={classes.label_paragraphs}>
+                                    <span className={classes.label_item}>2020</span>
+                                    <span className={classes.position}>Certificates in UX Design</span>
+                                    <span className={classes.label_item}>Interaction Design Foundation</span>
+                                </div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                UI Design Patterns for Successful Software
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Mobile User Experience (UX) Design
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Become a UX Designer from Scratch
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Human-Computer Interaction
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> 
+                            <div className={classes.certificates_group}>
+                                <div className={classes.label_paragraphs}>
+                                    <span className={classes.label_item}>2021</span>
+                                    <span className={classes.position}>Certificate in Leadership</span>
+                                    <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
+                                </div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Inspiring and Motivating Individuals
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <h3 id="skills">skills</h3>
-                    <SkillsAccordion skills={skills} />                                     
-                    <h3 id="certificates">certificates</h3>
-                    <div className={classes.certificates_group}>
-                        <div className={classes.label_paragraphs}>
-                            <span className={classes.label_item}>2021 &ndash; 2024</span>
-                            <span className={classes.position}>Certificates in UX Design, Modern Web Development, Web Accessibility and Machine Learning</span>
-                            <span className={classes.label_item}>Udemy</span>
-                        </div>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Beginning C++ Programming - From Beginner to Beyond
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Understanding TypeScript
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Machine Learning A-Z: AI, Python & R + ChatGPT Bonus [2023]
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        GraphQL by Example
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Svelte.js - The Complete Guide (incl. Sapper.js)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        React - The Complete Guide (incl Hooks, React Router, Redux)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Web Accessibility Training Course - WCAG 2.1 Compliance
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        The User Researcher&#39;s guide to UX discoveries
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div className={classes.certificates_group}>
-                        <div className={classes.label_paragraphs}>
-                            <span className={classes.label_item}>2020 &ndash; 2021</span>
-                            <span className={classes.position}>Certificates in Building Web Applications</span>
-                            <span className={classes.label_item}> University of Michigan &#8211; Coursera</span>
-                        </div>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        JavaScript, jQuery, and JSON
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Interactivity with JavaScript
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Building Database Applications in PHP
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Introduction to Structured Query Language (SQL)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Building Web Applications in PHP
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>   
-                    <div className={classes.certificates_group}>
-                        <div className={classes.label_paragraphs}>
-                            <span className={classes.label_item}>2021</span>
-                            <span className={classes.position}>Certificates in Database Design</span>
-                            <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
-                        </div>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Intermediate PostgreSQL
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Database Design and Basic SQL in PostgreSQL
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div className={classes.certificates_group}>
-                        <div className={classes.label_paragraphs}>
-                            <span className={classes.label_item}>2020</span>
-                            <span className={classes.position}>Certificates in Python Programming</span>
-                            <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
-                        </div>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Python Data Structures
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Python for Everybody
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div className={classes.certificates_group}>
-                        <div className={classes.label_paragraphs}>
-                            <span className={classes.label_item}>2020</span>
-                            <span className={classes.position}>Certificates in UX Design</span>
-                            <span className={classes.label_item}>Interaction Design Foundation</span>
-                        </div>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        UI Design Patterns for Successful Software
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Mobile User Experience (UX) Design
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Become a UX Designer from Scratch
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Human-Computer Interaction
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div> 
-                    <div className={classes.certificates_group}>
-                        <div className={classes.label_paragraphs}>
-                            <span className={classes.label_item}>2021</span>
-                            <span className={classes.position}>Certificate in Leadership</span>
-                            <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
-                        </div>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Inspiring and Motivating Individuals
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div 
-                    ref={actionsRef}
-                    className={classes.action_buttons}
-                >
-                    <div className={actionsSticky ? classes.action_buttons_sticky : classes.action_buttons_relative}> 
-                        <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref={true} aria-label="link to resume PDF" >
-                            <a target="_blank" rel="noopener noreferrer">
-                                <ResumeButton passHref={true} />
-                            </a>
-                        </Link>
+                    <div 
+                        ref={actionsRef}
+                        className={classes.action_buttons}
+                    >
+                        <div className={actionsSticky ? classes.action_buttons_sticky : classes.action_buttons_relative}> 
+                            <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref={true} aria-label="link to resume PDF" >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <ResumeButton passHref={true} />
+                                </a>
+                            </Link>
 
-                        <MyLink href="/contact" passHref >
-                            <ButtonAction aria-label="link to contact page">
-                                let&#39;s work together
-                            </ButtonAction>
-                        </MyLink>
+                            <MyLink href="/contact" passHref >
+                                <ButtonAction aria-label="link to contact page">
+                                    let&#39;s work together
+                                </ButtonAction>
+                            </MyLink>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </Fragment>
     );
 };
