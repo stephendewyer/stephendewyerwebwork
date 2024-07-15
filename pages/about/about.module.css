@@ -88,13 +88,14 @@
     flex-direction: column;
 }
 
-.tabs_list > li {
+.tabs_list > a > li {
     cursor: pointer;
     color: #575B46;
     transition: color 0.2s linear;
+    white-space: nowrap;
 }
 
-.tabs_list > li:hover {
+.tabs_list > a > li:hover {
     color: #5B7BA2;
 }
 
@@ -330,7 +331,7 @@
         padding: 0 1rem;
     }
 
-    .tabs_list > li {
+    .tabs_list > a > li {
         padding: 0.5rem 1rem;
         white-space: nowrap;
     }
