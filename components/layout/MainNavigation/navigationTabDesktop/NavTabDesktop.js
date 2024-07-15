@@ -86,7 +86,7 @@ const NavTabDesktop = (props) => {
                             <li 
                                 className={styles.tab_expandable}
                                 aria-current={ (pageIsActive || pagePath.includes("/case_studies")) ? "page" : undefined }
-                                style={{background: panelHovered && "#8A977F"}}
+                                style={{background: panelHovered && "#636B5F"}}
                                 onMouseEnter={(() => setTabHovered(true))}
                                 onMouseOver={(() => setTabHovered(true))}
                                 onMouseLeave={(() => setTabHovered(false))}
