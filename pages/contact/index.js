@@ -3,9 +3,7 @@ import React, { Fragment, useRef, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import InputErrorMessage from '../../components/inputErrorMessage/InputErrorMessage';
 import FlashMessage from '../../components/flash_message/FlashMessage';
-import MyLink from '../../public/util/myLink';
 import PillButton from '../../components/buttons/buttonPill/ButtonPIll';
-import PillButtonSecondary from '../../components/buttons/buttonPillSecondary/ButtonPillSecondary';
 import classes from './contact.module.css';
 
 async function createMessage(nameFirst, nameLast, email, message) {
@@ -21,9 +19,9 @@ async function createMessage(nameFirst, nameLast, email, message) {
 
     if (!response.ok) {
         throw new Error(data.message || 'something went wrong');
-    }
+    };
 
-}
+};
 
 const Contact = () => {
 
@@ -42,10 +40,10 @@ const Contact = () => {
     const [enteredNameLastIsValid, setEnteredNameLastIsValid] = useState(true);
     // email validation state
     const [enteredEmailIsValid, setEnteredEmailIsValid] = useState(true);
-    // email validation state 2
-    const [enteredEmailHasAtSymbol, setEnteredEmailHasAtSymbol] = useState(true);
     // message validation state
     const [enteredMessageIsValid, setEnteredMessageIsValid] = useState(true);
+
+    const [emailErrorMessage, setEmailErrorMessage] = useState("");
 
     // first name touched state
     const [enteredNameFirstIsTouched, setEnteredNameFirstIsTouched] = useState(true);
@@ -56,65 +54,66 @@ const Contact = () => {
     // message touched state
     const [enteredMessageIsTouched, setEnteredMessageIsTouched] = useState(true);
 
-    const nameFirstInputChangeHandler = (event) => {
+    const nameFirstInputChangeHandler = () => {
         if (nameFirstRef.current.value !== '') {
             setEnteredNameFirstIsValid(true);
-        }
+        };
     };
 
-    const nameLastInputChangeHandler = (event) => {
+    const nameLastInputChangeHandler = () => {
         if (nameLastRef.current.value !== '') {
             setEnteredNameLastIsValid(true);
-        }
+        };
     };
 
-    const emailInputChangeHandler = (event) => {
+    const emailInputChangeHandler = () => {
         if ( emailRef.current.value !== '' && emailRef.current.value.includes('@') ) {
             setEnteredEmailIsValid(true);
-            setEnteredEmailHasAtSymbol(true);
-        }
+        };
         if ( emailRef.current.value !== '' && !emailRef.current.value.includes('@') ) {
-            setEnteredEmailIsValid(true);
-        }
+            setEnteredEmailIsValid(false);
+            setEmailErrorMessage("missing an @ symbol in email address");
+        };
     };
 
-    const messageInputChangeHandler = (event) => {
+    const messageInputChangeHandler = () => {
         if (messageRef.current.value !== '') {
             setEnteredMessageIsValid(true);
-        }
+        };
     };
 
-    const nameFirstInputBlurHandler = (event) => {
+    const nameFirstInputBlurHandler = () => {
         setEnteredNameFirstIsTouched(true);
         if (nameFirstRef.current.value === '') {
             setEnteredNameFirstIsValid(false);
-        }
-    }
+        };
+    };
 
-    const nameLastInputBlurHandler = (event) => {
+    const nameLastInputBlurHandler = () => {
         setEnteredNameLastIsTouched(true);
         if (nameLastRef.current.value === '') {
             setEnteredNameLastIsValid(false);
-        }
-    }
+        };
+    };
 
-    const emailInputBlurHandler = (event) => {
+    const emailInputBlurHandler = () => {
         setEnteredEmailIsTouched(true);
         if (emailRef.current.value === '') {
             setEnteredEmailIsValid(false);
-        }
+            setEmailErrorMessage("email required");
+        };
         if (emailRef.current.value !== '' && !emailRef.current.value.includes('@') ) {
             setEnteredEmailIsValid(true);
-            setEnteredEmailHasAtSymbol(false);
-        }
-    }
+            setEmailErrorMessage("missing an @ symbol in email address");
+        };
+    };
 
-    const messageInputBlurHandler = (event) => {
+    const messageInputBlurHandler = () => {
         setEnteredMessageIsTouched(true);
         if (messageRef.current.value === '') {
             setEnteredMessageIsValid(false);
-        }
-    }
+        };
+    };
 
     // after submit
 
@@ -161,23 +160,24 @@ const Contact = () => {
         } catch (error) {
             if (enteredNameFirst === '') {
                 setEnteredNameFirstIsValid(false);
-            }
+            };
             if (enteredNameLast === '') {
                 setEnteredNameLastIsValid(false);
-            }
+            };
             if (enteredEmail === '') {
                 setEnteredEmailIsValid(false);
-            }
+                setEmailErrorMessage("email required");
+            };
             if (enteredEmail !== '' && !enteredEmail.includes('@')) {
-                setEnteredEmailHasAtSymbol(false);
-            }
+                setEmailErrorMessage("missing an @ symbol in email address");
+            };
             if (enteredMessage === '') {
                 setEnteredMessageIsValid(false);
-            }
+            };
             setRequestError(error.message);
             setRequestStatus('error');
-        }
-    }
+        };
+    };
 
     let notification;
 
@@ -187,7 +187,7 @@ const Contact = () => {
             title: 'validating message',
             message: 'please wait a moment while we validate your message data',
         };
-    }
+    };
 
     if (requestStatus === 'success') {
         notification = {
@@ -195,7 +195,7 @@ const Contact = () => {
             title: 'message sent',
             message: 'we sent you an email confirming we recieved your message.',
         };
-    }
+    };
 
     if (requestStatus === 'error') {
         notification = {
@@ -203,33 +203,15 @@ const Contact = () => {
             title: 'message failed to send',
             message: requestError,
         };
-    }
+    };
 
     const nameFirstInputClasses = enteredNameFirstIsValid ? classes.input : classes.invalid_input;
 
     const nameLastInputClasses = enteredNameLastIsValid ? classes.input : classes.invalid_input;
 
-    const emailInputClasses = enteredEmailIsValid && enteredEmailHasAtSymbol ? classes.input : classes.invalid_input;
+    const emailInputClasses = enteredEmailIsValid ? classes.input : classes.invalid_input;
 
     const messageInputClasses = enteredMessageIsValid ? classes.textarea_input : classes.invalid_textarea_input;
-
-    let emailErrorMessage = '';
-
-    if (!enteredEmailIsValid) {
-        emailErrorMessage = (
-            <InputErrorMessage>
-                email required
-            </InputErrorMessage>
-        )
-    }
-
-    if (enteredEmailIsValid && !enteredEmailHasAtSymbol) {
-        emailErrorMessage = (
-            <InputErrorMessage>
-                    missing an @ symbol in email address
-            </InputErrorMessage>
-        )
-    }
 
     return (
         <Fragment>
@@ -240,122 +222,125 @@ const Contact = () => {
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/contact" />
             </Head>
             <div className="container">
-                <h1 className="header">
-                    contact
-                </h1>
-                <h2 className="header_02">
-                    how can I help you?  
-                </h2>
-                <form className={classes.form} onSubmit={submitHandler} noValidate >
-                    <p className={classes.indicates_required}>
-                        * indicates required
-                    </p>
-                    <div className={classes.formSection}>
-                        <div className={classes.label_and_input} >
-                            <label className={classes.label} htmlFor='nameFirst' >
-                            *first name:
-                            </label>
-                            <div className={classes.field} >
-                                <input 
-                                    className={nameFirstInputClasses} 
-                                    id="nameFirst" 
-                                    type='text' 
-                                    ref={nameFirstRef} 
-                                    onChange={nameFirstInputChangeHandler} 
-                                    onBlur={nameFirstInputBlurHandler}
-                                />
-                            </div> 
-                        </div>
-                        { enteredNameFirstIsValid ? 
-                            ""
-                            : 
-                            <InputErrorMessage>
-                                first name required
-                            </InputErrorMessage>
-                        }
-                    </div>
-                    <div className={classes.formSection}>
-                        <div className={classes.label_and_input} >
-                            <label className={classes.label} htmlFor='nameLast' >
-                                *last name:
-                                </label>
-                            <div className={classes.field} >
-                                <input 
-                                    className={nameLastInputClasses} 
-                                    type='text' 
-                                    id="nameLast" 
-                                    ref={nameLastRef} 
-                                    onChange={nameLastInputChangeHandler} 
-                                    onBlur={nameLastInputBlurHandler}
-                                />
+                <div className={classes.contact}>
+                    <form className={classes.form} onSubmit={submitHandler} noValidate >
+                        <h1 className="header">
+                        contact
+                        </h1>
+                        <p className="header_02">
+                            Want help on a new or existing project?  Looking for someone to handle your software development and/or UX design?  How can I help you?  
+                        </p>
+                        <p className={classes.indicates_required}>
+                            * indicates required
+                        </p>
+                        <div className={classes.fields_row}>
+                            <div className={classes.field}>
+                                <div className={classes.label_and_input} >
+                                    <label className={classes.label} htmlFor='nameFirst' >
+                                    first name:*
+                                    </label>
+                                    <div className={classes.field} >
+                                        <input 
+                                            className={nameFirstInputClasses} 
+                                            id="nameFirst" 
+                                            type='text' 
+                                            ref={nameFirstRef} 
+                                            onChange={nameFirstInputChangeHandler} 
+                                            onBlur={nameFirstInputBlurHandler}
+                                        />
+                                    </div> 
+                                </div>
+                                { !enteredNameFirstIsValid &&
+                                    <InputErrorMessage>
+                                        first name required
+                                    </InputErrorMessage>
+                                }
+                            </div>
+                            <div className={classes.field}>
+                                <div className={classes.label_and_input} >
+                                    <label className={classes.label} htmlFor='nameLast' >
+                                        last name:*
+                                        </label>
+                                    <div className={classes.field} >
+                                        <input 
+                                            className={nameLastInputClasses} 
+                                            type='text' 
+                                            id="nameLast" 
+                                            ref={nameLastRef} 
+                                            onChange={nameLastInputChangeHandler} 
+                                            onBlur={nameLastInputBlurHandler}
+                                        />
+                                    </div>
+                                </div>
+                                { !enteredNameLastIsValid &&
+                                    <InputErrorMessage>
+                                        last name required
+                                    </InputErrorMessage>
+                                }
                             </div>
                         </div>
-                        { enteredNameLastIsValid ? 
-                            "" :
-                            <InputErrorMessage>
-                                last name required
-                            </InputErrorMessage>
-                        }
-                    </div>
-                    <div className={classes.formSection}>
-                        <div className={classes.label_and_input} >
-                            <label className={classes.label} htmlFor='email' >
-                                *email:
-                            </label>
-                            <div className={classes.field} >
-                                <input 
-                                    className={emailInputClasses} 
-                                    type='email' 
-                                    id="email" 
-                                    ref={emailRef} 
-                                    onChange={emailInputChangeHandler} 
-                                    onBlur={emailInputBlurHandler}
-                                />
+                        <div className={classes.fields_row}>
+                            <div className={classes.field}>
+                                <div className={classes.label_and_input} >
+                                    <label className={classes.label} htmlFor='email' >
+                                        email:*
+                                    </label>
+                                    <div className={classes.field} >
+                                        <input 
+                                            className={emailInputClasses} 
+                                            type='email' 
+                                            id="email" 
+                                            ref={emailRef} 
+                                            onChange={emailInputChangeHandler} 
+                                            onBlur={emailInputBlurHandler}
+                                        />
+                                    </div>
+                                </div>
+                                { !enteredEmailIsValid &&
+                                    <InputErrorMessage>
+                                        {emailErrorMessage}
+                                    </InputErrorMessage>
+                                }
                             </div>
                         </div>
-                        {emailErrorMessage}
-                    </div>
-                    <div className={classes.formSection}>
-                        <div className={classes.textarea_label_and_input} >
-                            <label className={classes.textarea_label} htmlFor='message' >
-                                *message:
-                            </label>
-                            <div className={classes.textarea_field} >
-                                <textarea 
-                                    className={messageInputClasses} 
-                                    type='text' 
-                                    id="message" 
-                                    ref={messageRef} 
-                                    onChange={messageInputChangeHandler} 
-                                    onBlur={messageInputBlurHandler}
-                                />
+                        <div className={classes.field_row}>
+                            <div className={classes.field}>
+                                <div className={classes.label_and_input} >
+                                    <label className={classes.label} htmlFor='message' >
+                                        message:*
+                                    </label>
+                                    <div className={classes.textarea_field} >
+                                        <textarea 
+                                            className={messageInputClasses} 
+                                            type='text' 
+                                            id="message" 
+                                            ref={messageRef} 
+                                            onChange={messageInputChangeHandler} 
+                                            onBlur={messageInputBlurHandler}
+                                        />
+                                    </div>
+                                </div>
+                                { !enteredMessageIsValid &&
+                                    <InputErrorMessage>
+                                        message required
+                                    </InputErrorMessage>
+                                }
                             </div>
                         </div>
-                        { enteredMessageIsValid ? 
-                            "":
-                            <InputErrorMessage>
-                                message required
-                            </InputErrorMessage>
-                        }
-                    </div>
-                    <div className={classes.contact_buttons} >
-                        <PillButton type='submit' >
-                            send
-                        </PillButton>
-                    </div>
-                </form>
-                {notification && (
-                    <FlashMessage
-                        status={notification.status}
-                        title={notification.title}
-                        message={notification.message}
-                    />
-                )}
-                <MyLink href={'/'} passHref aria-label="link to index" className={classes.contact_button}>
-                    <PillButtonSecondary>
-                        cancel
-                    </PillButtonSecondary>
-                </MyLink>
+                        <div className={classes.contact_button} >
+                            <PillButton type='submit'>
+                                send
+                            </PillButton>
+                        </div>
+                    </form>
+                    {notification && (
+                        <FlashMessage
+                            status={notification.status}
+                            title={notification.title}
+                            message={notification.message}
+                        />
+                    )}
+                </div>
             </div>
         </Fragment>
     );
