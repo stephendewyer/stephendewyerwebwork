@@ -251,6 +251,26 @@ const Joyfoodly = () => {
             id: uuidv4(),
             label: 
                 <Fragment>
+                    <div className={styles.tabHeadingDesktop}>test</div>
+                    <div className={styles.tabHeadingMobile}>6</div>
+                </Fragment>
+            ,
+            content:
+                <div className={styles.panelContent}>
+                    <h4 className={styles.panelHeadingMobile}>
+                        test
+                    </h4>  
+                    <p>
+                        The Joyfoodly website was tested for cross-browser functionality and on multiple devices.  
+                        By testing, we were able to observe slight differences between Android and iPhone browser versions of the legacy website.  
+                        I was able to correct the website for compatibility with Android and iPhone browsers.
+                    </p>
+                </div>,
+        },
+        {
+            id: uuidv4(),
+            label: 
+                <Fragment>
                     <div className={styles.tabHeadingDesktop}>build</div>
                     <div className={styles.tabHeadingMobile}>5</div>
                 </Fragment>
@@ -267,26 +287,6 @@ const Joyfoodly = () => {
                         The emails were created using Mailchimp.
                     </p>
                 </div>
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>test</div>
-                    <div className={styles.tabHeadingMobile}>6</div>
-                </Fragment>
-            ,
-            content:
-                <div className={styles.panelContent}>
-                    <h4 className={styles.panelHeadingMobile}>
-                        test
-                    </h4>  
-                    <p>
-                        The Joyfoodly website was tested for cross-browser functionality and on multiple devices.  
-                        By testing, we were able to observe slight differences between Android and iPhone browser versions of the legacy website.  
-                        I was able to correct the website for compatibility with Android and iPhone browsers.
-                    </p>
-                </div>,
         },
     ];
 

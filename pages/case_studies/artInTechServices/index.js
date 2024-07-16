@@ -291,6 +291,25 @@ const ArtinTechServices = () => {
             id: uuidv4(),
             label: 
                 <Fragment>
+                    <div className={styles.tabHeadingDesktop}>test</div>
+                    <div className={styles.tabHeadingMobile}>6</div>
+                </Fragment>
+            ,
+            content:
+                <div className={styles.panelContent}>
+                    <h4 className={styles.panelHeadingMobile}>
+                        test
+                    </h4>
+                    <div className={styles.panelParagraphs}>
+                        The redesigned Art in Tech Services website and web application received user testing from individuals in my network.  
+                        I am currently working on sending a survey to prospective users asking what problems art in technology could help solve for them, what technology they needed to improve their work and how Art in Tech Services could better serve their needs. 
+                    </div>
+                </div>,
+        },
+        {
+            id: uuidv4(),
+            label: 
+                <Fragment>
                     <div className={styles.tabHeadingDesktop}>build</div>
                     <div className={styles.tabHeadingMobile}>5</div>
                 </Fragment>
@@ -351,25 +370,6 @@ const ArtinTechServices = () => {
                                 User feedback on forms that appeared once a form is submitted, when an input loses focus and on every key stroke
                             </li>
                         </ul>      
-                    </div>
-                </div>,
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>test</div>
-                    <div className={styles.tabHeadingMobile}>6</div>
-                </Fragment>
-            ,
-            content:
-                <div className={styles.panelContent}>
-                    <h4 className={styles.panelHeadingMobile}>
-                        test
-                    </h4>
-                    <div className={styles.panelParagraphs}>
-                        The redesigned Art in Tech Services website and web application received user testing from individuals in my network.  
-                        I am currently working on sending a survey to prospective users asking what problems art in technology could help solve for them, what technology they needed to improve their work and how Art in Tech Services could better serve their needs. 
                     </div>
                 </div>,
         },

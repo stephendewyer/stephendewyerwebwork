@@ -315,24 +315,6 @@ const PublicArtsCommission = () => {
             id: uuidv4(),
             label: 
                 <Fragment>
-                    <div className={styles.tabHeadingDesktop}>build</div>
-                    <div className={styles.tabHeadingMobile}>5</div>
-                </Fragment>
-            ,
-            content: 
-                <div className={styles.panelContent}>
-                    <h4 className={styles.panelHeadingMobile}>
-                        build
-                    </h4> 
-                    <p>
-                        For the development of the redesigned Public Arts Commission web programs, I am using a variety of technologies including SvelteKit, which is high performing and modern.
-                    </p>
-                </div>,
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
                     <div className={styles.tabHeadingDesktop}>test</div>
                     <div className={styles.tabHeadingMobile}>6</div>
                 </Fragment>
@@ -347,6 +329,24 @@ const PublicArtsCommission = () => {
                         User testing was conducted with individuals in my network.
                     </p>
                 </div>
+        },
+        {
+            id: uuidv4(),
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>build</div>
+                    <div className={styles.tabHeadingMobile}>5</div>
+                </Fragment>
+            ,
+            content: 
+                <div className={styles.panelContent}>
+                    <h4 className={styles.panelHeadingMobile}>
+                        build
+                    </h4> 
+                    <p>
+                        For the development of the redesigned Public Arts Commission web programs, I am using a variety of technologies including SvelteKit, which is high performing and modern.
+                    </p>
+                </div>,
         },
     ];
 

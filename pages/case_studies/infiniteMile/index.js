@@ -268,25 +268,6 @@ const InfiniteMile = () => {
                     </p>
                 </div>,
         },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>build</div>
-                    <div className={styles.tabHeadingMobile}>5</div>
-                </Fragment>
-            ,
-            content: 
-                <div className={styles.panelContent}>
-                    <h4 className={styles.panelHeadingMobile}>
-                        build
-                    </h4> 
-                    <div className={styles.panelParagraphs}>
-                        I built the Infinite Mile website using HTML, CSS, JavaScript, jQuery, MailChimp, VideoJS and WowSlider.  
-                        Later, I added APIs for events using EventBrite and to handle sales of annual print anthologies and merchandise using PayPal.
-                    </div>
-                </div>,
-        },
         {   
             id: uuidv4(),
             label: 
@@ -303,6 +284,25 @@ const InfiniteMile = () => {
                     <div className={styles.panelParagraphs}>
                         User tests were conducted for the Infinite Mile website.  
                         Google Chrome Developer was used to test the code. 
+                    </div>
+                </div>,
+        },
+        {
+            id: uuidv4(),
+            label: 
+                <Fragment>
+                    <div className={styles.tabHeadingDesktop}>build</div>
+                    <div className={styles.tabHeadingMobile}>5</div>
+                </Fragment>
+            ,
+            content: 
+                <div className={styles.panelContent}>
+                    <h4 className={styles.panelHeadingMobile}>
+                        build
+                    </h4> 
+                    <div className={styles.panelParagraphs}>
+                        I built the Infinite Mile website using HTML, CSS, JavaScript, jQuery, MailChimp, VideoJS and WowSlider.  
+                        Later, I added APIs for events using EventBrite and to handle sales of annual print anthologies and merchandise using PayPal.
                     </div>
                 </div>,
         },
