@@ -3,13 +3,12 @@
     border: none;
     outline: none;
     position: relative;
-    background: rgb(87,94,83);
-    background-color: rgba(87,94,83,0.75);
+    background-color: #424142;
     transition: background-color 0.2s linear;
 }
 
 .drawer_toggle_button:hover {
-    background-color: rgba(87,94,83,1);
+    background-color: #636B5F;
 }
 
 .drawer_toggle_button_open {
@@ -19,12 +18,12 @@
     position: relative;
     background: none;
     transform: scale(1);
-    background-color: #575E53;
+    background-color: #424142;
     transition: background-color 0.2s linear;
 }
 
 .drawer_toggle_button_open:hover {
-    background-color: rgba(87,94,83,1);
+    background-color: #636B5F;
 }
 
 .bar1, .bar2, .bar3 {
