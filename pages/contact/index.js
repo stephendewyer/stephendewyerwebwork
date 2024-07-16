@@ -5,6 +5,8 @@ import InputErrorMessage from '../../components/inputErrorMessage/InputErrorMess
 import FlashMessage from '../../components/flash_message/FlashMessage';
 import PillButton from '../../components/buttons/buttonPill/ButtonPIll';
 import classes from './contact.module.css';
+import Image from 'next/image';
+import TucsonSunset from "../../public/images/contact/Tucson,_Arizona_17_June_2024.jpg"
 
 async function createMessage(nameFirst, nameLast, email, message) {
     const response = await fetch('/api/contact/SendEmail', {
@@ -221,6 +223,17 @@ const Contact = () => {
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/contact" />
             </Head>
+            <div className={classes.banner_container}>
+                <Image 
+                    src={TucsonSunset} 
+                    priority 
+                    objectFit="cover"
+                    objectPosition="top"
+                    layout="fill"
+                    alt="Tucson sunset 17 June 2024"
+                />
+                <div className={classes.banner_overlay} />
+            </div>
             <div className="container">
                 <div className={classes.contact}>
                     <form className={classes.form} onSubmit={submitHandler} noValidate >

@@ -133,10 +133,12 @@ tr:nth-child(even) {
 
 input {
   font-size: 1.2rem;
+  font-family: "segoeUI";
 }
 
 textarea {
   font-size: 1.2rem;
+  font-family: "segoeUI";
 }
 
 @media screen and (max-width: 1440px) {
