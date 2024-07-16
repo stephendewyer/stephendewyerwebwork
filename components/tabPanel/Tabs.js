@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback, useLayoutEffect } from 'react
 import styles from './Tabs.module.css';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import classNames from 'classnames';
+import Panel from './Panel';
 
 const Tabs = ({ tabPanels }) => {
 
@@ -146,7 +147,7 @@ const Tabs = ({ tabPanels }) => {
                                             ref={measuredRef}
                                             className={styles.item}
                                         >
-                                            {panelItemContent}
+                                            <Panel panel_data={panelItemContent}/>
                                         </div>
                                     </dd>
                                 </CSSTransition>  

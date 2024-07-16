@@ -12,7 +12,7 @@ import ArtAndRaceConference from '../../../public/images/case_studies/Infinite_M
 import InfiniteMileStaff from '../../../public/images/case_studies/Infinite_Mile_LLC/team/Infinite_Mile_staff.jpg';
 import InfiniteMileLogo from '../../../public/images/case_studies/Infinite_Mile_LLC/process/Infinite_Mile_logo.svg';
 import InfiniteMileSiteMap from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_site_map.jpg';
-import Tabs from "../../../components/tabs/Tabs";
+import Tabs from "../../../components/tabPanel/Tabs";
 import Link from 'next/link';
 import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
 import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
@@ -120,23 +120,35 @@ const InfiniteMile = () => {
                     <h4>
                         services I provided
                     </h4>
-                    <ul>
-                        <li>
-                            Designed, developed and deployed an enterprise website
-                        </li>
-                        <li>
-                            Designed brand identity including logo
-                        </li>
-                        <li>
-                            Designed graphics
-                        </li>
-                        <li>
-                            Maintained and updated website to publish monthly issues
-                        </li>
-                        <li>
-                            Designed, developed and deployed a shop feature to allow users to purchase annual print anthologies and merchandise using a PayPal API
-                        </li>
-                    </ul>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Designed, developed and deployed an enterprise website
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Designed brand identity including logo
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Designed graphics
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Maintained and updated website to publish monthly issues
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Designed, developed and deployed a shop feature to allow users to purchase annual print anthologies and merchandise using a PayPal API
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </Fragment>
         },
         {
@@ -146,29 +158,45 @@ const InfiniteMile = () => {
                     <h4>
                         tools I used
                     </h4>
-                    <ul>
-                        <li>
-                            Adobe Suite
-                        </li>
-                        <li>
-                            Google Drive
-                        </li>
-                        <li>
-                            HTML, CSS, JavaScript, jQuery, VideoJS
-                        </li>
-                        <li>
-                            WowSlider
-                        </li>
-                        <li>
-                            PayPal
-                        </li>
-                        <li>
-                            Eventbrite
-                        </li>
-                        <li>
-                            Canon EOS 70D Digital SLR camera
-                        </li>
-                    </ul>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    HTML, CSS, JavaScript, jQuery, VideoJS
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    WowSlider
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Eventbrite
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PayPal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Canon EOS 70D Digital SLR camera
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Adobe Suite
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Google Drive
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </Fragment>
         },
         
@@ -183,22 +211,17 @@ const InfiniteMile = () => {
                     <div className={styles.tabHeadingMobile}>1</div>
                 </Fragment>
             ,
-            content:
-                <div className={styles.panelContentParagraphsWithImage}>
-                    <h4 className={styles.panelHeadingMobile}>
-                        empathize
-                    </h4>
-                    <div className={styles.panelImageAndParagraphs}>
-                        <div className={styles.panelImage}>
-                          <ImageHoverCaption imagePlusCaption={imagePlusCaptionEmpathize} />  
-                        </div>   
-                        <p className={styles.panelParagraphsWithImage}>
-                            Despite having an active art community, no journals covered art and culture(s) in Detroit, Michigan from Detroit.  
-                            As a result, the art community in Detroit did not have a platform from which it could voice issues affecting the community.
-                        </p>
-                    </div>
-                </div>,
+            content: {
+                heading: "empathize",
+                images: [ <ImageHoverCaption key={1} imagePlusCaption={imagePlusCaptionEmpathize} />],
+                paragraphs: <p>
+                    Despite having an active art community, no journals covered art and culture(s) in Detroit, Michigan from Detroit.  
+                    As a result, the art community in Detroit did not have a platform from which it could voice issues affecting the community.
+                </p>
+                ,
+                buttons: []
             },
+        },
         {
             id: uuidv4(),
             label: 
@@ -207,16 +230,17 @@ const InfiniteMile = () => {
                     <div className={styles.tabHeadingMobile}>2</div>
                 </Fragment>
             ,
-            content:
-                <div className={styles.panelContent}>
-                    <h4 className={styles.panelHeadingMobile}>
-                        define
-                    </h4>
-                    <p className={styles.panelParagraphs}>
+            content: {
+                heading: "define",
+                images: [],
+                paragraphs: 
+                    <p>
                         Detroit, Michigan needed a monthly, web-based journal of art and culture(s) to voice issues affecting the Detroit art community.  
                         The journal would have to bridge demographic groups in a very segregated region by class and race.
                     </p>
-                </div>,
+                ,
+                buttons: []
+            }
         },
         {
             id: uuidv4(),
@@ -226,29 +250,22 @@ const InfiniteMile = () => {
                     <div className={styles.tabHeadingMobile}>3</div>
                 </Fragment>
             ,
-            content:
-                <div className={styles.panelContentParagraphsWithImage}>
-                    <h4 className={styles.panelHeadingMobile}>
-                        ideate
-                    </h4>
-                    <div className={styles.panelImageAndParagraphs}>
-                        <div className={styles.panelImage}>
-                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} />
-                            <p>
-                                Rapid iterations of logo and name ideas were shared amongst stakeholders.  
-                                The process was one of the best I&#39;ve seen, with stakeholders working together to find the best design solution instead of defending their own ideas.  
-                                Ultimately, we agreed to use a logo I created that rotates the 8 in 8 Mile, a symbol of racial and economic division, ninety degrees to make an infinity symbol, which is impossible to divide.
-                                Contours of two chain links were used in the infinity symbol to reflect Detroit&#39;s industrial history.
-                            </p>
-                        </div>
-                        <div className={styles.panelParagraphsWithImage}>
-                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionSiteMap} />
-                            <p>
-                                Once the name, logo and style were decided, I began sketching ideas for the Infinite Mile website.  Stakeholders agreed to use a custom website because the website needed to have a different look than all the rest of the websites and have strong aesthetics because the journal was focusing on art and culture(s).
-                            </p>
-                        </div>
-                    </div>
-                </div>,
+            content: {
+                heading: "ideate",
+                images: [ <ImageHoverCaption key={1} imagePlusCaption={imagePlusCaptionIdeate} />, <ImageHoverCaption key={2} imagePlusCaption={imagePlusCaptionSiteMap} /> ],
+                paragraphs: 
+                    <p>
+                        Rapid iterations of logo and name ideas were shared amongst stakeholders.  
+                        The process was one of the best I&#39;ve seen, with stakeholders working together to find the best design solution instead of defending their own ideas.  
+                        Ultimately, we agreed to use a logo I created that rotates the 8 in 8 Mile, a symbol of racial and economic division, ninety degrees to make an infinity symbol, which is impossible to divide.
+                        Contours of two chain links were used in the infinity symbol to reflect Detroit&#39;s industrial history.
+                        <br/><br/>
+                        Once the name, logo and style were decided, I began sketching ideas for the Infinite Mile website. 
+                        Stakeholders agreed to use a custom website because the website needed to have a different look than all the rest of the websites and have strong aesthetics because the journal was focusing on art and culture(s).
+                    </p>
+                ,
+                buttons: []
+            }
         },
         {
             id: uuidv4(),
@@ -258,15 +275,16 @@ const InfiniteMile = () => {
                     <div className={styles.tabHeadingMobile}>4</div>
                 </Fragment>
             ,
-            content: 
-                <div className={styles.panelContent}>
-                    <h4 className={styles.panelHeadingMobile}>
-                        prototype
-                    </h4> 
-                    <p className={styles.panelParagraphs}>
+            content: {
+                heading: "prototype",
+                images: [],
+                paragraphs: 
+                    <p>
                         I created a password-protected website as a prototype to share with stakeholders, who shared feedback.
                     </p>
-                </div>,
+                ,
+                buttons: []
+            }
         },
         {   
             id: uuidv4(),
@@ -276,16 +294,17 @@ const InfiniteMile = () => {
                     <div className={styles.tabHeadingMobile}>6</div>
                 </Fragment>
             ,
-            content:
-                <div className={styles.panelContent}>
-                    <h4 className={styles.panelHeadingMobile}>
-                        test
-                    </h4>  
-                    <div className={styles.panelParagraphs}>
+            content: {
+                heading: "test",
+                images: [],
+                paragraphs: 
+                    <p>
                         User tests were conducted for the Infinite Mile website.  
                         Google Chrome Developer was used to test the code. 
-                    </div>
-                </div>,
+                    </p>
+                ,
+                buttons: []
+            }
         },
         {
             id: uuidv4(),
@@ -295,16 +314,17 @@ const InfiniteMile = () => {
                     <div className={styles.tabHeadingMobile}>5</div>
                 </Fragment>
             ,
-            content: 
-                <div className={styles.panelContent}>
-                    <h4 className={styles.panelHeadingMobile}>
-                        build
-                    </h4> 
-                    <div className={styles.panelParagraphs}>
+            content: {
+                heading: "build",
+                images: [],
+                paragraphs: 
+                    <p>
                         I built the Infinite Mile website using HTML, CSS, JavaScript, jQuery, MailChimp, VideoJS and WowSlider.  
                         Later, I added APIs for events using EventBrite and to handle sales of annual print anthologies and merchandise using PayPal.
-                    </div>
-                </div>,
+                    </p>
+                ,
+                buttons: []
+            }
         },
     ];
 
@@ -343,14 +363,20 @@ const InfiniteMile = () => {
                     <p>
                         Infinite Mile won a number of grants and awards including:
                     </p>
-                    <ul>
-                        <li>
-                            2014 &#8211; 2016, Knights Arts Challenge Detroit $20,000 matching grant
-                        </li>
-                        <li>
-                            2014, Awesome Foundation Detroit Chapter $1,000 grant
-                        </li>
-                    </ul>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    2014 &#8211; 2016, Knights Arts Challenge Detroit $20,000 matching grant
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2014, Awesome Foundation Detroit Chapter $1,000 grant
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </Fragment>
         },
         
@@ -386,43 +412,52 @@ const InfiniteMile = () => {
                     </div>
                 </div>
             </div>
-            <h1>
-                Infinite Mile LLC (∞ mile) website
-            </h1>
-            <h2>
-                2013 &ndash; 2017
-            </h2>
-            <div className={styles.slider_case_study}>
-                <InfiniteMileSlideCarousel />
-            </div>
-            <h3>
-                details
-            </h3>
-            <InfoCards infoCards={infoCards} />
-            <h3>
-                team
-            </h3>
-            <div className={styles.team}>
-                <ImageHoverCaption imagePlusCaption={imagePlusCaptionArtAndRaceConference} /> 
-                <ImageHoverCaption imagePlusCaption={imagePlusCaptionInfiniteMileStaff} /> 
-            </div>
-            <h3>
-                process
-            </h3>
-            <Tabs tabPanels={tabPanels} />
-            <h3>
-                results
-            </h3>
-            <InfoCards outcomeCards={outcomeCards} />
-            <div className={styles.caseStudyInfoSection}>
+            <div className={styles.solution}>
+                <h1>
+                    Infinite Mile LLC (∞ mile) website
+                </h1>
+                <h2>
+                    2013 &ndash; 2017
+                </h2>
+                <div className={styles.slider_case_study}>
+                    <InfiniteMileSlideCarousel />
+                </div>
                 <h3>
-                    discoveries
+                    details
                 </h3>
-                <p>
-                    Infinite Mile was a huge success and some of the most rewarding work I have done in my life.  
-                    Infinite Mile was an important lesson in how web programs can bring communities together.  
-                    As a result, I decided to deeply learn web development and UX design.
-                </p> 
+                <InfoCards infoCards={infoCards} />
+                <h3>
+                    team
+                </h3>
+                <div className={styles.team}>
+                    <ImageHoverCaption imagePlusCaption={imagePlusCaptionArtAndRaceConference} /> 
+                    <ImageHoverCaption imagePlusCaption={imagePlusCaptionInfiniteMileStaff} /> 
+                </div>
+                <h3>
+                    process
+                </h3>
+                <Tabs tabPanels={tabPanels} />
+                <h3>
+                    results
+                </h3>
+                <InfoCards outcomeCards={outcomeCards} />
+                <div className={styles.caseStudyInfoSection}>
+                    <h3>
+                        discoveries
+                    </h3>
+                    <p>
+                        Infinite Mile was a huge success and some of the most rewarding work I have done in my life.  
+                        Infinite Mile was an important lesson in how web programs can bring communities together.  
+                    </p> 
+                </div>
+                <div className={styles.caseStudyInfoSection}>
+                    <h3>
+                        next steps
+                    </h3>
+                    <p>
+                        I decided to dive deep into software development and UX design.
+                    </p> 
+                </div>
             </div>
             <div className={styles.visit_button}>
                 <Link href="https://www.infinitemiledetroit.com/" passHref={true} >
