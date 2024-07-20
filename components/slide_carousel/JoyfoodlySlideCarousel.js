@@ -2,7 +2,7 @@ import React, { Component, useState } from 'react';
 import styles from './slide_carousel.module.css';
 import Image from 'next/image';
 import EmblaCarousel from '../emblaCarousel/emblaCarousel';
-import slide_01 from '/public/images/case_studies/Joyfoodly/mockups/Joyfoodly_case_study_01.jpg';
+import slide_01 from '../../public/images/case_studies/Joyfoodly/mockups/Joyfoodly_case_study_01.jpg';
 import slide_02 from '../../public/images/case_studies/Joyfoodly/mockups/Joyfoodly_case_study_02.jpg';
 
 const JoyfoodlySlideCarousel = () => {
