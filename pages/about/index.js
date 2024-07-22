@@ -588,32 +588,32 @@ const AboutPage = () => {
                                 className={classes.tabs_list}
                             >
                                 <a onClick={(event) => handleTabClick(event, "introduction")}>
-                                    <li style={{fontWeight: (introductionObserved) ? "bold": "normal"}}>
+                                    <li className={introductionObserved ? classes.nav_tab_active : classes.nav_tab} >
                                         introduction
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "positions")}>
-                                    <li style={{fontWeight: (positionsObserved) ? "bold": "normal"}}>
+                                    <li className={positionsObserved ? classes.nav_tab_active : classes.nav_tab} >
                                         positions
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "education")}>
-                                    <li style={{fontWeight: (educationObserved) ? "bold": "normal"}}>
+                                    <li className={educationObserved ? classes.nav_tab_active: classes.nav_tab} >
                                         education
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "awards-and-grants")}>
-                                    <li style={{fontWeight: (awardsAndGrantsObserved) ? "bold": "normal"}}>
+                                    <li className={awardsAndGrantsObserved ? classes.nav_tab_active : classes.nav_tab} >
                                         awards and grants
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "skills")}>
-                                    <li style={{fontWeight: (skillsObserved) ? "bold": "normal"}}> 
+                                    <li className={skillsObserved ? classes.nav_tab_active : classes.nav_tab} > 
                                         skills
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "certificates")}>
-                                    <li style={{fontWeight: (certificatesObserved) ? "bold": "normal"}}>
+                                    <li className={certificatesObserved ? classes.nav_tab_active : classes.nav_tab} >
                                         certificates
                                     </li>
                                 </a>

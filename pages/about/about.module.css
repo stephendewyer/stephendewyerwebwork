@@ -93,6 +93,7 @@
     color: #575B46;
     transition: color 0.2s linear;
     white-space: nowrap;
+    position: relative;
 }
 
 .tabs_list > a > li:hover {
@@ -101,6 +102,27 @@
 
 .tabs_list > li:active {
     color: #908FB2;
+}
+
+.nav_tab {
+    padding: 0 0 0 1rem;
+}
+
+.nav_tab_active {
+    font-weight: bold;
+    padding: 0 0 0 1rem;
+}
+
+.nav_tab_active::before {
+    --size: 6px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border: var(--size) solid transparent;
+    border-left: 6px solid #575B46;
+    overflow: visible;
 }
 
 .action_buttons {
@@ -334,6 +356,28 @@
     .tabs_list > a > li {
         padding: 0.5rem 1rem;
         white-space: nowrap;
+    }
+
+    .nav_tab {
+        padding: 0;
+    }
+    
+    .nav_tab_active {
+        padding: 0;
+    }
+    
+
+    .nav_tab_active::before {
+        --size: 6px;
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: auto;
+        border: var(--size) solid transparent;
+        border-bottom: 6px solid #575B46;
+        overflow: visible;
     }
     
     .about {
