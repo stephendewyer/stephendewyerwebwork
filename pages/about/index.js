@@ -15,7 +15,6 @@ import Art from '../../public/images/icons/art.svg';
 import Leadership from '../../public/images/icons/leadership.svg';
 import ArtificialIntelligence from '../../public/images/icons/artificial_intelligence.png';
 import AboutBanner from '../../public/images/about/rally_13_August_2018_stephen_dewyer_and_Erin_Maye_Quade.jpg';
-import classNames from 'classnames';
 
 const AboutPage = () => {
 
@@ -30,13 +29,13 @@ const AboutPage = () => {
                     <tbody>
                         <tr>
                             <td>
-                                Designed, developed and deployed the company’s website
+                                Designed, developed and deployed the company’s website including a client collaboration portal, which streamlined client collaborations
                             </td>
                             
                         </tr>
                         <tr>
                             <td>
-                                Streamlined client collaboration by producing a client collaboration portal via the company’s website
+                                Developed innovative design strategies using art expertise and state-of-the-art digital technologies like SvelteKit and Next.js
                             </td>
                         </tr>
                         <tr>
@@ -449,6 +448,8 @@ const AboutPage = () => {
             const entry = entries[0];
             if (entry.isIntersecting) {
                     setIntroductionObserved(true);
+                    document.getElementById("introductionTab").scrollIntoView({ behavior: 'smooth', block: 'start' });;
+
             } else {
                 setIntroductionObserved(false);
             };
@@ -588,32 +589,50 @@ const AboutPage = () => {
                                 className={classes.tabs_list}
                             >
                                 <a onClick={(event) => handleTabClick(event, "introduction")}>
-                                    <li className={introductionObserved ? classes.nav_tab_active : classes.nav_tab} >
+                                    <li 
+                                        id="introductionTab"
+                                        className={introductionObserved ? classes.nav_tab_active : classes.nav_tab} 
+                                    >
                                         introduction
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "positions")}>
-                                    <li className={positionsObserved ? classes.nav_tab_active : classes.nav_tab} >
+                                    <li 
+                                        id="positionsTab"
+                                        className={positionsObserved ? classes.nav_tab_active : classes.nav_tab} 
+                                    >
                                         positions
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "education")}>
-                                    <li className={educationObserved ? classes.nav_tab_active: classes.nav_tab} >
+                                    <li 
+                                        id="educationTab"
+                                        className={educationObserved ? classes.nav_tab_active: classes.nav_tab} 
+                                    >
                                         education
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "awards-and-grants")}>
-                                    <li className={awardsAndGrantsObserved ? classes.nav_tab_active : classes.nav_tab} >
+                                    <li 
+                                        id="awardsAndGrantsTab"
+                                        className={awardsAndGrantsObserved ? classes.nav_tab_active : classes.nav_tab} 
+                                    >
                                         awards and grants
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "skills")}>
-                                    <li className={skillsObserved ? classes.nav_tab_active : classes.nav_tab} > 
+                                    <li 
+                                        id="skillsTab"
+                                        className={skillsObserved ? classes.nav_tab_active : classes.nav_tab} 
+                                    > 
                                         skills
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "certificates")}>
-                                    <li className={certificatesObserved ? classes.nav_tab_active : classes.nav_tab} >
+                                    <li 
+                                        id="certificatesTab"
+                                        className={certificatesObserved ? classes.nav_tab_active : classes.nav_tab} 
+                                    >
                                         certificates
                                     </li>
                                 </a>
