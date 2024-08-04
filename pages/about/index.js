@@ -447,9 +447,7 @@ const AboutPage = () => {
         const introductionIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                    setIntroductionObserved(true);
-                    document.getElementById("introductionTab").scrollIntoView({ behavior: 'smooth', block: 'start' });;
-
+                setIntroductionObserved(true);
             } else {
                 setIntroductionObserved(false);
             };
