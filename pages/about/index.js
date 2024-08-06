@@ -437,6 +437,32 @@ const AboutPage = () => {
         );
     };
 
+    const introductionTabRef = useRef(null);
+
+    const [introductionTabScrollLeftPosition, setIntroductionTabScrollLeftPosition] = useState(0);
+
+    const positionsTabRef = useRef(null);
+
+    const [positionsTabScrollLeftPosition, setPositionsTabScrollLeftPosition] = useState(0);
+
+    const educationTabRef = useRef(null);
+
+    const [educationTabScrollLeftPosition, setEducationTabScrollLeftPosition] = useState(0);
+
+    const awardsAndGrantsTabRef = useRef(null);
+
+    const [ awardsAndGrantsTabScrollLeftPosition, setAwardsAndGrantsTabScrollLeftPosition] = useState(0);
+
+    const skillsTabRef = useRef(null);
+
+    const [ skillsTabScrollLeftPosition, setSkillsTabScrollLeftPosition] = useState(0);
+    // console.log("introduction tab scrollLeft position: ", introductionTabScrollLeftPosition)
+    // console.log("skills tab scrollLeft position: ", skillsTabScrollLeftPosition)
+
+    const certificatesTabRef = useRef(null);
+
+    const [certificatesTabScrollLeftPosition, setCertificatesTabScrollLeftPosition] = useState(0);
+
     const pageNavTabsScrollableRef = useRef(null);
 
     const pageNavTabsScrollableContainerRef = useRef(null);
@@ -477,6 +503,9 @@ const AboutPage = () => {
             const entry = entries[0];
             if (entry.isIntersecting) {
                 setIntroductionObserved(true);
+                if (pageNavTabsScrollableRef.current) {
+                    pageNavTabsScrollableRef.current.scrollLeft = introductionTabScrollLeftPosition;
+                };
             } else {
                 setIntroductionObserved(false);
             };
@@ -489,6 +518,9 @@ const AboutPage = () => {
             const entry = entries[0];
             if (entry.isIntersecting) {
                 setPositionsObserved(true);
+                if (pageNavTabsScrollableRef.current) {
+                    pageNavTabsScrollableRef.current.scrollLeft = positionsTabScrollLeftPosition;
+                };
             } else {
                 setPositionsObserved(false);
             };
@@ -501,6 +533,9 @@ const AboutPage = () => {
             const entry = entries[0];
             if (entry.isIntersecting) {
                 setEducationObserved(true);
+                if (pageNavTabsScrollableRef.current) {
+                    pageNavTabsScrollableRef.current.scrollLeft = educationTabScrollLeftPosition;
+                };
             } else {
                 setEducationObserved(false);
             };
@@ -513,6 +548,9 @@ const AboutPage = () => {
             const entry = entries[0];
             if (entry.isIntersecting) {
                 setAwardsAndGrantsObserved(true);
+                if (pageNavTabsScrollableRef.current) {
+                    pageNavTabsScrollableRef.current.scrollLeft = awardsAndGrantsTabScrollLeftPosition;
+                };
             } else {
                 setAwardsAndGrantsObserved(false);
             };
@@ -525,6 +563,9 @@ const AboutPage = () => {
             const entry = entries[0];
             if (entry.isIntersecting) {
                 setSkillsObserved(true);
+                if (pageNavTabsScrollableRef.current) {
+                    pageNavTabsScrollableRef.current.scrollLeft = skillsTabScrollLeftPosition;
+                };
             } else {
                 setSkillsObserved(false);
             };
@@ -537,6 +578,9 @@ const AboutPage = () => {
             const entry = entries[0];
             if (entry.isIntersecting) {
                 setCertificatesObserved(true);
+                if (pageNavTabsScrollableRef.current) {
+                    pageNavTabsScrollableRef.current.scrollLeft = certificatesTabScrollLeftPosition;
+                };
             } else {
                 setCertificatesObserved(false);
             };
@@ -574,12 +618,70 @@ const AboutPage = () => {
             setPageNavTabsScrollableContainerWidth(pageNavTabsScrollableContainerRef.current.getBoundingClientRect().width);
         };
 
+        if (introductionTabRef.current) {
+            setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+        };
+
+        if (positionsTabRef.current) {
+            setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+        };
+
+        if (educationTabRef.current) {
+            setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+        };
+
+        if (awardsAndGrantsTabRef.current) {
+            setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+        };
+
+        if (skillsTabRef.current) {
+            setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+        };
+
+        if (certificatesTabRef.current) {
+            setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+        };
+
         const handleWindowResize = () =>  {
+
             if (pageNavTabsScrollableRef.current) {
                 setPageNavTabsScrollableWidth(pageNavTabsScrollableRef.current.scrollWidth);
             };
+
             if (pageNavTabsScrollableContainerRef.current) {
                 setPageNavTabsScrollableContainerWidth(pageNavTabsScrollableContainerRef.current.getBoundingClientRect().width);
+            };
+
+            if (pageNavTabsScrollableRef.current) {
+                setPageNavTabsScrollableWidth(pageNavTabsScrollableRef.current.scrollWidth);
+            };
+    
+            if (pageNavTabsScrollableContainerRef.current) {
+                setPageNavTabsScrollableContainerWidth(pageNavTabsScrollableContainerRef.current.getBoundingClientRect().width);
+            };
+    
+            if (introductionTabRef.current) {
+                setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            };
+    
+            if (positionsTabRef.current) {
+                setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            };
+    
+            if (educationTabRef.current) {
+                setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            };
+    
+            if (awardsAndGrantsTabRef.current) {
+                setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            };
+    
+            if (skillsTabRef.current) {
+                setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            };
+
+            if (certificatesTabRef.current) {
+                setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
             };
         };
 
@@ -592,7 +694,16 @@ const AboutPage = () => {
             window.removeEventListener('scroll', handleScroll);
         };
             
-    }, [currentStickyTabsPosition, currentActionsPosition]);
+    }, [
+        currentStickyTabsPosition, 
+        currentActionsPosition, 
+        introductionTabScrollLeftPosition, 
+        positionsTabScrollLeftPosition, 
+        educationTabScrollLeftPosition, 
+        awardsAndGrantsTabScrollLeftPosition, 
+        skillsTabScrollLeftPosition, 
+        certificatesTabScrollLeftPosition
+    ]);
 
     const handleTabClick = (event, id) => {
         event.preventDefault();
@@ -652,6 +763,7 @@ const AboutPage = () => {
                             >
                                 <a onClick={(event) => handleTabClick(event, "introduction")}>
                                     <li 
+                                        ref={introductionTabRef}
                                         id="introductionTab"
                                         className={introductionObserved ? classes.nav_tab_active : classes.nav_tab} 
                                     >
@@ -660,6 +772,7 @@ const AboutPage = () => {
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "positions")}>
                                     <li 
+                                        ref={positionsTabRef}
                                         id="positionsTab"
                                         className={positionsObserved ? classes.nav_tab_active : classes.nav_tab} 
                                     >
@@ -668,6 +781,7 @@ const AboutPage = () => {
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "education")}>
                                     <li 
+                                        ref={educationTabRef}
                                         id="educationTab"
                                         className={educationObserved ? classes.nav_tab_active: classes.nav_tab} 
                                     >
@@ -676,6 +790,7 @@ const AboutPage = () => {
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "awards-and-grants")}>
                                     <li 
+                                        ref={awardsAndGrantsTabRef}
                                         id="awardsAndGrantsTab"
                                         className={awardsAndGrantsObserved ? classes.nav_tab_active : classes.nav_tab} 
                                     >
@@ -684,6 +799,7 @@ const AboutPage = () => {
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "skills")}>
                                     <li 
+                                        ref={skillsTabRef}
                                         id="skillsTab"
                                         className={skillsObserved ? classes.nav_tab_active : classes.nav_tab} 
                                     > 
@@ -692,6 +808,7 @@ const AboutPage = () => {
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "certificates")}>
                                     <li 
+                                        ref={certificatesTabRef}
                                         id="certificatesTab"
                                         className={certificatesObserved ? classes.nav_tab_active : classes.nav_tab} 
                                     >
