@@ -424,6 +424,35 @@ const AboutPage = () => {
     const [skillsObserved, setSkillsObserved] = useState(false);
     const [certificatesObserved, setCertificatesObserved] = useState(false);
 
+    const Arrow = () => {
+        return (
+          <svg 
+            id="Layer_1" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 500 500"
+            fill="currentColor"
+          >
+            <polygon points="250 250 0 0 250 0 500 250 250 500 0 500 250 250"/>
+          </svg>
+        );
+    };
+
+    const pageNavTabsScrollableRef = useRef(null);
+
+    const pageNavTabsScrollableContainerRef = useRef(null);
+
+    const [pageNavTabsScrollableLeftPosition, setPageNavTabsScrollableLeftPosition] = useState(0);
+
+    const [pageNavTabsScrollableWidth, setPageNavTabsScrollableWidth] = useState(0);
+
+    const [pageNavTabsScrollableContainerWidth, setPageNavTabsScrollableContainerWidth] = useState(0);
+
+    const handlePageNavTabsScroll = () => {
+        if (pageNavTabsScrollableRef.current) {
+            setPageNavTabsScrollableLeftPosition(pageNavTabsScrollableRef.current.scrollLeft);
+        };
+    };
+
     useEffect(() => {
 
         const options = {
@@ -537,9 +566,29 @@ const AboutPage = () => {
             };
         };
 
+        if (pageNavTabsScrollableRef.current) {
+            setPageNavTabsScrollableWidth(pageNavTabsScrollableRef.current.scrollWidth);
+        };
+
+        if (pageNavTabsScrollableContainerRef.current) {
+            setPageNavTabsScrollableContainerWidth(pageNavTabsScrollableContainerRef.current.getBoundingClientRect().width);
+        };
+
+        const handleWindowResize = () =>  {
+            if (pageNavTabsScrollableRef.current) {
+                setPageNavTabsScrollableWidth(pageNavTabsScrollableRef.current.scrollWidth);
+            };
+            if (pageNavTabsScrollableContainerRef.current) {
+                setPageNavTabsScrollableContainerWidth(pageNavTabsScrollableContainerRef.current.getBoundingClientRect().width);
+            };
+        };
+
+        window.addEventListener("resize", handleWindowResize);
+
         window.addEventListener('scroll', handleScroll, { passive: true });
 
         return () => {
+            window.removeEventListener("resize", handleWindowResize);
             window.removeEventListener('scroll', handleScroll);
         };
             
@@ -549,6 +598,18 @@ const AboutPage = () => {
         event.preventDefault();
         const targetElement = document.getElementById(id);
         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
+    const clickPageNavTabsScrollLeftHandler = () => {
+        if (pageNavTabsScrollableRef.current) {
+            pageNavTabsScrollableRef.current.scrollLeft = pageNavTabsScrollableRef.current.scrollLeft - (pageNavTabsScrollableContainerWidth/2);
+        };
+    };
+
+    const clickPageNavTabsScrollRightHandler = () => {
+        if (pageNavTabsScrollableRef.current) {
+            pageNavTabsScrollableRef.current.scrollLeft = pageNavTabsScrollableRef.current.scrollLeft + (pageNavTabsScrollableContainerWidth/2);
+        };
     };
 
     return (
@@ -581,10 +642,13 @@ const AboutPage = () => {
                         style={{zIndex: "2"}}
                     >
                         <div 
-                            className={tabsSticky ? classes.tabs_inner_sticky : classes.tabs_inner}
+                            ref={pageNavTabsScrollableContainerRef}
+                            className={tabsSticky ? classes.tabs_inner_sticky : classes.tabs_inner} 
                         >
                             <ul 
-                                className={classes.tabs_list}
+                                ref={pageNavTabsScrollableRef}
+                                className={classes.tabs_list} 
+                                onScroll={handlePageNavTabsScroll}
                             >
                                 <a onClick={(event) => handleTabClick(event, "introduction")}>
                                     <li 
@@ -635,6 +699,24 @@ const AboutPage = () => {
                                     </li>
                                 </a>
                             </ul>
+                            <button
+                                className={classes.arrow_left_scroll}
+                                style={{display: (pageNavTabsScrollableLeftPosition === 0) ? "none" : ""}}
+                                onClick={clickPageNavTabsScrollLeftHandler}
+                            >
+                                <div className={classes.arrow_container}>
+                                    <Arrow />
+                                </div>
+                            </button>
+                            <button 
+                                className={classes.arrow_right_scroll}
+                                style={{display: (pageNavTabsScrollableLeftPosition >= (pageNavTabsScrollableWidth - pageNavTabsScrollableContainerWidth)) ? "none" : ""}}
+                                onClick={clickPageNavTabsScrollRightHandler}
+                            >
+                                <div className={classes.arrow_container}>
+                                    <Arrow />
+                                </div>
+                            </button>
                         </div>
                     </div>
                     <div className={classes.about}>

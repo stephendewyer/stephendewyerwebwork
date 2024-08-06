@@ -1,10 +1,20 @@
 import { useState } from 'react';
 import styles from './ButtonPrevious.module.css';
-import Image from 'next/image';
-import previousButtonDefault from '../../../public/images/arrows/arrow_links/arrow_previous_01.svg';
-import previousButtonHover from '../../../public/images/arrows/arrow_links/arrow_previous_02.svg';
 
 const ButtonPrevious = (props) => {
+
+    const Arrow = () => {
+        return (
+          <svg 
+            id="Layer_1" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 500 500"
+            fill="currentColor"
+          >
+            <polygon points="250 250 0 0 250 0 500 250 250 500 0 500 250 250"/>
+          </svg>
+        );
+    };
 
     const [isHovering, setIsHovered] = useState(false);
     const onMouseEnter = () => setIsHovered(true);
@@ -29,10 +39,7 @@ const ButtonPrevious = (props) => {
                         className={styles.arrow} 
                         style={{ marginRight: isHovering ? '24px' : '12px', color: isHovering ? '#90947E': '#575B46', borderColor: isHovering ? '#90947E': '#575B46' }}
                     >
-                        {isHovering ? 
-                                <Image src={previousButtonHover}  layout="responsive" alt="previous button arrow" priority /> :
-                                <Image src={previousButtonDefault}  layout="responsive" alt="previous button arrow" priority />
-                            }
+                        <Arrow />
                     </div>
                     <span className={styles.caseStudyParagraphMobile}>previous<br />case<br />study</span>
                     <span className={styles.caseStudyParagraphDesktop}>previous case study</span>

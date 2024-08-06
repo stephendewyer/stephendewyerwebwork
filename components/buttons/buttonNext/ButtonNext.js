@@ -1,10 +1,20 @@
 import { useState  } from 'react';
 import styles from './ButtonNext.module.css';
-import Image from 'next/image';
-import nextButtonDefault from '../../../public/images/arrows/arrow_links/arrow_next_01.svg';
-import nextButtonHover from '../../../public/images/arrows/arrow_links/arrow_next_02.svg';
 
 const ButtonNext = (props) => {
+
+    const Arrow = () => {
+        return (
+          <svg 
+            id="Layer_1" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 500 500"
+            fill="currentColor"
+          >
+            <polygon points="250 250 0 0 250 0 500 250 250 500 0 500 250 250"/>
+          </svg>
+        );
+    };
 
     const [isHovering, setIsHovered] = useState(false);
     const onMouseEnter = () => setIsHovered(true);
@@ -31,10 +41,7 @@ const ButtonNext = (props) => {
                         className={styles.arrow}
                         style={{ marginLeft: isHovering ? '24px' : '12px', color: isHovering ? '#90947E': '#575B46', borderColor: isHovering ? '#90947E': '#575B46' }}
                     >
-                        {isHovering ? 
-                            <Image src={nextButtonHover}  layout="responsive" alt="next button arrow" priority /> :
-                            <Image src={nextButtonDefault}  layout="responsive" alt="next button arrow" priority />
-                        }
+                        <Arrow />
                     </div>
                 </div>
             </div>
