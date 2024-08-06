@@ -467,8 +467,6 @@ const AboutPage = () => {
 
     const [pageNavTabsScrollableLeftPosition, setPageNavTabsScrollableLeftPosition] = useState(0);
 
-    const [pageNavTabsScrollableRightPosition, setPageNavTabsScrollableRightPosition] = useState(0);
-
     const [pageNavTabsScrollableWidth, setPageNavTabsScrollableWidth] = useState(0);
 
     const [pageNavTabsScrollableContainerWidth, setPageNavTabsScrollableContainerWidth] = useState(0);
@@ -502,9 +500,9 @@ const AboutPage = () => {
         const introductionIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                if (pageNavTabsScrollableRef.current) {
-                    pageNavTabsScrollableRef.current.scrollLeft = introductionTabScrollLeftPosition;
-                };
+                // if (pageNavTabsScrollableRef.current) {
+                //     pageNavTabsScrollableRef.current.scrollLeft = introductionTabScrollLeftPosition;
+                // };
                 setIntroductionObserved(true);
             } else {
                 setIntroductionObserved(false);
@@ -517,9 +515,9 @@ const AboutPage = () => {
         const positionsIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                if (pageNavTabsScrollableRef.current) {
-                    pageNavTabsScrollableRef.current.scrollLeft = positionsTabScrollLeftPosition;
-                };
+                // if (pageNavTabsScrollableRef.current) {
+                //     pageNavTabsScrollableRef.current.scrollLeft = positionsTabScrollLeftPosition;
+                // };
                 setPositionsObserved(true);
             } else {
                 setPositionsObserved(false);
@@ -532,9 +530,9 @@ const AboutPage = () => {
         const educationIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                if (pageNavTabsScrollableRef.current) {
-                    pageNavTabsScrollableRef.current.scrollLeft = educationTabScrollLeftPosition;
-                };
+                // if (pageNavTabsScrollableRef.current) {
+                //     pageNavTabsScrollableRef.current.scrollLeft = educationTabScrollLeftPosition;
+                // };
                 setEducationObserved(true);
             } else {
                 setEducationObserved(false);
@@ -547,9 +545,9 @@ const AboutPage = () => {
         const awardsAndGrantsIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                if (pageNavTabsScrollableRef.current) {
-                    pageNavTabsScrollableRef.current.scrollLeft = awardsAndGrantsTabScrollLeftPosition;
-                };
+                // if (pageNavTabsScrollableRef.current) {
+                //     pageNavTabsScrollableRef.current.scrollLeft = awardsAndGrantsTabScrollLeftPosition;
+                // };
                 setAwardsAndGrantsObserved(true);
             } else {
                 setAwardsAndGrantsObserved(false);
@@ -562,9 +560,9 @@ const AboutPage = () => {
         const skillsIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                if (pageNavTabsScrollableRef.current) {
-                    pageNavTabsScrollableRef.current.scrollLeft = skillsTabScrollLeftPosition;
-                };
+                // if (pageNavTabsScrollableRef.current) {
+                //     pageNavTabsScrollableRef.current.scrollLeft = skillsTabScrollLeftPosition;
+                // };
                 setSkillsObserved(true);
             } else {
                 setSkillsObserved(false);
@@ -577,9 +575,9 @@ const AboutPage = () => {
         const certificatesIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                if (pageNavTabsScrollableRef.current) {
-                    pageNavTabsScrollableRef.current.scrollLeft = certificatesTabScrollLeftPosition;
-                };
+                // if (pageNavTabsScrollableRef.current) {
+                //     pageNavTabsScrollableRef.current.scrollLeft = certificatesTabScrollLeftPosition;
+                // };
                 setCertificatesObserved(true);
             } else {
                 setCertificatesObserved(false);
