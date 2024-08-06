@@ -456,8 +456,6 @@ const AboutPage = () => {
     const skillsTabRef = useRef(null);
 
     const [ skillsTabScrollLeftPosition, setSkillsTabScrollLeftPosition] = useState(0);
-    // console.log("introduction tab scrollLeft position: ", introductionTabScrollLeftPosition)
-    // console.log("skills tab scrollLeft position: ", skillsTabScrollLeftPosition)
 
     const certificatesTabRef = useRef(null);
 
@@ -468,6 +466,8 @@ const AboutPage = () => {
     const pageNavTabsScrollableContainerRef = useRef(null);
 
     const [pageNavTabsScrollableLeftPosition, setPageNavTabsScrollableLeftPosition] = useState(0);
+
+    const [pageNavTabsScrollableRightPosition, setPageNavTabsScrollableRightPosition] = useState(0);
 
     const [pageNavTabsScrollableWidth, setPageNavTabsScrollableWidth] = useState(0);
 
@@ -502,10 +502,10 @@ const AboutPage = () => {
         const introductionIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                setIntroductionObserved(true);
                 if (pageNavTabsScrollableRef.current) {
                     pageNavTabsScrollableRef.current.scrollLeft = introductionTabScrollLeftPosition;
                 };
+                setIntroductionObserved(true);
             } else {
                 setIntroductionObserved(false);
             };
@@ -517,10 +517,10 @@ const AboutPage = () => {
         const positionsIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                setPositionsObserved(true);
                 if (pageNavTabsScrollableRef.current) {
                     pageNavTabsScrollableRef.current.scrollLeft = positionsTabScrollLeftPosition;
                 };
+                setPositionsObserved(true);
             } else {
                 setPositionsObserved(false);
             };
@@ -532,10 +532,10 @@ const AboutPage = () => {
         const educationIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                setEducationObserved(true);
                 if (pageNavTabsScrollableRef.current) {
                     pageNavTabsScrollableRef.current.scrollLeft = educationTabScrollLeftPosition;
                 };
+                setEducationObserved(true);
             } else {
                 setEducationObserved(false);
             };
@@ -547,10 +547,10 @@ const AboutPage = () => {
         const awardsAndGrantsIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                setAwardsAndGrantsObserved(true);
                 if (pageNavTabsScrollableRef.current) {
                     pageNavTabsScrollableRef.current.scrollLeft = awardsAndGrantsTabScrollLeftPosition;
                 };
+                setAwardsAndGrantsObserved(true);
             } else {
                 setAwardsAndGrantsObserved(false);
             };
@@ -562,10 +562,10 @@ const AboutPage = () => {
         const skillsIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                setSkillsObserved(true);
                 if (pageNavTabsScrollableRef.current) {
                     pageNavTabsScrollableRef.current.scrollLeft = skillsTabScrollLeftPosition;
                 };
+                setSkillsObserved(true);
             } else {
                 setSkillsObserved(false);
             };
@@ -577,10 +577,10 @@ const AboutPage = () => {
         const certificatesIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                setCertificatesObserved(true);
                 if (pageNavTabsScrollableRef.current) {
                     pageNavTabsScrollableRef.current.scrollLeft = certificatesTabScrollLeftPosition;
                 };
+                setCertificatesObserved(true);
             } else {
                 setCertificatesObserved(false);
             };
@@ -592,6 +592,10 @@ const AboutPage = () => {
         setCurrentStickyTabsPosition(stickyTabsRef.current.getBoundingClientRect().top + window.scrollY);
 
         setCurrentActionsPosition(actionsRef.current.getBoundingClientRect().top + window.scrollY);
+
+        console.log("page nav tabs scrollable left position: ", pageNavTabsScrollableLeftPosition);
+        console.log("certificates tab scrollLeft position: ", certificatesTabScrollLeftPosition)
+        console.log("container limit: ", (pageNavTabsScrollableWidth - pageNavTabsScrollableContainerWidth))
 
         const handleScroll = () => {
 
@@ -619,27 +623,63 @@ const AboutPage = () => {
         };
 
         if (introductionTabRef.current) {
-            setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            if (introductionTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
+                setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            } else if (introductionTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft);
+            } else {
+                setIntroductionTabScrollLeftPosition(0);
+            };
         };
 
         if (positionsTabRef.current) {
-            setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            if (positionsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
+                setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            } else if (positionsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft);
+            }  else {
+                setPositionsTabScrollLeftPosition(0);
+            };            
         };
 
         if (educationTabRef.current) {
-            setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            if (educationTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
+                setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            } else if (educationTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft);
+            } else {
+                setEducationTabScrollLeftPosition(0);
+            };            
         };
 
         if (awardsAndGrantsTabRef.current) {
-            setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            if (awardsAndGrantsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
+                setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            } else if (awardsAndGrantsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft);
+            } else {
+                setAwardsAndGrantsTabScrollLeftPosition(0);
+            };            
         };
 
         if (skillsTabRef.current) {
-            setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            if (skillsTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth) {
+                setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            } else if (skillsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft);
+            } else {
+                setSkillsTabScrollLeftPosition(0);
+            };            
         };
 
         if (certificatesTabRef.current) {
-            setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            if (certificatesTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth) {
+                setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            } else if (certificatesTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft);
+            }  else {
+                setCertificatesTabScrollLeftPosition(0);
+            };
         };
 
         const handleWindowResize = () =>  {
@@ -661,27 +701,63 @@ const AboutPage = () => {
             };
     
             if (introductionTabRef.current) {
-                setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                if (introductionTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
+                    setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                } else if (introductionTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                    setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft);
+                } else {
+                    setIntroductionTabScrollLeftPosition(0);
+                };
             };
     
             if (positionsTabRef.current) {
-                setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                if (positionsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
+                    setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                } else if (positionsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                    setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft);
+                }  else {
+                    setPositionsTabScrollLeftPosition(0);
+                };            
             };
     
             if (educationTabRef.current) {
-                setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                if (educationTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
+                    setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                } else if (educationTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                    setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft);
+                } else {
+                    setEducationTabScrollLeftPosition(0);
+                };            
             };
     
             if (awardsAndGrantsTabRef.current) {
-                setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                if (awardsAndGrantsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
+                    setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                } else if (awardsAndGrantsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                    setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft);
+                } else {
+                    setAwardsAndGrantsTabScrollLeftPosition(0);
+                };            
             };
     
             if (skillsTabRef.current) {
-                setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                if (skillsTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth) {
+                    setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                } else if (skillsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                    setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft);
+                } else {
+                    setSkillsTabScrollLeftPosition(0);
+                };            
             };
-
+    
             if (certificatesTabRef.current) {
-                setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                if (certificatesTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth) {
+                    setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                } else if (certificatesTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
+                    setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft);
+                }  else {
+                    setCertificatesTabScrollLeftPosition(0);
+                };
             };
         };
 
@@ -694,16 +770,7 @@ const AboutPage = () => {
             window.removeEventListener('scroll', handleScroll);
         };
             
-    }, [
-        currentStickyTabsPosition, 
-        currentActionsPosition, 
-        introductionTabScrollLeftPosition, 
-        positionsTabScrollLeftPosition, 
-        educationTabScrollLeftPosition, 
-        awardsAndGrantsTabScrollLeftPosition, 
-        skillsTabScrollLeftPosition, 
-        certificatesTabScrollLeftPosition
-    ]);
+    }, [currentStickyTabsPosition, currentActionsPosition, introductionTabScrollLeftPosition, positionsTabScrollLeftPosition, educationTabScrollLeftPosition, awardsAndGrantsTabScrollLeftPosition, skillsTabScrollLeftPosition, certificatesTabScrollLeftPosition, pageNavTabsScrollableContainerWidth, pageNavTabsScrollableLeftPosition, pageNavTabsScrollableWidth]);
 
     const handleTabClick = (event, id) => {
         event.preventDefault();
@@ -827,7 +894,7 @@ const AboutPage = () => {
                             </button>
                             <button 
                                 className={classes.arrow_right_scroll}
-                                style={{display: (pageNavTabsScrollableLeftPosition >= (pageNavTabsScrollableWidth - pageNavTabsScrollableContainerWidth)) ? "none" : ""}}
+                                style={{display: (pageNavTabsScrollableLeftPosition >= (pageNavTabsScrollableWidth - pageNavTabsScrollableContainerWidth - 1) ) ? "none" : ""}}
                                 onClick={clickPageNavTabsScrollRightHandler}
                             >
                                 <div className={classes.arrow_container}>
