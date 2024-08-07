@@ -15,6 +15,7 @@ import Art from '../../public/images/icons/art.svg';
 import Leadership from '../../public/images/icons/leadership.svg';
 import ArtificialIntelligence from '../../public/images/icons/artificial_intelligence.png';
 import AboutBanner from '../../public/images/about/rally_13_August_2018_stephen_dewyer_and_Erin_Maye_Quade.jpg';
+import { useInView } from "react-intersection-observer";
 
 const AboutPage = () => {
 
@@ -416,26 +417,6 @@ const AboutPage = () => {
     const awardsAndGrantsRef = useRef(null);
     const skillsRef = useRef(null);
     const certificatesRef = useRef(null);
-    
-    const [introductionObserved, setIntroductionObserved] = useState(false);
-    const [positionsObserved, setPositionsObserved] = useState(false);
-    const [educationObserved, setEducationObserved] = useState(false);
-    const [awardsAndGrantsObserved, setAwardsAndGrantsObserved] = useState(false);
-    const [skillsObserved, setSkillsObserved] = useState(false);
-    const [certificatesObserved, setCertificatesObserved] = useState(false);
-
-    const Arrow = () => {
-        return (
-          <svg 
-            id="Layer_1" 
-            xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 500 500"
-            fill="currentColor"
-          >
-            <polygon points="250 250 0 0 250 0 500 250 250 500 0 500 250 250"/>
-          </svg>
-        );
-    };
 
     const introductionTabRef = useRef(null);
 
@@ -470,6 +451,128 @@ const AboutPage = () => {
     const [pageNavTabsScrollableWidth, setPageNavTabsScrollableWidth] = useState(0);
 
     const [pageNavTabsScrollableContainerWidth, setPageNavTabsScrollableContainerWidth] = useState(0);
+    
+    const [introductionObserved, setIntroductionObserved] = useState(false);
+
+    const [pageNavTabClicked, setPageNavTabClicked] = useState(false);
+    const [pageNavTabClickedId, setPageNavTabClickedId] = useState(null);
+
+    const handleTabClick = (event, id) => {
+        setPageNavTabClicked(true);
+        setPageNavTabClickedId(id);
+        event.preventDefault();
+        const targetElement = document.getElementById(id);
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
+    useEffect(() =>  {
+        if (introductionObserved) {
+            if (pageNavTabsScrollableRef.current) {
+                if (pageNavTabClicked && pageNavTabClickedId === introductionRef.current.id) {
+                    pageNavTabsScrollableRef.current.scrollLeft = introductionTabScrollLeftPosition;
+                    setPageNavTabClicked(false);
+                } else if (!pageNavTabClicked) {
+                    pageNavTabsScrollableRef.current.scrollLeft = introductionTabScrollLeftPosition;
+                } else {
+                    return;
+                };                
+            };
+        };
+    }, [introductionObserved, introductionTabScrollLeftPosition, pageNavTabClicked, pageNavTabClickedId]);
+
+    const [positionsObserved, setPositionsObserved] = useState(false);
+
+    useEffect(() => {
+        if (positionsObserved) {
+            if (pageNavTabsScrollableRef.current) {
+                if (pageNavTabClicked && pageNavTabClickedId === positionsTabRef.current.id) {
+                    pageNavTabsScrollableRef.current.scrollLeft = positionsTabScrollLeftPosition;
+                    setPageNavTabClicked(false);
+                } else if (!pageNavTabClicked) {
+                    pageNavTabsScrollableRef.current.scrollLeft = positionsTabScrollLeftPosition;
+                } else {
+                    return;
+                };
+            };
+        };
+    }, [pageNavTabClicked, pageNavTabClickedId, positionsObserved, positionsTabScrollLeftPosition]);
+
+    const [educationObserved, setEducationObserved] = useState(false);
+
+    useEffect(() => {
+        if (educationObserved) {
+            if (pageNavTabsScrollableRef.current) {
+                if (pageNavTabClicked && pageNavTabClickedId === educationTabRef.current.id) {
+                    pageNavTabsScrollableRef.current.scrollLeft = educationTabScrollLeftPosition;
+                } else if (!pageNavTabClicked) {
+                    pageNavTabsScrollableRef.current.scrollLeft = educationTabScrollLeftPosition;
+                } else {
+                    return;
+                };                
+            };
+        };
+    }, [educationObserved, educationTabScrollLeftPosition, pageNavTabClicked, pageNavTabClickedId]);
+
+    const [awardsAndGrantsObserved, setAwardsAndGrantsObserved] = useState(false);
+
+    useEffect(() => {
+        if (awardsAndGrantsObserved) {
+            if (pageNavTabsScrollableRef.current) {
+                if (pageNavTabClicked && pageNavTabClickedId === awardsAndGrantsRef.current.id) {
+                    pageNavTabsScrollableRef.current.scrollLeft = awardsAndGrantsTabScrollLeftPosition;
+                } else if (!pageNavTabClicked) {
+                    pageNavTabsScrollableRef.current.scrollLeft = awardsAndGrantsTabScrollLeftPosition;
+                } else {
+                    return;
+                };                
+            };
+        };
+    }, [awardsAndGrantsObserved, awardsAndGrantsTabScrollLeftPosition, pageNavTabClicked, pageNavTabClickedId]);
+
+    const [skillsObserved, setSkillsObserved] = useState(false);
+
+    useEffect(() => {
+        if (skillsObserved) {
+            if (pageNavTabsScrollableRef.current) {
+                if (pageNavTabClicked && pageNavTabClickedId === skillsRef.current.id) {
+                    pageNavTabsScrollableRef.current.scrollLeft = skillsTabScrollLeftPosition;
+                } else if (!pageNavTabClicked) {
+                    pageNavTabsScrollableRef.current.scrollLeft = skillsTabScrollLeftPosition;
+                } else {
+                    return;
+                };                
+            };
+        };
+    }, [pageNavTabClicked, pageNavTabClickedId, skillsObserved, skillsTabScrollLeftPosition]);
+
+    const [certificatesObserved, setCertificatesObserved] = useState(false);
+
+    useEffect(() => {
+        if (certificatesObserved) {
+            if (pageNavTabsScrollableRef.current) {
+                if (pageNavTabClicked && pageNavTabClickedId === certificatesRef.current.id) {
+                    pageNavTabsScrollableRef.current.scrollLeft = certificatesTabScrollLeftPosition;
+                } else if (!pageNavTabClicked) {
+                    pageNavTabsScrollableRef.current.scrollLeft = certificatesTabScrollLeftPosition;
+                } else {
+                    return;
+                };                
+            };
+        };
+    }, [certificatesObserved, certificatesTabScrollLeftPosition, pageNavTabClicked, pageNavTabClickedId])
+
+    const Arrow = () => {
+        return (
+          <svg 
+            id="Layer_1" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 500 500"
+            fill="currentColor"
+          >
+            <polygon points="250 250 0 0 250 0 500 250 250 500 0 500 250 250"/>
+          </svg>
+        );
+    };
 
     const handlePageNavTabsScroll = () => {
         if (pageNavTabsScrollableRef.current) {
@@ -500,9 +603,6 @@ const AboutPage = () => {
         const introductionIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                // if (pageNavTabsScrollableRef.current) {
-                //     pageNavTabsScrollableRef.current.scrollLeft = introductionTabScrollLeftPosition;
-                // };
                 setIntroductionObserved(true);
             } else {
                 setIntroductionObserved(false);
@@ -515,9 +615,6 @@ const AboutPage = () => {
         const positionsIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                // if (pageNavTabsScrollableRef.current) {
-                //     pageNavTabsScrollableRef.current.scrollLeft = positionsTabScrollLeftPosition;
-                // };
                 setPositionsObserved(true);
             } else {
                 setPositionsObserved(false);
@@ -530,9 +627,6 @@ const AboutPage = () => {
         const educationIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                // if (pageNavTabsScrollableRef.current) {
-                //     pageNavTabsScrollableRef.current.scrollLeft = educationTabScrollLeftPosition;
-                // };
                 setEducationObserved(true);
             } else {
                 setEducationObserved(false);
@@ -545,9 +639,6 @@ const AboutPage = () => {
         const awardsAndGrantsIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                // if (pageNavTabsScrollableRef.current) {
-                //     pageNavTabsScrollableRef.current.scrollLeft = awardsAndGrantsTabScrollLeftPosition;
-                // };
                 setAwardsAndGrantsObserved(true);
             } else {
                 setAwardsAndGrantsObserved(false);
@@ -560,9 +651,6 @@ const AboutPage = () => {
         const skillsIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                // if (pageNavTabsScrollableRef.current) {
-                //     pageNavTabsScrollableRef.current.scrollLeft = skillsTabScrollLeftPosition;
-                // };
                 setSkillsObserved(true);
             } else {
                 setSkillsObserved(false);
@@ -575,9 +663,6 @@ const AboutPage = () => {
         const certificatesIntersectingHandler = (entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
-                // if (pageNavTabsScrollableRef.current) {
-                //     pageNavTabsScrollableRef.current.scrollLeft = certificatesTabScrollLeftPosition;
-                // };
                 setCertificatesObserved(true);
             } else {
                 setCertificatesObserved(false);
@@ -590,10 +675,6 @@ const AboutPage = () => {
         setCurrentStickyTabsPosition(stickyTabsRef.current.getBoundingClientRect().top + window.scrollY);
 
         setCurrentActionsPosition(actionsRef.current.getBoundingClientRect().top + window.scrollY);
-
-        console.log("page nav tabs scrollable left position: ", pageNavTabsScrollableLeftPosition);
-        console.log("certificates tab scrollLeft position: ", certificatesTabScrollLeftPosition)
-        console.log("container limit: ", (pageNavTabsScrollableWidth - pageNavTabsScrollableContainerWidth))
 
         const handleScroll = () => {
 
@@ -769,12 +850,6 @@ const AboutPage = () => {
         };
             
     }, [currentStickyTabsPosition, currentActionsPosition, introductionTabScrollLeftPosition, positionsTabScrollLeftPosition, educationTabScrollLeftPosition, awardsAndGrantsTabScrollLeftPosition, skillsTabScrollLeftPosition, certificatesTabScrollLeftPosition, pageNavTabsScrollableContainerWidth, pageNavTabsScrollableLeftPosition, pageNavTabsScrollableWidth]);
-
-    const handleTabClick = (event, id) => {
-        event.preventDefault();
-        const targetElement = document.getElementById(id);
-        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    };
 
     const clickPageNavTabsScrollLeftHandler = () => {
         if (pageNavTabsScrollableRef.current) {
