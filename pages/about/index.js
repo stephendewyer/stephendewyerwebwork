@@ -15,7 +15,6 @@ import Art from '../../public/images/icons/art.svg';
 import Leadership from '../../public/images/icons/leadership.svg';
 import ArtificialIntelligence from '../../public/images/icons/artificial_intelligence.png';
 import AboutBanner from '../../public/images/about/rally_13_August_2018_stephen_dewyer_and_Erin_Maye_Quade.jpg';
-import { useInView } from "react-intersection-observer";
 
 const AboutPage = () => {
 
@@ -468,7 +467,7 @@ const AboutPage = () => {
     useEffect(() =>  {
         if (introductionObserved) {
             if (pageNavTabsScrollableRef.current) {
-                if (pageNavTabClicked && pageNavTabClickedId === introductionRef.current.id) {
+                if (pageNavTabClicked && pageNavTabClickedId === "introduction") {
                     pageNavTabsScrollableRef.current.scrollLeft = introductionTabScrollLeftPosition;
                     setPageNavTabClicked(false);
                 } else if (!pageNavTabClicked) {
@@ -485,7 +484,7 @@ const AboutPage = () => {
     useEffect(() => {
         if (positionsObserved) {
             if (pageNavTabsScrollableRef.current) {
-                if (pageNavTabClicked && pageNavTabClickedId === positionsTabRef.current.id) {
+                if (pageNavTabClicked && pageNavTabClickedId === "postions") {
                     pageNavTabsScrollableRef.current.scrollLeft = positionsTabScrollLeftPosition;
                     setPageNavTabClicked(false);
                 } else if (!pageNavTabClicked) {
@@ -502,8 +501,9 @@ const AboutPage = () => {
     useEffect(() => {
         if (educationObserved) {
             if (pageNavTabsScrollableRef.current) {
-                if (pageNavTabClicked && pageNavTabClickedId === educationTabRef.current.id) {
+                if (pageNavTabClicked && pageNavTabClickedId === "education") {
                     pageNavTabsScrollableRef.current.scrollLeft = educationTabScrollLeftPosition;
+                    setPageNavTabClicked(false);
                 } else if (!pageNavTabClicked) {
                     pageNavTabsScrollableRef.current.scrollLeft = educationTabScrollLeftPosition;
                 } else {
@@ -518,8 +518,9 @@ const AboutPage = () => {
     useEffect(() => {
         if (awardsAndGrantsObserved) {
             if (pageNavTabsScrollableRef.current) {
-                if (pageNavTabClicked && pageNavTabClickedId === awardsAndGrantsRef.current.id) {
+                if (pageNavTabClicked && pageNavTabClickedId === "awards-and-grants") {
                     pageNavTabsScrollableRef.current.scrollLeft = awardsAndGrantsTabScrollLeftPosition;
+                    setPageNavTabClicked(false);
                 } else if (!pageNavTabClicked) {
                     pageNavTabsScrollableRef.current.scrollLeft = awardsAndGrantsTabScrollLeftPosition;
                 } else {
@@ -534,8 +535,9 @@ const AboutPage = () => {
     useEffect(() => {
         if (skillsObserved) {
             if (pageNavTabsScrollableRef.current) {
-                if (pageNavTabClicked && pageNavTabClickedId === skillsRef.current.id) {
+                if (pageNavTabClicked && pageNavTabClickedId === "skills") {
                     pageNavTabsScrollableRef.current.scrollLeft = skillsTabScrollLeftPosition;
+                    setPageNavTabClicked(false);
                 } else if (!pageNavTabClicked) {
                     pageNavTabsScrollableRef.current.scrollLeft = skillsTabScrollLeftPosition;
                 } else {
@@ -550,8 +552,9 @@ const AboutPage = () => {
     useEffect(() => {
         if (certificatesObserved) {
             if (pageNavTabsScrollableRef.current) {
-                if (pageNavTabClicked && pageNavTabClickedId === certificatesRef.current.id) {
+                if (pageNavTabClicked && pageNavTabClickedId === "certificates") {
                     pageNavTabsScrollableRef.current.scrollLeft = certificatesTabScrollLeftPosition;
+                    setPageNavTabClicked(false);
                 } else if (!pageNavTabClicked) {
                     pageNavTabsScrollableRef.current.scrollLeft = certificatesTabScrollLeftPosition;
                 } else {
