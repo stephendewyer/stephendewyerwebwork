@@ -421,25 +421,37 @@ const AboutPage = () => {
 
     const [introductionTabScrollLeftPosition, setIntroductionTabScrollLeftPosition] = useState(0);
 
+    const [introductionTabWidth, setIntroductionTabWidth] = useState(0);
+
     const positionsTabRef = useRef(null);
 
     const [positionsTabScrollLeftPosition, setPositionsTabScrollLeftPosition] = useState(0);
+
+    const [positionsTabWidth, setPositionsTabWidth] = useState(0);
 
     const educationTabRef = useRef(null);
 
     const [educationTabScrollLeftPosition, setEducationTabScrollLeftPosition] = useState(0);
 
+    const [educationTabWidth, setEducationTabWidth] = useState(0);
+
     const awardsAndGrantsTabRef = useRef(null);
 
     const [ awardsAndGrantsTabScrollLeftPosition, setAwardsAndGrantsTabScrollLeftPosition] = useState(0);
+
+    const [ awardsAndGrantsTabWidth, setAwardsAndGrantsTabWidth] = useState(0);
 
     const skillsTabRef = useRef(null);
 
     const [ skillsTabScrollLeftPosition, setSkillsTabScrollLeftPosition] = useState(0);
 
+    const [ skillsTabWidth, setSkillsTabWidth ] = useState(0);
+
     const certificatesTabRef = useRef(null);
 
     const [certificatesTabScrollLeftPosition, setCertificatesTabScrollLeftPosition] = useState(0);
+
+    const [ certificatesTabWidth, setCertificatesTabWidth ] = useState(0);
 
     const pageNavTabsScrollableRef = useRef(null);
 
@@ -705,8 +717,9 @@ const AboutPage = () => {
         };
 
         if (introductionTabRef.current) {
-            if (introductionTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
-                setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            setIntroductionTabWidth(introductionTabRef.current.getBoundingClientRect().width);
+            if (introductionTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth/2)) {
+                setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - introductionTabWidth/2));
             } else if (introductionTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                 setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft);
             } else {
@@ -715,8 +728,9 @@ const AboutPage = () => {
         };
 
         if (positionsTabRef.current) {
-            if (positionsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
-                setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            setPositionsTabWidth(positionsTabRef.current.getBoundingClientRect().width);
+            if (positionsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth/2)) {
+                setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - positionsTabWidth/2));
             } else if (positionsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                 setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft);
             }  else {
@@ -725,8 +739,9 @@ const AboutPage = () => {
         };
 
         if (educationTabRef.current) {
-            if (educationTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
-                setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            setEducationTabWidth(educationTabRef.current.getBoundingClientRect().width);
+            if (educationTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth/2)) {
+                setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - educationTabWidth/2));
             } else if (educationTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                 setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft);
             } else {
@@ -735,8 +750,9 @@ const AboutPage = () => {
         };
 
         if (awardsAndGrantsTabRef.current) {
-            if (awardsAndGrantsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
-                setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            setAwardsAndGrantsTabWidth(awardsAndGrantsTabRef.current.getBoundingClientRect().width);
+            if (awardsAndGrantsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth/2)) {
+                setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - awardsAndGrantsTabWidth/2));
             } else if (awardsAndGrantsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                 setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft);
             } else {
@@ -745,8 +761,9 @@ const AboutPage = () => {
         };
 
         if (skillsTabRef.current) {
-            if (skillsTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth) {
-                setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            setSkillsTabWidth(skillsTabRef.current.getBoundingClientRect().width);
+            if (skillsTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth/2) {
+                setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - skillsTabWidth/2));
             } else if (skillsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                 setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft);
             } else {
@@ -755,8 +772,9 @@ const AboutPage = () => {
         };
 
         if (certificatesTabRef.current) {
-            if (certificatesTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth) {
-                setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+            setCertificatesTabWidth(certificatesTabRef.current.getBoundingClientRect().width);
+            if (certificatesTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth/2) {
+                setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - certificatesTabWidth/2));
             } else if (certificatesTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                 setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft);
             }  else {
@@ -783,8 +801,9 @@ const AboutPage = () => {
             };
     
             if (introductionTabRef.current) {
-                if (introductionTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
-                    setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                setIntroductionTabWidth(introductionTabRef.current.getBoundingClientRect.width);
+                if (introductionTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth/2)) {
+                    setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - introductionTabWidth/2));
                 } else if (introductionTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                     setIntroductionTabScrollLeftPosition(introductionTabRef.current.offsetLeft);
                 } else {
@@ -793,8 +812,9 @@ const AboutPage = () => {
             };
     
             if (positionsTabRef.current) {
-                if (positionsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
-                    setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                setPositionsTabWidth(positionsTabRef.current.getBoundingClientRect().width);
+                if (positionsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth/2)) {
+                    setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - positionsTabWidth/2));
                 } else if (positionsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                     setPositionsTabScrollLeftPosition(positionsTabRef.current.offsetLeft);
                 }  else {
@@ -803,8 +823,9 @@ const AboutPage = () => {
             };
     
             if (educationTabRef.current) {
-                if (educationTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
-                    setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                setEducationTabWidth(educationTabRef.current.getBoundingClientRect().width);
+                if (educationTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth/2)) {
+                    setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - educationTabWidth/2));
                 } else if (educationTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                     setEducationTabScrollLeftPosition(educationTabRef.current.offsetLeft);
                 } else {
@@ -813,8 +834,9 @@ const AboutPage = () => {
             };
     
             if (awardsAndGrantsTabRef.current) {
-                if (awardsAndGrantsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth)) {
-                    setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                setAwardsAndGrantsTabWidth(awardsAndGrantsTabRef.current.getBoundingClientRect().width);
+                if (awardsAndGrantsTabRef.current.offsetLeft > (pageNavTabsScrollableContainerWidth/2)) {
+                    setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - awardsAndGrantsTabWidth/2));
                 } else if (awardsAndGrantsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                     setAwardsAndGrantsTabScrollLeftPosition(awardsAndGrantsTabRef.current.offsetLeft);
                 } else {
@@ -823,8 +845,9 @@ const AboutPage = () => {
             };
     
             if (skillsTabRef.current) {
-                if (skillsTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth) {
-                    setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                setSkillsTabWidth(skillsTabRef.current.getBoundingClientRect().width);
+                if (skillsTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth/2) {
+                    setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - skillsTabWidth/2));
                 } else if (skillsTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                     setSkillsTabScrollLeftPosition(skillsTabRef.current.offsetLeft);
                 } else {
@@ -833,8 +856,9 @@ const AboutPage = () => {
             };
     
             if (certificatesTabRef.current) {
-                if (certificatesTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth) {
-                    setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2));
+                setCertificatesTabWidth(certificatesTabRef.current.getBoundingClientRect().width);
+                if (certificatesTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth/2) {
+                    setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - certificatesTabWidth/2));
                 } else if (certificatesTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
                     setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft);
                 }  else {
@@ -852,7 +876,7 @@ const AboutPage = () => {
             window.removeEventListener('scroll', handleScroll);
         };
             
-    }, [currentStickyTabsPosition, currentActionsPosition, introductionTabScrollLeftPosition, positionsTabScrollLeftPosition, educationTabScrollLeftPosition, awardsAndGrantsTabScrollLeftPosition, skillsTabScrollLeftPosition, certificatesTabScrollLeftPosition, pageNavTabsScrollableContainerWidth, pageNavTabsScrollableLeftPosition, pageNavTabsScrollableWidth]);
+    }, [currentStickyTabsPosition, currentActionsPosition, introductionTabScrollLeftPosition, positionsTabScrollLeftPosition, educationTabScrollLeftPosition, awardsAndGrantsTabScrollLeftPosition, skillsTabScrollLeftPosition, certificatesTabScrollLeftPosition, pageNavTabsScrollableContainerWidth, pageNavTabsScrollableLeftPosition, pageNavTabsScrollableWidth, introductionTabWidth, positionsTabWidth, educationTabWidth, awardsAndGrantsTabWidth, skillsTabWidth, certificatesTabWidth]);
 
     const clickPageNavTabsScrollLeftHandler = () => {
         if (pageNavTabsScrollableRef.current) {
