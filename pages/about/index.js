@@ -496,7 +496,7 @@ const AboutPage = () => {
     useEffect(() => {
         if (positionsObserved) {
             if (pageNavTabsScrollableRef.current) {
-                if (pageNavTabClicked && pageNavTabClickedId === "postions") {
+                if (pageNavTabClicked && pageNavTabClickedId === "positions") {
                     pageNavTabsScrollableRef.current.scrollLeft = positionsTabScrollLeftPosition;
                     setPageNavTabClicked(false);
                 } else if (!pageNavTabClicked) {
