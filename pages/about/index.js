@@ -29,23 +29,22 @@ const AboutPage = () => {
                     <tbody>
                         <tr>
                             <td>
-                                Designed, developed and deployed the company’s website including a client collaboration portal, which streamlined client collaborations
-                            </td>
-                            
-                        </tr>
-                        <tr>
-                            <td>
-                                Developed innovative design strategies using art expertise and state-of-the-art digital technologies like SvelteKit and Next.js
+                                Worked with clients to plan and achieve client goals, meeting or exceeding client expectations and accomplishing a 100% client satisfaction rate
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Met or exceeded client goals, achieving a 100% client satisfaction rate
+                                Designed, developed, deployed and maintained the company’s website including a client portal that streamlined client collaboration
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Directs the company to provide digital services that empower businesses and communities
+                                Developed innovative software using art expertise and state-of-the-art digital technologies like SvelteKit and Next.js
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Directed the company to provide state-of-the-art digital services to create groundbreaking digital products using advancements in art and digital technology
                             </td>
                         </tr>
                     </tbody>
@@ -61,9 +60,8 @@ const AboutPage = () => {
                     <tbody>
                         <tr>
                             <td>
-                            Designed, developed and deployed software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
+                                Designed, developed and deployed software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
                             </td>
-                            
                         </tr>
                         <tr>
                             <td>
@@ -124,7 +122,7 @@ const AboutPage = () => {
                     <tbody>
                         <tr>
                             <td>
-                                Collaborated with stakeholders to create brand and website
+                                Designed, developed, deployed and maintained website featuring an online store for print anthologies and merchandise, generating thousands of dollars in revenue
                             </td>
                         </tr>
                         <tr>
@@ -1125,7 +1123,7 @@ const AboutPage = () => {
                             <div className={classes.certificates_group}>
                                 <div className={classes.label_paragraphs}>
                                     <span className={classes.label_item}>2021 &ndash; 2024</span>
-                                    <span className={classes.position}>Certificates in UX Design, Modern Web Development, Web Accessibility and Machine Learning</span>
+                                    <span className={classes.position}>Certificates in Software Development, Machine Learning, UX Design and Web Accessibility</span>
                                     <span className={classes.label_item}>Udemy</span>
                                 </div>
                                 <table>
@@ -1181,7 +1179,7 @@ const AboutPage = () => {
                             <div className={classes.certificates_group}>
                                 <div className={classes.label_paragraphs}>
                                     <span className={classes.label_item}>2020 &ndash; 2021</span>
-                                    <span className={classes.position}>Certificates in Building Web Applications</span>
+                                    <span className={classes.position}>Certificates in Software Development and Leadership</span>
                                     <span className={classes.label_item}> University of Michigan &#8211; Coursera</span>
                                 </div>
                                 <table>
@@ -1211,17 +1209,6 @@ const AboutPage = () => {
                                                 Building Web Applications in PHP
                                             </td>
                                         </tr>
-                                    </tbody>
-                                </table>
-                            </div>   
-                            <div className={classes.certificates_group}>
-                                <div className={classes.label_paragraphs}>
-                                    <span className={classes.label_item}>2021</span>
-                                    <span className={classes.position}>Certificates in Database Design</span>
-                                    <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
-                                </div>
-                                <table>
-                                    <tbody>
                                         <tr>
                                             <td>
                                                 Intermediate PostgreSQL
@@ -1232,17 +1219,6 @@ const AboutPage = () => {
                                                 Database Design and Basic SQL in PostgreSQL
                                             </td>
                                         </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div className={classes.certificates_group}>
-                                <div className={classes.label_paragraphs}>
-                                    <span className={classes.label_item}>2020</span>
-                                    <span className={classes.position}>Certificates in Python Programming</span>
-                                    <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
-                                </div>
-                                <table>
-                                    <tbody>
                                         <tr>
                                             <td>
                                                 Python Data Structures
@@ -1253,9 +1229,14 @@ const AboutPage = () => {
                                                 Python for Everybody
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td>
+                                                Inspiring and Motivating Individuals
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
-                            </div>
+                            </div> 
                             <div className={classes.certificates_group}>
                                 <div className={classes.label_paragraphs}>
                                     <span className={classes.label_item}>2020</span>
@@ -1282,22 +1263,6 @@ const AboutPage = () => {
                                         <tr>
                                             <td>
                                                 Human-Computer Interaction
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div> 
-                            <div className={classes.certificates_group}>
-                                <div className={classes.label_paragraphs}>
-                                    <span className={classes.label_item}>2021</span>
-                                    <span className={classes.position}>Certificate in Leadership</span>
-                                    <span className={classes.label_item}>University of Michigan &#8211; Coursera</span>
-                                </div>
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                Inspiring and Motivating Individuals
                                             </td>
                                         </tr>
                                     </tbody>
