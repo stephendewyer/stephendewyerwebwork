@@ -23,7 +23,7 @@ const AboutPage = () => {
             length: 'April 2021 - present', 
             position: 'Founding Director, Full-stack Web Developer and UX Designer',
             company: 'Art in Tech Services Inc',
-            location: 'Tucson, Arizona',
+            location: 'Tucson, Arizona (relocated from Minneapolis, Minnesota)',
             responsibilities:
                 <table>
                     <tbody>
@@ -54,7 +54,7 @@ const AboutPage = () => {
             length: 'April 2017 – present', 
             position: 'Founder, Full-stack Web Developer and UX Designer',
             company: 'Public Arts Commission',
-            location: 'Tucson, Arizona',
+            location: 'Tucson, Arizona (relocated from Minneapolis, Minnesota)',
             responsibilities:
                 <table>
                     <tbody>
@@ -1059,17 +1059,21 @@ const AboutPage = () => {
                                 education
                             </h3>
                             <div className={classes.label_paragraphs}>
-                                <span className={classes.label_item}>2011</span>
                                 <span className={classes.position}>MFA in Sculpture</span>
-                                <span className={classes.label_item}>Yale University School of Art</span>
-                                <span className={classes.label_item}>New Haven, Connecticut</span>
+                                <span className={classes.company}>Yale University School of Art</span>
+                                <p className={classes.location_and_dates}><span>2011</span><span>New Haven, Connecticut</span></p>
                             </div>
                             <div className={classes.label_paragraphs}>
-                                <span className={classes.label_item}>2008</span>
-                                <span className={classes.position}>BFA in Art History, Theory <span>&#38;</span> Criticism</span>
-                                <span className={classes.label_item}>Maryland Institute College of Art (MICA)</span>
-                                <span className={classes.label_item}>cum laude</span>
-                                <span className={classes.label_item}>Baltimore, Maryland</span>
+                                <span className={classes.position}>BFA <span style={{fontStyle: "italic;"}}>cum laude</span> in Art History, Theory <span>&#38;</span> Criticism</span>
+                                <span className={classes.company}>Maryland Institute College of Art (MICA)</span>
+                                <p className={classes.location_and_dates}>
+                                    <span>
+                                        2008
+                                    </span>
+                                    <span>
+                                        Baltimore, Maryland
+                                    </span>
+                                </p>
                             </div>
                         </div>
                         <div 
@@ -1080,10 +1084,14 @@ const AboutPage = () => {
                             <div className={classes.awards_and_grants}>
                                 <div className={classes.award}>
                                     <div className={classes.label_paragraphs}>
-                                        <span className={classes.awards_and_grants_item_label}>2014 &ndash; 2016</span>
-                                        <span className={classes.awards_and_grants_item_position}>Knight Arts Challenge Detroit matching $20,000 grant</span>
-                                        <span className={classes.awards_and_grants_item_label}>John S. and James L. Knight Foundation</span>
-                                        <span className={classes.awards_and_grants_item_label}>Miami, Florida</span>
+                                        <span className={classes.position_awards_and_grants}>Knight Arts Challenge Detroit matching $20,000 grant</span>
+                                        <span className={classes.company_awards_and_grants}>John S. and James L. Knight Foundation</span>
+                                        <p 
+                                            className={classes.location_and_dates_awards_and_grants}
+                                        >
+                                            <span>Miami, Florida</span>
+                                            <span>2014 &ndash; 2016</span>
+                                        </p>
                                     </div>
                                     <ul className={classes.label_paragraphs}>
                                         <li className={classes.awards_and_grants_item_project}>
@@ -1093,10 +1101,12 @@ const AboutPage = () => {
                                 </div>
                                 <div className={classes.award}>
                                     <div className={classes.label_paragraphs}>
-                                        <span className={classes.awards_and_grants_item_label}>2014</span>
-                                        <span className={classes.awards_and_grants_item_position}>Detroit Chapter June 2014 $1,000 grant</span>
-                                        <span className={classes.awards_and_grants_item_label}>Awesome Foundation</span>
-                                        <span className={classes.awards_and_grants_item_label}>Boston, Massachusetts</span>
+                                        <span className={classes.position_awards_and_grants}>Detroit Chapter June 2014 $1,000 grant</span>
+                                        <span className={classes.company_awards_and_grants}>Awesome Foundation</span>
+                                        <p className={classes.location_and_dates_awards_and_grants}>
+                                            <span>Boston, Massachusetts</span>
+                                            <span>2014</span>
+                                        </p>
                                     </div>
                                     <ul className={classes.awards_and_grants_item_project}>
                                         <li>
@@ -1122,9 +1132,9 @@ const AboutPage = () => {
                             <h3>certificates</h3>
                             <div className={classes.certificates_group}>
                                 <div className={classes.label_paragraphs}>
-                                    <span className={classes.label_item}>2021 &ndash; 2024</span>
                                     <span className={classes.position}>Certificates in Software Development, Machine Learning, UX Design and Web Accessibility</span>
-                                    <span className={classes.label_item}>Udemy</span>
+                                    <span className={classes.company}>Udemy</span>
+                                    <span className={classes.location_and_dates}>2021 &ndash; 2024</span>
                                 </div>
                                 <table>
                                     <tbody>
@@ -1178,9 +1188,9 @@ const AboutPage = () => {
                             </div>
                             <div className={classes.certificates_group}>
                                 <div className={classes.label_paragraphs}>
-                                    <span className={classes.label_item}>2020 &ndash; 2021</span>
                                     <span className={classes.position}>Certificates in Software Development and Leadership</span>
-                                    <span className={classes.label_item}> University of Michigan &#8211; Coursera</span>
+                                    <span className={classes.company}> University of Michigan &#8211; Coursera</span>
+                                    <span className={classes.location_and_dates}>2020 &ndash; 2021</span>
                                 </div>
                                 <table>
                                     <tbody>
@@ -1239,9 +1249,9 @@ const AboutPage = () => {
                             </div> 
                             <div className={classes.certificates_group}>
                                 <div className={classes.label_paragraphs}>
-                                    <span className={classes.label_item}>2020</span>
                                     <span className={classes.position}>Certificates in UX Design</span>
-                                    <span className={classes.label_item}>Interaction Design Foundation</span>
+                                    <span className={classes.company}>Interaction Design Foundation</span>
+                                    <span className={classes.location_and_dates}>2020</span>
                                 </div>
                                 <table>
                                     <tbody>

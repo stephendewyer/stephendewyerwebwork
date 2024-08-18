@@ -234,17 +234,37 @@
     font-size: 1.5rem;
 }
 
-.label_item {
+.company {
+    font-size: 1.25rem;
+}
+
+.location_and_dates {
     font-size: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.position_awards_and_grants {
+    color: #E3E7DF;
+    font-size: 1.5rem;
+}
+
+.company_awards_and_grants {
+    color: #E3E7DF;
+    font-size: 1.25rem;
+}
+
+.location_and_dates_awards_and_grants {
+    color: #E3E7DF;
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .awards_and_grants_header {
     color: #EEE3D5;
-}
-
-.awards_and_grants_item_label {
-    font-size: 1rem;
-    color: #E3E7DF;
 }
 
 .awards_and_grants_item_position {
@@ -287,8 +307,18 @@
         font-size: 1.35rem;
     }
 
-    .awards_and_grants_item_position {
+    .company {
+        font-size: 1.175rem;
+    }
+
+    .position_awards_and_grants {
+        color: #E3E7DF;
         font-size: 1.35rem;
+    }
+    
+    .company_awards_and_grants {
+        color: #E3E7DF;
+        font-size: 1.175rem;
     }
 }
 
@@ -415,7 +445,6 @@
     .nav_tab_active {
         padding: 0;
     }
-    
 
     .nav_tab_active::before {
         --size: 6px;
@@ -465,8 +494,18 @@
         font-size: 1.25rem;
     }
 
-    .awards_and_grants_item_position {
+    .company {
+        font-size: 1.125rem;
+    }
+
+    .position_awards_and_grants {
+        color: #E3E7DF;
         font-size: 1.25rem;
+    }
+    
+    .company_awards_and_grants {
+        color: #E3E7DF;
+        font-size: 1.125rem;
     }
 
     .awards_and_grants {

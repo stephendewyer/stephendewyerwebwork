@@ -29,14 +29,23 @@
 .label_paragraphs {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 0 1rem 0 0;
 }
 
 .position {
     font-size: 1.5rem;
 }
 
-.label_item {
+.company {
+    font-size: 1.25rem;
+}
+
+.location_and_dates {
     font-size: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .arrow_container {
@@ -86,8 +95,8 @@
 }
 
 .panel_content {
-    margin: 0 0 1rem 0;
-    transition: opacity 0.3s linear 0.18s;  
+    transition: opacity 0.3s linear 0.18s;
+    padding: 0 0 1rem 0;
 }
 
 
@@ -107,6 +116,10 @@
         font-size: 1.35rem;
     }
 
+    .company {
+        font-size: 1.175rem;
+    }
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -119,19 +132,14 @@
     .position {
         font-size: 1.25rem;
     }
+
+    .company {
+        font-size: 1.125rem;
+    }
     
     .panel_label_bold {
         gap: 0.5rem;
         padding: 0.5rem 0;
     }
-
-}
-
-
-
-
-@media only screen and (max-width: 1440px) {
-
-    
 
 }

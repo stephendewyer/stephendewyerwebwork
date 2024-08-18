@@ -25,15 +25,29 @@ const AccordionItem = ({
 
     // set the panel height state to 0
 
-    const [height, setHeight] = useState("0px");
+    const [height, setHeight] = useState(0);
 
     const content = useRef(null);
 
+    const handleWindowResize = () => {
+        if (content.current) {
+            setHeight(content.current.scrollHeight);
+        };
+    };
+
     useEffect(() => {
 
-        setHeight(content.current.scrollHeight);
+        if (content.current) {
+            setHeight(content.current.scrollHeight);
+        };        
 
-    }, [isActive]);
+        window.addEventListener("resize", handleWindowResize);
+
+        return () => {
+            window.removeEventListener("resize", handleWindowResize);
+        };
+
+    }, [isActive, height]);
 
     return (
         <div 
@@ -51,10 +65,20 @@ const AccordionItem = ({
 
                 >
                     <div className={styles.label_paragraphs}>
-                        <span className={styles.label_item}>{item.length}</span>
-                        <span className={styles.position}>{item.position}</span>
-                        <span className={styles.label_item}>{item.company}</span>
-                        <span className={styles.label_item}>{item.location}</span>
+                        <span className={styles.position}>
+                            {item.position}
+                        </span>
+                        <span className={styles.company}>
+                            {item.company}
+                        </span>
+                        <p className={styles.location_and_dates}>
+                            <span>
+                                {item.length}
+                            </span> 
+                            <span>
+                                {item.location}
+                            </span>
+                        </p>
                     </div>
                     <div 
                         className={fontWeightBold ? styles.arrow_container_active : styles.arrow_container}
@@ -64,12 +88,12 @@ const AccordionItem = ({
                 </div>
             </dt>
             <dd
-                ref={content}
                 className={styles.panel_inner}
                 style={showPanelContent ? { height: `${height}px` } : { height: '0px' }}
                 aria-hidden={ !isActive }
             >
                 <div
+                    ref={content}
                     id={`panel${index + 1}_content`}
                     className={styles.panel_content}
                     style={showPanelContent ? {opacity: '1'} : {opacity: '0'}} 

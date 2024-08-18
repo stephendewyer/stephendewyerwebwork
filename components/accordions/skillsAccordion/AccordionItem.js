@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import styles from './AccordionItem.module.css';
-import Arrow from '../../../public/images/arrows/arrow_links/arrow_next_01.svg';
-import Image from "next/image";
 
 const AccordionItem = ({
     showPanelContent,
@@ -27,15 +25,29 @@ const AccordionItem = ({
 
     // set the panel height state to 0
 
-    const [height, setHeight] = useState("0px");
+    const [height, setHeight] = useState(0);
 
     const content = useRef(null);
 
+    const handleWindowResize = () => {
+        if (content.current) {
+            setHeight(content.current.scrollHeight);
+        };
+    };
+
     useEffect(() => {
 
-        setHeight(content.current.scrollHeight);
+        if (content.current) {
+            setHeight(content.current.scrollHeight);
+        };        
 
-    }, [isActive]);
+        window.addEventListener("resize", handleWindowResize);
+
+        return () => {
+            window.removeEventListener("resize", handleWindowResize);
+        };
+
+    }, [isActive, height]);
 
     return (
         <div 
@@ -66,7 +78,6 @@ const AccordionItem = ({
                 </div>
             </dt>
             <dd
-                ref={content}
                 className={styles.panel_inner}
                 style={showPanelContent ? { height: `${height}px` } : { height: '0px' }}
                 aria-hidden={ !isActive }
@@ -75,6 +86,7 @@ const AccordionItem = ({
                     id={`panel${index + 1}_content`}
                     className={styles.panel_content}
                     style={showPanelContent ? {opacity: '1'} : {opacity: '0'}} 
+                    ref={content}
                 >
                     {item.content}
                 </div>

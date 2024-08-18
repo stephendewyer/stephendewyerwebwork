@@ -88,7 +88,7 @@
 }
 
 .panel_content {
-    margin: 0 0 1rem 0;
+    padding: 0 0 1rem 0;
     transition: opacity 0.3s linear 0.18s;  
 }
 
