@@ -55,7 +55,7 @@ const IndexPage = () => {
         </div>
           <div className={styles.intro_paragraph}>
             <p className={styles.paragraph}>
-                welcome!  My name is stephen dewyer and I&apos;m an award-winning <span style={{fontWeight: "bold"}}>software developer</span>,<span style={{fontWeight: "bold"}}> user experience (UX) designer</span>, <span style={{fontWeight: "bold"}}>founder</span> and <span style={{fontWeight: "bold"}}>artist</span>.  I enjoy creating groundbreaking software that helps empower communities to solve some of our most challenging problems.
+                Welcome!  My name is stephen dewyer and I&apos;m an award-winning <span style={{fontWeight: "bold"}}>software developer</span>,<span style={{fontWeight: "bold"}}> user experience (UX) designer</span>, <span style={{fontWeight: "bold"}}>founder</span> and <span style={{fontWeight: "bold"}}>artist</span>.  I enjoy creating groundbreaking software that helps empower communities to solve some of our most challenging problems.
             </p>
           </div>
         <h2>

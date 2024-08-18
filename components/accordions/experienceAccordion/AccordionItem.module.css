@@ -136,6 +136,11 @@
     .company {
         font-size: 1.125rem;
     }
+
+    .location_and_dates {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
     
     .panel_label_bold {
         gap: 0.5rem;

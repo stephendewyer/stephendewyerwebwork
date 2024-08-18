@@ -379,6 +379,7 @@
 
     .action_buttons {
         width: 100%;
+        padding: 1rem;
     }
 
     .action_buttons_relative {
@@ -496,6 +497,11 @@
 
     .company {
         font-size: 1.125rem;
+    }
+
+    .location_and_dates {
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .position_awards_and_grants {
