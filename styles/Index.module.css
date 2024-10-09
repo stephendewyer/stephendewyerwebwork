@@ -4,6 +4,13 @@
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+  padding: 13rem 0 0 0;
+}
+
+.headline {
+  max-width: 800px;
+  width: 75%;
+  padding: 0 1rem;
 }
 
 .paragraph {
@@ -92,8 +99,8 @@
 
 @media screen and (max-width: 1440px){
 
-  .intro_video_container {
-    height: 42rem;
+  .container {
+    padding: 11rem 0 0 0;
   }
   
   .paragraph {
@@ -103,16 +110,23 @@
 }
 
 @media screen and (max-width: 1080px) {
-  .intro_video_container {
-    height: 24rem;
+
+  .container {
+    padding: 11rem 0 0 0;
   }
+
 }
 
 @media screen and (max-width: 720px) {
 
-  .intro_video_container {
-    height: 14rem;
-  }    
+  .container {
+    padding: 9rem 0 0 0;
+  }
+
+  .headline {
+    width: 100%;
+  }
+
   .paragraph {
     font-size: 1.2rem;
   }

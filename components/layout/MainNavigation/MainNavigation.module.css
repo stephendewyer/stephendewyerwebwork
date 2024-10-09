@@ -23,22 +23,25 @@
 .blinds_index {
   position: relative;
   width: 25%;
-  max-width: 350px;
+  max-width: 13rem;
   height: auto;
 }
 
-.navigation_tabs {
-  position: relative;
+.nav_tabs_left {
+  display: flex;
+  flex-direction: row;
   width: 50%;
-  max-width: 33rem;
-  min-width: 24rem;
+}
+
+.nav_tabs_right {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  width: 50%;
 }
 
 .navigation_tab {
-  width: 33%;
+  width: 40%;
 }
 
 /* end desktop navigation */
@@ -47,19 +50,35 @@
 	margin: 15px;
 }
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1440px){
+
+  .blinds_index {
+    max-width: 11rem
+  }
+
+}
+
+
+@media screen and (max-width: 1080px) {
+  .blinds_index {
+    max-width: 10rem
+  }
 }
 
 @media screen and (max-width: 750px){
 	
 	/* begin mobile navigation */
-	
-	.navigation_tabs {
-		display: none;
-	}
+
+  .nav_tabs_right {
+    display: none;
+  }
+
+  .nav_tabs_left {
+    display: none;
+  }
 
   .blinds_index {
-    min-width: 200px;
+    min-width: 9rem;
   }
 
 }

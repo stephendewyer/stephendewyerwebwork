@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import BlindsIndex from './blindsIndex/BlindsIndex';
 import classes from './MainNavigation.module.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
@@ -32,12 +32,65 @@ const MainNavigation = (props) => {
 
     }, [prevScrollPos, handleScroll]);
 
+    let leftTabs = [];
+
+    let rightTabs = [];
+
+    NavData.forEach((navItem, index) => {
+        if (
+            (index <= NavData.length/2) && 
+            (navItem.name !== "stephen garrett dewyer")
+        ) {
+            leftTabs = [...leftTabs, navItem];
+        };
+
+        if (
+            (index > NavData.length/2) &&
+            (navItem.name !== "stephen garrett dewyer")
+        ) {
+            rightTabs = [...rightTabs, navItem];
+        }
+    });
+
+    const blindsIndexRef = useRef(null);
+
+    const [blindsIndexHeight, setBlindsIndexHeight] = useState(0);
+
+    useEffect(() => {
+        const blindsIndexHeightEffect = () => {
+            if (blindsIndexRef.current !== null) {
+                setBlindsIndexHeight(blindsIndexRef.current.clientHeight);
+            };
+        };
+
+        blindsIndexHeightEffect();
+
+        window.addEventListener("resize", blindsIndexHeightEffect);
+
+        return () => {
+            window.removeEventListener("resize", blindsIndexHeightEffect);
+        };
+
+    }, []);
+
     return (
         <nav 
             role="navigation"
             className={classes.nav_bar} 
-            style={{ top: visible ? '0' : '-250px' }} 
+            style={{ top: visible ? '0' : `-${blindsIndexHeight}px` }} 
         > 
+            <div className={classes.nav_tabs_left}>
+                {leftTabs.map((navItem, index) => {
+                    return (
+                        <div 
+                            className={classes.navigation_tab}
+                            key={index}
+                        >
+                            <NavTabDesktop navItem={navItem}/>
+                        </div>
+                    );
+                })}
+            </div>
             {NavData.map((navItem, index) => {
                 if (navItem.name === "stephen garrett dewyer") {
                     return (
@@ -45,24 +98,25 @@ const MainNavigation = (props) => {
                             className={classes.blinds_index}
                             key={index}
                         >
-                            <BlindsIndex navItem={navItem}/>
+                            <div ref={blindsIndexRef}>
+                                <BlindsIndex 
+                                    navItem={navItem}
+                                />
+                            </div>
                         </div>
                     );
                 };
             })}
-            <div className={classes.navigation_tabs}>
-                {NavData.map((navItem, index) => {
-                    if (navItem.name !== "stephen garrett dewyer") {
-                        return (
-                            <div 
-                                className={classes.navigation_tab}
-                                key={index}
-                            >
-                                <NavTabDesktop navItem={navItem}/>
-                            </div>
-                        );
-                    };
-                    
+            <div className={classes.nav_tabs_right}>
+                {rightTabs.map((navItem, index) => {
+                    return (
+                        <div 
+                            className={classes.navigation_tab}
+                            key={index}
+                        >
+                            <NavTabDesktop navItem={navItem}/>
+                        </div>
+                    );
                 })}
             </div>
             <div className={classes.main_navigation_toggle_button}>

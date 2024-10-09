@@ -108,7 +108,7 @@ figcaption {
 .container {
   position: relative;
   width: 100%;
-  padding-top: 220px;
+  padding-top: 14rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,6 +170,16 @@ textarea {
     font-size: 1.1rem;
   }
 
+  .container {
+    padding-top: 13rem;
+  }
+
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    padding-top: 12rem;
+  }
 }
 
 @media screen and (max-width: 750px){
@@ -195,7 +205,7 @@ textarea {
   }
 
   .container {
-    padding-top: 130px;
+    padding-top: 11rem;
   }
 
   .arrow {
