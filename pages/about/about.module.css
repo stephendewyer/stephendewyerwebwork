@@ -38,6 +38,7 @@
     flex-direction: column;
     width: 100%;
     gap: 1rem;
+    padding: 0 0 2rem 0;
 }
 
 .positions {
@@ -151,7 +152,7 @@
     width: 50%;
     float: left;
     display: block;
-    margin: 0 1rem 1rem 0;
+    margin: 0 1rem 0.5rem 0;
 }
 
 .profileImageStart {
@@ -174,6 +175,17 @@
 
 .skills_container {
     width: 100%;
+}
+
+.key_attributes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.key_attributes > li {
+    font-size: 1.5rem;
+    padding: 0 0 1rem 0;
 }
 
 .action_buttons_relative {
@@ -294,6 +306,16 @@
     display: none;
 }
 
+.resume_table {
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+}
+
 @media screen and (max-width: 1440px) {
 
     .banner_container {
@@ -302,6 +324,11 @@
 
     .myStoryParagraphs {
         padding: 0;
+    }
+
+    .key_attributes > li {
+        font-size: 1.3rem;
+        padding: 0 0 1rem 0;
     }
 
     .position {
@@ -320,6 +347,13 @@
     .company_awards_and_grants {
         color: #E3E7DF;
         font-size: 1.175rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .key_attributes > li {
+        font-size: 1.2rem;
+        padding: 0 0 1rem 0;
     }
 }
 
@@ -371,6 +405,11 @@
 
     .banner_container {
         height: 20rem;
+    }
+
+    .key_attributes > li {
+        font-size: 1.1rem;
+        padding: 0 0 1rem 0;
     }
 
     .about_sections {

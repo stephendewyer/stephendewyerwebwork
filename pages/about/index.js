@@ -25,7 +25,7 @@ const AboutPage = () => {
             company: 'Art in Tech Services Inc',
             location: 'Tucson, Arizona (relocated from Minneapolis, Minnesota)',
             responsibilities:
-                <table>
+                <table className={classes.resume_table}>
                     <tbody>
                         <tr>
                             <td>
@@ -56,7 +56,7 @@ const AboutPage = () => {
             company: 'Public Arts Commission',
             location: 'Tucson, Arizona (relocated from Minneapolis, Minnesota)',
             responsibilities:
-                <table>
+                <table className={classes.resume_table}>
                     <tbody>
                         <tr>
                             <td>
@@ -92,7 +92,7 @@ const AboutPage = () => {
             company: 'Turnberry Solutions',
             location: 'Minneapolis, Minnesota',
             responsibilities:
-                <table>
+                <table className={classes.resume_table}>
                     <tbody>
                         <tr>
                             <td>
@@ -118,7 +118,7 @@ const AboutPage = () => {
             company: '∞ mile (Infinite Mile LLC)',
             location: 'Detroit, Michigan',
             responsibilities:
-                <table>
+                <table className={classes.resume_table}>
                     <tbody>
                         <tr>
                             <td>
@@ -150,7 +150,7 @@ const AboutPage = () => {
             image: <Image src={FullStackWebDevelopment} layout="fill" objectFit="contain" alt="skill: full-stack web development"/>,
             label: "full-stack web development",
             content: 
-                <table>
+                <table className={classes.resume_table}>
                     <tbody>
                         <tr>
                             <td className={classes.row_heading}>
@@ -263,7 +263,7 @@ const AboutPage = () => {
             image: <Image src={UXDesignIcon} layout="fill" objectFit="contain" alt="skill: UX design"/>,
             label: "user experience (UX) design",
             content: 
-                <table>
+                <table className={classes.resume_table}>
                     <tbody>
                         <tr>
                             <td>
@@ -307,7 +307,7 @@ const AboutPage = () => {
             image: <Image src={Art} layout="fill" objectFit="contain" alt="skill: art"/>,
             label: "art direction",
             content: 
-                <table>
+                <table className={classes.resume_table}>
                     <tbody>
                         <tr>
                             <td>
@@ -341,7 +341,7 @@ const AboutPage = () => {
             image: <Image src={Leadership} layout="fill" objectFit="contain" alt="skill: leadership"/>,
             label: "leadership",
             content:
-            <table>
+            <table className={classes.resume_table}>
                 <tbody>
                     <tr>
                         <td>
@@ -375,7 +375,7 @@ const AboutPage = () => {
             image: <Image src={ArtificialIntelligence} layout="fill" objectFit="contain" alt="skill: artificial intelligence"/>,
             label: "artificial intelligence",
             content: 
-                <table>
+                <table className={classes.resume_table}>
                     <tbody>
                         <tr>
                             <td>
@@ -1022,8 +1022,21 @@ const AboutPage = () => {
                                     /> 
                                 </div>                    
                             </div>
+                            <h2>key attributes</h2>
+                            <ul className={classes.key_attributes}>
+                                <li>
+                                    I&apos;m great at finding creative solutions that improve human experiences of technology because of my background in art.
+                                </li>
+                                <li>
+                                    As a software developer and UX designer, I consider how software decisions impact user experiences and how state-of-the-art digital technologies can improve design.
+                                </li>
+                                <li>
+                                    The experience I gained as a founder allows me to bring people together around a vision to positvely impact community.  
+                                </li>
+                            </ul>
+                            <h2>story</h2>
                             <p className={classes.myStoryParagraphs}>
-                                I&#39;m stephen dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience creating groundbreaking web programs for organizations. My background in art makes me great at finding creative solutions that improve human experiences of technology.  
+                                I&#39;m stephen dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience creating groundbreaking web programs for organizations. 
                                 I worked with a variety of stakeholders to produce critically-acclaimed projects, some of which have been featured in <Link href="https://www.nytimes.com/2016/01/07/fashion/shinola-watches-bicycles-leather-goods-expansion.html" passHref={true} aria-label="link to Shinola Takes Its 'Detroit Message on the Road'"><a target="_blank" rel="noopener noreferrer">The New York Times</a></Link>, <Link href="https://www.detroitnews.com/story/entertainment/2015/04/14/art-journals-detroit-increasing-art-scene/25784987/" passHref={true} aria-label="link to New journals showcase Detroit art scene"><a target="_blank" rel="noopener noreferrer">The Detroit News</a></Link> and <Link href="https://news.artnet.com/opinion/galapagos-art-space-detroit-corktown-sale-404495" passHref={true} aria-label="link to Galapagos Art Space Plans $6.25 Million Detroit Property Flip"><a target="_blank" rel="noopener noreferrer">Artnet News</a></Link>. 
                                 I enjoy developing creative software solutions to challenging problems that help empower businesses and communities.
                                 <br /><br />
@@ -1136,7 +1149,7 @@ const AboutPage = () => {
                                     <span className={classes.company}>Udemy</span>
                                     <span className={classes.location_and_dates}>2021 &ndash; 2024</span>
                                 </div>
-                                <table>
+                                <table className={classes.resume_table}>
                                     <tbody>
                                         <tr>
                                             <td>
@@ -1192,7 +1205,7 @@ const AboutPage = () => {
                                     <span className={classes.company}> University of Michigan &#8211; Coursera</span>
                                     <span className={classes.location_and_dates}>2020 &ndash; 2021</span>
                                 </div>
-                                <table>
+                                <table className={classes.resume_table}>
                                     <tbody>
                                         <tr>
                                             <td>
@@ -1253,7 +1266,7 @@ const AboutPage = () => {
                                     <span className={classes.company}>Interaction Design Foundation</span>
                                     <span className={classes.location_and_dates}>2020</span>
                                 </div>
-                                <table>
+                                <table className={classes.resume_table}>
                                     <tbody>
                                         <tr>
                                             <td>
