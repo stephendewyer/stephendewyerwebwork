@@ -1031,7 +1031,7 @@ const AboutPage = () => {
                                     As a software developer and UX designer, I consider how software decisions impact user experiences and how state-of-the-art digital technologies can improve design.
                                 </li>
                                 <li>
-                                    The experience I gained as a founder allows me to bring people together around a vision to positvely impact community.  
+                                    My experience as a founder allows me to bring people together around a vision to positively impact community.  
                                 </li>
                             </ul>
                             <h2>story</h2>
