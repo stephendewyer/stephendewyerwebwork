@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment } from 'react';
 import styles from '../styles/Index.module.css';
 import MyLink from '../public/util/myLink';
 import ButtonAction from '../components/buttons/buttonAction/ButtonAction';
@@ -9,6 +9,7 @@ import JoyfoodlyCard from '../components/cards/caseStudyCards/joyfoodlyCard/Joyf
 import InfiniteMileCard from '../components/cards/caseStudyCards/infiniteMileCard/InfiniteMileCard';
 import ClientReviewsSlideCarousel from "../components/slide_carousel/ClientReviewsSlideCarousel";
 import VideoJS from '../components/videoPlayer/VideoPlayer';
+import Link from 'next/link';
 
 const IndexPage = () => {
 
@@ -58,7 +59,9 @@ const IndexPage = () => {
         </div>
           <div className={styles.intro_paragraph}>
             <p className={styles.paragraph}>
-                Welcome!  My name is stephen dewyer and I&apos;m an award-winning <span style={{fontWeight: "bold"}}>software developer</span>,<span style={{fontWeight: "bold"}}> user experience (UX) designer</span>, <span style={{fontWeight: "bold"}}>founder</span> and <span style={{fontWeight: "bold"}}>artist</span>.  I enjoy creating groundbreaking software that helps empower communities to solve some of our most challenging problems.
+                Welcome!  My name is stephen dewyer and I&apos;m an award-winning <span style={{fontWeight: "bold"}}>software developer</span>,<span style={{fontWeight: "bold"}}> user experience (UX) designer</span>, <Link href="https://artintechservices.com" passHref={true} aria-label="link to Art in Tech Services">
+                <a className={styles.footer_link} target="_blank" rel="noopener noreferrer"><span style={{fontWeight: "bold"}}>founder</span></a></Link> and <Link href="https://stephengdewyer.info" passHref={true} aria-label="link to stephen dewyer art portfolio">
+                <a className={styles.footer_link} target="_blank" rel="noopener noreferrer"><span style={{fontWeight: "bold"}}>artist</span></a></Link>.  I enjoy creating high-performing, accessible and attractive software that helps empower communities to solve some of our most challenging problems.
             </p>
           </div>
         <h2>
