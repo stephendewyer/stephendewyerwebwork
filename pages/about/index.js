@@ -1025,13 +1025,13 @@ const AboutPage = () => {
                             <h2>key attributes</h2>
                             <ul className={classes.key_attributes}>
                                 <li>
-                                    I&apos;m great at finding creative solutions that improve human experiences of technology because of my background in art.
+                                    I&apos;m great at finding creative software solutions that improve human experiences of technology because of my background in art.
                                 </li>
                                 <li>
                                     As a software developer and UX designer, I consider how software decisions impact user experiences and how state-of-the-art digital technologies can improve design.
                                 </li>
                                 <li>
-                                    My experience as a founder allows me to bring people together around a vision to positively impact community.  
+                                    My experience as a founder allows me to bring people together around a vision to positively impact community and grow a business.  
                                 </li>
                             </ul>
                             <h2>story</h2>
