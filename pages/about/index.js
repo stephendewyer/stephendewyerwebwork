@@ -1024,7 +1024,7 @@ const AboutPage = () => {
                             </div>
                             <h2>story</h2>
                             <p className={classes.myStoryParagraphs}>
-                                I&#39;m stephen dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience creating high-performing, accessible and attractive software web programs for organizations. 
+                                I&#39;m stephen dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience creating high-performing, accessible and attractive web programs for organizations. 
                                 I worked with a variety of stakeholders to produce critically-acclaimed projects, some of which have been featured in <Link href="https://www.nytimes.com/2016/01/07/fashion/shinola-watches-bicycles-leather-goods-expansion.html" passHref={true} aria-label="link to Shinola Takes Its 'Detroit Message on the Road'"><a target="_blank" rel="noopener noreferrer">The New York Times</a></Link>, <Link href="https://www.detroitnews.com/story/entertainment/2015/04/14/art-journals-detroit-increasing-art-scene/25784987/" passHref={true} aria-label="link to New journals showcase Detroit art scene"><a target="_blank" rel="noopener noreferrer">The Detroit News</a></Link> and <Link href="https://news.artnet.com/opinion/galapagos-art-space-detroit-corktown-sale-404495" passHref={true} aria-label="link to Galapagos Art Space Plans $6.25 Million Detroit Property Flip"><a target="_blank" rel="noopener noreferrer">Artnet News</a></Link>. 
                                 I enjoy developing creative software solutions to challenging problems that help empower businesses and communities.
                                 <br /><br />
@@ -1044,7 +1044,7 @@ const AboutPage = () => {
                                 Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
                             </p>
                             <h2>key attributes</h2>
-                        <table className={classes.resume_table}>
+                            <table className={classes.resume_table}>
                                 <tbody>
                                     <tr>
                                         <td>
