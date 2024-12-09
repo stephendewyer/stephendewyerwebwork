@@ -170,22 +170,11 @@
 }
 
 .myStoryParagraphs {
-    padding: 0;
+    padding: 0 0 1rem 0;
 }
 
 .skills_container {
     width: 100%;
-}
-
-.key_attributes {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.key_attributes > li {
-    font-size: 1.5rem;
-    padding: 0 0 1rem 0;
 }
 
 .action_buttons_relative {
@@ -322,15 +311,6 @@
         height: 30rem;
     }
 
-    .myStoryParagraphs {
-        padding: 0;
-    }
-
-    .key_attributes > li {
-        font-size: 1.3rem;
-        padding: 0 0 1rem 0;
-    }
-
     .position {
         font-size: 1.35rem;
     }
@@ -347,13 +327,6 @@
     .company_awards_and_grants {
         color: #E3E7DF;
         font-size: 1.175rem;
-    }
-}
-
-@media screen and (max-width: 1080px) {
-    .key_attributes > li {
-        font-size: 1.2rem;
-        padding: 0 0 1rem 0;
     }
 }
 
@@ -405,11 +378,6 @@
 
     .banner_container {
         height: 20rem;
-    }
-
-    .key_attributes > li {
-        font-size: 1.1rem;
-        padding: 0 0 1rem 0;
     }
 
     .about_sections {

@@ -1022,18 +1022,6 @@ const AboutPage = () => {
                                     /> 
                                 </div>                    
                             </div>
-                            <h2>key attributes</h2>
-                            <ul className={classes.key_attributes}>
-                                <li>
-                                    I&apos;m great at finding creative software solutions that improve human experiences of technology because of my background in art.
-                                </li>
-                                <li>
-                                    As a software developer and UX designer, I consider how software decisions impact user experiences and how state-of-the-art digital technologies can improve design.
-                                </li>
-                                <li>
-                                    My experience as a founder allows me to bring people together around a vision to positively impact community and grow a business.  
-                                </li>
-                            </ul>
                             <h2>story</h2>
                             <p className={classes.myStoryParagraphs}>
                                 I&#39;m stephen dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience creating high-performing, accessible and attractive software web programs for organizations. 
@@ -1054,7 +1042,27 @@ const AboutPage = () => {
                                 <br /><br />
                                 Today, I am more committed than ever to finding creative solutions to challenging problems as a UX designer and software developer.  
                                 Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
-                            </p> 
+                            </p>
+                            <h2>key attributes</h2>
+                        <table className={classes.resume_table}>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            I&apos;m great at finding creative software solutions that improve human experiences of technology because of my background in art and software development.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            As a software developer and UX designer, I consider how software decisions impact user experiences and how state-of-the-art digital technologies can improve design.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            My experience as a founder allows me to bring people together around a vision to positively impact community and grow a business. 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <div 
                             className={classes.positions}
