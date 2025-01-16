@@ -34,7 +34,7 @@ const AboutPage = () => {
                         </tr>
                         <tr>
                             <td>
-                                Designed, developed, deployed and maintained the company’s website including a client portal that streamlined client collaboration
+                                Designed, developed, deployed and maintained the company’s website including a client and administrator portals, streamlining collaboration
                             </td>
                         </tr>
                         <tr>
@@ -60,7 +60,7 @@ const AboutPage = () => {
                     <tbody>
                         <tr>
                             <td>
-                                Designed, developed and deployed software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
+                                Designed, developed, deployed and maintained software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
                             </td>
                         </tr>
                         <tr>
@@ -97,11 +97,6 @@ const AboutPage = () => {
                         <tr>
                             <td>
                                 Created high-fidelity prototypes to personalize dental insurance plan shopping in the Federal Employees Dental and Vision Insurance Program (FEDVIP)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Helped empower teams to produce great UX design for enterprise web products 
                             </td>
                         </tr>
                         <tr>
@@ -1024,9 +1019,9 @@ const AboutPage = () => {
                             </div>
                             <h2>story</h2>
                             <p className={classes.myStoryParagraphs}>
-                                I&#39;m stephen dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience creating high-performing, accessible and attractive web programs for organizations. 
-                                I worked with a variety of stakeholders to produce critically-acclaimed projects, some of which have been featured in <Link href="https://www.nytimes.com/2016/01/07/fashion/shinola-watches-bicycles-leather-goods-expansion.html" passHref={true} aria-label="link to Shinola Takes Its 'Detroit Message on the Road'"><a target="_blank" rel="noopener noreferrer">The New York Times</a></Link>, <Link href="https://www.detroitnews.com/story/entertainment/2015/04/14/art-journals-detroit-increasing-art-scene/25784987/" passHref={true} aria-label="link to New journals showcase Detroit art scene"><a target="_blank" rel="noopener noreferrer">The Detroit News</a></Link> and <Link href="https://news.artnet.com/opinion/galapagos-art-space-detroit-corktown-sale-404495" passHref={true} aria-label="link to Galapagos Art Space Plans $6.25 Million Detroit Property Flip"><a target="_blank" rel="noopener noreferrer">Artnet News</a></Link>. 
-                                I enjoy developing creative software solutions to challenging problems that help empower businesses and communities.
+                                I&#39;m stephen dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human engagement with technology. 
+                                I worked extensively with universities, museums, publications, campaigns and small businesses to produce critically-acclaimed projects, some of which have been featured in <Link href="https://www.nytimes.com/2016/01/07/fashion/shinola-watches-bicycles-leather-goods-expansion.html" passHref={true} aria-label="link to Shinola Takes Its 'Detroit Message on the Road'"><a target="_blank" rel="noopener noreferrer">The New York Times</a></Link>, <Link href="https://www.detroitnews.com/story/entertainment/2015/04/14/art-journals-detroit-increasing-art-scene/25784987/" passHref={true} aria-label="link to New journals showcase Detroit art scene"><a target="_blank" rel="noopener noreferrer">The Detroit News</a></Link> and <Link href="https://news.artnet.com/opinion/galapagos-art-space-detroit-corktown-sale-404495" passHref={true} aria-label="link to Galapagos Art Space Plans $6.25 Million Detroit Property Flip"><a target="_blank" rel="noopener noreferrer">Artnet News</a></Link>. 
+                                The experience I gained in art and software development makes me great at creatively solving problems through software.
                                 <br /><br />
                                 I first entered the fields of UX design and software development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called <Link href="https://infinitemiledetroit.com" passHref={true} aria-label="link to Infinite Mile website"><a target="_blank" rel="noopener noreferrer">Infinite Mile</a></Link>.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about art and cultures in the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
                                 <br /><br />
