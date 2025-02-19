@@ -45,8 +45,8 @@ const IndexPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>stephen dewyer software development and UX design</title>
-        <meta name="description" content="portfolio of user experience (UX) design and software development by stephen garrett dewyer" />
+        <title>Stephen Dewyer software development and UX design</title>
+        <meta name="description" content="portfolio of user experience (UX) design and software development by Stephen Garrett Dewyer" />
         <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
         <meta property="og:url" content="https://stephendewyerwebwork.vercel.app" />
       </Head>
@@ -59,7 +59,7 @@ const IndexPage = () => {
         </div>
           <div className={styles.intro_paragraph}>
             <p className={styles.paragraph}>
-                Welcome!  My name is stephen dewyer and I&apos;m an award-winning <span style={{fontWeight: "bold"}}>software developer</span>,<span style={{fontWeight: "bold"}}> user experience (UX) designer</span>, <Link href="https://artintechservices.com" passHref={true} aria-label="link to Art in Tech Services">
+                Welcome!  My name is Stephen Dewyer and I&apos;m an award-winning <span style={{fontWeight: "bold"}}>software developer</span>,<span style={{fontWeight: "bold"}}> user experience (UX) designer</span>, <Link href="https://artintechservices.com" passHref={true} aria-label="link to Art in Tech Services">
                 <a className={styles.footer_link} target="_blank" rel="noopener noreferrer"><span style={{fontWeight: "bold"}}>founder</span></a></Link> and <Link href="https://stephengdewyer.info" passHref={true} aria-label="link to stephen dewyer art portfolio">
                 <a className={styles.footer_link} target="_blank" rel="noopener noreferrer"><span style={{fontWeight: "bold"}}>artist</span></a></Link>.  I enjoy developing creative software solutions to challenging problems that help empower businesses and communities.
             </p>

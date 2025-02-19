@@ -403,8 +403,8 @@ const ArtinTechServices = () => {
     return (
         <Fragment>
             <Head>
-                <title>Art in Tech Services Inc - stephen dewyer UX design and full-stack web development</title>
-                <meta name="description" content="details of UX design and web development for Art in Tech Services Inc by stephen dewyer" />
+                <title>Art in Tech Services Inc - Stephen Dewyer software development and UX design</title>
+                <meta name="description" content="details of UX design and web development for Art in Tech Services Inc by Stephen Dewyer" />
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/artInTechServices" />
             </Head>

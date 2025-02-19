@@ -881,8 +881,8 @@ const AboutPage = () => {
     return (
         <Fragment>
             <Head>
-                <title>about - stephen dewyer UX design and software development</title>
-                <meta name="description" content="stephen dewyer résumé and profile" />
+                <title>about - Stephen Dewyer software development and UX design</title>
+                <meta name="description" content="Stephen Dewyer résumé and profile" />
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/about" />
             </Head>
@@ -1014,7 +1014,7 @@ const AboutPage = () => {
                             </div>
                             <h2>story</h2>
                             <p className={classes.myStoryParagraphs}>
-                                I&#39;m stephen dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human engagement with technology. 
+                                I&#39;m Stephen Dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human engagement with technology. 
                                 I worked extensively with universities, museums, publications, campaigns and small businesses to produce critically-acclaimed projects, some of which have been featured in <Link href="https://www.nytimes.com/2016/01/07/fashion/shinola-watches-bicycles-leather-goods-expansion.html" passHref={true} aria-label="link to Shinola Takes Its 'Detroit Message on the Road'"><a target="_blank" rel="noopener noreferrer">The New York Times</a></Link>, <Link href="https://www.detroitnews.com/story/entertainment/2015/04/14/art-journals-detroit-increasing-art-scene/25784987/" passHref={true} aria-label="link to New journals showcase Detroit art scene"><a target="_blank" rel="noopener noreferrer">The Detroit News</a></Link> and <Link href="https://news.artnet.com/opinion/galapagos-art-space-detroit-corktown-sale-404495" passHref={true} aria-label="link to Galapagos Art Space Plans $6.25 Million Detroit Property Flip"><a target="_blank" rel="noopener noreferrer">Artnet News</a></Link>. 
                                 The experience I gained in art and software development makes me great at creatively solving problems through software.
                                 <br /><br />
