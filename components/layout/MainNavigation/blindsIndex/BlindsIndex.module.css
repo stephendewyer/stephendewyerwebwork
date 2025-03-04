@@ -5,10 +5,6 @@
     margin: 0;
 }
 
-.index_tab_container:hover > .index_tab > .logo_name {
-    color: #E0EADC;
-}
-
 .index_tab_container > li[aria-current='page']::before {
     --size: 6px;
     content: '';
@@ -25,29 +21,29 @@
 
 .index_tab {
     position: relative;
-}
-
-.logo_name {
-    position: absolute;
+    background-color: #424142;
     color: #FFE9C0;
     width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    bottom: 0;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: color 0.2s linear;
-    filter: drop-shadow(0 0 .1rem black);
+    transition: background-color 0.2s linear;
 }
 
-.blinds_photo {
-    position: relative;
+.index_tab:hover {
+    background-color: #636B5F;
+}
+
+.logo_container {
     width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+    .index_tab {
+        padding: 0.75rem 1.5rem;
+    }
 }
 
 @media screen and (max-width: 720px) {

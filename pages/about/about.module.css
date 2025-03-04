@@ -6,12 +6,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-}
-
-.banner_container {
-    position: relative;
-    width: 100%;
-    height: 40rem;
+    padding-top: 10rem;
 }
 
 .banner_overlay {
@@ -31,6 +26,10 @@
     max-width: 1920px;
     justify-content: space-between;
     padding: 0 1rem;
+}
+
+.story {
+    padding: 0 0 1rem 0;
 }
 
 .certificates {
@@ -307,8 +306,8 @@
 
 @media screen and (max-width: 1440px) {
 
-    .banner_container {
-        height: 30rem;
+    .aboutPageContainer {
+        padding-top: 9rem;
     }
 
     .position {
@@ -330,7 +329,17 @@
     }
 }
 
+@media screen and (max-width: 1080px) {
+    .aboutPageContainer {
+      padding-top: 8rem;
+    }
+  }
+
 @media screen and (max-width: 720px) {
+
+    .aboutPageContainer {
+        padding-top: 7rem;
+    }
 
     .arrow_container {
         width: 1.5rem;
@@ -374,10 +383,6 @@
         cursor: pointer;
         border: none;
         color: #575B46;
-    }
-
-    .banner_container {
-        height: 20rem;
     }
 
     .about_sections {

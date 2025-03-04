@@ -887,17 +887,6 @@ const AboutPage = () => {
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/about" />
             </Head>
             <div className={classes.aboutPageContainer}>
-                <div className={classes.banner_container}>
-                    <Image 
-                        src={AboutBanner} 
-                        priority 
-                        objectFit="cover"
-                        objectPosition="top"
-                        layout="fill"
-                        alt="stephen dewyer and Erin Maye Quade and rally in Northfield, Minnesota in front of public fountain"
-                    />
-                    <div className={classes.banner_overlay} />
-                </div>
                 <h1>
                     about
                 </h1>
@@ -922,7 +911,7 @@ const AboutPage = () => {
                                         id="introductionTab"
                                         className={introductionObserved ? classes.nav_tab_active : classes.nav_tab} 
                                     >
-                                        introduction
+                                        story
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "positions")}>
@@ -997,6 +986,9 @@ const AboutPage = () => {
                             id="introduction" 
                             ref={introductionRef}
                         >
+                            <h2 className={classes.story}>
+                                story
+                            </h2>
                             <div 
                                 ref={profileImage}
                                 className={classes.profile_image_container}
@@ -1012,7 +1004,6 @@ const AboutPage = () => {
                                     /> 
                                 </div>                    
                             </div>
-                            <h2>story</h2>
                             <p className={classes.myStoryParagraphs}>
                                 I&#39;m Stephen Dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human engagement with technology. 
                                 I worked extensively with universities, museums, publications, campaigns and small businesses to produce critically-acclaimed projects, some of which have been featured in <Link href="https://www.nytimes.com/2016/01/07/fashion/shinola-watches-bicycles-leather-goods-expansion.html" passHref={true} aria-label="link to Shinola Takes Its 'Detroit Message on the Road'"><a target="_blank" rel="noopener noreferrer">The New York Times</a></Link>, <Link href="https://www.detroitnews.com/story/entertainment/2015/04/14/art-journals-detroit-increasing-art-scene/25784987/" passHref={true} aria-label="link to New journals showcase Detroit art scene"><a target="_blank" rel="noopener noreferrer">The Detroit News</a></Link> and <Link href="https://news.artnet.com/opinion/galapagos-art-space-detroit-corktown-sale-404495" passHref={true} aria-label="link to Galapagos Art Space Plans $6.25 Million Detroit Property Flip"><a target="_blank" rel="noopener noreferrer">Artnet News</a></Link>. 

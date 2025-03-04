@@ -14,22 +14,13 @@ import slide_10 from '../../public/images/case_studies/public_arts_commission_re
 import slide_11 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_11.jpg';
 import slide_12 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_12.jpg';
 import slide_13 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_13.jpg';
-import slide_14 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_14.jpg';
-import slide_15 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_15.jpg';
-import slide_16 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_16.jpg';
-import slide_17 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_17.jpg';
-import slide_18 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_18.jpg';
 import slide_19 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_19.jpg';
 import slide_20 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_20.jpg';
 import slide_21 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_21.jpg';
 import slide_22 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_22.jpg';
 import slide_23 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_23.jpg';
-import slide_24 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_24.jpg';
 import slide_25 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_25.jpg';
 import slide_26 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_26.jpg';
-import slide_27 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_27.jpg';
-import slide_28 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_28.jpg';
-import slide_29 from '../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_redesign_29.jpg';
 import EmblaCarousel from "../emblaCarousel/emblaCarousel";
 
 const PublicArtsCommissionSlideCarousel = () => {
@@ -88,26 +79,6 @@ const PublicArtsCommissionSlideCarousel = () => {
       alt_text: "Public Arts Commission slide 13"
     },
     {
-      image: slide_14,
-      alt_text: "Public Arts Commission slide 14"
-    },
-    {
-      image: slide_15,
-      alt_text: "Public Arts Commission slide 15"
-    },
-    {
-      image: slide_16,
-      alt_text: "Public Arts Commission slide 16"
-    },
-    {
-      image: slide_17,
-      alt_text: "Public Arts Commission slide 17"
-    },
-    {
-      image: slide_18,
-      alt_text: "Public Arts Commission slide 18"
-    },
-    {
       image: slide_19,
       alt_text: "Public Arts Commission slide 19"
     },
@@ -128,28 +99,12 @@ const PublicArtsCommissionSlideCarousel = () => {
       alt_text: "Public Arts Commission slide 23"
     },
     {
-      image: slide_24,
-      alt_text: "Public Arts Commission slide 24"
-    },
-    {
       image: slide_25,
       alt_text: "Public Arts Commission slide 25"
     },
     {
       image: slide_26,
       alt_text: "Public Arts Commission slide 26"
-    },
-    {
-      image: slide_27,
-      alt_text: "Public Arts Commission slide 27"
-    },
-    {
-      image: slide_28,
-      alt_text: "Public Arts Commission slide 28"
-    },
-    {
-      image: slide_29,
-      alt_text: "Public Arts Commission slide 29"
     }
   ];
 
