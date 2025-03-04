@@ -989,6 +989,9 @@ const AboutPage = () => {
                             <h2 className={classes.story}>
                                 story
                             </h2>
+                            <h3 style={{textAlign: "left", padding: "0 0 1rem 0"}}>
+                                I&#39;m Stephen Dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human engagement with technology. 
+                            </h3>
                             <div 
                                 ref={profileImage}
                                 className={classes.profile_image_container}
@@ -1005,7 +1008,6 @@ const AboutPage = () => {
                                 </div>                    
                             </div>
                             <p className={classes.myStoryParagraphs}>
-                                I&#39;m Stephen Dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human engagement with technology. 
                                 I worked extensively with universities, museums, publications, campaigns and small businesses to produce critically-acclaimed projects, some of which have been featured in <Link href="https://www.nytimes.com/2016/01/07/fashion/shinola-watches-bicycles-leather-goods-expansion.html" passHref={true} aria-label="link to Shinola Takes Its 'Detroit Message on the Road'"><a target="_blank" rel="noopener noreferrer">The New York Times</a></Link>, <Link href="https://www.detroitnews.com/story/entertainment/2015/04/14/art-journals-detroit-increasing-art-scene/25784987/" passHref={true} aria-label="link to New journals showcase Detroit art scene"><a target="_blank" rel="noopener noreferrer">The Detroit News</a></Link> and <Link href="https://news.artnet.com/opinion/galapagos-art-space-detroit-corktown-sale-404495" passHref={true} aria-label="link to Galapagos Art Space Plans $6.25 Million Detroit Property Flip"><a target="_blank" rel="noopener noreferrer">Artnet News</a></Link>. 
                                 The experience I gained in art and software development makes me great at creatively solving problems through software.
                                 <br /><br />
@@ -1024,7 +1026,7 @@ const AboutPage = () => {
                                 Today, I am more committed than ever to finding creative solutions to challenging problems as a UX designer and software developer.  
                                 Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
                             </p>
-                            <h2>key attributes</h2>
+                            <h4 style={{textAlign: "center"}}>key attributes</h4>
                             <table className={classes.resume_table}>
                                 <tbody>
                                     <tr>
