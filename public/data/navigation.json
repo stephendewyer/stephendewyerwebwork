@@ -37,6 +37,11 @@
         ]
     },
     {
+        "name": "FAQs",
+        "pathname": "/FAQs",
+        "sub_navigation": null
+    },
+    {
         "name": "contact",
         "pathname": "/contact",
         "sub_navigation": null
