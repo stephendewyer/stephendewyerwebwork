@@ -28,6 +28,11 @@
     padding: 0 1rem;
 }
 
+.story_headline {
+    padding: 0 0 1rem 0;
+    text-align: left;
+}
+
 .story {
     padding: 0 0 1rem 0;
 }
@@ -389,7 +394,7 @@
         flex-direction: column;
         width: 100%;
         justify-content: flex-start;
-        padding: 0 1rem;
+        padding: 0;
     }
 
     .action_buttons {
@@ -498,6 +503,10 @@
         margin: 0 auto 20px auto;
     }
 
+    .story_headline {
+        padding: 0 1rem 1rem 1rem;
+    }
+
     .profileImageStart {
         margin: 0;
     }
@@ -519,6 +528,10 @@
         justify-content: flex-start;
     }
 
+    .myStoryParagraphs{
+        padding: 0 1rem;
+    }
+
     .position_awards_and_grants {
         color: #E3E7DF;
         font-size: 1.25rem;
@@ -534,4 +547,25 @@
         flex-direction: column;
         justify-content: flex-start;
     }
+
+    .attributes_container {
+        padding: 0 1rem;
+    }
+
+    .positions {
+        padding: 0 1rem;
+    }
+
+    .education {
+        padding: 0 1rem;
+    }
+
+    .skills {
+        padding: 0 1rem;
+    }
+
+    .certificates {
+        padding: 0 1rem;
+    }
+
 }

@@ -28,12 +28,17 @@ const AboutPage = () => {
                     <tbody>
                         <tr>
                             <td>
-                                Directed company to improve human experiences of technology by combining art with state-of-the-art digital technology in the production of original software and rendering of digital services
+                                Worked with clients to plan and achieve client goals, meeting or exceeding client expectations
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Worked with clients to plan and achieve client goals, meeting or exceeding client expectations
+                                Created original and custom software using state-of-the-art technologies like SvelteKit and Next.js to improve performance
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Directed company to use art in the rendering of digital services to develop creative solutions that improve human experiences of technology
                             </td>
                         </tr>
                         <tr>
@@ -988,7 +993,7 @@ const AboutPage = () => {
                             <h2 className={classes.story}>
                                 story
                             </h2>
-                            <h3 style={{textAlign: "left", padding: "0 0 1rem 0"}}>
+                            <h3 className={classes.story_headline}>
                                 I&#39;m Stephen Dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human engagement with technology. 
                             </h3>
                             <div 
@@ -1025,26 +1030,28 @@ const AboutPage = () => {
                                 Today, I am more committed than ever to finding creative solutions to challenging problems as a UX designer and software developer.  
                                 Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
                             </p>
-                            <h4 style={{textAlign: "center"}}>key attributes</h4>
-                            <table className={classes.resume_table}>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            I&apos;m great at finding creative software solutions that improve human experiences of technology because of my background in art and software development.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            As a software developer and UX designer, I consider how software decisions impact user experiences and how state-of-the-art digital technologies can improve design.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            My experience as a founder allows me to bring people together around a vision to positively impact community and grow a business. 
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div className={classes.attributes_container}>
+                                <h4 style={{textAlign: "center"}}>key attributes</h4>
+                                <table className={classes.resume_table}>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                I&apos;m great at finding creative software solutions that improve human experiences of technology because of my background in art and software development.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                As a software developer and UX designer, I consider how software decisions impact user experiences and how state-of-the-art digital technologies can improve design.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                My experience as a founder allows me to bring people together around a vision to positively impact community and grow a business. 
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div 
                             className={classes.positions}
