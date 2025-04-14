@@ -22,7 +22,6 @@ body {
 h1 {
   font-family: "CenturyGothic";
   color: #514C64;
-  text-align: center;
   font-size: 1.5rem;
   margin: 0;
 }
@@ -30,7 +29,6 @@ h1 {
 h2 {
   font-family: "CenturyGothic";
   color: #7A7296;
-  text-align: center;
   font-size: 1.4rem;
   margin: 0;
 }
@@ -39,7 +37,6 @@ h3 {
   font-family: "CenturyGothic";
   color:#545451;
   font-size: 1.3rem;
-  text-align: center;
   margin: 0;
 }
 
@@ -47,7 +44,6 @@ h4 {
   font-family: "CenturyGothic";
   color: #707578;
   font-size: 1.2rem;
-  text-align: left;
   margin: 0;
 }
 
@@ -121,6 +117,14 @@ table {
   border-spacing: 0;
 }
 
+.left_table_column {
+  width: 45%;
+}
+
+.right_table_column {
+  width: 55%;
+}
+
 td {
   padding: 0.5rem 1rem;
   overflow-wrap: break-word;
@@ -140,6 +144,7 @@ textarea {
   font-size: 1.2rem;
   font-family: "segoeUI";
 }
+
 @media screen and (max-width: 1440px) {
 
   html, body {

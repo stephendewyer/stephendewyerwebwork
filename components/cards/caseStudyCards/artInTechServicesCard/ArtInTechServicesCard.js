@@ -83,25 +83,23 @@ const ArtInTechServicesCard = () => {
             <p>
               A web platform for a company that combines the vision and technical expertise to make groundbreaking digital products.
             </p>
-            <MyLink 
-              href="/case_studies/artInTechServices"
-              passHref 
-            >
-              <div 
-                className={styles.view_button} 
+            <div className={styles.view_button}>
+              <MyLink 
+                href="/case_studies/artInTechServices"
+                passHref 
                 onMouseEnter={(() => setButtonActive(true))}
                 onMouseOver={(() => setButtonActive(true))}
                 onMouseLeave={(() => setButtonActive(false))}
                 onMouseOut={(() => setButtonActive(false))}
               >
-                  <ButtonAction
-                    buttonIsActive={buttonActive}
-                    aria-label="link to view"
-                  >
-                      view case study
-                  </ButtonAction>
-              </div>
-            </MyLink>
+                <ButtonAction
+                  buttonIsActive={buttonActive}
+                  aria-label="link to view"
+                >
+                    view case study
+                </ButtonAction>
+              </MyLink>
+            </div>
           </div>
         </div>
       </div>

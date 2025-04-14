@@ -7,10 +7,19 @@
   padding: 10rem 0 0 0;
 }
 
-.headline {
+.headline_container {
   max-width: 800px;
-  width: 75%;
   padding: 0 1rem;
+}
+
+.headline {
+  width: 100%;
+  text-align: left;
+}
+
+.subheadline {
+  text-align: left;
+  width: 100%;
 }
 
 .paragraph {

@@ -24,30 +24,20 @@ const AboutPage = () => {
             company: 'Art in Tech Services Inc',
             location: 'Tucson, Arizona (relocated from Minneapolis, Minnesota)',
             responsibilities:
-                <table className={classes.resume_table}>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Worked with clients to plan and achieve client goals, meeting or exceeding client expectations
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Created original and custom software using state-of-the-art technologies like SvelteKit and Next.js to improve performance
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Directed company to use art in the rendering of digital services to develop creative solutions that improve human experiences of technology
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Designed, developed, deployed and maintained the company’s website including client and administrator portals, streamlining collaboration
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <ul>
+                    <li>
+                        Worked with clients to plan and achieve client goals, meeting or exceeding client expectations
+                    </li>
+                    <li>
+                        Created original and custom software using state-of-the-art technologies like SvelteKit and Next.js to improve performance
+                    </li>
+                    <li>
+                        Directed company to use art in the rendering of digital services to develop creative solutions that improve human experiences of technology
+                    </li>
+                    <li>
+                        Designed, developed, deployed and maintained the company’s website including client and administrator portals, streamlining collaboration
+                    </li>
+                </ul>
         },
         {
             length: 'April 2017 – present', 
@@ -55,35 +45,23 @@ const AboutPage = () => {
             company: 'Public Arts Commission',
             location: 'Tucson, Arizona (relocated from Minneapolis, Minnesota)',
             responsibilities:
-                <table className={classes.resume_table}>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Responsible for overall direction of the non-profit, 501(c)(4) organization that uses original software to improve civic engagement in the art community
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Designed, developed, deployed and maintained software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Developing a voter networking and organizing portal 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Conducted user tests for web prototypes with Board of Directors and art experts
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Grew Board of Directors by 233% to include leading voices in the art community by delivering strong leadership
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <ul>
+                    <li>
+                        Responsible for overall direction of the non-profit, 501(c)(4) organization that uses original software to improve civic engagement in the art community
+                    </li>
+                    <li>
+                        Designed, developed, deployed and maintained software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
+                    </li>
+                    <li>
+                        Developing a voter networking and organizing portal
+                    </li>
+                    <li>
+                        Conducted user tests for web prototypes with Board of Directors and art experts
+                    </li>
+                    <li>
+                        Grew Board of Directors by 233% to include leading voices in the art community by delivering strong leadership
+                    </li>
+                </ul>
         },
         {
             length: 'February - May 2022', 
@@ -91,20 +69,14 @@ const AboutPage = () => {
             company: 'Turnberry Solutions',
             location: 'Minneapolis, Minnesota',
             responsibilities:
-                <table className={classes.resume_table}>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Created high-fidelity prototypes to personalize dental insurance plan shopping in the Federal Employees Dental and Vision Insurance Program (FEDVIP)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Client: FedPoint
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <ul>
+                <li>
+                    Created high-fidelity prototypes to personalize dental insurance plan shopping in the Federal Employees Dental and Vision Insurance Program (FEDVIP)
+                </li>
+                <li>
+                    lient: FedPoint
+                </li>
+            </ul>
         },
         {
             length: 'July 2013 – January 2017', 
@@ -112,30 +84,20 @@ const AboutPage = () => {
             company: '∞ mile (Infinite Mile LLC)',
             location: 'Detroit, Michigan',
             responsibilities:
-                <table className={classes.resume_table}>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Designed, developed, deployed and maintained website featuring an online store for print anthologies and merchandise, generating thousands of dollars in revenue
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Directed three editing staff and 78 contributors to publish 94 essays and interviews, 51 artist projects, 26 reviews and 27 works of fiction or poetry
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Wrote successful grant applications
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                            Partnered with the University of Michigan Stamps School of Art & Design to produce two serial publications and conferences
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <ul>
+                    <li>
+                        Designed, developed, deployed and maintained website featuring an online store for print anthologies and merchandise, generating thousands of dollars in revenue
+                    </li>
+                    <li>
+                        Directed three editing staff and 78 contributors to publish 94 essays and interviews, 51 artist projects, 26 reviews and 27 works of fiction or poetry
+                    </li>
+                    <li>
+                        Wrote successful grant applications
+                    </li>
+                    <li>
+                        Partnered with the University of Michigan Stamps School of Art & Design to produce two serial publications and conferences
+                    </li>
+                </ul>
         }
     ];
 
@@ -145,6 +107,10 @@ const AboutPage = () => {
             label: "full-stack web development",
             content: 
                 <table className={classes.resume_table}>
+                    <colgroup>
+                        <col className="left_table_column" />
+                        <col className="right_table_column" />
+                    </colgroup>
                     <tbody>
                         <tr>
                             <td className={classes.row_heading}>
@@ -257,132 +223,86 @@ const AboutPage = () => {
             image: <Image src={UXDesignIcon} layout="fill" objectFit="contain" alt="skill: UX design"/>,
             label: "user experience (UX) design",
             content: 
-                <table className={classes.resume_table}>
-                    <tbody>
-                        <tr>
-                            <td>
-                                wire framing
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                prototyping
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                user research
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                user testing
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                information architecture
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                user flows
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                user interviews
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <ul>
+                    <li>
+                        wire framing
+                    </li>
+                    <li>
+                        prototyping
+                    </li>
+                    <li>
+                        user research
+                    </li>
+                    <li>
+                        user testing
+                    </li>
+                    <li>
+                        information architecture
+                    </li>
+                    <li>
+                        user flows
+                    </li>
+                    <li>
+                        user interviews
+                    </li>
+                </ul>
         },
         {
             image: <Image src={Art} layout="fill" objectFit="contain" alt="skill: art"/>,
             label: "art direction",
             content: 
-                <table className={classes.resume_table}>
-                    <tbody>
-                        <tr>
-                            <td>
-                                photography
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                videography
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                graphic design
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                brand identity design
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                animation
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <ul>
+                    <li>
+                        photography
+                    </li>
+                    <li>
+                        videography
+                    </li>
+                    <li>
+                        graphic design
+                    </li>
+                    <li>
+                        brand identity design
+                    </li>
+                    <li>
+                        animation
+                    </li>
+                </ul>
         },
         {
             image: <Image src={Leadership} layout="fill" objectFit="contain" alt="skill: leadership"/>,
             label: "leadership",
             content:
-            <table className={classes.resume_table}>
-                <tbody>
-                    <tr>
-                        <td>
-                            inspiring and motivating individuals
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            empathy
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            building trust with integrity and fairness
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            working with diverse communities
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            communication
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                <ul>
+                    <li>
+                        inspiring and motivating individuals
+                    </li>
+                    <li>
+                        empathy
+                    </li>
+                    <li>
+                        building trust with integrity and fairness
+                    </li>
+                    <li>
+                        working with diverse communities
+                    </li>
+                    <li>
+                        communication
+                    </li>
+                </ul>
         },
         {
             image: <Image src={ArtificialIntelligence} layout="fill" objectFit="contain" alt="skill: artificial intelligence"/>,
             label: "artificial intelligence",
             content: 
-                <table className={classes.resume_table}>
-                    <tbody>
-                        <tr>
-                            <td>
-                                machine learning
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                deep learning including artificial neural networks and convolutional neural networks
-                            </td>
-                        </tr> 
-                    </tbody>
-                </table>
+            <ul>
+                <li>
+                    machine learning
+                </li>
+                <li>
+                    deep learning including artificial neural networks and convolutional neural networks
+                </li>
+            </ul>
         }
     ];
 
@@ -990,74 +910,68 @@ const AboutPage = () => {
                             id="introduction" 
                             ref={introductionRef}
                         >
-                            <h2 className={classes.story}>
-                                story
-                            </h2>
-                            <h3 className={classes.story_headline}>
-                                I&#39;m Stephen Dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human engagement with technology. 
-                            </h3>
-                            <div 
-                                ref={profileImage}
-                                className={classes.profile_image_container}
-                            >
+                            <div className={classes.story}>
+                                <h2 style={{textAlign: "center", paddingBottom: "1rem"}}>
+                                    story
+                                </h2>
+                                <h3 className={classes.story_headline}>
+                                    I&#39;m Stephen Dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human engagement with technology. 
+                                </h3>
                                 <div 
-                                    className={(profileImageDidStart) ? classes.profileImageEnd : classes.profileImageStart}
+                                    ref={profileImage}
+                                    className={classes.profile_image_container}
                                 >
-                                    <Image 
-                                        src={stephen_dewyer_profile} 
-                                        layout="responsive" 
-                                        alt="stephen dewyer profile image" 
-                                        priority
-                                    /> 
-                                </div>                    
+                                    <div 
+                                        className={(profileImageDidStart) ? classes.profileImageEnd : classes.profileImageStart}
+                                    >
+                                        <Image 
+                                            src={stephen_dewyer_profile} 
+                                            layout="responsive" 
+                                            alt="stephen dewyer profile image" 
+                                            priority
+                                        /> 
+                                    </div>                    
+                                </div>
+                                <p className={classes.myStoryParagraphs}>
+                                    I worked extensively with universities, museums, publications, campaigns and businesses to produce critically-acclaimed projects.
+                                    The experience I gained as a software developer, UX designer, artist and founder makes me great at creatively solving problems through software.
+                                    <br /><br />
+                                    I first entered the fields of UX design and software development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called <Link href="https://infinitemiledetroit.com" passHref={true} aria-label="link to Infinite Mile website"><a target="_blank" rel="noopener noreferrer">Infinite Mile</a></Link>.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about art and cultures in the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
+                                    <br /><br />
+                                    In 2017, I created the website for <Link href="https://publicartscommission.org" passHref={true} aria-label="link to Public Arts Commission website"><a target="_blank" rel="noopener noreferrer">Public Arts Commission</a></Link>, a non-profit organization that is dedicated to expanding the political imaginary for a fairer, more just economy and a more egalitarian society by supporting democratic movements for greater public art.  
+                                    The website features a searchable database of all candidates, referendums, legislation, constitutional amendments and actions endorsed by Public Arts Commission.  
+                                    Campaigns can apply for endorsement via the Public Arts Commission website.  A voter portal that I am currently developing will allow voters to network and organize using the website.
+                                    <br /><br />
+                                    Currently, I am Founding Director, Full-stack Web Developer and UX Designer at <Link href="https://artintechservices.com" passHref={true} aria-label="link to Art in Tech Services Inc. website"><a target="_blank" rel="noopener noreferrer">Art in Tech Services Inc.</a></Link>, a C corporation that uses advancements in art and digital technology to improve design for the public and businesses.  
+                                    At Art in Tech Services Inc., I help clients plan and achieve their digital product goals.  
+                                    Art in Tech Services Inc. launched in 2021.  
+                                    <br /><br />
+                                    After diving deep into software development, I found that art was actually often a precursor to technological discoveries.  For instance, Terravision, the 3D mapping software and inspiration for Google Earth, was created in 1993 as an art project by a German company called ART+COM.  I decided to further develop my skills in UX design and software development.  
+                                    <br /><br />
+                                    Today, I am more committed than ever to finding creative solutions to challenging problems as a UX designer and software developer.  
+                                    Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
+                                </p>
                             </div>
-                            <p className={classes.myStoryParagraphs}>
-                                I worked extensively with universities, museums, publications, campaigns and businesses to produce critically-acclaimed projects.
-                                The experience I gained as a software developer, UX designer, artist and founder makes me great at creatively solving problems through software.
-                                <br /><br />
-                                I first entered the fields of UX design and software development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called <Link href="https://infinitemiledetroit.com" passHref={true} aria-label="link to Infinite Mile website"><a target="_blank" rel="noopener noreferrer">Infinite Mile</a></Link>.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about art and cultures in the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
-                                <br /><br />
-                                In 2017, I created the website for <Link href="https://publicartscommission.org" passHref={true} aria-label="link to Public Arts Commission website"><a target="_blank" rel="noopener noreferrer">Public Arts Commission</a></Link>, a non-profit organization that is dedicated to expanding the political imaginary for a fairer, more just economy and a more egalitarian society by supporting democratic movements for greater public art.  
-                                The website features a searchable database of all candidates, referendums, legislation, constitutional amendments and actions endorsed by Public Arts Commission.  
-                                Campaigns can apply for endorsement via the Public Arts Commission website.  A voter portal that I am currently developing will allow voters to network and organize using the website.
-                                <br /><br />
-                                Currently, I am Founding Director, Full-stack Web Developer and UX Designer at <Link href="https://artintechservices.com" passHref={true} aria-label="link to Art in Tech Services Inc. website"><a target="_blank" rel="noopener noreferrer">Art in Tech Services Inc.</a></Link>, a C corporation that uses advancements in art and digital technology to improve design for the public and businesses.  
-                                At Art in Tech Services Inc., I help clients plan and achieve their digital product goals.  
-                                Art in Tech Services Inc. launched in 2021.  
-                                <br /><br />
-                                After diving deep into software development, I found that art was actually often a precursor to technological discoveries.  For instance, Terravision, the 3D mapping software and inspiration for Google Earth, was created in 1993 as an art project by a German company called ART+COM.  I decided to further develop my skills in UX design and software development.  
-                                <br /><br />
-                                Today, I am more committed than ever to finding creative solutions to challenging problems as a UX designer and software developer.  
-                                Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
-                            </p>
                             <div className={classes.attributes_container}>
                                 <h4 style={{textAlign: "center"}}>key attributes</h4>
-                                <table className={classes.resume_table}>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                I&apos;m great at finding creative software solutions that improve human experiences of technology because of my background in art and software development.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                As a software developer and UX designer, I consider how software decisions impact user experiences and how state-of-the-art digital technologies can improve design.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                My experience as a founder allows me to bring people together around a vision to positively impact community and grow a business. 
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <ul>
+                                    <li>
+                                        I&apos;m great at finding creative software solutions that improve human experiences of technology because of my background in art and software development.
+                                    </li>
+                                    <li>
+                                        As a software developer and UX designer, I consider how software decisions impact user experiences and how state-of-the-art digital technologies can improve design.
+                                    </li>
+                                    <li>
+                                        My experience as a founder allows me to bring people together around a vision to positively impact community and grow a business. 
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div 
                             className={classes.positions}
                             ref={positionsRef}
                         >
-                            <h3 id="positions">positions</h3>
+                            <h3 id="positions" style={{textAlign: "center"}}>positions</h3>
                             <ExperienceAccordion experience={experience}/>
                         </div>
                         <div 
@@ -1065,7 +979,7 @@ const AboutPage = () => {
                             ref={educationRef}
                             id="education"
                         >
-                            <h3>
+                            <h3 style={{textAlign: "center"}}>
                                 education
                             </h3>
                             <div className={classes.label_paragraphs}>
@@ -1131,7 +1045,7 @@ const AboutPage = () => {
                             ref={skillsRef}
                             id="skills"
                         >
-                            <h3>skills</h3>
+                            <h3 style={{textAlign: "center"}}>skills</h3>
                             <SkillsAccordion skills={skills} />          
                         </div>
                         <div 
@@ -1139,62 +1053,42 @@ const AboutPage = () => {
                             id="certificates"
                             ref={certificatesRef}
                         >
-                            <h3>certificates</h3>
+                            <h3 style={{textAlign: "center"}}>certificates</h3>
                             <div className={classes.certificates_group}>
                                 <div className={classes.label_paragraphs}>
                                     <span className={classes.position}>Certificates in Software Development, Machine Learning, UX Design and Web Accessibility</span>
                                     <span className={classes.company}>Udemy</span>
                                     <span className={classes.location_and_dates}>2021 &ndash; 2024</span>
                                 </div>
-                                <table className={classes.resume_table}>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                Beginning C++ Programming - From Beginner to Beyond
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Understanding TypeScript
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Machine Learning A-Z: AI, Python & R + ChatGPT Bonus [2023]
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                GraphQL by Example
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Svelte.js - The Complete Guide (incl. Sapper.js)
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                React - The Complete Guide (incl Hooks, React Router, Redux)
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Web Accessibility Training Course - WCAG 2.1 Compliance
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                The User Researcher&#39;s guide to UX discoveries
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <ul>
+                                    <li>
+                                        Beginning C++ Programming - From Beginner to Beyond
+                                    </li>
+                                    <li>
+                                        Understanding TypeScript
+                                    </li>
+                                    <li>
+                                        Machine Learning A-Z: AI, Python & R + ChatGPT Bonus [2023]
+                                    </li>
+                                    <li>
+                                        GraphQL by Example
+                                    </li>
+                                    <li>
+                                        Svelte.js - The Complete Guide (incl. Sapper.js)
+                                    </li>
+                                    <li>
+                                        NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
+                                    </li>
+                                    <li>
+                                        React - The Complete Guide (incl Hooks, React Router, Redux)
+                                    </li>
+                                    <li>
+                                        Web Accessibility Training Course - WCAG 2.1 Compliance
+                                    </li>
+                                    <li>
+                                        The User Researcher&#39;s guide to UX discoveries
+                                    </li>
+                                </ul>
                             </div>
                             <div className={classes.certificates_group}>
                                 <div className={classes.label_paragraphs}>
@@ -1202,60 +1096,38 @@ const AboutPage = () => {
                                     <span className={classes.company}> University of Michigan &#8211; Coursera</span>
                                     <span className={classes.location_and_dates}>2020 &ndash; 2021</span>
                                 </div>
-                                <table className={classes.resume_table}>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                JavaScript, jQuery, and JSON
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Interactivity with JavaScript
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Building Database Applications in PHP
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Introduction to Structured Query Language (SQL)
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Building Web Applications in PHP
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Intermediate PostgreSQL
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Database Design and Basic SQL in PostgreSQL
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Python Data Structures
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Python for Everybody
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Inspiring and Motivating Individuals
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <ul>
+                                    <li>
+                                        JavaScript, jQuery, and JSON
+                                    </li>
+                                    <li>
+                                        Interactivity with JavaScript
+                                    </li>
+                                    <li>
+                                        Building Database Applications in PHP
+                                    </li>
+                                    <li>
+                                        Introduction to Structured Query Language (SQL)
+                                    </li>
+                                    <li>
+                                        Building Web Applications in PHP
+                                    </li>
+                                    <li>
+                                        Intermediate PostgreSQL
+                                    </li>
+                                    <li>
+                                        Database Design and Basic SQL in PostgreSQL
+                                    </li>
+                                    <li>
+                                        Python Data Structures
+                                    </li>
+                                    <li>
+                                        Python for Everybody
+                                    </li>
+                                    <li>
+                                        Inspiring and Motivating Individuals
+                                    </li>
+                                </ul>
                             </div> 
                             <div className={classes.certificates_group}>
                                 <div className={classes.label_paragraphs}>
@@ -1263,30 +1135,20 @@ const AboutPage = () => {
                                     <span className={classes.company}>Interaction Design Foundation</span>
                                     <span className={classes.location_and_dates}>2020</span>
                                 </div>
-                                <table className={classes.resume_table}>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                UI Design Patterns for Successful Software
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Mobile User Experience (UX) Design
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Become a UX Designer from Scratch
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Human-Computer Interaction
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <ul>
+                                    <li>
+                                        UI Design Patterns for Successful Software
+                                    </li>
+                                    <li>
+                                        Mobile User Experience (UX) Design
+                                    </li>
+                                    <li>
+                                        Become a UX Designer from Scratch
+                                    </li>
+                                    <li>
+                                        Human-Computer Interaction
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

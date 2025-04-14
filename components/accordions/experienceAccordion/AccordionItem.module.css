@@ -96,7 +96,7 @@
 
 .panel_content {
     transition: opacity 0.3s linear 0.18s;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 0 1rem 0;
 }
 
 
@@ -118,10 +118,6 @@
 
     .company {
         font-size: 1.175rem;
-    }
-
-    .panel_content {
-        padding: 0 0.75rem 0.75rem 0.75rem;
     }
 
 }
@@ -149,10 +145,6 @@
     .panel_label_bold {
         gap: 0.5rem;
         padding: 0.5rem 0;
-    }
-
-    .panel_content {
-        padding: 0 0.5rem 0.5rem 0.5rem;
     }
 
 }

@@ -59,7 +59,7 @@
 .case_study_info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     position: relative;
     background-color: rgba(255, 233, 192, 0.75);
     padding: 1rem;
@@ -108,7 +108,9 @@
 }
 
 .view_button {
-    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1920px){
@@ -121,14 +123,7 @@
 
     .case_study {
         height: 30rem;
-    }
-  
-    .view_button {
-        width: 100%;
-        position: relative;
-        text-align: center;
-    }
-  
+    }  
 }
 
 @media screen and (max-width: 1080px) {
@@ -169,12 +164,6 @@
     .prototypes {
         width: 100%;
         height: 16rem;
-    }
-
-    .view_button {
-          width: 100%;
-          position: relative;
-          text-align: center;
     }
   
 }

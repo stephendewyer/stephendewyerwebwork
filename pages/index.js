@@ -51,9 +51,14 @@ const IndexPage = () => {
         <meta property="og:url" content="https://stephendewyerwebwork.vercel.app" />
       </Head>
       <div className={styles.container}>
-        <h1 className={styles.headline}>
-          software development and user experience design<br/> for creative solutions<br/> to challenging problems
-        </h1>
+        <div className={styles.headline_container}>
+          <h1 className={styles.headline}>
+            software development + user experience design
+          </h1>
+          <h3 className={styles.subheadline}>
+            creative software solutions
+          </h3>
+        </div>
         <div className={styles.intro_video}>
           <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
         </div>

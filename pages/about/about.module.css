@@ -34,7 +34,7 @@
 }
 
 .story {
-    padding: 0 0 1rem 0;
+    padding: 0 1rem;
 }
 
 .certificates {
@@ -52,7 +52,7 @@
     gap: 1rem;
 }
 
-.education{
+.education {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -144,7 +144,6 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 0 1rem;
 }
 
 .intro_section {
@@ -282,6 +281,10 @@
     color: #E3E7DF;
 }
 
+.attributes_container {
+    padding: 0 1rem;
+}
+
 .certificates {
     width: 100%;
 }
@@ -297,16 +300,6 @@
 
 .arrow_right_scroll {
     display: none;
-}
-
-.resume_table {
-    box-shadow:
-        0 1px 1px hsl(0deg 0% 0% / 0.075),
-        0 2px 2px hsl(0deg 0% 0% / 0.075),
-        0 4px 4px hsl(0deg 0% 0% / 0.075),
-        0 8px 8px hsl(0deg 0% 0% / 0.075),
-        0 16px 16px hsl(0deg 0% 0% / 0.075)
-    ;
 }
 
 @media screen and (max-width: 1440px) {
@@ -503,10 +496,6 @@
         margin: 0 auto 20px auto;
     }
 
-    .story_headline {
-        padding: 0 1rem 1rem 1rem;
-    }
-
     .profileImageStart {
         margin: 0;
     }
@@ -528,10 +517,6 @@
         justify-content: flex-start;
     }
 
-    .myStoryParagraphs{
-        padding: 0 1rem;
-    }
-
     .position_awards_and_grants {
         color: #E3E7DF;
         font-size: 1.25rem;
@@ -546,10 +531,6 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-    }
-
-    .attributes_container {
-        padding: 0 1rem;
     }
 
     .positions {

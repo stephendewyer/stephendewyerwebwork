@@ -83,25 +83,23 @@ const PulblicArtsCommissionCard = () => {
               <p>
                   A web platform for a non-profit organization that is dedicated to expanding the political imagination for greater democracy within and outside art.
               </p>
-              <MyLink 
-                href="/case_studies/publicArtsCommission" 
-                passHref 
-              >
-                <div 
-                  className={styles.view_button} 
+              <div className={styles.view_button} >
+                <MyLink 
+                  href="/case_studies/publicArtsCommission" 
+                  passHref 
                   onMouseEnter={(() => setButtonActive(true))}
                   onMouseOver={(() => setButtonActive(true))}
                   onMouseLeave={(() => setButtonActive(false))}
                   onMouseOut={(() => setButtonActive(false))}
                 >
-                    <ButtonAction
-                      buttonIsActive={buttonActive}
-                      aria-label="link to view"
-                    >
-                        view case study
-                    </ButtonAction>
-                </div>
-              </MyLink>
+                  <ButtonAction
+                    buttonIsActive={buttonActive}
+                    aria-label="link to view"
+                  >
+                      view case study
+                  </ButtonAction>
+                </MyLink>  
+              </div>
             </div>
           </div>
         </div>

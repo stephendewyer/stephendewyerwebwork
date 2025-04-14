@@ -83,25 +83,23 @@ const JoyfoodlyCard = () => {
             <p>
               A legacy website for a culinary education company serving families.
             </p>
-            <MyLink 
-              href="/case_studies/joyfoodly" 
-              passHref 
-            >
-              <div 
-                className={styles.view_button} 
+            <div className={styles.view_button} >
+              <MyLink 
+                href="/case_studies/joyfoodly" 
+                passHref 
                 onMouseEnter={(() => setButtonActive(true))}
                 onMouseOver={(() => setButtonActive(true))}
                 onMouseLeave={(() => setButtonActive(false))}
                 onMouseOut={(() => setButtonActive(false))}
               >
-                  <ButtonAction
-                    buttonIsActive={buttonActive}
-                    aria-label="link to view"
-                  >
-                      view case study
-                  </ButtonAction>
-              </div>
-            </MyLink>
+                <ButtonAction
+                  buttonIsActive={buttonActive}
+                  aria-label="link to view"
+                >
+                    view case study
+                </ButtonAction>
+              </MyLink>
+            </div>
           </div>
         </div>
       </div>
