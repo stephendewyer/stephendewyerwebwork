@@ -649,14 +649,14 @@ const AboutPage = () => {
             // console.log("bottom of about_sections - pageTabsHeight + window.scrollY: ", triggerAbsolutePageTabsYPosition)
             // console.log("currentStickyTabsPosition: ", stickyNavTabsYPosition);
 
-            if (
-                (stickyNavTabsYPosition >= triggerAbsolutePageTabsYPosition) && 
-                ((position + window.innerHeight) >= triggerAbsolutePageTabsYPosition)) 
-            {
-                setPageTabsAbsolute(true);
-                // console.log("sticky tabs absolute");
-            } else {
+            if ((position + window.innerHeight) < triggerAbsolutePageTabsYPosition) {
                 setPageTabsAbsolute(false);
+            } else {
+                if (stickyNavTabsYPosition >= triggerAbsolutePageTabsYPosition) {
+                    setPageTabsAbsolute(true);
+                } else {
+                    setPageTabsAbsolute(false);
+                };
             };
 
             if (position > currentActionsPosition) {
