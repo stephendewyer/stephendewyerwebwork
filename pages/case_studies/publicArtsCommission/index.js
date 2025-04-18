@@ -425,10 +425,10 @@ const PublicArtsCommission = () => {
                 </div>
             </div>
             <div className={styles.solution}>
-                <h1>
+                <h1 style={{textAlign: "center", paddingLeft: "1rem", paddingRight: "1rem"}}>
                     Public Arts Commission web platform
                 </h1>
-                <h2>
+                <h2 style={{textAlign: "center", paddingLeft: "1rem", paddingRight: "1rem"}}>
                     first launched in 2017 and redesigned in 2023
                 </h2>
                 <div className={styles.slider_case_study}>

@@ -431,10 +431,10 @@ const ArtinTechServices = () => {
                 </div>
             </div>
             <div className={styles.solution}>
-                <h1>
+                <h1 style={{textAlign: "center", paddingLeft: "1rem", paddingRight: "1rem"}}>
                     Art in Tech Services Inc web platform
                 </h1>
-                <h2>
+                <h2 style={{textAlign: "center", paddingLeft: "1rem", paddingRight: "1rem"}}>
                     2021 &ndash; present
                 </h2>
                 <div className={styles.slider_case_study}>

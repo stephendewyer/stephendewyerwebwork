@@ -237,8 +237,8 @@ const Contact = () => {
             <div className="container">
                 <div className={classes.contact}>
                     <form className={classes.form} onSubmit={submitHandler} noValidate >
-                        <h1 className="header">
-                        contact
+                        <h1 className="header" style={{textAlign: "center"}}>
+                            contact
                         </h1>
                         <p className="header_02">
                             Want help on a new or existing project?  Looking for someone to handle your software development and/or UX design?  How can I help you?  

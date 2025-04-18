@@ -43,7 +43,8 @@
     cursor: pointer;
     padding: 12px 24px;
     border: 3px solid;
-    margin:0;
+    margin: 0;
+    transition: margin-left 0.33s ease-out, color 0.33s ease-out, border-color 0.33s ease-out;
     box-sizing: border-box;
     text-decoration: none;
     text-align: center;

@@ -32,7 +32,11 @@ const ButtonPrevious = (props) => {
             </div> 
             <div 
                 className={styles.button}
-                style={{ color: isHovering ? '#90947E': '#575B46', borderColor: isHovering ? '#90947E': '#575B46' }}
+                style={{ 
+                    color: isHovering ? '#90947E': '#575B46', 
+                    borderColor: isHovering ? '#90947E': '#575B46', 
+                    marginLeft: isHovering ? "0" : "12px" 
+                }}
             >
                 <div className={styles.button_content}>
                     <div 

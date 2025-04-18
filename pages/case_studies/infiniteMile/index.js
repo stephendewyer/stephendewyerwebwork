@@ -413,10 +413,10 @@ const InfiniteMile = () => {
                 </div>
             </div>
             <div className={styles.solution}>
-                <h1>
+                <h1 style={{textAlign: "center", paddingLeft: "1rem", paddingRight: "1rem"}}>
                     Infinite Mile LLC (∞ mile) website
                 </h1>
-                <h2>
+                <h2 style={{textAlign: "center", paddingLeft: "1rem", paddingRight: "1rem"}}>
                     2013 &ndash; 2017
                 </h2>
                 <div className={styles.slider_case_study}>
