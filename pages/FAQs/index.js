@@ -9,7 +9,7 @@ const FAQs = () => {
         {
             index: 1,
             label: "Have I collaborated with other software developers?",
-            content: "Yes, one of the things I love about my career is working with other software developers.  I enjoy seeing how each software developer is unique and learning from each software developer’s experience.  My skills having led companies lend themselves to collaboration.  As someone with a background in higher education, I also share a passion for sharing knowledge."
+            content: "Yes, one of the things I love about my career is working with other software developers.  I worked on teams that blended UX design with software development, teams that were strictly software development and teams that worked across all departments.  I enjoy seeing how each software developer is unique and learning from each software developer’s experience.  My skills having led companies lend themselves to collaboration.  As someone with a background in higher education, I also share a passion for sharing knowledge."
         },
         {
             index: 2,

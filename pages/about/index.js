@@ -328,6 +328,7 @@ const AboutPage = () => {
     const awardsAndGrantsRef = useRef(null);
     const skillsRef = useRef(null);
     const certificatesRef = useRef(null);
+    const aboutSectionsRef = useRef(null);
 
     const introductionTabRef = useRef(null);
 
@@ -378,6 +379,7 @@ const AboutPage = () => {
     const [introductionObserved, setIntroductionObserved] = useState(false);
 
     const [pageNavTabClicked, setPageNavTabClicked] = useState(false);
+    
     const [pageNavTabClickedId, setPageNavTabClickedId] = useState(null);
 
     const handleTabClick = (event, id) => {
@@ -507,6 +509,12 @@ const AboutPage = () => {
         };
     };
 
+    const [windowWidth, setWindowWidth] = useState(0);
+
+    const [pageTabsHeight, setPageTabsHeight] = useState(0);
+
+    const [pageTabsAbsolute, setPageTabsAbsolute] = useState(false);
+
     useEffect(() => {
 
         const options = {
@@ -599,19 +607,50 @@ const AboutPage = () => {
         const certificatesObserver = new IntersectionObserver(certificatesIntersectingHandler, tabIntersectingOptions);
         certificatesObserver.observe(certificatesRef.current);
 
-        setCurrentStickyTabsPosition(stickyTabsRef.current.getBoundingClientRect().top + window.scrollY);
-
-        setCurrentActionsPosition(actionsRef.current.getBoundingClientRect().top + window.scrollY);
-
         const handleScroll = () => {
 
-            const position = window.scrollY;
+            setCurrentStickyTabsPosition(stickyTabsRef.current.getBoundingClientRect().top + window.scrollY);
+
+            setCurrentActionsPosition(actionsRef.current.getBoundingClientRect().top + window.scrollY);
+
+            let position = window.scrollY;
 
             if (position > currentStickyTabsPosition) {
                 setTabsSticky(true);
             } else if (position <= currentStickyTabsPosition) {
                 setTabsSticky(false);
             };
+
+            // get the y position of the bottom of the about_sections div - pageNavTabs height
+
+            let stickyNavTabsYPosition = pageNavTabsScrollableContainerRef.current.getBoundingClientRect().top + window.scrollY;
+
+            let triggerAbsolutePageTabsYPosition = 0;
+
+            if (pageTabsHeight) {
+
+                triggerAbsolutePageTabsYPosition = (aboutSectionsRef.current.getBoundingClientRect().bottom + window.scrollY) - pageTabsHeight;
+
+            };
+
+            // console.log("bottom of about_sections - pageTabsHeight + window.scrollY: ", triggerAbsolutePageTabsYPosition)
+            // console.log("currentStickyTabsPosition: ", stickyNavTabsYPosition);
+
+            if (
+                (stickyNavTabsYPosition >= triggerAbsolutePageTabsYPosition) && 
+                ((position + window.innerHeight) >= triggerAbsolutePageTabsYPosition)) 
+            {
+                setPageTabsAbsolute(true);
+                // console.log("sticky tabs absolute");
+            } else if (stickyNavTabsYPosition < triggerAbsolutePageTabsYPosition) {
+                setPageTabsAbsolute(false);
+                // console.log("sticky tabs still sticky");
+            } else if ((position + window.innerHeight) < triggerAbsolutePageTabsYPosition) {
+                setPageTabsAbsolute(false);
+                // console.log("sticky tabs still sticky");
+            };
+
+            // console.log("pageTabsAbsolute: ", pageTabsAbsolute);
 
             if (position > currentActionsPosition) {
                 setActionsSticky(true);
@@ -694,7 +733,13 @@ const AboutPage = () => {
             };
         };
 
+        setWindowWidth(window.innerWidth);
+        setPageTabsHeight(pageNavTabsScrollableContainerRef.current.getBoundingClientRect().height);
+
         const handleWindowResize = () =>  {
+
+            setWindowWidth(window.innerWidth);          
+            setPageTabsHeight(pageNavTabsScrollableContainerRef.current.getBoundingClientRect().height);  
 
             if (pageNavTabsScrollableRef.current) {
                 setPageNavTabsScrollableWidth(pageNavTabsScrollableRef.current.scrollWidth);
@@ -788,7 +833,26 @@ const AboutPage = () => {
             window.removeEventListener('scroll', handleScroll);
         };
             
-    }, [currentStickyTabsPosition, currentActionsPosition, introductionTabScrollLeftPosition, positionsTabScrollLeftPosition, educationTabScrollLeftPosition, awardsAndGrantsTabScrollLeftPosition, skillsTabScrollLeftPosition, certificatesTabScrollLeftPosition, pageNavTabsScrollableContainerWidth, pageNavTabsScrollableLeftPosition, pageNavTabsScrollableWidth, introductionTabWidth, positionsTabWidth, educationTabWidth, awardsAndGrantsTabWidth, skillsTabWidth, certificatesTabWidth]);
+    }, [
+        pageTabsHeight, 
+        currentStickyTabsPosition, 
+        currentActionsPosition, 
+        introductionTabScrollLeftPosition, 
+        positionsTabScrollLeftPosition, 
+        educationTabScrollLeftPosition, 
+        awardsAndGrantsTabScrollLeftPosition, 
+        skillsTabScrollLeftPosition, 
+        certificatesTabScrollLeftPosition, 
+        pageNavTabsScrollableContainerWidth, 
+        pageNavTabsScrollableLeftPosition, 
+        pageNavTabsScrollableWidth, 
+        introductionTabWidth, 
+        positionsTabWidth, 
+        educationTabWidth, 
+        awardsAndGrantsTabWidth, 
+        skillsTabWidth, 
+        certificatesTabWidth
+    ]);
 
     const clickPageNavTabsScrollLeftHandler = () => {
         if (pageNavTabsScrollableRef.current) {
@@ -814,15 +878,18 @@ const AboutPage = () => {
                 <h1>
                     about
                 </h1>
-                <div className={classes.about_sections}>
+                <div 
+                    className={classes.about_sections}
+                    ref={aboutSectionsRef}
+                >
                     <div 
                         className={classes.tabs}
                         ref={stickyTabsRef}
-                        style={{zIndex: "2"}}
+                        style={windowWidth <= 720 ? {height: `${pageTabsHeight}px`} : {height: "auto"}}
                     >
                         <div 
                             ref={pageNavTabsScrollableContainerRef}
-                            className={tabsSticky ? classes.tabs_inner_sticky : classes.tabs_inner} 
+                            className={pageTabsAbsolute ? classes.tabsAbsolute : tabsSticky ? classes.tabs_inner_sticky : classes.tabs_inner} 
                         >
                             <ul 
                                 ref={pageNavTabsScrollableRef}
@@ -915,7 +982,7 @@ const AboutPage = () => {
                                     story
                                 </h2>
                                 <h3 className={classes.story_headline}>
-                                    I&#39;m Stephen Dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human engagement with technology. 
+                                    I&#39;m Stephen Dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human experiences of technology. 
                                 </h3>
                                 <div 
                                     ref={profileImage}
@@ -1162,15 +1229,23 @@ const AboutPage = () => {
                                     <ResumeButton passHref={true} />
                                 </a>
                             </Link>
-
-                            <MyLink href="/contact" passHref >
-                                <ButtonAction aria-label="link to contact page">
-                                    let&#39;s work together
-                                </ButtonAction>
-                            </MyLink>
+                            {(windowWidth > 720) ? 
+                                <MyLink href="/contact" passHref >
+                                    <ButtonAction aria-label="link to contact page">
+                                        let&#39;s work together
+                                    </ButtonAction>
+                                </MyLink> : ""
+                            }
                         </div>
                     </div>
                 </div>
+                {(windowWidth <= 720) ? 
+                    <MyLink href="/contact" passHref >
+                        <ButtonAction aria-label="link to contact page">
+                            let&#39;s work together
+                        </ButtonAction>
+                    </MyLink> : ""
+                }
             </div>
         </Fragment>
     );
