@@ -76,14 +76,14 @@
     position: relative;
     top: 0;  
     will-change: top;
-    transition: top 0.2s ease-out;
+    transition: top 0.2s ease-out, bottom 0.2s ease-out;
 }
 
 .tabs_inner_sticky {
     position: fixed;
     top: 4rem;
     will-change: top;
-    transition: top 0.2s ease-out;
+    transition: top 0.2s ease-out, bottom 0.2s ease-out;
 }
 
 .tabsAbsolute {
@@ -92,6 +92,7 @@
     top: auto;
     left: 0;
     right: 0;
+    transition: top 0.2s ease-out, bottom 0.2s ease-out;
 }
 
 .tabs_list {

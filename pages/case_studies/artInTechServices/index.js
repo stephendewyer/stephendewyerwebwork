@@ -440,9 +440,8 @@ const ArtinTechServices = () => {
                 <div className={styles.slider_case_study}>
                     <ArtinTechServicesSlideCarousel />
                 </div>
-
                 <h3>
-                        details
+                    details
                 </h3>
                 <InfoCards infoCards={infoCards} />
                 <h3>
@@ -453,24 +452,20 @@ const ArtinTechServices = () => {
                     results
                 </h3>
                 <InfoCards outcomeCards={outcomeCards} />
-                <div className={styles.caseStudyInfoSection}>
-                    <h3 className="header_02">
-                        discoveries
-                    </h3>
-                    <p>
-                        Launching the Art in Tech Services web application was a huge accomplishment.  
-                        The process of developing the application allowed me to design new interfaces.  
-                        Creating the web application helped me to get a deeper understanding of modern web development.
-                    </p>
-                </div>
-                <div className={styles.caseStudyInfoSection}>
-                    <h3 className="header_02">
-                        next steps
-                    </h3>
-                    <p>
-                        As Art in Tech Services continues to evolve, I will talk with potential collaborators to see what their particular pain points are with technology and how Art in Tech Services can help solve their particular problems.
-                    </p>
-                </div>
+                <h3 className="header_02">
+                    discoveries
+                </h3>
+                <p className={styles.caseStudyInfoSection}>
+                    Launching the Art in Tech Services web application was a huge accomplishment.  
+                    The process of developing the application allowed me to design new interfaces.  
+                    Creating the web application helped me to get a deeper understanding of modern web development.
+                </p>
+                <h3 className="header_02">
+                    next steps
+                </h3>
+                <p className={styles.caseStudyInfoSection}>
+                    As Art in Tech Services continues to evolve, I will talk with potential collaborators to see what their particular pain points are with technology and how Art in Tech Services can help solve their particular problems.
+                </p>
             </div>
             <div className={styles.visit_button}>
                 <Link href="https://www.artintechservices.com/" passHref={true} >

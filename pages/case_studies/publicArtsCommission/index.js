@@ -446,35 +446,29 @@ const PublicArtsCommission = () => {
                     results
                 </h3>
                 <InfoCards outcomeCards={outcomeCards} />
-                <div className={styles.caseStudyInfoSection}>
-                    <h3>
-                        challenges
-                    </h3>
-                    <p>
-                        Revenue generation is a challenge facing the Public Arts Commission web platform.  
-                        The subscription-based web platform for campaigns will likely help generate revenue.
-                    </p>
-                </div>
-                <div className={styles.caseStudyInfoSection}>
-                    <h3>
-                        discoveries
-                    </h3>
-                    <p>
-                        The new web platform significantly reduced the time for Public Arts Commission to make an endorsement.
-                        <br /><br />
-                        The lists of co-sponsors and sponsors of legislation and amendments provide data that would provide good insights on how legislative members stand on potential future votes on issues.  Public Arts Commission could use the data to create a ranking of how legislative members align with the Public Arts Commission agenda.
-                        <br /><br />
-                        The status of legislation can become complicated to track as lawmakers use a variety of different tools to pass legislation.  Sometimes, pieces of bills are passed seperately or added to other bills.  Creating a good tracking system for the status of legislation is valuable and will require further development of a better tracking mechanism on the Public Arts Commission web platform.
-                    </p>
-                </div>
-                <div className={styles.caseStudyInfoSection}>
-                    <h3>
-                        next steps
-                    </h3>
-                    <p>
-                        Work on building the voter portal continues.  Once the voter portal is built, work will begin on building the campaign subscription platform.
-                    </p>
-                </div>
+                <h3>
+                    challenges
+                </h3>
+                <p className={styles.caseStudyInfoSection}>
+                    Revenue generation is a challenge facing the Public Arts Commission web platform.  
+                    The subscription-based web platform for campaigns will likely help generate revenue.
+                </p>
+                <h3>
+                    discoveries
+                </h3>
+                <p className={styles.caseStudyInfoSection}>
+                    The new web platform significantly reduced the time for Public Arts Commission to make an endorsement.
+                    <br /><br />
+                    The lists of co-sponsors and sponsors of legislation and amendments provide data that would provide good insights on how legislative members stand on potential future votes on issues.  Public Arts Commission could use the data to create a ranking of how legislative members align with the Public Arts Commission agenda.
+                    <br /><br />
+                    The status of legislation can become complicated to track as lawmakers use a variety of different tools to pass legislation.  Sometimes, pieces of bills are passed seperately or added to other bills.  Creating a good tracking system for the status of legislation is valuable and will require further development of a better tracking mechanism on the Public Arts Commission web platform.
+                </p>
+                <h3>
+                    next steps
+                </h3>
+                <p className={styles.caseStudyInfoSection}>
+                    Work on building the voter portal continues.  Once the voter portal is built, work will begin on building the campaign subscription platform.
+                </p>
                 <div className={styles.visit_button}>
                     <Link href="https://public-arts-commission.vercel.app/" passHref={true} >
                         <a className={styles.visit_link} target="_blank" rel="noopener noreferrer">

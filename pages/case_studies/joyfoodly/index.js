@@ -385,24 +385,20 @@ const Joyfoodly = () => {
                     results
                 </h3>
                 <InfoCards outcomeCards={outcomeCards} />
-                <div className={styles.caseStudyInfoSection}>
-                    <h3>
-                        discoveries
-                    </h3>
-                    <p>
-                        The project went very well.  
-                        A key to the success of the project was writing a contract to set a timeline and expectations for deliverables.  
-                        Art in Tech Services was a great vehicle for the project.
-                    </p>
-                </div>
-                <div className={styles.caseStudyInfoSection}>
-                    <h3>
-                        next steps
-                    </h3>
-                    <p>
-                        Create a client portal for clients to avoid missed emails and allow clients to manage their accounts from one location via the Art in Tech Services website..
-                    </p>
-                </div>
+                <h3>
+                    discoveries
+                </h3>
+                <p className={styles.caseStudyInfoSection}>
+                    The project went very well.  
+                    A key to the success of the project was writing a contract to set a timeline and expectations for deliverables.  
+                    Art in Tech Services was a great vehicle for the project.
+                </p>
+                <h3>
+                    next steps
+                </h3>
+                <p className={styles.caseStudyInfoSection}>
+                    Create a client portal for clients to avoid missed emails and allow clients to manage their accounts from one location via the Art in Tech Services website..
+                </p>
             </div>
             <div className={styles.visit_button}>
                 <Link href="https://joyfoodly.vercel.app/" passHref={true} >

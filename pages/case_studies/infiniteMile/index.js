@@ -441,23 +441,19 @@ const InfiniteMile = () => {
                     results
                 </h3>
                 <InfoCards outcomeCards={outcomeCards} />
-                <div className={styles.caseStudyInfoSection}>
-                    <h3>
-                        discoveries
-                    </h3>
-                    <p>
-                        Infinite Mile was a huge success and some of the most rewarding work I have done in my life.  
-                        Infinite Mile was an important lesson in how web programs can bring communities together.  
-                    </p> 
-                </div>
-                <div className={styles.caseStudyInfoSection}>
-                    <h3>
-                        next steps
-                    </h3>
-                    <p>
-                        I decided to dive deep into software development and UX design.
-                    </p> 
-                </div>
+                <h3>
+                    discoveries
+                </h3>
+                <p className={styles.caseStudyInfoSection}>
+                    Infinite Mile was a huge success and some of the most rewarding work I have done in my life.  
+                    Infinite Mile was an important lesson in how web programs can bring communities together.  
+                </p> 
+                <h3>
+                    next steps
+                </h3>
+                <p className={styles.caseStudyInfoSection}>
+                    I decided to dive deep into software development and UX design.
+                </p>
             </div>
             <div className={styles.visit_button}>
                 <Link href="https://www.infinitemiledetroit.com/" passHref={true} >
