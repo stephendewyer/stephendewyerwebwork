@@ -642,15 +642,9 @@ const AboutPage = () => {
             {
                 setPageTabsAbsolute(true);
                 // console.log("sticky tabs absolute");
-            } else if (stickyNavTabsYPosition < triggerAbsolutePageTabsYPosition) {
+            } else {
                 setPageTabsAbsolute(false);
-                // console.log("sticky tabs still sticky");
-            } else if ((position + window.innerHeight) < triggerAbsolutePageTabsYPosition) {
-                setPageTabsAbsolute(false);
-                // console.log("sticky tabs still sticky");
             };
-
-            // console.log("pageTabsAbsolute: ", pageTabsAbsolute);
 
             if (position > currentActionsPosition) {
                 setActionsSticky(true);
@@ -739,7 +733,10 @@ const AboutPage = () => {
         const handleWindowResize = () =>  {
 
             setWindowWidth(window.innerWidth);          
-            setPageTabsHeight(pageNavTabsScrollableContainerRef.current.getBoundingClientRect().height);  
+
+            if (pageTabsHeight) {
+                triggerAbsolutePageTabsYPosition = (aboutSectionsRef.current.getBoundingClientRect().bottom + window.scrollY) - pageTabsHeight;
+            };
 
             if (pageNavTabsScrollableRef.current) {
                 setPageNavTabsScrollableWidth(pageNavTabsScrollableRef.current.scrollWidth);
