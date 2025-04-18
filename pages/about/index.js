@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState, useEffect, useRef, Fragment } from 'react';
+import { debounce } from '../../public/util/helpers';
 import ExperienceAccordion from '../../components/accordions/experienceAccordion/Accordion';
 import SkillsAccordion from '../../components/accordions/skillsAccordion/Accordion';
 import ButtonAction from '../../components/buttons/buttonAction/ButtonAction';
@@ -607,7 +608,21 @@ const AboutPage = () => {
         const certificatesObserver = new IntersectionObserver(certificatesIntersectingHandler, tabIntersectingOptions);
         certificatesObserver.observe(certificatesRef.current);
 
-        const handleScroll = () => {
+        // const handleScroll = debounce(() => {
+        //     // find current scroll position
+        //     const currentScrollPos = window.scrollY;
+    
+        //     // set state based on location info
+        //     setVisible((prevScrollPos > currentScrollPos) || currentScrollPos < 10);
+    
+        //     // set state to new scroll position
+        //     setPrevScrollPos(currentScrollPos);
+        //     // timer set to 100 milliseconds:
+        // }, 100);
+
+        let triggerAbsolutePageTabsYPosition = 0;
+
+        const handleScroll = debounce(() => {
 
             setCurrentStickyTabsPosition(stickyTabsRef.current.getBoundingClientRect().top + window.scrollY);
 
@@ -624,8 +639,6 @@ const AboutPage = () => {
             // get the y position of the bottom of the about_sections div - pageNavTabs height
 
             let stickyNavTabsYPosition = pageNavTabsScrollableContainerRef.current.getBoundingClientRect().top + window.scrollY;
-
-            let triggerAbsolutePageTabsYPosition = 0;
 
             if (pageTabsHeight) {
 
@@ -651,7 +664,7 @@ const AboutPage = () => {
             } else if (position <= currentActionsPosition) {
                 setActionsSticky(false);
             };
-        };
+        }, 5);
 
         if (pageNavTabsScrollableRef.current) {
             setPageNavTabsScrollableWidth(pageNavTabsScrollableRef.current.scrollWidth);
