@@ -622,7 +622,7 @@ const AboutPage = () => {
 
         let triggerAbsolutePageTabsYPosition = 0;
 
-        const handleScroll = debounce(() => {
+        const handleScroll = () => {
 
             setCurrentStickyTabsPosition(stickyTabsRef.current.getBoundingClientRect().top + window.scrollY);
 
@@ -664,7 +664,7 @@ const AboutPage = () => {
             } else if (position <= currentActionsPosition) {
                 setActionsSticky(false);
             };
-        }, 5);
+        };
 
         if (pageNavTabsScrollableRef.current) {
             setPageNavTabsScrollableWidth(pageNavTabsScrollableRef.current.scrollWidth);
