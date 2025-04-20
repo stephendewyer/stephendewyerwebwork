@@ -36,6 +36,11 @@ const FAQs = () => {
             index: 6,
             label: "What technologies do I use the most?",
             content: "I mostly use JavaScript and TypeScript, although I am also skilled in a variety of other languages.  For libraries and frameworks, I often use SvelteKit and Next.js.  For UX design and prototyping, I often use Figma."
+        },
+        {
+            index: 7,
+            label: "Do I prefer leadership or individual contributor roles?",
+            content: "I am happy in either an individual contributor or leadership role.  I’ve led companies, taught courses at universities and worked as an individual contributor.  I’ve got really good organization skills and have learned about inspiring and motivating individuals.  I like helping people accomplish something that they didn’t know they could accomplish.  However, I am also happy to continue to improve my craft as an individual contributor."
         }
             
     ];
