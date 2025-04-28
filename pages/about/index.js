@@ -30,13 +30,13 @@ const AboutPage = () => {
                         Worked with clients to plan and achieve client goals, meeting or exceeding client expectations
                     </li>
                     <li>
-                        Created original and custom software using state-of-the-art technologies like SvelteKit and Next.js to improve performance
+                        Designed, developed, deployed and maintained the company’s website including client and administrator portals, streamlining client collaboration
                     </li>
                     <li>
-                        Directed company to use art in the rendering of digital services to develop creative solutions that improve human experiences of technology
+                        Developed custom and original software using state-of-the-art technologies like SvelteKit and Next.js to improve performance
                     </li>
                     <li>
-                        Designed, developed, deployed and maintained the company’s website including client and administrator portals, streamlining collaboration
+                        Used art in UX design and in the development of creative software solutions to improve human experiences of technology
                     </li>
                 </ul>
         },
