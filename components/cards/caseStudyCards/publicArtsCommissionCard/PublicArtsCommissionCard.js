@@ -81,7 +81,7 @@ const PulblicArtsCommissionCard = () => {
                 first launched in 2017 and redesigned in 2023
               </h4>
               <p>
-                  A web platform for a non-profit organization that is dedicated to reimagining the American Dream and helping make it happen for a stronger, more democratic society by giving the art community a platform in politics..
+                  A web platform for a non-profit organization that is dedicated to reimagining the American Dream and helping make it happen for a stronger, more democratic society by giving the art community a platform in politics.
               </p>
               <div className={styles.view_button} >
                 <MyLink 
