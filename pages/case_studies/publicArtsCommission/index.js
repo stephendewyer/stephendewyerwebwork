@@ -103,7 +103,7 @@ const PublicArtsCommission = () => {
                         about the client
                     </h4>
                     <p>
-                        Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that connects the art community to democratic movements.
+                        Public Arts Commission is a grass-roots, 501(c)(4) non-profit organization that is dedicated to reimagining the American Dream and helping make it happen for a stronger, more democratic society by giving the art community a platform in politics.
                     </p>
                     <h4>
                         my role
