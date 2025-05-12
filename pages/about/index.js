@@ -182,7 +182,7 @@ const AboutPage = () => {
                                 Application programming interfaces (APIs):
                             </td>
                             <td>
-                                Representational State Transfer (REST), GraphQL
+                                Representational State Transfer (REST), WebSockets, GraphQL
                             </td>
                         </tr>
                         <tr>
