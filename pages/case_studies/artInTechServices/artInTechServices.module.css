@@ -56,10 +56,24 @@
     gap: 1rem;
 }
 
-.slider_case_study {
-    position: relative;
+.mockups {
     width: 100%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 60rem;
+}
+
+.desktop_mockup {
+    width: 100%;
+    max-width: 40rem;
+}
+
+.mobile_mockup {
+    width: 100%;
+    max-width: 14rem;
 }
 
 .detail_heading {
@@ -146,6 +160,53 @@
     justify-content: center;
 }
 
+.results {
+    width: 100%;
+    padding: 0 1rem;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.result_A {
+    width: 100%;
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.result_B {
+    width: 100%;
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.result_video_container {
+    width: 50%;
+}
+
+.result_paragraphs {
+    width: 50%;
+    padding: 1rem;
+}
+
 @media screen and (max-width: 1440px) {
 
     .banner_container {
@@ -198,6 +259,23 @@
     .solution_container {
         padding: 0.5rem 1.25rem 0 1.25rem; 
     }
+
+    .mockups {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .desktop_mockup {
+        width: 100%;
+        max-width: 40rem;
+    }
+
+    .mobile_mockup {
+        width: 100%;
+        max-width: 14rem;
+    }
     
     .detail_heading {
         font-size: 18px;
@@ -246,6 +324,22 @@
 
     .visit_button {
         margin: 25px 0;
+    }
+
+    .result_A {
+        flex-direction: column;
+    }
+
+    .result_video_container {
+        width: 100%;
+    }
+
+    .result_paragraphs {
+        width: 100%;
+    }
+
+    .result_B {
+        flex-direction: column-reverse;
     }
     
 }

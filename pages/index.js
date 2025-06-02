@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import styles from '../styles/Index.module.css';
 import MyLink from '../public/util/myLink';
 import ButtonAction from '../components/buttons/buttonAction/ButtonAction';
@@ -8,39 +8,10 @@ import ArtInTechServicesCard from '../components/cards/caseStudyCards/artInTechS
 import JoyfoodlyCard from '../components/cards/caseStudyCards/joyfoodlyCard/JoyfoodlyCard';
 import InfiniteMileCard from '../components/cards/caseStudyCards/infiniteMileCard/InfiniteMileCard';
 import ClientReviewsSlideCarousel from "../components/slide_carousel/ClientReviewsSlideCarousel";
-import VideoJS from '../components/videoPlayer/VideoPlayer';
 import Link from 'next/link';
+import IntroVideo from '../components/videos/IntroVideo';
 
 const IndexPage = () => {
-
-  const playerRef = React.useRef(null);
-
-  const videoJsOptions = {
-    poster: "/videos/imagine_echo/imagine_echo_still_02.jpg",
-    autoplay: true,
-    muted: true,
-    controls: true,
-    loop: true,
-    responsive: true,
-    fluid: true,
-    sources: [{
-      src: '/videos/imagine_echo/imagine_echo.mp4',
-      type: 'video/mp4'
-    }]
-  };
-
-  const handlePlayerReady = (player) => {
-    playerRef.current = player;
-
-    // You can handle player events here, for example:
-    player.on('waiting', () => {
-      console.log('player is waiting');
-    });
-
-    player.on('dispose', () => {
-      console.log('player will dispose');
-    });
-  };
 
   return (
     <Fragment>
@@ -60,7 +31,7 @@ const IndexPage = () => {
           </h3>
         </div>
         <div className={styles.intro_video}>
-          <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
+          <IntroVideo />
         </div>
           <div className={styles.intro_paragraph}>
             <p className={styles.paragraph}>

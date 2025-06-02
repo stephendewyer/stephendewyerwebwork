@@ -5,7 +5,6 @@ import styles from './artInTechServices.module.css';
 import { v4 as uuidv4 } from 'uuid';
 import MyLink from '../../../public/util/myLink';
 import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
-import ArtinTechServicesSlideCarousel from "../../../components/slide_carousel/ArtinTechServicesSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";
 import ArtInTechServicesPrototype from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Services_prototype.png';
 import ArtInTechServicesSiteMap from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/Art_in_Tech_Servicces_site_map.jpg';
@@ -19,6 +18,12 @@ import externalLinkIcon from '../../../public/images/icons/external_link_icon.sv
 import joyfoodlyThumbnail from "../../../public/images/thumbnails/Joyfoodly_desktop.jpg";
 import publicArtsCommissionThumbnail from "../../../public/images/thumbnails/public_arts_commission_website_desktop_01.jpg";
 import ArtInTechServicesBanner from '../../../public/images/case_studies/Art_in_Tech_Services_Inc/background/Art_in_Tech_Services_background.jpg';
+import ArtInTechServicesClientPortalMobileMockup from "../../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_client_portal_smartphone.png";
+import ArtInTechServicesIndexLaptopMockup from "../../../public/images/case_studies/Art_in_Tech_Services_Inc/mockups/Art_in_Tech_Services_index_laptop.png";
+import ArtInTechServicesClientPortalMessagingVideo from '../../../components/videos/ArtInTechServicesClientPortalMessagingVideo';
+import ArtInTechServicesClientPortalOverviewVideo from '../../../components/videos/ArtInTechServicesClientPortalOverviewVideo';
+import ArtInTechServicesClientPortalPayInvoiceVideo from '../../../components/videos/ArtInTechServicesClientPortalPayInvoiceVideo';
+import ArtInTechServicesClientPortalStartProjectVideo from '../../../components/videos/ArtInTechServicesClientPortalStartProjectVideo';
 
 const ArtinTechServices = () => {
 
@@ -360,46 +365,6 @@ const ArtinTechServices = () => {
         },
     ];
 
-    const outcomeCards = [
-        {
-            id: uuidv4(),
-            content: 
-                <Fragment>
-                    <h4>
-                        streamlined client collaboration
-                    </h4>
-                    <p>
-                        The web portal on the Art in Tech Services website has become a hub for communication with clients, making collaboration more efficient and effective.
-                    </p>
-                </Fragment>
-        },
-        {
-            id: uuidv4(),
-                content: 
-                <Fragment>
-                    <h4>
-                        helping clients manage their accounts
-                    </h4>
-                    <p>
-                        The Art in Tech Services client collaboration software enables clients to manage their accounts by allowing clients to schedule consultations, start projects, send and receive documents (forthcoming) and manage billing.
-                    </p>
-                </Fragment>
-        },
-        {
-            id: uuidv4(),
-                content: 
-                <Fragment>
-                    <h4>
-                        modern web programs
-                    </h4>
-                    <p>
-                        The Art in Tech Services web programs mostly use SvelteKit to create a modern web experience that is fast, responsive, accessible and dynamic.
-                    </p>
-                </Fragment>
-        },
-        
-    ];
-
     return (
         <Fragment>
             <Head>
@@ -437,8 +402,23 @@ const ArtinTechServices = () => {
                 <h2 style={{textAlign: "center", paddingLeft: "1rem", paddingRight: "1rem"}}>
                     2021 &ndash; present
                 </h2>
-                <div className={styles.slider_case_study}>
-                    <ArtinTechServicesSlideCarousel />
+                <div className={styles.mockups}>
+                    <div className={styles.desktop_mockup}>
+                        <Image 
+                            src={ArtInTechServicesIndexLaptopMockup} 
+                            priority 
+                            layout="responsive" 
+                            alt="Art in Tech Services index page laptop mockup" 
+                        />
+                    </div>
+                    <div className={styles.mobile_mockup}>
+                        <Image
+                            src={ArtInTechServicesClientPortalMobileMockup}
+                            priority
+                            layout="responsive"
+                            alt="Art in Tech Services client portal laptop mockup"
+                        />
+                    </div>
                 </div>
                 <h3>
                     details
@@ -448,10 +428,51 @@ const ArtinTechServices = () => {
                     process
                 </h3>       
                 <Tabs tabPanels={tabPanels} />
-                <h3 className="header_02">
-                    results
-                </h3>
-                <InfoCards outcomeCards={outcomeCards} />
+                <div className={styles.results}>
+                    <h3 className="header_02">
+                        results
+                    </h3>
+                    <div className={styles.result_A}>
+                        <div className={styles.result_video_container}>
+                            <ArtInTechServicesClientPortalOverviewVideo />
+                        </div>
+                        <div className={styles.result_paragraphs}>
+                            <h4 style={{textAlign: "left"}}>
+                                Streamlined collaboration with clients using custom client and administrator web portals.
+                            </h4>
+                        </div>
+                    </div>
+                    <div className={styles.result_B}>
+                        <div className={styles.result_paragraphs}>
+                            <h4 style={{textAlign: "left"}}>
+                                Secure messaging via custom messaging system between clients and administrators.
+                            </h4>
+                        </div>
+                        <div className={styles.result_video_container}>
+                            <ArtInTechServicesClientPortalMessagingVideo />
+                        </div>
+                    </div>
+                    <div className={styles.result_A}>
+                        <div className={styles.result_video_container}>
+                            <ArtInTechServicesClientPortalPayInvoiceVideo />
+                        </div>
+                        <div className={styles.result_paragraphs}>
+                            <h4 style={{textAlign: "left"}}>
+                                Pay invoices using secure payment methods.
+                            </h4>
+                        </div>
+                    </div>
+                    <div className={styles.result_B}>
+                        <div className={styles.result_paragraphs}>
+                            <h4 style={{textAlign: "left"}}>
+                                Keep track of projects and consultations by custom project and consultation software.
+                            </h4>
+                        </div>
+                        <div className={styles.result_video_container}>
+                            <ArtInTechServicesClientPortalStartProjectVideo />
+                        </div>
+                    </div>
+                </div>
                 <h3 className="header_02">
                     discoveries
                 </h3>

@@ -42,7 +42,7 @@ const ArtInTechServicesCard = () => {
             className={styles.video}
           >         
             <source 
-              src="/videos/Art_in_Tech_Services_interaction.mp4"
+              src="/videos/Art_in_Tech_Services/Art_in_Tech_Services_client_portal_overview.mp4"
               type="video/mp4"
             />       
           </video>
