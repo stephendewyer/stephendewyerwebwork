@@ -22,28 +22,28 @@ body {
 h1 {
   font-family: "CenturyGothic";
   color: #514C64;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin: 0;
 }
 
 h2 {
   font-family: "CenturyGothic";
   color: #7A7296;
-  font-size: 1.4rem;
+  font-size: 1.65rem;
   margin: 0;
 }
 
 h3 {
   font-family: "CenturyGothic";
   color:#545451;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0;
 }
 
 h4 {
   font-family: "CenturyGothic";
   color: #707578;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   margin: 0;
 }
 
@@ -152,19 +152,19 @@ textarea {
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.475rem;
   }
   
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
   }
   
   h4 {
-    font-size: 1.1rem;
+    font-size: 1.275rem;
   }
 
   input {
@@ -185,6 +185,22 @@ textarea {
   .container {
     padding-top: 8rem;
   }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.425rem;
+  }
+  
+  h3 {
+    font-size: 1.35rem;
+  }
+  
+  h4 {
+    font-size: 1.275rem;
+  }
 }
 
 @media screen and (max-width: 750px){
@@ -194,19 +210,19 @@ textarea {
   }
 
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.45rem;
   }
   
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.375rem;
   }
   
   h3 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   
   h4 {
-    font-size: 1rem;
+    font-size: 1.225rem;
   }
 
   .container {
