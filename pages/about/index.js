@@ -27,7 +27,7 @@ const AboutPage = () => {
             responsibilities:
                 <ul>
                     <li>
-                        Worked with clients to plan and achieve client goals, meeting or exceeding client expectations
+                        Helped clients plan and achieve project goals, meeting or exceeding client expectations
                     </li>
                     <li>
                         Designed, developed, deployed and maintained the company’s website including client and administrator portals, streamlining client collaboration
@@ -48,7 +48,7 @@ const AboutPage = () => {
             responsibilities:
                 <ul>
                     <li>
-                        Responsible for overall direction of the non-profit, 501(c)(4) organization that uses original software to improve civic engagement in the art community
+                        Leads a non-profit, 501(c)(4) organization that uses original software to create an art community civic engagement platform
                     </li>
                     <li>
                         Designed, developed, deployed and maintained software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
@@ -921,7 +921,7 @@ const AboutPage = () => {
                                         id="positionsTab"
                                         className={positionsObserved ? classes.nav_tab_active : classes.nav_tab} 
                                     >
-                                        positions
+                                        work history
                                     </li>
                                 </a>
                                 <a onClick={(event) => handleTabClick(event, "education")}>
@@ -957,7 +957,7 @@ const AboutPage = () => {
                                         id="certificatesTab"
                                         className={certificatesObserved ? classes.nav_tab_active : classes.nav_tab} 
                                     >
-                                        certificates
+                                        courses
                                     </li>
                                 </a>
                             </ul>
@@ -1046,7 +1046,7 @@ const AboutPage = () => {
                             className={classes.positions}
                             ref={positionsRef}
                         >
-                            <h3 id="positions" style={{textAlign: "center"}}>positions</h3>
+                            <h3 id="positions" style={{textAlign: "center"}}>work history</h3>
                             <ExperienceAccordion experience={experience}/>
                         </div>
                         <div 
@@ -1128,7 +1128,7 @@ const AboutPage = () => {
                             id="certificates"
                             ref={certificatesRef}
                         >
-                            <h3 style={{textAlign: "center"}}>certificates</h3>
+                            <h3 style={{textAlign: "center"}}>courses</h3>
                             <div className={classes.certificates_group}>
                                 <div className={classes.label_paragraphs}>
                                     <span className={classes.position}>Certificates in Software Development, Machine Learning, UX Design and Web Accessibility</span>
