@@ -5,7 +5,6 @@ import { v4 as uuidv4 } from 'uuid';
 import MyLink from '../../../public/util/myLink';
 import styles from './publicArtsCommission.module.css';
 import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
-import PublicArtsCommissionSlideCarousel from "../../../components/slide_carousel/PublicArtsCommissionSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";
 import ArtAtDemonstration from '../../../public/images/case_studies/Public_Arts_Commission/process/art_at_demonstration.JPG';
 import EndorsedByPublicArtsCommission from '../../../public/images/case_studies/Public_Arts_Commission/process/endorsement_image.jpg';
@@ -21,6 +20,13 @@ import infiniteMileThumbnail from "../../../public/images/thumbnails/Infinite_Mi
 import PublicArtsCommissionSiteMap from '../../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_sitemap.jpg';
 import PublicArtsCommissionBanner from '../../../public/images/case_studies/public_arts_commission_redesign/background/Public_Arts_Commission_background.jpg';
 import PublicArtsCommissionFigmaImage from "../../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_Figma.jpg";
+import PublicArtsCommmissionSearchEndorsementsVideo from "../../../components/videos/PublicArtsCommissionSearchEndorsementsVideo";
+import PublicArtsCommissionCreateEndorsementVideo from "../../../components/videos/PublicArtsCommissionCreateEndorsementVideo";
+import PublicArtsCommissionApplyForEndorsementVideo from '../../../components/videos/PublicArtsCommissionApplyForEndorsementVideo';
+import PublicArtsCommissionDonateVideo from '../../../components/videos/PublicArtsCommissionDonateVideo';
+import PublicArtsCommissionIndexMobileMockup from "../../../public/images/case_studies/public_arts_commission_redesign/prototypes/Public_Arts_Commission_index_mobile.png";
+import PublicArtsCommissionEndorsementsDesktopMockup from "../../../public/images/case_studies/public_arts_commission_redesign/prototypes/Public_Arts_Commission_endorsements_desktop.png";
+
 
 const PublicArtsCommission = () => {
 
@@ -349,50 +355,7 @@ const PublicArtsCommission = () => {
                     buttons: []
                 }
         },
-    ];
-
-    const outcomeCards = [
-        {
-            id: uuidv4(),
-            content: 
-                <Fragment>
-                    <h4>
-                        a searchable database of all the campaigns, legislation and amendments endorsed by Public Arts Commission
-                    </h4>
-                    <p>
-                        All campaigns, legislation and amendments endorsed by Public Arts Commission are searchable by state on the Public Arts Commission website.  
-                        Eventually, individuals will be able to search all campaigns, legislation and amendments using more specific data.
-                    </p>
-                </Fragment>
-        },
-        {
-            id: uuidv4(),
-                content: 
-                <Fragment>
-                    <h4>
-                        access to the Public Arts Commission network of individuals for Public Arts Commission-endorsed campaigns with paid subscriptions (forthcoming)
-                    </h4>
-                    <p>
-                        Public Arts Commission-endorsed campaigns with paid subscriptions will be able to access individuals in the Public Arts Commission network who comprise the electorates for their respective offices sought.
-                    </p>
-                </Fragment>
-        },
-        {
-            id: uuidv4(),
-                content: 
-                <Fragment>
-                    <h4>
-                        a platform for the art community to connect and organize (forthcoming)
-                    </h4>
-                    <p>
-                        Public Arts Commission will create a web portal for individuals in the art community to connect and organize with Public Art Commission-endorsed campaigns, movements and events.
-                    </p>
-                </Fragment>
-        },
-        
-    ];
-
-    
+    ];    
 
     return (
         <Fragment>
@@ -431,8 +394,23 @@ const PublicArtsCommission = () => {
                 <h2 style={{textAlign: "center", paddingLeft: "1rem", paddingRight: "1rem"}}>
                     first launched in 2017 and redesigned in 2023
                 </h2>
-                <div className={styles.slider_case_study}>
-                    <PublicArtsCommissionSlideCarousel />
+                <div className={styles.mockups}>
+                    <div className={styles.desktop_mockup}>
+                        <Image 
+                            src={PublicArtsCommissionEndorsementsDesktopMockup} 
+                            priority 
+                            layout="responsive" 
+                            alt="Public Arts Commission endorsements desktop mockup" 
+                        />
+                    </div>
+                    <div className={styles.mobile_mockup}>
+                        <Image
+                            src={PublicArtsCommissionIndexMobileMockup}
+                            priority
+                            layout="responsive"
+                            alt="Public Arts Commission index mobile mockup"
+                        />
+                    </div>
                 </div>
                 <h3>
                     details
@@ -442,10 +420,63 @@ const PublicArtsCommission = () => {
                     process
                 </h3>
                 <Tabs tabPanels={tabPanels} />
-                <h3>
-                    results
-                </h3>
-                <InfoCards outcomeCards={outcomeCards} />
+                <div className={styles.results}>
+                    <h3 className="header_02">
+                        results
+                    </h3>
+                    <div className={styles.result_A}>
+                        <div className={styles.result_video_container}>
+                            <PublicArtsCommmissionSearchEndorsementsVideo />
+                        </div>
+                        <div className={styles.result_paragraphs}>
+                            <h4 style={{textAlign: "left"}}>
+                                A searchable database of all the campaigns, legislation, referendums, actions and amendments endorsed by Public Arts Commission.
+                            </h4>
+                            <p>
+                                Users can search all endorsements made by Public Arts Commission by geolocation, address, city, county, state, zipcode, name and/or year.  Users can also filter endorsements by federal, state, county or city.
+                            </p>
+                        </div>
+                    </div>
+                    <div className={styles.result_B}>
+                        <div className={styles.result_paragraphs}>
+                            <h4 style={{textAlign: "left"}}>
+                                Create endorsements to automatically appear on website using streamlined campaign data.
+                            </h4>
+                            <p>
+                                Public Arts Commission administrators can create endorsements using a custom portal.  Eventually, legislation and referendum create endorsement forms will scrape sponsors and cosponsors of bills from the internet to auto-populate endorsements, saving a lot of time.
+                            </p>
+                        </div>
+                        <div className={styles.result_video_container}>
+                            <PublicArtsCommissionCreateEndorsementVideo />
+                        </div>
+                    </div>
+                    <div className={styles.result_A}>
+                        <div className={styles.result_video_container}>
+                            <PublicArtsCommissionApplyForEndorsementVideo />
+                        </div>
+                        <div className={styles.result_paragraphs}>
+                            <h4 style={{textAlign: "left"}}>
+                                Apply for an endorsement by Public Arts Commission using custom campaign applications management system.
+                            </h4>
+                            <p>
+                                Campaigns can apply and manage applications for endorsement by Public Arts Commission on the campaign portal.  The data generated by campaigns helps streamline endorsements.
+                            </p>
+                        </div>
+                    </div>
+                    <div className={styles.result_B}>
+                        <div className={styles.result_paragraphs}>
+                            <h4 style={{textAlign: "left"}}>
+                                Make a recurring or one-time donation to Public Arts Commission using a public form.
+                            </h4>
+                            <p>
+                                Users donations to Public Arts Commission with the help of Stripe to manage payment methods and subscriptions.
+                            </p>
+                        </div>
+                        <div className={styles.result_video_container}>
+                            <PublicArtsCommissionDonateVideo />
+                        </div>
+                    </div>
+                </div>
                 <h3>
                     challenges
                 </h3>
