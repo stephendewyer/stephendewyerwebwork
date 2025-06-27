@@ -1063,7 +1063,7 @@ const AboutPage = () => {
                                 <p className={classes.location_and_dates}><span>2011</span><span>New Haven, Connecticut</span></p>
                             </div>
                             <div className={classes.label_paragraphs}>
-                                <span className={classes.position}>BFA <span style={{fontStyle: "italic;"}}>cum laude</span> in Art History, Theory <span>&#38;</span> Criticism</span>
+                                <span className={classes.position}>BFA <span style={{fontStyle: "italic"}}>cum laude</span> in Art History, Theory <span>&#38;</span> Criticism</span>
                                 <span className={classes.company}>Maryland Institute College of Art (MICA)</span>
                                 <p className={classes.location_and_dates}>
                                     <span>
@@ -1232,7 +1232,7 @@ const AboutPage = () => {
                         className={classes.action_buttons}
                     >
                         <div className={actionsSticky ? classes.action_buttons_sticky : classes.action_buttons_relative}> 
-                            <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref={true} aria-label="link to resume PDF" >
+                            <Link href="https://stephengdewyer.info/PDFs/STEPHEN_DEWYER_resume.pdf" passHref={true} aria-label="link to resume PDF" >
                                 <a target="_blank" rel="noopener noreferrer">
                                     <ResumeButton passHref={true} />
                                 </a>
