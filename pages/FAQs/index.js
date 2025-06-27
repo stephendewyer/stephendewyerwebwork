@@ -41,7 +41,17 @@ const FAQs = () => {
             index: 7,
             label: "Do I prefer leadership or individual contributor roles?",
             content: "I am happy in either an individual contributor or leadership role.  I’ve led companies, taught courses at universities and worked as an individual contributor.  I’ve got really good organization skills and have learned about inspiring and motivating individuals.  I like helping people accomplish something that they didn’t know they could accomplish.  However, I am also happy to continue to improve my craft as an individual contributor."
-        }
+        },
+        {
+            index: 8,
+            label: "What success do I have in growing startups?",
+            content: "The first company I co-founded called Infinite Mile grew to a staff of three editors and 78 contributors.  Infinite Mile won a number of awards and partnered with the University of Michigan Stamps School of Art and Design.  The companies I have since founded are still early-stage startups. Unlike many startups, all the companies I  founded have been 100% debt free and done almost entirely in-house.  I've been able to grow companies without outside investors."
+        },
+        {
+            index: 9,
+            label: "Why should you work with someone who is a founder of companies?  Aren’t they too independent to serve as an employee?  Will they leave the second they find a more lucrative business alternative?",
+            content: "Having experience as a founder is a huge asset.  Some of the most successfully companies in the world hire founders (Meta spent $14.3 billion hiring a founder of one of the most prominent AI startups).  As someone who has made high-stakes hiring decisions, some of the best people whom I have hired have been founders of companies.  If you want someone who can wear many hats, find a problem and take the initiative to fix it, is capable of thinking independently and understands business impact, then higher a founder.  Founders know what it is like to run a business.  They know how their individual actions impact the bottom line.   They also know what it is like to direct a company, the importance of leadership and being able to inspire a motivate people.  They can follow orders because they have given orders, themselves.  As someone who has been in a hiring position, I cannot recommend enough seeing experience as a founder an asset."
+        },
             
     ];
 
