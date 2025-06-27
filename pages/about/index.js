@@ -15,6 +15,9 @@ import FullStackWebDevelopment from '../../public/images/icons/full-stack_web_de
 import Art from '../../public/images/icons/art.svg';
 import Leadership from '../../public/images/icons/leadership.svg';
 import ArtificialIntelligence from '../../public/images/icons/artificial_intelligence.png';
+import InfiniteMileArtAndRaceConference01 from "../../public/images/story/Infinite_Mile_Art_and_Race_Conference_01.jpg";
+import InfiniteMileArtAndRaceConference02 from "../../public/images/story/Infinite_Mile_Art_and_Race_Conference_02.jpg";
+import PublicArtsCommissionCandidateMeeting from "../../public/images/story/Erin_Maye_Quade_and_stephen_dewyer_13_August_2018.jpg";
 
 const AboutPage = () => {
 
@@ -1014,11 +1017,39 @@ const AboutPage = () => {
                                     The experience I gained as a software developer, UX designer, artist and founder makes me great at creatively solving problems through software.
                                     <br /><br />
                                     I first entered the fields of UX design and software development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called <Link href="https://infinitemiledetroit.com" passHref={true} aria-label="link to Infinite Mile website"><a target="_blank" rel="noopener noreferrer">Infinite Mile</a></Link>.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about art and cultures in the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
-                                    <br /><br />
+                                 </p>
+                                 <div className={classes.story_image_and_caption}>
+                                    <fig>
+                                        <Image 
+                                            src={InfiniteMileArtAndRaceConference01}
+                                            layout="responsive"
+                                            alt="Infinite Mile 2016 Art & Race Conference at MOCAD with University of Michigan Stamps School of Art and Design"
+                                            priority
+                                        />
+                                    </fig>
+                                    <figcaption className={classes.caption}>
+                                        Infinite Mile 2016 Art & Race Conference at MOCAD with University of Michigan Stamps School of Art and Design.
+                                    </figcaption>
+                                 </div>
+                                 <p className={classes.myStoryParagraphs}>  
                                     In 2017, I created the website for <Link href="https://publicartscommission.org" passHref={true} aria-label="link to Public Arts Commission website"><a target="_blank" rel="noopener noreferrer">Public Arts Commission</a></Link>, a non-profit organization that is dedicated to reimagining the American Dream and helping make it happen for a stronger, more democratic society by giving the art community a platform in politics.  
                                     The website features a searchable database of all candidates, referendums, legislation, constitutional amendments and actions endorsed by Public Arts Commission.  
                                     Campaigns can apply for endorsement via the Public Arts Commission website.  A voter portal that I am currently developing will allow voters to network and organize using the website.
-                                    <br /><br />
+                                </p>
+                                <div className={classes.story_image_and_caption}>
+                                    <fig>
+                                        <Image 
+                                            src={PublicArtsCommissionCandidateMeeting}
+                                            layout="responsive"
+                                            alt="Stephen Dewyer meeting Erin Maye Quade at gathering in front of public art for Public Arts Commission"
+                                            priority
+                                        />
+                                    </fig>
+                                    <figcaption className={classes.caption}>
+                                        Stephen Dewyer meeting with Minnesota State Senator Erin Maye Quade at gathering in front of public art for Public Arts Commission.
+                                    </figcaption>
+                                </div>
+                                <p className={classes.myStoryParagraphs}>
                                     Currently, I am Founding Director, Full-stack Web Developer and UX Designer at <Link href="https://artintechservices.com" passHref={true} aria-label="link to Art in Tech Services Inc. website"><a target="_blank" rel="noopener noreferrer">Art in Tech Services Inc.</a></Link>, a C corporation that uses advancements in art and digital technology to improve design for the public and businesses.  
                                     At Art in Tech Services Inc., I help clients plan and achieve their digital product goals.  
                                     Art in Tech Services Inc. launched in 2021.  
