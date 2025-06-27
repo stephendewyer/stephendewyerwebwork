@@ -1263,7 +1263,7 @@ const AboutPage = () => {
                         className={classes.action_buttons}
                     >
                         <div className={actionsSticky ? classes.action_buttons_sticky : classes.action_buttons_relative}> 
-                            <Link href="https://stephengdewyer.info/PDFs/STEPHEN_DEWYER_resume.pdf" passHref={true} aria-label="link to resume PDF" >
+                            <Link href="/PDFs/STEPHEN_DEWYER_resume.pdf" passHref={true} aria-label="link to resume PDF" >
                                 <a target="_blank" rel="noopener noreferrer">
                                     <ResumeButton passHref={true} />
                                 </a>
