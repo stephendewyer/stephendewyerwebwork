@@ -1028,7 +1028,7 @@ const AboutPage = () => {
                                         />
                                     </fig>
                                     <figcaption className={classes.caption}>
-                                        Infinite Mile 2016 Art & Race Conference at MOCAD with University of Michigan Stamps School of Art and Design.
+                                        Infinite Mile 2016 Art & Race Conference at MOCAD with University of Michigan Stamps School of Art and Design.  Photograph by Sarah Nesbitt.
                                     </figcaption>
                                  </div>
                                  <p className={classes.myStoryParagraphs}>  
