@@ -217,7 +217,23 @@ const AboutPage = () => {
                                 Data visualization:
                             </td>
                             <td>
-                                D3.js
+                                D3.js, Chart.js
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                3D animation:
+                            </td>
+                            <td>
+                                Blender
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={classes.row_heading}>
+                                Machine learning:
+                            </td>
+                            <td>
+                                TensorFlow, Google Colab
                             </td>
                         </tr>
                     </tbody>
@@ -269,7 +285,7 @@ const AboutPage = () => {
                         brand identity design
                     </li>
                     <li>
-                        animation
+                        3D animation
                     </li>
                 </ul>
         },
