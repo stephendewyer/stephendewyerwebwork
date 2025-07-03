@@ -52,7 +52,11 @@ const FAQs = () => {
             label: "Why should you work with someone who is a founder of companies?  Aren’t they too independent to serve as an employee?  Will they stay committed?",
             content: "Having experience as a founder is a huge asset.  Some of the most successful companies in the world hire founders.  For instance, Meta spent $14.3 billion hiring a founder of one of the most prominent AI startups.  As someone who has made high-stakes hiring decisions, some of the best people I have hired started companies.  If you want someone who can wear many hats, find a problem and take the initiative to solve it, work across teams, is capable of thinking independently and understands business impact, then hire a founder.  Founders know what it is like to run a business.  They know how their individual actions impact the bottom line.   They also know what it is like to direct a company, the importance of leadership and being able to inspire and motivate people.  They can follow orders because they have given orders, themselves.  They can commit to a job because they know what it takes to do a job from start to finish.  As someone who has been in a hiring position, I cannot recommend enough seeing experience as a founder an asset."
         },
-            
+        {
+            index: 10,
+            label: "How does someone from an art background get into software development?",
+            content: "As an undergraduate at MICA, I learned some website development skills like HTML and CSS in a foundation-level digital media course.  When I co-founded Infinite Mile, I used the website development skills I gained to create the company’s website.  After seeing the great impact Infinite Mile had in the community, I decided to become an expert in software development and UX design.  Only after getting in-depth skills in web development and UX design did I learn of how artists contributed to the fields of software development and UX design.  Svelte, a web development framework, for instance, was created by an arts editor from the New York Times named Rich Harris.  The software program that inspired Google Earth, Terravision, started as an art project funded by a German telecommunications company.  As it happens, software development is a very creative field, which is why I continue to enjoy designing and developing software."
+        },
     ];
 
     return (
