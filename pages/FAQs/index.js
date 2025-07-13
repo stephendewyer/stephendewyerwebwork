@@ -57,6 +57,16 @@ const FAQs = () => {
             label: "How does someone from an art background get into software development?",
             content: "As an undergraduate at MICA, I learned some website development skills like HTML and CSS in a foundation-level digital media course.  When I co-founded Infinite Mile, I used the website development skills I gained to create the company’s website.  After seeing the great impact Infinite Mile had in the community, I decided to become an expert in software development and UX design.  Only after getting in-depth skills in web development and UX design did I learn of how artists contributed to the fields of software development and UX design.  Svelte, a web development framework, for instance, was created by an arts editor from the New York Times named Rich Harris.  The software program that inspired Google Earth, Terravision, started as an art project funded by a German telecommunications company.  As it happens, software development is a very creative field, which is why I continue to enjoy designing and developing software."
         },
+        {
+            index: 11,
+            label: "Why is offshoring my software development to someplace like India not a good idea?",
+            content: "If you want larger costs in the long run, you can offshore your software development to places like India.  Like we saw during COVID, offshore supply chains are incredibly precarious.  Offshoring software development is a good way to get low-quality code that will need expensive fixes in the future.  Hiring onshore software developers here in the United States is the way to create more resilient supply chains and a more sustainable business."
+        },
+        {
+            index: 12,
+            label: "Will artificial intelligence replace software developers?",
+            content: "No, artificial intelligence will not replace software developers and will likely create more jobs for software developers.  Artificial intelligence offers some great tools for software development, but cannot empathize with software users and cannot improvise when needed.  Artificial intelligence is great at taking care of some rudimentary software tasks like creating a GraphQL API or a user interface to accept payments, but is not capable of creating innovative software.  For creating innovative software, developers are needed.  Artificial intelligence is likely going to create more jobs for software developers as the need for software developers increases to facilitate an increasing amount of artificial intelligence programs.  Software developers are needed to actually write the AI programs, which are increasing by the day.  Software developers will need to learn some new skills like how to write artificial intelligence programs, but that does not mean software developers are no longer needed."
+        },
     ];
 
     return (
