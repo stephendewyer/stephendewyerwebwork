@@ -12,6 +12,7 @@ const ArtInTechServicesClientPortalPayInvoiceVideo = () => {
         loop: true,
         responsive: true,
         fluid: true,
+        playsinline: true,
         sources: [{
           src: '/videos/Art_in_Tech_Services/Art_in_Tech_Services_pay_invoice.mp4',
           type: 'video/mp4'

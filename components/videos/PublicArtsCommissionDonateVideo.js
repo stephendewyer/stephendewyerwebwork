@@ -12,6 +12,7 @@ const PublicArtsCommissionDonateVideo = () => {
         loop: true,
         responsive: true,
         fluid: true,
+        playsinline: true,
         sources: [{
           src: '/videos/Public_Arts_Commission/public_arts_commission_donate.mp4',
           type: 'video/mp4'

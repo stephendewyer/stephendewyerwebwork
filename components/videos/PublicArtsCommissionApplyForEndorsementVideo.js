@@ -12,6 +12,7 @@ const PublicArtsCommissionApplyForEndorsementVideo = () => {
         loop: true,
         responsive: true,
         fluid: true,
+        playsinline: true,
         sources: [{
           src: '/videos/Public_Arts_Commission/public_arts_commission_apply_for_endorsement.mp4',
           type: 'video/mp4'

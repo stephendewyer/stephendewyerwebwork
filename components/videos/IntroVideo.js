@@ -13,6 +13,7 @@ const IntroVideo = () => {
         loop: true,
         responsive: true,
         fluid: true,
+        playsinline: true,
         sources: [{
           src: '/videos/imagine_echo/imagine_echo.mp4',
           type: 'video/mp4'

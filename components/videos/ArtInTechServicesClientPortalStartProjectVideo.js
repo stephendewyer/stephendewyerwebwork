@@ -12,6 +12,7 @@ const ArtInTechServicesClientPortalStartProjectVideo = () => {
         loop: true,
         responsive: true,
         fluid: true,
+        playsinline: true,
         sources: [{
           src: '/videos/Art_in_Tech_Services/Art_in_Tech_Services_start_project_request.mp4',
           type: 'video/mp4'
