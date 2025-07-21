@@ -38,6 +38,7 @@ const InfiniteMileCard = () => {
             autoPlay 
             muted 
             loop 
+            playsInline
             className={styles.video}
           >         
             <source 

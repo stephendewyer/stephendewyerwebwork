@@ -39,6 +39,7 @@ const PulblicArtsCommissionCard = () => {
               autoPlay 
               muted 
               loop 
+              playsInline
               className={styles.video}
             >         
               <source 

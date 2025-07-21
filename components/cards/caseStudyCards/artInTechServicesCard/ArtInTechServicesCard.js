@@ -39,6 +39,7 @@ const ArtInTechServicesCard = () => {
             autoPlay 
             muted 
             loop 
+            playsInline
             className={styles.video}
           >         
             <source 
