@@ -30,16 +30,16 @@ const AboutPage = () => {
             responsibilities:
                 <ul>
                     <li>
-                        Helped clients plan and achieve project goals, meeting or exceeding client expectations
+                        Helped clients plan and achieve project goals, meeting or exceeding client expectations.
                     </li>
                     <li>
-                        Designed, developed, deployed and maintained the company’s website including client and administrator portals, streamlining client collaboration
+                        Designed, developed, deployed and maintained the company’s website including client and administrator portals, streamlining client collaboration.
                     </li>
                     <li>
-                        Developed custom and original software using state-of-the-art technologies like SvelteKit and Next.js to improve performance
+                        Developed custom and original software using state-of-the-art technologies like SvelteKit and Next.js to improve performance.
                     </li>
                     <li>
-                        Used art in UX design and in the development of creative software solutions to improve human experiences of technology
+                        Used art in UX design and in the development of creative software solutions to improve human experiences of technology.
                     </li>
                 </ul>
         },
@@ -51,19 +51,19 @@ const AboutPage = () => {
             responsibilities:
                 <ul>
                     <li>
-                        Leads a non-profit, 501(c)(4) organization that uses original software to create an art community civic engagement platform
+                        Leads a non-profit, 501(c)(4) organization that uses original software to create an art community civic engagement platform.
                     </li>
                     <li>
-                        Designed, developed, deployed and maintained software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements
+                        Designed, developed, deployed and maintained software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements.
                     </li>
                     <li>
-                        Developing a voter networking and organizing portal
+                        Developing a voter networking and organizing portal.
                     </li>
                     <li>
-                        Conducted user tests for web prototypes with Board of Directors and art experts
+                        Conducted user tests for web prototypes with Board of Directors and art experts.
                     </li>
                     <li>
-                        Grew Board of Directors by 233% to include leading voices in the art community by delivering strong leadership
+                        Grew Board of Directors by 233% to include leading voices in the art community by delivering strong leadership.
                     </li>
                 </ul>
         },
@@ -75,7 +75,7 @@ const AboutPage = () => {
             responsibilities:
             <ul>
                 <li>
-                    Created high-fidelity prototypes to personalize dental insurance plan shopping in the Federal Employees Dental and Vision Insurance Program (FEDVIP)
+                    Created high-fidelity prototypes to personalize dental insurance plan shopping in the Federal Employees Dental and Vision Insurance Program (FEDVIP).
                 </li>
                 <li>
                     lient: FedPoint
@@ -90,16 +90,16 @@ const AboutPage = () => {
             responsibilities:
                 <ul>
                     <li>
-                        Designed, developed, deployed and maintained website featuring an online store for print anthologies and merchandise, generating thousands of dollars in revenue
+                        Designed, developed, deployed and maintained website featuring an online store for print anthologies and merchandise, generating thousands of dollars in revenue.
                     </li>
                     <li>
-                        Directed three editing staff and 78 contributors to publish 94 essays and interviews, 51 artist projects, 26 reviews and 27 works of fiction or poetry
+                        Directed three editing staff and 78 contributors to publish 94 essays and interviews, 51 artist projects, 26 reviews and 27 works of fiction or poetry.
                     </li>
                     <li>
-                        Wrote successful grant applications
+                        Wrote successful grant applications.
                     </li>
                     <li>
-                        Partnered with the University of Michigan Stamps School of Art & Design to produce two serial publications and conferences
+                        Partnered with the University of Michigan Stamps School of Art & Design to produce two serial publications and conferences.
                     </li>
                 </ul>
         }
