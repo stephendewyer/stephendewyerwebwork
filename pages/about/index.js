@@ -78,7 +78,7 @@ const AboutPage = () => {
                     Created high-fidelity prototypes to personalize dental insurance plan shopping in the Federal Employees Dental and Vision Insurance Program (FEDVIP).
                 </li>
                 <li>
-                    lient: FedPoint
+                    client: FedPoint
                 </li>
             </ul>
         },
