@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
 import styles from './case_studies.module.css';
+import MoveableFarmCard from "../../components/cards/caseStudyCards/moveableFarmCard/MoveableFarmCard";
 import PulblicArtsCommissionCard from '../../components/cards/caseStudyCards/publicArtsCommissionCard/PublicArtsCommissionCard';
 import ArtInTechServicesCard from '../../components/cards/caseStudyCards/artInTechServicesCard/ArtInTechServicesCard';
 import JoyfoodlyCard from '../../components/cards/caseStudyCards/joyfoodlyCard/JoyfoodlyCard';
@@ -20,6 +21,7 @@ const CaseStudiesPage = () => {
                     case studies
                 </h1>
                 <div className={styles.case_studies}>
+                    <MoveableFarmCard />
                     <PulblicArtsCommissionCard />
                     <ArtInTechServicesCard />
                     <JoyfoodlyCard />
