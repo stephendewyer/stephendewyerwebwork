@@ -31,44 +31,44 @@ const MoveableFarmCard = () => {
             </div>
             <div className={styles.case_study_content} >
                 <div className={styles.prototypes}>
-                <video 
-                    style={{display: moveableFarmIsHovered ? "block" : "none" }}
-                    autoPlay 
-                    muted 
-                    loop 
-                    playsInline
-                    className={styles.video}
-                >         
-                    <source 
-                    src="/videos/moveable_farm_3D_basket.mp4"
-                    type="video/mp4"
-                    />       
-                </video>
-                <div 
-                    style={{display: moveableFarmIsHovered ? "none" : "block" }}
-                    className={styles.case_study_prototypes}
-                >
-                    <div className={styles.prototypes_container}>
-                    <div className={styles.case_study_prototype_mobile}>
-                        <Image
-                        src={MoveableFarmMobilePrototype}
-                        alt="Art in Tech Services mobile prototype"
-                        layout="responsive"
-                        objectFit="contain"
-                        priority
-                        />
+                    <video 
+                        style={{display: moveableFarmIsHovered ? "block" : "none" }}
+                        autoPlay 
+                        muted 
+                        loop 
+                        playsInline
+                        className={styles.video}
+                    >         
+                        <source 
+                        src="/videos/moveable_farm_3D_basket.mp4"
+                        type="video/mp4"
+                        />       
+                    </video>
+                    <div 
+                        style={{display: moveableFarmIsHovered ? "none" : "block" }}
+                        className={styles.case_study_prototypes}
+                    >
+                        <div className={styles.prototypes_container}>
+                        <div className={styles.case_study_prototype_mobile}>
+                            <Image
+                            src={MoveableFarmMobilePrototype}
+                            alt="Art in Tech Services mobile prototype"
+                            layout="responsive"
+                            objectFit="contain"
+                            priority
+                            />
+                        </div>
+                        <div className={styles.case_study_prototype_desktop}>
+                            <Image
+                            src={MoveableFarmDesktopPrototype}
+                            alt="Art in Tech Services desktop prototype"
+                            layout="responsive"
+                            objectFit="contain"
+                            priority
+                            />
+                        </div>
+                        </div>
                     </div>
-                    <div className={styles.case_study_prototype_desktop}>
-                        <Image
-                        src={MoveableFarmDesktopPrototype}
-                        alt="Art in Tech Services desktop prototype"
-                        layout="responsive"
-                        objectFit="contain"
-                        priority
-                        />
-                    </div>
-                    </div>
-                </div>
                 </div>
                 <div className={styles.about_case_study}>
                     <div className={styles.forthcoming_container}>

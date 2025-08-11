@@ -197,6 +197,14 @@
   
 @media screen and (max-width: 720px) {
 
+    .forthcoming_container {
+        position: relative;
+    }
+
+    .about_case_study {
+        align-items: flex-end;
+    }
+
     .prototypes {
         width: 100%;
         height: 16rem;
