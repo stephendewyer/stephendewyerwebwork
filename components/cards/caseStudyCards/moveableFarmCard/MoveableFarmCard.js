@@ -79,7 +79,7 @@ const MoveableFarmCard = () => {
                     </div>
                     <div className={styles.case_study_info}>
                         <h3>
-                            movealbe farm web platform
+                            Movealbe Farm web platform
                         </h3>
                         <h4>
                             expected launch date: 2025
