@@ -175,12 +175,12 @@ const Joyfoodly = () => {
                 images: [ ],
                 paragraphs: <p>
                     Goals: 
-                    <br/><br/>
+                    <br/><br />
                     1. Design, develop and deploy a legacy website where the Joyfoodly community can visit and download a free version of the Joyful12 cookbook;
-                    <br/><br/>
+                    <br/><br />
                     2. Design emails using Mailchimp to notify Joyfoodly subscribers about the company closing and the launch of the legacy website;
-                    <br/><br/>
-                    3. Close previous web programs and redirect traffic to new legacy website from the joyfoodly.com and joyful12.com domain names.
+                    <br/><br />
+                    3. Close previous web programs and redirect traffic to new legacy website from the joyfoodly.com and joyful12.com domain names.<br /><br/>
                 </p>
                 ,
                 buttons: []
