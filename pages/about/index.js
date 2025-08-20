@@ -117,7 +117,7 @@ const AboutPage = () => {
                     </colgroup>
                     <tbody>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Programming languages:
                             </td>
                             <td>
@@ -125,7 +125,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Stylesheet languages:
                             </td>
                             <td>
@@ -133,7 +133,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Markup languages:
                             </td>
                             <td>
@@ -141,7 +141,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 JavaScript compilers, frameworks and libraries:
                             </td>
                             <td>
@@ -149,7 +149,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Server environments:
                             </td>
                             <td>
@@ -157,7 +157,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Development environments:
                             </td>
                             <td>
@@ -165,7 +165,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Data interchange formats:
                             </td>
                             <td>
@@ -173,7 +173,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Database management systems:
                             </td>
                             <td>
@@ -181,7 +181,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Application programming interfaces (APIs):
                             </td>
                             <td>
@@ -189,7 +189,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Web accessibility standards:
                             </td>
                             <td>
@@ -197,7 +197,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Version control systems:
                             </td>
                             <td>
@@ -205,7 +205,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Geocoding:
                             </td>
                             <td>
@@ -213,7 +213,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Data visualization:
                             </td>
                             <td>
@@ -221,7 +221,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 3D animation:
                             </td>
                             <td>
@@ -229,7 +229,7 @@ const AboutPage = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td className={classes.row_heading}>
+                            <td>
                                 Machine learning:
                             </td>
                             <td>

@@ -117,6 +117,13 @@ table {
   border-spacing: 0;
 }
 
+table td:nth-child(2) {
+    font-weight: bold;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    vertical-align: top;
+}
+
 .left_table_column {
   width: 45%;
 }
@@ -129,6 +136,7 @@ td {
   padding: 0.5rem 1rem;
   overflow-wrap: break-word;
   hyphens: auto;
+  vertical-align: top;
 }
 
 tr:nth-child(even) {
