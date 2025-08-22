@@ -17,10 +17,13 @@ const IndexPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Stephen Dewyer software development and UX design</title>
-        <meta name="description" content="portfolio of user experience (UX) design and software development by Stephen Garrett Dewyer" />
+        <title>Stephen Dewyer | UX Designer & Software Developer Portfolio</title>
+        <meta name="description" content="Stephen Dewyer – UX Engineer, UX Designer, and Full-Stack Developer. I build intuitive, human-centered software and digital experiences." />
         <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
         <meta property="og:url" content="https://stephendewyerwebwork.vercel.app" />
+        <meta name="keywords" content="Stephen Dewyer, UX Engineer, UX Designer, Software Developer, Frontend Developer, Full Stack Developer, UX Portfolio, Web Developer Portfolio, Tucson Arizona" />
+        <meta name="author" content="Stephen Dewyer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className={styles.container}>
         <div className={styles.headline_container}>
