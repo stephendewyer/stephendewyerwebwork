@@ -1011,7 +1011,7 @@ const AboutPage = () => {
                                     story
                                 </h2>
                                 <h3 className={classes.story_headline}>
-                                    I&#39;m Stephen Dewyer, an award-winning software developer, user experience (UX) designer, artist and founder with over ten years of experience developing creative software solutions that improve human experiences of technology. 
+                                    I’m Stephen.  I bridge UX design and software engineering to build digital experiences people love. 
                                 </h3>
                                 <div 
                                     ref={profileImage}
@@ -1029,10 +1029,9 @@ const AboutPage = () => {
                                     </div>                    
                                 </div>
                                 <p className={classes.myStoryParagraphs}>
-                                    I worked extensively with universities, museums, publications, campaigns and businesses to produce critically-acclaimed projects.
-                                    The experience I gained as a software developer, UX designer, artist and founder makes me great at creatively solving problems through software.
+                                    I&apos;ve created web platforms from the ground up for organizations in higher education, civic engagement, art, publishing and digital technology.  My work uses advanced technologies, art and a focus on the user to develop creative software solutions to challenging problems.  
                                     <br /><br />
-                                    I first entered the fields of UX design and software development to solve problems for people.  In 2013, I created the website for an award-winning journal of art and culture(s) I co-founded called <Link href="https://infinitemiledetroit.com" passHref={true} aria-label="link to Infinite Mile website"><a target="_blank" rel="noopener noreferrer">Infinite Mile</a></Link>.  The journal&#39;s website gave a platform for the art community in Detroit to publish articles and artist projects about art and cultures in the city.  Infinite Mile brought community together in one of the most segregated cities in the United States. 
+                                    After producing the website for an award-winning journal of art and culture(s) in Detroit, Michigan called Infinite Mile from 2013 - 2017, I decided to hone my skills in software development and UX design.  Seeing how the software I created helped improve peoples&apos; lives made pursuing software development and UX design an attractive endeavor.  In 2017, I launched a non-profit organization called Public Arts Commission that is the platform for the art community in politics.  Currently, I am Founding Director of Art in Tech Services, a company that produces custom and original software using advancements in art and digital technology.  The skills I gained as an artist I&apos;m able to use to craft enjoyable user experiences and find creative technical solutions in the development of software.
                                  </p>
                                  <div className={classes.story_image_and_caption}>
                                     <fig>
@@ -1048,9 +1047,7 @@ const AboutPage = () => {
                                     </figcaption>
                                  </div>
                                  <p className={classes.myStoryParagraphs}>  
-                                    In 2017, I created the website for <Link href="https://publicartscommission.org" passHref={true} aria-label="link to Public Arts Commission website"><a target="_blank" rel="noopener noreferrer">Public Arts Commission</a></Link>, a non-profit organization that is dedicated to reimagining the American Dream and helping make it happen for a stronger, more democratic society by giving the art community a platform in politics.  
-                                    The website features a searchable database of all candidates, referendums, legislation, constitutional amendments and actions endorsed by Public Arts Commission.  
-                                    Campaigns can apply for endorsement via the Public Arts Commission website.  A voter portal that I am currently developing will allow voters to network and organize using the website.
+                                    Today, I am more committed than ever to crafting digital experiences that help improve peoples&apos; lives.  I&apos;m able to use the leadership skills I gained to work across teams to pursue common goals that positively impact community.   Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
                                 </p>
                                 <div className={classes.story_image_and_caption}>
                                     <fig>
@@ -1065,28 +1062,6 @@ const AboutPage = () => {
                                         Stephen Dewyer meeting with Minnesota State Senator Erin Maye Quade at gathering in front of public art for Public Arts Commission.
                                     </figcaption>
                                 </div>
-                                <p className={classes.myStoryParagraphs}>
-                                    Currently, I am Founding Director, Full-stack Web Developer and UX Designer at <Link href="https://artintechservices.com" passHref={true} aria-label="link to Art in Tech Services Inc. website"><a target="_blank" rel="noopener noreferrer">Art in Tech Services Inc.</a></Link>, a C corporation that uses advancements in art and digital technology to improve design for the public and businesses.  
-                                    At Art in Tech Services Inc., I help clients plan and achieve their digital product goals.  
-                                    Art in Tech Services Inc. launched in 2021.  
-                                    <br /><br />
-                                    Today, I am more committed than ever to finding creative solutions to challenging problems as a UX designer and software developer.  
-                                    Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
-                                </p>
-                            </div>
-                            <div className={classes.attributes_container}>
-                                <h4 style={{textAlign: "center"}}>key attributes</h4>
-                                <ul>
-                                    <li>
-                                        I&apos;m great at finding creative software solutions that improve human experiences of technology because of my background in art and software development.
-                                    </li>
-                                    <li>
-                                        As a software developer and UX designer, I consider how software decisions impact user experiences and how state-of-the-art digital technologies can improve design.
-                                    </li>
-                                    <li>
-                                        My experience as a founder allows me to bring people together around a vision to positively impact community and grow a business. 
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                         <div 
