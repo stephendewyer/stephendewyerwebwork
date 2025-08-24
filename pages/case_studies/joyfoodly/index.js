@@ -333,13 +333,36 @@ const Joyfoodly = () => {
         
     ];
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Joyfoodly Case Study",
+        "author": {
+        "@type": "Person",
+        "name": "Stephen Dewyer",
+        "url": "https://stephendewyerwebwork.vercel.app/about"
+        },
+        "url": "https://stephendewyerwebwork.vercel.app/case-studies/joyfoodly",
+        "image": "https://stephendewyerwebwork.vercel.app/images/joyfoodly-thumbnail.jpg",
+        "datePublished": "2025-01-01",
+        "description": "A UX and software development case study on Joyfoodly, a food education platform redesigned by Stephen Dewyer."
+    };
+
     return (
         <Fragment>
             <Head>
-                <title>Joyfoodly - Stephen Dewyer software development and UX design</title>
-                <meta name="description" content="details of UX design and web development for Joyfoodly by Stephen Dewyer" />
-                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
+                <title>Joyfoodly Case Study | UX Design & Development by Stephen Dewyer</title>
+                <meta name="title" content="Joyfoodly Case Study | UX Design & Development by Stephen Dewyer" />
+                <meta name="description" content="Explore Stephen Dewyer's case study on Joyfoodly, a food education platform. See how UX design, user research, and front-end development improved engagement and usability." />
+                <meta name="keywords" content="Joyfoodly case study, UX case study, food education UX design, UX engineer, UX designer, Stephen Dewyer portfolio, front-end developer case study" />
+                <meta name="author" content="Stephen Dewyer" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/images/joyfoodly-thumbnail.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/joyfoodly" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
             </Head>
             <div className={styles.banner_container}>
                 <Image 

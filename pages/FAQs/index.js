@@ -72,8 +72,8 @@ const FAQs = () => {
     return (
         <Fragment>
             <Head>
-                <title>FAQs - Stephen Dewyer software development and UX design</title>
-                <meta name="description" content="frequently asked questions and answers" />
+                <title>FAQs – Stephen Dewyer | UX Engineer & Software Developer</title>
+                <meta name="description" content="Frequently asked questions about Stephen Dewyer’s UX design and software development portfolio. Learn about his skills, case studies, experience, and how to get in touch." />
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/FAQs" />
             </Head>

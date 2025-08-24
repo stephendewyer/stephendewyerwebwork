@@ -365,13 +365,41 @@ const ArtinTechServices = () => {
         },
     ];
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Art in Tech Services Case Study",
+        "author": {
+            "@type": "Person",
+            "name": "Stephen Dewyer",
+            "url": "https://stephendewyerwebwork.vercel.app/about"
+        },
+        "description": "Case study on Art in Tech Services: merging UX design and software engineering to build digital tools at the intersection of art and technology.",
+        "url": "https://stephendewyerwebwork.vercel.app/case-studies/art-in-tech-services",
+        "image": "https://stephendewyerwebwork.vercel.app/images/art-in-tech-thumbnail.jpg",
+        "keywords": ["Art in Tech Services UX", "software engineering case study", "art and technology design", "Stephen Dewyer portfolio"],
+        "datePublished": "2025-01-01",
+        "publisher": {
+            "@type": "Person",
+            "name": "Stephen Dewyer"
+        }
+    };
+
     return (
         <Fragment>
             <Head>
-                <title>Art in Tech Services Inc - Stephen Dewyer software development and UX design</title>
-                <meta name="description" content="details of UX design and web development for Art in Tech Services Inc by Stephen Dewyer" />
-                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
-                <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/artInTechServices" />
+                <title>Art in Tech Services Case Study | UX Design & Full-Stack Development by Stephen Dewyer</title>
+                <meta name="description" content="Stephen Dewyer's case study on Art in Tech Services: designing and engineering digital solutions at the intersection of art and technology with a human-centered approach." />
+                <meta name="keywords" content="Art in Tech Services, UX case study, art & technology design, full-stack developer, UX engineer, Stephen Dewyer portfolio" />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case-studies/art-in-tech-services" />
+                <meta property="og:title" content="Art in Tech Services Case Study | UX & Full-Stack Development by Stephen Dewyer" />
+                <meta property="og:description" content="Case study on Art in Tech Services: merging UX design and software engineering in digital tools for the arts." />
+                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/images/art-in-tech-thumbnail.jpg" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
             </Head>
             <div className={styles.banner_container}>
                 <Image 
@@ -535,9 +563,7 @@ const ArtinTechServices = () => {
                     </ButtonNext>
                 </MyLink>
             </div>
-            
         </Fragment>
-        
     );
 };
 

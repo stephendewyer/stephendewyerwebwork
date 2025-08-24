@@ -895,13 +895,53 @@ const AboutPage = () => {
         };
     };
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Stephen Dewyer",
+        "url": "https://stephendewyerwebwork.vercel.app/about",
+        "jobTitle": "UX Engineer, UX Designer, Software Developer",
+        "worksFor": {
+        "@type": "Organization",
+        "name": "Art in Tech Services Inc."
+        },
+        "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Yale University, Maryland Institute College of Art",
+        },
+        "award": [
+        "Knight Arts Challenge Detroit Grant",
+        "Awesome Foundation Grant"
+        ],
+        "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tucson",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
+        },
+        "email": "mailto:stephen.dewyer@stephengdewyer.info",
+        "sameAs": [
+        "https://www.linkedin.com/in/stephen-dewyer",
+        "https://github.com/stephendewyer"
+        ]
+    }
+
     return (
         <Fragment>
             <Head>
-                <title>about - Stephen Dewyer software development and UX design</title>
-                <meta name="description" content="Stephen Dewyer résumé and profile" />
-                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
+                <title>About Stephen Dewyer | UX Engineer, UX Designer & Software Developer</title>
+                <meta name="title" content="About Stephen Dewyer | UX Engineer, UX Designer & Software Developer" />
+                <meta name="description" content="Learn more about Stephen Dewyer, an award-winning UX Engineer, UX Designer, and Software Developer based in Tucson, Arizona. With over 10 years of experience, Stephen bridges design and engineering to create meaningful digital experiences." />
+                <meta name="keywords" content="Stephen Dewyer, About Stephen Dewyer, UX Engineer Tucson, UX Designer Tucson, Software Developer Tucson, Full Stack Developer, Frontend Developer, Product Designer, UX Portfolio" />
+                <meta name="author" content="Stephen Dewyer" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta property="og:type" content="profile" />
+                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/images/profile/stephen_dewyer_10_cropped_square.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/about" />
+                <script 
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
             </Head>
             <div className={classes.aboutPageContainer}>
                 <h1>

@@ -355,15 +355,43 @@ const PublicArtsCommission = () => {
                     buttons: []
                 }
         },
-    ];    
+    ];
+    
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Public Arts Commission Case Study",
+        "author": {
+            "@type": "Person",
+            "name": "Stephen Dewyer",
+            "url": "https://stephendewyerwebwork.vercel.app/about"
+        },
+        "description": "Case study on the Public Arts Commission: creating a modern, accessible civic engagement platform with UX and full-stack development.",
+        "url": "https://stephendewyerwebwork.vercel.app/case-studies/public-arts-commission",
+        "image": "https://stephendewyerwebwork.vercel.app/images/public-arts-thumbnail.jpg",
+        "keywords": ["Public Arts Commission UX", "accessibility design", "civic tech", "Stephen Dewyer portfolio"],
+        "datePublished": "2025-01-01",
+        "publisher": {
+            "@type": "Person",
+            "name": "Stephen Dewyer"
+        }
+    };
 
     return (
         <Fragment>
             <Head>
-                <title>Public Arts Commission - Stephen Dewyer software development and UX design</title>
-                <meta name="description" content="details of UX design and web development for Public Arts Commission by Stephen Dewyer" />
-                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
-                <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/publicArtsCommission" />
+                <title>Public Arts Commission Case Study | UX & Web Development by Stephen Dewyer</title>
+                <meta name="description" content="Stephen Dewyer's case study on the Public Arts Commission: creating a modern, accessible platform for civic engagement using UX design and full-stack development." />
+                <meta name="keywords" content="Public Arts Commission, civic tech UX, accessibility case study, UX engineer, UX designer portfolio, Stephen Dewyer" />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case-studies/public-arts-commission" />
+                <meta property="og:title" content="Public Arts Commission Case Study | UX Design & Web Development by Stephen Dewyer" />
+                <meta property="og:description" content="Case study on building a civic platform with accessibility, UX design, and full-stack development." />
+                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/images/public-arts-thumbnail.jpg" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
             </Head>
             <div className={styles.banner_container}>
                 <Image 

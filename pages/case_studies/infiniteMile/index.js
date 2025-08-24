@@ -382,13 +382,41 @@ const InfiniteMile = () => {
         
     ];
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Infinite Mile Case Study",
+        "author": {
+            "@type": "Person",
+            "name": "Stephen Dewyer",
+            "url": "https://stephendewyerwebwork.vercel.app/about"
+        },
+        "description": "Case study on Infinite Mile, an arts publishing platform developed with UX design, product development, and front-end engineering.",
+        "url": "https://stephendewyerwebwork.vercel.app/case-studies/infinite-mile",
+        "image": "https://stephendewyerwebwork.vercel.app/images/infinite-mile-thumbnail.jpg",
+        "keywords": ["Infinite Mile case study", "digital publishing UX", "arts platform design", "Stephen Dewyer portfolio"],
+        "datePublished": "2025-01-01",
+        "publisher": {
+            "@type": "Person",
+            "name": "Stephen Dewyer"
+        }
+    };
+
     return (
         <Fragment>
             <Head>
-                <title>Infinite Mile - Stephen Dewyer software development and UX design</title>
-                <meta name="description" content="details of UX design and web development for Infinite Mile by Stephen Dewyer" />
-                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
-                <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case_studies/infiniteMile" />
+                <title>Infinite Mile Case Study | UX & Digital Publishing by Stephen Dewyer</title>
+                <meta name="description" content="A case study on Infinite Mile, an arts publishing platform. Stephen Dewyer led UX design, product development, and front-end engineering to create a sustainable digital experience." />
+                <meta name="keywords" content="Infinite Mile case study, digital publishing UX, arts platform UX design, Stephen Dewyer, UX portfolio, full-stack developer case study" />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/case-studies/infinite-mile" />
+                <meta property="og:title" content="Infinite Mile Case Study | UX & Digital Publishing by Stephen Dewyer" />
+                <meta property="og:description" content="Case study on Infinite Mile: creating an arts publishing platform with UX design and web development." />
+                <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/images/infinite-mile-thumbnail.jpg" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
             </Head>
             <div className={styles.banner_container}>
                 <Image 

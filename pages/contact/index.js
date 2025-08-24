@@ -215,13 +215,38 @@ const Contact = () => {
 
     const messageInputClasses = enteredMessageIsValid ? classes.textarea_input : classes.invalid_textarea_input;
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Stephen Dewyer",
+        "jobTitle": "UX Designer & Software Developer",
+        "url": "https://stephendewyerwebwork.vercel.app",
+        "email": "mailto:stephen.dewyer@stephengdewyer.info",
+        "telephone": "+1-520-739-8302",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tucson",
+            "addressRegion": "AZ",
+            "addressCountry": "US"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/stephen-dewyer",
+            "https://github.com/[your-github]",
+            "https://dribbble.com/[your-dribbble]"
+        ]
+    };
+
     return (
         <Fragment>
             <Head>
-                <title>contact - Stephen Dewyer software development and UX design</title>
-                <meta name="description" content="contact Stephen Garrett Dewyer" />
+                <title>Contact Stephen Dewyer – UX Designer & Software Developer</title>
+                <meta name="description" content="Get in touch with Stephen Dewyer, a UX engineer and full-stack developer. Reach out for freelance, contract, or full-time opportunities in UX design and software development."/>
                 <meta property="og:image" content="https://stephendewyerwebwork.vercel.app/videos/imagine_echo/imagine_echo_still_02.jpg" />
                 <meta property="og:url" content="https://stephendewyerwebwork.vercel.app/contact" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
             </Head>
             <div className={classes.banner_container}>
                 <Image 
@@ -238,10 +263,34 @@ const Contact = () => {
                 <div className={classes.contact}>
                     <form className={classes.form} onSubmit={submitHandler} noValidate >
                         <h1 className="header" style={{textAlign: "center"}}>
-                            contact
+                            contact Stephen Dewyer – UX Designer & Software Developer
                         </h1>
                         <p className="header_02">
-                            Want help on a new or existing project?  Looking for someone to handle your software development and/or UX design?  How can I help you?  
+                            Whether you’re a recruiter, hiring manager, or collaborator, I’m available for opportunities in UX design, UX engineering, front-end development, and full-stack development. With experience bridging design and software engineering, I create digital products that people enjoy using.<br /><br />
+                            Based in Tucson, Arizona, I work locally and remotely on freelance, contract, and full-time projects.
+                        </p>
+                        <h2 style={{textAlign:"center"}}>
+                            why work with me?
+                        </h2>
+                        <ul>
+                            <li>
+                                <span style={{fontWeight: "bold"}}>UX + engineering expertise</span> - I design and build seamless user experiences from concept to code.
+                            </li>
+                            <li>
+                                <span style={{fontWeight: "bold"}}>Full-stack skills</span> - Experienced in SvelteKit, React, Next.js, Node.js, TypeScript, and modern frameworks.
+                            </li>
+                            <li>
+                                <span style={{fontWeight: "bold"}}>Creative background</span> - With roots in the arts, I bring an innovative perspective to problem-solving.
+                            </li>
+                            <li>
+                                <span style={{fontWeight: "bold"}}>Collaborative mindset</span> - I work across teams to deliver software people enjoy using.
+                            </li>
+                        </ul>
+                        <h2 style={{textAlign:"center"}}>
+                            want to collaborate?
+                        </h2>
+                        <p className="header_02">
+                            I’d love to hear from you! Fill out the form or reach out via email to start a conversation about your next project or role.
                         </p>
                         <p className={classes.indicates_required}>
                             * indicates required

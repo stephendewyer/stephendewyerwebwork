@@ -14,6 +14,25 @@ import IntroVideo from '../components/videos/IntroVideo';
 
 const IndexPage = () => {
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Stephen Dewyer",
+    "url": "https://stephendewyerwebwork.vercel.app",
+    "jobTitle": "UX Engineer, UX Designer, Software Developer",
+    "email": "mailto:stephen.dewyer@stephengdewyer.info",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tucson",
+      "addressRegion": "AZ",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/stephen-dewyer",
+      "https://github.com/stephendewyer"
+    ]
+  };
+
   return (
     <Fragment>
       <Head>
@@ -24,6 +43,10 @@ const IndexPage = () => {
         <meta name="keywords" content="Stephen Dewyer, UX Engineer, UX Designer, Software Developer, Frontend Developer, Full Stack Developer, UX Portfolio, Web Developer Portfolio, Tucson Arizona" />
         <meta name="author" content="Stephen Dewyer" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </Head>
       <div className={styles.container}>
         <div className={styles.headline_container}>
@@ -31,7 +54,7 @@ const IndexPage = () => {
             software development + user experience design
           </h1>
           <h3 className={styles.subheadline}>
-            creative software solutions
+            creating software that people love
           </h3>
         </div>
         <div className={styles.intro_video}>
