@@ -1,3 +1,4 @@
+'use client'
 import styles from './ArtInTechServicesCard.module.css';
 import MyLink from '../../../../public/util/myLink';
 import ButtonAction from '../../../buttons/buttonAction/ButtonAction';
@@ -21,15 +22,13 @@ const ArtInTechServicesCard = () => {
       onMouseOut={(() => setArtInTechServicesIsHovered(false))}
     >
       <div className={styles.case_study_background}>
-        <div className={styles.case_study_background_image}>
-          <Image 
-            src={ArtInTechServicesBackground} 
-            alt="scene of Hal from 2001: A Space Odyssey directed by Stanley Kubrick" 
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
-        </div>
+        <Image 
+          src={ArtInTechServicesBackground} 
+          alt="scene of Hal from 2001: A Space Odyssey directed by Stanley Kubrick" 
+          layout="responsive"
+          className={styles.background_image}
+          priority
+        />
         <div className={styles.case_study_overlay}/>
       </div>
       <div className={styles.case_study_content} >
@@ -52,21 +51,21 @@ const ArtInTechServicesCard = () => {
             className={styles.case_study_prototypes}
           >
             <div className={styles.prototypes_container}>
-              <div className={styles.case_study_prototype_mobile}>
+              <div className={styles.prototype_mobile_container}>
                 <Image
                   src={ArtInTechServicesMobilePrototype}
                   alt="Art in Tech Services mobile prototype"
                   layout="responsive"
-                  objectFit="contain"
+                  className={styles.case_study_prototype_mobile}
                   priority
                 />
               </div>
-              <div className={styles.case_study_prototype_desktop}>
+              <div className={styles.prototype_desktop_container}>
                 <Image
                   src={ArtInTechServicesDesktopPrototype}
                   alt="Art in Tech Services desktop prototype"
                   layout="responsive"
-                  objectFit="contain"
+                  className={styles.case_study_prototype_desktop}
                   priority
                 />
               </div>

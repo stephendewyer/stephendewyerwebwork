@@ -1,3 +1,4 @@
+'use client'
 import { useState, useEffect, useRef, useCallback, useLayoutEffect } from 'react';
 import styles from './Tabs.module.css';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';

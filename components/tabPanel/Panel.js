@@ -18,9 +18,9 @@ const Panel = ({panel_data}) => {
                     })}
                 </div>
             }
-            <p className={panel_data.images.length > 0 ? styles.paragraphs_with_images : styles.paragraphs}>
+            <div className={panel_data.images.length > 0 ? styles.paragraphs_with_images : styles.paragraphs}>
                 {panel_data.paragraphs}
-            </p>
+            </div>
             {panel_data.buttons.length > 0 &&
                 <div className={styles.buttons_container}>
                     {panel_data.buttons.map((button, index) => {

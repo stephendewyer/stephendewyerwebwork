@@ -1,5 +1,6 @@
+'use client'
 import { Fragment, useState, useEffect, useRef } from 'react';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import MyLink from "../../../../public/util/myLink";
 import styles from "./navigationTabDesktop.module.css";
 import PublicArtsCommissionThumbnail from "../../../../public/images/thumbnails/public_arts_commission_website_desktop_01.jpg";
@@ -10,8 +11,7 @@ import Image from 'next/image';
 
 const NavTabDesktop = (props) => {
 
-    const router = useRouter();
-    const pagePath = router.pathname;
+    const pagePath = usePathname();
     const pageIsActive = pagePath === props.navItem.pathname;
 
     const Arrow = () => {

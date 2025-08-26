@@ -36,6 +36,7 @@ const ClientReviewsCarousel = () => {
                 <Image 
                   src={slide.image} 
                   alt={slide.alt_text} 
+                  layout="responsive"
                   priority
                 />
               </div>

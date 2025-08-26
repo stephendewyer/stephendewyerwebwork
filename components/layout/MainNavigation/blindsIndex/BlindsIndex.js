@@ -1,4 +1,5 @@
-import { useRouter } from 'next/router';
+'use client'
+import { useRouter } from 'next/navigation';
 import MyLink from "../../../../public/util/myLink";
 import styles from "./BlindsIndex.module.css";
 import BlindsPhoto from "../../../../public/images/logo/venetian_blinds.png";

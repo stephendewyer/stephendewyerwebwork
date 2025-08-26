@@ -1,3 +1,4 @@
+'use client'
 import VideoJS from '../videoPlayer/VideoPlayer';
 import React from 'react';
 

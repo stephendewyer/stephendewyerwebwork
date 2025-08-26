@@ -1,3 +1,4 @@
+'use client'
 import React, { Fragment, useState, useEffect, useRef, useCallback, useLayoutEffect } from 'react';
 import styles from './Layout.module.css';
 import Footer from './Footer/Footer';

@@ -1,3 +1,4 @@
+'use client'
 import styles from './InfiniteMileCard.module.css';
 import MyLink from '../../../../public/util/myLink';
 import ButtonAction from '../../../buttons/buttonAction/ButtonAction';
@@ -20,15 +21,13 @@ const InfiniteMileCard = () => {
       onMouseOut={(() => setInfiniteMileIsHovered(false))}
     >
       <div className={styles.case_study_background}>
-        <div className={styles.case_study_background_image}>
-          <Image 
-            src={InfiniteMileBackground} 
-            alt="Detroit, Michigan as seen from Fisher Building in the morning" 
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
-        </div>
+        <Image 
+          src={InfiniteMileBackground} 
+          alt="Detroit, Michigan as seen from Fisher Building in the morning" 
+          layout="fill"
+          className={styles.background_image}
+          priority
+        />
         <div className={styles.case_study_overlay}/>
       </div>
       <div className={styles.case_study_content} >
@@ -51,12 +50,12 @@ const InfiniteMileCard = () => {
             className={styles.case_study_prototypes}
           >
             <div className={styles.prototypes_container}>
-              <div className={styles.case_study_prototype_desktop}>
+              <div className={styles.prototype_desktop_container}>
                 <Image
                   src={InfiniteMileDetroitMobilePrototype}
                   alt="Infinite Mile desktop prototype"
                   layout="responsive"
-                  objectFit="contain"
+                  className={styles.case_study_prototype_desktop}
                   priority
                 />
               </div>

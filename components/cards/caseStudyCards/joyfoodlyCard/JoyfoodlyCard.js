@@ -1,3 +1,4 @@
+'use client'
 import styles from './JoyfoodlyCard.module.css';
 import Image from 'next/image';
 import MyLink from '../../../../public/util/myLink';
@@ -21,15 +22,13 @@ const JoyfoodlyCard = () => {
       onMouseOut={(() => setJoyfoodlyIsHovered(false))}
     >
       <div className={styles.case_study_background}>
-        <div className={styles.case_study_background_image}>
-          <Image 
-            src={JoyfoodlyBackground} 
-            alt="busy parent cooking with child" 
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
-        </div>
+        <Image 
+          src={JoyfoodlyBackground} 
+          alt="busy parent cooking with child" 
+          layout="responsive"
+          className={styles.background_image}
+          priority
+        />
         <div className={styles.case_study_overlay}/>
       </div>
       <div className={styles.case_study_content} >
@@ -52,21 +51,21 @@ const JoyfoodlyCard = () => {
             className={styles.case_study_prototypes}
           >
             <div className={styles.prototypes_container}>
-              <div className={styles.case_study_prototype_mobile}>
+              <div className={styles.prototype_mobile_container}>
                 <Image
                   src={JoyfoodlyMobilePrototype}
+                  className={styles.case_study_prototype_mobile}
                   alt="Joyfoodly mobile prototype"
                   layout="responsive"
-                  objectFit="contain"
                   priority
                 />
               </div>
-              <div className={styles.case_study_prototype_desktop}>
+              <div className={styles.prototype_desktop_container}>
                 <Image
                   src={JoyfoodlyDesktopPrototype}
+                  className={styles.case_study_prototype_desktop}
                   alt="Joyfoodly desktop prototype"
                   layout="responsive"
-                  objectFit="contain"
                   priority
                 />
               </div>

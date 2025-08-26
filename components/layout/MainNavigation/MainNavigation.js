@@ -1,3 +1,4 @@
+'use client'
 import { useState, useEffect, useRef } from 'react';
 import BlindsIndex from './blindsIndex/BlindsIndex';
 import classes from './MainNavigation.module.css';

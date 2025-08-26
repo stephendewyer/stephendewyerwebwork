@@ -1,3 +1,4 @@
+'use client'
 import styles from './MoveableFarmCard.module.css';
 import { useState } from 'react';
 import Image from 'next/image';
@@ -18,15 +19,13 @@ const MoveableFarmCard = () => {
             onMouseOut={(() => setMoveableFarmIsHovered(false))}
             >
             <div className={styles.case_study_background}>
-                <div className={styles.case_study_background_image}>
                 <Image 
                     src={MoveableFarmBackground} 
                     alt="heirloom tomatoes from San Francisco farmers' market" 
-                    layout="fill"
-                    objectFit="cover"
+                    layout="responsive"
+                    className={styles.background_image}
                     priority
                 />
-                </div>
                 <div className={styles.case_study_overlay}/>
             </div>
             <div className={styles.case_study_content} >
@@ -49,24 +48,24 @@ const MoveableFarmCard = () => {
                         className={styles.case_study_prototypes}
                     >
                         <div className={styles.prototypes_container}>
-                        <div className={styles.case_study_prototype_mobile}>
-                            <Image
-                            src={MoveableFarmMobilePrototype}
-                            alt="Art in Tech Services mobile prototype"
-                            layout="responsive"
-                            objectFit="contain"
-                            priority
-                            />
-                        </div>
-                        <div className={styles.case_study_prototype_desktop}>
-                            <Image
-                            src={MoveableFarmDesktopPrototype}
-                            alt="Art in Tech Services desktop prototype"
-                            layout="responsive"
-                            objectFit="contain"
-                            priority
-                            />
-                        </div>
+                            <div className={styles.prototype_mobile_container}>
+                                <Image
+                                    src={MoveableFarmMobilePrototype}
+                                    className={styles.case_study_prototype_mobile}
+                                    alt="Art in Tech Services mobile prototype"
+                                    layout="responsive"
+                                    priority
+                                />
+                            </div>
+                            <div className={styles.prototype_desktop_container}>
+                                <Image
+                                    src={MoveableFarmDesktopPrototype}
+                                    alt="Art in Tech Services desktop prototype"
+                                    layout="responsive"
+                                    className={styles.case_study_prototype_desktop}
+                                    priority
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

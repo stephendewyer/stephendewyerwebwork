@@ -1,3 +1,4 @@
+'use client'
 import React, { Component, useState } from 'react';
 import styles from './slide_carousel.module.css';
 import Image from 'next/image';

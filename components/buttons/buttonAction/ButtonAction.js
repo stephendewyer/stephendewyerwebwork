@@ -1,3 +1,4 @@
+'use client'
 import styles from './ButtonAction.module.css';
 import { useState } from 'react';
 

@@ -1,5 +1,6 @@
+'use client'
 import styles from './SideDrawer.module.css';
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import { useEffect, useState, useRef, Fragment } from "react";
 import MyLink from '../../../public/util/myLink';
 import DrawerToggleButton from './DrawerToggleButton';
@@ -7,8 +8,7 @@ import NavData from "../../../public/data/navigation.json";
 
 const SideDrawer = (props) => {
 
-    const router = useRouter();
-    const pagePath = router.pathname;
+    const pagePath = usePathname();
 
     const Arrow = () => {
         return (

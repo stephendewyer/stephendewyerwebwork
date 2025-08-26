@@ -16,41 +16,35 @@ function Footer() {
                 stephen garrett dewyer © {year}
             </div>
             <div className={styles.footer_links}>
-                <Link href="https://www.linkedin.com/in/stephen-dewyer-a15539a5" passHref={true} aria-label="link to LinkedIn profile">
-                    <a className={styles.footer_link} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true}>
-                            <div>
-                                LinkedIn
-                            </div>
-                            <div className={styles.external_link_icon} >
-                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                            </div>
-                        </ButtonExternalLink>
-                    </a>
+                <Link href="https://www.linkedin.com/in/stephen-dewyer-a15539a5" passHref={true} aria-label="link to LinkedIn profile" className={styles.footer_link} target="_blank" rel="noopener noreferrer">
+                    <ButtonExternalLink passHref={true}>
+                        <div>
+                            LinkedIn
+                        </div>
+                        <div className={styles.external_link_icon} >
+                            <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                        </div>
+                    </ButtonExternalLink>
                 </Link>
-                <Link href="https://www.github.com/stephendewyer" passHref={true} aria-label="link to GitHub profile">
-                    <a className={styles.footer_link} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true}>
-                            <div>
-                                GitHub
-                            </div>
-                            <div className={styles.external_link_icon} >
-                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                            </div>
-                        </ButtonExternalLink>
-                    </a>
+                <Link href="https://www.github.com/stephendewyer" passHref={true} aria-label="link to GitHub profile" className={styles.footer_link} target="_blank" rel="noopener noreferrer">
+                    <ButtonExternalLink passHref={true}>
+                        <div>
+                            GitHub
+                        </div>
+                        <div className={styles.external_link_icon} >
+                            <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+                        </div>
+                    </ButtonExternalLink>
                 </Link>
-                <Link href="mailto:sdewyer@artintechservices.com" passHref={true} aria-label="email stephen garrett dewyer">
-                    <a className={styles.footer_link} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true}>
-                            <div>
-                                email
-                            </div>
-                            <div className={styles.email_icon} >
-                                <Image src={emailIcon} layout="responsive" alt="email icon"/>
-                            </div>
-                        </ButtonExternalLink>
-                    </a>
+                <Link href="mailto:sdewyer@artintechservices.com" passHref={true} aria-label="email stephen garrett dewyer" className={styles.footer_link} target="_blank" rel="noopener noreferrer">
+                    <ButtonExternalLink passHref={true}>
+                        <div>
+                            email
+                        </div>
+                        <div className={styles.email_icon} >
+                            <Image src={emailIcon} layout="responsive" alt="email icon"/>
+                        </div>
+                    </ButtonExternalLink>
                 </Link>
             </div>
         </div>

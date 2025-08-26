@@ -1,3 +1,4 @@
+'use client'
 import styles from './PublicArtsCommissionCard.module.css';
 import { useState } from 'react';
 import MyLink from '../../../../public/util/myLink';
@@ -21,15 +22,13 @@ const PulblicArtsCommissionCard = () => {
         onMouseOut={(() => setPublicArtsCommissionIsHovered(false))}
       >
         <div className={styles.case_study_background}>
-          <div className={styles.case_study_background_image}>
-            <Image 
-              src={PublicArtsCommissionBackground} 
-              alt="doors to Michigan State Capitol Building" 
-              layout="fill"
-              objectFit="cover"
-              priority
-            />
-          </div>
+          <Image 
+            src={PublicArtsCommissionBackground} 
+            alt="doors to Michigan State Capitol Building" 
+            layout="responsive"
+            className={styles.background_image}
+            priority
+          />
           <div className={styles.case_study_overlay}/>
         </div>
         <div className={styles.case_study_content} >
@@ -52,21 +51,21 @@ const PulblicArtsCommissionCard = () => {
               className={styles.case_study_prototypes}
             >
               <div className={styles.prototypes_container}>
-                <div className={styles.case_study_prototype_mobile}>
+                <div className={styles.prototype_mobile_container}>
                   <Image
                     src={PublicArtsCommissionMobilePrototype}
+                    className={styles.case_study_prototype_mobile}
                     alt="Public Arts Commission mobile prototype"
                     layout="responsive"
-                    objectFit="contain"
                     priority
                   />
                 </div>
-                <div className={styles.case_study_prototype_desktop}>
+                <div className={styles.prototype_desktop_container}>
                   <Image
                     src={PublicArtsCommissionDesktopPrototype}
+                    className={styles.case_study_prototype_desktop}
                     alt="Public Arts Commission desktop prototype"
                     layout="responsive"
-                    objectFit="contain"
                     priority
                   />
                 </div>
