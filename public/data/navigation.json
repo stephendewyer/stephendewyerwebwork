@@ -1,0 +1,49 @@
+[
+    {
+        "name": "stephen garrett dewyer",
+        "pathname": "/",
+        "sub_navigation": null
+    },
+    {
+        "name": "about",
+        "pathname": "/about",
+        "sub_navigation": null
+    },
+    {
+        "name": "case studies",
+        "pathname": "/case_studies",
+        "sub_navigation": [
+                {
+                    "pathname": "/case_studies/publicArtsCommission",
+                    "name": "Public Arts Commission",
+                    "sub_navigation": null
+                },
+                {
+                    "pathname": "/case_studies/artInTechServices",
+                    "name": "Art in Tech Services",
+                    "sub_navigation": null
+                },
+                {
+                    "pathname": "/case_studies/joyfoodly",
+                    "name": "Joyfoodly",
+                    "sub_navigation": null
+                }
+                ,
+                {
+                    "pathname": "/case_studies/infiniteMile",
+                    "name": "Infinite Mile",
+                    "sub_navigation": null
+                }
+        ]
+    },
+    {
+        "name": "FAQs",
+        "pathname": "/FAQs",
+        "sub_navigation": null
+    },
+    {
+        "name": "contact",
+        "pathname": "/contact",
+        "sub_navigation": null
+    }
+]

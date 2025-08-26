@@ -1,0 +1,150 @@
+.panel {
+    width: 100%;
+    border-bottom: 1px solid #514C64;
+    height: auto;
+}
+
+.panel_label {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    color: #575B46;
+    transition: color 0.2s linear, font-weight 0.2s linear;
+}
+
+.panel_label:hover > .arrow_container {
+    color: #5B7BA2;
+}
+
+.panel_label:hover > .arrow_container_active {
+    color: #5B7BA2;
+}
+
+.label_paragraphs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem 0 0;
+}
+
+.position {
+    font-size: 1.5rem;
+}
+
+.company {
+    font-size: 1.25rem;
+}
+
+.location_and_dates {
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow_container {
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    min-width: 1.25em;
+    transform: rotateX(0) rotate(90deg);
+    will-change: transform;
+    transition: transform 0.2s ease-out, color 0.2s linear;
+    color: #575B46;
+    padding: 1rem 0;
+}
+
+.arrow_container_active {
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    min-width: 1.25em;
+    transform: rotateX(180deg) rotate(90deg);
+    will-change: transform;
+    transition: transform 0.2s ease-out, color 0.2s linear;
+    color: #575B46;
+    padding: 1rem 0;
+}
+  
+.panel_label::after {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+  
+.panel_label_bold::after {
+    transition: transform 300ms ease-out;
+    transform: rotate(0deg);
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.panel_label:hover {
+    color: #5B7BA2;
+}
+
+.panel_inner {
+    overflow: hidden;
+    will-change: height;
+    transition: height 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.panel_content {
+    transition: opacity 0.3s linear 0.18s;
+    padding: 0 0 1rem 0;
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+    .panel_label {
+        gap: 0.75rem;
+        padding: 0.5rem 0;  
+    }
+    
+    .panel_label_bold {
+        gap: 0.75rem;
+        padding: 0.5rem 0;
+    }
+
+    .position {
+        font-size: 1.35rem;
+    }
+
+    .company {
+        font-size: 1.175rem;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .panel_label {
+        gap: 0.5rem;
+        padding: 0.5rem 0;  
+    }
+
+    .position {
+        font-size: 1.25rem;
+    }
+
+    .company {
+        font-size: 1.125rem;
+    }
+
+    .location_and_dates {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .panel_label_bold {
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+
+}

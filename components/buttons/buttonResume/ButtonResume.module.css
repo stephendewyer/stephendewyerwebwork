@@ -1,0 +1,117 @@
+.button_and_PDFIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin:0 0.3em 0.3em 0;
+}
+
+.PDFIcon {
+    width: 80px;
+    transition: color 0.2s linear
+}
+
+.bouncyPDFIcon {
+    animation: bouncy;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    width: 80px;
+    transition: color 0.2s linear
+} 
+
+.bouncy {
+    animation-name: bouncy;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    position: relative;
+}
+
+@keyframes bouncy {
+    0%   { transform: translateY(0); }
+    10%  { transform: translateY(0); }
+    30%  { transform: translateY(-30px); }
+    50%  { transform: translateY(0); }
+    57%  { transform: translateY(-3px); }
+    64%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+.button {
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 24px;
+    border: 3px solid;
+    margin-right: 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    font-family: "CenturyGothic";
+    transition: color 0.2s linear, border 0.2s linear;
+}
+
+.button:active {
+    color:#908FB2;
+    border-color:#908FB2;
+}
+
+.button_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PDFIconMobile {
+    display: none;
+}
+
+@media all and (max-width: 1250px) {
+    .button_and_PDFIcon {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: right;
+        margin: 0 0.3em 0 0;
+    }
+
+    .button {
+        margin: 0.3em 0 0 0;
+    }
+}
+
+@media all and (max-width: 750px) {
+
+    .button {
+        display: inline-block;
+        padding: 8px 16px;
+        border-width: 2px;
+        margin: 0 auto;
+    }
+
+    .PDFIcon {
+        display: none;
+    }
+
+    .bouncyPDFIcon {
+        display: none;
+    }
+
+    .PDFIconMobile {
+        margin-left: 10px;
+        display: block;
+        width: 22px;
+    }
+
+    @keyframes bouncy {
+        0%   { transform: translateY(0); }
+        10%  { transform: translateY(0); }
+        30%  { transform: translateY(-20px); }
+        50%  { transform: translateY(0); }
+        57%  { transform: translateY(-2px); }
+        64%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+    
+    
+}

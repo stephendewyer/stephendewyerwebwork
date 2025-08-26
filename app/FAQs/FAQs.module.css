@@ -1,0 +1,30 @@
+.FAQs_container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 10rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 1440px) {
+    .FAQs_container {
+        padding-top: 9rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .FAQs_container {
+        padding-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .FAQs_container {
+        padding-top: 7rem;
+    }
+}

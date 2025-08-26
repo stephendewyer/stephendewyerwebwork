@@ -1,0 +1,36 @@
+.pill_button {
+    display:inline-block;
+    padding:0.5em 3em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:#FFE9C0;
+    background-color:#595F46;
+    text-align:center;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    font-family: "CenturyGothic";
+}
+
+.pill_button:hover{
+    background-color:#6F7185;
+}
+
+.pill_button:active {
+    background-color:#FF8D61;
+}
+
+@media all and (max-width: 751px){
+
+    .pill_button {
+        display: block;
+        margin: 0.2em auto;
+        font-size: 18px;
+    }
+
+}

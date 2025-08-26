@@ -1,0 +1,251 @@
+.banner_container {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgb(255,233,192);
+    background: linear-gradient(0deg, rgba(255,233,192,1) 0%, rgba(255,233,192,0) 100%);
+}
+
+.banner_heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.problem_and_solution_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin: auto;
+    max-width: 40rem;
+}
+
+.problem_container {
+    position: relative;
+    color: #FFE9C0;
+    background-color: rgba(37,38,45,0.75);
+    width: auto;
+    padding: 1rem 2rem 0 2rem;
+    max-height: auto;
+    overflow-y: none;
+}
+
+.solution_container {
+    position: relative;
+    color: #FFE9C0;
+    background-color: rgba(37,38,45,0.75);
+    width: auto;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.solution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.slider_case_study {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.detail_heading {
+    color: #575B46;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.panelContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.tabHeadingDesktop {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.tabHeadingMobile {
+    display: none;
+}
+
+.external_link_icon {
+	width: 20px;
+	margin-left: 8px;
+}
+
+.inline_bold {
+    font-weight: bold;
+    display: inline;
+}
+
+.caseStudyInfoSection {
+    margin: 0 auto 1rem auto;
+    padding: 0 1rem;
+    max-width: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.case_studies_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1920px;
+    margin: 40px auto;
+    padding: 0 80px;
+}
+
+.caseStudyThumbnailOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 30;
+}
+
+.caseStudyThumbnailHeading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #514C64;
+}
+
+.visit_button {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1440px) {
+
+    .banner_container {
+        height: 30rem;
+    }
+
+    .banner_heading {
+        font-size: 1.35rem;
+    }
+
+    .problem_and_solution_container {
+        gap: 0.75rem;
+        max-width: 40rem;
+    }
+
+    .problem_container {
+        padding: 0.75rem 1.5rem 0 1.5rem;
+    }
+
+    .solution_container {
+        padding: 0.75rem 1.5rem 0 1.5rem; 
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .banner_container {
+        height: 20rem;
+    }
+
+    .banner_heading {
+        font-size: 1.2rem;
+    }
+
+    .problem_and_solution_container {
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 1rem;
+        height: 100%;
+    }
+
+    .problem_container {
+        padding: 0.5rem 1.25rem 0 1.25rem;
+        overflow-y: scroll;
+        max-height: 8rem;
+    }
+
+    .solution_container {
+        padding: 0.5rem 1.25rem 0 1.25rem; 
+    }
+    
+    .detail_heading {
+        font-size: 18px;
+    }
+
+    .panelContent {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .panelContentParagraphsWithImage {
+        padding: 20px 0;
+    }
+
+    .tabHeadingDesktop {
+        display: none;
+    }
+
+    .tabHeadingMobile {
+        display: block;
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .caseStudyInfoSection {
+        margin-bottom: 20px;
+    }
+
+    .case_studies_nav {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .caseStudyThumbnailHeading {
+        font-size: 14px;
+    }
+
+    .visit_button {
+        margin: 25px 0;
+    }
+    
+}

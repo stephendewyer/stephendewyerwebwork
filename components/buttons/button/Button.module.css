@@ -1,0 +1,67 @@
+.button {
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5em 3em;
+    border: 0.16em solid #575B46;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #575B46;
+    text-align: center;
+    transition: all 0.15s ease-out;
+    font-family: "CenturyGothic";
+    will-change: color border-color;
+}
+
+.button:hover {
+    color:#90947E;
+    border-color:#90947E;
+}
+
+.button_active {
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5em 3em;
+    border: 0.16em solid #90947E;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:#90947E;
+    text-align: center;
+    transition: all 0.15s ease-out;
+    font-family: "CenturyGothic";
+    will-change: color border-color;
+}
+
+.button:active {
+    color:#908FB2;
+    border-color:#908FB2;
+}
+
+
+@media all and (max-width: 1250px) {
+    .button {
+        padding: 0.5em 1em;
+    }
+
+    .button_active {
+        padding: 0.5em 1em;
+    }
+}
+
+@media all and (max-width: 750px) {
+
+    .button {
+        display: inline-block;
+        padding: 0.5em 2em;
+        margin: 0.15em auto;
+    }
+
+    .button_active {
+        display: inline-block;
+        padding: 0.5em 2em;
+        margin: 0.15em auto;
+    }
+}

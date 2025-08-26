@@ -1,0 +1,78 @@
+.imagePlusCaptionContainer {
+    width: 100%;
+    position: relative;
+}
+
+.imageContainer {
+    width: 100%;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    transition: all 0.33s ease-out;
+    will-change: opacity;
+    opacity: 100%;
+}
+
+.overlayHidden {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    transition: all 0.33s ease-out;
+    will-change: opacity;
+    opacity: 0;
+}
+
+.overlayContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlayAndCaption {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlayCaptionAndBackground {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.captionContainer {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 40px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #514C64;
+    background-color: rgba(255,255,255,.75);
+}
+
+@media all and (max-width: 750px) {
+
+    .imagePlusCaptionContainer {
+        min-width: auto;
+    }
+
+    .captionContainer {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    
+}
