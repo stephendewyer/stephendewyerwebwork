@@ -6,7 +6,7 @@ import MyLink from '../../../public/util/myLink';
 import styles from './publicArtsCommission.module.css';
 import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import InfoCards from "../../../components/infoCards/InfoCards";
-import ArtAtDemonstration from '../../../public/images/case_studies/Public_Arts_Commission/process/art_at_demonstration.jpg';
+// import ArtAtDemonstration from '../../../public/images/case_studies/Public_Arts_Commission/process/art_at_demonstration.jpg';
 import EndorsedByPublicArtsCommission from '../../../public/images/case_studies/Public_Arts_Commission/process/endorsement_image.jpg';
 import PublicArtsCommissionLogo from '../../../public/images/case_studies/Public_Arts_Commission/process/public_arts_commission_logo.svg';
 import Tabs from "../../../components/tabPanel/Tabs";
