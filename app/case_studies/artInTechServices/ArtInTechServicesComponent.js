@@ -187,175 +187,175 @@ const ArtinTechServicesComponent = () => {
         
     ];
 
-    const tabPanels = [
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>empathize</div>
-                    <div className={styles.tabHeadingMobile}>1</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "empathize",
-                images: [ ],
-                paragraphs: <p>Art often envisions technological discoveries before they happen.  At the same time, I noticed advancements in digital technology have largely become very alienating and fail to solve major problems facing humanity like climate change and economic inequality. In fact, some uses of digital technology exacerbated the issues.
-                To solve the issue of very alienating digital technology that worsens the human condition, I launched Art in Tech Services as a way to bring art and technology together to envision digital products that improve the human condition.    
-                <br /><br />
-                As a practical matter, Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
-                The company had no way of processing financial transactions such as invoices via the company web application.  The company needed a web application to streamline collaboration with clients.</p>
-                ,
-                buttons: []
-            },
-        }, {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>define</div>
-                    <div className={styles.tabHeadingMobile}>2</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "define",
-                images: [ ],
-                paragraphs: <p>
-                    Goals: 
-                    <br/><br/>1. Redesign the Art in Tech Services website and create a custom web application using modern web development technologies;
-                    <br/><br/>2. Create client collaboration software as part of the redesign that would allow users with accounts to: 
-                    a. Schedule consultations;
-                    b. Start projects;
-                    c. Receive project updates;
-                    d. Receive, sign and send signed contracts;
-                    e. Receive invoices and make payments;
-                    <br /><br/>
-                    3. Create public-facing forms to allow users without accounts to schedule consultations, start projects and contact Art in Tech Services via the web application;
-                    4. Feature custom videos, graphics and animations as part of the web redesign.
-                </p>
-                ,
-                buttons: []
-            }
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>ideate</div>
-                    <div className={styles.tabHeadingMobile}>3</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "ideate",
-                images: [ <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} key={1}/>, <ImageHoverCaption imagePlusCaption={imagePlusCaptionSiteMap} key={2}/>],
-                paragraphs: <p>
-                    The Art in Tech Services logo I created uses the 8 bars that comprise the IBM logo and IBM Sans Plex font to reflect tech history.  An arrow function expression above Art in Tech Services also signifies the equality sign as greater than the following value. I created several sketches of possible designs for the Art in Tech Services website and web application.  I sketched several graphics to use for content.  
-                    I conducted research on similar software to help generate ideas.
-                </p>
-                ,
-                buttons: []
-            }
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>prototype</div>
-                    <div className={styles.tabHeadingMobile}>4</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "prototype",
-                images: [ <ImageHoverCaption imagePlusCaption={imagePlusCaptionPrototype} key={1}/>],
-                paragraphs: <p>
-                    I created medium-fidelity desktop and mobile prototypes for the Art in Tech Services web application using Figma.  
-                    I created custom graphics and animations for the prototypes.  
-                    The prototypes received user testing from art and organizing experts.
-                </p>
-                ,
-                buttons: [
-                    <Link key={1} href="https://www.figma.com/community/file/1077736708672476518" passHref={true} className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true} aria-label="link to view prototype">
-                            <div>
-                                prototype
-                            </div>
-                            <div className={styles.external_link_icon} >
-                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                            </div>
-                        </ButtonExternalLink>
-                    </Link>
-                ]
-            }
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>test</div>
-                    <div className={styles.tabHeadingMobile}>6</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "test",
-                images: [],
-                paragraphs: <p>
-                    The redesigned Art in Tech Services website and web application received user testing from individuals in my network.  
-                    I am currently working on sending a survey to prospective users asking what problems art in technology could help solve for them, what technology they needed to improve their work and how Art in Tech Services could better serve their needs. 
-                </p>
-                ,
-                buttons: []
-            }
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>build</div>
-                    <div className={styles.tabHeadingMobile}>5</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "build",
-                images: [],
-                paragraphs: <p>
-                    The process of developing the web application allowed me to discover capabilities that could improve the design, like adding animated chevrons to the navigation to tell users which navigation tab is open. <br /><br />
-                    User feedback on forms that appeared once a form is submitted, when an input loses focus and on every key stroke. 
-                    As part of the development process, I created several very useful interfaces including:
-                </p>
-                ,
-                buttons: [
-                    <Link href="https://animatedtabpanels.vercel.app/" passHref={true} key={1} className={styles.visit_link} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true} aria-label="link to animated tab panels">
-                            <div>
-                                animated tab panels
-                            </div>
-                            <div className={styles.external_link_icon} >
-                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                            </div>
-                        </ButtonExternalLink>
-                    </Link>,
-                    <Link href="https://accordion-with-arrows.vercel.app/" passHref={true} key={2} className={styles.visit_link} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true} aria-label="link to accordion with arrows">
-                            <div>
-                                accordion with arrows
-                            </div>
-                            <div className={styles.external_link_icon} >
-                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                            </div>
-                        </ButtonExternalLink>
-                    </Link>,
-                    <Link href="https://dynamicfooter.vercel.app/" passHref={true} key={3} className={styles.visit_link} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true} aria-label="link to footer example website">
-                            <div>
-                                dynamic footer
-                            </div>
-                            <div className={styles.external_link_icon} >
-                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                            </div>
-                        </ButtonExternalLink>
-                    </Link>
-                ]
-            }
-        },
-    ];
+    // const tabPanels = [
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>empathize</div>
+    //                 <div className={styles.tabHeadingMobile}>1</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "empathize",
+    //             images: [ ],
+    //             paragraphs: <p>Art often envisions technological discoveries before they happen.  At the same time, I noticed advancements in digital technology have largely become very alienating and fail to solve major problems facing humanity like climate change and economic inequality. In fact, some uses of digital technology exacerbated the issues.
+    //             To solve the issue of very alienating digital technology that worsens the human condition, I launched Art in Tech Services as a way to bring art and technology together to envision digital products that improve the human condition.    
+    //             <br /><br />
+    //             As a practical matter, Art in Tech Services was using multiple channels of communication with clients, which became cumbersome to manage.  
+    //             The company had no way of processing financial transactions such as invoices via the company web application.  The company needed a web application to streamline collaboration with clients.</p>
+    //             ,
+    //             buttons: []
+    //         },
+    //     }, {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>define</div>
+    //                 <div className={styles.tabHeadingMobile}>2</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "define",
+    //             images: [ ],
+    //             paragraphs: <p>
+    //                 Goals: 
+    //                 <br/><br/>1. Redesign the Art in Tech Services website and create a custom web application using modern web development technologies;
+    //                 <br/><br/>2. Create client collaboration software as part of the redesign that would allow users with accounts to: 
+    //                 a. Schedule consultations;
+    //                 b. Start projects;
+    //                 c. Receive project updates;
+    //                 d. Receive, sign and send signed contracts;
+    //                 e. Receive invoices and make payments;
+    //                 <br /><br/>
+    //                 3. Create public-facing forms to allow users without accounts to schedule consultations, start projects and contact Art in Tech Services via the web application;
+    //                 4. Feature custom videos, graphics and animations as part of the web redesign.
+    //             </p>
+    //             ,
+    //             buttons: []
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>ideate</div>
+    //                 <div className={styles.tabHeadingMobile}>3</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "ideate",
+    //             images: [ <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} key={1}/>, <ImageHoverCaption imagePlusCaption={imagePlusCaptionSiteMap} key={2}/>],
+    //             paragraphs: <p>
+    //                 The Art in Tech Services logo I created uses the 8 bars that comprise the IBM logo and IBM Sans Plex font to reflect tech history.  An arrow function expression above Art in Tech Services also signifies the equality sign as greater than the following value. I created several sketches of possible designs for the Art in Tech Services website and web application.  I sketched several graphics to use for content.  
+    //                 I conducted research on similar software to help generate ideas.
+    //             </p>
+    //             ,
+    //             buttons: []
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>prototype</div>
+    //                 <div className={styles.tabHeadingMobile}>4</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "prototype",
+    //             images: [ <ImageHoverCaption imagePlusCaption={imagePlusCaptionPrototype} key={1}/>],
+    //             paragraphs: <p>
+    //                 I created medium-fidelity desktop and mobile prototypes for the Art in Tech Services web application using Figma.  
+    //                 I created custom graphics and animations for the prototypes.  
+    //                 The prototypes received user testing from art and organizing experts.
+    //             </p>
+    //             ,
+    //             buttons: [
+    //                 <Link key={1} href="https://www.figma.com/community/file/1077736708672476518" passHref={true} className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer">
+    //                     <ButtonExternalLink passHref={true} aria-label="link to view prototype">
+    //                         <div>
+    //                             prototype
+    //                         </div>
+    //                         <div className={styles.external_link_icon} >
+    //                             <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+    //                         </div>
+    //                     </ButtonExternalLink>
+    //                 </Link>
+    //             ]
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>test</div>
+    //                 <div className={styles.tabHeadingMobile}>6</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "test",
+    //             images: [],
+    //             paragraphs: <p>
+    //                 The redesigned Art in Tech Services website and web application received user testing from individuals in my network.  
+    //                 I am currently working on sending a survey to prospective users asking what problems art in technology could help solve for them, what technology they needed to improve their work and how Art in Tech Services could better serve their needs. 
+    //             </p>
+    //             ,
+    //             buttons: []
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>build</div>
+    //                 <div className={styles.tabHeadingMobile}>5</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "build",
+    //             images: [],
+    //             paragraphs: <p>
+    //                 The process of developing the web application allowed me to discover capabilities that could improve the design, like adding animated chevrons to the navigation to tell users which navigation tab is open. <br /><br />
+    //                 User feedback on forms that appeared once a form is submitted, when an input loses focus and on every key stroke. 
+    //                 As part of the development process, I created several very useful interfaces including:
+    //             </p>
+    //             ,
+    //             buttons: [
+    //                 <Link href="https://animatedtabpanels.vercel.app/" passHref={true} key={1} className={styles.visit_link} target="_blank" rel="noopener noreferrer">
+    //                     <ButtonExternalLink passHref={true} aria-label="link to animated tab panels">
+    //                         <div>
+    //                             animated tab panels
+    //                         </div>
+    //                         <div className={styles.external_link_icon} >
+    //                             <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+    //                         </div>
+    //                     </ButtonExternalLink>
+    //                 </Link>,
+    //                 <Link href="https://accordion-with-arrows.vercel.app/" passHref={true} key={2} className={styles.visit_link} target="_blank" rel="noopener noreferrer">
+    //                     <ButtonExternalLink passHref={true} aria-label="link to accordion with arrows">
+    //                         <div>
+    //                             accordion with arrows
+    //                         </div>
+    //                         <div className={styles.external_link_icon} >
+    //                             <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+    //                         </div>
+    //                     </ButtonExternalLink>
+    //                 </Link>,
+    //                 <Link href="https://dynamicfooter.vercel.app/" passHref={true} key={3} className={styles.visit_link} target="_blank" rel="noopener noreferrer">
+    //                     <ButtonExternalLink passHref={true} aria-label="link to footer example website">
+    //                         <div>
+    //                             dynamic footer
+    //                         </div>
+    //                         <div className={styles.external_link_icon} >
+    //                             <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+    //                         </div>
+    //                     </ButtonExternalLink>
+    //                 </Link>
+    //             ]
+    //         }
+    //     },
+    // ];
 
     return (
         <Fragment>

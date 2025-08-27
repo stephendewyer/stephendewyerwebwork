@@ -208,151 +208,151 @@ const PublicArtsCommissionComponent = () => {
         
     ];
 
-    const tabPanels = [
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>empathize</div>
-                    <div className={styles.tabHeadingMobile}>1</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "empathize",
-                images: [
-                    <ImageHoverCaption imagePlusCaption={imagePlusCaptionEmpathize} key={1}/>
-                ],
-                paragraphs: <p>The art community is very active in democratic campaigns and movements, but doesn&#39;t have a means by which to translate political activity into legislative and electoral results.  
-                    As a result, many of the demands from the art community on leadership in government often are ignored.  
-                    <br /><br />
-                    Seeing a need to connect the art community with democratic campaigns and movements and a need to engage in electoral politics, I launched Public Arts Commission in 2017.  
-                    Public Arts Commission will provide a platform for voters to network and organize to support democratic campaigns and movements that align with the public arts commission agenda to expand the political imaginary by making excellent public art available to everyone.  
-                    <br /><br />
-                    Creating a platform whereby candidates who share the values of Public Arts Commission can connect with an active network of voters on the Public Arts Commission platform will also reduce some of the barriers to running for office for candidates endorsed by Public Arts Commission.</p>
-                ,
-                buttons: []
-            }
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>define</div>
-                    <div className={styles.tabHeadingMobile}>2</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "define",
-                images: [
-                        <ImageHoverCaption imagePlusCaption={imagePlusCaptionDefine} key={1}/>
-                    ],
-                paragraphs: 
-                    <p>
-                        For Public Arts Commission to fulfill its mission, the organization&#39;s web platform needs to do a number of things including:
-                        <br /><br />1. Provide a list of Public Arts Commission&#39;s priorities to the public;
-                        <br /><br />2. Provide a searchable database of all candidates, legislation, referendums, amendments and actions endorsed by Public Arts Commission to the public;
-                        <br /><br />3. Allow voters to create accounts that let them: 
-                        a. Connect with other voters on the Public Arts Commission platform; 
-                        b. Send messages to other voters on the Public Arts Commission platform;
-                        c. Submit candidates, legislation, referendums, amendments and actions for endorsement by Public Arts Commission;
-                        d. View and manage elections in which the voter can vote;
-                        e. View and manage actions in which the voter can participate;
-                        f. Connect and organize with Public Arts Commission endorsed candidates, legislation, referendums, amendments and actions;
-                        <br /><br />4. Allow campaigns to apply for an endorsement by Public Arts Commission;
-                        <br /><br />5. Allow Public Arts Commission-endorsed campaigns with paid subscriptions to have access to the following:
-                        a. All voters who have Public Arts Commission accounts and are eligible to vote for the campaign in an election.
-                    </p>
-                ,
-                buttons: []
-            }
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>ideate</div>
-                    <div className={styles.tabHeadingMobile}>3</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "ideate",
-                images: [
-                    <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} key={1}/>,
-                    <ImageHoverCaption imagePlusCaption={imagePlusCaptionSiteMap} key={2}/>
-                ],
-                paragraphs: null,
-                buttons: []
-            }
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>prototype</div>
-                    <div className={styles.tabHeadingMobile}>4</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "prototype",
-                images: [
-                    <ImageHoverCaption imagePlusCaption={PublicArtsCommissionFigma} key={2}/>
-                ],
-                paragraphs: 
-                    <p>
-                        I used Figma to prototype the Public Arts Commission website redesign.  Public Arts Commission Board Directors helped with user testing of the prototypes.
-                    </p>,
-                buttons: [
-                    <Link key="1" href="https://www.figma.com/community/file/1257459517679894104/public-arts-commission-website" passHref={true} className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer">
-                        <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
-                            <div>
-                                prototype
-                            </div>
-                            <div className={styles.external_link_icon} >
-                                <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-                            </div>
-                        </ButtonExternalLink>
-                    </Link>
-                ]
-            }
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>test</div>
-                    <div className={styles.tabHeadingMobile}>6</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "test",
-                images: [],
-                paragraphs: 
-                <p>
-                    Testing on the Public Arts Commission website and web application used Google Chrome Developer.   
-                    User testing was conducted with individuals in my network.
-                </p>,
-                buttons: []
-            }
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>build</div>
-                    <div className={styles.tabHeadingMobile}>5</div>
-                </Fragment>
-            ,
-            content: {
-                    heading: "build",
-                    images: [],
-                    paragraphs: 
-                        <p>
-                            For the development of the redesigned Public Arts Commission web programs, I am using a variety of technologies including SvelteKit, which is high performing and modern.
-                        </p>,
-                    buttons: []
-                }
-        },
-    ];
+    // const tabPanels = [
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>empathize</div>
+    //                 <div className={styles.tabHeadingMobile}>1</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "empathize",
+    //             images: [
+    //                 <ImageHoverCaption imagePlusCaption={imagePlusCaptionEmpathize} key={1}/>
+    //             ],
+    //             paragraphs: <p>The art community is very active in democratic campaigns and movements, but doesn&#39;t have a means by which to translate political activity into legislative and electoral results.  
+    //                 As a result, many of the demands from the art community on leadership in government often are ignored.  
+    //                 <br /><br />
+    //                 Seeing a need to connect the art community with democratic campaigns and movements and a need to engage in electoral politics, I launched Public Arts Commission in 2017.  
+    //                 Public Arts Commission will provide a platform for voters to network and organize to support democratic campaigns and movements that align with the public arts commission agenda to expand the political imaginary by making excellent public art available to everyone.  
+    //                 <br /><br />
+    //                 Creating a platform whereby candidates who share the values of Public Arts Commission can connect with an active network of voters on the Public Arts Commission platform will also reduce some of the barriers to running for office for candidates endorsed by Public Arts Commission.</p>
+    //             ,
+    //             buttons: []
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>define</div>
+    //                 <div className={styles.tabHeadingMobile}>2</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "define",
+    //             images: [
+    //                     <ImageHoverCaption imagePlusCaption={imagePlusCaptionDefine} key={1}/>
+    //                 ],
+    //             paragraphs: 
+    //                 <p>
+    //                     For Public Arts Commission to fulfill its mission, the organization&#39;s web platform needs to do a number of things including:
+    //                     <br /><br />1. Provide a list of Public Arts Commission&#39;s priorities to the public;
+    //                     <br /><br />2. Provide a searchable database of all candidates, legislation, referendums, amendments and actions endorsed by Public Arts Commission to the public;
+    //                     <br /><br />3. Allow voters to create accounts that let them: 
+    //                     a. Connect with other voters on the Public Arts Commission platform; 
+    //                     b. Send messages to other voters on the Public Arts Commission platform;
+    //                     c. Submit candidates, legislation, referendums, amendments and actions for endorsement by Public Arts Commission;
+    //                     d. View and manage elections in which the voter can vote;
+    //                     e. View and manage actions in which the voter can participate;
+    //                     f. Connect and organize with Public Arts Commission endorsed candidates, legislation, referendums, amendments and actions;
+    //                     <br /><br />4. Allow campaigns to apply for an endorsement by Public Arts Commission;
+    //                     <br /><br />5. Allow Public Arts Commission-endorsed campaigns with paid subscriptions to have access to the following:
+    //                     a. All voters who have Public Arts Commission accounts and are eligible to vote for the campaign in an election.
+    //                 </p>
+    //             ,
+    //             buttons: []
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>ideate</div>
+    //                 <div className={styles.tabHeadingMobile}>3</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "ideate",
+    //             images: [
+    //                 <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} key={1}/>,
+    //                 <ImageHoverCaption imagePlusCaption={imagePlusCaptionSiteMap} key={2}/>
+    //             ],
+    //             paragraphs: null,
+    //             buttons: []
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>prototype</div>
+    //                 <div className={styles.tabHeadingMobile}>4</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "prototype",
+    //             images: [
+    //                 <ImageHoverCaption imagePlusCaption={PublicArtsCommissionFigma} key={2}/>
+    //             ],
+    //             paragraphs: 
+    //                 <p>
+    //                     I used Figma to prototype the Public Arts Commission website redesign.  Public Arts Commission Board Directors helped with user testing of the prototypes.
+    //                 </p>,
+    //             buttons: [
+    //                 <Link key="1" href="https://www.figma.com/community/file/1257459517679894104/public-arts-commission-website" passHref={true} className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer">
+    //                     <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
+    //                         <div>
+    //                             prototype
+    //                         </div>
+    //                         <div className={styles.external_link_icon} >
+    //                             <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
+    //                         </div>
+    //                     </ButtonExternalLink>
+    //                 </Link>
+    //             ]
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>test</div>
+    //                 <div className={styles.tabHeadingMobile}>6</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "test",
+    //             images: [],
+    //             paragraphs: 
+    //             <p>
+    //                 Testing on the Public Arts Commission website and web application used Google Chrome Developer.   
+    //                 User testing was conducted with individuals in my network.
+    //             </p>,
+    //             buttons: []
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>build</div>
+    //                 <div className={styles.tabHeadingMobile}>5</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //                 heading: "build",
+    //                 images: [],
+    //                 paragraphs: 
+    //                     <p>
+    //                         For the development of the redesigned Public Arts Commission web programs, I am using a variety of technologies including SvelteKit, which is high performing and modern.
+    //                     </p>,
+    //                 buttons: []
+    //             }
+    //     },
+    // ];
 
     return (
         <Fragment>

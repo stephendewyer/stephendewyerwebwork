@@ -202,131 +202,131 @@ const InfiniteMileComponent = () => {
         
     ];
 
-    const tabPanels = [
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>empathize</div>
-                    <div className={styles.tabHeadingMobile}>1</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "empathize",
-                images: [ <ImageHoverCaption key={1} imagePlusCaption={imagePlusCaptionEmpathize} />],
-                paragraphs: <p>
-                    Despite having an active art community, no journals covered art and culture(s) in Detroit, Michigan from Detroit.  
-                    As a result, the art community in Detroit did not have a platform from which it could voice issues affecting the community.
-                </p>
-                ,
-                buttons: []
-            },
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>define</div>
-                    <div className={styles.tabHeadingMobile}>2</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "define",
-                images: [],
-                paragraphs: 
-                    <p>
-                        Detroit, Michigan needed a monthly, web-based journal of art and culture(s) to voice issues affecting the Detroit art community.  
-                        The journal would have to bridge demographic groups in a very segregated region by class and race.
-                    </p>
-                ,
-                buttons: []
-            }
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>ideate</div>
-                    <div className={styles.tabHeadingMobile}>3</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "ideate",
-                images: [ <ImageHoverCaption key={1} imagePlusCaption={imagePlusCaptionIdeate} />, <ImageHoverCaption key={2} imagePlusCaption={imagePlusCaptionSiteMap} /> ],
-                paragraphs: 
-                    <p>
-                        Rapid iterations of logo and name ideas were shared amongst stakeholders.  
-                        The process was one of the best I&#39;ve seen, with stakeholders working together to find the best design solution instead of defending their own ideas.  
-                        Ultimately, we agreed to use a logo I created that rotates the 8 in 8 Mile, a symbol of racial and economic division, ninety degrees to make an infinity symbol, which is impossible to divide.
-                        Contours of two chain links were used in the infinity symbol to reflect Detroit&#39;s industrial history.
-                        <br/><br/>
-                        Once the name, logo and style were decided, I began sketching ideas for the Infinite Mile website. 
-                        Stakeholders agreed to use a custom website because the website needed to have a different look than all the rest of the websites and have strong aesthetics because the journal was focusing on art and culture(s).
-                    </p>
-                ,
-                buttons: []
-            }
-        },
-        {
-            id: uuidv4(),
-            label:
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>prototype</div>
-                    <div className={styles.tabHeadingMobile}>4</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "prototype",
-                images: [],
-                paragraphs: 
-                    <p>
-                        I created a password-protected website as a prototype to share with stakeholders, who shared feedback.
-                    </p>
-                ,
-                buttons: []
-            }
-        },
-        {   
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>test</div>
-                    <div className={styles.tabHeadingMobile}>6</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "test",
-                images: [],
-                paragraphs: 
-                    <p>
-                        User tests were conducted for the Infinite Mile website.  
-                        Google Chrome Developer was used to test the code. 
-                    </p>
-                ,
-                buttons: []
-            }
-        },
-        {
-            id: uuidv4(),
-            label: 
-                <Fragment>
-                    <div className={styles.tabHeadingDesktop}>build</div>
-                    <div className={styles.tabHeadingMobile}>5</div>
-                </Fragment>
-            ,
-            content: {
-                heading: "build",
-                images: [],
-                paragraphs: 
-                    <p>
-                        I built the Infinite Mile website using HTML, CSS, JavaScript, jQuery, MailChimp, VideoJS and WowSlider.  
-                        Later, I added APIs for events using EventBrite and to handle sales of annual print anthologies and merchandise using PayPal.
-                    </p>
-                ,
-                buttons: []
-            }
-        },
-    ];
+    // const tabPanels = [
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>empathize</div>
+    //                 <div className={styles.tabHeadingMobile}>1</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "empathize",
+    //             images: [ <ImageHoverCaption key={1} imagePlusCaption={imagePlusCaptionEmpathize} />],
+    //             paragraphs: <p>
+    //                 Despite having an active art community, no journals covered art and culture(s) in Detroit, Michigan from Detroit.  
+    //                 As a result, the art community in Detroit did not have a platform from which it could voice issues affecting the community.
+    //             </p>
+    //             ,
+    //             buttons: []
+    //         },
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>define</div>
+    //                 <div className={styles.tabHeadingMobile}>2</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "define",
+    //             images: [],
+    //             paragraphs: 
+    //                 <p>
+    //                     Detroit, Michigan needed a monthly, web-based journal of art and culture(s) to voice issues affecting the Detroit art community.  
+    //                     The journal would have to bridge demographic groups in a very segregated region by class and race.
+    //                 </p>
+    //             ,
+    //             buttons: []
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>ideate</div>
+    //                 <div className={styles.tabHeadingMobile}>3</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "ideate",
+    //             images: [ <ImageHoverCaption key={1} imagePlusCaption={imagePlusCaptionIdeate} />, <ImageHoverCaption key={2} imagePlusCaption={imagePlusCaptionSiteMap} /> ],
+    //             paragraphs: 
+    //                 <p>
+    //                     Rapid iterations of logo and name ideas were shared amongst stakeholders.  
+    //                     The process was one of the best I&#39;ve seen, with stakeholders working together to find the best design solution instead of defending their own ideas.  
+    //                     Ultimately, we agreed to use a logo I created that rotates the 8 in 8 Mile, a symbol of racial and economic division, ninety degrees to make an infinity symbol, which is impossible to divide.
+    //                     Contours of two chain links were used in the infinity symbol to reflect Detroit&#39;s industrial history.
+    //                     <br/><br/>
+    //                     Once the name, logo and style were decided, I began sketching ideas for the Infinite Mile website. 
+    //                     Stakeholders agreed to use a custom website because the website needed to have a different look than all the rest of the websites and have strong aesthetics because the journal was focusing on art and culture(s).
+    //                 </p>
+    //             ,
+    //             buttons: []
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label:
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>prototype</div>
+    //                 <div className={styles.tabHeadingMobile}>4</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "prototype",
+    //             images: [],
+    //             paragraphs: 
+    //                 <p>
+    //                     I created a password-protected website as a prototype to share with stakeholders, who shared feedback.
+    //                 </p>
+    //             ,
+    //             buttons: []
+    //         }
+    //     },
+    //     {   
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>test</div>
+    //                 <div className={styles.tabHeadingMobile}>6</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "test",
+    //             images: [],
+    //             paragraphs: 
+    //                 <p>
+    //                     User tests were conducted for the Infinite Mile website.  
+    //                     Google Chrome Developer was used to test the code. 
+    //                 </p>
+    //             ,
+    //             buttons: []
+    //         }
+    //     },
+    //     {
+    //         id: uuidv4(),
+    //         label: 
+    //             <Fragment>
+    //                 <div className={styles.tabHeadingDesktop}>build</div>
+    //                 <div className={styles.tabHeadingMobile}>5</div>
+    //             </Fragment>
+    //         ,
+    //         content: {
+    //             heading: "build",
+    //             images: [],
+    //             paragraphs: 
+    //                 <p>
+    //                     I built the Infinite Mile website using HTML, CSS, JavaScript, jQuery, MailChimp, VideoJS and WowSlider.  
+    //                     Later, I added APIs for events using EventBrite and to handle sales of annual print anthologies and merchandise using PayPal.
+    //                 </p>
+    //             ,
+    //             buttons: []
+    //         }
+    //     },
+    // ];
 
     const outcomeCards = [
         {
