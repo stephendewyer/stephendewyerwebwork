@@ -19,11 +19,8 @@ const IndexComponent = () => {
           software development + user experience design
         </h1>
         <h3 className={styles.subheadline}>
-          creating software that people love
+          improving lives through better digital experiences
         </h3>
-      </div>
-      <div className={styles.intro_video}>
-        <IntroVideo />
       </div>
         <div className={styles.intro_paragraph}>
           <p className={styles.paragraph}>
