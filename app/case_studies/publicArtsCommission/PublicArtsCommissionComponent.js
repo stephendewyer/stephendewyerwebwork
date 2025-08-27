@@ -29,19 +29,19 @@ import PublicArtsCommissionEndorsementsDesktopMockup from "../../../public/image
 
 const PublicArtsCommissionComponent = () => {
 
-    const imagePlusCaptionEmpathize = {
-        image: 
-            <Image 
-                src={ArtAtDemonstration} 
-                layout="responsive" 
-                alt="Art at a demonstration for equity"
-                priority
-            />,
-        caption: 
-            <div>
-                art at a demonstration for equity
-            </div>,                  
-    }
+    // const imagePlusCaptionEmpathize = {
+    //     image: 
+    //         <Image 
+    //             src={ArtAtDemonstration} 
+    //             layout="responsive" 
+    //             alt="Art at a demonstration for equity"
+    //             priority
+    //         />,
+    //     caption: 
+    //         <div>
+    //             art at a demonstration for equity
+    //         </div>,                  
+    // }
 
     const imagePlusCaptionDefine = {
         image: 
