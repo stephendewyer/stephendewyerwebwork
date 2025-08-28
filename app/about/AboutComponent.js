@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
+import ImageHoverCaption from '@/components/imageHoverCaption/ImageHoverCaption';
 import { debounce } from '../../public/util/helpers';
 import ExperienceAccordion from '../../components/accordions/experienceAccordion/Accordion';
 import SkillsAccordion from '../../components/accordions/skillsAccordion/Accordion';
@@ -21,6 +22,34 @@ import PublicArtsCommissionCandidateMeeting from "../../public/images/story/Erin
 
 
 const AboutComponent = () => {
+
+    const imagePlusCaptionArtAndRaceConference = {
+        image: 
+            <Image 
+                src={InfiniteMileArtAndRaceConference01}
+                layout="responsive"
+                alt="Infinite Mile 2016 Art & Race Conference at MOCAD with University of Michigan Stamps School of Art and Design"
+                priority
+            />,
+        caption: 
+            <p>
+                Infinite Mile 2016 Art & Race Conference at MOCAD with University of Michigan Stamps School of Art and Design.  Photograph by Sarah Nesbitt.
+            </p>
+    };
+
+    const imagePlusCaptionPublicArtsCommission = {
+        image: 
+            <Image 
+                src={PublicArtsCommissionCandidateMeeting}
+                layout="responsive"
+                alt="Stephen Dewyer meeting Erin Maye Quade at gathering in front of public art for Public Arts Commission"
+                priority
+            />,
+        caption: 
+            <p>
+                Stephen Dewyer meeting with Minnesota State Senator Erin Maye Quade at gathering in front of public art for Public Arts Commission.
+            </p>
+    };
 
     const experience = [
         {
@@ -1027,35 +1056,11 @@ const AboutComponent = () => {
                                 <br /><br />
                                 After producing the website for an award-winning journal of art and culture(s) in Detroit, Michigan called Infinite Mile from 2013 - 2017, I decided to hone my skills in software development and UX design.  Seeing how the software I created helped improve peoples&apos; lives made pursuing software development and UX design an attractive endeavor.  In 2017, I launched a non-profit organization called Public Arts Commission that is the platform for the art community in politics.  Currently, I am Founding Director of Art in Tech Services, a company that produces custom and original software using advancements in art and digital technology.  The skills I gained as an artist I&apos;m able to use to craft enjoyable user experiences and find creative technical solutions in the development of software.
                                 </p>
-                                <div className={classes.story_image_and_caption}>
-                                <figure>
-                                    <Image 
-                                        src={InfiniteMileArtAndRaceConference01}
-                                        layout="responsive"
-                                        alt="Infinite Mile 2016 Art & Race Conference at MOCAD with University of Michigan Stamps School of Art and Design"
-                                        priority
-                                    />
-                                </figure>
-                                <figcaption className={classes.caption}>
-                                    Infinite Mile 2016 Art & Race Conference at MOCAD with University of Michigan Stamps School of Art and Design.  Photograph by Sarah Nesbitt.
-                                </figcaption>
-                                </div>
-                                <p className={classes.myStoryParagraphs}>  
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionArtAndRaceConference} />
+                            <p className={classes.myStoryParagraphs}>  
                                 Today, I am more committed than ever to crafting digital experiences that help improve peoples&apos; lives.  I&apos;m able to use the leadership skills I gained to work across teams to pursue common goals that positively impact community.   Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
                             </p>
-                            <div className={classes.story_image_and_caption}>
-                                <figure>
-                                    <Image 
-                                        src={PublicArtsCommissionCandidateMeeting}
-                                        layout="responsive"
-                                        alt="Stephen Dewyer meeting Erin Maye Quade at gathering in front of public art for Public Arts Commission"
-                                        priority
-                                    />
-                                </figure>
-                                <figcaption className={classes.caption}>
-                                    Stephen Dewyer meeting with Minnesota State Senator Erin Maye Quade at gathering in front of public art for Public Arts Commission.
-                                </figcaption>
-                            </div>
+                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionPublicArtsCommission} />
                         </div>
                     </div>
                     <div 
