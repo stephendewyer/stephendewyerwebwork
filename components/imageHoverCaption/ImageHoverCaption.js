@@ -3,16 +3,12 @@ import { useState  } from 'react';
 import styles from './ImageHoverCaption.module.css';
 
 const ImageHoverCaption = ({ imagePlusCaption }) => {
-    const [isHovering, setIsHovered] = useState(false);
-    const onMouseEnter = () => setIsHovered(true);
-    const onMouseLeave = () => setIsHovered(false);
+    const [active, setActive] = useState(false);
+    const onMouseEnter = () => setActive(true);
+    const onMouseLeave = () => setActive(false);
 
     const clickHandler = () => {
-        if (isHovering) {
-            setIsHovered(false);
-        } else {
-            setIsHovered(true);
-        }
+        setActive(!active);
     };
 
     return (
@@ -29,8 +25,8 @@ const ImageHoverCaption = ({ imagePlusCaption }) => {
                 {imagePlusCaption.image}
             </div>
             <div 
-                className={ (isHovering) ? styles.overlay : styles.overlayHidden }
-                aria-hidden={!isHovering}
+                className={ (active) ? styles.overlay : styles.overlayHidden }
+                aria-hidden={!active}
             >
                 <div className={styles.overlayContainer}>
                     <div className={styles.overlayCaptionAndBackground}>
