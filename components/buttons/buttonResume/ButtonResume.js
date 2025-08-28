@@ -20,7 +20,7 @@ const ButtonResume = () => {
     const onMouseEnter = () => setIsHovered(true);
     const onMouseLeave = () => setIsHovered(false);
     return (
-        <div 
+        <button 
             className={styles.button_and_PDFIcon}
             onMouseEnter={onMouseEnter} 
             onMouseLeave={onMouseLeave}
@@ -45,8 +45,7 @@ const ButtonResume = () => {
             >
                 <PDFIcon />
             </div> 
-        </div>
-        
+        </button>
     );
 };
 

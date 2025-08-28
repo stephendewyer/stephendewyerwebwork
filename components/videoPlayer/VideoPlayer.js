@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import videojs from 'video.js';
 import 'video.js/dist/video-js.css';
 import { useEffect, useRef } from 'react';

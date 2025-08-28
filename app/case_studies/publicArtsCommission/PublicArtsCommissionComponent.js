@@ -368,7 +368,7 @@ const PublicArtsCommissionComponent = () => {
                 <div className={styles.problem_and_solution_container}>
                     <div className={styles.problem_container}>
                         <p>
-                            <span className={styles.banner_heading}>The problem: </span>Art workers who often lead democratic movements are largely excluded from electoral politics.  As a result, art has become exclusive to the wealthy and government lacks political imagination.
+                            <span className={styles.banner_heading}>The problem: </span><span style={{fontWeight: "bold"}}>Art workers who often lead democratic movements are largely excluded from electoral politics.  As a result, art has become exclusive to the wealthy and government lacks political imagination.</span>
                         </p>
                     </div>
                     <div className={styles.solution_container}>

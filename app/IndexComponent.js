@@ -14,21 +14,19 @@ const IndexComponent = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.headline_container}>
+      <div className={styles.introduction}>
         <h1 className={styles.headline}>
           software development + user experience design
         </h1>
         <h3 className={styles.subheadline}>
           improving lives through better digital experiences
         </h3>
-      </div>
-        <div className={styles.intro_paragraph}>
-          <p className={styles.paragraph}>
+        <p className={styles.paragraph}>
               Welcome!  My name is Stephen Dewyer and I&apos;m an award-winning <span style={{fontWeight: "bold"}}>software developer</span>,<span style={{fontWeight: "bold"}}> user experience (UX) designer</span>, <Link href="https://artintechservices.com" passHref={true} aria-label="link to Art in Tech Services" className={styles.footer_link} target="_blank" rel="noopener noreferrer">
               <span style={{fontWeight: "bold"}}>founder</span></Link> and <Link href="https://stephengdewyer.info" passHref={true} aria-label="link to stephen dewyer art portfolio" className={styles.footer_link} target="_blank" rel="noopener noreferrer">
               <span style={{fontWeight: "bold"}}>artist</span></Link>.  I enjoy developing creative software solutions to challenging problems that help empower businesses and communities.
           </p>
-        </div>
+      </div>
       <h2>
         featured case studies
       </h2>

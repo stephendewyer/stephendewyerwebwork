@@ -10,8 +10,8 @@ body {
 }
 
 @font-face {
-  font-family: "CenturyGothic";
-  src: url(/fonts/century_gothic/CenturyGothic.ttf);
+  font-family: "futura-bold";
+  src: url(/fonts/futura_bold/futura-bold.ttf);
 }
 
 @font-face {
@@ -20,28 +20,28 @@ body {
 }
 
 h1 {
-  font-family: "CenturyGothic";
+  font-family: "futura-bold";
   color: #514C64;
   font-size: 1.75rem;
   margin: 0;
 }
 
 h2 {
-  font-family: "CenturyGothic";
+  font-family: "futura-bold";
   color: #7A7296;
   font-size: 1.65rem;
   margin: 0;
 }
 
 h3 {
-  font-family: "CenturyGothic";
+  font-family: "futura-bold";
   color:#545451;
   font-size: 1.5rem;
   margin: 0;
 }
 
 h4 {
-  font-family: "CenturyGothic";
+  font-family: "futura-bold";
   color: #707578;
   font-size: 1.35rem;
   margin: 0;
@@ -53,7 +53,7 @@ p {
 }
 
 button {
-  font-family: "CenturyGothic";
+  font-family: "futura-bold";
 }
 
 a {

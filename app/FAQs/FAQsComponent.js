@@ -58,8 +58,8 @@ const FAQsComponent = () => {
         },
         {
             index: 11,
-            label: "Why is offshoring my software development to someplace like India not a good idea?",
-            content: "If you want larger costs in the long run, you can offshore your software development to places like India.  Like we saw during COVID, offshore supply chains are incredibly precarious.  Offshoring software development is a good way to get low-quality code that will need expensive fixes in the future.  Hiring onshore software developers here in the United States is the way to create more resilient supply chains and a more sustainable business."
+            label: "Why is offshoring my software development not a good idea?",
+            content: "If you want larger costs in the long run, you can offshore your software development.  Like we saw during COVID, offshore supply chains are incredibly precarious.  Offshoring software development is a good way to get low-quality code that will need expensive fixes in the future.  Hiring onshore software developers here in the United States is the way to create more resilient supply chains and a more sustainable business."
         },
         {
             index: 12,

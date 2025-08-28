@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.5",
+    "@vercel/analytics": "^1.5.0",
     "@videojs/themes": "^1.0.1",
     "classnames": "^2.5.1",
     "embla-carousel": "^8.6.0",

@@ -382,26 +382,6 @@ const InfiniteMileComponent = () => {
         
     ];
 
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "CreativeWork",
-        "name": "Infinite Mile Case Study",
-        "author": {
-            "@type": "Person",
-            "name": "Stephen Dewyer",
-            "url": "https://stephendewyerwebwork.vercel.app/about"
-        },
-        "description": "Case study on Infinite Mile, an arts publishing platform developed with UX design, product development, and front-end engineering.",
-        "url": "https://stephendewyerwebwork.vercel.app/case-studies/infinite-mile",
-        "image": "https://stephendewyerwebwork.vercel.app/images/infinite-mile-thumbnail.jpg",
-        "keywords": ["Infinite Mile case study", "digital publishing UX", "arts platform design", "Stephen Dewyer portfolio"],
-        "datePublished": "2025-01-01",
-        "publisher": {
-            "@type": "Person",
-            "name": "Stephen Dewyer"
-        }
-    };
-
     return (
         <Fragment>
             <div className={styles.banner_container}>
@@ -416,7 +396,7 @@ const InfiniteMileComponent = () => {
                 <div className={styles.problem_and_solution_container}>
                     <div className={styles.problem_container}>
                         <p>
-                            <span className={styles.banner_heading}>The problem: </span>No local art and cultural journal covering local art and culture in Detroit, Michigan, causing many local art events to go unnoticed despite an active and vibrant local art scene.
+                            <span className={styles.banner_heading}>The problem: </span><span style={{fontWeight: "bold"}}>No local art and cultural journal covering local art and culture in Detroit, Michigan, causing many local art events to go unnoticed despite an active and vibrant local art scene.</span>
                         </p>
                     </div>
                     <div className={styles.solution_container}>

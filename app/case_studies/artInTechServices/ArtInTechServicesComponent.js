@@ -371,7 +371,7 @@ const ArtinTechServicesComponent = () => {
                 <div className={styles.problem_and_solution_container}>
                     <div className={styles.problem_container}>
                         <p>
-                            <span className={styles.banner_heading}>The problem: </span>Technology that is not designed for human desire.
+                            <span className={styles.banner_heading}>The problem: </span><span style={{fontWeight: "bold"}}>Technology that is not designed for human desire.</span>
                         </p>
                     </div>
                     <div className={styles.solution_container}>

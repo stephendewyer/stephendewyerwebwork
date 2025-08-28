@@ -21,7 +21,7 @@ const ButtonPrevious = (props) => {
     const onMouseEnter = () => setIsHovered(true);
     const onMouseLeave = () => setIsHovered(false);
     return (
-        <div 
+        <button 
             className={styles.next_button_and_image}
             onMouseEnter={onMouseEnter} 
             onMouseLeave={onMouseLeave}
@@ -50,7 +50,7 @@ const ButtonPrevious = (props) => {
                     <span className={styles.caseStudyParagraphDesktop}>previous case study</span>
                 </div>
             </div>
-        </div>
+        </button>
     );
 };
 

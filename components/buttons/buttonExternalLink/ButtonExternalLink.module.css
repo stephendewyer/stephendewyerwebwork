@@ -1,29 +1,22 @@
 .button_external_link {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.3em 1.2em;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 2em;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border-radius: 2rem;
     box-sizing: border-box;
+    border: none;
     text-decoration: none;
-    font-weight: 300;
     color: #FFE9C0;
     background-color: #25262D;
     text-align: center;
     transition: all 0.2s;
     cursor: pointer;
-    font-family: "CenturyGothic";
+    font-size: 1.125rem;
+    font-family: "futura-bold";
 }
 
 .button_external_link:hover {
     background-color: #9497B2;
-}
-
-@media all and (max-width: 750px){
-
-    .button_external_link {
-        margin: 0.2em;
-    }
-
 }

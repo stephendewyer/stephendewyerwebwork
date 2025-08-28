@@ -20,29 +20,22 @@ const ButtonAction = (props) => {
     };
 
     return (
-        <div 
-            className={styles.next_button_and_image}
+        <button 
             onMouseEnter={(() => setButtonHovered(true))}
             onMouseOver={(() => setButtonHovered(true))}
             onMouseLeave={(() => setButtonHovered(false))}
             onMouseOut={(() => setButtonHovered(false))}
+            className={styles.button}
+            style={{ color: (props.buttonIsActive) || buttonHovered ? '#90947E': '#575B46', marginRight: (props.buttonIsActive) || buttonHovered ? '12px' : '24px'}}
         >
+            {props.children}
             <div 
-                className={styles.button}
-                style={{ color: (props.buttonIsActive) || buttonHovered ? '#90947E': '#575B46', marginRight: (props.buttonIsActive) || buttonHovered ? '12px' : '24px'}}
+                className={styles.arrow}
+                style={{ marginLeft: (props.buttonIsActive) || buttonHovered ? '24px' : '12px', color: (props.buttonIsActive) || buttonHovered ? '#90947E': '#575B46'}}
             >
-                <div className={styles.button_content}>
-                    {props.children}
-                    <div 
-                        className={styles.arrow}
-                        style={{ marginLeft: (props.buttonIsActive) || buttonHovered ? '24px' : '12px', color: (props.buttonIsActive) || buttonHovered ? '#90947E': '#575B46'}}
-                    >
-                        <Arrow />
-                    </div>
-                </div>
+                <Arrow />
             </div>
-        </div>
-        
+        </button>
     );
 };
 

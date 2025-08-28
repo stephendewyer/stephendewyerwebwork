@@ -7,9 +7,13 @@
   padding: 10rem 0 0 0;
 }
 
-.headline_container {
-  max-width: 940px;
+.introduction {
+  width: 100%;
   padding: 0 1rem;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .headline {
@@ -33,7 +37,7 @@
 
 .workSection {
   width: 100%;
-  max-width: 46rem;
+  max-width: 800px;
   padding: 0 1rem;
 }
 

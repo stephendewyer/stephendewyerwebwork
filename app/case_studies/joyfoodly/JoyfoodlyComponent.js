@@ -343,7 +343,7 @@ const JoyfoodlyComponent = () => {
                 <div className={styles.problem_and_solution_container}>
                     <div className={styles.problem_container}>
                         <p>
-                            <span className={styles.banner_heading}>The problem: </span>No website where users can go to download the Joyfoodly cookbook once the Joyfoodly business closes.  Old websites will become obsolete once business closes.
+                            <span className={styles.banner_heading}>The problem: </span><span style={{fontWeight: "bold"}}>No website where users can go to download the Joyfoodly cookbook once the Joyfoodly business closes.  Old websites will become obsolete once business closes.</span>
                         </p>
                     </div>
                     <div className={styles.solution_container}>
