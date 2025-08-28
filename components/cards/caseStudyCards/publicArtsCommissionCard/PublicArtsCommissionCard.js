@@ -20,6 +20,7 @@ const PulblicArtsCommissionCard = () => {
         onMouseOver={(() => setPublicArtsCommissionIsHovered(true))}
         onMouseLeave={(() => setPublicArtsCommissionIsHovered(false))}
         onMouseOut={(() => setPublicArtsCommissionIsHovered(false))}
+        onBlur={() => setPublicArtsCommissionIsHovered(false)}
       >
         <div className={styles.case_study_background}>
           <Image 

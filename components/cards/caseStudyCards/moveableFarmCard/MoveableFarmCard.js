@@ -13,11 +13,12 @@ const MoveableFarmCard = () => {
     return (
         <div
             className={styles.case_study}
-            onMouseEnter={(() => setMoveableFarmIsHovered(true))}
-            onMouseOver={(() => setMoveableFarmIsHovered(true))}
-            onMouseLeave={(() => setMoveableFarmIsHovered(false))}
-            onMouseOut={(() => setMoveableFarmIsHovered(false))}
-            >
+            onMouseEnter={() => setMoveableFarmIsHovered(true)}
+            onMouseOver={() => setMoveableFarmIsHovered(true)}
+            onMouseLeave={() => setMoveableFarmIsHovered(false)}
+            onMouseOut={() => setMoveableFarmIsHovered(false)}
+            onBlur={() => setMoveableFarmIsHovered(false)}
+        >
             <div className={styles.case_study_background}>
                 <Image 
                     src={MoveableFarmBackground} 

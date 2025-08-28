@@ -16,10 +16,11 @@ const ArtInTechServicesCard = () => {
   return (
     <div
       className={styles.case_study}
-      onMouseEnter={(() => setArtInTechServicesIsHovered(true))}
-      onMouseOver={(() => setArtInTechServicesIsHovered(true))}
-      onMouseLeave={(() => setArtInTechServicesIsHovered(false))}
-      onMouseOut={(() => setArtInTechServicesIsHovered(false))}
+      onMouseEnter={() => setArtInTechServicesIsHovered(true)}
+      onMouseOver={() => setArtInTechServicesIsHovered(true)}
+      onMouseLeave={() => setArtInTechServicesIsHovered(false)}
+      onMouseOut={() => setArtInTechServicesIsHovered(false)}
+      onBlur={() => setArtInTechServicesIsHovered(false)}
     >
       <div className={styles.case_study_background}>
         <Image 
@@ -87,10 +88,10 @@ const ArtInTechServicesCard = () => {
               <MyLink 
                 href="/case_studies/artInTechServices"
                 passHref 
-                onMouseEnter={(() => setButtonActive(true))}
-                onMouseOver={(() => setButtonActive(true))}
-                onMouseLeave={(() => setButtonActive(false))}
-                onMouseOut={(() => setButtonActive(false))}
+                onMouseEnter={() => setButtonActive(true)}
+                onMouseOver={() => setButtonActive(true)}
+                onMouseLeave={() => setButtonActive(false)}
+                onMouseOut={() => setButtonActive(false)}
               >
                 <ButtonAction
                   buttonIsActive={buttonActive}

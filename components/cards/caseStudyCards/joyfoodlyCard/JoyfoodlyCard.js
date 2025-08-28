@@ -16,10 +16,11 @@ const JoyfoodlyCard = () => {
   return (
     <div
       className={styles.case_study}
-      onMouseEnter={(() => setJoyfoodlyIsHovered(true))}
-      onMouseOver={(() => setJoyfoodlyIsHovered(true))}
-      onMouseLeave={(() => setJoyfoodlyIsHovered(false))}
-      onMouseOut={(() => setJoyfoodlyIsHovered(false))}
+      onMouseEnter={() => setJoyfoodlyIsHovered(true)}
+      onMouseOver={() => setJoyfoodlyIsHovered(true)}
+      onMouseLeave={() => setJoyfoodlyIsHovered(false)}
+      onMouseOut={() => setJoyfoodlyIsHovered(false)}
+      onBlur={() => setJoyfoodlyIsHovered(false)}
     >
       <div className={styles.case_study_background}>
         <Image 
@@ -87,10 +88,10 @@ const JoyfoodlyCard = () => {
               <MyLink 
                 href="/case_studies/joyfoodly" 
                 passHref 
-                onMouseEnter={(() => setButtonActive(true))}
-                onMouseOver={(() => setButtonActive(true))}
-                onMouseLeave={(() => setButtonActive(false))}
-                onMouseOut={(() => setButtonActive(false))}
+                onMouseEnter={() => setButtonActive(true)}
+                onMouseOver={() => setButtonActive(true)}
+                onMouseLeave={() => setButtonActive(false)}
+                onMouseOut={() => setButtonActive(false)}
               >
                 <ButtonAction
                   buttonIsActive={buttonActive}

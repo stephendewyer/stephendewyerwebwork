@@ -15,10 +15,11 @@ const InfiniteMileCard = () => {
   return (
     <div
       className={styles.case_study}
-      onMouseEnter={(() => setInfiniteMileIsHovered(true))}
-      onMouseOver={(() => setInfiniteMileIsHovered(true))}
-      onMouseLeave={(() => setInfiniteMileIsHovered(false))}
-      onMouseOut={(() => setInfiniteMileIsHovered(false))}
+      onMouseEnter={() => setInfiniteMileIsHovered(true)}
+      onMouseOver={() => setInfiniteMileIsHovered(true)}
+      onMouseLeave={() => setInfiniteMileIsHovered(false)}
+      onMouseOut={() => setInfiniteMileIsHovered(false)}
+      onBlur={() => setInfiniteMileIsHovered(false)}
     >
       <div className={styles.case_study_background}>
         <Image 
@@ -77,10 +78,10 @@ const InfiniteMileCard = () => {
               <MyLink 
                 href="/case_studies/infiniteMile" 
                 passHref
-                onMouseEnter={(() => setButtonActive(true))}
-                onMouseOver={(() => setButtonActive(true))}
-                onMouseLeave={(() => setButtonActive(false))}
-                onMouseOut={(() => setButtonActive(false))} 
+                onMouseEnter={() => setButtonActive(true)}
+                onMouseOver={() => setButtonActive(true)}
+                onMouseLeave={() => setButtonActive(false)}
+                onMouseOut={() => setButtonActive(false)} 
               >
                 <ButtonAction
                   buttonIsActive={buttonActive}
