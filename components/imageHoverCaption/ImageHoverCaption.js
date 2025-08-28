@@ -12,33 +12,36 @@ const ImageHoverCaption = ({ imagePlusCaption }) => {
     };
 
     return (
-        <figure 
-            className={styles.imagePlusCaptionContainer}
+        <div
             onMouseEnter={onMouseEnter} 
             onMouseLeave={onMouseLeave}
-            onClick={clickHandler}
-            onBlur={onMouseLeave}
         >
-            <div 
-                className={styles.imageContainer}
+            <figure 
+                className={styles.imagePlusCaptionContainer}
+                onClick={clickHandler}
+                onBlur={onMouseLeave}
             >
-                {imagePlusCaption.image}
-            </div>
-            <div 
-                className={ (active) ? styles.overlay : styles.overlayHidden }
-                aria-hidden={!active}
-            >
-                <div className={styles.overlayContainer}>
-                    <div className={styles.overlayCaptionAndBackground}>
-                        <div className={styles.overlayContainer}>
-                            <figcaption className={styles.captionContainer}>
-                                {imagePlusCaption.caption}
-                            </figcaption>
+                <div 
+                    className={styles.imageContainer}
+                >
+                    {imagePlusCaption.image}
+                </div>
+                <div 
+                    className={ (active) ? styles.overlay : styles.overlayHidden }
+                    aria-hidden={!active}
+                >
+                    <div className={styles.overlayContainer}>
+                        <div className={styles.overlayCaptionAndBackground}>
+                            <div className={styles.overlayContainer}>
+                                <figcaption className={styles.captionContainer}>
+                                    {imagePlusCaption.caption}
+                                </figcaption>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </figure>
+            </figure>
+        </div>
     );
 }
 
