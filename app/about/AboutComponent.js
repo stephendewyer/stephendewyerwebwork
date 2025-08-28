@@ -53,85 +53,28 @@ const AboutComponent = () => {
 
     const experience = [
         {
-            length: 'April 2021 - present', 
+            duration: 'April 2021 - present', 
             position: 'Founding Director, Full-stack Web Developer and UX Designer',
             company: 'Art in Tech Services Inc',
             location: 'Tucson, Arizona (relocated from Minneapolis, Minnesota)',
-            responsibilities:
-                <ul>
-                    <li>
-                        Helped clients plan and achieve project goals, meeting or exceeding client expectations.
-                    </li>
-                    <li>
-                        Designed, developed, deployed and maintained the company’s website including client and administrator portals, streamlining client collaboration.
-                    </li>
-                    <li>
-                        Developed custom and original software using state-of-the-art technologies like SvelteKit and Next.js to improve performance.
-                    </li>
-                    <li>
-                        Used art in UX design and in the development of creative software solutions to improve human experiences of technology.
-                    </li>
-                </ul>
         },
         {
-            length: 'April 2017 – present', 
+            duration: 'April 2017 – present', 
             position: 'Founder, Full-stack Web Developer and UX Designer',
             company: 'Public Arts Commission',
             location: 'Tucson, Arizona (relocated from Minneapolis, Minnesota)',
-            responsibilities:
-                <ul>
-                    <li>
-                        Leads a non-profit, 501(c)(4) organization that uses original software to create an art community civic engagement platform.
-                    </li>
-                    <li>
-                        Designed, developed, deployed and maintained software programs including a campaign application management system, an endorsement management system and a publicly searchable database of all the organization’s endorsements.
-                    </li>
-                    <li>
-                        Developing a voter networking and organizing portal.
-                    </li>
-                    <li>
-                        Conducted user tests for web prototypes with Board of Directors and art experts.
-                    </li>
-                    <li>
-                        Grew Board of Directors by 233% to include leading voices in the art community by delivering strong leadership.
-                    </li>
-                </ul>
         },
         {
-            length: 'February - May 2022', 
+            duration: 'February - May 2022', 
             position: 'UX Design Consultant (contract)',
             company: 'Turnberry Solutions',
             location: 'Minneapolis, Minnesota',
-            responsibilities:
-            <ul>
-                <li>
-                    Created high-fidelity prototypes to personalize dental insurance plan shopping in the Federal Employees Dental and Vision Insurance Program (FEDVIP).
-                </li>
-                <li>
-                    client: FedPoint
-                </li>
-            </ul>
         },
         {
-            length: 'July 2013 – January 2017', 
+            duration: 'July 2013 – January 2017', 
             position: 'Web Developer and UX Designer / Co-Founding Editor',
             company: '∞ mile (Infinite Mile LLC)',
             location: 'Detroit, Michigan',
-            responsibilities:
-                <ul>
-                    <li>
-                        Designed, developed, deployed and maintained website featuring an online store for print anthologies and merchandise, generating thousands of dollars in revenue.
-                    </li>
-                    <li>
-                        Directed three editing staff and 78 contributors to publish 94 essays and interviews, 51 artist projects, 26 reviews and 27 works of fiction or poetry.
-                    </li>
-                    <li>
-                        Wrote successful grant applications.
-                    </li>
-                    <li>
-                        Partnered with the University of Michigan Stamps School of Art & Design to produce two serial publications and conferences.
-                    </li>
-                </ul>
         }
     ];
 
@@ -1003,7 +946,16 @@ const AboutComponent = () => {
                         ref={positionsRef}
                     >
                         <h3 id="positions" style={{textAlign: "center"}}>work history</h3>
-                        <ExperienceAccordion experience={experience}/>
+
+                        {experience.map((experience, index) => {
+                            return (
+                                <div className={classes.label_paragraphs} key={index}>
+                                    <span className={classes.position}>{experience.position}</span>
+                                    <span className={classes.company}>{experience.company}</span>
+                                    <p className={classes.location_and_dates}><span>{experience.duration}</span><span>{experience.location}</span></p>
+                                </div>
+                            )
+                        })}
                     </div>
                     <div 
                         className={classes.education}
