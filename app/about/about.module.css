@@ -29,7 +29,44 @@
     width: 100%;
     max-width: 1920px;
     justify-content: space-between;
-    padding: 0 1rem;
+}
+
+.about {
+    width: 50%;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.intro_section {
+    width: 100%;
+}
+
+.profile_image_container {
+    position: relative;
+    width: 50%;
+    float: left;
+    display: block;
+    margin: 0 1rem 0.5rem 0;
+}
+
+.profileImageStart {
+    width: 100%;
+    height: auto;
+    transform: translateX(-100vw);
+    transition: transform 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.profileImageEnd {
+    width: 100%;
+    height: auto;
+    transform: translateX(0);
+    transition: transform 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.story_paragraphs {
+    padding: 0 0 1rem 0;
 }
 
 .story_headline {
@@ -157,44 +194,6 @@
     align-items: center;
 }
 
-.about {
-    width: 50%;
-    max-width: 40rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.intro_section {
-    width: 100%;
-}
-
-.profile_image_container {
-    position: relative;
-    width: 50%;
-    float: left;
-    display: block;
-    margin: 0 1rem 0.5rem 0;
-}
-
-.profileImageStart {
-    width: 100%;
-    height: auto;
-    transform: translateX(-100vw);
-    transition: transform 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
-}
-
-.profileImageEnd {
-    width: 100%;
-    height: auto;
-    transform: translateX(0);
-    transition: transform 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
-}
-
-.myStoryParagraphs {
-    padding: 0 0 1rem 0;
-}
-
 .skills_container {
     width: 100%;
 }
@@ -304,10 +303,6 @@
     padding: 0 1rem;
 }
 
-.certificates {
-    width: 100%;
-}
-
 .row_heading {
     font-weight: bold;
     width: 35%;
@@ -354,6 +349,7 @@
     .caption {
         font-size: 0.9rem;
     }
+
   }
 
 @media screen and (max-width: 720px) {
@@ -362,8 +358,8 @@
         padding-top: 7rem;
     }
 
-    .caption {
-        font-size: 0.9rem;
+    .story_paragraphs {
+        padding: 0 1rem 1rem 1rem;
     }
 
     .arrow_container {
@@ -519,11 +515,6 @@
         padding: 0 0 1rem 0;
     }
 
-    .aboutHeading02 {
-        font-size: 18px;
-        margin: 0 auto 20px auto;
-    }
-
     .profileImageStart {
         margin: 0;
     }
@@ -570,10 +561,6 @@
     }
 
     .skills {
-        padding: 0 1rem;
-    }
-
-    .certificates {
         padding: 0 1rem;
     }
 

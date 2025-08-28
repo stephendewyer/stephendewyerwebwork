@@ -1,5 +1,6 @@
 'use client';
 import React, { Fragment, useRef, useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import InputErrorMessage from '../../components/inputErrorMessage/InputErrorMessage';
 import FlashMessage from '../../components/flash_message/FlashMessage';
 import PillButton from '../../components/buttons/buttonPill/ButtonPIll';
@@ -26,6 +27,8 @@ async function createMessage(nameFirst, nameLast, email, message) {
 };
 
 const ContactComponent = () => {
+
+    const router = useRouter();
 
     const nameFirstRef = useRef();
     const nameLastRef = useRef();
@@ -156,6 +159,7 @@ const ContactComponent = () => {
                 enteredMessage
             );
             setRequestStatus('success');
+            
             router.replace('/');
         } catch (error) {
             if (enteredNameFirst === '') {

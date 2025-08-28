@@ -410,12 +410,6 @@ const AboutComponent = () => {
 
     const [ skillsTabWidth, setSkillsTabWidth ] = useState(0);
 
-    const certificatesTabRef = useRef(null);
-
-    const [certificatesTabScrollLeftPosition, setCertificatesTabScrollLeftPosition] = useState(0);
-
-    const [ certificatesTabWidth, setCertificatesTabWidth ] = useState(0);
-
     const pageNavTabsScrollableRef = useRef(null);
 
     const pageNavTabsScrollableContainerRef = useRef(null);
@@ -523,23 +517,6 @@ const AboutComponent = () => {
         };
     }, [pageNavTabClicked, pageNavTabClickedId, skillsObserved, skillsTabScrollLeftPosition]);
 
-    const [certificatesObserved, setCertificatesObserved] = useState(false);
-
-    useEffect(() => {
-        if (certificatesObserved) {
-            if (pageNavTabsScrollableRef.current) {
-                if (pageNavTabClicked && pageNavTabClickedId === "certificates") {
-                    pageNavTabsScrollableRef.current.scrollLeft = certificatesTabScrollLeftPosition;
-                    setPageNavTabClicked(false);
-                } else if (!pageNavTabClicked) {
-                    pageNavTabsScrollableRef.current.scrollLeft = certificatesTabScrollLeftPosition;
-                } else {
-                    return;
-                };                
-            };
-        };
-    }, [certificatesObserved, certificatesTabScrollLeftPosition, pageNavTabClicked, pageNavTabClickedId])
-
     const Arrow = () => {
         return (
           <svg 
@@ -645,17 +622,6 @@ const AboutComponent = () => {
         const skillsObserver = new IntersectionObserver(skillsIntersectingHandler, tabIntersectingOptions);
         skillsObserver.observe(skillsRef.current);
 
-        const certificatesIntersectingHandler = (entries) => {
-            const entry = entries[0];
-            if (entry.isIntersecting) {
-                setCertificatesObserved(true);
-            } else {
-                setCertificatesObserved(false);
-            };
-        };
-
-        const certificatesObserver = new IntersectionObserver(certificatesIntersectingHandler, tabIntersectingOptions);
-        certificatesObserver.observe(certificatesRef.current);
 
         // const handleScroll = debounce(() => {
         //     // find current scroll position
@@ -778,17 +744,6 @@ const AboutComponent = () => {
             };            
         };
 
-        if (certificatesTabRef.current) {
-            setCertificatesTabWidth(certificatesTabRef.current.getBoundingClientRect().width);
-            if (certificatesTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth/2) {
-                setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - certificatesTabWidth/2));
-            } else if (certificatesTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
-                setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft);
-            }  else {
-                setCertificatesTabScrollLeftPosition(0);
-            };
-        };
-
         setWindowWidth(window.innerWidth);
         setPageTabsHeight(pageNavTabsScrollableContainerRef.current.getBoundingClientRect().height);
 
@@ -870,17 +825,7 @@ const AboutComponent = () => {
                     setSkillsTabScrollLeftPosition(0);
                 };            
             };
-    
-            if (certificatesTabRef.current) {
-                setCertificatesTabWidth(certificatesTabRef.current.getBoundingClientRect().width);
-                if (certificatesTabRef.current.offsetLeft > pageNavTabsScrollableContainerWidth/2) {
-                    setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft - (pageNavTabsScrollableContainerWidth/2 - certificatesTabWidth/2));
-                } else if (certificatesTabRef.current.offsetLeft > (pageNavTabsScrollableWidth - (pageNavTabsScrollableContainerWidth/2))) {
-                    setCertificatesTabScrollLeftPosition(certificatesTabRef.current.offsetLeft);
-                }  else {
-                    setCertificatesTabScrollLeftPosition(0);
-                };
-            };
+
         };
 
         window.addEventListener("resize", handleWindowResize);
@@ -901,7 +846,6 @@ const AboutComponent = () => {
         educationTabScrollLeftPosition, 
         awardsAndGrantsTabScrollLeftPosition, 
         skillsTabScrollLeftPosition, 
-        certificatesTabScrollLeftPosition, 
         pageNavTabsScrollableContainerWidth, 
         pageNavTabsScrollableLeftPosition, 
         pageNavTabsScrollableWidth, 
@@ -909,8 +853,7 @@ const AboutComponent = () => {
         positionsTabWidth, 
         educationTabWidth, 
         awardsAndGrantsTabWidth, 
-        skillsTabWidth, 
-        certificatesTabWidth
+        skillsTabWidth
     ]);
 
     const clickPageNavTabsScrollLeftHandler = () => {
@@ -993,15 +936,7 @@ const AboutComponent = () => {
                                     skills
                                 </li>
                             </a>
-                            <a onClick={(event) => handleTabClick(event, "certificates")}>
-                                <li 
-                                    ref={certificatesTabRef}
-                                    id="certificatesTab"
-                                    className={certificatesObserved ? classes.nav_tab_active : classes.nav_tab} 
-                                >
-                                    courses
-                                </li>
-                            </a>
+
                         </ul>
                         <button
                             className={classes.arrow_left_scroll}
@@ -1029,39 +964,39 @@ const AboutComponent = () => {
                         id="introduction" 
                         ref={introductionRef}
                     >
-                        <div className={classes.story}>
+                        <div className={classes.story_paragraphs}>
                             <h2 style={{textAlign: "center", paddingBottom: "1rem"}}>
                                 introduction
                             </h2>
                             <h3 className={classes.story_headline}>
                                 I’m Stephen.  I bridge UX design and software engineering to build digital experiences people love. 
                             </h3>
-                            <div 
-                                ref={profileImage}
-                                className={classes.profile_image_container}
-                            >
-                                <div 
-                                    className={(profileImageDidStart) ? classes.profileImageEnd : classes.profileImageStart}
-                                >
-                                    <Image 
-                                        src={stephen_dewyer_profile} 
-                                        layout="responsive" 
-                                        alt="stephen dewyer profile image" 
-                                        priority
-                                    /> 
-                                </div>                    
-                            </div>
-                            <p className={classes.myStoryParagraphs}>
-                                I&apos;ve created web platforms from the ground up for organizations in higher education, civic engagement, art, publishing and digital technology.  My work uses advanced technologies, art and a focus on the user to develop creative software solutions to challenging problems.  
-                                <br /><br />
-                                After producing the website for an award-winning journal of art and culture(s) in Detroit, Michigan called Infinite Mile from 2013 - 2017, I decided to hone my skills in software development and UX design.  Seeing how the software I created helped improve peoples&apos; lives made pursuing software development and UX design an attractive endeavor.  In 2017, I launched a non-profit organization called Public Arts Commission that is the platform for the art community in politics.  Currently, I am Founding Director of Art in Tech Services, a company that produces custom and original software using advancements in art and digital technology.  The skills I gained as an artist I&apos;m able to use to craft enjoyable user experiences and find creative technical solutions in the development of software.
-                                </p>
-                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionArtAndRaceConference} />
-                            <p className={classes.myStoryParagraphs}>  
-                                Today, I am more committed than ever to crafting digital experiences that help improve peoples&apos; lives.  I&apos;m able to use the leadership skills I gained to work across teams to pursue common goals that positively impact community.   Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
-                            </p>
-                            <ImageHoverCaption imagePlusCaption={imagePlusCaptionPublicArtsCommission} />
                         </div>
+                        <div 
+                            ref={profileImage}
+                            className={classes.profile_image_container}
+                        >
+                            <div 
+                                className={(profileImageDidStart) ? classes.profileImageEnd : classes.profileImageStart}
+                            >
+                                <Image 
+                                    src={stephen_dewyer_profile} 
+                                    layout="responsive" 
+                                    alt="stephen dewyer profile image" 
+                                    priority
+                                /> 
+                            </div>                    
+                        </div>
+                        <p className={classes.story_paragraphs}>
+                            I&apos;ve created web platforms from the ground up for organizations in higher education, civic engagement, art, publishing and digital technology.  My work uses advanced technologies, art and a focus on the user to develop creative software solutions to challenging problems.  
+                            <br /><br />
+                            After producing the website for an award-winning journal of art and culture(s) in Detroit, Michigan called Infinite Mile from 2013 - 2017, I decided to hone my skills in software development and UX design.  Seeing how the software I created helped improve peoples&apos; lives made pursuing software development and UX design an attractive endeavor.  In 2017, I launched a non-profit organization called Public Arts Commission that is the platform for the art community in politics.  Currently, I am Founding Director of Art in Tech Services, a company that produces custom and original software using advancements in art and digital technology.  The skills I gained as an artist I&apos;m able to use to craft enjoyable user experiences and find creative technical solutions in the development of software.
+                        </p>
+                        <ImageHoverCaption imagePlusCaption={imagePlusCaptionArtAndRaceConference} />
+                        <p className={classes.story_paragraphs}>  
+                            Today, I am more committed than ever to crafting digital experiences that help improve peoples&apos; lives.  I&apos;m able to use the leadership skills I gained to work across teams to pursue common goals that positively impact community.   Outside work, I enjoy working out, running, traveling, hiking, art, coffee, farmers&apos; markets and meeting people.
+                        </p>
+                        <ImageHoverCaption imagePlusCaption={imagePlusCaptionPublicArtsCommission} />
                     </div>
                     <div 
                         className={classes.positions}
@@ -1143,109 +1078,6 @@ const AboutComponent = () => {
                     >
                         <h3 style={{textAlign: "center"}}>skills</h3>
                         <SkillsAccordion skills={skills} />          
-                    </div>
-                    <div 
-                        className={classes.certificates}
-                        id="certificates"
-                        ref={certificatesRef}
-                    >
-                        <h3 style={{textAlign: "center"}}>courses</h3>
-                        <div className={classes.certificates_group}>
-                            <div className={classes.label_paragraphs}>
-                                <span className={classes.position}>Certificates in Software Development, Machine Learning, UX Design and Web Accessibility</span>
-                                <span className={classes.company}>Udemy</span>
-                                <span className={classes.location_and_dates}>2021 &ndash; 2024</span>
-                            </div>
-                            <ul>
-                                <li>
-                                    Beginning C++ Programming - From Beginner to Beyond
-                                </li>
-                                <li>
-                                    Understanding TypeScript
-                                </li>
-                                <li>
-                                    Machine Learning A-Z: AI, Python & R + ChatGPT Bonus [2023]
-                                </li>
-                                <li>
-                                    GraphQL by Example
-                                </li>
-                                <li>
-                                    Svelte.js - The Complete Guide (incl. Sapper.js)
-                                </li>
-                                <li>
-                                    NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
-                                </li>
-                                <li>
-                                    React - The Complete Guide (incl Hooks, React Router, Redux)
-                                </li>
-                                <li>
-                                    Web Accessibility Training Course - WCAG 2.1 Compliance
-                                </li>
-                                <li>
-                                    The User Researcher&#39;s guide to UX discoveries
-                                </li>
-                            </ul>
-                        </div>
-                        <div className={classes.certificates_group}>
-                            <div className={classes.label_paragraphs}>
-                                <span className={classes.position}>Certificates in Software Development and Leadership</span>
-                                <span className={classes.company}> University of Michigan &#8211; Coursera</span>
-                                <span className={classes.location_and_dates}>2020 &ndash; 2021</span>
-                            </div>
-                            <ul>
-                                <li>
-                                    JavaScript, jQuery, and JSON
-                                </li>
-                                <li>
-                                    Interactivity with JavaScript
-                                </li>
-                                <li>
-                                    Building Database Applications in PHP
-                                </li>
-                                <li>
-                                    Introduction to Structured Query Language (SQL)
-                                </li>
-                                <li>
-                                    Building Web Applications in PHP
-                                </li>
-                                <li>
-                                    Intermediate PostgreSQL
-                                </li>
-                                <li>
-                                    Database Design and Basic SQL in PostgreSQL
-                                </li>
-                                <li>
-                                    Python Data Structures
-                                </li>
-                                <li>
-                                    Python for Everybody
-                                </li>
-                                <li>
-                                    Inspiring and Motivating Individuals
-                                </li>
-                            </ul>
-                        </div> 
-                        <div className={classes.certificates_group}>
-                            <div className={classes.label_paragraphs}>
-                                <span className={classes.position}>Certificates in UX Design</span>
-                                <span className={classes.company}>Interaction Design Foundation</span>
-                                <span className={classes.location_and_dates}>2020</span>
-                            </div>
-                            <ul>
-                                <li>
-                                    UI Design Patterns for Successful Software
-                                </li>
-                                <li>
-                                    Mobile User Experience (UX) Design
-                                </li>
-                                <li>
-                                    Become a UX Designer from Scratch
-                                </li>
-                                <li>
-                                    Human-Computer Interaction
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 <div 

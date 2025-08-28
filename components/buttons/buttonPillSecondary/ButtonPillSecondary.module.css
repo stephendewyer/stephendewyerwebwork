@@ -8,7 +8,7 @@
     box-sizing: border-box;
     text-decoration: none;
     text-align: center;
-    font-family: "CenturyGothic";
+    font-family: "futura-bold";
     will-change: margin-left;
     transition: margin-left 0.33s ease-out, color 0.33s ease-out;
 }

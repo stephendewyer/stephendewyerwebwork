@@ -10,7 +10,7 @@ const ButtonAction = (props) => {
     const [buttonHovered, setButtonHovered] = useState(false);
 
     return (
-        <div 
+        <button
             className={styles.next_button_and_image}
             onMouseEnter={(() => setButtonHovered(true))}
             onMouseOver={(() => setButtonHovered(true))}
@@ -34,7 +34,7 @@ const ButtonAction = (props) => {
                     {props.children}
                 </div>
             </div>
-        </div>
+        </button>
         
     );
 };
