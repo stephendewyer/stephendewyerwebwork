@@ -5,6 +5,7 @@
     padding-left: 10px;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .thumbnailImage {
@@ -41,8 +42,6 @@
 
 .button {
     display: inline-block;
-    font-weight: bold;
-    cursor: pointer;
     padding: 12px 24px;
     border: 3px solid;
     margin:0;

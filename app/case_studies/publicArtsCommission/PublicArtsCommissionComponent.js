@@ -4,12 +4,10 @@ import Image from 'next/image';
 import { v4 as uuidv4 } from 'uuid';
 import MyLink from '../../../public/util/myLink';
 import styles from './publicArtsCommission.module.css';
-import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import InfoCards from "../../../components/infoCards/InfoCards";
-// import ArtAtDemonstration from '../../../public/images/case_studies/Public_Arts_Commission/process/art_at_demonstration.jpg';
+import ArtAtDemonstration from '../../../public/images/case_studies/Public_Arts_Commission/process/art_at_demonstration.jpg';
 import EndorsedByPublicArtsCommission from '../../../public/images/case_studies/Public_Arts_Commission/process/endorsement_image.jpg';
 import PublicArtsCommissionLogo from '../../../public/images/case_studies/Public_Arts_Commission/process/public_arts_commission_logo.svg';
-import Tabs from "../../../components/tabPanel/Tabs";
 import Link from "next/link";
 import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
 import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
@@ -17,7 +15,8 @@ import ButtonExternalLink from '../../../components/buttons/buttonExternalLink/B
 import externalLinkIcon from '../../../public/images/icons/external_link_icon.svg';
 import artinTechServicesThumbnail from "../../../public/images/thumbnails/Art_in_Tech_Services_website_screenshot.jpg";
 import infiniteMileThumbnail from "../../../public/images/thumbnails/Infinite_Mile_Screengrab.jpg";
-import PublicArtsCommissionSiteMap from '../../../public/images/case_studies/Public_Arts_Commission/Public_Arts_Commission_sitemap.jpg';
+import lightBulb from "../../../public/images/case_studies/Public_Arts_Commission/process/light_bulb.jpg";
+import publicArtsCommissionCode from "../../../public/images/case_studies/Public_Arts_Commission/process/public_arts_commission_code.jpg";
 import PublicArtsCommissionBanner from '../../../public/images/case_studies/public_arts_commission_redesign/background/Public_Arts_Commission_background.jpg';
 import PublicArtsCommissionFigmaImage from "../../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_Figma.jpg";
 import PublicArtsCommmissionSearchEndorsementsVideo from "../../../components/videos/PublicArtsCommissionSearchEndorsementsVideo";
@@ -26,78 +25,9 @@ import PublicArtsCommissionApplyForEndorsementVideo from '../../../components/vi
 import PublicArtsCommissionDonateVideo from '../../../components/videos/PublicArtsCommissionDonateVideo';
 import PublicArtsCommissionIndexMobileMockup from "../../../public/images/case_studies/public_arts_commission_redesign/prototypes/Public_Arts_Commission_index_mobile.png";
 import PublicArtsCommissionEndorsementsDesktopMockup from "../../../public/images/case_studies/public_arts_commission_redesign/prototypes/Public_Arts_Commission_endorsements_desktop.png";
+import MichiganStateCapitolDoors from "../../../public/images/case_studies/Public_Arts_Commission/process/11_December_2012_take_Lansing,_Michigan.jpg";
 
 const PublicArtsCommissionComponent = () => {
-
-    // const imagePlusCaptionEmpathize = {
-    //     image: 
-    //         <Image 
-    //             src={ArtAtDemonstration} 
-    //             layout="responsive" 
-    //             alt="Art at a demonstration for equity"
-    //             priority
-    //         />,
-    //     caption: 
-    //         <div>
-    //             art at a demonstration for equity
-    //         </div>,                  
-    // }
-
-    const imagePlusCaptionDefine = {
-        image: 
-            <Image 
-                src={EndorsedByPublicArtsCommission} 
-                layout="responsive" 
-                alt="Graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota"
-                priority
-            />,
-        caption: 
-            <div>
-                graphic by Katie for Ward 10 campaign in Minneapolis, Minnesota
-            </div>,
-    }
-
-    const imagePlusCaptionIdeate = {
-        image: 
-            <Image 
-                src={PublicArtsCommissionLogo} 
-                layout="responsive" 
-                alt="Public Arts Commission logo"
-                priority
-            />,
-        caption: 
-            <div>
-                Public Arts Commission logo
-            </div>,
-    }
-
-    const imagePlusCaptionSiteMap = {
-        image: 
-            <Image
-                src={PublicArtsCommissionSiteMap}
-                layout="responsive" 
-                alt="Public Arts Commission site map"
-                priority
-            />,
-        caption: 
-            <div>
-                site map for the forthcoming Public Arts Commission web programs redesign
-            </div>,
-    };
-
-    const PublicArtsCommissionFigma = {
-        image: 
-            <Image
-                src={PublicArtsCommissionFigmaImage}
-                layout="responsive" 
-                alt="Public Arts Commission Figma"
-                priority
-            />,
-        caption: 
-            <div>
-                Figma view of Public Arts Commission
-            </div>,
-    }
 
     const infoCards = [
         {
@@ -208,152 +138,6 @@ const PublicArtsCommissionComponent = () => {
         
     ];
 
-    // const tabPanels = [
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>empathize</div>
-    //                 <div className={styles.tabHeadingMobile}>1</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "empathize",
-    //             images: [
-    //                 <ImageHoverCaption imagePlusCaption={imagePlusCaptionEmpathize} key={1}/>
-    //             ],
-    //             paragraphs: <p>The art community is very active in democratic campaigns and movements, but doesn&#39;t have a means by which to translate political activity into legislative and electoral results.  
-    //                 As a result, many of the demands from the art community on leadership in government often are ignored.  
-    //                 <br /><br />
-    //                 Seeing a need to connect the art community with democratic campaigns and movements and a need to engage in electoral politics, I launched Public Arts Commission in 2017.  
-    //                 Public Arts Commission will provide a platform for voters to network and organize to support democratic campaigns and movements that align with the public arts commission agenda to expand the political imaginary by making excellent public art available to everyone.  
-    //                 <br /><br />
-    //                 Creating a platform whereby candidates who share the values of Public Arts Commission can connect with an active network of voters on the Public Arts Commission platform will also reduce some of the barriers to running for office for candidates endorsed by Public Arts Commission.</p>
-    //             ,
-    //             buttons: []
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>define</div>
-    //                 <div className={styles.tabHeadingMobile}>2</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "define",
-    //             images: [
-    //                     <ImageHoverCaption imagePlusCaption={imagePlusCaptionDefine} key={1}/>
-    //                 ],
-    //             paragraphs: 
-    //                 <p>
-    //                     For Public Arts Commission to fulfill its mission, the organization&#39;s web platform needs to do a number of things including:
-    //                     <br /><br />1. Provide a list of Public Arts Commission&#39;s priorities to the public;
-    //                     <br /><br />2. Provide a searchable database of all candidates, legislation, referendums, amendments and actions endorsed by Public Arts Commission to the public;
-    //                     <br /><br />3. Allow voters to create accounts that let them: 
-    //                     a. Connect with other voters on the Public Arts Commission platform; 
-    //                     b. Send messages to other voters on the Public Arts Commission platform;
-    //                     c. Submit candidates, legislation, referendums, amendments and actions for endorsement by Public Arts Commission;
-    //                     d. View and manage elections in which the voter can vote;
-    //                     e. View and manage actions in which the voter can participate;
-    //                     f. Connect and organize with Public Arts Commission endorsed candidates, legislation, referendums, amendments and actions;
-    //                     <br /><br />4. Allow campaigns to apply for an endorsement by Public Arts Commission;
-    //                     <br /><br />5. Allow Public Arts Commission-endorsed campaigns with paid subscriptions to have access to the following:
-    //                     a. All voters who have Public Arts Commission accounts and are eligible to vote for the campaign in an election.
-    //                 </p>
-    //             ,
-    //             buttons: []
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>ideate</div>
-    //                 <div className={styles.tabHeadingMobile}>3</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "ideate",
-    //             images: [
-    //                 <ImageHoverCaption imagePlusCaption={imagePlusCaptionIdeate} key={1}/>,
-    //                 <ImageHoverCaption imagePlusCaption={imagePlusCaptionSiteMap} key={2}/>
-    //             ],
-    //             paragraphs: null,
-    //             buttons: []
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>prototype</div>
-    //                 <div className={styles.tabHeadingMobile}>4</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "prototype",
-    //             images: [
-    //                 <ImageHoverCaption imagePlusCaption={PublicArtsCommissionFigma} key={2}/>
-    //             ],
-    //             paragraphs: 
-    //                 <p>
-    //                     I used Figma to prototype the Public Arts Commission website redesign.  Public Arts Commission Board Directors helped with user testing of the prototypes.
-    //                 </p>,
-    //             buttons: [
-    //                 <Link key="1" href="https://www.figma.com/community/file/1257459517679894104/public-arts-commission-website" passHref={true} className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer">
-    //                     <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
-    //                         <div>
-    //                             prototype
-    //                         </div>
-    //                         <div className={styles.external_link_icon} >
-    //                             <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-    //                         </div>
-    //                     </ButtonExternalLink>
-    //                 </Link>
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>test</div>
-    //                 <div className={styles.tabHeadingMobile}>6</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "test",
-    //             images: [],
-    //             paragraphs: 
-    //             <p>
-    //                 Testing on the Public Arts Commission website and web application used Google Chrome Developer.   
-    //                 User testing was conducted with individuals in my network.
-    //             </p>,
-    //             buttons: []
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>build</div>
-    //                 <div className={styles.tabHeadingMobile}>5</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //                 heading: "build",
-    //                 images: [],
-    //                 paragraphs: 
-    //                     <p>
-    //                         For the development of the redesigned Public Arts Commission web programs, I am using a variety of technologies including SvelteKit, which is high performing and modern.
-    //                     </p>,
-    //                 buttons: []
-    //             }
-    //     },
-    // ];
-
     return (
         <Fragment>
             <div className={styles.banner_container}>
@@ -383,7 +167,7 @@ const PublicArtsCommissionComponent = () => {
                     Public Arts Commission web platform
                 </h1>
                 <h2 style={{textAlign: "center", paddingLeft: "1rem", paddingRight: "1rem"}}>
-                    first launched in 2017 and redesigned in 2023
+                    2017 - present
                 </h2>
                 <div className={styles.mockups}>
                     <div className={styles.desktop_mockup}>
@@ -407,10 +191,130 @@ const PublicArtsCommissionComponent = () => {
                     details
                 </h3>
                 <InfoCards infoCards={infoCards} />
-                {/* <h3>
-                    process
-                </h3>
-                <Tabs tabPanels={tabPanels} /> */}
+                <div className={styles.process}>
+                    <h3>
+                        process
+                    </h3>
+                    <ol className={styles.process_steps}>
+                        <li className={styles.process_A}>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={ArtAtDemonstration} className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="art at a demonstration for equity" 
+                                />
+                            </div>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        1. Why a platform for the art community in politics?
+                                    </h4>
+                                    <p>
+                                        The art community has played a pivotal role in politics.  Poet Walt Witman helped abolish slavery by supporting the Union during the Civil War.  Photographer and journalist Jacob Riis helped inspire a wave of progressivism in the U.S. by publishing “How the Other Half Lives” in 1890.  Artists were primarily behind the Occupy Wall Street protests during the Great Recession that showed mass discontent with the levels of wealth disparity brought by oligarchy.  The art community helps imagine the possible in politics. Despite the historic role the art community has played in politics, the art community often has no seat at the table in government.  There exists no real means by which to translate the organizing the art community does in political movements into electoral politics.  As a result, the demands of the art community are often ignored in government while the demands of corporate lobbyists are heard loud and clear. 
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li className={styles.process_B}>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        2. Defining the problem
+                                    </h4>
+                                    <p>
+                                        The problem is that no platform exists for the art community to translate political movements to electoral politics, especially concerning wholistic issues of governance.  As a result, the art community demands often get ignored in government.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={MichiganStateCapitolDoors} className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="front doors at Michigan State Capitol" 
+                                />
+                            </div>
+                        </li>
+                        <li className={styles.process_A}>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={PublicArtsCommissionLogo} 
+                                    className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="Public Arts Commission logo" 
+                                />
+                            </div>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        3. Starting the organization
+                                    </h4>
+                                    <p>
+                                        To give the art community a platform in politics, I endeavored to create a web platform that members of the art community can use to participate in translating political movements to electoral politics.  First, I had to address the issue of endorsing electoral items to make visible to the art community.  Second, I had to create portals for candidates and members of the art community to use to organize and apply for endorsement.  Third, I had to create a way to generate revenue.To accomplish these goals, I assembled a team of art experts as a Board of Directors.  The Board of Directors helps provide advice on issues relating to the operations of Public Arts Commission.  I created a non-profit 501(c)(4) organization to begin receiving donations.  I obtained the technical skills to build the Public Arts Commission web platform.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li className={styles.process_B}>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        4. Prototyping the platform
+                                    </h4>
+                                    <p>
+                                        I used Figma to build prototypes.  I had experience organizing campaigns, which I could use to inform the designs for the the campaign portal.  I developed prototypes for mobile and desktop devices.                                    
+                                    </p>
+                                </div>
+                            </div>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={PublicArtsCommissionFigmaImage}
+                                    className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="Public Arts Commission Figma" 
+                                />
+                            </div>
+                        </li>
+                        <li className={styles.process_A}>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={lightBulb} 
+                                    className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="light bulb" 
+                                />
+                            </div>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        5.  Conducting user interviews about the platform
+                                    </h4>
+                                    <p>
+                                        I conducted multiple user interviews with members of the art community.   The interviews helped with getting feedback on the platform, which I could use to further develop the designs.  I’ve reached out to campaigns to get feedback on the campaign portal and received positive feedback.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li className={styles.process_B}>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        6. Building the platform
+                                    </h4>
+                                    <p>
+                                        To build the Public Arts Commission web platform, I used state-of-the-art digital technology including SvelteKit, TypeScript, TomTom, MySQL and Stripe.                                    </p>
+                                </div>
+                            </div>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={publicArtsCommissionCode}
+                                    className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="Public Arts Commission code" 
+                                />
+                            </div>
+                        </li>
+                    </ol>
+                </div>
                 <div className={styles.results}>
                     <h3 className="header_02">
                         results
