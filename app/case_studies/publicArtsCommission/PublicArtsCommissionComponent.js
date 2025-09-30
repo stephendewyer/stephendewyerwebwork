@@ -17,7 +17,7 @@ import infiniteMileThumbnail from "../../../public/images/thumbnails/Infinite_Mi
 import lightBulb from "../../../public/images/case_studies/Public_Arts_Commission/process/light_bulb.jpg";
 import publicArtsCommissionCode from "../../../public/images/case_studies/Public_Arts_Commission/process/public_arts_commission_code.jpg";
 import PublicArtsCommissionBanner from '../../../public/images/case_studies/public_arts_commission_redesign/background/Public_Arts_Commission_background.jpg';
-import PublicArtsCommissionFigmaImage from "../../../public/images/case_studies/public_arts_commission_redesign/public_arts_commission_Figma.jpg";
+import PublicArtsCommissionFigmaImage from "../../../public/images/case_studies/Public_Arts_Commission/process/public_arts_commission_Figma.jpg";
 import PublicArtsCommmissionSearchEndorsementsVideo from "../../../components/videos/PublicArtsCommissionSearchEndorsementsVideo";
 import PublicArtsCommissionCreateEndorsementVideo from "../../../components/videos/PublicArtsCommissionCreateEndorsementVideo";
 import PublicArtsCommissionApplyForEndorsementVideo from '../../../components/videos/PublicArtsCommissionApplyForEndorsementVideo';
