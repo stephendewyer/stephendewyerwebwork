@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import MyLink from '../../../public/util/myLink';
 import styles from './publicArtsCommission.module.css';
 import InfoCards from "../../../components/infoCards/InfoCards";
-import ArtAtDemonstration from '../../../public/images/case_studies/Public_Arts_Commission/process/art_at_demonstration.jpg';
+// import ArtAtDemonstration from '../../../public/images/case_studies/Public_Arts_Commission/process/art_at_demonstration.jpg';
 import PublicArtsCommissionLogo from '../../../public/images/case_studies/Public_Arts_Commission/process/public_arts_commission_logo.svg';
 import Link from "next/link";
 import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
@@ -197,11 +197,12 @@ const PublicArtsCommissionComponent = () => {
                     <ol className={styles.process_steps}>
                         <li className={styles.process_A}>
                             <div className={styles.process_image_container}>
-                                <Image 
-                                    src={ArtAtDemonstration} className={styles.process_image} 
+                                {/* <Image 
+                                    src={ArtAtDemonstration} 
+                                    className={styles.process_image} 
                                     layout="fill" 
                                     alt="art at a demonstration for equity" 
-                                />
+                                /> */}
                             </div>
                             <div className={styles.process_paragraphs_container}>
                                 <div className={styles.process_paragraphs}>
@@ -227,7 +228,8 @@ const PublicArtsCommissionComponent = () => {
                             </div>
                             <div className={styles.process_image_container}>
                                 <Image 
-                                    src={MichiganStateCapitolDoors} className={styles.process_image} 
+                                    src={MichiganStateCapitolDoors} 
+                                    className={styles.process_image} 
                                     layout="fill" 
                                     alt="front doors at Michigan State Capitol" 
                                 />
