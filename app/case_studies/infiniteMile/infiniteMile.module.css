@@ -146,6 +146,83 @@
     justify-content: center;
 }
 
+.process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.process_steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    width: 100%;
+    list-style: none;
+    max-width: 1920px;
+}
+
+.process_A {
+    display: flex;
+    flex-direction: row;
+    height: 32rem;
+    width: 100%;
+}
+
+.process_B {
+    display: flex;
+    flex-direction: row;
+    height: 32rem;
+    width: 100%;
+}
+
+.process_C {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.process_image_container {
+    width: 50%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.process_image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.process_paragraphs_container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.process_step_heading {
+    padding: 0;
+    margin: 0;
+}
+
+.process_paragraphs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+}
+
 @media screen and (max-width: 1440px) {
 
     .banner_container {
@@ -224,6 +301,52 @@
 
     .team {
         flex-direction: column;
+    }
+
+    .process_A {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .process_B {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .process_image_container {
+        width: 100%;
+        position: relative;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .process_image {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .process_paragraphs_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .process_step_heading {
+        padding: 0;
+        margin: 0;
+    }
+
+    .process_paragraphs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
     
 }

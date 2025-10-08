@@ -5,12 +5,9 @@ import { v4 as uuidv4 } from 'uuid';
 import MyLink from '../../../public/util/myLink';
 import styles from './joyfoodly.module.css';
 import InfoCards from "../../../components/infoCards/InfoCards";
-import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import JoyfoodlySlideCarousel from "../../../components/slide_carousel/JoyfoodlySlideCarousel";
 import familyCooking from '../../../public/images/case_studies/Joyfoodly/process/family_cooking.jpg';
-import JoyfoodlyDesktopPrototype from '../../../public/images/case_studies/Joyfoodly/Joyfoodly_desktop_prototype.jpg';
-import JoyfoodlyMobilePrototype from '../../../public/images/case_studies/Joyfoodly/Joyfoodly_mobile_desktop.jpg';
-import Tabs from "../../../components/tabPanel/Tabs";
+import JoyfoodlyPrototypes from "../../../public/images/case_studies/Joyfoodly/process/Joyfoodly_prototypes.jpg";
 import Link from 'next/link';
 import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
 import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
@@ -21,34 +18,6 @@ import infiniteMileThumbnail from "../../../public/images/thumbnails/Infinite_Mi
 import JoyfoodlyBanner from '../../../public/images/case_studies/Joyfoodly/background/Joyfoodly_background.jpg';
 
 const JoyfoodlyComponent = () => {
-
-    const imagePlusCaptionDesktopPrototype = {
-        image: 
-            <Image
-                src={JoyfoodlyDesktopPrototype}
-                layout="responsive" 
-                alt="Art in Tech Services desktop prototype"
-                priority
-            />,
-        caption: 
-            <p>
-                prototype for the Joyfoodly website for desktop device
-            </p>
-    }
-
-    const imagePlusCaptionMobilePrototype = {
-        image: 
-            <Image
-                src={JoyfoodlyMobilePrototype}
-                layout="responsive" 
-                alt="Art in Tech Services mobile prototype"
-                priority
-            />,
-        caption: 
-            <p>
-                prototype for the Joyfoodly website for mobile device
-            </p>
-    }
 
     const infoCards = [
         {
@@ -133,162 +102,6 @@ const JoyfoodlyComponent = () => {
         
     ];
 
-    // const tabPanels = [
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>empathize</div>
-    //                 <div className={styles.tabHeadingMobile}>1</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "empathize",
-    //             images: [ 
-    //                 <Image 
-    //                     key={1}
-    //                     src={familyCooking} 
-    //                     layout="responsive" 
-    //                     alt="family cooking a meal"
-    //                     priority
-    //                 />    
-    //             ],
-    //             paragraphs: <p>
-    //                 Busy parents want to cook healthy meals for their children, but sometimes don&#8217;t know how to make healthy meals with plenty of fruits and vegetables.  
-    //                 Joyfoodly was a culinary education company that helped busy parents learn to cook healthy meals with more fruits and vegetables.  
-    //                 As Joyfoodly came to a close, the company wanted to close all existing web accounts, provide the Joyfoodly community with a free version of the Joyful12 cookbook via a new legacy website and notify the community about the business closing and creation of the new legacy website via email.
-    //             </p>
-    //             ,
-    //             buttons: []
-    //         },
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>define</div>
-    //                 <div className={styles.tabHeadingMobile}>2</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "empathize",
-    //             images: [ ],
-    //             paragraphs: <p>
-    //                 Goals: 
-    //                 <br/><br />
-    //                 1. Design, develop and deploy a legacy website where the Joyfoodly community can visit and download a free version of the Joyful12 cookbook;
-    //                 <br/><br />
-    //                 2. Design emails using Mailchimp to notify Joyfoodly subscribers about the company closing and the launch of the legacy website;
-    //                 <br/><br />
-    //                 3. Close previous web programs and redirect traffic to new legacy website from the joyfoodly.com and joyful12.com domain names.<br /><br/>
-    //             </p>
-    //             ,
-    //             buttons: []
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>ideate</div>
-    //                 <div className={styles.tabHeadingMobile}>3</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "ideate",
-    //             images: [ ],
-    //             paragraphs: <p>
-    //                 We agreed to create a simple, modern website using Next.js for the legacy website.  
-    //                 I created quick sketches of possible desktop and mobile designs for the website.
-    //             </p>
-    //             ,
-    //             buttons: []
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>prototype</div>
-    //                 <div className={styles.tabHeadingMobile}>4</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "prototype",
-    //             images: [ <ImageHoverCaption key={1} imagePlusCaption={imagePlusCaptionMobilePrototype} />, <ImageHoverCaption key={1} imagePlusCaption={imagePlusCaptionDesktopPrototype} /> ],
-    //             paragraphs: <p>
-    //                 I created high-fidelity mobile and desktop prototypes for the Joyfoodly legacy website using Figma with the content provided by Joyfoodly.  
-    //                 The emails to subscribers were designed using Mailchimp with content provided by Joyfoodly.  
-    //                 Prototypes for the website and emails were shared with stakeholders for approval.
-    //             </p>
-    //             ,
-    //             buttons: [
-    //                 <Link key={1} href="https://www.figma.com/community/file/1067232787737440923" passHref={true} className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer">
-    //                     <ButtonExternalLink passHref={true} aria-label="link to mobile prototype">
-    //                         <div>
-    //                             mobile prototype
-    //                         </div>
-    //                         <div className={styles.external_link_icon} >
-    //                             <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-    //                         </div>
-    //                     </ButtonExternalLink>
-    //                 </Link>,
-    //                 <Link key={2} href="https://www.figma.com/community/file/1067233911203456668" passHref={true} className={styles.view_prototype_button} target="_blank" rel="noopener noreferrer">
-    //                     <ButtonExternalLink passHref={true} aria-label="link to desktop prototype">
-    //                         <div>
-    //                             desktop prototype
-    //                         </div>
-    //                         <div className={styles.external_link_icon} >
-    //                             <Image src={externalLinkIcon} layout="responsive" alt="external link icon" />
-    //                         </div>
-    //                     </ButtonExternalLink>
-    //                 </Link>  
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>test</div>
-    //                 <div className={styles.tabHeadingMobile}>6</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "test",
-    //             images: [ ],
-    //             paragraphs: <p>
-    //                 The Joyfoodly website was tested for cross-browser functionality and on multiple devices.  
-    //                 By testing, we were able to observe slight differences between Android and iPhone browser versions of the legacy website.  
-    //                 I was able to correct the website for compatibility with Android and iPhone browsers.
-    //             </p>
-    //             ,
-    //             buttons: []
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>build</div>
-    //                 <div className={styles.tabHeadingMobile}>5</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "build",
-    //             images: [ ],
-    //             paragraphs: <p>
-    //                 After stakeholders agreed to prototype designs, I developed the Joyfoodly website using Next.js.  
-    //                 I added redirects from the domain names joyfoodly.com and joyful12.com to the Joyfoodly legacy website.  
-    //                 I closed accounts for the web programs no longer needed for Joyfoodly.  
-    //                 The emails were created using Mailchimp.
-    //             </p>
-    //             ,
-    //             buttons: []
-    //         }
-    //     },
-    // ];
-
     const outcomeCards = [
         {
             id: uuidv4(),
@@ -367,10 +180,77 @@ const JoyfoodlyComponent = () => {
                     details
                 </h3>
                 <InfoCards infoCards={infoCards} />
-                {/* <h3>
-                    process
-                </h3>
-                <Tabs tabPanels={tabPanels} /> */}
+                <div className={styles.process}>
+                    <h3>
+                        process
+                    </h3>
+                    <ol className={styles.process_steps}>
+                        <li className={styles.process_A}>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={familyCooking} 
+                                    className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="busy family cooking" 
+                                />
+                            </div>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        1. Empathizing with busy parents who want their kids to eat healthy meals
+                                    </h4>
+                                    <p>
+                                        Busy parents want to cook healthy meals for their children, but sometimes don’t know how to make healthy meals with plenty of fruits and vegetables. Joyfoodly was a culinary education company that helped busy parents learn to cook healthy meals with more fruits and vegetables.   As Joyfoodly came to a close, the company wanted to close all existing web accounts, provide the Joyfoodly community with a free version of the Joyful12 cookbook via a new legacy website and notify the community about the business closing and creation of the new legacy website via email.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li className={styles.process_C}>
+                            <div className={styles.process_paragraphs_container} style={{width: "100%"}}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        2. Setting goals
+                                    </h4>
+                                    <p>
+                                        I worked with Joyfoodly to set goals for accomplishing the project.  The goals included dates for deliverables and scope of the project.  The style of the website would be simple and modern.                                    
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li className={styles.process_A}>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={JoyfoodlyPrototypes} 
+                                    className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="Joyfoodly prototypes" 
+                                />
+                            </div>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        3. Prototyping the designs
+                                    </h4>
+                                    <p>
+                                        After creating some quick sketches of possible desktop and mobile designs, I used Figma to create prototypes for the Joyfoodly website.  Joyfoodly provided the content for the prototypes.                                    
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li className={styles.process_C}>
+                            <div className={styles.process_paragraphs_container} style={{width: "100%"}}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        4. Reviewing the designs and building the website
+                                    </h4>
+                                    <p>
+                                        After the client approved the designs, I built the Joyfoodly website.                                   
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
                 <h3>
                     results
                 </h3>
