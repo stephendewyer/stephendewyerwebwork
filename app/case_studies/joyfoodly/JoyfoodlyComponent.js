@@ -16,6 +16,7 @@ import externalLinkIcon from '../../../public/images/icons/external_link_icon.sv
 import artinTechServicesThumbnail from "../../../public/images/thumbnails/Art_in_Tech_Services_website_screenshot.jpg";
 import infiniteMileThumbnail from "../../../public/images/thumbnails/Infinite_Mile_Screengrab.jpg";
 import JoyfoodlyBanner from '../../../public/images/case_studies/Joyfoodly/background/Joyfoodly_background.jpg';
+import JoyfoodlyCode from "../../../public/images/case_studies/Joyfoodly/process/Joyfoodly_code.jpg";
 
 const JoyfoodlyComponent = () => {
 
@@ -237,16 +238,24 @@ const JoyfoodlyComponent = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className={styles.process_C}>
-                            <div className={styles.process_paragraphs_container} style={{width: "100%"}}>
+                        <li className={styles.process_B}>
+                            <div className={styles.process_paragraphs_container}>
                                 <div className={styles.process_paragraphs}>
                                     <h4 className={styles.process_step_heading}>
-                                        4. Reviewing the designs and building the website
+                                        4. Creating and launching the website
                                     </h4>
                                     <p>
-                                        After the client approved the designs, I built the Joyfoodly website.                                   
+                                        After the client approved of the Joyfoodly prototypes, I built the Joyfoodly website using Next.js and deployed the website on Vercel.  After Joyfoodly approved of the website, emails were sent to the Joyfoodly community letting them know the cookbook is available for download via the new website.                                  
                                     </p>
                                 </div>
+                            </div>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={JoyfoodlyCode} 
+                                    className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="Joyfoodly code" 
+                                />
                             </div>
                         </li>
                     </ol>

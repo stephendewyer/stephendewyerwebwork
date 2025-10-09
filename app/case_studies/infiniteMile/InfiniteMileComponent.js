@@ -7,12 +7,8 @@ import styles from './infiniteMile.module.css';
 import ImageHoverCaption from "../../../components/imageHoverCaption/ImageHoverCaption";
 import InfiniteMileSlideCarousel from "../../../components/slide_carousel/InfiniteMileSlideCarousel";
 import InfoCards from "../../../components/infoCards/InfoCards";
-import BreakfastClubViewDetroit from '../../../public/images/case_studies/Infinite_Mile_LLC/process/citings_issue_28_May_2016_06.jpg';
 import ArtAndRaceConference from '../../../public/images/case_studies/Infinite_Mile_LLC/team/Art_and_Race_Conference.jpg';
 import InfiniteMileStaff from '../../../public/images/case_studies/Infinite_Mile_LLC/team/Infinite_Mile_staff.jpg';
-import InfiniteMileLogo from '../../../public/images/case_studies/Infinite_Mile_LLC/process/Infinite_Mile_logo.svg';
-import InfiniteMileSiteMap from '../../../public/images/case_studies/Infinite_Mile_LLC/Infinite_Mile_site_map.jpg';
-import Tabs from "../../../components/tabPanel/Tabs";
 import Link from 'next/link';
 import ButtonNext from '../../../components/buttons/buttonNext/ButtonNext';
 import ButtonPrevious from '../../../components/buttons/buttonPrevious/ButtonPrevious';
@@ -21,22 +17,12 @@ import externalLinkIcon from '../../../public/images/icons/external_link_icon.sv
 import joyfoodlyThumbnail from "../../../public/images/thumbnails/Joyfoodly_desktop.jpg";
 import publicArtsCommissionThumbnail from "../../../public/images/thumbnails/public_arts_commission_website_desktop_01.jpg";
 import InfiniteMileBanner from '../../../public/images/case_studies/Infinite_Mile_LLC/background/Infinite_Mile_background.jpg';
+import DetroitArtCommunity from "../../../public/images/case_studies/Infinite_Mile_LLC/process/citings_07_June_13.jpg";
+import InfiniteMileLogo from "../../../public/images/case_studies/Infinite_Mile_LLC/process/infinite_mile_logo.jpg";
+import InfiniteMileWebsiteScreenshot from "../../../public/images/case_studies/Infinite_Mile_LLC/process/infinite_mile_website.jpg";
+import MichiganCentralStation from "../../../public/images/case_studies/Infinite_Mile_LLC/process/Michigan_Central_Station_3_October_2012.jpg";
 
 const InfiniteMileComponent = () => {
-
-    const imagePlusCaptionEmpathize = {
-        image: 
-            <Image 
-                src={BreakfastClubViewDetroit} 
-                layout="responsive" 
-                alt="View of Detroit as seen from the 22nd floor of the Fisher Building."
-                priority
-            />,
-        caption: 
-            <p>
-                view of Detroit as seen from the 22nd floor of the Fisher Building
-            </p>          
-    }
 
     const imagePlusCaptionArtAndRaceConference = {
         image: 
@@ -63,34 +49,6 @@ const InfiniteMileComponent = () => {
         caption: 
             <p>
                 Infinite Mile Co-Founding Editor Jennifer Junkermeier, Infinite Mile Associate Editor Ryan Harte and Infinite Mile Co-Founding Editor stephen dewyer.  Photograph (c) 2017 Jeff Cancelosi.
-            </p>
-    }
-
-    const imagePlusCaptionIdeate = {
-        image: 
-            <Image 
-                src={InfiniteMileLogo} 
-                layout="responsive" 
-                alt="Infinite Mile logo"
-                priority
-            />,
-        caption: 
-            <p>
-                Infinite Mile logo
-            </p>
-    }
-
-    const imagePlusCaptionSiteMap = {
-        image: 
-            <Image
-                src={InfiniteMileSiteMap}
-                layout="responsive" 
-                alt="Infinite Mile site map"
-                priority
-            />,
-        caption: 
-            <p>
-                site map for the Infinite Mile website
             </p>
     }
 
@@ -202,132 +160,6 @@ const InfiniteMileComponent = () => {
         
     ];
 
-    // const tabPanels = [
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>empathize</div>
-    //                 <div className={styles.tabHeadingMobile}>1</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "empathize",
-    //             images: [ <ImageHoverCaption key={1} imagePlusCaption={imagePlusCaptionEmpathize} />],
-    //             paragraphs: <p>
-    //                 Despite having an active art community, no journals covered art and culture(s) in Detroit, Michigan from Detroit.  
-    //                 As a result, the art community in Detroit did not have a platform from which it could voice issues affecting the community.
-    //             </p>
-    //             ,
-    //             buttons: []
-    //         },
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>define</div>
-    //                 <div className={styles.tabHeadingMobile}>2</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "define",
-    //             images: [],
-    //             paragraphs: 
-    //                 <p>
-    //                     Detroit, Michigan needed a monthly, web-based journal of art and culture(s) to voice issues affecting the Detroit art community.  
-    //                     The journal would have to bridge demographic groups in a very segregated region by class and race.
-    //                 </p>
-    //             ,
-    //             buttons: []
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>ideate</div>
-    //                 <div className={styles.tabHeadingMobile}>3</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "ideate",
-    //             images: [ <ImageHoverCaption key={1} imagePlusCaption={imagePlusCaptionIdeate} />, <ImageHoverCaption key={2} imagePlusCaption={imagePlusCaptionSiteMap} /> ],
-    //             paragraphs: 
-    //                 <p>
-    //                     Rapid iterations of logo and name ideas were shared amongst stakeholders.  
-    //                     The process was one of the best I&#39;ve seen, with stakeholders working together to find the best design solution instead of defending their own ideas.  
-    //                     Ultimately, we agreed to use a logo I created that rotates the 8 in 8 Mile, a symbol of racial and economic division, ninety degrees to make an infinity symbol, which is impossible to divide.
-    //                     Contours of two chain links were used in the infinity symbol to reflect Detroit&#39;s industrial history.
-    //                     <br/><br/>
-    //                     Once the name, logo and style were decided, I began sketching ideas for the Infinite Mile website. 
-    //                     Stakeholders agreed to use a custom website because the website needed to have a different look than all the rest of the websites and have strong aesthetics because the journal was focusing on art and culture(s).
-    //                 </p>
-    //             ,
-    //             buttons: []
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label:
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>prototype</div>
-    //                 <div className={styles.tabHeadingMobile}>4</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "prototype",
-    //             images: [],
-    //             paragraphs: 
-    //                 <p>
-    //                     I created a password-protected website as a prototype to share with stakeholders, who shared feedback.
-    //                 </p>
-    //             ,
-    //             buttons: []
-    //         }
-    //     },
-    //     {   
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>test</div>
-    //                 <div className={styles.tabHeadingMobile}>6</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "test",
-    //             images: [],
-    //             paragraphs: 
-    //                 <p>
-    //                     User tests were conducted for the Infinite Mile website.  
-    //                     Google Chrome Developer was used to test the code. 
-    //                 </p>
-    //             ,
-    //             buttons: []
-    //         }
-    //     },
-    //     {
-    //         id: uuidv4(),
-    //         label: 
-    //             <Fragment>
-    //                 <div className={styles.tabHeadingDesktop}>build</div>
-    //                 <div className={styles.tabHeadingMobile}>5</div>
-    //             </Fragment>
-    //         ,
-    //         content: {
-    //             heading: "build",
-    //             images: [],
-    //             paragraphs: 
-    //                 <p>
-    //                     I built the Infinite Mile website using HTML, CSS, JavaScript, jQuery, MailChimp, VideoJS and WowSlider.  
-    //                     Later, I added APIs for events using EventBrite and to handle sales of annual print anthologies and merchandise using PayPal.
-    //                 </p>
-    //             ,
-    //             buttons: []
-    //         }
-    //     },
-    // ];
-
     const outcomeCards = [
         {
             id: uuidv4(),
@@ -426,6 +258,105 @@ const InfiniteMileComponent = () => {
                 <div className={styles.team}>
                     <ImageHoverCaption imagePlusCaption={imagePlusCaptionArtAndRaceConference} /> 
                     <ImageHoverCaption imagePlusCaption={imagePlusCaptionInfiniteMileStaff} /> 
+                </div>
+                <div className={styles.process}>
+                    <h3>
+                        process
+                    </h3>
+                    <ol className={styles.process_steps}>
+                        <li className={styles.process_A}>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={DetroitArtCommunity} 
+                                    className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="Detroit art community talking at an exhibition" 
+                                />
+                            </div>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        1. Talking with the art community in Detroit about starting a journal of art and culture(s) in the city
+                                    </h4>
+                                    <p>
+                                        The idea to launch a journal of art and culture(s) in Detroit came from discussions I had with members of the art community in the city.  Detroit had a very active art community with many exhibitions happening with almost no public record connecting the exhibitions with the wider world.  A handful of international and national publications would cover occasional exhibitions in Detroit, but none had an ongoing presence in the city.                                     
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li className={styles.process_B}>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        2. Defining the problem
+                                    </h4>
+                                    <p>
+                                        As a result of not having a journal of art and culture(s) in Detroit, the art community in the city had very little influence in helping shape the narrative about the city as seen in national and international media.  This had large ramifications for telling the story of the city undergoing the largest municipal bankruptcy in U.S. history. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={MichiganCentralStation} 
+                                    className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="Michigan Central Station" 
+                                />
+                            </div>
+                        </li>
+                        <li className={styles.process_A}>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={InfiniteMileLogo} 
+                                    className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="Infinite Mile logo" 
+                                />
+                            </div>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        3.  Creating the brand identity
+                                    </h4>
+                                    <p>
+                                        The name Infinite Mile instantly became the name of the journal.  The name rotates the 8 in 8 Mile Road, the main dividing line between the City of Detroit and the Metro Detroit suburbs, to form the infinity symbol, representing something that is impossible to divide.  To select a logo, the Infinite Mile team quickly created many logos from which to choose.  The team met on a number of occasions to narrow the selection of logos and to finally decide which logo to choose.  The logo that got a simple majority of votes by the Infinite Mile team would become the logo for Infinite Mile.  I created several website designs from which the Infinite Mile team could choose as the company’s website.  The designs reflected the logo’s traffic theme with chain-link fences and arrows with different configurations and patterns.                                     
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li className={styles.process_B}>
+                            <div className={styles.process_paragraphs_container}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        4.  Building the website
+                                    </h4>
+                                    <p>
+                                        The Infinite Mile website had to represent a look distinct and attractive enough to get the art community to participate.  A WordPress website wouldn’t work, since we needed a website that had a distinct appearance.  To built the website, I used vanilla JavaScript, HTML and CSS with some forms from MailChimp.  As Infinite Mile grew, using custom code worked great since we needed flexibility to add code from contributors, which I could add using basic JavaScript, HTML and CSS.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className={styles.process_image_container}>
+                                <Image 
+                                    src={InfiniteMileWebsiteScreenshot}
+                                    className={styles.process_image} 
+                                    layout="fill" 
+                                    alt="Infinite Mile website screenshot" 
+                                />
+                            </div>
+                        </li>
+                        <li className={styles.process_C}>
+                            <div className={styles.process_paragraphs_container} style={{width: "100%"}}>
+                                <div className={styles.process_paragraphs}>
+                                    <h4 className={styles.process_step_heading}>
+                                        5.  Testing the website
+                                    </h4>
+                                    <p>
+                                        The Infinite Mile website went through many tests and reviews.  The Infinite Mile team had to approve any new features to the website.  Contributors would review their articles on the website before they went public if we had enough time.                                    
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
                 </div>
                 <h3>
                     results
